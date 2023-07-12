@@ -1,11 +1,11 @@
-import { useSignal } from "@preact/signals";
-import Image from "deco-sites/std/components/Image.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Modal from "$store/components/ui/Modal.tsx";
-import SliderJS from "$store/islands/SliderJS.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
+import SliderJS from "$store/islands/SliderJS.tsx";
+import { useSignal } from "@preact/signals";
 import type { ImageObject } from "deco-sites/std/commerce/types.ts";
+import Image from "deco-sites/std/components/Image.tsx";
 
 interface Props {
   images: ImageObject[];
@@ -24,11 +24,12 @@ function ProductImageZoom({ images, width, height }: Props) {
         class="hidden sm:inline-flex btn-ghost"
         onClick={() => open.value = true}
       >
-        <Icon id="Zoom" size={20} />
+        <Icon id="MagnifyingGlass" size={20} />
       </Button>
       <Modal
         loading="lazy"
         mode="center"
+        showHeader
         open={open.value}
         onClose={() => {
           open.value = false;

@@ -1,47 +1,61 @@
 import { asset } from "$fresh/runtime.ts";
 import type { JSX } from "preact";
 
+export type PaymentIcons =
+  | "Visa"
+  | "Elo"
+  | "Mastercard"
+  | "Visa"
+  | "Pix"
+  | "AmericanExpress"
+  | "Boleto";
+
+export type SocialIcons =
+  | "Twitter"
+  | "Linkedin"
+  | "Pinterest"
+  | "YouTube"
+  | "Tiktok"
+  | "WhatsApp"
+  | "Instagram"
+  | "Facebook"
+  | "YouTubeOutline"
+  | "WhatsAppOutline"
+  | "InstagramOutline"
+  | "FacebookOutline";
 export type AvailableIcons =
-  | "ArrowsPointingOut"
-  | "Bars3"
+  | "Refresh"
+  | "Menu"
   | "ChevronLeft"
   | "ChevronRight"
   | "ChevronUp"
   | "ChevronDown"
-  | "CreditCard"
-  | "Deco"
-  | "Diners"
-  | "Discord"
-  | "Discount"
-  | "Elo"
-  | "Facebook"
-  | "FilterList"
+  | "QuestionMarkCircle"
+  | "User"
+  | "ShoppingCart"
+  | "Bars3"
   | "Heart"
-  | "Instagram"
-  | "Linkedin"
-  | "Logo"
+  | "MagnifyingGlass"
+  | "XMark"
+  | "Plus"
   | "Minus"
   | "MapPin"
-  | "MagnifyingGlass"
-  | "Mastercard"
-  | "Message"
   | "Phone"
-  | "Pix"
-  | "Plus"
-  | "QuestionMarkCircle"
-  | "Return"
-  | "Ruler"
-  | "ShoppingCart"
-  | "Star"
-  | "Tiktok"
-  | "Trash"
+  | "Logo"
   | "Truck"
-  | "Twitter"
-  | "User"
-  | "Visa"
+  | "Discount"
+  | "Return"
+  | "Deco"
+  | "Discord"
+  | "Email"
+  | "Trash"
+  | "FilterList"
+  | "ArrowsPointingOut"
   | "WhatsApp"
-  | "XMark"
-  | "Zoom";
+  | "ArrowsPointingOut"
+  | "checkIcon"
+  | "SearchBar"
+  | "ArrowRight";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
@@ -49,13 +63,18 @@ interface Props extends JSX.SVGAttributes<SVGSVGElement> {
    *
    * Example: <Icon id="Bell" />
    */
-  id: AvailableIcons;
+  id: AvailableIcons | SocialIcons | PaymentIcons;
   size?: number;
 }
 
-function Icon(
-  { id, strokeWidth = 16, size, width, height, ...otherProps }: Props,
-) {
+function Icon({
+  id,
+  strokeWidth = 16,
+  size,
+  width,
+  height,
+  ...otherProps
+}: Props) {
   return (
     <svg
       {...otherProps}

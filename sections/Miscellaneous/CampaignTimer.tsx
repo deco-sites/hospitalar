@@ -57,7 +57,7 @@ const snippet = (expiresAt: string, rootId: string) => {
     const totalHours = (days * 24) + hours;
 
     return {
-      hours: Math.min(totalHours, 99),
+      hours: totalHours,
       minutes,
       seconds,
     };
@@ -71,27 +71,23 @@ const snippet = (expiresAt: string, rootId: string) => {
     elem.style.setProperty("--value", value.toString());
   };
 
-  const start = () =>
-    setInterval(() => {
-      const { hours, minutes, seconds } = getDelta();
-      const isExpired = hours + minutes + seconds < 0;
+  setInterval(() => {
+    const { hours, minutes, seconds } = getDelta();
+    const isExpired = hours + minutes + seconds < 0;
 
-      if (isExpired) {
-        const expired = document.getElementById(`${rootId}::expired`);
-        const counter = document.getElementById(`${rootId}::counter`);
+    if (isExpired) {
+      const expired = document.getElementById(`${rootId}::expired`);
+      const counter = document.getElementById(`${rootId}::counter`);
+      const link = document.getElementById(`${rootId}::link`);
 
-        expired?.classList.remove("hidden");
-        counter?.classList.add("hidden");
-      } else {
-        setValue(`${rootId}::hours`, hours);
-        setValue(`${rootId}::minutes`, minutes);
-        setValue(`${rootId}::seconds`, seconds);
-      }
-    }, 1_000);
-
-  document.readyState === "complete"
-    ? start()
-    : addEventListener("load", start);
+      expired?.classList.remove("hidden");
+      counter?.classList.add("hidden");
+    } else {
+      setValue(`${rootId}::hours`, hours);
+      setValue(`${rootId}::minutes`, minutes);
+      setValue(`${rootId}::seconds`, seconds);
+    }
+  }, 1_000);
 };
 
 function CampaignTimer({

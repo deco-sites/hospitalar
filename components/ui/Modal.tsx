@@ -1,11 +1,9 @@
-import Button from "$store/components/ui/Button.tsx";
-import { useEffect, useRef } from "preact/hooks";
-import { useCart } from "deco-sites/std/packs/vtex/hooks/useCart.ts";
 import { IS_BROWSER } from "$fresh/runtime.ts";
+import Button from "$store/components/ui/Button.tsx";
+import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import { useSignal } from "@preact/signals";
 import type { JSX } from "preact";
-
-import Icon from "./Icon.tsx";
+import { useEffect, useRef } from "preact/hooks";
 
 // Lazy load a <dialog> polyfill.
 if (IS_BROWSER && typeof window.HTMLDialogElement === "undefined") {
@@ -19,6 +17,8 @@ export type Props = JSX.IntrinsicElements["dialog"] & {
   mode?: "sidebar-right" | "sidebar-left" | "center";
   onClose?: () => Promise<void> | void;
   loading?: "lazy" | "eager";
+  menuIcon?: AvailableIcons;
+  showHeader?: boolean;
 };
 
 const dialogStyles = {
@@ -46,6 +46,8 @@ const Modal = ({
   onClose,
   children,
   loading,
+  menuIcon,
+  showHeader,
   ...props
 }: Props) => {
   const lazy = useSignal(false);
@@ -53,14 +55,13 @@ const Modal = ({
 
   useEffect(() => {
     if (open === false) {
-      document.getElementsByTagName("body").item(0)?.classList.remove(
-        "no-scroll",
-      );
+      document
+        .getElementsByTagName("body")
+        .item(0)
+        ?.classList.remove("no-scroll");
       ref.current?.open === true && ref.current.close();
     } else if (open === true) {
-      document.getElementsByTagName("body").item(0)?.classList.add(
-        "no-scroll",
-      );
+      document.getElementsByTagName("body").item(0)?.classList.add("no-scroll");
       ref.current?.open === false && ref.current.showModal();
       lazy.value = true;
     }
@@ -70,7 +71,7 @@ const Modal = ({
     <dialog
       {...props}
       ref={ref}
-      class={`bg-transparent p-0 m-0 max-w-full w-full max-h-full h-full backdrop-opacity-50 ${
+      class={`backdrop:bg-black backdrop:opacity-80 bg-transparent p-0 m-0 max-w-[87.5%] w-full max-h-full h-full backdrop-opacity-50 lg:max-w-[33%] ${
         dialogStyles[mode]
       } ${props.class ?? ""}`}
       onClick={(e) =>
@@ -81,21 +82,32 @@ const Modal = ({
         class={`w-full h-full flex bg-transparent ${sectionStyles[mode]}`}
       >
         <div
-          class={`bg-base-100 flex flex-col max-h-full ${
+          class={`w-full bg-base-100 flex flex-col max-h-full overflow-auto ${
             containerStyles[mode]
           }`}
         >
-          <header class="flex px-4 py-6 justify-between items-center border-b border-base-200">
-            <div class="flex gap-5 items-center">
-              <h1>
-                <span class="font-medium text-2xl">{title}</span>
+          {showHeader && (
+            <header class="mx-5 mt-4 mb-[10.5px] flex items-center justify-between border-solid border-b-[1px] border-[#F7F7F7] lg:mx-10">
+              <h1 className="flex items-center justify-between gap-1">
+                <span class="font-medium text-base-content lg:text-xl text-xl">
+                  {title}
+                </span>
               </h1>
-            </div>
-            <Button class="btn btn-ghost" onClick={onClose}>
-              <Icon id="XMark" width={20} height={20} strokeWidth={2} />
-            </Button>
-          </header>
-          <div class="overflow-y-auto flex-grow flex flex-col">
+              <Button
+                class="btn btn-ghost p-0 flex justify-center w-12 h-4"
+                onClick={onClose}
+              >
+                <Icon
+                  class="text-base-content"
+                  id="XMark"
+                  width={25}
+                  height={25}
+                  strokeWidth={2}
+                />
+              </Button>
+            </header>
+          )}
+          <div class="flex-grow flex flex-col w-full">
             {loading === "lazy" ? lazy.value && children : children}
           </div>
         </div>

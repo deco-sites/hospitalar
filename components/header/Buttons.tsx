@@ -1,22 +1,27 @@
-import Icon from "$store/components/ui/Icon.tsx";
 import Button from "$store/components/ui/Button.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useCart } from "deco-sites/std/packs/vtex/hooks/useCart.ts";
-import { AnalyticsEvent } from "deco-sites/std/commerce/types.ts";
 
 function SearchButton() {
   const { displaySearchbar } = useUI();
 
   return (
     <Button
-      class="btn btn-circle btn-sm btn-ghost"
+      class="btn-square btn-ghost flex items-center justify-center"
       aria-label="search icon button"
       onClick={() => {
         displaySearchbar.value = !displaySearchbar.peek();
       }}
     >
-      <Icon id="MagnifyingGlass" width={20} height={20} strokeWidth={0.1} />
+      <Icon
+        class="text-base-content"
+        id="MagnifyingGlass"
+        width={20}
+        height={20}
+        strokeWidth={0.1}
+      />
     </Button>
   );
 }
@@ -26,13 +31,13 @@ function MenuButton() {
 
   return (
     <Button
-      class="btn btn-circle btn-sm btn-ghost"
+      class="rounded-full border-2 border-solid no-animation btn-ghost relative flex justify-center items-center lg:hidden"
       aria-label="open menu"
       onClick={() => {
         displayMenu.value = true;
       }}
     >
-      <Icon id="Bars3" width={20} height={20} strokeWidth={0.01} />
+      <Icon class="text-base-content" id="Menu" width={25} height={25} />
     </Button>
   );
 }
@@ -64,7 +69,7 @@ function CartButton() {
 
   return (
     <Button
-      class="btn btn-circle btn-sm btn-ghost relative"
+      class="btn-square btn-ghost relative flex justify-center items-center"
       aria-label="open cart"
       data-deco={displayCart.value && "open-cart"}
       loading={loading.value}
@@ -72,13 +77,17 @@ function CartButton() {
     >
       <div class="indicator">
         {totalItems && (
-          <span class="indicator-item badge badge-secondary badge-sm">
+          <span class="indicator-item text-base-100 bg-emphasis w-4 h-4 rounded-full text-xs left-4 top-3 font-bold">
             {totalItems > 9 ? "9+" : totalItems}
           </span>
         )}
-        {!loading.value && (
-          <Icon id="ShoppingCart" width={20} height={20} strokeWidth={2} />
-        )}
+        <Icon
+          class="text-base-content"
+          id="ShoppingCart"
+          width={24}
+          height={24}
+          strokeWidth={1}
+        />
       </div>
     </Button>
   );

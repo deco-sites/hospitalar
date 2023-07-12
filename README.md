@@ -1,7 +1,7 @@
 # Fashion starter by deco.cx
 
 A fully featured starter to help you customize and deploy an ecommerce website
-in minutes.
+in minutes
 
 <div style="display: flex; justify-content: center; width: 100%">
 <img width="600px" height="147px"
@@ -220,6 +220,6 @@ Check performance best practices on [deco.cx's docs](https://www.deco.cx/docs).
 
 # Thanks to all contributors!
 
-<a href="https://github.com/deco-sites/fashion/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=deco-sites/fashion" />
+<a href="https://github.com/deco-sites/hospitalar/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=deco-sites/hospitalar" />
 </a>

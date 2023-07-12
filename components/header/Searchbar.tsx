@@ -14,15 +14,14 @@ interface Props {
 
 function Searchbar({ searchbar }: Props) {
   const { displaySearchbar } = useUI();
-  const open = displaySearchbar.value &&
-    window?.matchMedia?.("(min-width: 768px)")?.matches;
+  const open = displaySearchbar.value;
 
   return (
     <div
       class={`${
         open ? "block border-y border-base-200 shadow" : "hidden"
       } absolute left-0 top-0 w-screen z-50 bg-base-100`}
-      style={{ marginTop: headerHeight }}
+      style={{ marginTop: 91 }}
     >
       {open && (
         <Suspense fallback={<span class="loading loading-ring" />}>

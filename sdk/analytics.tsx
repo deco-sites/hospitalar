@@ -23,20 +23,9 @@ export const sendEvent = <E extends AnalyticsEvent>(event: E) => {
 /**
  * This function is usefull for sending events on click. Works with both Server and Islands components
  */
-export const SendEventOnClick = <E extends AnalyticsEvent>({ event, id }: {
-  event: E;
-  id: string;
-}) => (
-  <script
-    dangerouslySetInnerHTML={{
-      __html:
-        `addEventListener("load", () => document.getElementById("${id}")?.addEventListener("click", () => (${sendEvent})(${
-          JSON.stringify(event)
-        })))`,
-    }}
-  >
-  </script>
-);
+export const sendEventOnClick = <E extends AnalyticsEvent>(event: E) => ({
+  onclick: () => sendEvent(event),
+});
 
 /**
  * This componente should be used when want to send event for rendered componentes.

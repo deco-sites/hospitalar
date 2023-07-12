@@ -1,6 +1,6 @@
 import { useMemo } from "preact/hooks";
 import { ProductListingPage } from "deco-sites/std/commerce/types.ts";
-import type { JSX } from "preact";
+import Icon from "$store/components/ui/Icon.tsx";
 
 const SORT_QUERY_PARAM = "sort";
 
@@ -11,44 +11,66 @@ const useSort = () =>
   }, []);
 
 // TODO: Replace with "search utils"
-const applySort = (e: JSX.TargetedEvent<HTMLSelectElement, Event>) => {
+const applySort = (searchParam: string) => {
   const urlSearchParams = new URLSearchParams(window.location.search);
 
-  urlSearchParams.set(SORT_QUERY_PARAM, e.currentTarget.value);
+  urlSearchParams.set(SORT_QUERY_PARAM, searchParam);
   window.location.search = urlSearchParams.toString();
 };
 
+const labels = {
+  "relevance:desc": "Relevância",
+  "price:asc": "Menor preço",
+  "price:desc": "Maior preço",
+  "name:asc": "A - Z",
+  "name:desc": "Z - A",
+  "release:desc": "Data de lançamento",
+  "orders:desc": "Mais vendidos",
+  "discount:desc": "Melhor desconto",
+};
+
+type LabelKey = keyof typeof labels;
+
 export type Props = Pick<ProductListingPage, "sortOptions">;
 
-const portugueseMappings = {
-  "relevance:desc": "Relevância",
-  "price:desc": "Maior Preço",
-  "price:asc": "Menor Preço",
-  "orders:desc": "Mais vendidos",
-  "name:desc": "Nome - de Z a A",
-  "name:asc": "Nome - de A a Z",
-  // "release:desc": "Relevância - Decrescente",
-  "discount:desc": "Maior desconto",
-};
 function Sort({ sortOptions }: Props) {
   const sort = useSort();
 
   return (
-    <select
+    <div
       id="sort"
       name="sort"
-      onInput={applySort}
-      class="w-min h-[36px] px-1 rounded m-2 text-base-content cursor-pointer outline-none"
+      class="dropdown dropdown-end w-full lg:auto"
     >
-      {sortOptions.map(({ value, label }) => ({
-        value,
-        label: portugueseMappings[label as keyof typeof portugueseMappings],
-      })).filter(({ label }) => label).map(({ value, label }) => (
-        <option key={value} value={value} selected={value === sort}>
-          <span class="text-sm">{label}</span>
-        </option>
-      ))}
-    </select>
+      <label
+        tabIndex={0}
+        class="btn justify-between w-full lg:w-48 btn-sm font-normal text-base-200 h-[34px] border-2 border-base-200 bg-white hover:bg-white"
+      >
+        {sort
+          ? <span class="text-base-content">{labels[sort as LabelKey]}</span>
+          : "Selecione"}
+        <Icon
+          id="ChevronDown"
+          height={22}
+          width={22}
+          strokeWidth={2}
+          class="text-base-content"
+        />
+      </label>
+      <ul
+        tabIndex={0}
+        class="dropdown-content mt-[10px] z-[1] px-0 py-[10px] menu shadow bg-base-100 rounded-[10px] w-48"
+      >
+        {sortOptions.map(({ value, label }) => (
+          <li
+            class="text-sm h-9 hover:cursor-pointer px-5 hover:bg-neutral-200 flex justify-center"
+            onClick={() => applySort(value)}
+          >
+            {labels[label as LabelKey]}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

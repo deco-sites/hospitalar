@@ -1,12 +1,10 @@
 import { useId } from "preact/hooks";
-import AddToCartButton from "$store/islands/AddToCartButton.tsx";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Button from "$store/components/ui/Button.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
-import SliderJS from "$store/components/ui/SliderJS.tsx";
+import SliderJS from "$store/islands/SliderJS.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import { formatPrice } from "$store/sdk/format.ts";
@@ -14,12 +12,16 @@ import { SendEventOnLoad } from "$store/sdk/analytics.tsx";
 import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/productToAnalyticsItem.ts";
 import type { ProductDetailsPage } from "deco-sites/std/commerce/types.ts";
 import type { LoaderReturnType } from "$live/types.ts";
+import AddToCartActions from "$store/islands/AddToCartActions.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
+import { getShareLink } from "$store/sdk/shareLinks.tsx";
 
+import DiscountBadge from "./DiscountBadge.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
-import ProductImageZoom from "$store/islands/ProductImageZoom.tsx";
-import WishlistButton from "../wishlist/WishlistButton.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
+
+export type ShareableNetwork = "Facebook" | "Twitter" | "Email" | "WhatsApp";
 
 export interface Props {
   page: LoaderReturnType<ProductDetailsPage | null>;
@@ -28,9 +30,14 @@ export interface Props {
    * @description Ask for the developer to remove this option since this is here to help development only and should not be used in production
    */
   variant?: Variant;
+  shipmentPolitics?: {
+    label: string;
+    link: string;
+  };
+  shareableNetworks?: ShareableNetwork[];
 }
 
-const WIDTH = 360;
+const WIDTH = 500;
 const HEIGHT = 500;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
@@ -50,7 +57,13 @@ function NotFound() {
   );
 }
 
-function ProductInfo({ page }: { page: ProductDetailsPage }) {
+function ProductInfo(
+  { page, shipmentPolitics, shareableNetworks }: {
+    page: ProductDetailsPage;
+    shipmentPolitics?: Props["shipmentPolitics"];
+    shareableNetworks?: Props["shareableNetworks"];
+  },
+) {
   const {
     breadcrumbList,
     product,
@@ -62,6 +75,7 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
     name,
     gtin,
     isVariantOf,
+    url,
   } = product;
   const { price, listPrice, seller, installments, availability } = useOffer(
     offers,
@@ -69,84 +83,113 @@ function ProductInfo({ page }: { page: ProductDetailsPage }) {
 
   return (
     <>
-      {/* Breadcrumb */}
-      <Breadcrumb
-        itemListElement={breadcrumbList?.itemListElement.slice(0, -1)}
-      />
       {/* Code and name */}
-      <div class="mt-4 sm:mt-8">
+      <div class="mt-4 sm:mt-0">
+        <h1>
+          <span class="font-medium text-base-content text-2xl">
+            {isVariantOf?.name}
+          </span>
+        </h1>
         <div>
           <span class="text-sm text-base-300">
-            Cod. {gtin}
+            Código: {gtin}
           </span>
         </div>
-        <h1>
-          <span class="font-medium text-xl">{name}</span>
-        </h1>
       </div>
       {/* Prices */}
-      <div class="mt-4">
+      <div class="mt-5">
         <div class="flex flex-row gap-2 items-center">
-          <span class="line-through text-base-300 text-xs">
-            {formatPrice(listPrice, offers!.priceCurrency!)}
-          </span>
-          <span class="font-medium text-xl text-secondary">
+          {listPrice !== price && (
+            <span class="line-through text-base-300 text-xs">
+              {formatPrice(listPrice, offers!.priceCurrency!)}
+            </span>
+          )}
+          <span class="font-medium text-3xl text-emphasis">
             {formatPrice(price, offers!.priceCurrency!)}
           </span>
         </div>
-        <span class="text-sm text-base-300">
+        <span>
           {installments}
         </span>
       </div>
       {/* Sku Selector */}
-      <div class="mt-4 sm:mt-6">
+      <div class="mt-4 sm:mt-5">
         <ProductSelector product={product} />
       </div>
       {/* Add to Cart and Favorites button */}
-      <div class="mt-4 sm:mt-10 flex flex-col gap-2">
+      <div class="mt-4 lg:mt-10 flex gap-[30px]">
         {availability === "https://schema.org/InStock"
           ? (
             <>
               {seller && (
-                <AddToCartButton
-                  skuId={productID}
-                  sellerId={seller}
-                  price={price ?? 0}
-                  discount={price && listPrice ? listPrice - price : 0}
-                  name={product.name ?? ""}
-                  productGroupId={product.isVariantOf?.productGroupID ?? ""}
+                <AddToCartActions
+                  productID={productID}
+                  seller={seller}
+                  price={price}
+                  listPrice={listPrice}
+                  productName={name ?? ""}
+                  productGroupID={product.isVariantOf?.productGroupID ?? ""}
                 />
               )}
-              <WishlistButton
-                variant="full"
-                productGroupID={isVariantOf?.productGroupID}
-                productID={productID}
-              />
             </>
           )
           : <OutOfStock productID={productID} />}
       </div>
-      {/* Shipping Simulation */}
-      <div class="mt-8">
-        <ShippingSimulation
-          items={[{
-            id: Number(product.sku),
-            quantity: 1,
-            seller: seller ?? "1",
-          }]}
-        />
-      </div>
       {/* Description card */}
-      <div class="mt-4 sm:mt-6">
-        <span class="text-sm">
-          {description && (
-            <details>
-              <summary class="cursor-pointer">Descrição</summary>
-              <div class="ml-2 mt-2">{description}</div>
-            </details>
-          )}
-        </span>
+      <details className="collapse collapse-plus border-b border-neutral rounded-none">
+        <summary className="collapse-title px-0">
+          Detalhes do produto
+        </summary>
+        <div className="readmore text-xs px-0 leading-tight collapse-content text-base-300">
+          <input type="checkbox" id="readmore" className="readmore-toggle" />
+          <label htmlFor="readmore" className="readmore-label my-2 block">
+            + Ler mais
+          </label>
+          <p className="readmore-content">{description}</p>
+        </div>
+      </details>
+      {/* Shipping Simulation */}
+      <div className="collapse collapse-plus">
+        <input type="checkbox" />
+        <div className="collapse-title px-0">
+          Calcular frete e entrega
+        </div>
+        <div className="collapse-content px-0">
+          <ShippingSimulation
+            items={[{
+              id: Number(product.sku),
+              quantity: 1,
+              seller: seller ?? "1",
+            }]}
+            shipmentPolitics={shipmentPolitics}
+          />
+        </div>
       </div>
+      {/* Share Product on Social Networks */}
+      {shareableNetworks && (
+        <div class="flex items-center gap-5 my-5">
+          <span class="text-xs text-base-300">Compartilhar</span>
+          <ul class="gap-2 flex items-center justify-between">
+            {shareableNetworks.map((network) => (
+              <li class="bg-base-300 w-8 h-8 rounded-full hover:bg-emphasis transition-all">
+                <a
+                  href={getShareLink({
+                    network,
+                    productName: isVariantOf?.name ?? name ?? "",
+                    url: url ?? "",
+                  })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center w-full h-full text-neutral-100"
+                >
+                  <Icon id={network} width={20} height={20} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       {/* Analytics Event */}
       <SendEventOnLoad
         event={{
@@ -232,93 +275,105 @@ const useStableImages = (product: ProductDetailsPage["product"]) => {
 function Details({
   page,
   variant,
-}: { page: ProductDetailsPage; variant: Variant }) {
-  const { product } = page;
+  shipmentPolitics,
+  shareableNetworks,
+}: {
+  page: ProductDetailsPage;
+  variant: Variant;
+  shipmentPolitics?: Props["shipmentPolitics"];
+  shareableNetworks?: Props["shareableNetworks"];
+}) {
+  const { product, breadcrumbList } = page;
+  const { offers } = product;
+  const {
+    price,
+    listPrice,
+  } = useOffer(offers);
   const id = `product-image-gallery:${useId()}`;
   const images = useStableImages(product);
 
   /**
    * Product slider variant
-   *
-   * Creates a three columned grid on destkop, one for the dots preview, one for the image slider and the other for product info
-   * On mobile, there's one single column with 3 rows. Note that the orders are different from desktop to mobile, that's why
-   * we rearrange each cell with col-start- directives
    */
   if (variant === "slider") {
     return (
       <>
+        {/* Breadcrumb */}
+        <Breadcrumb
+          itemListElement={breadcrumbList?.itemListElement.slice(0, -1)}
+        />
         <div
           id={id}
-          class="grid grid-cols-1 gap-4 sm:grid-cols-[max-content_40vw_40vw] sm:grid-rows-1 sm:justify-center"
+          class="flex flex-col lg:flex-row gap-4 lg:justify-center"
         >
-          {/* Image Slider */}
-          <div class="relative sm:col-start-2 sm:col-span-1 sm:row-start-1">
-            <Slider class="carousel carousel-center gap-6 w-screen sm:w-[40vw]">
-              {images.map((img, index) => (
-                <Slider.Item
-                  index={index}
-                  class="carousel-item w-full"
-                >
-                  <Image
-                    class="w-full"
-                    sizes="(max-width: 640px) 100vw, 40vw"
-                    style={{ aspectRatio: ASPECT_RATIO }}
-                    src={img.url!}
-                    alt={img.alternateName}
-                    width={WIDTH}
-                    height={HEIGHT}
-                    // Preload LCP image for better web vitals
-                    preload={index === 0}
-                    loading={index === 0 ? "eager" : "lazy"}
+          {/* Product Images */}
+          <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-4">
+            {/* Image Slider */}
+            <div class="relative xl:pl-32">
+              <Slider class="carousel carousel-center gap-6 box-border lg:box-content lg:w-[500px] xl:w-[600px] w-full px-4 lg:px-0">
+                {images.map((img, index) => (
+                  <Slider.Item
+                    index={index}
+                    class="carousel-item w-full"
+                  >
+                    <Image
+                      class="w-full rounded-[10px]"
+                      sizes="(max-width: 640px) 100vw, 40vw"
+                      style={{ aspectRatio: ASPECT_RATIO }}
+                      src={img.url!}
+                      alt={img.alternateName}
+                      width={WIDTH}
+                      height={HEIGHT}
+                      // Preload LCP image for better web vitals
+                      preload={index === 0}
+                      loading={index === 0 ? "eager" : "lazy"}
+                    />
+                  </Slider.Item>
+                ))}
+              </Slider>
+
+              {/* Discount tag */}
+              {price && listPrice && price !== listPrice
+                ? (
+                  <DiscountBadge
+                    price={price}
+                    listPrice={listPrice}
+                    className="lg:left-auto lg:right-0 left-4"
                   />
-                </Slider.Item>
-              ))}
-            </Slider>
+                )
+                : null}
+            </div>
 
-            <Slider.PrevButton
-              class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline"
-              disabled
-            >
-              <Icon size={20} id="ChevronLeft" strokeWidth={3} />
-            </Slider.PrevButton>
-
-            <Slider.NextButton
-              class="no-animation absolute right-2 top-1/2 btn btn-circle btn-outline"
-              disabled={images.length < 2}
-            >
-              <Icon size={20} id="ChevronRight" strokeWidth={3} />
-            </Slider.NextButton>
-
-            <div class="absolute top-2 right-2 bg-base-100 rounded-full">
-              <ProductImageZoom
-                images={images}
-                width={1280}
-                height={1280 * HEIGHT / WIDTH}
-              />
+            {/* Dots */}
+            <div class="lg:max-w-[500px] lg:self-start xl:self-start xl:left-0 xl:absolute xl:max-h-full xl:overflow-y-scroll xl:scrollbar-none">
+              <ul
+                class={`flex gap-4 overflow-auto lg:max-h-min lg:flex-1 lg:justify-start xl:flex-col`}
+              >
+                {images.map((img, index) => (
+                  <li class="min-w-[75px] lg:h-fit lg:min-w-[100px]">
+                    <Slider.Dot index={index}>
+                      <Image
+                        style={{ aspectRatio: ASPECT_RATIO }}
+                        class="border-neutral hover:border-secondary-focus group-disabled:border-secondary-focus border-2 rounded-[10px]"
+                        width={WIDTH / 5}
+                        height={HEIGHT / 5}
+                        src={img.url!}
+                        alt={img.alternateName}
+                      />
+                    </Slider.Dot>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
-          {/* Dots */}
-          <ul class="flex gap-2 sm:justify-start overflow-auto px-4 sm:px-0 sm:flex-col sm:col-start-1 sm:col-span-1 sm:row-start-1">
-            {images.map((img, index) => (
-              <li class="min-w-[63px] sm:min-w-[100px]">
-                <Slider.Dot index={index}>
-                  <Image
-                    style={{ aspectRatio: ASPECT_RATIO }}
-                    class="group-disabled:border-base-300 border rounded "
-                    width={63}
-                    height={87.5}
-                    src={img.url!}
-                    alt={img.alternateName}
-                  />
-                </Slider.Dot>
-              </li>
-            ))}
-          </ul>
-
           {/* Product Info */}
-          <div class="px-4 sm:pr-0 sm:pl-6 sm:col-start-3 sm:col-span-1 sm:row-start-1">
-            <ProductInfo page={page} />
+          <div class="w-full lg:pr-0 lg:pl-6">
+            <ProductInfo
+              page={page}
+              shipmentPolitics={shipmentPolitics}
+              shareableNetworks={shareableNetworks}
+            />
           </div>
         </div>
         <SliderJS rootId={id}></SliderJS>
@@ -333,11 +388,11 @@ function Details({
    * reached causing a scrollbar to be rendered.
    */
   return (
-    <div class="grid grid-cols-1 gap-4 sm:grid-cols-[50vw_25vw] sm:grid-rows-1 sm:justify-center">
+    <div class="grid grid-cols-1 gap-4 lg:grid-cols-[50vw_25vw] lg:grid-rows-1 lg:justify-center">
       {/* Image slider */}
       <ul class="carousel carousel-center gap-6">
         {[images[0], images[1] ?? images[0]].map((img, index) => (
-          <li class="carousel-item min-w-[100vw] sm:min-w-[24vw]">
+          <li class="carousel-item min-w-[100vw] lg:min-w-[24vw]">
             <Image
               sizes="(max-width: 640px) 100vw, 24vw"
               style={{ aspectRatio: ASPECT_RATIO }}
@@ -354,14 +409,17 @@ function Details({
       </ul>
 
       {/* Product Info */}
-      <div class="px-4 sm:pr-0 sm:pl-6">
+      <div class="px-4 lg:pr-0 lg:pl-6">
         <ProductInfo page={page} />
       </div>
     </div>
   );
 }
 
-function ProductDetails({ page, variant: maybeVar = "auto" }: Props) {
+function ProductDetails(
+  { page, variant: maybeVar = "auto", shipmentPolitics, shareableNetworks }:
+    Props,
+) {
   /**
    * Showcase the different product views we have on this template. In case there are less
    * than two images, render a front-back, otherwhise render a slider
@@ -374,8 +432,17 @@ function ProductDetails({ page, variant: maybeVar = "auto" }: Props) {
     : maybeVar;
 
   return (
-    <div class="container py-0 sm:py-10">
-      {page ? <Details page={page} variant={variant} /> : <NotFound />}
+    <div class="py-0 lg:pb-10">
+      {page
+        ? (
+          <Details
+            page={page}
+            variant={variant}
+            shipmentPolitics={shipmentPolitics}
+            shareableNetworks={shareableNetworks}
+          />
+        )
+        : <NotFound />}
     </div>
   );
 }

@@ -100,3 +100,32 @@
     --dot-progress: 100%
   }
 }
+
+.readmore {
+  @apply flex flex-col-reverse;
+}
+
+.readmore-label {
+  @apply text-emphasis uppercase cursor-pointer;
+}
+
+.readmore-content {
+  @apply line-clamp-6;
+}
+
+.readmore-toggle {
+  @apply hidden;
+}
+
+.readmore-toggle:checked ~ .readmore-content {
+  @apply line-clamp-none;
+}
+
+.readmore-toggle:checked ~ .readmore-label {
+  visibility: hidden;
+}
+
+.readmore-toggle:checked ~ .readmore-label::before {
+  content: "- Ler menos";
+  visibility: visible;
+}

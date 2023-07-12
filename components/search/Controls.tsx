@@ -1,54 +1,61 @@
-import Button from "$store/components/ui/Button.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
 import Filters from "$store/components/search/Filters.tsx";
 import Sort from "$store/components/search/Sort.tsx";
-import Modal from "$store/components/ui/Modal.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
+import Button from "$store/components/ui/Button.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
+import Modal from "$store/components/ui/Modal.tsx";
 import { useSignal } from "@preact/signals";
 import type { ProductListingPage } from "deco-sites/std/commerce/types.ts";
 
 type Props =
-  & Pick<ProductListingPage, "filters" | "breadcrumb" | "sortOptions">
+  & Pick<
+    ProductListingPage,
+    "filters" | "breadcrumb" | "sortOptions"
+  >
   & {
     displayFilter?: boolean;
   };
 
 function SearchControls(
-  { filters, breadcrumb, displayFilter, sortOptions }: Props,
+  { filters, displayFilter }: Props,
 ) {
   const open = useSignal(false);
 
   return (
-    <div class="flex flex-col justify-between mb-4 p-4 sm:mb-0 sm:p-0 sm:gap-4 sm:flex-row sm:h-[53px] sm:border-b sm:border-base-200">
-      <div class="flex flex-row items-center sm:p-0 mb-2">
-        <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
-      </div>
-
-      <div class="flex flex-row items-center justify-between border-b border-base-200 sm:gap-4 sm:border-none">
-        <Button
-          class={displayFilter ? "btn-ghost" : "btn-ghost sm:hidden"}
-          onClick={() => {
-            open.value = true;
-          }}
-        >
-          Filtrar
-          <Icon id="FilterList" width={16} height={16} />
-        </Button>
-        {sortOptions.length > 0 && <Sort sortOptions={sortOptions} />}
-      </div>
+    <>
+      <Button
+        class={`btn justify-between w-1/2 lg:w-48 btn-sm font-normal text-base-200 h-[34px] border-2 border-base-200 bg-white hover:bg-white ${
+          displayFilter ? "" : "lg:hidden"
+        }`}
+        onClick={() => {
+          open.value = true;
+        }}
+      >
+        Filtrar
+        <Icon
+          id="Plus"
+          size={20}
+          strokeWidth={2}
+          class="text-secondary-focus"
+        />
+      </Button>
 
       <Modal
+        showHeader
+        class="lg:w-[20%]"
         loading="lazy"
         title="Filtrar"
-        mode="sidebar-right"
+        mode="sidebar-left"
         open={open.value}
         onClose={() => {
           open.value = false;
         }}
       >
-        <Filters filters={filters} />
+        <div class="p-8 py-2">
+          <Filters filters={filters} />
+        </div>
       </Modal>
-    </div>
+    </>
   );
 }
 
