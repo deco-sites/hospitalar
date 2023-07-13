@@ -8619,6 +8619,11 @@
                   },
                   {
                     "type": "string",
+                    "const": "LogoFooter",
+                    "default": "LogoFooter"
+                  },
+                  {
+                    "type": "string",
                     "const": "Truck",
                     "default": "Truck"
                   },
@@ -9723,6 +9728,11 @@
               "type": "string",
               "const": "Logo",
               "default": "Logo"
+            },
+            {
+              "type": "string",
+              "const": "LogoFooter",
+              "default": "LogoFooter"
             },
             {
               "type": "string",
@@ -11937,6 +11947,11 @@
                           },
                           {
                             "type": "string",
+                            "const": "LogoFooter",
+                            "default": "LogoFooter"
+                          },
+                          {
+                            "type": "string",
                             "const": "Truck",
                             "default": "Truck"
                           },
@@ -12253,6 +12268,11 @@
                               "type": "string",
                               "const": "Logo",
                               "default": "Logo"
+                            },
+                            {
+                              "type": "string",
+                              "const": "LogoFooter",
+                              "default": "LogoFooter"
                             },
                             {
                               "type": "string",
@@ -12764,6 +12784,11 @@
               "type": "string",
               "const": "Logo",
               "default": "Logo"
+            },
+            {
+              "type": "string",
+              "const": "LogoFooter",
+              "default": "LogoFooter"
             },
             {
               "type": "string",
