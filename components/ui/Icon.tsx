@@ -42,6 +42,7 @@ export type AvailableIcons =
   | "MapPin"
   | "Phone"
   | "Logo"
+  | "LogoFooter"
   | "Truck"
   | "Discount"
   | "Return"
