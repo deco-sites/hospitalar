@@ -85,18 +85,24 @@ function TopNavBar({ alerts = [], interval = 5 }: Props) {
       </div>
 
       {/*  desktop version */}
-      <div class="h-7 max-lg:hidden">
-        <div class="flex justify-center gap-28">
-          {alerts.map((alert) => (
-            <div class="flex items-center">
-              <TipItem {...alert} />
-              <span
-                class="text-xs h-[25px] flex items-center ml-3"
-                style={{ color: alert.textColor }}
-              >
-                {alert.textAlert}
-              </span>
-            </div>
+      <div class="h-[34px] max-lg:hidden">
+        <div class="flex justify-center items-center gap-28">
+          {alerts.map((alert, index) => (
+            <>
+              <div class="flex items-center">
+                <TipItem {...alert} />
+                <span
+                  class="text-sm h-[34px] flex items-center ml-3"
+                  style={{ color: alert.textColor }}
+                >
+                  {alert.textAlert}
+                </span>
+              </div>
+              {index < alerts.length - 1 && (
+                <div class="border border-r-[#2D386E] h-3">
+                </div>
+              )}
+            </>
           ))}
         </div>
       </div>

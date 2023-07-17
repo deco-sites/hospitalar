@@ -108,6 +108,7 @@
               "deco-sites/hospitalar/sections/DesignSystem/DesignSystem.tsx",
               "deco-sites/hospitalar/sections/Footer/Footer.tsx",
               "deco-sites/hospitalar/sections/Header/HeaderLayout.tsx",
+              "deco-sites/hospitalar/sections/Header/HeaderNavMenu.tsx",
               "deco-sites/hospitalar/sections/Header/TopNavBar.tsx",
               "deco-sites/hospitalar/sections/Images/BannerGrid.tsx",
               "deco-sites/hospitalar/sections/Images/Carousel.tsx",
@@ -8691,6 +8692,11 @@
                     "type": "string",
                     "const": "ArrowRight",
                     "default": "ArrowRight"
+                  },
+                  {
+                    "type": "string",
+                    "const": "AllCategories",
+                    "default": "AllCategories"
                   }
                 ],
                 "type": "string",
@@ -9803,6 +9809,11 @@
               "type": "string",
               "const": "ArrowRight",
               "default": "ArrowRight"
+            },
+            {
+              "type": "string",
+              "const": "AllCategories",
+              "default": "AllCategories"
             }
           ],
           "type": "string",
@@ -10047,66 +10058,6 @@
         "openingHours"
       ],
       "title": "deco-sites/hospitalar/components/footer/Footer.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL05hdkl0ZW0udHN4@INavItem": {
-      "type": "object",
-      "properties": {
-        "label": {
-          "type": "string",
-          "title": "Label"
-        },
-        "href": {
-          "type": "string",
-          "title": "Href"
-        },
-        "highlighted": {
-          "type": [
-            "boolean",
-            "null"
-          ],
-          "title": "Highlighted"
-        },
-        "children": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL05hdkl0ZW0udHN4@INavItem"
-          },
-          "title": "Children"
-        },
-        "image": {
-          "type": "object",
-          "properties": {
-            "src": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Src"
-            },
-            "alt": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Alt"
-            }
-          },
-          "required": [],
-          "title": "Image"
-        }
-      },
-      "required": [
-        "label",
-        "href"
-      ],
-      "title": "INavItem"
-    },
-    "ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL05hdkl0ZW0udHN4@INavItem[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL05hdkl0ZW0udHN4@INavItem"
-      },
-      "title": "INavItem[]"
     },
     "ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvbWluaWNhcnQvQ2FydC50c3g=@ICartProps": {
       "type": "object",
@@ -10559,11 +10510,6 @@
     "ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL0hlYWRlckxheW91dC50c3g=@Props": {
       "type": "object",
       "properties": {
-        "navItems": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL05hdkl0ZW0udHN4@INavItem[]",
-          "title": "Items do menu",
-          "description": "Items do menu desktop e mobile"
-        },
         "minicart": {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvbWluaWNhcnQvQ2FydC50c3g=@ICartProps",
           "title": "Minicart settings"
@@ -10578,6 +10524,78 @@
         "searchbar"
       ],
       "title": "deco-sites/hospitalar/components/header/HeaderLayout.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL05hdkl0ZW0udHN4@INavItem": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        },
+        "highlighted": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Highlighted"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL05hdkl0ZW0udHN4@INavItem"
+          },
+          "title": "Children"
+        },
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Src"
+            },
+            "alt": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Alt"
+            }
+          },
+          "required": [],
+          "title": "Image"
+        }
+      },
+      "required": [
+        "label",
+        "href"
+      ],
+      "title": "INavItem"
+    },
+    "ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL05hdkl0ZW0udHN4@INavItem[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL05hdkl0ZW0udHN4@INavItem"
+      },
+      "title": "INavItem[]"
+    },
+    "ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL0hlYWRlck5hdk1lbnUudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "navItems": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL05hdkl0ZW0udHN4@INavItem[]",
+          "title": "Items do menu",
+          "description": "Items do menu desktop e mobile"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/hospitalar/components/header/HeaderNavMenu.tsx@Props"
     },
     "ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL1RvcE5hdkJhci50c3g=@Alerts": {
       "type": "object",
@@ -12019,6 +12037,11 @@
                             "type": "string",
                             "const": "ArrowRight",
                             "default": "ArrowRight"
+                          },
+                          {
+                            "type": "string",
+                            "const": "AllCategories",
+                            "default": "AllCategories"
                           }
                         ],
                         "type": "string"
@@ -12343,6 +12366,11 @@
                               "type": "string",
                               "const": "ArrowRight",
                               "default": "ArrowRight"
+                            },
+                            {
+                              "type": "string",
+                              "const": "AllCategories",
+                              "default": "AllCategories"
                             }
                           ],
                           "type": "string"
@@ -12859,6 +12887,11 @@
               "type": "string",
               "const": "ArrowRight",
               "default": "ArrowRight"
+            },
+            {
+              "type": "string",
+              "const": "AllCategories",
+              "default": "AllCategories"
             }
           ],
           "type": "string",
@@ -16634,6 +16667,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9ob3NwaXRhbGFyL3NlY3Rpb25zL0hlYWRlci9IZWFkZXJOYXZNZW51LnRzeA==": {
+      "title": "deco-sites/hospitalar/sections/Header/HeaderNavMenu.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ob3NwaXRhbGFyL2NvbXBvbmVudHMvaGVhZGVyL0hlYWRlck5hdk1lbnUudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/hospitalar/sections/Header/HeaderNavMenu.tsx"
+          ],
+          "default": "deco-sites/hospitalar/sections/Header/HeaderNavMenu.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9ob3NwaXRhbGFyL3NlY3Rpb25zL0hlYWRlci9Ub3BOYXZCYXIudHN4": {
       "title": "deco-sites/hospitalar/sections/Header/TopNavBar.tsx",
       "type": "object",
@@ -18412,6 +18466,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9ob3NwaXRhbGFyL3NlY3Rpb25zL0hlYWRlci9IZWFkZXJMYXlvdXQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9ob3NwaXRhbGFyL3NlY3Rpb25zL0hlYWRlci9IZWFkZXJOYXZNZW51LnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9ob3NwaXRhbGFyL3NlY3Rpb25zL0hlYWRlci9Ub3BOYXZCYXIudHN4"

@@ -18,9 +18,9 @@ function SearchButton() {
       <Icon
         class="text-base-content"
         id="MagnifyingGlass"
-        width={20}
-        height={20}
-        strokeWidth={0.1}
+        width={24}
+        height={25}
+        strokeWidth={1}
       />
     </Button>
   );
@@ -77,7 +77,7 @@ function CartButton() {
     >
       <div class="indicator">
         {totalItems && (
-          <span class="indicator-item text-base-100 bg-emphasis w-4 h-4 rounded-full text-xs left-4 top-3 font-bold">
+          <span class="indicator-item text-base-100 bg-secondary w-4 h-4 rounded-t-full rounded-r-full text-xs left-3 top-0 font-bold">
             {totalItems > 9 ? "9+" : totalItems}
           </span>
         )}
@@ -85,7 +85,7 @@ function CartButton() {
           class="text-base-content"
           id="ShoppingCart"
           width={24}
-          height={24}
+          height={25}
           strokeWidth={1}
         />
       </div>

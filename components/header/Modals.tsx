@@ -12,7 +12,7 @@ const Menu = lazy(() => import("$store/components/header/Menu.tsx"));
 const Cart = lazy(() => import("$store/components/minicart/Cart.tsx"));
 
 interface Props {
-  menu: MenuProps;
+  menu?: MenuProps;
   minicart?: ICartProps;
 }
 
@@ -27,38 +27,42 @@ function Modals({ menu, minicart }: Props) {
 
   return (
     <>
-      <Modal
-        title="Entrar"
-        menuIcon="User"
-        mode="sidebar-left"
-        loading="lazy"
-        id="menu-modal"
-        showHeader={false}
-        open={displayMenu.value}
-        onClose={() => {}}
-        class="backdrop:bg-base-content backdrop:opacity-70"
-      >
-        <Suspense fallback={fallback}>
-          <Menu {...menu} />
-        </Suspense>
-      </Modal>
+      {menu && (
+        <Modal
+          title="Entrar"
+          menuIcon="User"
+          mode="sidebar-left"
+          loading="lazy"
+          id="menu-modal"
+          showHeader={false}
+          open={displayMenu.value}
+          onClose={() => {}}
+          class="backdrop:bg-base-content backdrop:opacity-70"
+        >
+          <Suspense fallback={fallback}>
+            <Menu {...menu} />
+          </Suspense>
+        </Modal>
+      )}
 
-      <Modal
-        class="ml-auto"
-        title="Meu carrinho"
-        mode="sidebar-right"
-        showHeader
-        id="minicart-modal"
-        loading="lazy"
-        open={displayCart.value}
-        onClose={() => {
-          displayCart.value = false;
-        }}
-      >
-        <Suspense fallback={<Loading />}>
-          <Cart {...minicart as ICartProps} />
-        </Suspense>
-      </Modal>
+      {minicart && (
+        <Modal
+          class="ml-auto"
+          title="Meu carrinho"
+          mode="sidebar-right"
+          showHeader
+          id="minicart-modal"
+          loading="lazy"
+          open={displayCart.value}
+          onClose={() => {
+            displayCart.value = false;
+          }}
+        >
+          <Suspense fallback={<Loading />}>
+            <Cart {...minicart as ICartProps} />
+          </Suspense>
+        </Modal>
+      )}
     </>
   );
 }
