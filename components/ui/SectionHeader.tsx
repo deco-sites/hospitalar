@@ -31,7 +31,9 @@ function Header(props: Props) {
                   class={`
                   leading-6 lg:leading-8
                   ${
-                    props.color === "primary" ? "text-primary-content" : "text-neutral"
+                    props.color === "primary"
+                      ? "text-primary-content"
+                      : "text-neutral"
                   }
                   ${props.fontSize === "Normal" ? "lg:text-xl" : "lg:text-2xl"}
                 `}
