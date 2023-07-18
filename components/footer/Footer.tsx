@@ -112,19 +112,19 @@ function Footer(
               <SocialNetWorks socialItems={socialNetWorks} />
             )}
             <div class="flex items-center gap-2 mt-5">
-              <Icon id="Phone" width={20} height={20} class="text-emphasis" />
-              <span class="text-emphasis text-xs font-bold text-left">
+              <Icon id="Phone" width={20} height={20} class="text-primary" />
+              <span class="text-primary text-xs font-bold text-left">
                 {phone}
               </span>
             </div>
             <div class="flex items-center gap-2 mt-3">
-              <Icon id="Email" width={20} height={20} class="text-emphasis" />
-              <span class="text-emphasis text-xs font-bold text-left">
+              <Icon id="Email" width={20} height={20} class="text-primary" />
+              <span class="text-primary text-xs font-bold text-left">
                 {email}
               </span>
             </div>
             <span
-              class="text-base-300 text-left text-xs font-normal mt-3 block leading-6"
+              class="text-base-800 text-left text-xs font-normal mt-3 block leading-6"
               dangerouslySetInnerHTML={{
                 __html: openingHours,
               }}

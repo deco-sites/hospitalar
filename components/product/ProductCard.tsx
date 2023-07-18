@@ -120,7 +120,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
   ));
 
   const addToCartButtonClassNames = (variant: string | undefined) =>
-    `lg:text-sm font-medium text-xs whitespace-nowrap m-auto btn max-md:min-h-[2.25rem] max-md:h-[2.25rem] btn-${
+    `lg:text-sm font-medium text-xs whitespace-nowrap btn max-md:min-h-[2.25rem] max-md:h-[2.25rem] btn-${
       BUTTON_VARIANTS[variant ?? "primary"]
     }`;
 
@@ -178,9 +178,11 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
 
   return (
     <div
-      class={`card card-compact opacity-100 bg-opacity-100 group w-full ${
+      class={`card card-compact opacity-100 bg-opacity-100 group w-full p-5 ${
         align === "center" ? "text-center" : "text-start"
-      } ${l?.onMouseOver?.showCardShadow ? "lg:hover:card-bordered" : ""}`}
+      } ${
+        l?.onMouseOver?.showCardShadow ? "lg:hover:shadow-lg shadow-black" : ""
+      }`}
       data-deco="view-product"
       id={`product-card-${productID}`}
       {...sendEventOnClick(clickEvent)}
@@ -283,7 +285,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               {l?.hide.productName
                 ? ""
                 : (
-                  <h2 class="truncate text-xs font-bold text-base-content">
+                  <h2 class="truncate text-xs text-gray-800">
                     {isVariantOf?.name || name}
                   </h2>
                 )}
@@ -310,14 +312,14 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               >
                 {formatPrice(listPrice, offers!.priceCurrency!)}
               </p>
-              <p class="text-emphasis text-sm font-bold">
+              <p class="text-primary text-sm font-bold">
                 {formatPrice(price, offers!.priceCurrency!)}
               </p>
             </div>
             {l?.hide.installments
               ? ""
               : (
-                <div class="text-xs font-normal text-base-content mt-[5px]">
+                <div class="text-xs font-normal text-gray-800 mt-[5px]">
                   ou {installment?.billingDuration}x de ${formatPrice(
                     installment?.billingIncrement,
                     offers!.priceCurrency!,

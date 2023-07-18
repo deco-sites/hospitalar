@@ -75,7 +75,7 @@ function ProductShelf({
         id={id}
         class="grid grid-cols-[48px_1fr_48px] px-0"
       >
-        <Slider class="carousel carousel-start gap-6 col-span-full row-start-2 row-end-5">
+        <Slider class="carousel carousel-start gap-6 col-span-full row-start-2 row-end-5 py-2">
           {products?.map((product, index) => (
             <Slider.Item
               index={index}

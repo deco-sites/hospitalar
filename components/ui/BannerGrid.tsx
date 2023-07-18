@@ -362,7 +362,7 @@ export default function BannnerGrid({
                   preload=""
                 />
                 <div
-                  class={`max-lg:hidden transition-opacity duration-200 ease w-full h-full z-10 absolute top-0 left-0 opacity-0 group-hover:opacity-60 
+                  class={`max-lg:hidden transition-opacity duration-200 ease w-full h-full z-10 absolute top-0 left-0 opacity-0 
                  ${
                     CONTENT_COLORS_BACKGROUND[
                       hoverBackgroundColor ?? "primary"
