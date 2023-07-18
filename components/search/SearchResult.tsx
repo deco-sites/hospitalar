@@ -36,8 +36,8 @@ function Result({
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
 
   const productsFound = (
-    <h6 class="text-secondary font-medium">
-      {pageInfo.records} Produtos encontrados
+    <h6 class="text-primary font-medium">
+      Produtos encontrados: <strong>{pageInfo.records} resultados</strong>
     </h6>
   );
 

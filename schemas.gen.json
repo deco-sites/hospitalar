@@ -11040,7 +11040,10 @@
           "title": "Label"
         },
         "href": {
-          "type": "string",
+          "type": [
+            "string",
+            "null"
+          ],
           "title": "Href"
         },
         "highlighted": {
@@ -11057,31 +11060,35 @@
           },
           "title": "Children"
         },
-        "image": {
-          "type": "object",
-          "properties": {
-            "src": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Src"
+        "variant": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "CommonChild",
+              "default": "CommonChild"
             },
-            "alt": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Alt"
+            {
+              "type": "string",
+              "const": "AllCategories",
+              "default": "AllCategories"
+            },
+            {
+              "type": "string",
+              "const": "WithBrands",
+              "default": "WithBrands"
+            },
+            {
+              "type": "string",
+              "const": "Other",
+              "default": "Other"
             }
-          },
-          "required": [],
-          "title": "Image"
+          ],
+          "type": "string",
+          "title": "Variant"
         }
       },
       "required": [
-        "label",
-        "href"
+        "label"
       ],
       "title": "INavItem"
     },

@@ -7,7 +7,6 @@ import type {
   FilterToggleValue,
   ProductListingPage,
 } from "deco-sites/std/commerce/types.ts";
-import Icon from "$store/components/ui/Icon.tsx";
 
 interface Props {
   filters: ProductListingPage["filters"];
@@ -21,11 +20,13 @@ function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
     <a href={`${url}&page=1`} class="flex items-center gap-2">
       <div
         aria-checked={selected}
-        class="checkbox aria-checked:bg-none aria-checked:bg-primary rounded-md"
+        class="checkbox aria-checked:bg-none rounded-none h-4 w-4"
       >
-        {selected && <Icon id="checkIcon" width={42} height={42} />}
+        {selected && (
+          <div class="bg-primary w-full h-full border-white border-2" />
+        )}
       </div>
-      <span class="text-sm">{label}</span>
+      <span class="text-sm text-[#4A4B51]">{label}</span>
       {quantity > 0 && <span class="text-sm text-base-300">({quantity})</span>}
     </a>
   );

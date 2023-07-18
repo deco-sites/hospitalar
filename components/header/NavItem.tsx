@@ -3,10 +3,10 @@ import Icon from "$store/components/ui/Icon.tsx";
 
 export interface INavItem {
   label: string;
-  href: string;
+  href?: string;
   highlighted?: boolean;
   children?: INavItem[];
-  image?: { src?: string; alt?: string };
+  variant?: "CommonChild" | "AllCategories" | "WithBrands" | "Other";
 }
 
 function splitNatItems(children: INavItem[], number = 6) {
@@ -25,21 +25,21 @@ function NavItemDropDown({ elements }: { elements?: INavItem[] }) {
     return <span />;
   }
 
-  const navItemsCol = splitNatItems(elements, 6);
+  const navItemsCol = splitNatItems(elements, 16);
 
   return (
     <div
-      class="absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 w-screen bg-opacity-90"
+      class="absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 w-screen shadow-md"
       style={{ top: "0px", left: "0px", marginTop: headerHeight }}
     >
-      <div class="max-w-5xl w-full pt-14 pb-12 m-auto px-5 flex items-start justify-start gap-16">
+      <div class="container w-full pt-5 pb-5 m-auto px-5 flex items-start justify-start gap-16">
         {navItemsCol.map((column) => (
-          <ul class="flex items-start justify-start gap-2 flex-col">
+          <ul class="flex items-start justify-start flex-col">
             {column.map((node) => (
               <li class="mb-3">
                 <a
-                  class="text-sm text-base-content hover:text-emphasis transition-all duration-300"
-                  href={node.href}
+                  class="text-sm text-base-content hover:font-bold hover:underline transition-all duration-300"
+                  href={node.href || ""}
                 >
                   <span>{node.label}</span>
                 </a>
