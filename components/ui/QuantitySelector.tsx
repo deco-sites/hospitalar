@@ -34,13 +34,13 @@ function QuantitySelector({ onChange, quantity, disabled, loading }: Props) {
     <div class="form-control">
       <div class="input-group items-center">
         <Button
-          class="bg-transparent border-0 p-0 border-none"
+          class="max-lg:bg-gray-300 !rounded-full bg-transparent border-0 w-6 h-6 p-0 border-none"
           onClick={decrement}
           disabled={disabled}
           loading={loading}
         >
           <Icon
-            class="btn-primary text-secondary-focus hover:text-neutral-100 transition-all w-6 h-6 rounded-full"
+            class="lg:btn-accent max-lg:m-auto transition-all rounded-full"
             id="Minus"
             width={16}
             height={16}
@@ -58,13 +58,13 @@ function QuantitySelector({ onChange, quantity, disabled, loading }: Props) {
           onBlur={(e) => onChange?.(e.currentTarget.valueAsNumber)}
         />
         <Button
-          class="bg-transparent border-0 p-0 border-none"
+          class="max-lg:bg-gray-300 !rounded-full bg-transparent border-0 w-6 h-6 p-0 border-none"
           onClick={increment}
           disabled={disabled}
           loading={loading}
         >
           <Icon
-            class="btn-primary text-secondary-focus hover:text-neutral-100 transition-all w-6 h-6 rounded-full"
+            class="lg:btn-accent max-lg:m-auto transition-all rounded-full"
             id="Plus"
             width={16}
             height={16}

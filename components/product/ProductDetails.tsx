@@ -92,7 +92,7 @@ function ProductInfo(
         </h1>
         <div>
           <span class="text-sm text-base-300">
-            Código: {gtin}
+            Referência: {gtin}
           </span>
         </div>
       </div>
@@ -104,7 +104,7 @@ function ProductInfo(
               {formatPrice(listPrice, offers!.priceCurrency!)}
             </span>
           )}
-          <span class="font-medium text-3xl text-emphasis">
+          <span class="font-medium text-3xl text-primary">
             {formatPrice(price, offers!.priceCurrency!)}
           </span>
         </div>
@@ -171,7 +171,7 @@ function ProductInfo(
           <span class="text-xs text-base-300">Compartilhar</span>
           <ul class="gap-2 flex items-center justify-between">
             {shareableNetworks.map((network) => (
-              <li class="bg-base-300 w-8 h-8 rounded-full hover:bg-emphasis transition-all">
+              <li class="bg-secondary w-8 h-8 rounded-full hover:bg-primary group transition-all">
                 <a
                   href={getShareLink({
                     network,
@@ -180,7 +180,7 @@ function ProductInfo(
                   })}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex items-center justify-center w-full h-full text-neutral-100"
+                  class="flex items-center justify-center w-full h-full group-hover:text-white text-primary"
                 >
                   <Icon id={network} width={20} height={20} />
                 </a>

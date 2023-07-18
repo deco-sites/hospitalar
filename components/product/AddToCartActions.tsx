@@ -32,7 +32,8 @@ export default function AddToCartActions(
         name={productName}
         productGroupId={productGroupID}
         quantity={quantity}
-        classes="btn-primary btn-block transition-all max-w-sm hover:text-neutral-100 font-medium text-secondary-focus"
+        label="Comprar agora"
+        classes="btn-primary btn-block transition-all max-w-sm font-medium"
       />
     </div>
   );
