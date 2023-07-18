@@ -8695,6 +8695,11 @@
                   },
                   {
                     "type": "string",
+                    "const": "ArrowLeft",
+                    "default": "ArrowLeft"
+                  },
+                  {
+                    "type": "string",
                     "const": "AllCategories",
                     "default": "AllCategories"
                   }
@@ -9809,6 +9814,11 @@
               "type": "string",
               "const": "ArrowRight",
               "default": "ArrowRight"
+            },
+            {
+              "type": "string",
+              "const": "ArrowLeft",
+              "default": "ArrowLeft"
             },
             {
               "type": "string",
@@ -12040,6 +12050,11 @@
                           },
                           {
                             "type": "string",
+                            "const": "ArrowLeft",
+                            "default": "ArrowLeft"
+                          },
+                          {
+                            "type": "string",
                             "const": "AllCategories",
                             "default": "AllCategories"
                           }
@@ -12366,6 +12381,11 @@
                               "type": "string",
                               "const": "ArrowRight",
                               "default": "ArrowRight"
+                            },
+                            {
+                              "type": "string",
+                              "const": "ArrowLeft",
+                              "default": "ArrowLeft"
                             },
                             {
                               "type": "string",
@@ -12890,6 +12910,11 @@
             },
             {
               "type": "string",
+              "const": "ArrowLeft",
+              "default": "ArrowLeft"
+            },
+            {
+              "type": "string",
               "const": "AllCategories",
               "default": "AllCategories"
             }
@@ -13339,6 +13364,22 @@
               ],
               "type": "string",
               "title": "Headerfont Size"
+            },
+            "color": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "const": "primary",
+                  "default": "primary"
+                },
+                {
+                  "type": "string",
+                  "const": "secondary",
+                  "default": "secondary"
+                }
+              ],
+              "type": "string",
+              "title": "Color"
             },
             "itemsPerPage": {
               "type": "array",

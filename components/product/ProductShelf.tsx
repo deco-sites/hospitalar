@@ -26,6 +26,7 @@ export interface Props {
   layout?: {
     headerAlignment?: "center" | "left";
     headerfontSize?: "Normal" | "Large";
+    color?: "primary" | "secondary";
     itemsPerPage?: {
       screenWidth?: number;
       itemsQuantity?: number;
@@ -51,12 +52,13 @@ function ProductShelf({
 
   return (
     <div class="w-full py-8 flex flex-col gap-12 lg:gap-7 lg:py-10">
-      <div class="flex items-center justify-between relative pb-3 border-b border-neutral-100">
+      <div class="flex items-center justify-between relative pb-3">
         <Header
           title={title || ""}
           description=""
           fontSize={layout?.headerfontSize || "Large"}
           alignment={layout?.headerAlignment || "center"}
+          color={layout?.color || "primary"}
         />
         {seeMore
           ? (

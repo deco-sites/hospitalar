@@ -44,7 +44,7 @@ export default function ImageGallery(props: Props) {
           href={item.href}
           class="block relative overflow-hidden rounded-xl w-full m-auto group"
         >
-          <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-30 max-sm:text-7xl text-5xl lg:text-7xl font-medium text-base-100 whitespace-nowrap ">
+          <span class="absolute bottom-0 mb-[30px] bg-primary rounded-full px-10 py-[17px] left-1/2 -translate-x-1/2 z-30 max-sm:text-[19px] text-[19px] lg:text-[19px] font-bold text-base-100 whitespace-nowrap">
             {item.title}
           </span>
           {item.preload && (
@@ -59,7 +59,7 @@ export default function ImageGallery(props: Props) {
           <img
             preload={undefined}
             loading={item.preload ? "eager" : "lazy"}
-            class="w-full h-full scale-105 group-hover:scale-100 transition-all duration-1000"
+            class="w-full h-full scale-100 group-hover:scale-125 transition-all duration-700"
             src={item.image}
             alt={item.alt}
             decoding="async"

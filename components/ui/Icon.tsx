@@ -57,6 +57,7 @@ export type AvailableIcons =
   | "checkIcon"
   | "SearchBar"
   | "ArrowRight"
+  | "ArrowLeft"
   | "AllCategories";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
