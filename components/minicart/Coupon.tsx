@@ -25,17 +25,17 @@ function Coupon() {
   };
 
   return (
-    <div class="flex justify-between items-center px-4 lg:px-0 mb-6 w-full gap-4">
-      <span class="max-lg:hidden text-sm text-base-300">Desconto</span>
-      <form class="flex gap-2 w-full justify-between lg:justify-end">
+    <div class="flex justify-between flex-col items-start px-0 mb-6 w-full gap-4">
+      <span class="text-sm text-primary font-bold">Cupom de desconto</span>
+      <form class="flex gap-2 w-full justify-between lg:justify-start">
         <input
           id="coupon"
           name="coupon"
           ref={ref}
-          class="border-2 border-neutral outline-none rounded-full placeholder-neutral p-3 h-9 text-xs w-[75%]"
+          class="border-2 border-neutral outline-none rounded-full placeholder-neutral p-3 h-9 text-xs w-full"
           type="text"
           value={coupon ?? ""}
-          placeholder={"Cupom"}
+          placeholder={"Digite seu cupom de desconto aqui"}
         />
         <Button
           class="w-14 h-9 border-base-content text-base-content font-medium text-xs"

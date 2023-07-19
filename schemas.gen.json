@@ -8044,24 +8044,6 @@
             "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvcGFja3MvdnRleC90eXBlcy50cw==@SKU"
           },
           "title": "Items"
-        },
-        "shipmentPolitics": {
-          "type": "object",
-          "properties": {
-            "label": {
-              "type": "string",
-              "title": "Label"
-            },
-            "link": {
-              "type": "string",
-              "title": "Link"
-            }
-          },
-          "required": [
-            "label",
-            "link"
-          ],
-          "title": "Shipment Politics"
         }
       },
       "required": [
@@ -9142,6 +9124,16 @@
                     "type": "string",
                     "const": "LogoSeo",
                     "default": "LogoSeo"
+                  },
+                  {
+                    "type": "string",
+                    "const": "ReturnArrow",
+                    "default": "ReturnArrow"
+                  },
+                  {
+                    "type": "string",
+                    "const": "SadFace",
+                    "default": "SadFace"
                   },
                   {
                     "type": "string",
@@ -10316,6 +10308,16 @@
               "type": "string",
               "const": "LogoSeo",
               "default": "LogoSeo"
+            },
+            {
+              "type": "string",
+              "const": "ReturnArrow",
+              "default": "ReturnArrow"
+            },
+            {
+              "type": "string",
+              "const": "SadFace",
+              "default": "SadFace"
             },
             {
               "type": "string",
@@ -12572,6 +12574,16 @@
                           },
                           {
                             "type": "string",
+                            "const": "ReturnArrow",
+                            "default": "ReturnArrow"
+                          },
+                          {
+                            "type": "string",
+                            "const": "SadFace",
+                            "default": "SadFace"
+                          },
+                          {
+                            "type": "string",
                             "const": "AllCategories",
                             "default": "AllCategories"
                           }
@@ -12908,6 +12920,16 @@
                               "type": "string",
                               "const": "LogoSeo",
                               "default": "LogoSeo"
+                            },
+                            {
+                              "type": "string",
+                              "const": "ReturnArrow",
+                              "default": "ReturnArrow"
+                            },
+                            {
+                              "type": "string",
+                              "const": "SadFace",
+                              "default": "SadFace"
                             },
                             {
                               "type": "string",
@@ -13439,6 +13461,16 @@
               "type": "string",
               "const": "LogoSeo",
               "default": "LogoSeo"
+            },
+            {
+              "type": "string",
+              "const": "ReturnArrow",
+              "default": "ReturnArrow"
+            },
+            {
+              "type": "string",
+              "const": "SadFace",
+              "default": "SadFace"
             },
             {
               "type": "string",

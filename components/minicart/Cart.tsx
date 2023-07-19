@@ -5,6 +5,7 @@ import { formatPrice } from "$store/sdk/format.ts";
 import { useCart } from "deco-sites/std/packs/vtex/hooks/useCart.ts";
 import CartItem from "./CartItem.tsx";
 import Coupon from "./Coupon.tsx";
+import { useUI } from "$store/sdk/useUI.ts";
 
 export type ButtonVariant =
   | "primary"
@@ -68,6 +69,7 @@ function Totalizer(
 }
 
 function Cart(props: ICartProps) {
+  const { displayCart } = useUI();
   const {
     desktop: {
       buttonMode,
@@ -95,11 +97,14 @@ function Cart(props: ICartProps) {
   // Empty State
   if (isCartEmpty) {
     return (
-      <div class="flex flex-col justify-center items-center h-full gap-6">
-        <Icon class="text-emphasis" id="ShoppingCart" width={30} height={30} />
-        <span class="font-medium text-sm text-base-300 lg:text-base">
-          Seu carrinho esta vazio
+      <div class="flex flex-col justify-center items-center h-full">
+        <Icon id="SadFace" width={70} height={70} />
+        <span class="font-medium text-[19px] text-primary mt-6 lg:text-base">
+          Sua sacola esta vazia
         </span>
+        <p class="text-sm font-normal max-w-[260px] text-center text-base-300">
+          Você ainda não adicionou nenhuma peça na sua sacola.
+        </p>
       </div>
     );
   }
@@ -113,7 +118,7 @@ function Cart(props: ICartProps) {
     <>
       <ul
         role="list"
-        class="mx-5 my-3 flex-grow overflow-y-auto flex flex-col gap-6 lg:mx-10"
+        class="px-5 max-h-[calc(100vh-390px)] my-3 flex-grow overflow-y-auto flex flex-col gap-6 lg:px-10"
       >
         {cart.value.items.map((_, index) => (
           <li key={index}>
@@ -140,61 +145,32 @@ function Cart(props: ICartProps) {
         {total && (
           <div class="flex flex-col justify-end items-end gap-2 py-3 mx-5 border-solid border-b-[1px] border-base-200 lg:mx-10 w-full">
             <div class="flex justify-between items-center w-full font-bold text-xs text-base-content lg:text-sm">
-              <span class="lg:text-base-content text-emphasis max-md:text-xs">
+              <span class="text-primary max-md:text-xs">
                 Total
               </span>
-              <span class="lg:text-base-content text-emphasis max-md:text-xs">
+              <span class="text-primary max-md:text-xs">
                 {formatPrice(total / 100, currencyCode!, locale)}
               </span>
             </div>
           </div>
         )}
-        <div class="py-4 lg:hidden w-full">
-          <a class="justify-center w-full block" href="/checkout">
-            <Button
-              data-deco="buy-button"
-              class={`h-9 font-medium text-xs border-none w-full btn-${
-                BUTTON_VARIANTS[buttonModeMobile ?? "primary"]
-              }`}
-              disabled={loading.value || cart.value.items.length === 0}
-              onClick={() => {
-                sendEvent({
-                  name: "begin_checkout",
-                  params: {
-                    currency: cart.value ? currencyCode! : "",
-                    value: (total - discounts) / 100,
-                    coupon: cart.value?.marketingData?.coupon ?? undefined,
-
-                    items: cart.value
-                      ? mapItemsToAnalyticsItems(cart.value)
-                      : [],
-                  },
-                });
-              }}
-            >
-              Fechar Pedido
-            </Button>
-          </a>
-        </div>
-        <div class="p-4 max-lg:hidden lg:flex lg:justify-between lg:mx-10 lg:px-0 w-full gap-2 xl:gap-5 lg:flex-col xl:flex-row">
-          {!showClearButton && (
-            <Button
-              data-deco="buy-button"
-              class="h-9 btn-outline lg:h-10 whitespace-nowrap px-6"
-              disabled={loading.value || cart.value.items.length === 0}
-              onClick={() => {
-                removeAllItems(undefined);
-              }}
-            >
-              Limpar Carrinho
-            </Button>
-          )}
+        <div class="p-4 flex justify-between mx-10 px-0 w-full gap-2 flex-col">
+          <Button
+            data-deco="buy-button"
+            class="h-9 btn-outline text-xs lg:text-sm font-medium transition-all lg:h-10 whitespace-nowrap px-6"
+            disabled={loading.value || cart.value.items.length === 0}
+            onClick={() => {
+              displayCart.value = false;
+            }}
+          >
+            Continue comprando
+          </Button>
           <a class="w-full flex justify-center" href="/checkout">
             <Button
               data-deco="buy-button"
               class={`h-9 btn-${
                 BUTTON_VARIANTS[buttonMode as string]
-              } font-medium text-xs w-[40%] text-base-100 lg:w-full lg:text-sm lg:h-10`}
+              } font-medium text-xs w-full text-base-100 lg:text-sm lg:h-10`}
               disabled={loading.value || cart.value.items.length === 0}
               onClick={() => {
                 sendEvent({

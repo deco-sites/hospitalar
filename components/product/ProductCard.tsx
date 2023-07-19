@@ -153,9 +153,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
           sellerId={seller as string}
           skuId={product.sku}
           label={l?.basics?.ctaText}
-          classes={`max-lg:hidden ${
-            addToCartButtonClassNames(layout?.basics?.ctaVariation)
-          }`}
+          classes={addToCartButtonClassNames(layout?.basics?.ctaVariation)}
         />
       </>
     )

@@ -57,7 +57,7 @@ function CartItem({ index, currency }: Props) {
           <span class="line-through text-base-300 text-xs lg:text-xs">
             {formatPrice(listPrice / 100, currencyCode!, locale)}
           </span>
-          <span class="text-xs text-emphasis font-bold lg:text-sm">
+          <span class="text-xs text-primary font-bold lg:text-sm">
             {isGift
               ? "Grátis"
               : formatPrice(sellingPrice / 100, currency, locale)}
@@ -125,7 +125,7 @@ function CartItem({ index, currency }: Props) {
             loading={loading.value}
             class="btn btn-ghost"
           >
-            <Icon class="text-emphasis" id="Trash" width={20} height={20} />
+            <Icon class="text-primary" id="Trash" width={20} height={20} />
           </Button>
         </div>
       </div>

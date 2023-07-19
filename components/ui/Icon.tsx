@@ -59,6 +59,8 @@ export type AvailableIcons =
   | "ArrowRight"
   | "ArrowLeft"
   | "LogoSeo"
+  | "ReturnArrow"
+  | "SadFace"
   | "AllCategories";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {

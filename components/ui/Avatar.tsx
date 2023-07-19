@@ -29,14 +29,13 @@ interface Props {
 const variants = {
   disabled: {
     normal:
-      `relative border-2 text-base-200 bg-opacity-20 bg-base-300 border-base-200 hover:border-secondary-focus hover:border-[4px] after:absolute after:left-0 after:top-1/2 after:h-[1px] after:bg-base-200 after:w-full after:block after:-rotate-[-45deg] after:content-[""]`,
+      `relative border text-base-200 bg-opacity-20 bg-base-300 border-base-200 cursor-not-allowed`,
     active:
-      `border-4 border-secondary-focus bg-base-300 bg-opacity-20 after:absolute after:left-1 after:top-1/2 after:h-[1px] after:bg-base-200 after:w-4/5 after:block after:-rotate-[-45deg] after:content-[""]`,
+      `relative border text-base-200 bg-opacity-20 bg-base-300 border-base-200 cursor-not-allowed`,
   },
   default: {
-    normal:
-      "border-2 border-base-200 hover:border-secondary-focus hover:text-secondary-focus hover:border-[4px]",
-    active: "border-4 border-secondary-focus text-secondary-focus",
+    normal: "border-2 border-base-200 hover:border-primary hover:text-primary",
+    active: "bg-primary text-white text-secondary-focus",
   },
 };
 
@@ -44,12 +43,12 @@ function Avatar({ content, active, variant = "default" }: Props) {
   return (
     <div class="avatar placeholder font-bold">
       <div
-        class={`rounded-full transition w-10 ${
+        class={`rounded-full transition h-9 !aspect-auto ${
           colors[content] ?? colors[variant]
         } ${variants[variant][active ? "active" : "normal"]}`}
       >
-        <span class="uppercase">
-          {colors[content] ? "" : content.substring(0, 2)}
+        <span class="text-xs font-normal py-2 px-4">
+          {colors[content] ? "" : content}
         </span>
       </div>
     </div>

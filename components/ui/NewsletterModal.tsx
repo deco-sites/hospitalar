@@ -256,7 +256,6 @@ function NewsletterModal(
           </button>
         </form>
       </dialog>
-      )
     </>
   );
 }

@@ -48,7 +48,7 @@ function Modals({ menu, minicart }: Props) {
       {minicart && (
         <Modal
           class="ml-auto"
-          title="Meu carrinho"
+          title="Minha sacola"
           mode="sidebar-right"
           showHeader
           id="minicart-modal"
@@ -57,6 +57,8 @@ function Modals({ menu, minicart }: Props) {
           onClose={() => {
             displayCart.value = false;
           }}
+          invertCloseIcon
+          closeIcon="ReturnArrow"
         >
           <Suspense fallback={<Loading />}>
             <Cart {...minicart as ICartProps} />

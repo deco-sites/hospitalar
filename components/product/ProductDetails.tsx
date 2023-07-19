@@ -135,36 +135,29 @@ function ProductInfo(
           )
           : <OutOfStock productID={productID} />}
       </div>
+      {/* Shipping Simulation */}
+
+      <ShippingSimulation
+        items={[{
+          id: Number(product.sku),
+          quantity: 1,
+          seller: seller ?? "1",
+        }]}
+      />
       {/* Description card */}
-      <details className="collapse collapse-plus border-b border-neutral rounded-none">
-        <summary className="collapse-title px-0">
-          Detalhes do produto
+      <details className="collapse collapse-plus mt-[30px]">
+        <summary className="collapse-title border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-bold">
+          Descrição
         </summary>
-        <div className="readmore text-xs px-0 leading-tight collapse-content text-base-300">
+        <div className="readmore !flex-col text-xs px-0 pl-[30px] mt-3 leading-tight collapse-content text-base-300">
           <input type="checkbox" id="readmore" className="readmore-toggle" />
-          <label htmlFor="readmore" className="readmore-label my-2 block">
-            + Ler mais
-          </label>
-          <p className="readmore-content">{description}</p>
+          <p
+            className="readmore-content"
+            dangerouslySetInnerHTML={{ __html: description ? description : "" }}
+          >
+          </p>
         </div>
       </details>
-      {/* Shipping Simulation */}
-      <div className="collapse collapse-plus">
-        <input type="checkbox" />
-        <div className="collapse-title px-0">
-          Calcular frete e entrega
-        </div>
-        <div className="collapse-content px-0">
-          <ShippingSimulation
-            items={[{
-              id: Number(product.sku),
-              quantity: 1,
-              seller: seller ?? "1",
-            }]}
-            shipmentPolitics={shipmentPolitics}
-          />
-        </div>
-      </div>
       {/* Share Product on Social Networks */}
       {shareableNetworks && (
         <div class="flex items-center gap-5 my-5">
@@ -310,7 +303,7 @@ function Details({
           <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-4">
             {/* Image Slider */}
             <div class="relative xl:pl-32">
-              <Slider class="carousel carousel-center gap-6 box-border lg:box-content lg:w-[500px] xl:w-[600px] w-full px-4 lg:px-0">
+              <Slider class="carousel carousel-center gap-6 box-border lg:box-content lg:w-[600px] 2xl:w-[727px] w-full px-4 lg:px-0">
                 {images.map((img, index) => (
                   <Slider.Item
                     index={index}
@@ -350,7 +343,7 @@ function Details({
                 class={`flex gap-4 overflow-auto lg:max-h-min lg:flex-1 lg:justify-start xl:flex-col`}
               >
                 {images.map((img, index) => (
-                  <li class="min-w-[75px] lg:h-fit lg:min-w-[100px]">
+                  <li class="min-w-[75px] lg:h-fit lg:min-w-[130px]">
                     <Slider.Dot index={index}>
                       <Image
                         style={{ aspectRatio: ASPECT_RATIO }}

@@ -11,10 +11,6 @@ import type {
 
 export interface Props {
   items: Array<SKU>;
-  shipmentPolitics?: {
-    label: string;
-    link: string;
-  };
 }
 
 const formatShippingEstimate = (estimate: string) => {
@@ -53,8 +49,8 @@ function ShippingContent({ simulation }: {
   return (
     <ul class="flex flex-col text-xs rounded-[10px]">
       {methods.map((method) => (
-        <li class="flex text-secondary-focus px-[20px] py-[10px] odd:bg-secondary-focus odd:bg-opacity-5 justify-between items-center first:rounded-t-[10px] last:rounded-b-[10px]">
-          <span class="text-center text-secondary font-bold">
+        <li class="flex text-base-300 px-[20px] py-[10px] odd:bg-base-300 odd:bg-opacity-5 justify-between items-center first:rounded-t-[10px] last:rounded-b-[10px]">
+          <span class="text-left font-bold">
             {method.name}
           </span>
           <span class="text-button">
@@ -71,7 +67,7 @@ function ShippingContent({ simulation }: {
   );
 }
 
-function ShippingSimulation({ items, shipmentPolitics }: Props) {
+function ShippingSimulation({ items }: Props) {
   const postalCode = useSignal("");
   const loading = useSignal(false);
   const simulateResult = useSignal<SimulationOrderForm | null>(null);
@@ -95,14 +91,13 @@ function ShippingSimulation({ items, shipmentPolitics }: Props) {
   }, []);
 
   return (
-    <div class="flex flex-col mt-[10px] gap-5 p-[30px] rounded-[10px] bg-neutral-200 text-base-300">
-      <p class="text-justify">
-        Calcule o frete e o prazo de entrega estimados para sua região. Informe
-        seu CEP:
+    <div class="flex flex-col mt-[30px] gap-5 p-[30px] rounded-2xl border border-base-200 text-base-300">
+      <p class="text-justify text-primary font-bold">
+        Calcular o frete
       </p>
       <div class="flex flex-col gap-[10px]">
         <form
-          class="flex gap-2"
+          class="flex gap-2 max-lg:flex-col"
           onSubmit={(e) => {
             e.preventDefault();
             handleSimulation();
@@ -111,37 +106,37 @@ function ShippingSimulation({ items, shipmentPolitics }: Props) {
           <input
             as="input"
             type="text"
-            class="input input-bordered input-sm text-xs border-2 focus:outline-none w-full max-w-xs !py-4"
-            placeholder="Seu cep aqui"
+            inputMode="numeric"
+            pattern="[0-9]*"
+            class="input input-bordered input-sm text-xs border focus:outline-none w-full max-w-[300px] !py-4 hover:border-base-300 focus:text-black focus:hover:border-base-200"
+            placeholder="00000000"
             value={postalCode.value}
             maxLength={8}
             onChange={(e: { currentTarget: { value: string } }) => {
               postalCode.value = e.currentTarget.value;
             }}
           />
-          <Button
-            type="submit"
-            loading={loading.value}
-            class="btn-secondary h-[2.25rem] px-5"
-          >
-            Calcular
-          </Button>
+          <div class="flex gap-[10px] items-center lg:justify-center">
+            <Button
+              type="submit"
+              loading={loading.value}
+              class="btn-outline transition-all !border h-[2.25rem] px-5"
+            >
+              Calcular
+            </Button>
+            <a
+              href="https://buscacepinter.correios.com.br/app/endereco/index.php"
+              class="uppercase text-primary text-xs font-bold hover:underline max-lg:underline transition-all duration-500"
+              target="_blank"
+            >
+              Não sei meu CEP
+            </a>
+          </div>
         </form>
       </div>
-      <a
-        href="https://buscacepinter.correios.com.br/app/endereco/index.php"
-        class="uppercase text-emphasis text-xs"
-      >
-        Não sei meu CEP
-      </a>
       {simulateResult.value
         ? <ShippingContent simulation={simulateResult} />
         : null}
-      {shipmentPolitics && (
-        <a href={shipmentPolitics.link} class="uppercase text-emphasis text-xs">
-          {shipmentPolitics.label}
-        </a>
-      )}
     </div>
   );
 }

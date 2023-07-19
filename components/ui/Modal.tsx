@@ -19,6 +19,8 @@ export type Props = JSX.IntrinsicElements["dialog"] & {
   loading?: "lazy" | "eager";
   menuIcon?: AvailableIcons;
   showHeader?: boolean;
+  invertCloseIcon?: boolean;
+  closeIcon?: AvailableIcons;
 };
 
 const dialogStyles = {
@@ -48,6 +50,8 @@ const Modal = ({
   loading,
   menuIcon,
   showHeader,
+  invertCloseIcon,
+  closeIcon,
   ...props
 }: Props) => {
   const lazy = useSignal(false);
@@ -87,7 +91,11 @@ const Modal = ({
           }`}
         >
           {showHeader && (
-            <header class="mx-5 mt-4 mb-[10.5px] flex items-center justify-between border-solid border-b-[1px] border-[#F7F7F7] lg:mx-10">
+            <header
+              class={`mx-5 mt-4 mb-[10.5px] flex ${
+                invertCloseIcon ? "flex-row-reverse" : ""
+              } items-center justify-between border-solid border-b-[1px] border-[#F7F7F7] lg:mx-10`}
+            >
               <h1 className="flex items-center justify-between gap-1">
                 <span class="font-medium text-base-content lg:text-xl text-xl">
                   {title}
@@ -99,7 +107,7 @@ const Modal = ({
               >
                 <Icon
                   class="text-base-content"
-                  id="XMark"
+                  id={closeIcon || "XMark"}
                   width={25}
                   height={25}
                   strokeWidth={2}
