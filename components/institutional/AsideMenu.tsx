@@ -25,59 +25,34 @@ function AsideMenu(
 
   return (
     <aside class="md:min-w-[20%] font-medium text-secondary-focus flex md:justify-end">
-      <ul class="md:join join-vertical gap-[10px] w-full hidden">
+      <ul
+        class={`md:join join-vertical gap-[10px] w-full ${
+          currentUrl === "/i" ? "" : "hidden"
+        }`}
+      >
         {menuItems.map(
           (item, index) => (
             <li key={index}>
               <a
                 class={`
                   ${
-                  currentUrl === item.href
-                    ? "bg-secondary-focus text-base-100 border-none"
-                    : ""
+                  currentUrl === item.href ||
+                    (currentUrl.includes("/i/") && currentUrl !== item.href &&
+                      item.label === "Saiba Mais")
+                    ? "bg-primary text-white hover:bg-primary"
+                    : "hover:bg-white hover:border hover:border-opacity-100"
                 }
-                  btn btn-ghost btn-block border-2 border-neutral-100 hover:bg-secondary-focus hover:text-base-100
+                  btn btn-ghost btn-block justify-between text-primary border-opacity-0 border-base-300
                 `}
                 href={item.href}
               >
                 {item.label}
+                <Icon id="ChevronRight" size={20} />
               </a>
             </li>
           ),
         )}
       </ul>
-      <div class="md:hidden w-full pb-5">
-        <div class="dropdown w-full text-sm font-normal">
-          <label
-            tabIndex={0}
-            class="btn btn-secondary btn-block bg-base-content justify-between border-none"
-          >
-            {currentRoute?.label ?? "Menu"}
-            <Icon id="ChevronDown" width={26} height={26} />
-          </label>
-          <ul class="shadow menu dropdown-content z-10 bg-base-100 mt-5 rounded-box w-full gap-2">
-            {menuItems.map(
-              (item, index) => (
-                <li key={index}>
-                  <a
-                    class={`
-                      ${
-                      currentUrl === item.href
-                        ? "bg-base-content text-base-100 border-none"
-                        : ""
-                    }
-                      hover:bg-base-content hover:text-base-100
-                    `}
-                    href={item.href}
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ),
-            )}
-          </ul>
-        </div>
-      </div>
     </aside>
   );
 }

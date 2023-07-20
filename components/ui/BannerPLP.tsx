@@ -57,7 +57,7 @@ function Banner({ banner }: SectionProps<ReturnType<typeof loader>>) {
   } = banner;
 
   return (
-    <div class="grid container grid-cols-1 px-3 mb-5 grid-rows-1 relative">
+    <div class="grid grid-cols-1 mb-5 grid-rows-1 relative">
       <Picture preload class="col-start-1 col-span-1 row-start-1 row-span-1">
         <Source
           src={image.mobile}
@@ -67,7 +67,7 @@ function Banner({ banner }: SectionProps<ReturnType<typeof loader>>) {
         />
 
         <Image
-          class="w-full h-full object-cover rounded-[14px] max-h-[9rem]"
+          class="w-full h-full object-cover"
           fetchPriority="high"
           preload
           src={image.desktop}
