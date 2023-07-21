@@ -33,42 +33,60 @@ function splitNatItems(children: INavItem[], number = 6) {
   return slices;
 }
 
-function NavItemDropDown({ elements, variant, image }: { elements?: INavItem[], variant?: string, image?:Image }) {
+function NavItemDropDown(
+  { elements, variant, image }: {
+    elements?: INavItem[];
+    variant?: string;
+    image?: Image;
+  },
+) {
   if (!elements || !elements?.length) {
     return <span />;
   }
-  if (variant === "WithBrands") return (
-    <div
-      class="absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 w-screen shadow-md"
-      style={{ top: "0px", left: "0px", marginTop: headerHeight }}
-    >
-      <div class="container w-full pt-5 pb-5 m-auto px-5 flex items-start justify-start gap-16">
-        {elements.map((element) => { 
-          return(
-          <div class="mr-[83px]">
-            <span>{element.label}</span>
-            <ul class={`mt-3 grid ${colsVariants[element.label]} gap-x-[14px]`}>
-              {element.children && element.children.map((child) => (
-                <li class="mb-3">
-                  <a
-                    class="text-sm text-base-content hover:font-bold hover:underline transition-all duration-300"
-                    href={child.href || ""}
-                  >
-                    <span>{child.label}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )})}
-        {image && (
-          <a href={image.href || ''}>
-            <img src={image.src} alt={image.alt || "Banner vertical do menu"} class="h-full w-auto justify-self-end" />
-          </a>
-        )}
+  if (variant === "WithBrands") {
+    return (
+      <div
+        class="absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 w-screen shadow-md"
+        style={{ top: "0px", left: "0px", marginTop: headerHeight }}
+      >
+        <div class="container w-full pt-5 pb-5 m-auto px-5 flex items-start justify-start gap-16">
+          {elements.map((element) => {
+            return (
+              <div class="mr-[83px]">
+                <span>{element.label}</span>
+                <ul
+                  class={`mt-3 grid ${
+                    colsVariants[element.label]
+                  } gap-x-[14px]`}
+                >
+                  {element.children &&
+                    element.children.map((child) => (
+                      <li class="mb-3">
+                        <a
+                          class="text-sm text-base-content hover:font-bold hover:underline transition-all duration-300"
+                          href={child.href || ""}
+                        >
+                          <span>{child.label}</span>
+                        </a>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            );
+          })}
+          {image && (
+            <a href={image.href || ""}>
+              <img
+                src={image.src}
+                alt={image.alt || "Banner vertical do menu"}
+                class="h-full w-auto justify-self-end"
+              />
+            </a>
+          )}
+        </div>
       </div>
-    </div>
-  )
+    );
+  }
   const navItemsCol = splitNatItems(elements, 16);
   return (
     <div

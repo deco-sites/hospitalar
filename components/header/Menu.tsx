@@ -8,8 +8,8 @@ export interface Props {
 function MenuItem({ item }: { item: INavItem }) {
   const component = item?.children?.length
     ? (
-      item.variant === "WithBrands" ? 
-        (
+      item.variant === "WithBrands"
+        ? (
           <div class="collapse collapse-plus relative items-start">
             <input
               type="checkbox"
@@ -23,66 +23,64 @@ function MenuItem({ item }: { item: INavItem }) {
                 {item.children?.map((node) => (
                   <li class="">
                     <div class="collapse collapse-plus relative items-start">
-                    <input
-                      type="checkbox"
-                      class="absolute left-0 w-full top-0"
-                    />
-                    <div class="collapse-title min-h-0 p-0 py-2.5 font-dm-sans font-normal text-sm px-0 flex items-center justify-between">
-                      {node.label}
+                      <input
+                        type="checkbox"
+                        class="absolute left-0 w-full top-0"
+                      />
+                      <div class="collapse-title min-h-0 p-0 py-2.5 font-dm-sans font-normal text-sm px-0 flex items-center justify-between">
+                        {node.label}
+                      </div>
+                      <div class="collapse-content px-0">
+                        <ul class="border-t border-base-content border-solid pt-0 px-0 pl-5">
+                          {node.children?.map((nodeChild) => (
+                            <li class="">
+                              <a
+                                href={nodeChild.href}
+                                title={nodeChild.label}
+                                class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm ${
+                                  nodeChild.highlighted ? "text-secondary" : ""
+                                }`}
+                              >
+                                {nodeChild.label}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
-                    <div class="collapse-content px-0">
-                      <ul class="border-t border-base-content border-solid pt-0 px-0 pl-5">
-                        {node.children?.map((nodeChild) => (
-                          <li class="">
-                            
-                            <a
-                              href={nodeChild.href}
-                              title={nodeChild.label}
-                              class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm ${
-                                nodeChild.highlighted ? "text-secondary" : ""
-                              }`}
-                            >
-                              {nodeChild.label}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
         )
-        :
-        (
-        <div class="collapse collapse-plus relative items-start">
-          <input
-            type="checkbox"
-            class="absolute left-0 w-full h-full top-0"
-          />
-          <div class="collapse-title min-h-0 p-0 py-2.5 font-dm-sans font-normal text-sm px-0 flex items-center justify-between">
-            {item.label}
+        : (
+          <div class="collapse collapse-plus relative items-start">
+            <input
+              type="checkbox"
+              class="absolute left-0 w-full h-full top-0"
+            />
+            <div class="collapse-title min-h-0 p-0 py-2.5 font-dm-sans font-normal text-sm px-0 flex items-center justify-between">
+              {item.label}
+            </div>
+            <div class="collapse-content px-0">
+              <ul class="border-t border-base-content border-solid pt-0 px-0 pl-5">
+                {item.children?.map((node) => (
+                  <li class="">
+                    <a
+                      href={node.href}
+                      title={node.label}
+                      class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm ${
+                        item.highlighted ? "text-secondary" : ""
+                      }`}
+                    >
+                      {node.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div class="collapse-content px-0">
-            <ul class="border-t border-base-content border-solid pt-0 px-0 pl-5">
-              {item.children?.map((node) => (
-                <li class="">
-                  <a
-                    href={node.href}
-                    title={node.label}
-                    class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm ${
-                      item.highlighted ? "text-secondary" : ""
-                    }`}
-                  >
-                    {node.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
         )
     )
     : (
