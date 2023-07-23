@@ -55,11 +55,12 @@ function InstitutionalPage({
             .markdown-body p:last-child {
               margin-bottom: 20px;
             }
-            .markdown-body p, .markdown-body ul li {
+            .markdown-body p, .markdown-body li {
               color: #8E8E9F;
               font-size: 14px;
               font-weight: 400;
               line-height: 20px;
+              list-style: circle inside !important;
             }
             .markdown-body a {
               text-decoration: underline;
