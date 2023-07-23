@@ -22,6 +22,7 @@ function AsideMenu(
   { menuItems, pathname: currentUrl }: SectionProps<typeof loader>,
 ) {
   const currentRoute = menuItems.find((item) => item.href === currentUrl);
+  console.log(currentRoute);
 
   return (
     <aside class="md:min-w-[20%] font-medium text-secondary-focus flex md:justify-end">
@@ -37,8 +38,7 @@ function AsideMenu(
                 class={`
                   ${
                   currentUrl === item.href ||
-                    (currentUrl.includes("/i/") && currentUrl !== item.href &&
-                      item.label === "Saiba Mais")
+                    (!currentRoute && item.label === "Saiba Mais")
                     ? "bg-primary text-white hover:bg-primary"
                     : "hover:bg-white hover:border hover:border-opacity-100"
                 }
