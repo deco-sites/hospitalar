@@ -55,7 +55,7 @@ function InstitutionalPage({
             .markdown-body p:last-child {
               margin-bottom: 20px;
             }
-            .markdown-body p {
+            .markdown-body p, .markdown-body ul li {
               color: #8E8E9F;
               font-size: 14px;
               font-weight: 400;
