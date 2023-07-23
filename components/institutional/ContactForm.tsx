@@ -105,7 +105,7 @@ function ContactForm({
                 {socialNetworks.map((social) => (
                   <li
                     key={social.icon}
-                    class="bg-base-300 w-8 h-8 hover:bg-primary transition-all duration-500"
+                    class="bg-base-300 w-8 h-8 rounded-full hover:bg-primary transition-all duration-500"
                   >
                     <a
                       href="#"
@@ -161,7 +161,7 @@ function ContactForm({
                   placeholder="Digite aqui"
                   name="nome"
                   type="text"
-                  class="input input-bordered input-xs h-[34px] border-2 border-base-200"
+                  class="input input-bordered rounded-none input-xs h-[34px] border-2 border-base-200"
                 />
               </div>
               <div class="form-control gap-[10px] w-full">
@@ -172,7 +172,7 @@ function ContactForm({
                   placeholder="Digite aqui"
                   name="email"
                   type="email"
-                  class="input input-bordered input-xs h-[34px] border-2 border-base-200"
+                  class="input input-bordered rounded-none input-xs h-[34px] border-2 border-base-200"
                 />
               </div>
             </div>
@@ -186,13 +186,13 @@ function ContactForm({
                     placeholder="DDD"
                     name="ddd"
                     type="text"
-                    class="input input-bordered input-xs h-[34px] w-16 border-2 border-base-200"
+                    class="input input-bordered rounded-none input-xs h-[34px] w-16 border-2 border-base-200"
                   />
                   <input
                     placeholder="00000-000"
                     name="phonenumber"
                     type="text"
-                    class="input input-bordered input-xs h-[34px] w-full border-2 border-base-200"
+                    class="input input-bordered rounded-none input-xs h-[34px] w-full border-2 border-base-200"
                   />
                 </div>
               </div>
@@ -203,16 +203,18 @@ function ContactForm({
                 <div class="flex gap-[10px]">
                   <select
                     name="subject"
-                    class="select select-bordered select-xs h-[34px] w-1/2 border-2 border-base-200 text-base-300 font-normal"
+                    class="select select-bordered rounded-none select-xs h-[34px] w-1/2 border-2 border-base-200 text-base-300 font-normal"
                   >
                     <option disabled selected>Selecione</option>
-                    <option value="1">Contato</option>
+                    <option value="Sugestão">Sugestão</option>
+                    <option value="Dúvida">Dúvida</option>
+                    <option value="Reclamação">Reclamação</option>
                   </select>
                   <input
                     placeholder="Digite aqui"
                     name="subject"
                     type="text"
-                    class="input input-bordered input-xs h-[34px] w-full border-2 border-base-200"
+                    class="input input-bordered rounded-none input-xs h-[34px] w-full border-2 border-base-200"
                   />
                 </div>
               </div>
@@ -225,7 +227,7 @@ function ContactForm({
                 placeholder="Digite aqui"
                 name="description"
                 type="text"
-                class="textarea h-28 textarea-bordered resize-none w-full border-2 border-base-200"
+                class="textarea h-28 textarea-bordered resize-none rounded-none w-full border-2 border-base-200"
               />
             </div>
           </form>
