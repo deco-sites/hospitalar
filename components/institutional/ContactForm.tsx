@@ -83,7 +83,7 @@ function ContactForm({
             {/* Contact info */}
             <div class="flex flex-col gap-5 py-5 border-b border-neutral-100">
               <h6 class="font-medium">{serviceInfo.title}</h6>
-              <div class="flex flex-col gap-[10px] text-sm font-bold text-emphasis">
+              <div class="flex flex-col gap-[10px] text-sm font-bold text-primary">
                 <div class="flex">
                   <Icon id="Phone" class="w-5 h-5 mr-[10px]" />
                   <span>{serviceInfo.phone}</span>
@@ -105,7 +105,7 @@ function ContactForm({
                 {socialNetworks.map((social) => (
                   <li
                     key={social.icon}
-                    class="bg-base-300 w-8 h-8 rounded-full hover:bg-emphasis transition-all duration-500"
+                    class="bg-base-300 w-8 h-8 hover:bg-primary transition-all duration-500"
                   >
                     <a
                       href="#"
@@ -139,7 +139,7 @@ function ContactForm({
                 height={328}
               />
               <img
-                class="object-cover rounded-[20px] w-full max-w-sm lg:w-auto lg:max-w-md"
+                class="object-cover w-full max-w-sm lg:w-auto lg:max-w-md"
                 loading="lazy"
                 src={image}
                 alt={alt}
@@ -225,7 +225,7 @@ function ContactForm({
                 placeholder="Digite aqui"
                 name="description"
                 type="text"
-                class="textarea h-28 textarea-bordered resize-none rounded-box w-full border-2 border-base-200"
+                class="textarea h-28 textarea-bordered resize-none w-full border-2 border-base-200"
               />
             </div>
           </form>
