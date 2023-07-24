@@ -39,7 +39,7 @@ function HeaderLayout(
             <SearchBar searchbar={{ ...searchbar, variant: "mobile" }} />
             <a
               class="max-lg:hidden rounded-full border-2 border-solid no-animation btn-square btn-ghost flex items-center justify-center"
-              href=""
+              href="/login"
             >
               <Icon
                 class="text-base-content"
