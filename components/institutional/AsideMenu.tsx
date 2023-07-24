@@ -38,7 +38,7 @@ function AsideMenu(
                 class={`
                   ${
                   currentUrl === item.href ||
-                    (!currentRoute && item.label === "Saiba Mais")
+                    (!currentRoute && item.label === "Saiba Mais" && currentUrl.includes("/i/"))
                     ? "bg-primary text-white hover:bg-primary"
                     : "hover:bg-white hover:border hover:border-opacity-100"
                 }
