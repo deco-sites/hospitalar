@@ -65,6 +65,9 @@ function InstitutionalPage({
             .markdown-body a {
               text-decoration: underline;
             }
+            .markdown-body td {
+              border: 1px solid #8E8E9F;
+            }
           `,
           }}
         />
