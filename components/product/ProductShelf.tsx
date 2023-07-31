@@ -45,20 +45,24 @@ interface DotsProps {
 function Dots({ images, interval = 0 }: DotsProps) {
   return (
     <>
-    <ul
+      <ul
         class={`carousel justify-center col-span-full gap-2 z-10 row-start-4`}
       >
-      {images?.map((_, index) => (
-        <Slider.Dot index={index}>
-            <div class={`py-5 ${((index === 0) || (index%4 === 0)) ? "" : "lg:hidden"}`}>
+        {images?.map((_, index) => (
+          <Slider.Dot index={index}>
+            <div
+              class={`py-5 ${
+                ((index === 0) || (index % 4 === 0)) ? "" : "lg:hidden"
+              }`}
+            >
               <div
                 class="w-3 h-3 group-disabled:opacity-100 opacity-20 rounded-full bg-primary"
                 style={{ animationDuration: `${interval}s` }}
-                />
+              />
             </div>
           </Slider.Dot>
-      ))}
-    </ul>
+        ))}
+      </ul>
     </>
   );
 }
@@ -165,7 +169,6 @@ function ProductShelf({
             className={CONDITIONAL_RESPONSIVE_PARAMS["Always"]}
           />
         </>
-
 
         <SendEventOnLoad
           event={{
