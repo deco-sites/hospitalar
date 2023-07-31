@@ -49,14 +49,14 @@ function ShippingContent({ simulation }: {
   return (
     <ul class="flex flex-col text-xs rounded-[10px]">
       {methods.map((method) => (
-        <li class="flex text-base-300 px-[20px] py-[10px] odd:bg-base-300 odd:bg-opacity-5 justify-between items-center first:rounded-t-[10px] last:rounded-b-[10px]">
-          <span class="text-left font-bold">
+        <li class="flex text-base-300 px-[10px] sm:px-[20px] py-[10px] odd:bg-base-300 odd:bg-opacity-5 justify-between items-center first:rounded-t-[10px] last:rounded-b-[10px]">
+          <span class="text-left font-bold break-words w-[35%]">
             {method.name}
           </span>
-          <span class="text-button">
+          <span class="text-button w-[35%]">
             Em até {formatShippingEstimate(method.shippingEstimate)}
           </span>
-          <span class="text-base font-bold text-right">
+          <span class="font-bold text-right w-[20%]">
             {method.price === 0 ? "Grátis" : (
               formatPrice(method.price / 100, currencyCode, locale)
             )}
@@ -91,7 +91,7 @@ function ShippingSimulation({ items }: Props) {
   }, []);
 
   return (
-    <div class="flex flex-col mt-[30px] gap-5 p-[30px] rounded-2xl border border-base-200 text-base-300">
+    <div class="flex flex-col mt-[30px] gap-5 p-[20px] sm:p-[30px] rounded-2xl border border-base-200 text-base-300">
       <p class="text-justify text-primary font-bold">
         Calcular o frete
       </p>

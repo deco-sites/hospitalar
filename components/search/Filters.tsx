@@ -70,7 +70,7 @@ function FilterValues({ key, values }: FilterToggle) {
 }
 
 function Filters({ filters }: Props) {
-  const _filters = filters.filter(isToggle);
+  const _filters = filters.filter(isToggle).filter((filter) => !filter.key.includes("category-"));
   const selectedFilters = _filters.reduce<FilterToggleValue[]>(
     (initial, filter) => {
       const selected = filter.values.find((value) => value.selected);
@@ -82,7 +82,7 @@ function Filters({ filters }: Props) {
   );
 
   return (
-    <ul class="flex flex-col gap-2">
+    <ul class="flex flex-col gap-2 text-primary">
       <li>
         <p class="font-medium mb-4">Filtrar por:</p>
         {selectedFilters.length > 0 && (

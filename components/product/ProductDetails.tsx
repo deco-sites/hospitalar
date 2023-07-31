@@ -277,6 +277,7 @@ function Details({
   shareableNetworks?: Props["shareableNetworks"];
 }) {
   const { product, breadcrumbList } = page;
+  const filteredBreadcrumbList = breadcrumbList.itemListElement.filter(item => item.name!.length > 1);
   const { offers } = product;
   const {
     price,
@@ -293,7 +294,7 @@ function Details({
       <>
         {/* Breadcrumb */}
         <Breadcrumb
-          itemListElement={breadcrumbList?.itemListElement.slice(0, -1)}
+          itemListElement={filteredBreadcrumbList}
         />
         <div
           id={id}
@@ -425,7 +426,7 @@ function ProductDetails(
     : maybeVar;
 
   return (
-    <div class="py-0 lg:pb-10">
+    <div class="py-0">
       {page
         ? (
           <Details

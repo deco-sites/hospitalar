@@ -33,13 +33,13 @@ export interface Banner {
     image: LiveImage;
     width: number;
     height: number;
-  }
+  };
   /** @description mobile otimized image */
   mobile: {
     image: LiveImage;
     width: number;
     height: number;
-  }
+  };
   /** @description Image's alt text */
   alt: string;
   /**
