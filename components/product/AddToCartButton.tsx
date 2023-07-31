@@ -40,7 +40,7 @@ function AddToCartButton(
   return (
     <Button data-deco="add-to-cart" {...props} class={classes}>
       <p class="flex gap-2 items-center justify-center">
-        <Icon id="ShoppingCart" width={20} height={20} />
+        <Icon id="ShoppingCart" width={24} height={20} />
         <span class="lg:hidden">{label ?? "Comprar"}</span>
         <span class="hidden lg:inline">{label ?? "Adicionar ao carrinho"}</span>
       </p>
