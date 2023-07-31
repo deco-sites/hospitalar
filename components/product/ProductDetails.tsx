@@ -277,7 +277,9 @@ function Details({
   shareableNetworks?: Props["shareableNetworks"];
 }) {
   const { product, breadcrumbList } = page;
-  const filteredBreadcrumbList = breadcrumbList.itemListElement.filter(item => item.name!.length > 1);
+  const filteredBreadcrumbList = breadcrumbList.itemListElement.filter((item) =>
+    item.name!.length > 1
+  );
   const { offers } = product;
   const {
     price,
