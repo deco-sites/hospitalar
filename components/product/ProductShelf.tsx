@@ -123,7 +123,7 @@ function ProductShelf({
 
         <>
           <div
-            class={`relative z-10 col-start-1 row-start-2  ${
+            class={`flex items-center justify-center z-10 col-start-1 row-start-2  ${
               CONDITIONAL_RESPONSIVE_PARAMS[
                 showPaginationArrows ? showPaginationArrows : "Always"
               ]
@@ -133,18 +133,16 @@ function ProductShelf({
               style={{
                 minHeight: "28px",
               }}
-              class="w-8 h-8 btn btn-circle absolute opacity-100 bg-opacity-100 lg:-left-4 left-2 bg-neutral-100 border-none hover:bg-neutral-100"
+              class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100"
             >
               <Icon
-                size={20}
-                id="ChevronLeft"
-                strokeWidth={3}
-                class="text-base-content"
+                size={32}
+                id="LeftArrowFigma"
               />
             </Slider.PrevButton>
           </div>
           <div
-            class={`relative z-10 col-start-3 row-start-2 ${
+            class={`flex items-center justify-center z-10 col-start-3 row-start-2 ${
               CONDITIONAL_RESPONSIVE_PARAMS[
                 showPaginationArrows ? showPaginationArrows : "Always"
               ]
@@ -154,13 +152,11 @@ function ProductShelf({
               style={{
                 minHeight: "28px",
               }}
-              class="w-8 h-8 min-h-fit btn btn-circle absolute opacity-100 bg-opacity-100 lg:-right-4 right-2  bg-neutral-100 border-none hover:bg-neutral-100"
+              class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100"
             >
               <Icon
-                size={20}
-                id="ChevronRight"
-                strokeWidth={3}
-                class="text-base-content"
+                size={32}
+                id="RightArrowFigma"
               />
             </Slider.NextButton>
           </div>

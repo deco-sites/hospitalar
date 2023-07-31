@@ -9047,6 +9047,11 @@
                   },
                   {
                     "type": "string",
+                    "const": "LogoMobile",
+                    "default": "LogoMobile"
+                  },
+                  {
+                    "type": "string",
                     "const": "Truck",
                     "default": "Truck"
                   },
@@ -9134,6 +9139,16 @@
                     "type": "string",
                     "const": "SadFace",
                     "default": "SadFace"
+                  },
+                  {
+                    "type": "string",
+                    "const": "LeftArrowFigma",
+                    "default": "LeftArrowFigma"
+                  },
+                  {
+                    "type": "string",
+                    "const": "RightArrowFigma",
+                    "default": "RightArrowFigma"
                   },
                   {
                     "type": "string",
@@ -10231,6 +10246,11 @@
             },
             {
               "type": "string",
+              "const": "LogoMobile",
+              "default": "LogoMobile"
+            },
+            {
+              "type": "string",
               "const": "Truck",
               "default": "Truck"
             },
@@ -10318,6 +10338,16 @@
               "type": "string",
               "const": "SadFace",
               "default": "SadFace"
+            },
+            {
+              "type": "string",
+              "const": "LeftArrowFigma",
+              "default": "LeftArrowFigma"
+            },
+            {
+              "type": "string",
+              "const": "RightArrowFigma",
+              "default": "RightArrowFigma"
             },
             {
               "type": "string",
@@ -11914,14 +11944,52 @@
       "type": "object",
       "properties": {
         "desktop": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "description": "desktop otimized image",
-          "title": "Desktop"
+          "type": "object",
+          "properties": {
+            "image": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Image"
+            },
+            "width": {
+              "type": "number",
+              "title": "Width"
+            },
+            "height": {
+              "type": "number",
+              "title": "Height"
+            }
+          },
+          "required": [
+            "image",
+            "width",
+            "height"
+          ],
+          "title": "Desktop",
+          "description": "desktop otimized image"
         },
         "mobile": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-          "description": "mobile otimized image",
-          "title": "Mobile"
+          "type": "object",
+          "properties": {
+            "image": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Image"
+            },
+            "width": {
+              "type": "number",
+              "title": "Width"
+            },
+            "height": {
+              "type": "number",
+              "title": "Height"
+            }
+          },
+          "required": [
+            "image",
+            "width",
+            "height"
+          ],
+          "title": "Mobile",
+          "description": "mobile otimized image"
         },
         "alt": {
           "type": "string",
@@ -12523,6 +12591,11 @@
                           },
                           {
                             "type": "string",
+                            "const": "LogoMobile",
+                            "default": "LogoMobile"
+                          },
+                          {
+                            "type": "string",
                             "const": "Truck",
                             "default": "Truck"
                           },
@@ -12610,6 +12683,16 @@
                             "type": "string",
                             "const": "SadFace",
                             "default": "SadFace"
+                          },
+                          {
+                            "type": "string",
+                            "const": "LeftArrowFigma",
+                            "default": "LeftArrowFigma"
+                          },
+                          {
+                            "type": "string",
+                            "const": "RightArrowFigma",
+                            "default": "RightArrowFigma"
                           },
                           {
                             "type": "string",
@@ -12872,6 +12955,11 @@
                             },
                             {
                               "type": "string",
+                              "const": "LogoMobile",
+                              "default": "LogoMobile"
+                            },
+                            {
+                              "type": "string",
                               "const": "Truck",
                               "default": "Truck"
                             },
@@ -12959,6 +13047,16 @@
                               "type": "string",
                               "const": "SadFace",
                               "default": "SadFace"
+                            },
+                            {
+                              "type": "string",
+                              "const": "LeftArrowFigma",
+                              "default": "LeftArrowFigma"
+                            },
+                            {
+                              "type": "string",
+                              "const": "RightArrowFigma",
+                              "default": "RightArrowFigma"
                             },
                             {
                               "type": "string",
@@ -13413,6 +13511,11 @@
             },
             {
               "type": "string",
+              "const": "LogoMobile",
+              "default": "LogoMobile"
+            },
+            {
+              "type": "string",
               "const": "Truck",
               "default": "Truck"
             },
@@ -13500,6 +13603,16 @@
               "type": "string",
               "const": "SadFace",
               "default": "SadFace"
+            },
+            {
+              "type": "string",
+              "const": "LeftArrowFigma",
+              "default": "LeftArrowFigma"
+            },
+            {
+              "type": "string",
+              "const": "RightArrowFigma",
+              "default": "RightArrowFigma"
             },
             {
               "type": "string",

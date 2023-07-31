@@ -43,6 +43,7 @@ export type AvailableIcons =
   | "Phone"
   | "Logo"
   | "LogoFooter"
+  | "LogoMobile"
   | "Truck"
   | "Discount"
   | "Return"
@@ -61,6 +62,8 @@ export type AvailableIcons =
   | "LogoSeo"
   | "ReturnArrow"
   | "SadFace"
+  | "LeftArrowFigma"
+  | "RightArrowFigma"
   | "AllCategories";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {

@@ -29,9 +29,17 @@ export const CONDITIONAL_RESPONSIVE_PARAMS: Record<
 
 export interface Banner {
   /** @description desktop otimized image */
-  desktop: LiveImage;
+  desktop: {
+    image: LiveImage;
+    width: number;
+    height: number;
+  }
   /** @description mobile otimized image */
-  mobile: LiveImage;
+  mobile: {
+    image: LiveImage;
+    width: number;
+    height: number;
+  }
   /** @description Image's alt text */
   alt: string;
   /**
@@ -110,31 +118,31 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
     <a
       href={action?.href ?? "#"}
       aria-label={action?.label}
-      class="relative h-[600px] overflow-y-hidden w-full"
+      class="relative overflow-y-hidden w-full"
     >
       <Picture preload={lcp}>
         <Source
           media="(max-width: 767px)"
           fetchPriority={lcp ? "high" : "auto"}
-          src={mobile}
-          width={360}
-          height={300}
+          src={mobile.image}
+          width={mobile.width}
+          height={mobile.height}
         />
         <Source
           media="(min-width: 768px)"
           fetchPriority={lcp ? "high" : "auto"}
-          src={desktop}
-          width={720}
-          height={300}
+          src={desktop.image}
+          width={desktop.width}
+          height={desktop.height}
         />
         <img
           class="object-cover w-full h-full"
           loading={lcp ? "eager" : "lazy"}
-          src={desktop}
+          src={desktop.image}
           alt={alt}
         />
       </Picture>
-      {action && (
+      {action?.label && (
         <div class="w-full absolute top-0 bottom-0 m-auto right-0 sm:right-auto left-[50%] max-h-min flex flex-col gap-4 p-4 -translate-x-1/2">
           {action?.mobileTitle
             ? (
@@ -223,24 +231,22 @@ function Buttons({ className }: ButtonsProps) {
       <div
         class={`flex items-center justify-center z-10 col-start-1 row-start-2 ${className}`}
       >
-        <Slider.PrevButton class="btn btn-circle border-none bg-opacity-10 bg-white hover:bg-white hover:bg-opacity-20">
+        <Slider.PrevButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
           <Icon
-            class="text-base-100"
-            size={40}
-            id="ChevronLeft"
-            strokeWidth={3}
+            class="text-primary"
+            size={32}
+            id="LeftArrowFigma"
           />
         </Slider.PrevButton>
       </div>
       <div
         class={`flex items-center justify-center z-10 col-start-3 row-start-2 ${className}`}
       >
-        <Slider.NextButton class="btn btn-circle border-none bg-opacity-10 bg-white hover:bg-white hover:bg-opacity-20">
+        <Slider.NextButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
           <Icon
-            class="text-base-100"
-            size={40}
-            id="ChevronRight"
-            strokeWidth={3}
+            class="text-primary"
+            size={32}
+            id="RightArrowFigma"
           />
         </Slider.NextButton>
       </div>
