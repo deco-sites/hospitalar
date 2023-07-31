@@ -19,7 +19,7 @@ export default function SocialNetWorks(
         {socialItems.map((social) => (
           <li
             key={social.icon}
-            class="bg-base-300 w-8 h-8 rounded-full hover:bg-emphasis transition-all duration-500"
+            class="bg-base-300 w-8 h-8 rounded-full hover:bg-primary transition-all duration-500"
           >
             <a
               href="#"

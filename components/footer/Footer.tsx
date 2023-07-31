@@ -37,7 +37,7 @@ function SectionItem({ item }: { item: Item }) {
         : (
           <a
             href={item.href}
-            class="max-md:text-sm text-xs font-normal text-base-300 hover:text-emphasis transition-all duration-500"
+            class="max-md:text-sm text-xs font-normal text-base-300 hover:text-primary transition-all duration-500"
           >
             {item.label}
           </a>
