@@ -36,6 +36,33 @@ export interface Props {
   cardLayout?: CardLayout;
 }
 
+interface DotsProps {
+  images?: Product[];
+  interval?: number;
+  className: string;
+}
+
+function Dots({ images, interval = 0 }: DotsProps) {
+  return (
+    <>
+    <ul
+        class={`carousel justify-center col-span-full gap-2 z-10 row-start-4`}
+      >
+      {images?.map((_, index) => (
+        <Slider.Dot index={index}>
+            <div class={`py-5 ${((index === 0) || (index%4 === 0)) ? "" : "lg:hidden"}`}>
+              <div
+                class="w-3 h-3 group-disabled:opacity-100 opacity-20 rounded-full bg-primary"
+                style={{ animationDuration: `${interval}s` }}
+                />
+            </div>
+          </Slider.Dot>
+      ))}
+    </ul>
+    </>
+  );
+}
+
 function ProductShelf({
   products,
   title,
@@ -73,9 +100,9 @@ function ProductShelf({
 
       <div
         id={id}
-        class="grid grid-cols-[48px_1fr_48px] px-0"
+        class="grid grid-cols-[48px_1fr_48px] px-0 grid-rows-[1fr_48px_1fr_48px]"
       >
-        <Slider class="carousel carousel-start gap-6 col-span-full row-start-2 row-end-5 py-2">
+        <Slider class="carousel carousel-start gap-6 col-span-full row-span-full py-2 mb-12">
           {products?.map((product, index) => (
             <Slider.Item
               index={index}
@@ -92,7 +119,7 @@ function ProductShelf({
 
         <>
           <div
-            class={`relative z-10 col-start-1 row-start-3  ${
+            class={`relative z-10 col-start-1 row-start-2  ${
               CONDITIONAL_RESPONSIVE_PARAMS[
                 showPaginationArrows ? showPaginationArrows : "Always"
               ]
@@ -113,7 +140,7 @@ function ProductShelf({
             </Slider.PrevButton>
           </div>
           <div
-            class={`relative z-10 col-start-3 row-start-3 ${
+            class={`relative z-10 col-start-3 row-start-2 ${
               CONDITIONAL_RESPONSIVE_PARAMS[
                 showPaginationArrows ? showPaginationArrows : "Always"
               ]
@@ -133,7 +160,12 @@ function ProductShelf({
               />
             </Slider.NextButton>
           </div>
+          <Dots
+            images={products}
+            className={CONDITIONAL_RESPONSIVE_PARAMS["Always"]}
+          />
         </>
+
 
         <SendEventOnLoad
           event={{
