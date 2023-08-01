@@ -82,7 +82,7 @@ function ProductShelf({
   }
 
   return (
-    <div class="w-full pb-8 flex flex-col gap-12 lg:gap-7 lg:pb-10">
+    <div class="w-full pb-8 flex flex-col lg:gap-7 lg:pb-10">
       <div class="flex items-center justify-between relative pb-3">
         <Header
           title={title || ""}
