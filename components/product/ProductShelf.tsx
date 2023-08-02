@@ -182,6 +182,7 @@ function ProductShelf({
         />
         <SliderJS
           rootId={id}
+          infinite
           itemsPerPage={layout?.itemsPerPage?.reduce(
             (initial, { screenWidth, itemsQuantity }) => ({
               ...initial,
