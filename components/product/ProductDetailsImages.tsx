@@ -37,15 +37,16 @@ function ProductDetailsImages(
                 class="carousel-item w-full"
               >
                 <figure
-                  style={`background-image: url(${img.url!}); background-size: 250%;`}
-                  onMouseMove={(e: MouseEvent)=>{
+                  style={`background-image: url(${img
+                    .url!}); background-size: 250%;`}
+                  onMouseMove={(e: MouseEvent) => {
                     const zoomer = e.currentTarget as HTMLElement;
-                    const offsetX = e.offsetX
-                    const offsetY = e.offsetY
-                    const x = offsetX/(zoomer.offsetWidth)*100
-                    const y = offsetY/(zoomer.offsetHeight)*100
+                    const offsetX = e.offsetX;
+                    const offsetY = e.offsetY;
+                    const x = offsetX / (zoomer.offsetWidth) * 100;
+                    const y = offsetY / (zoomer.offsetHeight) * 100;
                     console.log(x, y);
-                    zoomer!.style.backgroundPosition = x + '% ' + y + '%';
+                    zoomer!.style.backgroundPosition = x + "% " + y + "%";
                   }}
                   class="overflow-hidden cursor-zoom-in"
                 >
