@@ -74,6 +74,7 @@
               "./islands/Newsletter.tsx",
               "./islands/NewsletterModal.tsx",
               "./islands/OutOfStock.tsx",
+              "./islands/ProductDetailsImages.tsx",
               "./islands/ProductImageZoom.tsx",
               "./islands/SearchControls.tsx",
               "./islands/ShippingSimulation.tsx",
@@ -16823,6 +16824,22 @@
         }
       }
     },
+    "Li9pc2xhbmRzL1Byb2R1Y3REZXRhaWxzSW1hZ2VzLnRzeA==": {
+      "title": "./islands/ProductDetailsImages.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "./islands/ProductDetailsImages.tsx"
+          ],
+          "default": "./islands/ProductDetailsImages.tsx"
+        }
+      }
+    },
     "Li9pc2xhbmRzL1Byb2R1Y3RJbWFnZVpvb20udHN4": {
       "title": "./islands/ProductImageZoom.tsx",
       "type": "object",
@@ -19243,6 +19260,9 @@
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL091dE9mU3RvY2sudHN4"
+        },
+        {
+          "$ref": "#/definitions/Li9pc2xhbmRzL1Byb2R1Y3REZXRhaWxzSW1hZ2VzLnRzeA=="
         },
         {
           "$ref": "#/definitions/Li9pc2xhbmRzL1Byb2R1Y3RJbWFnZVpvb20udHN4"

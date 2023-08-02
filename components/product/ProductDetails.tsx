@@ -1,9 +1,9 @@
+import { useSignal } from "@preact/signals";
 import { useId } from "preact/hooks";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
-import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
@@ -13,10 +13,10 @@ import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/product
 import type { ProductDetailsPage } from "deco-sites/std/commerce/types.ts";
 import type { LoaderReturnType } from "$live/types.ts";
 import AddToCartActions from "$store/islands/AddToCartActions.tsx";
+import ProductDetailsImages from "$store/islands/ProductDetailsImages.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { getShareLink } from "$store/sdk/shareLinks.tsx";
 
-import DiscountBadge from "./DiscountBadge.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
@@ -280,13 +280,13 @@ function Details({
   const filteredBreadcrumbList = breadcrumbList.itemListElement.filter((item) =>
     item.name!.length > 1
   );
-  const { offers } = product;
-  const {
-    price,
-    listPrice,
-  } = useOffer(offers);
   const id = `product-image-gallery:${useId()}`;
   const images = useStableImages(product);
+
+  const open = useSignal(false);
+  const zoomImage = useSignal(images[0].url);
+  const zoomX = useSignal(0);
+  const zoomY = useSignal(0);
 
   /**
    * Product slider variant
@@ -303,65 +303,13 @@ function Details({
           class="flex flex-col lg:flex-row gap-4 lg:justify-center"
         >
           {/* Product Images */}
-          <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-4">
-            {/* Image Slider */}
-            <div class="relative xl:pl-32">
-              <Slider class="carousel carousel-center gap-6 box-border lg:box-content lg:w-[600px] 2xl:w-[727px] w-full px-4 lg:px-0">
-                {images.map((img, index) => (
-                  <Slider.Item
-                    index={index}
-                    class="carousel-item w-full"
-                  >
-                    <Image
-                      class="w-full rounded-[10px]"
-                      sizes="(max-width: 640px) 100vw, 40vw"
-                      style={{ aspectRatio: ASPECT_RATIO }}
-                      src={img.url!}
-                      alt={img.alternateName}
-                      width={WIDTH}
-                      height={HEIGHT}
-                      // Preload LCP image for better web vitals
-                      preload={index === 0}
-                      loading={index === 0 ? "eager" : "lazy"}
-                    />
-                  </Slider.Item>
-                ))}
-              </Slider>
-
-              {/* Discount tag */}
-              {price && listPrice && price !== listPrice
-                ? (
-                  <DiscountBadge
-                    price={price}
-                    listPrice={listPrice}
-                    className="lg:left-auto lg:right-0 left-4"
-                  />
-                )
-                : null}
-            </div>
-
-            {/* Dots */}
-            <div class="lg:max-w-[500px] lg:self-start xl:self-start xl:left-0 xl:absolute xl:max-h-full xl:overflow-y-scroll xl:scrollbar-none">
-              <ul
-                class={`flex gap-4 overflow-auto lg:max-h-min lg:flex-1 lg:justify-start xl:flex-col`}
-              >
-                {images.map((img, index) => (
-                  <li class="min-w-[75px] lg:h-fit lg:min-w-[130px]">
-                    <Slider.Dot index={index}>
-                      <Image
-                        style={{ aspectRatio: ASPECT_RATIO }}
-                        class="border-neutral hover:border-secondary-focus group-disabled:border-secondary-focus border-2 rounded-[10px]"
-                        width={WIDTH / 5}
-                        height={HEIGHT / 5}
-                        src={img.url!}
-                        alt={img.alternateName}
-                      />
-                    </Slider.Dot>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <ProductDetailsImages
+            images={images}
+            width={WIDTH}
+            height={HEIGHT}
+            aspect={ASPECT_RATIO}
+            product={product}
+          />
 
           {/* Product Info */}
           <div class="w-full lg:pr-0 lg:pl-6">
