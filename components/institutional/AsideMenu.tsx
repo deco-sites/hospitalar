@@ -22,7 +22,6 @@ function AsideMenu(
   { menuItems, pathname: currentUrl }: SectionProps<typeof loader>,
 ) {
   const currentRoute = menuItems.find((item) => item.href === currentUrl);
-  console.log(currentRoute);
 
   return (
     <aside class="md:min-w-[20%] font-medium text-secondary-focus flex md:justify-end">

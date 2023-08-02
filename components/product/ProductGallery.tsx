@@ -22,6 +22,11 @@ function ProductGallery({ products }: Props) {
             discount: { label: "OFF", variant: "emphasis" },
             hide: { skuSelector: true, productDescription: true },
             basics: { contentAlignment: "Center" },
+            onMouseOver: {
+              image: "Zoom image",
+              showCardShadow: true,
+              showCta: true,
+            },
           }}
         />
       ))}

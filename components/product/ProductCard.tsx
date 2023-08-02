@@ -303,13 +303,15 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
                 l?.basics?.oldPriceSize === "Normal" ? "lg:flex-row" : ""
               } ${align === "center" ? "justify-center" : "justify-start"}`}
             >
-              <p
-                class={`line-through text-base-300 text-xs ${
-                  l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
-                }`}
-              >
-                {formatPrice(listPrice, offers!.priceCurrency!)}
-              </p>
+              {(listPrice && price) && listPrice > price && (
+                <p
+                  class={`line-through text-base-300 text-xs ${
+                    l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
+                  }`}
+                >
+                  {formatPrice(listPrice, offers!.priceCurrency!)}
+                </p>
+              )}
               <p class="text-primary text-sm font-bold">
                 {formatPrice(price, offers!.priceCurrency!)}
               </p>
@@ -318,12 +320,16 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
               ? ""
               : (
                 <div class="text-xs font-normal text-gray-800 mt-[5px]">
-                  ou {installment?.billingDuration}x de ${formatPrice(
+                  em até {installment?.billingDuration}x de ${formatPrice(
                     installment?.billingIncrement,
                     offers!.priceCurrency!,
-                  )}
+                  )} sem juros
                 </div>
               )}
+            <div class="text-xs font-normal text-gray-800 mt-[5px]">
+              ou {formatPrice(price! * 0.97, offers!.priceCurrency!)}{" "}
+              à vista no boleto
+            </div>
           </div>
         )}
 

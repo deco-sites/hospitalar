@@ -45,7 +45,6 @@ function ProductDetailsImages(
                     const offsetY = e.offsetY;
                     const x = offsetX / (zoomer.offsetWidth) * 100;
                     const y = offsetY / (zoomer.offsetHeight) * 100;
-                    console.log(x, y);
                     zoomer!.style.backgroundPosition = x + "% " + y + "%";
                   }}
                   class="overflow-hidden cursor-zoom-in"

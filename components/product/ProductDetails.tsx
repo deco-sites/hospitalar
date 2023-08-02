@@ -90,11 +90,13 @@ function ProductInfo(
             {isVariantOf?.name}
           </span>
         </h1>
-        <div>
-          <span class="text-sm text-base-300">
-            Referência: {gtin}
-          </span>
-        </div>
+        {gtin && gtin?.length > 0 && (
+          <div>
+            <span class="text-sm text-base-300">
+              Referência: {gtin}
+            </span>
+          </div>
+        )}
       </div>
       {/* Prices */}
       <div class="mt-5">

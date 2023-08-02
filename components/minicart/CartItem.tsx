@@ -6,6 +6,7 @@ import { formatPrice } from "$store/sdk/format.ts";
 import { useSignal } from "@preact/signals";
 import Image from "deco-sites/std/components/Image.tsx";
 import { useCart } from "deco-sites/std/packs/vtex/hooks/useCart.ts";
+import { useOffer } from "$store/sdk/useOffer.ts";
 
 interface Props {
   index: number;
@@ -37,10 +38,12 @@ function CartItem({ index, currency }: Props) {
   const highestInstallment = installmentOptions?.installments?.slice(-1);
 
   const highestNumberInstallments = highestInstallment?.[0]?.count ?? 0;
+  const interestRatePercent =
+    ((highestInstallment?.[0]?.interestRate ?? 0) / 10000) + 1;
 
   return (
     <div class="pb-3 flex flex-row justify-between items-start gap-4 border-solid border-b-[1px] border-[#F7F7F7]">
-      <div class="bg-[#f6f6f6] rounded-md">
+      <div class="bg-[#f6f6f6] rounded-md min-w-[25%] max-w-[25%]">
         <Image
           src={imageUrl}
           alt={skuName}
@@ -54,22 +57,28 @@ function CartItem({ index, currency }: Props) {
           {name}
         </span>
         <div class="flex items-center gap-2">
-          <span class="line-through text-base-300 text-xs lg:text-xs">
-            {formatPrice(listPrice / 100, currencyCode!, locale)}
-          </span>
+          {listPrice > sellingPrice && (
+            <span class="line-through text-base-300 text-xs lg:text-xs">
+              {formatPrice(listPrice / 100, currencyCode!, locale)}
+            </span>
+          )}
           <span class="text-xs text-primary font-bold lg:text-sm">
             {isGift
               ? "Grátis"
               : formatPrice(sellingPrice / 100, currency, locale)}
           </span>
         </div>
-        {installmentOptions?.installments.length
+        {installmentOptions?.installments.length &&
+            highestNumberInstallments > 1
           ? (
             <div>
               <span class="text-xs text-base-content lg:text-xs">
-                ou {highestNumberInstallments}x de {""}
+                ou em até {highestNumberInstallments}x de {""}
                 {highestNumberInstallments
-                  ? formatPrice(sellingPrice / highestNumberInstallments / 100)
+                  ? formatPrice(
+                    Math.ceil(listPrice * interestRatePercent) /
+                      highestNumberInstallments / 100,
+                  )
                   : ""}
               </span>
             </div>
