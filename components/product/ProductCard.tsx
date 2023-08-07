@@ -65,6 +65,7 @@ interface Props {
   /** @description used for analytics event */
   itemListName?: string;
   layout?: Layout;
+  class?: string;
 }
 
 export const relative = (url: string) => {
@@ -75,7 +76,9 @@ export const relative = (url: string) => {
 const WIDTH = 279;
 const HEIGHT = 270;
 
-function ProductCard({ product, preload, itemListName, layout }: Props) {
+function ProductCard(
+  { product, preload, itemListName, layout, class: _class }: Props,
+) {
   const {
     url,
     productID,
@@ -180,7 +183,7 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         align === "center" ? "text-center" : "text-start"
       } ${
         l?.onMouseOver?.showCardShadow ? "lg:hover:shadow-lg shadow-black" : ""
-      }`}
+      } ${_class ? `${_class}` : ""}`}
       data-deco="view-product"
       id={`product-card-${productID}`}
       {...sendEventOnClick(clickEvent)}

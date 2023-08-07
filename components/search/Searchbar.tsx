@@ -235,13 +235,17 @@ function Searchbar({
                       </span>
                       {loading.value && <Spinner />}
                     </div>
-                    <Slider class="carousel gap-2">
+                    <Slider class="carousel gap-2 lg:justify-between lg:gap-0">
                       {suggestions.value!.products?.map((product, index) => (
                         <Slider.Item
                           index={index}
-                          class="carousel-item first:ml-4 last:mr-4 min-w-[200px] max-w-[200px]"
+                          class="carousel-item first:ml-4 last:mr-4 min-w-[200px] w-full max-w-[80%] lg:max-w-[20%]"
                         >
-                          <ProductCard product={product} layout={cardLayout} />
+                          <ProductCard
+                            product={product}
+                            layout={cardLayout}
+                            class={"lg:!p-0"}
+                          />
                         </Slider.Item>
                       ))}
                     </Slider>
