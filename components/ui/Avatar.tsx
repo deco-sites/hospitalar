@@ -35,7 +35,7 @@ const variants = {
   },
   default: {
     normal: "border-2 border-base-200 hover:border-primary hover:text-primary",
-    active: "bg-primary text-white text-secondary-focus",
+    active: "bg-primary text-white text-secondary-focus border-2 border-primary",
   },
 };
 
