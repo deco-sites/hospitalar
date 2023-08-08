@@ -80,7 +80,6 @@ function ProductInfo(
   const { price, listPrice, seller, availability, installment } = useOffer(
     offers,
   );
-  
 
   return (
     <>
@@ -113,10 +112,20 @@ function ProductInfo(
         </div>
         <div class="flex flex-col">
           <span>
-            em até <strong>{installment?.billingDuration}x</strong> de <strong>{formatPrice(installment?.billingIncrement, offers!.priceCurrency)}</strong> s/ juros
+            em até <strong>{installment?.billingDuration}x</strong> de{" "}
+            <strong>
+              {formatPrice(
+                installment?.billingIncrement,
+                offers!.priceCurrency,
+              )}
+            </strong>{" "}
+            s/ juros
           </span>
           <span>
-            ou <strong>{formatPrice((price!*0.97), offers!.priceCurrency)}</strong> à vista no boleto bancário
+            ou{" "}
+            <strong>{formatPrice(price! * 0.97, offers!.priceCurrency)}</strong>
+            {" "}
+            à vista no boleto bancário
           </span>
         </div>
       </div>
