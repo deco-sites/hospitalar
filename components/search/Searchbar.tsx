@@ -71,7 +71,7 @@ export type Props = EditableProps & {
 
 function Searchbar({
   placeholder = "What are you looking for?",
-  action = "/s",
+  action = "/busca",
   name = "q",
   query,
   variant = "mobile",
@@ -123,11 +123,12 @@ function Searchbar({
           aria-controls="search-suggestion"
           autocomplete="off"
         />
-        <Button
+        <button
           class="btn-ghost"
           aria-label="Search"
           htmlFor="searchbar"
           tabIndex={-1}
+          type="submit"
         >
           <Icon
             class="text-base-content"
@@ -135,7 +136,7 @@ function Searchbar({
             size={20}
             strokeWidth={0.01}
           />
-        </Button>
+        </button>
         {hide.cleanButton ? null : (
           <button
             type="button"
@@ -204,7 +205,7 @@ function Searchbar({
                           {suggestions.value!.searches?.map(({ term }) => (
                             <li>
                               <a
-                                href={`/s?q=${term}`}
+                                href={`/busca?q=${term}`}
                                 class="flex gap-4 items-center"
                               >
                                 <span>
