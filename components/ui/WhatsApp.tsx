@@ -17,11 +17,10 @@ function WhatsApp({ phone }: Props) {
         class="relative text-white rounded-full shadow-lg border-2 border-[#48EB6C] items-center justify-center flex"
         aria-label="Chat on WhatsApp"
       >
-        <div class="w-full h-full p-[14px] rounded-full shadow-lg border-2 bg-[#16C53A] border-[#16C53A] items-center justify-center flex transition duration-300 ease-in-out hover:border-[#48EB6C] hover:bg-[#129e2e]">
+        <div class="w-full h-full p-[8px] md:p-[14px] rounded-full shadow-lg border-2 bg-[#16C53A] border-[#16C53A] items-center justify-center flex transition duration-300 ease-in-out hover:border-[#48EB6C] hover:bg-[#129e2e]">
           <svg
+            class="w-[22px] h-[22px] md:w-[40px] md:h-[40px]"
             xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
             viewBox="0 0 42 42"
             fill="none"
           >
