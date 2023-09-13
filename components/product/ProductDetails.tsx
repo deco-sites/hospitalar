@@ -99,7 +99,8 @@ function ProductInfo(
         )}
       </div>
       {/* Prices */}
-      <div class="mt-5">
+      { availability === "https://schema.org/InStock" ? (
+        <div class="mt-5">
         <div class="flex flex-row gap-2 items-center">
           {listPrice !== price && (
             <span class="line-through text-base-300 text-xs">
@@ -129,10 +130,13 @@ function ProductInfo(
           </span>
         </div>
       </div>
+      ) : null }
       {/* Sku Selector */}
-      <div class="mt-4 sm:mt-5">
+      { availability === "https://schema.org/InStock" ? (
+        <div class="mt-4 sm:mt-5">
         <ProductSelector product={product} />
       </div>
+      ): null }
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 lg:mt-10 flex gap-[30px]">
         {availability === "https://schema.org/InStock"
@@ -154,13 +158,15 @@ function ProductInfo(
       </div>
       {/* Shipping Simulation */}
 
-      <ShippingSimulation
-        items={[{
-          id: Number(product.sku),
-          quantity: 1,
-          seller: seller ?? "1",
-        }]}
-      />
+      { availability === "https://schema.org/InStock" ? (
+        <ShippingSimulation
+          items={[{
+            id: Number(product.sku),
+            quantity: 1,
+            seller: seller ?? "1",
+          }]}
+        />
+      ) : null }
       {/* Description card */}
       <details className="collapse collapse-plus mt-[30px]">
         <summary className="collapse-title border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-bold">
