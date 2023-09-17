@@ -134,7 +134,7 @@ function NavItem({ item }: { item: INavItem }) {
           class={`after:absolute after:transition-all after:duration-100 after:-bottom-1 relative after:left-0 after:w-0 after:h-[1px] after:bg-secondary text-sm transition-all font-bold duration-300 ${
             highlighted
               ? "text-primary"
-              : "text-white group-hover:text-[#85BAD5] group-hover:after:w-full"
+              : "text-white group-hover:text-secondary group-hover:after:w-full"
           }`}
         >
           {label}
