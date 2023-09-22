@@ -99,40 +99,49 @@ function ProductInfo(
         )}
       </div>
       {/* Prices */}
-      <div class="mt-5">
-        <div class="flex flex-row gap-2 items-center">
-          {listPrice !== price && (
-            <span class="line-through text-base-300 text-xs">
-              {formatPrice(listPrice, offers!.priceCurrency!)}
-            </span>
-          )}
-          <span class="font-medium text-3xl text-primary">
-            {formatPrice(price, offers!.priceCurrency!)}
-          </span>
-        </div>
-        <div class="flex flex-col">
-          <span>
-            em até <strong>{installment?.billingDuration}x</strong> de{" "}
-            <strong>
-              {formatPrice(
-                installment?.billingIncrement,
-                offers!.priceCurrency,
+      {availability === "https://schema.org/InStock"
+        ? (
+          <div class="mt-5">
+            <div class="flex flex-row gap-2 items-center">
+              {listPrice !== price && (
+                <span class="line-through text-base-300 text-xs">
+                  {formatPrice(listPrice, offers!.priceCurrency!)}
+                </span>
               )}
-            </strong>{" "}
-            s/ juros
-          </span>
-          <span>
-            ou{" "}
-            <strong>{formatPrice(price! * 0.97, offers!.priceCurrency)}</strong>
-            {" "}
-            à vista no boleto bancário
-          </span>
-        </div>
-      </div>
+              <span class="font-medium text-3xl text-primary">
+                {formatPrice(price, offers!.priceCurrency!)}
+              </span>
+            </div>
+            <div class="flex flex-col">
+              <span>
+                em até <strong>{installment?.billingDuration}x</strong> de{" "}
+                <strong>
+                  {formatPrice(
+                    installment?.billingIncrement,
+                    offers!.priceCurrency,
+                  )}
+                </strong>{" "}
+                s/ juros
+              </span>
+              <span>
+                ou{" "}
+                <strong>
+                  {formatPrice(price! * 0.97, offers!.priceCurrency)}
+                </strong>{" "}
+                à vista no boleto bancário
+              </span>
+            </div>
+          </div>
+        )
+        : null}
       {/* Sku Selector */}
-      <div class="mt-4 sm:mt-5">
-        <ProductSelector product={product} />
-      </div>
+      {availability === "https://schema.org/InStock"
+        ? (
+          <div class="mt-4 sm:mt-5">
+            <ProductSelector product={product} />
+          </div>
+        )
+        : null}
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 lg:mt-10 flex gap-[30px]">
         {availability === "https://schema.org/InStock"
@@ -154,13 +163,17 @@ function ProductInfo(
       </div>
       {/* Shipping Simulation */}
 
-      <ShippingSimulation
-        items={[{
-          id: Number(product.sku),
-          quantity: 1,
-          seller: seller ?? "1",
-        }]}
-      />
+      {availability === "https://schema.org/InStock"
+        ? (
+          <ShippingSimulation
+            items={[{
+              id: Number(product.sku),
+              quantity: 1,
+              seller: seller ?? "1",
+            }]}
+          />
+        )
+        : null}
       {/* Description card */}
       <details className="collapse collapse-plus mt-[30px]">
         <summary className="collapse-title border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-bold">

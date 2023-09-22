@@ -89,7 +89,9 @@ function ProductCard(
   } = product;
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
-  const { listPrice, price, installment, seller } = useOffer(offers);
+  const { listPrice, price, installment, seller, availability } = useOffer(
+    offers,
+  );
   const possibilities = useVariantPossibilities(product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const clickEvent = {
@@ -299,45 +301,56 @@ function ProductCard(
                 )}
             </div>
           )}
-        {l?.hide.allPrices ? "" : (
-          <div class="flex flex-col mt-2">
-            <div
-              class={`flex items-center gap-2.5 ${
-                l?.basics?.oldPriceSize === "Normal" ? "lg:flex-row" : ""
-              } ${align === "center" ? "justify-center" : "justify-start"}`}
-            >
-              {(listPrice && price) && listPrice > price && (
-                <p
-                  class={`line-through text-base-300 text-xs ${
-                    l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
-                  }`}
-                >
-                  {formatPrice(listPrice, offers!.priceCurrency!)}
-                </p>
-              )}
-              <p class="text-primary text-sm font-bold">
-                {formatPrice(price, offers!.priceCurrency!)}
-              </p>
-            </div>
-            {l?.hide.installments
-              ? ""
-              : (
-                <div class="text-xs font-normal text-gray-800 mt-[5px]">
-                  em até {installment?.billingDuration}x de ${formatPrice(
-                    installment?.billingIncrement,
-                    offers!.priceCurrency!,
-                  )} sem juros
+        {availability === "https://schema.org/InStock"
+          ? (
+            <>
+              {l?.hide.allPrices ? "" : (
+                <div class="flex flex-col mt-2">
+                  <div
+                    class={`flex items-center gap-2.5 ${
+                      l?.basics?.oldPriceSize === "Normal" ? "lg:flex-row" : ""
+                    } ${
+                      align === "center" ? "justify-center" : "justify-start"
+                    }`}
+                  >
+                    {(listPrice && price) && listPrice > price && (
+                      <p
+                        class={`line-through text-base-300 text-xs ${
+                          l?.basics?.oldPriceSize === "Normal"
+                            ? "lg:text-xl"
+                            : ""
+                        }`}
+                      >
+                        {formatPrice(listPrice, offers!.priceCurrency!)}
+                      </p>
+                    )}
+                    <p class="text-primary text-sm font-bold">
+                      {formatPrice(price, offers!.priceCurrency!)}
+                    </p>
+                  </div>
+                  {l?.hide.installments
+                    ? ""
+                    : (
+                      <div class="text-xs font-normal text-gray-800 mt-[5px]">
+                        em até {installment?.billingDuration}x de ${formatPrice(
+                          installment?.billingIncrement,
+                          offers!.priceCurrency!,
+                        )} sem juros
+                      </div>
+                    )}
+                  <div class="text-xs font-normal text-gray-800 mt-[5px]">
+                    ou {formatPrice(price! * 0.97, offers!.priceCurrency!)}{" "}
+                    à vista no boleto
+                  </div>
                 </div>
               )}
-            <div class="text-xs font-normal text-gray-800 mt-[5px]">
-              ou {formatPrice(price! * 0.97, offers!.priceCurrency!)}{" "}
-              à vista no boleto
-            </div>
-          </div>
-        )}
+            </>
+          )
+          : null}
 
         {/* SKU Selector */}
-        {l?.elementsPositions?.skuSelector === "Bottom" && (
+        {(l?.elementsPositions?.skuSelector === "Bottom" &&
+          availability === "https://schema.org/InStock") && (
           <>
             {l?.hide.skuSelector ? "" : (
               <ul
@@ -351,17 +364,21 @@ function ProductCard(
           </>
         )}
 
-        <div
-          class={`w-full flex flex-col mt-[10px]
+        {availability === "https://schema.org/InStock"
+          ? (
+            <div
+              class={`w-full flex flex-col mt-[10px]
           ${
-            l?.onMouseOver?.showSkuSelector || l?.onMouseOver?.showCta
-              ? "transition-opacity lg:opacity-0 lg:group-hover:opacity-100"
-              : "lg:hidden"
-          }
+                l?.onMouseOver?.showSkuSelector || l?.onMouseOver?.showCta
+                  ? "transition-opacity lg:opacity-0 lg:group-hover:opacity-100"
+                  : "lg:hidden"
+              }
         `}
-        >
-          {l?.onMouseOver?.showCta && cta}
-        </div>
+            >
+              {l?.onMouseOver?.showCta && cta}
+            </div>
+          )
+          : null}
       </div>
     </div>
   );
