@@ -70,7 +70,7 @@ interface InputNewletterProps {
   required: boolean;
 }
 
-export const loader = (props: Props, req: Request) => {
+const loader = (props: Props, req: Request) => {
   const cookies = getCookies(req.headers);
   const cookieEmpty = req.method === "POST";
   const isOpen = cookieEmpty ? false : Boolean(!cookies["DecoNewsletterModal"]);

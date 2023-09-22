@@ -1,1 +1,1 @@
-export { default, loader } from "$store/islands/NewsletterModal.tsx";
+export { default } from "$store/islands/NewsletterModal.tsx";
