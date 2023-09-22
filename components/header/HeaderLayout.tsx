@@ -42,8 +42,7 @@ function HeaderLayout(
         </div>
         <div class="flex items-center w-auto lg:justify-between xl:gap-8 lg:gap-2">
           <div class="flex items-center xl:gap-4 lg:gap-2">
-            <Buttons variant="search" />
-            <SearchBar searchbar={{ ...searchbar, variant: "mobile" }} />
+            {/* <Buttons variant="search" /> */}
             <a
               class="max-lg:hidden rounded-full border-2 border-solid no-animation btn-square btn-ghost flex items-center justify-center"
               href="/account"
@@ -60,6 +59,7 @@ function HeaderLayout(
           </div>
         </div>
       </div>
+      <SearchBar searchbar={{ ...searchbar, variant: "mobile" }} />
 
       <Modals
         minicart={minicart}

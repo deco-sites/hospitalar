@@ -18,16 +18,14 @@ function Searchbar({ searchbar }: Props) {
 
   return (
     <div
-      class={`${
-        open ? "block border-y border-base-200 shadow" : "hidden"
-      } absolute left-0 top-0 w-screen z-50 bg-base-100`}
-      style={{ marginTop: 91 }}
+      // class={`${
+      //   open ? "block border-y border-base-200 shadow" : "hidden"
+      // } absolute left-0 top-0 w-screen z-50 bg-base-100`}
+      // style={{ marginTop: 91 }}
     >
-      {open && (
-        <Suspense fallback={<span class="loading loading-ring" />}>
-          <LazySearchbar {...searchbar} variant="desktop" />
-        </Suspense>
-      )}
+      <Suspense fallback={<span class="loading loading-ring" />}>
+        <LazySearchbar {...searchbar} variant="desktop" />
+      </Suspense>
     </div>
   );
 }
