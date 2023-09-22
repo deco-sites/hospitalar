@@ -81,12 +81,12 @@ function Searchbar({
 }: Props) {
   const searchInputRef = useRef<HTMLInputElement>(null);
   const { setSearch, suggestions, loading } = useAutocomplete();
-  const [ valueSearch, setValueSearch ] = useState<string>("")
+  const [valueSearch, setValueSearch] = useState<string>("");
   const hasProducts = Boolean(suggestions.value?.products?.length);
   const hasTerms = Boolean(suggestions.value?.searches?.length);
   const notFound = !hasProducts && !hasTerms;
 
-  console.log("Terms: ", { hasProducts, hasTerms })
+  console.log("Terms: ", { hasProducts, hasTerms });
 
   useEffect(() => {
     if (!searchInputRef.current) {
@@ -96,9 +96,9 @@ function Searchbar({
     searchInputRef.current.focus();
   }, []);
 
-  const resultSearch = ()=>{
+  const resultSearch = () => {
     if (valueSearch !== "") {
-      return(
+      return (
         <div class="flex flex-col gap-6 divide-y divide-base-200 mt-6 empty:mt-0 md:flex-row md:divide-y-0">
           {notFound
             ? (
@@ -111,8 +111,8 @@ function Searchbar({
                   Nenhum resultado encontrado
                 </span>
                 <span class="text-center text-base-300">
-                  Vamos tentar de outro jeito? Verifique a ortografia ou use
-                  um termo diferente
+                  Vamos tentar de outro jeito? Verifique a ortografia ou use um
+                  termo diferente
                 </span>
               </div>
             )
@@ -184,11 +184,11 @@ function Searchbar({
               </>
             )}
         </div>
-      )
+      );
     }
 
     return null;
-  }
+  };
 
   const Searchbar = (
     <div class="flex items-center gap-4">
@@ -245,9 +245,7 @@ function Searchbar({
   return (
     <div class="flex flex-col py-4 md:py-6 md:px-20 container">
       {Searchbar}
-      {hide.results
-        ? null
-        : resultSearch()}
+      {hide.results ? null : resultSearch()}
     </div>
   );
 }
