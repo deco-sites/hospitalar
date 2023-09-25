@@ -1,7 +1,4 @@
 import { lazy, Suspense } from "preact/compat";
-
-import { useUI } from "$store/sdk/useUI.ts";
-import { headerHeight } from "$store/components/header/constants.ts";
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 
 const LazySearchbar = lazy(() =>
@@ -13,16 +10,8 @@ interface Props {
 }
 
 function Searchbar({ searchbar }: Props) {
-  const { displaySearchbar } = useUI();
-  const open = displaySearchbar.value;
-
   return (
-    <div
-      // class={`${
-      //   open ? "block border-y border-base-200 shadow" : "hidden"
-      // } absolute left-0 top-0 w-screen z-50 bg-base-100`}
-      // style={{ marginTop: 91 }}
-    >
+    <div className="flex flex-1 w-full">
       <Suspense fallback={<span class="loading loading-ring" />}>
         <LazySearchbar {...searchbar} variant="desktop" />
       </Suspense>
