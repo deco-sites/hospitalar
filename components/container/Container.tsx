@@ -45,7 +45,7 @@ function Container({ sections }: Props) {
         },
       ) => (
         <div
-          class={`w-full
+          class={`w-full md:relative
           ${VERTICAL_SPACING[verticalSpacing]} 
           ${SPACING[spacing]}
           ${SHADOW_SIZE[shadow]}`}

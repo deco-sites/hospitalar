@@ -3,7 +3,7 @@ import { EditableProps as SearchbarProps } from "$store/components/search/Search
 import Icon from "$store/components/ui/Icon.tsx";
 import Buttons from "$store/islands/HeaderButton.tsx";
 import Modals from "$store/islands/HeaderModals.tsx";
-import SearchBar from "$store/islands/HeaderSearchbar.tsx";
+import SearchBarComponent from "$store/islands/HeaderSearchbar.tsx";
 import WhatsApp from "$store/components/ui/WhatsApp.tsx";
 
 export interface Props {
@@ -38,12 +38,15 @@ function HeaderLayout(
             />
           </a>
         </div>
+        <div className="hidden md:flex flex-1 w-full">
+          <SearchBarComponent
+            searchbar={{ variant: "desktop", ...searchbar }}
+          />
+        </div>
         <div class="max-lg:hidden flex justify-between">
         </div>
         <div class="flex items-center w-auto lg:justify-between xl:gap-8 lg:gap-2">
           <div class="flex items-center xl:gap-4 lg:gap-2">
-            <Buttons variant="search" />
-            <SearchBar searchbar={{ ...searchbar, variant: "mobile" }} />
             <a
               class="max-lg:hidden rounded-full border-2 border-solid no-animation btn-square btn-ghost flex items-center justify-center"
               href="/account"
@@ -60,7 +63,9 @@ function HeaderLayout(
           </div>
         </div>
       </div>
-
+      <div className="md:hidden">
+        <SearchBarComponent searchbar={{ variant: "mobile", ...searchbar }} />
+      </div>
       <Modals
         minicart={minicart}
       />
