@@ -39,7 +39,9 @@ function HeaderLayout(
           </a>
         </div>
         <div className="hidden md:flex flex-1 w-full">
-          <SearchBarComponent searchbar={{ variant: "desktop", ...searchbar }} />
+          <SearchBarComponent
+            searchbar={{ variant: "desktop", ...searchbar }}
+          />
         </div>
         <div class="max-lg:hidden flex justify-between">
         </div>

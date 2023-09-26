@@ -10,7 +10,7 @@ function Searchbar({ searchbar }: Props) {
   return (
     <div className="flex flex-1 w-full">
       <Suspense fallback={<span class="loading loading-ring" />}>
-        <SearchBar {...searchbar} variant="desktop"/>
+        <SearchBar {...searchbar} variant="desktop" />
       </Suspense>
     </div>
   );
