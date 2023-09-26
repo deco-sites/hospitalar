@@ -19,20 +19,7 @@ import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useAutocomplete } from "deco-sites/std/packs/vtex/hooks/useAutocomplete.ts";
 import { useEffect, useRef, useState } from "preact/compat";
-import ResultSearch from "deco-sites/hospitalar/components/header/ResultSearch.tsx";
-
-function CloseButton() {
-  const { displaySearchbar } = useUI();
-
-  return (
-    <Button
-      class="btn-ghost btn-circle btn"
-      onClick={() => (displaySearchbar.value = false)}
-    >
-      <Icon id="XMark" width={20} height={20} strokeWidth={2} />
-    </Button>
-  );
-}
+import ResultSearch from "deco-sites/hospitalar/components/search/ResultSearch.tsx";
 
 // Editable props
 export interface EditableProps {
