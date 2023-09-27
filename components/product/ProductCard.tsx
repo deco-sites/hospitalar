@@ -288,7 +288,7 @@ function ProductCard(
               {l?.hide.productName
                 ? ""
                 : (
-                  <h2 class="truncate text-xs text-gray-800">
+                  <h2 class="text-xs text-gray-800">
                     {isVariantOf?.name || name}
                   </h2>
                 )}
