@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "preact/compat";
+import { Suspense } from "preact/compat";
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import SearchBar from "$store/components/search/Searchbar.tsx";
 interface Props {

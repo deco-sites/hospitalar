@@ -16,6 +16,7 @@ import AddToCartActions from "$store/islands/AddToCartActions.tsx";
 import ProductDetailsImages from "$store/islands/ProductDetailsImages.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { getShareLink } from "$store/sdk/shareLinks.tsx";
+import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 
 import ProductSelector from "./ProductVariantSelector.tsx";
 
@@ -80,6 +81,19 @@ function ProductInfo(
   const { price, listPrice, seller, availability, installment } = useOffer(
     offers,
   );
+  const possibilities = useVariantPossibilities(product);
+  const subName: string[] = [];
+  const productUrl = product?.url || "";
+
+  Object.keys(possibilities).forEach((name) => {
+    Object.entries(possibilities[name]).forEach(
+      ([value, { urls, inStock }]) => {
+        if (urls[0] === productUrl) {
+          subName.push(value);
+        }
+      },
+    );
+  });
 
   return (
     <>
@@ -88,6 +102,7 @@ function ProductInfo(
         <h1>
           <span class="font-medium text-base-content text-2xl">
             {isVariantOf?.name}
+            {subName.map((name) => `- ${name}`)}
           </span>
         </h1>
         {gtin && gtin?.length > 0 && (
