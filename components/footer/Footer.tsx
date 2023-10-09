@@ -2,6 +2,7 @@ import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import FooterSectionList, { FooterSectionItem } from "./Payments.tsx";
 import SocialNetWorks, { SocialItem } from "./SocialNetWorks.tsx";
+import { LogoWidth } from "./constants.ts";
 
 export type IconItem = { icon: AvailableIcons };
 export type StringItem = {
@@ -111,7 +112,7 @@ function Footer(
       <div class="bg-white flex flex-col">
         <div class="flex items-start justify-start gap-5 lg:gap-16 mt-12 max-lg:flex-col">
           <div class="pt-11 px-8 pb-10 max-lg:w-full bg-[#F7F7F7] rounded-[10px]">
-            <Icon id="Logo" height={61} width={142} />
+            <Icon id="Logo" height={61} width={LogoWidth} />
             {socialNetWorks?.length && (
               <SocialNetWorks socialItems={socialNetWorks} />
             )}
