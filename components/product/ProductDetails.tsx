@@ -19,6 +19,7 @@ import { getShareLink } from "$store/sdk/shareLinks.tsx";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 
 import ProductSelector from "./ProductVariantSelector.tsx";
+import ProductAsideInfo from "deco-sites/hospitalar/components/product/ProductAsideInfo.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 
@@ -82,79 +83,26 @@ function ProductInfo(
     offers,
   );
   const possibilities = useVariantPossibilities(product);
-  const subName:string[] = [];
+  const subName: string[] = [];
   const productUrl = product?.url || "";
 
-  Object.keys(possibilities).forEach((name)=>{
-    Object.entries(possibilities[name]).forEach(([value, { urls, inStock }])=>{
-      if(urls[0] === productUrl) {
-        subName.push(value);
-      }
-    })
-  })
+  Object.keys(possibilities).forEach((name) => {
+    Object.entries(possibilities[name]).forEach(
+      ([value, { urls, inStock }]) => {
+        if (urls[0] === productUrl) {
+          subName.push(value);
+        }
+      },
+    );
+  });
 
   return (
     <>
       {/* Code and name */}
-      <div class="mt-4 sm:mt-0">
-        <h1>
-          <span class="font-medium text-base-content text-2xl">
-            {isVariantOf?.name}
-            { subName.map((name)=> `- ${name}`) }
-          </span>
-        </h1>
-        {gtin && gtin?.length > 0 && (
-          <div>
-            <span class="text-sm text-base-300">
-              Referência: {gtin}
-            </span>
-          </div>
-        )}
-      </div>
-      {/* Prices */}
-      {availability === "https://schema.org/InStock"
-        ? (
-          <div class="mt-5">
-            <div class="flex flex-row gap-2 items-center">
-              {listPrice !== price && (
-                <span class="line-through text-base-300 text-xs">
-                  {formatPrice(listPrice, offers!.priceCurrency!)}
-                </span>
-              )}
-              <span class="font-medium text-3xl text-primary">
-                {formatPrice(price, offers!.priceCurrency!)}
-              </span>
-            </div>
-            <div class="flex flex-col">
-              <span>
-                em até <strong>{installment?.billingDuration}x</strong> de{" "}
-                <strong>
-                  {formatPrice(
-                    installment?.billingIncrement,
-                    offers!.priceCurrency,
-                  )}
-                </strong>{" "}
-                s/ juros
-              </span>
-              <span>
-                ou{" "}
-                <strong>
-                  {formatPrice(price! * 0.97, offers!.priceCurrency)}
-                </strong>{" "}
-                à vista no boleto bancário
-              </span>
-            </div>
-          </div>
-        )
-        : null}
-      {/* Sku Selector */}
-      {availability === "https://schema.org/InStock"
-        ? (
-          <div class="mt-4 sm:mt-5">
-            <ProductSelector product={product} />
-          </div>
-        )
-        : null}
+      <ProductAsideInfo
+        product={product}
+        subName={subName}
+      />
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 lg:mt-10 flex gap-[30px]">
         {availability === "https://schema.org/InStock"
