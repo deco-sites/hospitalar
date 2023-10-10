@@ -92,6 +92,19 @@ function ProductCard(
   const { listPrice, price, installment, seller, availability } = useOffer(
     offers,
   );
+
+  function extractURLPart(url: string) {
+    const index = url.indexOf("/p?");
+    if (index !== -1) {
+      return url.substring(0, index + 3); // +3 to include "/p?"
+    }
+    return null; // Returns null if "/p?" is not found in the URL.
+  }
+
+  const desiredPart = extractURLPart(url ?? "");
+
+  console.log(desiredPart);
+
   const possibilities = useVariantPossibilities(product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const clickEvent = {
@@ -212,7 +225,7 @@ function ProductCard(
           <WishlistIcon productGroupID={productGroupID} productID={productID} />
         </div>
         <a
-          href={url && relative(url)}
+          href={url && relative(extractURLPart(url) ?? "")}
           aria-label="view product"
           class="contents relative"
         >
