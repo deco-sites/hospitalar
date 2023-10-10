@@ -18,7 +18,6 @@ import Icon from "$store/components/ui/Icon.tsx";
 import { getShareLink } from "$store/sdk/shareLinks.tsx";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 
-import ProductSelector from "./ProductVariantSelector.tsx";
 import ProductAsideInfo from "deco-sites/hospitalar/components/product/ProductAsideInfo.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
