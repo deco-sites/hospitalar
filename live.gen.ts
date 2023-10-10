@@ -13,13 +13,14 @@ import * as $$$$$5 from "./islands/HeaderSearchbar.tsx";
 import * as $$$$$6 from "./islands/Newsletter.tsx";
 import * as $$$$$7 from "./islands/NewsletterModal.tsx";
 import * as $$$$$8 from "./islands/OutOfStock.tsx";
-import * as $$$$$9 from "./islands/ProductDetailsImages.tsx";
-import * as $$$$$10 from "./islands/ProductImageZoom.tsx";
-import * as $$$$$11 from "./islands/SearchControls.tsx";
-import * as $$$$$12 from "./islands/ShippingSimulation.tsx";
-import * as $$$$$13 from "./islands/SliderJS.tsx";
-import * as $$$$$14 from "./islands/Sort.tsx";
-import * as $$$$$15 from "./islands/WishlistButton.tsx";
+import * as $$$$$9 from "./islands/ProductAsideInfo.tsx";
+import * as $$$$$10 from "./islands/ProductDetailsImages.tsx";
+import * as $$$$$11 from "./islands/ProductImageZoom.tsx";
+import * as $$$$$12 from "./islands/SearchControls.tsx";
+import * as $$$$$13 from "./islands/ShippingSimulation.tsx";
+import * as $$$$$14 from "./islands/SliderJS.tsx";
+import * as $$$$$15 from "./islands/Sort.tsx";
+import * as $$$$$16 from "./islands/WishlistButton.tsx";
 import * as $$$$$$$$0 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$$$1 from "./sections/Category/CategoryBreadcrumb.tsx";
 import * as $$$$$$$$2 from "./sections/Category/CategoryList.tsx";
@@ -237,13 +238,14 @@ const manifest = {
     "./islands/Newsletter.tsx": $$$$$6,
     "./islands/NewsletterModal.tsx": $$$$$7,
     "./islands/OutOfStock.tsx": $$$$$8,
-    "./islands/ProductDetailsImages.tsx": $$$$$9,
-    "./islands/ProductImageZoom.tsx": $$$$$10,
-    "./islands/SearchControls.tsx": $$$$$11,
-    "./islands/ShippingSimulation.tsx": $$$$$12,
-    "./islands/SliderJS.tsx": $$$$$13,
-    "./islands/Sort.tsx": $$$$$14,
-    "./islands/WishlistButton.tsx": $$$$$15,
+    "./islands/ProductAsideInfo.tsx": $$$$$9,
+    "./islands/ProductDetailsImages.tsx": $$$$$10,
+    "./islands/ProductImageZoom.tsx": $$$$$11,
+    "./islands/SearchControls.tsx": $$$$$12,
+    "./islands/ShippingSimulation.tsx": $$$$$13,
+    "./islands/SliderJS.tsx": $$$$$14,
+    "./islands/Sort.tsx": $$$$$15,
+    "./islands/WishlistButton.tsx": $$$$$16,
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i1$$$$0,
