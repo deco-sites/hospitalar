@@ -2,6 +2,7 @@ import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import FooterSectionList, { FooterSectionItem } from "./Payments.tsx";
 import SocialNetWorks, { SocialItem } from "./SocialNetWorks.tsx";
+import { LogoWidth } from "./constants.ts";
 
 export type IconItem = { icon: AvailableIcons };
 export type StringItem = {
@@ -37,7 +38,7 @@ function SectionItem({ item }: { item: Item }) {
         : (
           <a
             href={item.href}
-            class="max-md:text-sm text-xs font-normal text-base-300 hover:text-primary transition-all duration-500"
+            class="text-sm font-normal text-[#4A4B51] hover:text-primary transition-all duration-500"
           >
             {item.label}
           </a>
@@ -51,9 +52,13 @@ export interface SecuritiesItem {
 }
 
 export interface FooterImage {
+  label: string;
+  images: FooterLink[];
+}
+export interface FooterLink {
   image: LiveImage;
   alt: string;
-  label: string;
+  link: string;
 }
 
 export interface Props {
@@ -105,9 +110,9 @@ function Footer(
   return (
     <footer class="">
       <div class="bg-white flex flex-col">
-        <div class="flex items-start justify-start gap-8 mt-12 max-lg:flex-col">
+        <div class="flex items-start justify-start gap-5 lg:gap-16 mt-12 max-lg:flex-col">
           <div class="pt-11 px-8 pb-10 max-lg:w-full bg-[#F7F7F7] rounded-[10px]">
-            <Icon id="LogoFooter" height={54} width={275} />
+            <Icon id="Logo" height={61} width={LogoWidth} />
             {socialNetWorks?.length && (
               <SocialNetWorks socialItems={socialNetWorks} />
             )}
@@ -135,7 +140,7 @@ function Footer(
               {sections.map((section) => (
                 <li>
                   <div>
-                    <span class="text-base text-base-content font-medium">
+                    <span class="text-base text-primary font-medium">
                       {section.label}
                     </span>
 
@@ -183,27 +188,32 @@ function Footer(
             </div>
 
             <div class="max-md:mt-5 mt-16 flex items-end w-full justify-between max-lg:flex-col max-lg:gap-7">
-              <div class="flex items-center gap-8 w-full max-md:flex-col flex-row max-md:items-start">
+              <div class="flex items-center justify-between gap-8 w-full max-md:flex-col flex-row max-md:items-start">
                 <FooterSectionList label="Pagamentos" list={payments} />
                 <FooterSectionList label="Segurança" list={securities} />
+                <ul class="flex self-center md:self-end items-center max-lg:justify-center gap-8">
+                  {poweredby?.map((item) => (
+                    <li class="flex items-center gap-2">
+                      <span class="text-neutral text-[10px]">
+                        {item.label}
+                      </span>
+                      {item.images.map((image) => (
+                        <>
+                          <a href={image.link}>
+                            <img
+                              src={image.image}
+                              alt={image.alt}
+                              width={89}
+                              height={20}
+                              class="w-auto h-auto"
+                            />
+                          </a>
+                        </>
+                      ))}
+                    </li>
+                  ))}
+                </ul>
               </div>
-
-              <ul class="flex items-center w-full lg:w-auto max-lg:justify-center flex-wrap gap-8">
-                {poweredby?.map((item) => (
-                  <li class="flex items-center gap-2">
-                    <span class="text-neutral text-[10px]">
-                      {item.label}
-                    </span>
-                    <img
-                      src={item.image}
-                      alt={item.alt}
-                      width={89}
-                      height={20}
-                      class="w-auto h-auto"
-                    />
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>
