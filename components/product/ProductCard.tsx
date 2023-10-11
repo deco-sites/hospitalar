@@ -103,8 +103,6 @@ function ProductCard(
 
   const desiredPart = extractURLPart(url ?? "");
 
-  console.log(desiredPart);
-
   const possibilities = useVariantPossibilities(product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
   const clickEvent = {
