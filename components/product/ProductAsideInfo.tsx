@@ -3,13 +3,12 @@ import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 
 import ProductSelector from "./ProductVariantSelector.tsx";
+import { useEffect, useState } from "preact/hooks";
 
 interface Props {
   product: Product;
   subName: string[];
 }
-
-const currentURL = window.location?.href;
 
 function ProductAsideInfo({
   product,
@@ -19,14 +18,17 @@ function ProductAsideInfo({
   const { price, listPrice, availability, installment } = useOffer(
     offers,
   );
+
+  const currentURL = window.location?.href;
+
   return (
     <>
       {/* Code and name */}
-      <div class="mt-4 sm:mt-0">
+      <div class="mt-4 sm:mt-0 sm:h-16">
         <h1>
           <span class="font-medium text-base-content text-2xl">
             {isVariantOf?.name}
-            {currentURL == url ? subName.map((name) => `- ${name}`) : ""}
+            {currentURL == url ? subName.map((name) => `- ${name}`) : "  "}
           </span>
         </h1>
         {gtin && gtin?.length > 0 && (
