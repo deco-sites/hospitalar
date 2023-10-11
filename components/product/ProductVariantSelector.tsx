@@ -4,9 +4,10 @@ import type { Product } from "deco-sites/std/commerce/types.ts";
 
 interface Props {
   product: Product;
+  currentURL: string;
 }
 
-function VariantSelector({ product, product: { url } }: Props) {
+function VariantSelector({ product, product: { url }, currentURL }: Props) {
   const possibilities = useVariantPossibilities(product);
 
   return (
@@ -23,7 +24,7 @@ function VariantSelector({ product, product: { url } }: Props) {
                   <Avatar
                     content={value}
                     variant={inStock ? "default" : "disabled"}
-                    active={urls[0] === url}
+                    active={urls[0] === currentURL}
                   />
                 </a>
               </li>

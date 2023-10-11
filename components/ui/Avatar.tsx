@@ -41,8 +41,6 @@ const variants = {
 };
 
 function Avatar({ content, active, variant = "default" }: Props) {
-  console.log("Content: ", content);
-
   return (
     <div class="avatar placeholder font-bold">
       <div
