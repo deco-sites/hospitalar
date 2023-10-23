@@ -12,7 +12,11 @@ import { plugin as tailwindPlugin } from "deco-sites/std/plugins/tailwind/mod.ts
 
 await start($live(manifest, site), {
   plugins: [
-    partytownPlugin(),
+        partytownPlugin({
+          proxyUrl: "/proxy",
+          mainWindowAccessors: ["navigator"],
+        }
+    ),
     tailwindPlugin,
   ],
 });
