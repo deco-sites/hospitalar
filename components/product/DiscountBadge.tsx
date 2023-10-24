@@ -3,11 +3,11 @@ type Props = {
   price: number;
   listPrice: number;
   label?: string;
-  variant?: keyof typeof bgColor;
+  variant?: keyof typeof color;
   className?: string;
 };
 
-const bgColor = {
+const color = {
   emphasis: "bg-emphasis",
   primary: "bg-primary",
   secondary: "bg-secondary",
@@ -20,15 +20,15 @@ const bgColor = {
   undefined: "bg-emphasis",
 };
 
-function DiscountBadge({ price, listPrice, label, variant= 'undefined', className }: Props) {
+function DiscountBadge(
+  { price, listPrice, label, variant = "undefined", className }: Props,
+) {
   const discount = ((listPrice - price) / listPrice) * 100;
 
-  let color = "";
-
-  let index = variant;
+  let bgColor = "";
 
   if (variant) {
-    color = bgColor[index];
+    bgColor = color[variant];
   }
 
   return (
@@ -37,7 +37,7 @@ function DiscountBadge({ price, listPrice, label, variant= 'undefined', classNam
     >
       <div
         class={`text-xs uppercase font-bold border-none px-[10px] py-[7px] rounded-lg flex box-content bg-opacity-100 opacity-100 text-base-100 ${
-          color && `${color}`
+          bgColor && `${bgColor}`
         } `}
       >
         {discount?.toFixed(2).slice(0, 2)}% {label ?? "OFF"}
