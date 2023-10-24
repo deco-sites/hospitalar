@@ -78,7 +78,6 @@ function Cart(props: ICartProps) {
       buttonMode: buttonModeMobile,
     },
     showClearButton = true,
-    goToCartLabel = "Finalizar compra",
   } = props;
   const { loading, mapItemsToAnalyticsItems, removeAllItems, cart } = useCart();
   const isCartEmpty = cart.value?.items.length === 0;
@@ -187,7 +186,7 @@ function Cart(props: ICartProps) {
                 });
               }}
             >
-              {goToCartLabel}
+             Finalizar Compra
             </Button>
           </a>
         </div>
