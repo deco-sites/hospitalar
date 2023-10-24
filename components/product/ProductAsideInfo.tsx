@@ -24,7 +24,7 @@ function ProductAsideInfo({
   return (
     <>
       {/* Code and name */}
-      <div class="mt-4 sm:mt-0 sm:h-16">
+      <div class="mt-4 sm:mt-0 sm:h-auto">
         <h1>
           <span class="font-medium text-base-content text-2xl">
             {isVariantOf?.name}
@@ -45,7 +45,7 @@ function ProductAsideInfo({
           <div class="mt-5">
             <div class="flex flex-row gap-2 items-center">
               {listPrice !== price && (
-                <span class="line-through text-base-300 text-xs">
+                <span class="line-through text-base-300 text-[1.5rem]">
                   {formatPrice(listPrice, offers!.priceCurrency!)}
                 </span>
               )}
