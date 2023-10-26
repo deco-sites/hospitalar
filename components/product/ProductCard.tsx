@@ -324,7 +324,7 @@ function ProductCard(
                   >
                     {(listPrice && price) && listPrice > price && (
                       <p
-                        class={`line-through text-base-300 text-xs ${
+                        class={`line-through text-base-300  text-sm  ${
                           l?.basics?.oldPriceSize === "Normal"
                             ? "lg:text-xl"
                             : ""
@@ -333,7 +333,7 @@ function ProductCard(
                         {formatPrice(listPrice, offers!.priceCurrency!)}
                       </p>
                     )}
-                    <p class="text-primary text-sm font-bold">
+                    <p class="text-primary text-xs font-bold">
                       {formatPrice(price, offers!.priceCurrency!)}
                     </p>
                   </div>
