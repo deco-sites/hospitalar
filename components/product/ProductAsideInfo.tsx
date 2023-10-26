@@ -45,11 +45,11 @@ function ProductAsideInfo({
           <div class="mt-5">
             <div class="flex flex-row gap-2 items-center">
               {listPrice !== price && (
-                <span class="line-through text-base-300 text-3xl">
+                <span class="line-through text-base-300 text-xs" >
                   {formatPrice(listPrice, offers!.priceCurrency!)}
                 </span>
               )}
-              <span class="font-medium text-2xl text-primary">
+              <span class="font-medium text-xl text-primary">
                 {formatPrice(price, offers!.priceCurrency!)}
               </span>
             </div>
@@ -66,7 +66,7 @@ function ProductAsideInfo({
               </span>
               <span>
                 ou{" "}
-                <strong>
+                <strong class="text-2xl">
                   {formatPrice(price! * 0.97, offers!.priceCurrency)}
                 </strong>{" "}
                 à vista no boleto bancário

@@ -324,7 +324,7 @@ function ProductCard(
                   >
                     {(listPrice && price) && listPrice > price && (
                       <p
-                        class={`line-through text-base-300  text-sm  ${
+                        class={`line-through text-base-300 text-xs  ${
                           l?.basics?.oldPriceSize === "Normal"
                             ? "lg:text-xl"
                             : ""
@@ -333,7 +333,7 @@ function ProductCard(
                         {formatPrice(listPrice, offers!.priceCurrency!)}
                       </p>
                     )}
-                    <p class="text-primary text-xs font-bold">
+                    <p class="text-primary text-sm font-bold">
                       {formatPrice(price, offers!.priceCurrency!)}
                     </p>
                   </div>
@@ -348,7 +348,7 @@ function ProductCard(
                       </div>
                     )}
                   <div class="text-xs font-normal text-gray-800 mt-[5px]">
-                    ou {formatPrice(price! * 0.97, offers!.priceCurrency!)}{" "}
+                    ou <span class ="text-[1.0rem] text-primary font-bold">{formatPrice(price! * 0.97, offers!.priceCurrency!)}{" "}</span>.
                     à vista no boleto
                   </div>
                 </div>
