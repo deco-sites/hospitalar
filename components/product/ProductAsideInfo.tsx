@@ -45,11 +45,11 @@ function ProductAsideInfo({
           <div class="mt-5">
             <div class="flex flex-row gap-2 items-center">
               {listPrice !== price && (
-                <span class="line-through text-base-300 text-[1.5rem]">
+                <span class="line-through text-base-300 text-3xl">
                   {formatPrice(listPrice, offers!.priceCurrency!)}
                 </span>
               )}
-              <span class="font-medium text-3xl text-primary">
+              <span class="font-medium text-2xl text-primary">
                 {formatPrice(price, offers!.priceCurrency!)}
               </span>
             </div>
