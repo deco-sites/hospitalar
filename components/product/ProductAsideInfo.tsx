@@ -43,6 +43,13 @@ function ProductAsideInfo({
       {availability === "https://schema.org/InStock"
         ? (
           <div class="mt-5">
+             <span>
+                {" "}
+                <strong class="text-2xl">
+                  {formatPrice(price! * 0.97, offers!.priceCurrency)}
+                </strong>{" "}
+                à vista no boleto bancário ou
+              </span>
             <div class="flex flex-row gap-2 items-center">
               {listPrice !== price && (
                 <span class="line-through text-base-300 text-xs" >
@@ -62,15 +69,9 @@ function ProductAsideInfo({
                     offers!.priceCurrency,
                   )}
                 </strong>{" "}
-                s/ juros
+                s/ juros.
               </span>
-              <span>
-                ou{" "}
-                <strong class="text-2xl">
-                  {formatPrice(price! * 0.97, offers!.priceCurrency)}
-                </strong>{" "}
-                à vista no boleto bancário
-              </span>
+             
             </div>
           </div>
         )
