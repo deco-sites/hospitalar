@@ -317,7 +317,7 @@ function ProductCard(
                 <div class="flex flex-col mt-2">
                   <div class="text-xs font-normal text-gray-800 mt-[5px]">
                     <span class ="text-[1.0rem] text-primary font-bold">{formatPrice(price! * 0.97, offers!.priceCurrency!)}{" "}</span>
-                    à vista no boleto ou 
+                    à vista ou 
                   </div>
                   <div
                     class={`flex items-center gap-2.5 ${
@@ -337,7 +337,7 @@ function ProductCard(
                         {formatPrice(listPrice, offers!.priceCurrency!)}
                       </p>
                     )}
-                    <p class="text-primary text-sm font-bold">
+                    <p class="text-primary text-sm">
                       {formatPrice(price, offers!.priceCurrency!)}
                     </p>
                   </div>

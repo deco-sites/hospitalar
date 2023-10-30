@@ -48,7 +48,7 @@ function ProductAsideInfo({
                 <strong class="text-2xl">
                   {formatPrice(price! * 0.97, offers!.priceCurrency)}
                 </strong>{" "}
-                à vista no boleto bancário ou
+                à vista ou
               </span>
             <div class="flex flex-row gap-2 items-center">
               {listPrice !== price && (
