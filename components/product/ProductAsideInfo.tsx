@@ -24,7 +24,7 @@ function ProductAsideInfo({
   return (
     <>
       {/* Code and name */}
-      <div class="mt-4 sm:mt-0 sm:h-16">
+      <div class="mt-4 sm:mt-0 sm:h-auto">
         <h1>
           <span class="font-medium text-base-content text-2xl">
             {isVariantOf?.name}
@@ -43,13 +43,20 @@ function ProductAsideInfo({
       {availability === "https://schema.org/InStock"
         ? (
           <div class="mt-5">
+             <span>
+                {" "}
+                <strong class="text-2xl">
+                  {formatPrice(price! * 0.97, offers!.priceCurrency)}
+                </strong>{" "}
+                à vista ou
+              </span>
             <div class="flex flex-row gap-2 items-center">
               {listPrice !== price && (
-                <span class="line-through text-base-300 text-xs">
+                <span class="line-through text-base-300 text-xs" >
                   {formatPrice(listPrice, offers!.priceCurrency!)}
                 </span>
               )}
-              <span class="font-medium text-3xl text-primary">
+              <span class="font-medium text-xl text-primary">
                 {formatPrice(price, offers!.priceCurrency!)}
               </span>
             </div>
@@ -62,15 +69,9 @@ function ProductAsideInfo({
                     offers!.priceCurrency,
                   )}
                 </strong>{" "}
-                s/ juros
+                s/ juros.
               </span>
-              <span>
-                ou{" "}
-                <strong>
-                  {formatPrice(price! * 0.97, offers!.priceCurrency)}
-                </strong>{" "}
-                à vista no boleto bancário
-              </span>
+             
             </div>
           </div>
         )

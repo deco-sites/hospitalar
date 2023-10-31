@@ -315,6 +315,10 @@ function ProductCard(
             <>
               {l?.hide.allPrices ? "" : (
                 <div class="flex flex-col mt-2">
+                  <div class="text-xs font-normal text-gray-800 mt-[5px]">
+                    <span class ="text-[1.0rem] text-primary font-bold">{formatPrice(price! * 0.97, offers!.priceCurrency!)}{" "}</span>
+                    à vista ou 
+                  </div>
                   <div
                     class={`flex items-center gap-2.5 ${
                       l?.basics?.oldPriceSize === "Normal" ? "lg:flex-row" : ""
@@ -324,7 +328,7 @@ function ProductCard(
                   >
                     {(listPrice && price) && listPrice > price && (
                       <p
-                        class={`line-through text-base-300 text-xs ${
+                        class={`line-through text-base-300 text-xs  ${
                           l?.basics?.oldPriceSize === "Normal"
                             ? "lg:text-xl"
                             : ""
@@ -333,7 +337,7 @@ function ProductCard(
                         {formatPrice(listPrice, offers!.priceCurrency!)}
                       </p>
                     )}
-                    <p class="text-primary text-sm font-bold">
+                    <p class="text-primary text-sm">
                       {formatPrice(price, offers!.priceCurrency!)}
                     </p>
                   </div>
@@ -347,10 +351,7 @@ function ProductCard(
                         )} sem juros
                       </div>
                     )}
-                  <div class="text-xs font-normal text-gray-800 mt-[5px]">
-                    ou {formatPrice(price! * 0.97, offers!.priceCurrency!)}{" "}
-                    à vista no boleto
-                  </div>
+                  
                 </div>
               )}
             </>

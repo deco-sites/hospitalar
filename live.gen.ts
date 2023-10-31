@@ -16,11 +16,12 @@ import * as $$$$$8 from "./islands/OutOfStock.tsx";
 import * as $$$$$9 from "./islands/ProductAsideInfo.tsx";
 import * as $$$$$10 from "./islands/ProductDetailsImages.tsx";
 import * as $$$$$11 from "./islands/ProductImageZoom.tsx";
-import * as $$$$$12 from "./islands/SearchControls.tsx";
-import * as $$$$$13 from "./islands/ShippingSimulation.tsx";
-import * as $$$$$14 from "./islands/SliderJS.tsx";
-import * as $$$$$15 from "./islands/Sort.tsx";
-import * as $$$$$16 from "./islands/WishlistButton.tsx";
+import * as $$$$$12 from "./islands/Searchbar.tsx";
+import * as $$$$$13 from "./islands/SearchControls.tsx";
+import * as $$$$$14 from "./islands/ShippingSimulation.tsx";
+import * as $$$$$15 from "./islands/SliderJS.tsx";
+import * as $$$$$16 from "./islands/Sort.tsx";
+import * as $$$$$17 from "./islands/WishlistButton.tsx";
 import * as $$$$$$$$0 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$$$1 from "./sections/Category/CategoryBreadcrumb.tsx";
 import * as $$$$$$$$2 from "./sections/Category/CategoryList.tsx";
@@ -91,16 +92,19 @@ import * as i1$$$$2 from "$live/sections/PageInclude.tsx";
 import * as i1$$$$3 from "$live/sections/Slot.tsx";
 import * as i1$$$$4 from "$live/sections/UseSlot.tsx";
 import * as i1$$$$$0 from "$live/matchers/MatchAlways.ts";
-import * as i1$$$$$1 from "$live/matchers/MatchCron.ts";
-import * as i1$$$$$2 from "$live/matchers/MatchDate.ts";
-import * as i1$$$$$3 from "$live/matchers/MatchDevice.ts";
-import * as i1$$$$$4 from "$live/matchers/MatchEnvironment.ts";
-import * as i1$$$$$5 from "$live/matchers/MatchHost.ts";
-import * as i1$$$$$6 from "$live/matchers/MatchLocation.ts";
-import * as i1$$$$$7 from "$live/matchers/MatchMulti.ts";
-import * as i1$$$$$8 from "$live/matchers/MatchRandom.ts";
-import * as i1$$$$$9 from "$live/matchers/MatchSite.ts";
-import * as i1$$$$$10 from "$live/matchers/MatchUserAgent.ts";
+import * as i1$$$$$1 from "$live/matchers/MatchCookies.ts";
+import * as i1$$$$$2 from "$live/matchers/MatchCron.ts";
+import * as i1$$$$$3 from "$live/matchers/MatchDate.ts";
+import * as i1$$$$$4 from "$live/matchers/MatchDevice.ts";
+import * as i1$$$$$5 from "$live/matchers/MatchEnvironment.ts";
+import * as i1$$$$$6 from "$live/matchers/MatchHost.ts";
+import * as i1$$$$$7 from "$live/matchers/MatchLocation.ts";
+import * as i1$$$$$8 from "$live/matchers/MatchMulti.ts";
+import * as i1$$$$$9 from "$live/matchers/MatchNegate.ts";
+import * as i1$$$$$10 from "$live/matchers/MatchNever.ts";
+import * as i1$$$$$11 from "$live/matchers/MatchRandom.ts";
+import * as i1$$$$$12 from "$live/matchers/MatchSite.ts";
+import * as i1$$$$$13 from "$live/matchers/MatchUserAgent.ts";
 import * as i1$$$$$$0 from "$live/flags/audience.ts";
 import * as i1$$$$$$1 from "$live/flags/everyone.ts";
 import * as i1$$$$$$2 from "$live/flags/flag.ts";
@@ -241,11 +245,12 @@ const manifest = {
     "./islands/ProductAsideInfo.tsx": $$$$$9,
     "./islands/ProductDetailsImages.tsx": $$$$$10,
     "./islands/ProductImageZoom.tsx": $$$$$11,
-    "./islands/SearchControls.tsx": $$$$$12,
-    "./islands/ShippingSimulation.tsx": $$$$$13,
-    "./islands/SliderJS.tsx": $$$$$14,
-    "./islands/Sort.tsx": $$$$$15,
-    "./islands/WishlistButton.tsx": $$$$$16,
+    "./islands/Searchbar.tsx": $$$$$12,
+    "./islands/SearchControls.tsx": $$$$$13,
+    "./islands/ShippingSimulation.tsx": $$$$$14,
+    "./islands/SliderJS.tsx": $$$$$15,
+    "./islands/Sort.tsx": $$$$$16,
+    "./islands/WishlistButton.tsx": $$$$$17,
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i1$$$$0,
@@ -366,16 +371,19 @@ const manifest = {
   },
   "matchers": {
     "$live/matchers/MatchAlways.ts": i1$$$$$0,
-    "$live/matchers/MatchCron.ts": i1$$$$$1,
-    "$live/matchers/MatchDate.ts": i1$$$$$2,
-    "$live/matchers/MatchDevice.ts": i1$$$$$3,
-    "$live/matchers/MatchEnvironment.ts": i1$$$$$4,
-    "$live/matchers/MatchHost.ts": i1$$$$$5,
-    "$live/matchers/MatchLocation.ts": i1$$$$$6,
-    "$live/matchers/MatchMulti.ts": i1$$$$$7,
-    "$live/matchers/MatchRandom.ts": i1$$$$$8,
-    "$live/matchers/MatchSite.ts": i1$$$$$9,
-    "$live/matchers/MatchUserAgent.ts": i1$$$$$10,
+    "$live/matchers/MatchCookies.ts": i1$$$$$1,
+    "$live/matchers/MatchCron.ts": i1$$$$$2,
+    "$live/matchers/MatchDate.ts": i1$$$$$3,
+    "$live/matchers/MatchDevice.ts": i1$$$$$4,
+    "$live/matchers/MatchEnvironment.ts": i1$$$$$5,
+    "$live/matchers/MatchHost.ts": i1$$$$$6,
+    "$live/matchers/MatchLocation.ts": i1$$$$$7,
+    "$live/matchers/MatchMulti.ts": i1$$$$$8,
+    "$live/matchers/MatchNegate.ts": i1$$$$$9,
+    "$live/matchers/MatchNever.ts": i1$$$$$10,
+    "$live/matchers/MatchRandom.ts": i1$$$$$11,
+    "$live/matchers/MatchSite.ts": i1$$$$$12,
+    "$live/matchers/MatchUserAgent.ts": i1$$$$$13,
   },
   "flags": {
     "$live/flags/audience.ts": i1$$$$$$0,
