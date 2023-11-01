@@ -1,4 +1,4 @@
-import type { Product } from "deco-sites/std/commerce/types.ts";
+import type { Product } from "apps/commerce/types.ts";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 
@@ -43,16 +43,16 @@ function ProductAsideInfo({
       {availability === "https://schema.org/InStock"
         ? (
           <div class="mt-5">
-             <span>
-                {" "}
-                <strong class="text-2xl">
-                  {formatPrice(price! * 0.97, offers!.priceCurrency)}
-                </strong>{" "}
-                à vista ou
-              </span>
+            <span>
+              {" "}
+              <strong class="text-2xl">
+                {formatPrice(price! * 0.97, offers!.priceCurrency)}
+              </strong>{" "}
+              à vista ou
+            </span>
             <div class="flex flex-row gap-2 items-center">
               {listPrice !== price && (
-                <span class="line-through text-base-300 text-xs" >
+                <span class="line-through text-base-300 text-xs">
                   {formatPrice(listPrice, offers!.priceCurrency!)}
                 </span>
               )}
@@ -71,7 +71,6 @@ function ProductAsideInfo({
                 </strong>{" "}
                 s/ juros.
               </span>
-             
             </div>
           </div>
         )

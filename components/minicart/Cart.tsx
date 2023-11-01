@@ -186,7 +186,7 @@ function Cart(props: ICartProps) {
                 });
               }}
             >
-             Finalizar Compra
+              Finalizar Compra
             </Button>
           </a>
         </div>
