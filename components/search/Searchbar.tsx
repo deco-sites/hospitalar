@@ -10,16 +10,11 @@
  */
 
 import type { Layout as CardLayout } from "$store/components/product/ProductCard.tsx";
-import ProductCard from "$store/components/product/ProductCard.tsx";
-import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-import Slider from "$store/components/ui/Slider.tsx";
-import Spinner from "$store/components/ui/Spinner.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
-import { useUI } from "$store/sdk/useUI.ts";
+import ResultSearch from "deco-sites/hospitalar/components/search/ResultSearch.tsx";
 import { useAutocomplete } from "deco-sites/std/packs/vtex/hooks/useAutocomplete.ts";
 import { useEffect, useRef, useState } from "preact/compat";
-import ResultSearch from "deco-sites/hospitalar/components/search/ResultSearch.tsx";
 
 // Editable props
 export interface EditableProps {

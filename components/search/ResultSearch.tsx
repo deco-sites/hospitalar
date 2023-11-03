@@ -3,7 +3,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
 import ProductCard from "$store/components/product/ProductCard.tsx";
 import { EditableProps } from "deco-sites/hospitalar/components/search/Searchbar.tsx";
-import type { Suggestion } from "deco-sites/std/commerce/types.ts";
+import type { Suggestion } from "apps/commerce/types.ts";
 
 export type ResultSearch = EditableProps & {
   valueSearch: string;

@@ -9,8 +9,8 @@ import { sendEventOnClick } from "$store/sdk/analytics.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
-import type { Product } from "deco-sites/std/commerce/types.ts";
-import { mapProductToAnalyticsItem } from "deco-sites/std/commerce/utils/productToAnalyticsItem.ts";
+import type { Product } from "apps/commerce/types.ts";
+import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import DiscountBadge from "./DiscountBadge.tsx";
 
@@ -316,8 +316,11 @@ function ProductCard(
               {l?.hide.allPrices ? "" : (
                 <div class="flex flex-col mt-2">
                   <div class="text-xs font-normal text-gray-800 mt-[5px]">
-                    <span class ="text-[1.0rem] text-primary font-bold">{formatPrice(price! * 0.97, offers!.priceCurrency!)}{" "}</span>
-                    à vista ou 
+                    <span class="text-[1.0rem] text-primary font-bold">
+                      {formatPrice(price! * 0.97, offers!.priceCurrency!)}
+                      {" "}
+                    </span>
+                    à vista ou
                   </div>
                   <div
                     class={`flex items-center gap-2.5 ${
@@ -351,7 +354,6 @@ function ProductCard(
                         )} sem juros
                       </div>
                     )}
-                  
                 </div>
               )}
             </>
