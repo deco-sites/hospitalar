@@ -17,6 +17,9 @@ export default defineConfig({
         manifest: decoManifest,
       },
     ),
-    partytownPlugin(),
+    partytownPlugin({
+      proxyUrl: "/proxy",
+      mainWindowAccessors: ["navigator"],
+    }),
   ],
 });
