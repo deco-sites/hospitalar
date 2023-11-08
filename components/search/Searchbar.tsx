@@ -13,7 +13,7 @@ import type { Layout as CardLayout } from "$store/components/product/ProductCard
 import Icon from "$store/components/ui/Icon.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import ResultSearch from "deco-sites/hospitalar/components/search/ResultSearch.tsx";
-import { useAutocomplete } from "deco-sites/std/packs/vtex/hooks/useAutocomplete.ts";
+import { useAutocomplete } from "apps/vtex/hooks/useAutocomplete.ts";
 import { useEffect, useRef, useState } from "preact/compat";
 
 // Editable props
