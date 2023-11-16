@@ -109,8 +109,8 @@ function Footer(
 ) {
   return (
     <footer class="">
-      <div class="bg-white flex flex-col">
-        <div class="flex items-start justify-start gap-5 lg:gap-16 mt-12 max-lg:flex-col">
+      <div class="flex flex-col">
+        <div class="flex items-start justify-start gap-5 lg:gap-16 mt-12 max-lg:flex-col bg-main-bf-theme">
           <div class="pt-11 px-8 pb-10 max-lg:w-full bg-sub-bf-theme rounded-[10px]">
             <Icon id="Logo-bf" height={61} width={LogoWidth} />
             {socialNetWorks?.length && (

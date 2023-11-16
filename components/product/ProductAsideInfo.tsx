@@ -26,7 +26,7 @@ function ProductAsideInfo({
       {/* Code and name */}
       <div class="mt-4 sm:mt-0 sm:h-auto">
         <h1>
-          <span class="font-medium text-base-content text-2xl">
+          <span class="font-medium text-title-product text-2xl">
             {isVariantOf?.name}
             {currentURL == url ? subName.map((name) => `- ${name}`) : "  "}
           </span>
@@ -43,9 +43,9 @@ function ProductAsideInfo({
       {availability === "https://schema.org/InStock"
         ? (
           <div class="mt-5">
-            <span>
+            <span class="text-main-bf-theme">
               {" "}
-              <strong class="text-2xl">
+              <strong class="text-2xl text-main-bf-theme">
                 {formatPrice(price! * 0.97, offers!.priceCurrency)}
               </strong>{" "}
               à vista ou
@@ -56,12 +56,12 @@ function ProductAsideInfo({
                   {formatPrice(listPrice, offers!.priceCurrency!)}
                 </span>
               )}
-              <span class="font-medium text-xl text-primary">
+              <span class="font-medium text-xl text-[#999BA2]">
                 {formatPrice(price, offers!.priceCurrency!)}
               </span>
             </div>
             <div class="flex flex-col">
-              <span>
+              <span class="text-[#4A4B51]">
                 em até <strong>{installment?.billingDuration}x</strong> de{" "}
                 <strong>
                   {formatPrice(

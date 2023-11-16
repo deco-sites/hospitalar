@@ -1,10 +1,29 @@
 // deno-lint-ignore-file
+import type { Product } from "apps/commerce/types.ts";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+
+export interface DiscountBadgeLink {
+  image: LiveImage;
+  alt: string;
+  link: string;
+}
+
+export interface DiscountBadgeImage {
+  label: string;
+  image: DiscountBadgeLink;
+}
+
 type Props = {
   price: number;
   listPrice: number;
   label?: string;
   variant?: keyof typeof color;
   className?: string;
+  bf: boolean;
+  /**
+   * @title Icone Black Friday
+   */
+  imageBF?: DiscountBadgeImage;
 };
 
 const color = {
@@ -21,7 +40,7 @@ const color = {
 };
 
 function DiscountBadge(
-  { price, listPrice, label, variant = "undefined", className }: Props,
+  { price, listPrice, label, variant = "undefined", className, bf, imageBF }: Props,
 ) {
   const discount = ((listPrice - price) / listPrice) * 100;
 
@@ -35,10 +54,13 @@ function DiscountBadge(
     <div
       class={`absolute left-0 top-0 p-[10px] flex items-center z-10 ${className}`}
     >
+      { bf &&
+        <div class="">
+          <img src={imageBF?.image.image} alt={imageBF?.image.alt} />
+        </div>
+      }
       <div
-        class={`text-xs uppercase font-bold border-none px-[10px] py-[7px] rounded-lg flex box-content bg-opacity-100 opacity-100 text-base-100 ${
-          bgColor && `${bgColor}`
-        } `}
+        class={`text-xs uppercase font-bold border-none px-[10px] py-[7px] rounded-lg flex box-content bg-opacity-100 opacity-100 text-base-100 bg-main-bf-theme`}
       >
         {discount?.toFixed(2).slice(0, 2)}% {label ?? "OFF"}
       </div>

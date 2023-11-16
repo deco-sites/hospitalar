@@ -29,7 +29,7 @@ export default function FooterSectionList({ list, label }: FooterSectionList) {
               width={44}
               height={30}
               alt={item.alt || "footer image"}
-              class="relative w-auto h-[30px] mix-blend-multiply"
+              class="relative w-auto h-[30px]"
             />
           </li>
         ))}
