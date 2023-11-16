@@ -29,7 +29,7 @@ function HeaderLayout(
         <div class="flex items-center gap-5">
           <Buttons variant="menu" />
           <a href="/" class="" aria-label="Store logo">
-            <Icon id="Logo" class="max-sm:hidden" width={236} height={47} />
+            <Icon id="Logo-bf" class="max-sm:hidden" width={236} height={47} />
             <Icon
               id="LogoMobile"
               class="sm:hidden max-w-[45vw]"
@@ -53,7 +53,7 @@ function HeaderLayout(
             >
               <Icon
                 class="text-base-content"
-                id="User"
+                id="UserBF"
                 width={24}
                 height={25}
                 strokeWidth={1}

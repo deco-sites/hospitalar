@@ -37,10 +37,12 @@ function AddToCartButton(
     quantity,
   });
 
+  console.log(classes)
+
   return (
-    <Button data-deco="add-to-cart" {...props} class={classes}>
+    <Button data-deco="add-to-cart" {...props} class={`${classes} bg-main-bf-theme hover:bg-[#4A4B51]`}>
       <p class="flex gap-2 items-center justify-center">
-        <Icon id="ShoppingCart" width={24} height={20} />
+        <Icon id="ShoppingCartBF" width={24} height={20} />
         <span class="lg:hidden">{label ?? "Comprar"}</span>
         <span class="hidden lg:inline">{label ?? "Adicionar ao carrinho"}</span>
       </p>

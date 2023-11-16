@@ -124,17 +124,17 @@ function NavItem({ item }: { item: INavItem }) {
       <a
         href={href}
         class={`px-4 py-2 my-2 w-full text-center ${
-          highlighted ? "bg-white rounded-3xl flex justify-center gap-2" : ""
+          highlighted ? "bg-white rounded-3xl flex justify-center gap-2" : "transition-all hover:bg-main-bf-theme rounded-full duration-300"
         }`}
       >
         {highlighted && (
-          <Icon id="AllCategories" width={18} height={18} strokeWidth={1} />
+          <Icon id="AllCategoriesBF" width={18} height={18} strokeWidth={1} />
         )}
         <span
-          class={`after:absolute after:transition-all after:duration-100 after:-bottom-1 relative after:left-0 after:w-0 after:h-[1px] after:bg-secondary text-sm transition-all font-bold duration-300 ${
+          class={`relative text-sm transition-all font-bold duration-300 ${
             highlighted
-              ? "text-primary"
-              : "text-white group-hover:text-secondary group-hover:after:w-full"
+              ? "text-sub-bf-theme"
+              : "text-white"
           }`}
         >
           {label}

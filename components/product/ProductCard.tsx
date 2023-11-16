@@ -297,7 +297,7 @@ function ProductCard(
           : (
             <div class="flex flex-col gap-0 mt-[15px]">
               {l?.hide.productName ? "" : (
-                <h2 class="text-xs text-gray-800">
+                <h2 class="text-xs text-title-product">
                   {isVariantOf?.name || name}
                 </h2>
               )}
@@ -316,7 +316,7 @@ function ProductCard(
               {l?.hide.allPrices ? "" : (
                 <div class="flex flex-col mt-2">
                   <div class="text-xs font-normal text-gray-800 mt-[5px]">
-                    <span class="text-[1.0rem] text-primary font-bold">
+                    <span class="text-[1.0rem] text-main-bf-theme font-bold">
                       {formatPrice(price! * 0.97, offers!.priceCurrency!)}
                       {" "}
                     </span>
@@ -340,14 +340,14 @@ function ProductCard(
                         {formatPrice(listPrice, offers!.priceCurrency!)}
                       </p>
                     )}
-                    <p class="text-primary text-sm">
+                    <p class="text-price-1 text-sm">
                       {formatPrice(price, offers!.priceCurrency!)}
                     </p>
                   </div>
                   {l?.hide.installments
                     ? ""
                     : (
-                      <div class="text-xs font-normal text-gray-800 mt-[5px]">
+                      <div class="text-xs font-normal text-title-product mt-[5px]">
                         em até {installment?.billingDuration}x de ${formatPrice(
                           installment?.billingIncrement,
                           offers!.priceCurrency!,
