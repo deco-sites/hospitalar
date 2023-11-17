@@ -97,9 +97,9 @@ function ProductCard(
   function extractURLPart(url: string) {
     const index = url.indexOf("/p?");
     if (index !== -1) {
-      return url.substring(0, index + 3); // +3 to include "/p?"
+      return url.substring(0, index + 3);
     }
-    return null; // Returns null if "/p?" is not found in the URL.
+    return null;
   }
 
   const getCollectionProduct = (selectProduct: Product) => {
