@@ -31,7 +31,7 @@ function HeaderLayout(
           <a href="/" class="" aria-label="Store logo">
             <Icon id="Logo-bf" class="max-sm:hidden" width={236} height={47} />
             <Icon
-              id="LogoMobile"
+              id="LogoMobileBF"
               class="sm:hidden max-w-[45vw]"
               width={176}
               height={35}

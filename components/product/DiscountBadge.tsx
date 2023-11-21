@@ -20,9 +20,6 @@ type Props = {
   variant?: keyof typeof color;
   className?: string;
   bf: boolean;
-  /**
-   * @title Icone Black Friday
-   */
   imageBF?: DiscountBadgeImage;
 };
 
@@ -42,13 +39,7 @@ const color = {
 function DiscountBadge(
   { price, listPrice, label, variant = "undefined", className, bf, imageBF }: Props,
 ) {
-
-  console.log({ listPrice, price });
-
   const discount = ((listPrice - price) / listPrice) * 100;
-
-  console.log(discount)
-  console.log(Math.floor(discount?.toFixed(2) * 1))
 
   let bgColor = "";
 
@@ -58,7 +49,7 @@ function DiscountBadge(
 
   return (
     <div
-      class={`absolute left-0 top-0 p-[10px] flex items-center z-10 ${className}`}
+      class={`absolute left-0 top-0 p-[10px] flex flelx-col items-center z-10 ${className}`}
     >
       { bf &&
         <div class="">
