@@ -79,7 +79,7 @@ const HEIGHT = 270;
 function ProductCard(
   { product, preload, itemListName, layout, class: _class }: Props,
 ) {
-  console.log("Product: ",  product)
+  
   const {
     url,
     productID,

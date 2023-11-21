@@ -26,6 +26,7 @@ export type SocialIcons =
 export type AvailableIcons =
   | "Refresh"
   | "Menu"
+  | "MenuBF"
   | "ChevronLeft"
   | "ChevronRight"
   | "ChevronUp"

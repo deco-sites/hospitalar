@@ -42,7 +42,13 @@ const color = {
 function DiscountBadge(
   { price, listPrice, label, variant = "undefined", className, bf, imageBF }: Props,
 ) {
+
+  console.log({ listPrice, price });
+
   const discount = ((listPrice - price) / listPrice) * 100;
+
+  console.log(discount)
+  console.log(Math.floor(discount?.toFixed(2) * 1))
 
   let bgColor = "";
 
@@ -62,7 +68,7 @@ function DiscountBadge(
       <div
         class={`text-xs uppercase font-bold border-none px-[10px] py-[7px] rounded-lg flex box-content bg-opacity-100 opacity-100 text-base-100 bg-main-bf-theme`}
       >
-        {discount?.toFixed(2).slice(0, 2)}% {label ?? "OFF"}
+        {Math.floor(discount?.toFixed(2) * 1)}% {label ?? "OFF"}
       </div>
     </div>
   );
