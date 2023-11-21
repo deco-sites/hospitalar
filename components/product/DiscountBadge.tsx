@@ -49,7 +49,7 @@ function DiscountBadge(
 
   return (
     <div
-      class={`absolute left-0 top-0 p-[10px] flex flelx-col items-center z-10 ${className}`}
+      class={`absolute left-0 top-0 p-[10px] flex flex-col items-center z-10 ${className}`}
     >
       { bf &&
         <div class="">
