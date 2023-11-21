@@ -19,6 +19,33 @@ function ProductAsideInfo({
     offers,
   );
 
+  const PricePDP = () => {
+    if (typeof price === "number" && typeof listPrice === "number") {
+      if(listPrice !== price){
+        return (
+          <>
+            <div class="flex flex-row gap-2 items-center">
+              <span class="line-through text-base-300 text-xs">
+                {formatPrice(listPrice, offers!.priceCurrency!)}
+              </span>
+              <strong class="text-2xl text-main-bf-theme">
+                {formatPrice(price, offers!.priceCurrency!)}
+              </strong>
+            </div>
+          </>
+        );
+      } else {
+        return (
+          <strong class="text-2xl text-main-bf-theme">
+            {formatPrice(price, offers!.priceCurrency!)}
+          </strong>
+        );
+      }
+    }
+
+    return <></>;
+  }
+
   const currentURL = window.location?.href;
 
   return (
@@ -43,23 +70,7 @@ function ProductAsideInfo({
       {availability === "https://schema.org/InStock"
         ? (
           <div class="mt-5">
-            <span class="text-main-bf-theme">
-              {" "}
-              <strong class="text-2xl text-main-bf-theme">
-                {formatPrice(price! * 0.94, offers!.priceCurrency)}
-              </strong>{" "}
-              à vista ou
-            </span>
-            <div class="flex flex-row gap-2 items-center">
-              {listPrice !== price && (
-                <span class="line-through text-base-300 text-xs">
-                  {formatPrice(listPrice, offers!.priceCurrency!)}
-                </span>
-              )}
-              <span class="font-medium text-xl text-[#999BA2]">
-                {formatPrice(price, offers!.priceCurrency!)}
-              </span>
-            </div>
+            <PricePDP />
             <div class="flex flex-col">
               <span class="text-[#4A4B51]">
                 em até <strong>{installment?.billingDuration}x</strong> de{" "}
