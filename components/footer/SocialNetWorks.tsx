@@ -14,7 +14,7 @@ export default function SocialNetWorks(
   { socialItems }: ISocialNetworkProps,
 ) {
   return (
-    <div class="mt-5 border-b border-base-content pb-5">
+    <div class="mt-5 border-b border-base-content pb-5 border-sub-gray-2">
       <ul class="gap-5 flex items-center justify-start">
         {socialItems.map((social) => (
           <li

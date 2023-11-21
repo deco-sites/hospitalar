@@ -83,7 +83,7 @@ function CartButton() {
         )}
         <Icon
           class="text-base-content"
-          id="ShoppingCart"
+          id="ShoppingCartBF"
           width={24}
           height={25}
           strokeWidth={1}

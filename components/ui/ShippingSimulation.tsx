@@ -92,7 +92,7 @@ function ShippingSimulation({ items }: Props) {
 
   return (
     <div class="flex flex-col mt-[30px] gap-5 p-[20px] sm:p-[30px] rounded-2xl border border-base-200 text-base-300">
-      <p class="text-justify text-primary font-bold">
+      <p class="text-justify text-main-bf-theme font-bold">
         Calcular o frete
       </p>
       <div class="flex flex-col gap-[10px]">
@@ -120,13 +120,13 @@ function ShippingSimulation({ items }: Props) {
             <Button
               type="submit"
               loading={loading.value}
-              class="btn-outline transition-all !border h-[2.25rem] px-5"
+              class="btn-outline transition-all !border h-[2.25rem] px-5 text-main-bf-theme border-main-bf-theme hover:bg-main-bf-theme hover:text-important-white"
             >
               Calcular
             </Button>
             <a
               href="https://buscacepinter.correios.com.br/app/endereco/index.php"
-              class="uppercase text-primary text-xs font-bold hover:underline max-lg:underline transition-all duration-500"
+              class="uppercase text-main-bf-theme text-xs font-bold hover:underline max-lg:underline transition-all duration-500"
               target="_blank"
             >
               Não sei meu CEP

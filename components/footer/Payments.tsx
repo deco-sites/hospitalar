@@ -17,7 +17,7 @@ export default function FooterSectionList({ list, label }: FooterSectionList) {
 
   return (
     <div>
-      <span class="text-base text-base-content font-medium max-md:text-content-primary">
+      <span class="text-base text-base-content text-important-white font-medium max-md:text-content-primary">
         {label}
       </span>
       <ul class="flex flex-wrap gap-2 pt-5">
@@ -29,7 +29,7 @@ export default function FooterSectionList({ list, label }: FooterSectionList) {
               width={44}
               height={30}
               alt={item.alt || "footer image"}
-              class="relative w-auto h-[30px] mix-blend-multiply"
+              class="relative w-auto h-[30px]"
             />
           </li>
         ))}

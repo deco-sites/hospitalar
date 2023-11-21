@@ -18,6 +18,7 @@ const id = "product-zoom";
 function ProductDetailsImages(
   { images, width, height, aspect, product }: Props,
 ) {
+  console.log("Product: ",  product)
   const { offers } = product;
   const {
     price,
@@ -25,6 +26,14 @@ function ProductDetailsImages(
   } = useOffer(offers);
   const zoomX = useSignal(0);
   const zoomY = useSignal(0);
+  const getCollectionProduct = (selectProduct: Product) => {
+    for (let i = 0; i < selectProduct.additionalProperty.length; i++) {
+      if(selectProduct.additionalProperty[i]?.name === "cluster" && selectProduct.additionalProperty[i]?.propertyID === "146"){
+        return true;
+      }
+    }
+    return false;
+  }
   return (
     <>
       <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-4">
@@ -73,6 +82,7 @@ function ProductDetailsImages(
                 price={price}
                 listPrice={listPrice}
                 className="lg:left-auto lg:right-0 left-4"
+                bf={getCollectionProduct(product)}
               />
             )
             : null}

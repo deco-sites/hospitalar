@@ -99,7 +99,7 @@ function TopNavBar({ alerts = [], interval = 5 }: Props) {
                 </span>
               </div>
               {index < alerts.length - 1 && (
-                <div class="border border-r-[#2D386E] h-3">
+                <div class="border border-r-[#fff] h-3">
                 </div>
               )}
             </>

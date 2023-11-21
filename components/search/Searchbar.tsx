@@ -80,7 +80,7 @@ function Searchbar({
       <form
         id="searchbar"
         action={action}
-        class="flex-grow flex gap-3 rounded-full placeholder-base-200 px-4 py-2 border-2 border-base-200"
+        class="flex-grow flex gap-3 rounded-full placeholder-base-200 px-4 py-2 border-2 border-base-200 bg-white"
       >
         <input
           ref={searchInputRef}
@@ -114,7 +114,7 @@ function Searchbar({
         >
           <Icon
             class="text-base-content"
-            id="MagnifyingGlass"
+            id="MagnifyingGlassBF"
             size={20}
             strokeWidth={0.01}
           />
