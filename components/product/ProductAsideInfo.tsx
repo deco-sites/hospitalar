@@ -46,7 +46,7 @@ function ProductAsideInfo({
             <span class="text-main-bf-theme">
               {" "}
               <strong class="text-2xl text-main-bf-theme">
-                {formatPrice(price! * 0.97, offers!.priceCurrency)}
+                {formatPrice(price! * 0.94, offers!.priceCurrency)}
               </strong>{" "}
               à vista ou
             </span>
