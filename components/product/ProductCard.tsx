@@ -12,7 +12,19 @@ import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "deco-sites/std/components/Image.tsx";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import DiscountBadge from "./DiscountBadge.tsx";
+
+export interface DiscountBadgeLink {
+  image: LiveImage;
+  alt: string;
+  link: string;
+}
+
+export interface DiscountBadgeImage {
+  label: string;
+  image: DiscountBadgeLink;
+}
 
 export interface Layout {
   basics?: {
@@ -55,6 +67,7 @@ export interface Layout {
     showCardShadow?: boolean;
     showCta?: boolean;
   };
+  imageBF?: DiscountBadgeImage;
 }
 
 interface Props {
@@ -238,6 +251,7 @@ function ProductCard(
               label={l?.discount?.label}
               variant={l?.discount?.variant}
               bf={getCollectionProduct(product)}
+              imageBF={layout?.imageBF}
             />
           )}
           <Image
@@ -319,7 +333,7 @@ function ProductCard(
                 <div class="flex flex-col mt-2">
                   <div class="text-xs font-normal text-gray-800 mt-[5px]">
                     <span class="text-[1.0rem] text-main-bf-theme font-bold">
-                      {formatPrice(price! * 0.97, offers!.priceCurrency!)}
+                      {formatPrice(price! * 0.94, offers!.priceCurrency!)}
                       {" "}
                     </span>
                     à vista ou
@@ -339,7 +353,7 @@ function ProductCard(
                         {formatPrice(listPrice, offers!.priceCurrency!)}
                       </p>
                     )}
-                    <p class="text-price-1 text-sm">
+                    <p class="text-main-bf-theme font-semibold text-sm">
                       {formatPrice(price, offers!.priceCurrency!)}
                     </p>
                   </div>

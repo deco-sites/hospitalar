@@ -52,6 +52,7 @@ export type AvailableIcons =
   | "Logo-bf"
   | "LogoFooter"
   | "LogoMobile"
+  | "LogoMobileBF"
   | "Truck"
   | "Discount"
   | "Return"
