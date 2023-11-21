@@ -18,7 +18,7 @@ const id = "product-zoom";
 function ProductDetailsImages(
   { images, width, height, aspect, product }: Props,
 ) {
-  console.log("Product: ",  product)
+  
   const { offers } = product;
   const {
     price,

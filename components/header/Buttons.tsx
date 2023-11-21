@@ -37,7 +37,7 @@ function MenuButton() {
         displayMenu.value = true;
       }}
     >
-      <Icon class="text-base-content" id="Menu" width={25} height={25} />
+      <Icon class="text-base-content" id="MenuBF" width={25} height={25} />
     </Button>
   );
 }

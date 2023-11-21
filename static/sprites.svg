@@ -592,6 +592,9 @@
         <path d="M5 12H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
             stroke-linejoin="round" fill="#1C1C1D"/>
     </symbol>
+    <symbol id="MenuBF" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 6.50002C3.25 5.90171 3.73502 5.41669 4.33333 5.41669H21.6667C22.265 5.41669 22.75 5.90171 22.75 6.50002C22.75 7.09833 22.265 7.58335 21.6667 7.58335H4.33333C3.73502 7.58335 3.25 7.09833 3.25 6.50002ZM3.25 13C3.25 12.4017 3.73502 11.9167 4.33333 11.9167H21.6667C22.265 11.9167 22.75 12.4017 22.75 13C22.75 13.5983 22.265 14.0834 21.6667 14.0834H4.33333C3.73502 14.0834 3.25 13.5983 3.25 13ZM3.25 19.5C3.25 18.9017 3.73502 18.4167 4.33333 18.4167H21.6667C22.265 18.4167 22.75 18.9017 22.75 19.5C22.75 20.0983 22.265 20.5834 21.6667 20.5834H4.33333C3.73502 20.5834 3.25 20.0983 3.25 19.5Z" fill="white"/>
+    </symbol>
     <symbol id="PlusBF" viewBox="0 0 24 24" fill="#1C1C1D"
         xmlns="http://www.w3.org/2000/svg">
         <path d="M12 5V19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"

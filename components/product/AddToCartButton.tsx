@@ -37,8 +37,6 @@ function AddToCartButton(
     quantity,
   });
 
-  console.log(classes)
-
   return (
     <Button data-deco="add-to-cart" {...props} class={`${classes} bg-main-bf-theme hover:bg-[#4A4B51]`}>
       <p class="flex gap-2 items-center justify-center">
