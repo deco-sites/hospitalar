@@ -35,7 +35,7 @@ function ProductAsideInfo({
               <span class="line-through text-base-300 text-xs">
                 {formatPrice(listPrice, offers!.priceCurrency!)}
               </span>
-              <span class="text-2xl text-main-bf-theme">
+              <span class="text-xl text-main-bf-theme">
                 {formatPrice(price, offers!.priceCurrency!)}
               </span>
             </div>
@@ -47,7 +47,7 @@ function ProductAsideInfo({
             <span>
               {" "}<strong class="text-2xl">{formatPrice(price! * 0.94, offers!.priceCurrency)}</strong>{" "}
             </span>
-            <span class="text-2xl text-main-bf-theme">
+            <span class="text-xl text-main-bf-theme">
               {formatPrice(price, offers!.priceCurrency!)}
             </span>
           </div>
