@@ -331,13 +331,13 @@ function ProductCard(
             <>
               {l?.hide.allPrices ? "" : (
                 <div class="flex flex-col mt-2">
-                  {/* <div class="text-xs font-normal text-gray-800 mt-[5px]">
+                  <div class="text-xs font-normal text-gray-800 mt-[5px]">
                     <span class="text-[1.0rem] text-main-bf-theme font-bold">
                       {formatPrice(price! * 0.94, offers!.priceCurrency!)}
                       {" "}
                     </span>
                     à vista ou
-                  </div> */}
+                  </div>
                   <div
                     class={`flex items-center gap-2.5 ${l?.basics?.oldPriceSize === "Normal" ? "lg:flex-row" : ""
                       } ${align === "center" ? "justify-center" : "justify-start"
