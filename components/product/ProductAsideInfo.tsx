@@ -23,7 +23,14 @@ function ProductAsideInfo({
     if (typeof price === "number" && typeof listPrice === "number") {
       if(listPrice !== price){
         return (
-          <>
+          <div class="mt-5">
+            <span class="text-main-bf-theme">
+              {" "}
+              <strong class="text-2xl">
+                {formatPrice(price! * 0.94, offers!.priceCurrency)}
+              </strong>{" "}
+              à vista ou
+            </span>
             <div class="flex flex-row gap-2 items-center">
               <span class="line-through text-base-300 text-xs">
                 {formatPrice(listPrice, offers!.priceCurrency!)}
@@ -32,13 +39,18 @@ function ProductAsideInfo({
                 {formatPrice(price, offers!.priceCurrency!)}
               </strong>
             </div>
-          </>
+          </div>
         );
       } else {
         return (
-          <strong class="text-2xl text-main-bf-theme">
-            {formatPrice(price, offers!.priceCurrency!)}
-          </strong>
+          <div class="mt-5">
+            <span>
+              {" "}<strong class="text-2xl">{formatPrice(price! * 0.94, offers!.priceCurrency)}</strong>{" "}
+            </span>
+            <strong class="text-2xl text-main-bf-theme">
+              {formatPrice(price, offers!.priceCurrency!)}
+            </strong>
+          </div>
         );
       }
     }
