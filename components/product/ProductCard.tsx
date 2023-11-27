@@ -361,6 +361,7 @@ function ProductCard(
           : null}
 
         {/* SKU Selector */}
+
         {(l?.elementsPositions?.skuSelector === "Bottom" &&
           availability === "https://schema.org/InStock") && (
           <>
@@ -391,6 +392,8 @@ function ProductCard(
             </div>
           )
           : null}
+
+           {/* End SKU Selector */}
       </div>
     </div>
   );
