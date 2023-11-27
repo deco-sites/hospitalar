@@ -1,17 +1,16 @@
 import { useEffect } from "preact/hooks";
 
 declare global {
-    interface Window {
-      blue_q?: Array<{ event: string; value: string }>;
-    }
+  interface Window {
+    blue_q?: Array<{ event: string; value: string }>;
   }
+}
 
 const BlueTagVisit = () => {
   useEffect(() => {
-
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = '//event.getblue.io/js/blue-tag.min.js';
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "//event.getblue.io/js/blue-tag.min.js";
     script.async = true;
     document.head.appendChild(script);
 
@@ -22,15 +21,15 @@ const BlueTagVisit = () => {
 
     window.blue_q = window.blue_q || [];
     window.blue_q.push(...eventData);
-    
-    console.log("tag visit")
+
+    console.log("tag visit");
 
     eventData.forEach(({ event, value }) => {
       window.blue_q!.push({ event, value });
     });
   }, []);
 
-  return null; 
+  return null;
 };
 
 export default BlueTagVisit;

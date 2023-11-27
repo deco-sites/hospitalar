@@ -1,1 +1,1 @@
-export { default } from "$store/components/blueTags/BlueTagvisit.tsx";
+export { default } from "$store/components/blueTags/BlueTagVisit.tsx";
