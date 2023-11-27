@@ -41,14 +41,13 @@ function QuantitySelector({ onChange, quantity, disabled, loading }: Props) {
         >
           <Icon
             class="lg:btn-accent max-lg:m-auto transition-all rounded-full"
-            id="MinusBF"
-            style="color: #1C1C1D;"
+            id="Minus"
             width={16}
             height={16}
           />
         </Button>
         <input
-          class="text-center rounded-lg border-base-200 w-10 h-10 border-2 mx-2.5 text-sm font-bold text-main-bf-theme"
+          class="text-center rounded-lg border-base-200 w-10 h-10 border-2 mx-2.5 text-sm font-bold text-base-content"
           type="number"
           inputMode="numeric"
           pattern="[0-9]*"
@@ -66,8 +65,7 @@ function QuantitySelector({ onChange, quantity, disabled, loading }: Props) {
         >
           <Icon
             class="lg:btn-accent max-lg:m-auto transition-all rounded-full"
-            id="PlusBF"
-            style="color: #1C1C1D;"
+            id="Plus"
             width={16}
             height={16}
           />

@@ -56,7 +56,7 @@ function Dots({ images, interval = 0 }: DotsProps) {
               }`}
             >
               <div
-                class="w-3 h-3 group-disabled:opacity-100 opacity-20 rounded-full bg-main-bf-theme"
+                class="w-3 h-3 group-disabled:opacity-100 opacity-20 rounded-full bg-primary"
                 style={{ animationDuration: `${interval}s` }}
               />
             </div>
@@ -137,7 +137,7 @@ function ProductShelf({
             >
               <Icon
                 size={32}
-                id="LeftArrowFigmaBF"
+                id="LeftArrowFigma"
               />
             </Slider.PrevButton>
           </div>
@@ -156,7 +156,7 @@ function ProductShelf({
             >
               <Icon
                 size={32}
-                id="RightArrowFigmaBF"
+                id="RightArrowFigma"
               />
             </Slider.NextButton>
           </div>

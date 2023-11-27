@@ -48,7 +48,7 @@ export default function ImageGallery(props: Props) {
           class="block relative overflow-hidden rounded-xl w-full m-auto group"
         >
           {item.title && (
-            <span class="absolute bottom-0 mb-[30px] bg-main-bf-theme rounded-full px-10 py-[17px] left-1/2 -translate-x-1/2 z-30 max-sm:text-[19px] text-[19px] lg:text-[19px] font-bold text-base-100 whitespace-nowrap">
+            <span class="absolute bottom-0 mb-[30px] bg-primary rounded-full px-10 py-[17px] left-1/2 -translate-x-1/2 z-30 max-sm:text-[19px] text-[19px] lg:text-[19px] font-bold text-base-100 whitespace-nowrap">
               {item.title}
             </span>
           )}

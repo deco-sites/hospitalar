@@ -121,7 +121,7 @@ function Menu({ items }: Props) {
         >
           <span class="p-1">
             <Icon
-              id="UserBF"
+              id="User"
               width={24}
               height={24}
               strokeWidth={1}

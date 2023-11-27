@@ -37,7 +37,7 @@ function MenuButton() {
         displayMenu.value = true;
       }}
     >
-      <Icon class="text-base-content" id="MenuBF" width={25} height={25} />
+      <Icon class="text-base-content" id="Menu" width={25} height={25} />
     </Button>
   );
 }
@@ -83,7 +83,7 @@ function CartButton() {
         )}
         <Icon
           class="text-base-content"
-          id="ShoppingCartBF"
+          id="ShoppingCart"
           width={24}
           height={25}
           strokeWidth={1}
