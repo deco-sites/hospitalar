@@ -136,7 +136,7 @@ function ProductInfo(
         : null}
       {/* Description card */}
       <details className="collapse collapse-plus mt-[30px]">
-        <summary className="collapse-title after:text-main-bf-theme border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-bold text-main-bf-theme">
+        <summary className="collapse-title border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-bold">
           Descrição
         </summary>
         <div className="readmore !flex-col text-xs px-0 pl-[30px] mt-3 leading-tight collapse-content text-base-300">

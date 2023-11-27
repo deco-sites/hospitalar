@@ -34,9 +34,9 @@ const variants = {
       `relative border text-base-200 bg-opacity-20 bg-base-300 border-base-200 cursor-not-allowed`,
   },
   default: {
-    normal: "border-2 border-base-200 hover:border-main-bf-theme hover:text-primary",
+    normal: "border-2 border-base-200 hover:border-primary hover:text-primary",
     active:
-      "bg-main-bf-theme text-white text-secondary-focus border-2 border-main-bf-theme",
+      "bg-primary text-white text-secondary-focus border-2 border-primary",
   },
 };
 

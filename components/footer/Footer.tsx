@@ -38,7 +38,7 @@ function SectionItem({ item }: { item: Item }) {
         : (
           <a
             href={item.href}
-            class="text-sm font-normal text-sub-gray hover:text-primary transition-all duration-500"
+            class="text-sm font-normal text-[#4A4B51] hover:text-primary transition-all duration-500"
           >
             {item.label}
           </a>
@@ -109,27 +109,27 @@ function Footer(
 ) {
   return (
     <footer class="">
-      <div class="flex flex-col">
-        <div class="flex items-start justify-start gap-5 lg:gap-16 my-12 max-lg:flex-col bg-main-bf-theme">
-          <div class="pt-11 px-8 pb-10 max-lg:w-full bg-sub-bf-theme rounded-[10px]">
-            <Icon id="Logo-bf" height={61} width={LogoWidth} />
+      <div class="bg-white flex flex-col">
+        <div class="flex items-start justify-start gap-5 lg:gap-16 mt-12 max-lg:flex-col">
+          <div class="pt-11 px-8 pb-10 max-lg:w-full bg-[#F7F7F7] rounded-[10px]">
+            <Icon id="Logo" height={61} width={LogoWidth} />
             {socialNetWorks?.length && (
               <SocialNetWorks socialItems={socialNetWorks} />
             )}
             <div class="flex items-center gap-2 mt-5">
-              <Icon id="PhoneBF" width={20} height={20} class="text-primary" />
-              <span class="text-important-white text-xs font-bold text-left">
+              <Icon id="Phone" width={20} height={20} class="text-primary" />
+              <span class="text-primary text-xs font-bold text-left">
                 {phone}
               </span>
             </div>
             <div class="flex items-center gap-2 mt-3">
-              <Icon id="EmailBF" width={20} height={20} class="text-primary" />
-              <span class="text-important-white text-xs font-bold text-left">
+              <Icon id="Email" width={20} height={20} class="text-primary" />
+              <span class="text-primary text-xs font-bold text-left">
                 {email}
               </span>
             </div>
             <span
-              class="text-important-white text-base-800 text-left text-xs font-normal mt-3 block leading-6"
+              class="text-base-800 text-left text-xs font-normal mt-3 block leading-6"
               dangerouslySetInnerHTML={{
                 __html: openingHours,
               }}
@@ -140,7 +140,7 @@ function Footer(
               {sections.map((section) => (
                 <li>
                   <div>
-                    <span class="text-base text-important-white font-medium">
+                    <span class="text-base text-primary font-medium">
                       {section.label}
                     </span>
 
@@ -171,7 +171,7 @@ function Footer(
                     name="my-accordion-mobile--footer"
                     class="absolute left-0 w-full h-full top-0"
                   />
-                  <div class="collapse-title border-b border-white py-2.5 text-white font-medium pl-0 flex items-center justify-between pr-0">
+                  <div class="collapse-title border-b border-base-content py-2.5 text-base-content font-medium pl-0 flex items-center justify-between pr-0">
                     {section.label}
                   </div>
                   <div class="collapse-content pl-0">
@@ -194,7 +194,7 @@ function Footer(
                 <ul class="flex self-center md:self-end items-center max-lg:justify-center gap-8">
                   {poweredby?.map((item) => (
                     <li class="flex items-center gap-2">
-                      <span class="text-neutral text-sub-gray-3 text-[10px]">
+                      <span class="text-neutral text-[10px]">
                         {item.label}
                       </span>
                       {item.images.map((image) => (

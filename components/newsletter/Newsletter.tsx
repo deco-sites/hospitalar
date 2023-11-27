@@ -127,9 +127,9 @@ function Form(props: Props) {
 
   return (
     <div class="flex flex-col lg:flex-row items-baseline lg:items-center gap-5 lg:gap-16 py-10 w-full justify-between">
-      <span
+      <div
         dangerouslySetInnerHTML={{ __html: text }}
-        class="text-base lg:text-xl text-left text-base-100 lg:max-w-sm max-w-xs lg:pr-0 pr-14 text-important-white"
+        class="text-base lg:text-xl text-left text-base-100 lg:max-w-sm max-w-xs lg:pr-0 pr-14"
       />
       {success.value
         ? (
@@ -153,7 +153,7 @@ function Form(props: Props) {
                 class={`capitalize md:ml-5 font-medium btn disabled:loading rounded-full join-item btn-${
                   BUTTON_VARIANTS[form?.button?.variant as string] ||
                   BUTTON_VARIANTS["primary"]
-                } bg-blue-bf border-blue-bf text-dark-blue-bf`}
+                }`}
                 disabled={loading}
               >
                 {form?.button?.label || "Cadastrar"}

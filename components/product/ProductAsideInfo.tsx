@@ -19,45 +19,6 @@ function ProductAsideInfo({
     offers,
   );
 
-  const PricePDP = () => {
-    if (typeof price === "number" && typeof listPrice === "number") {
-      if(listPrice !== price){
-        return (
-          <div class="mt-5">
-            <span class="text-main-bf-theme">
-              {" "}
-              <strong class="text-2xl">
-                {formatPrice(price! * 0.94, offers!.priceCurrency)}
-              </strong>{" "}
-              à vista ou
-            </span>
-            <div class="flex flex-row gap-2 items-center">
-              <span class="line-through text-base-300 text-xs">
-                {formatPrice(listPrice, offers!.priceCurrency!)}
-              </span>
-              <span class="text-xl text-main-bf-theme">
-                {formatPrice(price, offers!.priceCurrency!)}
-              </span>
-            </div>
-          </div>
-        );
-      } else {
-        return (
-          <div class="mt-5">
-            <span>
-              {" "}<strong class="text-2xl">{formatPrice(price! * 0.94, offers!.priceCurrency)}</strong>{" "}
-            </span>
-            <span class="text-xl text-main-bf-theme">
-              {formatPrice(price, offers!.priceCurrency!)}
-            </span>
-          </div>
-        );
-      }
-    }
-
-    return <></>;
-  }
-
   const currentURL = window.location?.href;
 
   return (
@@ -65,7 +26,7 @@ function ProductAsideInfo({
       {/* Code and name */}
       <div class="mt-4 sm:mt-0 sm:h-auto">
         <h1>
-          <span class="font-medium text-title-product text-2xl">
+          <span class="font-medium text-base-content text-2xl">
             {isVariantOf?.name}
             {currentURL == url ? subName.map((name) => `- ${name}`) : "  "}
           </span>
@@ -82,9 +43,25 @@ function ProductAsideInfo({
       {availability === "https://schema.org/InStock"
         ? (
           <div class="mt-5">
-            <PricePDP />
+            <span>
+              {" "}
+              <strong class="text-2xl">
+                {formatPrice(price! * 0.97, offers!.priceCurrency)}
+              </strong>{" "}
+              à vista ou
+            </span>
+            <div class="flex flex-row gap-2 items-center">
+              {listPrice !== price && (
+                <span class="line-through text-base-300 text-xs">
+                  {formatPrice(listPrice, offers!.priceCurrency!)}
+                </span>
+              )}
+              <span class="font-medium text-xl text-primary">
+                {formatPrice(price, offers!.priceCurrency!)}
+              </span>
+            </div>
             <div class="flex flex-col">
-              <span class="text-[#4A4B51]">
+              <span>
                 em até <strong>{installment?.billingDuration}x</strong> de{" "}
                 <strong>
                   {formatPrice(
