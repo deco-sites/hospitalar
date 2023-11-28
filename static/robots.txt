@@ -1,2 +1,11 @@
-User-agent: *
-Allow: *
+ User-agent: * 
+
+Allow: /
+Disallow: /img/* 
+Disallow: /account/* 
+Disallow: /login/* 
+Disallow: /checkout/* 
+Disallow: /busca/* 
+Disallow: /quick-view/* 
+Disallow: /espiar/* 
+Noindex: /buscapagina/* 
