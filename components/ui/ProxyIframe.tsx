@@ -21,7 +21,7 @@ export default function ProxyIframe({ src }: Props) {
       </script>
       <iframe
         id="proxy-loader"
-        style="width:100%;border:none;overflow:hidden;min-height:1250px;"
+        style="width:100%;border:none;overflow:hidden;min-height:950px;"
         src={src}
         // onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'
       >
