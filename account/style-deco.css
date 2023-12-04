@@ -1,4 +1,9 @@
-#account-content button {
+#account aside {
+  padding-left: 2rem; 
+  padding-right: 2rem; 
+}
+
+#account-content a button,  #account-content form > button  {
     font-weight: 500;
     border-radius: 9999px;
     text-transform:capitalize; 
@@ -25,13 +30,38 @@
      background-color: #2c376d; 
      border-color: #2c376d;
  }
+
+ #account-content form div button {
+    font-weight: 500;
+    border-radius: 9999px;
+    text-transform:capitalize; 
+    min-width: 150px; 
+ 
+    font-family: inherit;
+    cursor: pointer;
+ 
+     display: inline-flex;
+     flex-shrink: 0;
+     cursor: pointer;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     user-select: none;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+ 
+     height: 3rem;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     font-size: .875rem;
+ }
  
  
- #account-content a button:hover{
+ #account-content a button:hover,  #account-content form > button {
    filter: brightness(0.9);
  }
  
  
- #account-content button div span{
+ #account-content a button div span,  #account-content form > button div span {
     color: white;
  }
