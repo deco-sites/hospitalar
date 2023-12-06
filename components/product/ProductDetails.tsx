@@ -36,6 +36,13 @@ export interface Props {
     link: string;
   };
   shareableNetworks?: ShareableNetwork[];
+  
+  /*Produtos Restrito*/
+  /** 
+   *  @title Produtos registrito
+   *  @description Adicionar o Id da coleção. 
+   */
+  IdCollection?:string; 
 }
 
 const WIDTH = 500;
