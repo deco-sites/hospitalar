@@ -35,7 +35,7 @@ export default function InfoCard(
 
   return (
     <section class={`${textAlignment} pt-8`}>
-      <h6 class="text-emphasis font-bold text-xs uppercase">{caption}</h6>
+      <span class="text-emphasis font-bold text-xs uppercase">{caption}</span>
       <h3 class="text-primary font-normal text-2xl mb-5">{title}</h3>
       {links?.length
         ? (

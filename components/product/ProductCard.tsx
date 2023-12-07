@@ -227,14 +227,6 @@ function ProductCard(
           aria-label="view product"
           class="contents relative"
         >
-          {listPrice2 !== price2 && (
-            <DiscountBadge
-              price={price2}
-              listPrice={listPrice2}
-              label={l?.discount?.label}
-              variant={l?.discount?.variant}
-            />
-          )}
           <Image
             src={front.url!}
             alt={front.alternateName}
@@ -270,6 +262,14 @@ function ProductCard(
               sizes="(max-width: 640px) 50vw, 20vw"
               loading="lazy"
               decoding="async"
+            />
+          )}
+          {listPrice2 !== price2 && (
+            <DiscountBadge
+              price={price2}
+              listPrice={listPrice2}
+              label={l?.discount?.label}
+              variant={l?.discount?.variant}
             />
           )}
         </a>
@@ -393,7 +393,7 @@ function ProductCard(
           )
           : null}
 
-           {/* End SKU Selector */}
+        {/* End SKU Selector */}
       </div>
     </div>
   );
