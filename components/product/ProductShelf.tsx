@@ -34,6 +34,7 @@ export interface Props {
   };
   showPaginationArrows?: ResponsiveConditionals;
   cardLayout?: CardLayout;
+  IdCollection?: string; 
 }
 
 interface DotsProps {
@@ -74,6 +75,7 @@ function ProductShelf({
   cardLayout,
   seeMore,
   showPaginationArrows,
+  IdCollection,
 }: Props) {
   const id = useId();
 
@@ -116,6 +118,8 @@ function ProductShelf({
                 product={product}
                 itemListName={title}
                 layout={cardLayout}
+                IdCollection = {IdCollection ?? "156"}
+                width="80%"
               />
             </Slider.Item>
           ))}

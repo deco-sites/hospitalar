@@ -1,13 +1,19 @@
 import Icon from "$store/components/ui/Icon.tsx";
 
-const TagWarning = () => {
+interface Props {
+  width?: string; 
+  height?: string; 
+  style?: string; 
+}
+
+const TagWarning = ({width, height, style }:Props) => {
     return (
-        <div class="my-0 sm:my-[20px]">
+        <div class={`my-[20px] ${style}`}>
             <Icon
                 class=""
                 id="warning"
-                width={191}
-                height={34}
+                width={ width?? "191"}
+                height={ height ?? "34"}
                 strokeWidth={1}
             />
         </div>
