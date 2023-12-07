@@ -264,15 +264,15 @@ function ProductCard(
               decoding="async"
             />
           )}
-          {listPrice2 !== price2 && (
-            <DiscountBadge
-              price={price2}
-              listPrice={listPrice2}
-              label={l?.discount?.label}
-              variant={l?.discount?.variant}
-            />
-          )}
         </a>
+        {listPrice2 !== price2 && (
+          <DiscountBadge
+            price={price2}
+            listPrice={listPrice2}
+            label={l?.discount?.label}
+            variant={l?.discount?.variant}
+          />
+        )}
       </figure>
       {/* Prices & Name */}
       <div class="flex-auto flex flex-col">

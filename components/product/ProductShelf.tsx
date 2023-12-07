@@ -19,10 +19,6 @@ export interface Props {
   products: LoaderReturnType<Product[] | null>;
 
   title?: string;
-  seeMore?: {
-    url: string;
-    label: string;
-  };
   layout?: {
     headerAlignment?: "center" | "left";
     headerfontSize?: "Normal" | "Large";
@@ -74,7 +70,6 @@ function ProductShelf({
   title,
   layout,
   cardLayout,
-  seeMore,
   showPaginationArrows,
 }: Props) {
   const id = useId();
@@ -93,15 +88,6 @@ function ProductShelf({
           alignment={layout?.headerAlignment || "center"}
           color={layout?.color || "primary"}
         />
-        {seeMore
-          ? (
-            <span class="text-emphasis font-normal text-sm lowercase">
-              <a href={seeMore.url}>
-                {seeMore.label}
-              </a>
-            </span>
-          )
-          : null}
       </div>
 
       <div
