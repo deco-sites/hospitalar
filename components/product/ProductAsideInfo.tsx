@@ -10,7 +10,7 @@ import ProductInfo from "deco-sites/hospitalar/components/product/ProductInfo.ts
 interface Props {
   product: Product;
   subName: string[];
-  IdCollection?: string; 
+  IdCollection?: string;
 }
 
 function ProductAsideInfo({
@@ -24,20 +24,18 @@ function ProductAsideInfo({
   );
 
   const currentURL = window.location?.href;
-  
-  let ProductWarning = false; 
 
-  const filteredCollection =
-       product.additionalProperty?.filter(
-        (property) =>
-          property?.propertyID !== undefined &&
-          String(property?.propertyID) ===  IdCollection,
-      ) || []; 
+  let ProductWarning = false;
 
-  console.log(filteredCollection)
+  const filteredCollection = product.additionalProperty?.filter(
+    (property) =>
+      property?.propertyID !== undefined &&
+      String(property?.propertyID) === IdCollection,
+  ) || [];
 
-  if(filteredCollection.length > 0)  ProductWarning = true; 
-  
+
+  if (filteredCollection.length > 0) ProductWarning = true;
+
   return (
     <>
       {/* Code and name */}
@@ -58,7 +56,7 @@ function ProductAsideInfo({
       </div>
 
       {/* { tag warning} */}
-      {ProductWarning && <TagWarning/>}
+      {ProductWarning && <TagWarning />}
 
       {/* Prices */}
       {availability === "https://schema.org/InStock"
@@ -105,8 +103,8 @@ function ProductAsideInfo({
         )
         : null}
 
-       {/*warning Product info*/}
-       {ProductWarning && <ProductInfo/>}
+      {/*warning Product info*/}
+      {ProductWarning && <ProductInfo />}
     </>
   );
 }
