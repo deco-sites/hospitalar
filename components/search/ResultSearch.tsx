@@ -99,7 +99,7 @@ const ResultSearch = (
                           layout={cardLayout}
                           class={"lg:!p-0"}
                           IdCollection = {IdCollection}
-                          width ="80%"
+                          tagWarningWidth ="70%"
                         />
                       </Slider.Item>
                     ))}

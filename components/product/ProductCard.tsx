@@ -68,8 +68,9 @@ interface Props {
   layout?: Layout;
   class?: string;
   IdCollection?: string;
-  width?: string; 
-  height?: string; 
+  tagWarningWidth?: string; 
+  tagWarningHeight?: string; 
+  positionBottom?:string; 
 }
 
 export const relative = (url: string) => {
@@ -81,7 +82,7 @@ const WIDTH = 279;
 const HEIGHT = 270;
 
 function ProductCard(
-  { product, preload, itemListName, layout, class: _class, IdCollection, width, height }: Props,
+  { product, preload, itemListName, layout, class: _class, IdCollection, tagWarningWidth, tagWarningHeight, positionBottom }: Props,
 ) {
   const {
     url,
@@ -277,8 +278,8 @@ function ProductCard(
             )}
           {/* Tag produto restrito*/}
           {ProductWarning && (
-            <div class="flex justify-center absolute bottom-0 sm:-bottom-2">
-              <TagWarning width={width} height={height} style={`flex justify-center`}/>
+            <div class={`flex justify-center absolute ${positionBottom ?? `bottom-[10%]`}`}>
+              <TagWarning width={tagWarningWidth} height={tagWarningHeight} style={`flex justify-center`}/>
             </div>
           )}
         </a>

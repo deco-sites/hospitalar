@@ -31,7 +31,8 @@ function ProductGallery({ products, IdCollection }: Props) {
           }
         }
         IdCollection = {IdCollection ?? "156"}
-        width="80%"
+        tagWarningWidth="70%"
+        positionBottom = "bottom-0"
         />
       ))}
     </div>

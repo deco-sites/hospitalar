@@ -56,7 +56,7 @@ function ProductAsideInfo({
       </div>
 
       {/* { tag warning} */}
-      {ProductWarning && <TagWarning />}
+      {ProductWarning && <TagWarning style={"my-[20px]"}/>}
 
       {/* Prices */}
       {availability === "https://schema.org/InStock"

@@ -8,7 +8,7 @@ interface Props {
 
 const TagWarning = ({width, height, style }:Props) => {
     return (
-        <div class={`my-[20px] ${style}`}>
+        <div class={`${style}`}>
             <Icon
                 class=""
                 id="warning"

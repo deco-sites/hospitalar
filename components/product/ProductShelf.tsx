@@ -107,7 +107,7 @@ function ProductShelf({
                 itemListName={title}
                 layout={cardLayout}
                 IdCollection = {IdCollection ?? "156"}
-                width="80%"
+                tagWarningWidth="80%"
               />
             </Slider.Item>
           ))}
