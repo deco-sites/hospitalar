@@ -19,10 +19,6 @@ export interface Props {
   products: LoaderReturnType<Product[] | null>;
 
   title?: string;
-  seeMore?: {
-    url: string;
-    label: string;
-  };
   layout?: {
     headerAlignment?: "center" | "left";
     headerfontSize?: "Normal" | "Large";
@@ -50,18 +46,20 @@ function Dots({ images, interval = 0 }: DotsProps) {
         class={`carousel justify-center col-span-full gap-2 z-10 row-start-4`}
       >
         {images?.map((_, index) => (
-          <Slider.Dot index={index}>
-            <div
-              class={`py-5 ${
-                ((index === 0) || (index % 4 === 0)) ? "" : "lg:hidden"
-              }`}
-            >
+          <li class="carousel-item">
+            <Slider.Dot index={index}>
               <div
-                class="w-3 h-3 group-disabled:opacity-100 opacity-20 rounded-full bg-primary"
-                style={{ animationDuration: `${interval}s` }}
-              />
-            </div>
-          </Slider.Dot>
+                class={`py-5 ${
+                  ((index === 0) || (index % 4 === 0)) ? "" : "lg:hidden"
+                }`}
+              >
+                <div
+                  class="w-3 h-3 group-disabled:opacity-100 opacity-20 rounded-full bg-primary"
+                  style={{ animationDuration: `${interval}s` }}
+                />
+              </div>
+            </Slider.Dot>
+          </li>
         ))}
       </ul>
     </>
@@ -73,7 +71,6 @@ function ProductShelf({
   title,
   layout,
   cardLayout,
-  seeMore,
   showPaginationArrows,
   IdCollection,
 }: Props) {
@@ -93,15 +90,6 @@ function ProductShelf({
           alignment={layout?.headerAlignment || "center"}
           color={layout?.color || "primary"}
         />
-        {seeMore
-          ? (
-            <span class="text-emphasis font-normal text-sm lowercase">
-              <a href={seeMore.url}>
-                {seeMore.label}
-              </a>
-            </span>
-          )
-          : null}
       </div>
 
       <div

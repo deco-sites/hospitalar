@@ -16,7 +16,7 @@ export default {
         "main-bf-theme": "#1C1C1D !important",
         "sub-bf-theme": "#323233 !important",
         "important-white": "#fff !important",
-        "sub-gray":"#C5C6CB",
+        "sub-gray": "#C5C6CB",
         "sub-gray-2": "#4A4B51",
         "sub-gray-3": "#C5C6CB",
         "blue-bf": "#85BAD5",
