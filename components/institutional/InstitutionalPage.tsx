@@ -8,22 +8,22 @@ export interface Props {
   title: string;
   asideMenu: Section;
   content:
-    | BlockInstance<
-      "deco-sites/hospitalar/sections/Institutional/TextContent.tsx",
-      Manifest
-    >
-    | BlockInstance<
-      "deco-sites/hospitalar/sections/Institutional/AccordionsContent.tsx",
-      Manifest
-    >
-    | BlockInstance<
-      "deco-sites/hospitalar/sections/Institutional/CardsContent.tsx",
-      Manifest
-    >
-    | BlockInstance<
-      "deco-sites/hospitalar/sections/Institutional/ContactForm.tsx",
-      Manifest
-    >;
+  | BlockInstance<
+    "deco-sites/hospitalar/sections/Institutional/TextContent.tsx",
+    Manifest
+  >
+  | BlockInstance<
+    "deco-sites/hospitalar/sections/Institutional/AccordionsContent.tsx",
+    Manifest
+  >
+  | BlockInstance<
+    "deco-sites/hospitalar/sections/Institutional/CardsContent.tsx",
+    Manifest
+  >
+  | BlockInstance<
+    "deco-sites/hospitalar/sections/Institutional/ContactForm.tsx",
+    Manifest
+  >;
 }
 
 function InstitutionalPage({
@@ -49,6 +49,22 @@ function InstitutionalPage({
               line-height: 1.4;
               margin: 20px 0;
             }
+            .markdown-body h4 {
+              display: flex;
+              padding: 18px 30px;
+              align-items: center;
+              gap: 10px;
+              align-self: stretch;
+              
+              border-radius: 10px;
+              background: rgba(133, 186, 213, 0.40);
+
+              font-family: Poppins;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 110%; 
+            }
             .markdown-body p:empty {
               display: none;
             }
@@ -62,11 +78,35 @@ function InstitutionalPage({
               line-height: 20px;
               list-style: circle inside !important;
             }
+
+            .markdown-body p span{
+              display: flex;
+            }
+            
+            .markdown-body p span img {
+              margin-right: 10px; 
+            }
+
             .markdown-body a {
               text-decoration: underline;
             }
             .markdown-body td {
               border: 1px solid #8E8E9F;
+            }
+
+            @media screen and (max-width: 760px) {
+              .markdown-body h4 {
+                padding: 10px 20px;
+              }
+
+              .markdown-body .contato {
+                display: block !important; 
+              }
+
+              .markdown-body .contato .contato-whats{
+                width: 50%; 
+                margin-bottom: 13px; 
+              }
             }
           `,
           }}
