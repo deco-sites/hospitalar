@@ -103,6 +103,11 @@ function InstitutionalPage({
 
               .markdown-body h4 span{
                 font-size: 16px !important;
+                color: var(--action-primary, #2D386E);
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
               }
 
               .markdown-body .contato {
