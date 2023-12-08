@@ -114,7 +114,7 @@ function InstitutionalPage({
                 margin-bottom: 13px; 
               }
 
-              .markdown-body contato span {
+              .markdown-body .contato span {
                 font-size: 14px !important; 
               }
             }
