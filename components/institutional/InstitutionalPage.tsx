@@ -55,12 +55,13 @@ function InstitutionalPage({
               align-items: center;
               gap: 10px;
               align-self: stretch;
+
               
               border-radius: 10px;
               background: rgba(133, 186, 213, 0.40);
 
               font-family: Poppins;
-              font-size: 24px;
+              font-size: 24px !important;
               font-style: normal;
               font-weight: 600;
               line-height: 110%; 
@@ -79,7 +80,7 @@ function InstitutionalPage({
               list-style: circle inside !important;
             }
 
-            .markdown-body p span{
+            .markdown-body .contato span{
               display: flex;
             }
             
@@ -97,6 +98,11 @@ function InstitutionalPage({
             @media screen and (max-width: 760px) {
               .markdown-body h4 {
                 padding: 10px 20px;
+                font-size: 16px !important;
+              }
+
+              .markdown-body h4 span{
+                font-size: 16px !important;
               }
 
               .markdown-body .contato {
@@ -106,6 +112,10 @@ function InstitutionalPage({
               .markdown-body .contato .contato-whats{
                 width: 50%; 
                 margin-bottom: 13px; 
+              }
+
+              .markdown-body contato span {
+                font-size: 14px !important; 
               }
             }
           `,
