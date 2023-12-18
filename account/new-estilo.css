@@ -58,12 +58,6 @@
     margin: 0 10px;
   }
   
-  
-  
-  
-  
-  
-  
   header .box-header{
     padding: 0;
     display: flex;
@@ -2865,10 +2859,6 @@
       display: block
     }
   
-  
-  
-  
-  
     .box-overbanner-categoria {
       display: flex;
       margin-top: 50px;
@@ -2889,16 +2879,11 @@
       margin: 0 0px 15px 0px;
       height: 200px;
     }
-  
-  
-  
+
   
     .box-vitrine ul.box-menu-opcoes{
       display: none;
     }
-  
-  
-  
   
     .box-produto .detalhes {
         width: 100%;
@@ -2945,8 +2930,6 @@
     }
   
   
-  
-  
     footer .footer-top .box-mapa-site .item {
       width: calc(100% / 2);
     }
@@ -2979,8 +2962,6 @@
       width: calc(100%)!important;
     }
   
-  
-  
     .box-vitrine .vitrine .item .imagem{
         text-align: center;
     }
@@ -2991,7 +2972,6 @@
           padding: 20px 10px 25px;
           transition: 0.2s;
       }
-  
   
   
       footer .footer-top .box-mapa-site .item{
