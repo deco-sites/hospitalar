@@ -136,7 +136,7 @@ function ProductCard(
   ));
 
   const addToCartButtonClassNames = (variant: string | undefined) =>
-    `lg:text-sm font-medium text-xs whitespace-nowrap btn max-md:min-h-[2.25rem] max-md:h-[2.25rem] btn-${
+    `lg:text-sm font-medium text-sm whitespace-nowrap btn max-md:min-h-[2.25rem] max-md:h-[2.25rem] btn-${
       BUTTON_VARIANTS[variant ?? "primary"]
     }`;
 
