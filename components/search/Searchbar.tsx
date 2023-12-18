@@ -84,7 +84,6 @@ function Searchbar({
       >
         <input
           ref={searchInputRef}
-          id="search-input"
           class="flex w-full outline-none placeholder:text-neutral placeholder:font-normal pl-2 text-sm placeholder:text-sm"
           name={name}
           defaultValue={query}
@@ -104,6 +103,7 @@ function Searchbar({
           role="combobox"
           aria-controls="search-suggestion"
           autocomplete="off"
+          aria-expanded={valueSearch.length > 0}
         />
         <button
           class="btn-ghost"

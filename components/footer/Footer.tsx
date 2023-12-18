@@ -166,9 +166,16 @@ function Footer(
             >
               {sections.map((section) => (
                 <div class="collapse collapse-plus w-full rounded-none">
+                  <label
+                    for={`my-accordion-mobile--footer-${section.label}`}
+                    class="h-0 opacity-0 w-0"
+                  >
+                    Abrir opções
+                  </label>
                   <input
                     type="checkbox"
                     name="my-accordion-mobile--footer"
+                    id={`my-accordion-mobile--footer-${section.label}`}
                     class="absolute left-0 w-full h-full top-0"
                   />
                   <div class="collapse-title border-b border-base-content py-2.5 text-base-content font-medium pl-0 flex items-center justify-between pr-0">
