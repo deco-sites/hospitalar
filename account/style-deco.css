@@ -1,9 +1,9 @@
-#account aside {
+#account-content aside {
   padding-left: 2rem; 
   padding-right: 2rem; 
 }
 
-#account-content a button,  #account-content form > button  {
+#account-content a button,  #account-content form > button, #account-content main > button {
     font-weight: 500;
     border-radius: 9999px;
     text-transform:capitalize; 
@@ -57,11 +57,11 @@
  }
  
  
- #account-content a button:hover,  #account-content form > button {
+ #account-content a button:hover,  #account-content form > button,  #account-content main > button {
    filter: brightness(0.9);
  }
  
  
- #account-content a button div span,  #account-content form > button div span {
+ #account-content a button div span,  #account-content form > button div span,  #account-content main > button span  {
     color: white;
  }
