@@ -295,7 +295,7 @@ function ProductCard(
         {l?.hide.productName && l?.hide.productDescription
           ? ""
           : (
-            <div class="flex flex-col gap-0 mt-[15px]">
+            <div class="flex flex-col gap-0 mt-[15px] sm:h-auto h-[75px]">
               {l?.hide.productName ? "" : (
                 <h2 class="text-xs text-gray-800">
                   {isVariantOf?.name || name}
@@ -314,7 +314,7 @@ function ProductCard(
           ? (
             <>
               {l?.hide.allPrices ? "" : (
-                <div class="flex flex-col mt-2">
+                <div class="flex flex-col mt-2 sm:h-auto h-[95px]">
                   <div class="text-xs font-normal text-gray-800 mt-[5px]">
                     <span class="text-[1.0rem] text-primary font-bold">
                       {formatPrice(price! * 0.97, offers!.priceCurrency!)}
