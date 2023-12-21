@@ -3,23 +3,38 @@ import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 
 import ProductSelector from "./ProductVariantSelector.tsx";
-import { useEffect, useState } from "preact/hooks";
+
+import TagWarning from "deco-sites/hospitalar/components/ui/TagWarning.tsx";
+import ProductInfo from "deco-sites/hospitalar/components/product/ProductInfo.tsx";
 
 interface Props {
   product: Product;
   subName: string[];
+  IdCollection?: string;
 }
 
 function ProductAsideInfo({
   product,
   subName,
   product: { offers, isVariantOf, gtin, url },
+  IdCollection,
 }: Props) {
   const { price, listPrice, availability, installment } = useOffer(
     offers,
   );
 
   const currentURL = window.location?.href;
+
+  let ProductWarning = false;
+
+  const filteredCollection = product.additionalProperty?.filter(
+    (property) =>
+      property?.propertyID !== undefined &&
+      String(property?.propertyID) === IdCollection,
+  ) || [];
+
+
+  if (filteredCollection.length > 0) ProductWarning = true;
 
   return (
     <>
@@ -39,6 +54,10 @@ function ProductAsideInfo({
           </div>
         )}
       </div>
+
+      {/* { tag warning} */}
+      {ProductWarning && <TagWarning style={"my-[20px]"}/>}
+
       {/* Prices */}
       {availability === "https://schema.org/InStock"
         ? (
@@ -83,6 +102,9 @@ function ProductAsideInfo({
           </div>
         )
         : null}
+
+      {/*warning Product info*/}
+      {ProductWarning && <ProductInfo />}
     </>
   );
 }
