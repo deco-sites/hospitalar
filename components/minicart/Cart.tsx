@@ -113,6 +113,18 @@ function Cart(props: ICartProps) {
     0,
   );
 
+  const handleFinishPurchase = () => {
+    sendEvent({
+      name: "begin_checkout",
+      params: {
+        currency: cart.value ? currencyCode! : "",
+        value: total ? (total - (discounts ?? 0)) / 100 : 0,
+        coupon: cart.value?.marketingData?.coupon ?? undefined,
+        items: cart.value ? mapItemsToAnalyticsItems(cart.value) : [],
+      },
+    });
+  };
+
   return (
     <>
       <ul
@@ -171,20 +183,7 @@ function Cart(props: ICartProps) {
                 BUTTON_VARIANTS[buttonMode as string]
               } font-medium text-xs w-full text-base-100 lg:text-sm lg:h-10`}
               disabled={loading.value || cart.value.items.length === 0}
-              onClick={() => {
-                sendEvent({
-                  name: "begin_checkout",
-                  params: {
-                    currency: cart.value ? currencyCode! : "",
-                    value: total ? (total - (discounts ?? 0)) / 100 : 0,
-                    coupon: cart.value?.marketingData?.coupon ?? undefined,
-
-                    items: cart.value
-                      ? mapItemsToAnalyticsItems(cart.value)
-                      : [],
-                  },
-                });
-              }}
+              onClick={ handleFinishPurchase }
             >
               Finalizar Compra
             </Button>

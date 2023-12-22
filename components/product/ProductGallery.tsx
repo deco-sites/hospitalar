@@ -9,9 +9,10 @@ export interface Columns {
 
 export interface Props {
   products: Product[] | null;
+  IdCollection?: string; 
 }
 
-function ProductGallery({ products }: Props) {
+function ProductGallery({ products, IdCollection }: Props) {
   return (
     <div class="grid grid-cols-2 gap-2 items-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-[30px]">
       {products?.map((product, index) => (
@@ -27,7 +28,11 @@ function ProductGallery({ products }: Props) {
               showCardShadow: true,
               showCta: true,
             },
-          }}
+          }
+        }
+        IdCollection = {IdCollection ?? "156"}
+        tagWarningWidth="70%"
+        positionBottom = "bottom-0"
         />
       ))}
     </div>

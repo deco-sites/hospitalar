@@ -22,7 +22,9 @@ export default {
         "blue-bf": "#85BAD5",
         "dark-blue-bf": "#2D386E",
         "title-product": "#4A4B51",
-        "price-1": "#C5C6CB",
+        "price-1":"#C5C6CB", 
+        "warning":"#C31212", 
+        "box-warning": "rgba(195, 18, 18, 0.14)",
       },
       animation: {
         "slide-left": "slide-left-frame 0.4s ease normal",
