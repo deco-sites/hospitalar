@@ -45,11 +45,11 @@ function CartItem({ index, currency }: Props) {
     <div class="pb-3 flex flex-row justify-between items-start gap-4 border-solid border-b-[1px] border-[#F7F7F7]">
       <div class="bg-[#f6f6f6] rounded-md min-w-[25%] max-w-[25%]">
         <Image
-          src={imageUrl}
+          src={imageUrl.replace("55-55", "100-100")}
           alt={skuName}
-          width={60}
-          height={60}
-          class="object-cover object-center lg:w-[107px] lg:h-[107px] mix-blend-multiply"
+          width={110}
+          height={110}
+          class="object-cover object-center"
         />
       </div>
       <div class="flex-grow">
