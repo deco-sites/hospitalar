@@ -17,12 +17,36 @@ export interface Options {
   productGroupId: string;
 }
 
+function getCookie(name: string) {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop()?.split(";").shift();
+}
+
+function getMarketingData() {
+  const source = getCookie("GTMUtmSource");
+  const medium = getCookie("GTMUtmMedium");
+  const campaign = getCookie("GTMUtmCampaign");
+  if (!campaign && !medium && !source) return undefined;
+  const marketingData = campaign
+    ? {
+      "utmSource": source === "(direct)" ? "direct" : source,
+      "utmCampaign": campaign,
+      "utmMedium": medium === "(none)" ? "none" : medium,
+    }
+    : {
+      "utmSource": source === "(direct)" ? "direct" : source,
+      "utmMedium": medium === "(none)" ? "none" : medium,
+    };
+  return marketingData;
+}
+
 export const useAddToCart = (
   { skuId, sellerId, price, discount, name, productGroupId, quantity }: Options,
 ) => {
   const isAddingToCart = useSignal(false);
   const { displayCart } = useUI();
-  const { addItems } = useCart();
+  const { addItems, sendAttachment } = useCart();
 
   const onClick = useCallback(async (e: MouseEvent) => {
     e.preventDefault();
@@ -37,6 +61,15 @@ export const useAddToCart = (
       await addItems({
         orderItems: [{ id: skuId, seller: sellerId, quantity }],
       });
+
+      const marketingData = getMarketingData();
+
+      if (marketingData) {
+        await sendAttachment({
+          attachment: "marketingData",
+          body: marketingData,
+        });
+      }
 
       sendEvent({
         name: "add_to_cart",

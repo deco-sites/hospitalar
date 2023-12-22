@@ -183,7 +183,7 @@ function Cart(props: ICartProps) {
                 BUTTON_VARIANTS[buttonMode as string]
               } font-medium text-xs w-full text-base-100 lg:text-sm lg:h-10`}
               disabled={loading.value || cart.value.items.length === 0}
-              onClick={ handleFinishPurchase }
+              onClick={handleFinishPurchase}
             >
               Finalizar Compra
             </Button>
