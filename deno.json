@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "start": "deno task bundle && deno run -A --unstable --watch=static/sw.js,tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/ dev.ts",
+    "start": "deno task bundle && deno run -A --env --unstable --watch=static/sw.js,tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/ dev.ts",
     "gen": "deno run -A dev.ts --gen-only",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
     "release": "deno eval 'import \"deco/scripts/release.ts\"'",
@@ -30,8 +30,8 @@
     "deco-sites/hospitalar/": "./",
     "$store/": "./",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.22.11/",
-    "$live/": "https://denopkg.com/deco-cx/deco@1.48.7/",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.48.7/",
+    "$live/": "../deco/",
+    "deco/": "../deco/",
     "$fresh/": "https://deno.land/x/fresh@1.6.1/",
     "preact": "https://esm.sh/preact@10.19.2",
     "preact/": "https://esm.sh/preact@10.19.2/",
@@ -41,7 +41,7 @@
     "std/": "https://deno.land/std@0.190.0/",
     "partytown/": "https://denopkg.com/deco-cx/partytown@0.4.8/",
     "daisyui": "npm:daisyui@3.0.3",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.25.11/"
+    "apps/": "../apps/"
   },
   "lint": {
     "rules": {
