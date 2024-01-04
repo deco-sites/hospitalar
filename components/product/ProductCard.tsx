@@ -68,9 +68,9 @@ interface Props {
   layout?: Layout;
   class?: string;
   IdCollection?: string;
-  tagWarningWidth?: string; 
-  tagWarningHeight?: string; 
-  positionBottom?:string; 
+  tagWarningWidth?: string;
+  tagWarningHeight?: string;
+  positionBottom?: string;
 }
 
 export const relative = (url: string) => {
@@ -82,7 +82,17 @@ const WIDTH = 279;
 const HEIGHT = 270;
 
 function ProductCard(
-  { product, preload, itemListName, layout, class: _class, IdCollection, tagWarningWidth, tagWarningHeight, positionBottom }: Props,
+  {
+    product,
+    preload,
+    itemListName,
+    layout,
+    class: _class,
+    IdCollection,
+    tagWarningWidth,
+    tagWarningHeight,
+    positionBottom,
+  }: Props,
 ) {
   const {
     url,
@@ -102,16 +112,13 @@ function ProductCard(
 
   let ProductWarning = false;
 
-  const filteredCollection =
-    product.additionalProperty?.filter(
-      (property) =>
-        property?.propertyID !== undefined &&
-        String(property?.propertyID) === IdCollection,
-    ) || [];
-
+  const filteredCollection = product.additionalProperty?.filter(
+    (property) =>
+      property?.propertyID !== undefined &&
+      String(property?.propertyID) === IdCollection,
+  ) || [];
 
   if (filteredCollection.length > 0) ProductWarning = true;
-
 
   function extractURLPart(url: string) {
     const index = url.indexOf("/p?");
@@ -283,6 +290,20 @@ function ProductCard(
               <TagWarning width={tagWarningWidth} height={tagWarningHeight} style={`flex justify-center`}/>
             </div>
           )}
+          {/* Tag produto restrito*/}
+          {ProductWarning && (
+            <div
+              class={`flex justify-center absolute ${
+                positionBottom ?? `bottom-[10%]`
+              }`}
+            >
+              <TagWarning
+                width={tagWarningWidth}
+                height={tagWarningHeight}
+                style={`flex justify-center`}
+              />
+            </div>
+          )}
         </a>
         {listPrice2 !== price2 && (
           <DiscountBadge
@@ -332,46 +353,54 @@ function ProductCard(
         {availability === "https://schema.org/InStock"
           ? (
             <>
-              {l?.hide.allPrices ? "" : (
-                <div class="flex flex-col mt-2 sm:h-auto h-[95px]">
-                  <div class="text-xs font-normal text-gray-800 mt-[5px]">
-                    <span class="text-[1.0rem] text-primary font-bold">
-                      {formatPrice(price! * 0.97, offers!.priceCurrency!)}
-                      {" "}
-                    </span>
-                    à vista ou
-                  </div>
-                  <div
-                    class={`flex items-center gap-2.5 ${l?.basics?.oldPriceSize === "Normal" ? "lg:flex-row" : ""
-                      } ${align === "center" ? "justify-center" : "justify-start"
-                      }`}
-                  >
-                    {(listPrice && price) && listPrice > price && (
-                      <p
-                        class={`line-through text-base-300 text-xs  ${l?.basics?.oldPriceSize === "Normal"
-                          ? "lg:text-xl"
+              {l?.hide.allPrices
+                ? ""
+                : (
+                  <div class="flex flex-col mt-2 sm:h-auto h-[95px]">
+                    <div class="text-xs font-normal text-gray-800 mt-[5px]">
+                      <span class="text-[1.0rem] text-primary font-bold">
+                        {formatPrice(price! * 0.97, offers!.priceCurrency!)}
+                        {" "}
+                      </span>
+                      à vista ou
+                    </div>
+                    <div
+                      class={`flex items-center gap-2.5 ${
+                        l?.basics?.oldPriceSize === "Normal"
+                          ? "lg:flex-row"
                           : ""
+                      } ${
+                        align === "center" ? "justify-center" : "justify-start"
+                      }`}
+                    >
+                      {(listPrice && price) && listPrice > price && (
+                        <p
+                          class={`line-through text-base-300 text-xs  ${
+                            l?.basics?.oldPriceSize === "Normal"
+                              ? "lg:text-xl"
+                              : ""
                           }`}
-                      >
-                        {formatPrice(listPrice, offers!.priceCurrency!)}
+                        >
+                          {formatPrice(listPrice, offers!.priceCurrency!)}
+                        </p>
+                      )}
+                      <p class="text-primary text-sm">
+                        {formatPrice(price, offers!.priceCurrency!)}
                       </p>
-                    )}
-                    <p class="text-primary text-sm">
-                      {formatPrice(price, offers!.priceCurrency!)}
-                    </p>
+                    </div>
+                    {l?.hide.installments
+                      ? ""
+                      : (
+                        <div class="text-xs font-normal text-gray-800 mt-[5px]">
+                          em até{" "}
+                          {installment?.billingDuration}x de ${formatPrice(
+                            installment?.billingIncrement,
+                            offers!.priceCurrency!,
+                          )} sem juros
+                        </div>
+                      )}
                   </div>
-                  {l?.hide.installments
-                    ? ""
-                    : (
-                      <div class="text-xs font-normal text-gray-800 mt-[5px]">
-                        em até {installment?.billingDuration}x de ${formatPrice(
-                          installment?.billingIncrement,
-                          offers!.priceCurrency!,
-                        )} sem juros
-                      </div>
-                    )}
-                </div>
-              )}
+                )}
             </>
           )
           : null}

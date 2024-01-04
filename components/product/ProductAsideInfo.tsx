@@ -33,7 +33,6 @@ function ProductAsideInfo({
       String(property?.propertyID) === IdCollection,
   ) || [];
 
-
   if (filteredCollection.length > 0) ProductWarning = true;
 
   return (
@@ -56,7 +55,7 @@ function ProductAsideInfo({
       </div>
 
       {/* { tag warning} */}
-      {ProductWarning && <TagWarning style={"my-[20px]"}/>}
+      {ProductWarning && <TagWarning style={"my-[20px]"} />}
 
       {/* Prices */}
       {availability === "https://schema.org/InStock"

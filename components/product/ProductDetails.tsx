@@ -19,6 +19,7 @@ import { getShareLink } from "$store/sdk/shareLinks.tsx";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 
 import ProductAsideInfo from "deco-sites/hospitalar/components/product/ProductAsideInfo.tsx";
+import TagBlueProduct from "deco-sites/hospitalar/components/blueTags/BlueTagProduct.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 
@@ -36,13 +37,13 @@ export interface Props {
     link: string;
   };
   shareableNetworks?: ShareableNetwork[];
-  
+
   /*Produtos Restrito*/
-  /** 
-   *  @title Produtos restrito. 
-   *  @description Adicionar o Id da coleção. 
+  /**
+   *  @title Produtos restrito.
+   *  @description Adicionar o Id da coleção.
    */
-  IdCollection?: string; 
+  IdCollection?: string;
 }
 
 const WIDTH = 500;
@@ -86,6 +87,7 @@ function ProductInfo(
     isVariantOf,
     url,
   } = product;
+
   const { price, listPrice, seller, availability, installment } = useOffer(
     offers,
   );
@@ -109,7 +111,8 @@ function ProductInfo(
       <ProductAsideInfo
         product={product}
         subName={subName}
-        IdCollection = {IdCollection ?? "156"}     />
+        IdCollection={IdCollection ?? "156"}
+      />
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 lg:mt-10 flex gap-[30px]">
         {availability === "https://schema.org/InStock"
@@ -180,6 +183,10 @@ function ProductInfo(
           </ul>
         </div>
       )}
+
+      {/* Tag Blue Product */}
+
+      <TagBlueProduct blueProductId={productID} />
 
       {/* Analytics Event */}
       <SendEventOnLoad

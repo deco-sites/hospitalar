@@ -1,3 +1,4 @@
+# Disallow all crawlers access to certain pages. 
  User-agent: * 
 
 Allow: /
@@ -9,3 +10,5 @@ Disallow: /busca/*
 Disallow: /quick-view/* 
 Disallow: /espiar/* 
 Noindex: /buscapagina/* 
+
+Sitemap: https://www.hospitalardistribuidora.com.br/sitemap.xml
