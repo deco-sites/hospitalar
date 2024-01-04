@@ -6,6 +6,7 @@ import * as $_app from "./routes/_app.tsx";
 import * as $styles_css from "./routes/styles.css.ts";
 import * as $AddToCartActions from "./islands/AddToCartActions.tsx";
 import * as $AddToCartButton from "./islands/AddToCartButton.tsx";
+import * as $BlueTagVisit from "./islands/BlueTagVisit.tsx";
 import * as $Debug from "./islands/Debug.tsx";
 import * as $HeaderButton from "./islands/HeaderButton.tsx";
 import * as $HeaderModals from "./islands/HeaderModals.tsx";
@@ -32,6 +33,7 @@ const manifest = {
   islands: {
     "./islands/AddToCartActions.tsx": $AddToCartActions,
     "./islands/AddToCartButton.tsx": $AddToCartButton,
+    "./islands/BlueTagVisit.tsx": $BlueTagVisit,
     "./islands/Debug.tsx": $Debug,
     "./islands/HeaderButton.tsx": $HeaderButton,
     "./islands/HeaderModals.tsx": $HeaderModals,

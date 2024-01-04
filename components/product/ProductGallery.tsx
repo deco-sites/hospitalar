@@ -9,7 +9,7 @@ export interface Columns {
 
 export interface Props {
   products: Product[] | null;
-  IdCollection?: string; 
+  IdCollection?: string;
 }
 
 function ProductGallery({ products, IdCollection }: Props) {
@@ -28,11 +28,10 @@ function ProductGallery({ products, IdCollection }: Props) {
               showCardShadow: true,
               showCta: true,
             },
-          }
-        }
-        IdCollection = {IdCollection ?? "156"}
-        tagWarningWidth="70%"
-        positionBottom = "bottom-0"
+          }}
+          IdCollection={IdCollection ?? "156"}
+          tagWarningWidth="70%"
+          positionBottom="bottom-0"
         />
       ))}
     </div>
