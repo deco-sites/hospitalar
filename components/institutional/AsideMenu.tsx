@@ -46,7 +46,7 @@ function AsideMenu(
                 `}
                 href={item.href}
               >
-                {item.label}
+                <span class="text-start w-[85%]">{item.label}</span>
                 <Icon id="ChevronRight" size={20} />
               </a>
             </li>

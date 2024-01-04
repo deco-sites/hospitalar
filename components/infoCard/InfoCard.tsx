@@ -35,14 +35,20 @@ export default function InfoCard(
 
   return (
     <section class={`${textAlignment} pt-8`}>
-      <h6 class="text-emphasis font-bold text-xs uppercase">{caption}</h6>
+      <span class="text-emphasis font-bold text-xs uppercase">{caption}</span>
       <h3 class="text-primary font-normal text-2xl mb-5">{title}</h3>
       {links?.length
         ? (
           <ul class="flex gap-4 items-center justify-center">
             {links.map((link) => (
               <li key={link.label}>
-                <a href={link.href} class="btn btn-secondary gap-3">
+                <a
+                  href={link.href}
+                  class="btn btn-secondary gap-3"
+                  name={link.label}
+                  aria-label={link.label}
+                  title={link.label}
+                >
                   <Icon id={link.icon} size={18} strokeWidth={1} />
                   <span class="md:block hidden">{link.label}</span>
                 </a>

@@ -38,7 +38,7 @@ function TipItem(alert: Alerts) {
         ? (
           <Image
             src={alert.image}
-            alt={alert.alt}
+            alt={`Imagem relativa ao aviso ao lado`}
             width={18}
             height={18}
           />

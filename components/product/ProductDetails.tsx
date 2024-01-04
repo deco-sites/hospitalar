@@ -36,6 +36,13 @@ export interface Props {
     link: string;
   };
   shareableNetworks?: ShareableNetwork[];
+
+  /*Produtos Restrito*/
+  /**
+   *  @title Produtos restrito.
+   *  @description Adicionar o Id da coleção.
+   */
+  IdCollection?: string;
 }
 
 const WIDTH = 500;
@@ -59,10 +66,11 @@ function NotFound() {
 }
 
 function ProductInfo(
-  { page, shipmentPolitics, shareableNetworks }: {
+  { page, shipmentPolitics, shareableNetworks, IdCollection }: {
     page: ProductDetailsPage;
     shipmentPolitics?: Props["shipmentPolitics"];
     shareableNetworks?: Props["shareableNetworks"];
+    IdCollection?: Props["IdCollection"];
   },
 ) {
   const {
@@ -101,6 +109,7 @@ function ProductInfo(
       <ProductAsideInfo
         product={product}
         subName={subName}
+        IdCollection={IdCollection ?? "156"}
       />
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 lg:mt-10 flex gap-[30px]">

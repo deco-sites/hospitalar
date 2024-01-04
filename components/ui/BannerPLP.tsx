@@ -61,7 +61,7 @@ function Banner({ banner }: SectionProps<ReturnType<typeof loader>>) {
       <Picture preload class="col-start-1 col-span-1 row-start-1 row-span-1">
         <Source
           src={image.mobile}
-          width={480}
+          width={420}
           height={145}
           media="(max-width: 767px)"
         />
@@ -73,7 +73,7 @@ function Banner({ banner }: SectionProps<ReturnType<typeof loader>>) {
           src={image.desktop}
           alt={image.alt ?? title}
           width={1170}
-          height={145}
+          height={195}
         />
       </Picture>
 
