@@ -42,7 +42,9 @@ function AddToCartButton(
       <p class="flex gap-2 items-center justify-center">
         <Icon id="ShoppingCart" width={24} height={24} class="mb-1" />
         <span class="lg:hidden">{label ?? "Comprar"}</span>
-        <span class="hidden lg:inline ">{label ?? "Adicionar ao carrinho"}</span>
+        <span class="hidden lg:inline ">
+          {label ?? "Adicionar ao carrinho"}
+        </span>
       </p>
     </Button>
   );

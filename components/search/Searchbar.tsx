@@ -42,13 +42,12 @@ export interface EditableProps {
   query?: string;
   cardLayout: CardLayout;
 
-  
   /*Produtos Restrito*/
-  /** 
-   *  @title Produtos restrito. 
-   *  @description Adicionar o Id da coleção. 
+  /**
+   *  @title Produtos restrito.
+   *  @description Adicionar o Id da coleção.
    */
-  IdCollection?: string; 
+  IdCollection?: string;
 }
 
 export type Props = EditableProps & {
@@ -70,7 +69,6 @@ function Searchbar({
   hide = { cleanButton: false, results: false },
   noContainer = false,
   IdCollection,
-
 }: Props) {
   const searchInputRef = useRef<HTMLInputElement>(null);
   const { setSearch, suggestions, loading } = useAutocomplete();
@@ -149,7 +147,7 @@ function Searchbar({
           name={name}
           placeholder={placeholder}
           query={query}
-          IdCollection = {IdCollection ?? "156"}
+          IdCollection={IdCollection ?? "156"}
         />
       )}
     </div>

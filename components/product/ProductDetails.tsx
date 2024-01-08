@@ -36,13 +36,13 @@ export interface Props {
     link: string;
   };
   shareableNetworks?: ShareableNetwork[];
-  
+
   /*Produtos Restrito*/
-  /** 
-   *  @title Produtos restrito. 
-   *  @description Adicionar o Id da coleção. 
+  /**
+   *  @title Produtos restrito.
+   *  @description Adicionar o Id da coleção.
    */
-  IdCollection?: string; 
+  IdCollection?: string;
 }
 
 const WIDTH = 500;
@@ -109,7 +109,8 @@ function ProductInfo(
       <ProductAsideInfo
         product={product}
         subName={subName}
-        IdCollection = {IdCollection ?? "156"}     />
+        IdCollection={IdCollection ?? "156"}
+      />
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 lg:mt-10 flex gap-[30px]">
         {availability === "https://schema.org/InStock"
