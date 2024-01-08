@@ -8,22 +8,22 @@ export interface Props {
   title: string;
   asideMenu: Section;
   content:
-  | BlockInstance<
-    "deco-sites/hospitalar/sections/Institutional/TextContent.tsx",
-    Manifest
-  >
-  | BlockInstance<
-    "deco-sites/hospitalar/sections/Institutional/AccordionsContent.tsx",
-    Manifest
-  >
-  | BlockInstance<
-    "deco-sites/hospitalar/sections/Institutional/CardsContent.tsx",
-    Manifest
-  >
-  | BlockInstance<
-    "deco-sites/hospitalar/sections/Institutional/ContactForm.tsx",
-    Manifest
-  >;
+    | BlockInstance<
+      "deco-sites/hospitalar/sections/Institutional/TextContent.tsx",
+      Manifest
+    >
+    | BlockInstance<
+      "deco-sites/hospitalar/sections/Institutional/AccordionsContent.tsx",
+      Manifest
+    >
+    | BlockInstance<
+      "deco-sites/hospitalar/sections/Institutional/CardsContent.tsx",
+      Manifest
+    >
+    | BlockInstance<
+      "deco-sites/hospitalar/sections/Institutional/ContactForm.tsx",
+      Manifest
+    >;
 }
 
 function InstitutionalPage({

@@ -12,11 +12,12 @@ export type ResultSearch = EditableProps & {
   loading: {
     value: boolean;
   };
-  IdCollection?: string; 
+  IdCollection?: string;
 };
 
 const ResultSearch = (
-  { valueSearch, notFound, cardLayout, suggestions, loading, IdCollection }: ResultSearch,
+  { valueSearch, notFound, cardLayout, suggestions, loading, IdCollection }:
+    ResultSearch,
 ) => {
   if (valueSearch !== "" && suggestions?.value != null) {
     return (
@@ -98,8 +99,8 @@ const ResultSearch = (
                           product={product}
                           layout={cardLayout}
                           class={"lg:!p-0"}
-                          IdCollection = {IdCollection}
-                          tagWarningWidth ="70%"
+                          IdCollection={IdCollection}
+                          tagWarningWidth="70%"
                         />
                       </Slider.Item>
                     ))}
