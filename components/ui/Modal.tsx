@@ -98,11 +98,11 @@ const Modal = ({
                 invertCloseIcon ? "flex-row-reverse" : ""
               } items-center justify-between border-solid border-b-[1px] border-[#F7F7F7] lg:mx-10`}
             >
-              <h1 className="flex items-center justify-between gap-1">
+              <h2 className="flex items-center justify-between gap-1">
                 <span class="font-medium text-base-content lg:text-xl text-xl">
                   {title}
                 </span>
-              </h1>
+              </h2>
               <Button
                 class="btn btn-ghost p-0 flex justify-center w-12 h-4"
                 onClick={onClose}
