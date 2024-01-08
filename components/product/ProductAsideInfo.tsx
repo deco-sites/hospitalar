@@ -40,12 +40,12 @@ function ProductAsideInfo({
     <>
       {/* Code and name */}
       <div class="mt-4 sm:mt-0 sm:h-auto">
-        <h1>
+        <h2>
           <span class="font-medium text-base-content text-2xl">
             {isVariantOf?.name}
             {currentURL == url ? subName.map((name) => `- ${name}`) : "  "}
           </span>
-        </h1>
+        </h2>
         {gtin && gtin?.length > 0 && (
           <div>
             <span class="text-sm text-base-300">

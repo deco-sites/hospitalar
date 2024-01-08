@@ -82,11 +82,11 @@ function Banner({ banner }: SectionProps<ReturnType<typeof loader>>) {
           DESKTOP_TEXT_POSITION[desktopTextPosition ?? "center"]
         } ${MOBILE_TEXT_POSITION[mobileTextPosition ?? "left"]}`}
       >
-        <h1>
+        <h2>
           <span class="text-[40px] md:text-7xl font-medium text-base-100">
             {title}
           </span>
-        </h1>
+        </h2>
         <h2>
           <span class="text-xl font-medium text-base-100">
             {subtitle}
