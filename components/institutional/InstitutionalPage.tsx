@@ -133,7 +133,7 @@ function InstitutionalPage({
       <div class="flex flex-col md:flex-row justify-between mt-[15px]">
         <AsideComponent {...asideProps} />
         <article class="md:pl-[30px] w-full">
-          <h3 class="max-md:flex max-md:justify-between text-primary text-[19px] lg:text-[28px] font-normal lg:font-medium leading-[130%] lg:leading-[36.4px] mb-5 border-b border-neutral-100 pb-[10px]">
+          <h1 class="max-md:flex max-md:justify-between text-primary text-[19px] lg:text-[28px] font-normal lg:font-medium leading-[130%] lg:leading-[36.4px] mb-5 border-b border-neutral-100 pb-[10px]">
             {title}
             <a
               href="/i"
@@ -141,7 +141,7 @@ function InstitutionalPage({
             >
               <Icon id="ChevronLeft" size={20} /> voltar
             </a>
-          </h3>
+          </h1>
           {/* @ts-ignore opting for a ignore here so we can use a union type for the content section prop, and display it nicely in the admin panel */}
           <ContentComponent {...contentProps} />
         </article>

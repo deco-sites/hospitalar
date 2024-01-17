@@ -38,9 +38,9 @@ export default function InfoCard(
         </h3>
       </div>
       <div class="lg:pl-[60px] lg:border-l border-[#DEE0E8] w-full">
-        <h3 class="hidden lg:block text-[#4A4B51] font-medium text-base mb-2">
+        <h1 class="hidden lg:block text-[#4A4B51] font-medium text-base mb-2">
           {title}
-        </h3>
+        </h1>
         {html
           ? (
             <div
