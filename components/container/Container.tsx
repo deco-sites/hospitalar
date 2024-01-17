@@ -66,7 +66,7 @@ function Container({ sections, isHeader = false }: Props) {
         </div>
       ))}
       </div>
-      {isHeader && <div class={`h-[164.7px] md:h-[196px]`} ></div>}
+      {isHeader && <div class={`h-[164.7px] md:h-[194px]`} ></div>}
     </>
   );
 }
