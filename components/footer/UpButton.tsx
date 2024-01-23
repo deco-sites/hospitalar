@@ -46,7 +46,7 @@ function UpButton() {
                 id="BTT"
                 href="#BTT"
                 aria-label="Button Back to top"
-                class="fixed bottom-10 right-7 rounded-full flex items-center justify-center flex-col w-11 h-11 gap-1 bg-[#2D386E] md:right-24"
+                class="fixed bottom-10 right-7 rounded-full flex items-center justify-center flex-col w-11 h-11 gap-1 bg-[#2D386E] md:right-4 z-[9999]"
             >
                 <div class="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="13" viewBox="0 0 22 13" fill="none">
