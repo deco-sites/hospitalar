@@ -80,7 +80,11 @@ function ProductDetailsImages(
 
           {/* Free Shipping */}
 
-          <FreeShipping />
+          <FreeShipping
+           classNameContainer="left-4 md:w-[129px] lg:right-auto lg:left-0 xl:left-[20%] md:top-0"
+           classNameChildren="md:w-[81px]"
+           classNameIcon="mr-2 md:mr-0"
+          />
         </div>
 
 

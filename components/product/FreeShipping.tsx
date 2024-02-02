@@ -1,19 +1,25 @@
 import Icon from "deco-sites/hospitalar/components/ui/Icon.tsx";
 
+interface Props {
+  classNameContainer?: string;
+  classNameChildren?: string; 
+  classNameIcon?: string;
+}
 
-export default function FreeShipping() {
+
+export default function FreeShipping({ classNameContainer,classNameChildren, classNameIcon } : Props) {
   return (
     <>
-      <div class=" md:w-[129px] absolute lg:right-auto lg:left-0 xl:left-[20%] left-4 top-11 md:top-0 rounded-[5px] border-[0.8px] border-solid border-border-free-shipping flex items-center justify-center bg-white z-10 md:z-0">
+      <div class={`absolute  top-11 rounded-[5px] border-[0.8px] border-solid border-border-free-shipping flex items-center justify-center bg-white z-10 md:z-0 ${classNameContainer}`}>
         <div class="flex items-center justify-center px-[10px] py-[5px] ">
           <Icon
-            class="mr-2 md:mr-0"
+            class={`${classNameIcon}`}
             id="free-shipping"
             width={"22"}
             height={"22"}
             strokeWidth={1}
           />
-          <div class="md:w-[81px]">
+          <div class={`${classNameChildren}`}>
             <p class="text-base-content text-xs text-center font-semibold tracking-[.24px] uppercase ">FRETE GRÁTIS </p>
           </div>
         </div>
