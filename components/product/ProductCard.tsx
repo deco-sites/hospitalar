@@ -305,6 +305,20 @@ function ProductCard(
               />
             </div>
           )}
+          {/* Tag produto restrito*/}
+          {ProductWarning && (
+            <div
+              class={`flex justify-center absolute ${
+                positionBottom ?? `bottom-[10%]`
+              }`}
+            >
+              <TagWarning
+                width={tagWarningWidth}
+                height={tagWarningHeight}
+                style={`flex justify-center`}
+              />
+            </div>
+          )}
         </a>
         {listPrice2 !== price2 && (
           <DiscountBadge

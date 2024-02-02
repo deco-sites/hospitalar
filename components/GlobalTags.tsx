@@ -49,6 +49,9 @@ function GlobalTags() {
 
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
+
+     {/** RD Station Marketing */}
+      <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/4c1c3b1d-a025-417d-a4c0-36f62d19422c-loader.js" ></script>
     </Head>
   );
 }

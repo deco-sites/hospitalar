@@ -19,6 +19,7 @@ import { getShareLink } from "$store/sdk/shareLinks.tsx";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 
 import ProductAsideInfo from "deco-sites/hospitalar/components/product/ProductAsideInfo.tsx";
+import TagBlueProduct from "deco-sites/hospitalar/components/blueTags/BlueTagProduct.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 
@@ -86,6 +87,7 @@ function ProductInfo(
     isVariantOf,
     url,
   } = product;
+
   const { price, listPrice, seller, availability, installment } = useOffer(
     offers,
   );
@@ -181,6 +183,10 @@ function ProductInfo(
           </ul>
         </div>
       )}
+
+      {/* Tag Blue Product */}
+
+      <TagBlueProduct blueProductId={productID} />
 
       {/* Analytics Event */}
       <SendEventOnLoad
