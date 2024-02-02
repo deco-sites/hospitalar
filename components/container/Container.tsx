@@ -1,4 +1,5 @@
 import { Section } from "$live/blocks/section.ts";
+import { headerHeight } from "$store/components/header/constants.ts";
 
 export type VerticalSpacing = "top" | "bottom" | "both" | "none";
 export type ShadowSize =
@@ -29,11 +30,15 @@ export interface Props {
      */
     spacing?: number;
   }[];
+
+   /** @default false */
+   isHeader?: boolean;
 }
 
-function Container({ sections }: Props) {
+function Container({ sections, isHeader = false }: Props) {
   return (
     <>
+     <div class={isHeader ? "fixed top-0 w-full bg-white z-[5000]" : ""}>
       {sections?.map((
         {
           section: { Component, props },
@@ -45,7 +50,7 @@ function Container({ sections }: Props) {
         },
       ) => (
         <div
-          class={`w-full md:relative
+          class={`w-full 
           ${VERTICAL_SPACING[verticalSpacing]} 
           ${SPACING[spacing]}
           ${SHADOW_SIZE[shadow]}`}
@@ -60,6 +65,8 @@ function Container({ sections }: Props) {
             : <Component {...props} />}
         </div>
       ))}
+      </div>
+      {isHeader && <div class={`h-[164.7px] md:h-[194px]`} ></div>}
     </>
   );
 }
