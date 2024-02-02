@@ -4,6 +4,7 @@ import DiscountBadge from "./DiscountBadge.tsx";
 import type { ImageObject, Product } from "apps/commerce/types.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import Image from "deco-sites/std/components/Image.tsx";
+import FreeShipping from "deco-sites/hospitalar/components/product/FreeShipping.tsx";
 
 interface Props {
   images: ImageObject[];
@@ -76,7 +77,13 @@ function ProductDetailsImages(
               />
             )
             : null}
+
+          {/* Free Shipping */}
+
+          <FreeShipping />
         </div>
+
+
 
         {/* Dots */}
         <div class="lg:max-w-[500px] lg:self-start xl:self-start xl:left-0 xl:absolute xl:max-h-full xl:overflow-y-scroll xl:scrollbar-none">

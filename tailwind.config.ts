@@ -25,6 +25,7 @@ export default {
         "price-1": "#C5C6CB",
         "warning": "#C31212",
         "box-warning": "rgba(195, 18, 18, 0.14)",
+        "border-free-shipping": "#2D386E",
       },
       animation: {
         "slide-left": "slide-left-frame 0.4s ease normal",
