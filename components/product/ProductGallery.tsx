@@ -32,6 +32,7 @@ function ProductGallery({ products, IdCollection }: Props) {
           IdCollection={IdCollection ?? "156"}
           tagWarningWidth="70%"
           positionBottom="bottom-0"
+          classFrreShipping= "hidden lg:block"
         />
       ))}
     </div>

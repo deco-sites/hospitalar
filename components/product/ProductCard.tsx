@@ -72,7 +72,7 @@ interface Props {
   tagWarningWidth?: string;
   tagWarningHeight?: string;
   positionBottom?: string;
-  tagFreeShipping?: boolean;
+  classFrreShipping?: string;
 }
 
 export const relative = (url: string) => {
@@ -94,7 +94,7 @@ function ProductCard(
     tagWarningWidth,
     tagWarningHeight,
     positionBottom,
-    tagFreeShipping = true
+    classFrreShipping,
   }: Props,
 ) {
   const {
@@ -325,12 +325,12 @@ function ProductCard(
 
         {/* Free Shipping */}
 
-        {tagFreeShipping && (
+        
           < FreeShipping
-            classNameContainer="md:left-3 left-0"
+            classNameContainer= {`md:left-3 left-0 ${classFrreShipping}`}
             classNameIcon="mr-2"
           />
-        )}
+       
 
       </figure>
 
