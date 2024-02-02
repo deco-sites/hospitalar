@@ -261,6 +261,7 @@ function BannerCarousel(
   const id = useId();
 
   return (
+   <div class=""> 
     <div
       id={id}
       class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px]"
@@ -289,6 +290,7 @@ function BannerCarousel(
 
       <SliderJS rootId={id} interval={interval && interval * 1e3} infinite />
     </div>
+  </div> 
   );
 }
 
