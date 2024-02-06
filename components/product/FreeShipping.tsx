@@ -10,7 +10,7 @@ interface Props {
 export default function FreeShipping({ classNameContainer,classNameChildren, classNameIcon } : Props) {
   return (
     <>
-      <div class={`absolute  top-11 rounded-[5px] border-[0.8px] border-solid border-border-free-shipping items-center justify-center bg-white z-10 md:z-0 ${classNameContainer}`}>
+      <div class={`absolute  rounded-[5px] border-[0.8px] border-solid border-border-free-shipping items-center justify-center bg-white z-10 md:z-0 ${classNameContainer}`}>
         <div class="flex items-center justify-center px-[10px] py-[5px] ">
           <Icon
             class={`${classNameIcon}`}

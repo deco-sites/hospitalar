@@ -26,6 +26,15 @@ function ProductDetailsImages(
   } = useOffer(offers);
   const zoomX = useSignal(0);
   const zoomY = useSignal(0);
+
+  const freeShippingCollection = product.additionalProperty?.filter(
+    (property) =>
+      property?.propertyID !== undefined &&
+      String(property?.propertyID) === "157",
+  ) || [];
+
+  const isfreeShipping = freeShippingCollection.length > 0;
+
   return (
     <>
       <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-4">
@@ -80,14 +89,14 @@ function ProductDetailsImages(
 
           {/* Free Shipping */}
 
-          <FreeShipping
-           classNameContainer="left-4 md:w-[129px] lg:right-auto lg:left-0 xl:left-[20%] md:top-0 flex"
-           classNameChildren="md:w-[81px]"
-           classNameIcon="mr-2 md:mr-0"
-          />
+          {isfreeShipping && (
+            <FreeShipping
+              classNameContainer="left-4 md:w-[129px] lg:right-auto lg:left-0 xl:left-[20%] top-0 flex"
+              classNameChildren="md:w-[81px]"
+              classNameIcon="mr-2 md:mr-0"
+            />
+          )}
         </div>
-
-
 
         {/* Dots */}
         <div class="lg:max-w-[500px] lg:self-start xl:self-start xl:left-0 xl:absolute xl:max-h-full xl:overflow-y-scroll xl:scrollbar-none">

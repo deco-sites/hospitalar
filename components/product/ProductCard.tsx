@@ -121,6 +121,15 @@ function ProductCard(
       String(property?.propertyID) === IdCollection,
   ) || [];
 
+
+  const freeShippingCollection = product.additionalProperty?.filter(
+    (property) =>
+      property?.propertyID !== undefined &&
+      String(property?.propertyID) === "157",
+  ) || [];
+
+  const freeShipping = freeShippingCollection.length > 0;
+
   if (filteredCollection.length > 0) ProductWarning = true;
 
   function extractURLPart(url: string) {
@@ -130,6 +139,7 @@ function ProductCard(
     }
     return null; // Returns null if "/p?" is not found in the URL.
   }
+
 
   const desiredPart = extractURLPart(url ?? "");
 
@@ -325,12 +335,12 @@ function ProductCard(
 
         {/* Free Shipping */}
 
-        
+        {freeShipping && (
           < FreeShipping
-            classNameContainer= {`md:left-3 left-0 ${classFrreShipping}`}
+            classNameContainer={`md:left-3 left-1 ${listPrice2 !== price2 ? `top-11` : `top-0`} ${classFrreShipping}`}
             classNameIcon="mr-2"
           />
-       
+        )}
 
       </figure>
 
