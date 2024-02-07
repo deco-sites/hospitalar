@@ -22,8 +22,6 @@ const BlueTagVisit = () => {
     window.blue_q = window.blue_q || [];
     window.blue_q.push(...eventData);
 
-    console.log("tag visit");
-
     eventData.forEach(({ event, value }) => {
       window.blue_q!.push({ event, value });
     });
