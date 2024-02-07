@@ -4,6 +4,7 @@ import DiscountBadge from "./DiscountBadge.tsx";
 import type { ImageObject, Product } from "apps/commerce/types.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import Image from "deco-sites/std/components/Image.tsx";
+import FreeShipping from "deco-sites/hospitalar/components/product/FreeShipping.tsx";
 
 interface Props {
   images: ImageObject[];
@@ -25,6 +26,15 @@ function ProductDetailsImages(
   } = useOffer(offers);
   const zoomX = useSignal(0);
   const zoomY = useSignal(0);
+
+  const freeShippingCollection = product.additionalProperty?.filter(
+    (property) =>
+      property?.propertyID !== undefined &&
+      String(property?.propertyID) === "157",
+  ) || [];
+
+  const isfreeShipping = freeShippingCollection.length > 0;
+
   return (
     <>
       <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-4">
@@ -76,6 +86,16 @@ function ProductDetailsImages(
               />
             )
             : null}
+
+          {/* Free Shipping */}
+
+          {isfreeShipping && (
+            <FreeShipping
+              classNameContainer="left-4 md:w-[129px] lg:right-auto lg:left-0 xl:left-[20%] top-0 flex"
+              classNameChildren="md:w-[81px]"
+              classNameIcon="mr-2 md:mr-0"
+            />
+          )}
         </div>
 
         {/* Dots */}
