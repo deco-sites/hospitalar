@@ -18,8 +18,8 @@ export interface Image {
 }
 
 const colsVariants: Record<string, string> = {
-  "Marcas": "grid-cols-3",
-  "Medicamentos": "grid-cols-11",
+  "Marcas": "marcas-grid",
+  "Medicamentos": "medicamento-grid",
 };
 
 function splitNatItems(children: INavItem[], number = 6) {
@@ -40,10 +40,32 @@ function NavItemDropDown(
     image?: Image;
   },
 ) {
+  // @ts-ignore: Ignorando erro
+  function sortByLabel(a, b) {
+    const labelA = a.label.toUpperCase();
+    const labelB = b.label.toUpperCase();
+
+    if (labelA < labelB) return -1;
+    if (labelA > labelB) return 1;
+
+    return 0;
+
+  }
+
   if (!elements || !elements?.length) {
     return <span />;
   }
+
   if (variant === "WithBrands") {
+
+    elements.forEach((element) => {
+      
+      if (element?.children) {
+        element.children.sort(sortByLabel);
+      }
+
+    });
+
     return (
       <div
         class="absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 w-screen shadow-md"
@@ -52,7 +74,7 @@ function NavItemDropDown(
         <div class="container w-full pt-5 pb-5 m-auto px-5 flex items-start justify-start gap-16">
           {elements.map((element) => {
             return (
-              <div class="mr-[83px]">
+              <div class="mr-[83px] mb-3">
                 <span>{element.label}</span>
                 <ul
                   class={`mt-3 grid ${
@@ -74,7 +96,8 @@ function NavItemDropDown(
               </div>
             );
           })}
-          {image && (
+          
+            {image?.src && (
             <a href={image.href || ""}>
               <img
                 src={image.src}
@@ -82,7 +105,8 @@ function NavItemDropDown(
                 class="h-full w-auto justify-self-end"
               />
             </a>
-          )}
+          )}  
+          
         </div>
       </div>
     );
@@ -113,29 +137,28 @@ function NavItemDropDown(
   );
 }
 
+
+
 function NavItem({ item }: { item: INavItem }) {
   const { href, label, children, highlighted, variant, image } = item;
   return (
     <li
-      class={`group flex items-center ${
-        highlighted ? "w-[260px]" : "flex-1"
-      } justify-center`}
+      class={`group flex items-center ${highlighted ? "w-[260px]" : "flex-1"
+        } justify-center`}
     >
       <a
         href={href}
-        class={`px-4 py-2 my-2 w-full text-center ${
-          highlighted ? "bg-white rounded-3xl flex justify-center gap-2" : ""
-        }`}
+        class={`px-4 py-2 my-2 w-full text-center ${highlighted ? "bg-white rounded-3xl flex justify-center gap-2" : ""
+          }`}
       >
         {highlighted && (
           <Icon id="AllCategories" width={18} height={18} strokeWidth={1} />
         )}
         <span
-          class={`after:absolute after:transition-all after:duration-100 after:-bottom-1 relative after:left-0 after:w-0 after:h-[1px] after:bg-secondary text-sm transition-all font-bold duration-300 ${
-            highlighted
+          class={`after:absolute after:transition-all after:duration-100 after:-bottom-1 relative after:left-0 after:w-0 after:h-[1px] after:bg-secondary text-sm transition-all font-bold duration-300 ${highlighted
               ? "text-primary"
               : "text-white group-hover:text-secondary group-hover:after:w-full"
-          }`}
+            }`}
         >
           {label}
         </span>
