@@ -104,6 +104,7 @@ function ProductCard(
     image: images,
     offers,
     isVariantOf,
+    category
   } = product;
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
@@ -113,13 +114,16 @@ function ProductCard(
 
   //warning product
 
-  let ProductWarning = false;
+  const strict = category?.split(">")?.[0]
 
-  const filteredCollection = product.additionalProperty?.filter(
-    (property) =>
-      property?.propertyID !== undefined &&
-      String(property?.propertyID) === IdCollection,
-  ) || [];
+  let isRestricted = false
+
+  if (strict === "Medicamentos") {
+    isRestricted = true
+  } else {
+    isRestricted = false
+  }
+
 
 
   const freeShippingCollection = product.additionalProperty?.filter(
@@ -130,7 +134,6 @@ function ProductCard(
 
   const freeShipping = freeShippingCollection.length > 0;
 
-  if (filteredCollection.length > 0) ProductWarning = true;
 
   function extractURLPart(url: string) {
     const index = url.indexOf("/p?");
@@ -297,7 +300,7 @@ function ProductCard(
               />
             )}
           {/* Tag produto restrito*/}
-          {ProductWarning && (
+          {isRestricted&& (
             <div
               class={`flex justify-center absolute ${positionBottom ?? `bottom-[10%]`
                 }`}
@@ -310,7 +313,7 @@ function ProductCard(
             </div>
           )}
           {/* Tag produto restrito*/}
-          {ProductWarning && (
+          {isRestricted&& (
             <div
               class={`flex justify-center absolute ${positionBottom ?? `bottom-[10%]`
                 }`}
