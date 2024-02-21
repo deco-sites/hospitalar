@@ -41,9 +41,9 @@ export interface Props {
   /*Produtos Restrito*/
   /**
    *  @title Produtos restrito.
-   *  @description Adicionar o Id da coleção.
+   *  @description Adicionar o nome da categoria.
    */
-  IdCollection?: string;
+  restrictedCategory?: string;
 }
 
 const WIDTH = 500;
@@ -67,13 +67,14 @@ function NotFound() {
 }
 
 function ProductInfo(
-  { page, shipmentPolitics, shareableNetworks, IdCollection }: {
+  { page, shipmentPolitics, shareableNetworks, restrictedCategory}: {
     page: ProductDetailsPage;
     shipmentPolitics?: Props["shipmentPolitics"];
     shareableNetworks?: Props["shareableNetworks"];
-    IdCollection?: Props["IdCollection"];
+    restrictedCategory?: Props["restrictedCategory"];
   },
 ) {
+ 
   const {
     breadcrumbList,
     product,
@@ -86,7 +87,18 @@ function ProductInfo(
     gtin,
     isVariantOf,
     url,
+    category
   } = product;
+
+  const strict = category?.split(">")?.[0]
+
+  let isRestricted = false
+
+  if (strict === "Medicamentos") {
+    isRestricted = true
+  } else {
+    isRestricted = false
+  }
 
   const { price, listPrice, seller, availability, installment } = useOffer(
     offers,
@@ -111,7 +123,7 @@ function ProductInfo(
       <ProductAsideInfo
         product={product}
         subName={subName}
-        IdCollection={IdCollection ?? "156"}
+        isRestricted =  {isRestricted}
       />
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 lg:mt-10 flex gap-[30px]">

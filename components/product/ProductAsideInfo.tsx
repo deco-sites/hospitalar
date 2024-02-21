@@ -10,30 +10,20 @@ import ProductInfo from "deco-sites/hospitalar/components/product/ProductInfo.ts
 interface Props {
   product: Product;
   subName: string[];
-  IdCollection?: string;
+  isRestricted: boolean;
 }
 
 function ProductAsideInfo({
   product,
   subName,
   product: { offers, isVariantOf, gtin, url },
-  IdCollection,
+  isRestricted,
 }: Props) {
   const { price, listPrice, availability, installment } = useOffer(
     offers,
   );
 
   const currentURL = window.location?.href;
-
-  let ProductWarning = false;
-
-  const filteredCollection = product.additionalProperty?.filter(
-    (property) =>
-      property?.propertyID !== undefined &&
-      String(property?.propertyID) === IdCollection,
-  ) || [];
-
-  if (filteredCollection.length > 0) ProductWarning = true;
 
   return (
     <>
@@ -55,7 +45,7 @@ function ProductAsideInfo({
       </div>
 
       {/* { tag warning} */}
-      {ProductWarning && <TagWarning style={"my-[20px]"} />}
+      {isRestricted && <TagWarning style={"my-[20px]"} />}
 
       {/* Prices */}
       {availability === "https://schema.org/InStock"
@@ -103,7 +93,7 @@ function ProductAsideInfo({
         : null}
 
       {/*warning Product info*/}
-      {ProductWarning && <ProductInfo />}
+      {isRestricted && <ProductInfo />}
     </>
   );
 }
