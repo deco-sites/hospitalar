@@ -1,6 +1,27 @@
 import { asset, Head } from "$fresh/runtime.ts";
 
 function GlobalTags() {
+  const htmlScript = `
+    !function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1852045185040482');
+    fbq('track', 'PageView');
+  `;
+
   return (
     <Head>
       {/* Enable View Transitions API */}
@@ -50,8 +71,14 @@ function GlobalTags() {
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
 
-     {/** RD Station Marketing */}
+      {/** RD Station Marketing */}
       <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/4c1c3b1d-a025-417d-a4c0-36f62d19422c-loader.js" ></script>
+
+      {/* Pixel Facebook */}
+      <script async dangerouslySetInnerHTML={{ __html: htmlScript }} ></script>
+      <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1852045185040482&ev=PageView&noscript=1" />
+      </noscript>
     </Head>
   );
 }
