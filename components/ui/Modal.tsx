@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import Button from "$store/components/ui/Button.tsx";
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
