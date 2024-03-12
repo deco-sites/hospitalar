@@ -139,3 +139,11 @@
   grid-template-rows:  repeat(8, minmax(0, 1fr));
   grid-auto-flow: column; 
 }
+
+.wishlist-item{
+  color: #2d386e; 
+}
+
+.wishlist-notItem{
+  color:transparent
+}

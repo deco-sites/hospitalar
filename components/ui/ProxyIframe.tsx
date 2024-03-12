@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 interface Props {
   src?: string;
 }
