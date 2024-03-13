@@ -5,7 +5,7 @@ import SearchResult, {
 export type Props = SearchResultProps;
 
 function WishlistGallery(props: Props) {
-  const isEmpty = !props.page || props.page.products.length === 0;
+  const isEmpty = !props.page || !props.page.products || props.page.products.length === 0;
 
   if (isEmpty) {
     return (

@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 import { useEffect } from "preact/hooks";
 
 interface Props {
