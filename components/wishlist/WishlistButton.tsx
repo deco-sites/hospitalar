@@ -29,17 +29,18 @@ function WishlistButton({
 
   return (
     <Button
-      class={variant === "icon" ? `gap-2 !border-0 ${inWishlist || hovered ? "wishlist-item border-0" : "wishlist-notItem"}`: "btn-primary btn-outline gap-2"}
+      class={variant === "icon" ? `gap-2 !border-0 ${inWishlist || hovered ? "wishlist-item border-0" : "wishlist-notItem"}` : "btn-primary btn-outline gap-2"}
       loading={fetching.value}
       aria-label="Add to wishlist"
-      onMouseEnter={() => setHovered(true)} 
-      onMouseLeave={() => setHovered(false)} 
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
       onClick={async (e) => {
         e.stopPropagation();
         e.preventDefault();
 
         if (!isUserLoggedIn) {
-          globalThis.alert("Please log in before adding to your wishlist");
+          globalThis.alert("Faça login antes de adicionar itens à sua lista de desejos.");
+          window.location.href = "/my-account"
           return;
         }
 
@@ -62,7 +63,7 @@ function WishlistButton({
         size={20}
         strokeWidth={2}
         className={inWishlist || hovered ? "!fill-black" : "none"}
-        fill={inWishlist || hovered ? "blue" : "none"} 
+        fill={inWishlist || hovered ? "blue" : "none"}
       />
       {variant === "icon" ? null : inWishlist ? "Remover" : "Favoritar"}
     </Button>

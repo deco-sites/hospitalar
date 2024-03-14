@@ -25,11 +25,14 @@ export interface Props {
    * @description Not found section, displayed when no products are found
    */
   notFoundSection: Section;
+
+  isWishlist?:boolean
 }
 
 function Result({
   page,
   variant,
+  isWishlist,
 }: Omit<Omit<Props, "page">, "notFoundSection"> & {
   page: ProductListingPage;
 }) {
@@ -60,6 +63,7 @@ function Result({
                 filters={filters}
                 breadcrumb={breadcrumb}
                 displayFilter={variant === "drawer"}
+                isWishlist = {isWishlist}
               />
               {sortOptions.length > 0
                 ? (
