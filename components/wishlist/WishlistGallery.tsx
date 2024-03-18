@@ -3,8 +3,6 @@ import SearchResult, {
   Props as SearchResultProps,
 } from "$store/components/search/SearchResult.tsx";
 import { AppContext } from "$live/mod.ts";
-import { redirect } from "$live/mod.ts";
-import { useUser } from "apps/vtex/hooks/useUser.ts";
 
 export type Props = SearchResultProps;
 
@@ -21,7 +19,7 @@ function WishlistGallery(props: Props) {
             Sua Lista de Desejos está vazia
           </span>
           <span class="text-center">
-             Adicione itens à sua lista de desejos para visualizá-los mais tarde. Eles serão exibidos aqui.
+             Faça login e adicione itens à sua lista de desejos para visualizá-los mais tarde. Eles serão exibidos aqui.
           </span>
         </div>
       </div>
@@ -40,20 +38,7 @@ function WishlistGallery(props: Props) {
 
 export default WishlistGallery;
 
-
-
 async function loader(props: Props, req: Request, ctx: AppContext<any>) {
-  const { user } = useUser();
-  const isUserLoggedIn = Boolean(user.value?.email);
-
-  console.log(isUserLoggedIn);
-
-  if (!isUserLoggedIn) {
-    const url = new URL(req.url);
-    url.pathname = "/my-account";
-    redirect(url.toString(), 302);
-    return;
-  }
 
   if (!props.page || !props.page.products || props.page.products.length === 0) {
     return {
