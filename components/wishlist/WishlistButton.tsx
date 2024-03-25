@@ -4,6 +4,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import { useWishlist } from "apps/vtex/hooks/useWishlist.ts";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
+import { useState } from "preact/hooks";
 
 interface Props {
   productID: string;
@@ -22,23 +23,25 @@ function WishlistButton({
   const listItem = useComputed(() => getItem(item));
   const fetching = useSignal(false);
 
+  const [hovered, setHovered] = useState(false);
+
   const isUserLoggedIn = Boolean(user.value?.email);
   const inWishlist = Boolean(listItem.value);
 
   return (
     <Button
-      class={variant === "icon"
-        ? "btn-circle btn-ghost gap-2"
-        : "btn-primary btn-outline gap-2"}
+      class={variant === "icon" ? `gap-2 !border-0 ${inWishlist || hovered ? "wishlist-item border-0" : "wishlist-notItem"}` : "btn-primary btn-outline gap-2"}
       loading={fetching.value}
       aria-label="Add to wishlist"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
       onClick={async (e) => {
         e.stopPropagation();
         e.preventDefault();
 
         if (!isUserLoggedIn) {
-          window.alert("Please log in before adding to your wishlist");
-
+          globalThis.alert("Faça login antes de adicionar itens à sua lista de desejos.");
+          window.location.href = "/my-account"
           return;
         }
 
@@ -60,7 +63,8 @@ function WishlistButton({
         id="Heart"
         size={20}
         strokeWidth={2}
-        fill={inWishlist ? "black" : "none"}
+        className={inWishlist || hovered ? "!fill-black" : "none"}
+        fill={inWishlist || hovered ? "blue" : "none"}
       />
       {variant === "icon" ? null : inWishlist ? "Remover" : "Favoritar"}
     </Button>

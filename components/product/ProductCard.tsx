@@ -252,8 +252,8 @@ function ProductCard(
               : "right-2"
             }
           ${l?.onMouseOver?.showFavoriteIcon
-              ? "lg:hidden lg:group-hover:block"
-              : "lg:hidden"
+              ? ""
+              : ""
             }
         `}
         >

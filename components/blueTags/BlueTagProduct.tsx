@@ -7,8 +7,8 @@ interface Props {
 
 const TagBlueProduct = ({ blueProductId }: Props) => {
   useEffect(() => {
-    window.blue_q = window.blue_q || [];
-    window.blue_q.push(
+    (window as any).blue_q = (window as any).blue_q || [];
+    (window as any).blue_q.push(
       { event: "setCampaignId", value: "236D6DD2-E221-52CF-59E8647FC96917D8" },
       { event: "setProductId", value: blueProductId },
       { event: "setPageType", value: "product" },
@@ -27,5 +27,7 @@ const TagBlueProduct = ({ blueProductId }: Props) => {
 
   return null;
 };
+
+
 
 export default TagBlueProduct;

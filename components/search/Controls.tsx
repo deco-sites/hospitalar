@@ -14,10 +14,11 @@ type Props =
   >
   & {
     displayFilter?: boolean;
+     isWishlist?: boolean; 
   };
 
 function SearchControls(
-  { filters, displayFilter }: Props,
+  { filters, displayFilter, isWishlist = false }: Props,
 ) {
   const open = useSignal(false);
 
@@ -26,7 +27,7 @@ function SearchControls(
       <Button
         class={`btn justify-between w-1/2 lg:w-48 btn-sm font-normal text-base-200 h-[34px] border-2 border-base-200 bg-white hover:bg-white ${
           displayFilter ? "" : "lg:hidden"
-        }`}
+        } ${isWishlist ? `hidden` : ``} `}
         onClick={() => {
           open.value = true;
         }}
