@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 import { useComputed, useSignal } from "@preact/signals";
 import Icon from "$store/components/ui/Icon.tsx";
 import Button from "$store/components/ui/Button.tsx";
