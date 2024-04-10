@@ -1,35 +1,44 @@
 import Icon from "$store/components/ui/Icon.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
+import { useState } from "preact/hooks";
+import { useEffect } from "preact/hooks";
 
 interface Props {
   total: number;
   target: number;
-  locale: string;
-  currency: string;
+  locale?: string;
+  currency?: string;
 }
 
 function FreeShippingProgressBar({ target, total, currency, locale }: Props) {
-  const remaining = target - total;
-  const percent = Math.floor((total / target) * 100);
+  const [progress, setProgress] = useState(0); 
+
+  useEffect(() => {
+    const newProgress = (total / 50000) * 100; // Calcula o progresso em porcentagem
+    setProgress(newProgress);
+  }, [total]);
 
   return (
-    <div class="flex flex-col w-full gap-2">
-      <div class="flex justify-center items-center gap-2 text-primary">
-        <Icon id="Truck" size={20} />
-        {remaining > 0
+    <div class="flex flex-col w-full gap-3 mb-4">
+      <div class="flex text-primary">
+        {total < 50000
           ? (
-            <span>
-              Faltam ${formatPrice(remaining, currency, locale)}{" "}
-              para ganhar frete grátis!
+            <span class="text-sm font-normal">
+              Faltam ${formatPrice((50000 - total) / 100, currency, locale)}{" "}
             </span>
           )
           : <span>Você ganhou frete grátis!</span>}
       </div>
-      <progress
+
+    <div class="relative">
+        <progress
         class="progress progress-primary w-full"
-        value={percent}
-        max={100}
+        value={total}
+        max={50000}
       />
+       <Icon id="Truck" size={34} strokeWidth={1}  class="absolute -top-1 right-1" style={{ left: `${progress}%` }}/>
+    </div> 
+  
     </div>
   );
 }
