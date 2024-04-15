@@ -78,7 +78,7 @@ const ResultSearch = (
                     </div>
                   )
                   : null}
-                <div class="flex flex-col pt-6 md:pt-0 gap-6 overflow-x-hidden">
+                <div class="flex flex-col pt-6 md:pt-0 gap-6 overflow-x-hidden md:w-full">
                   <div class="flex gap-2 items-center">
                     <span
                       class="font-medium text-xl"
