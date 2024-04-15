@@ -40,10 +40,11 @@ import * as $$$$$$34 from "./sections/Newsletter/Newsletter.tsx";
 import * as $$$$$$35 from "./sections/Newsletter/NewsletterModal.tsx";
 import * as $$$$$$36 from "./sections/Product/ProductDetails.tsx";
 import * as $$$$$$37 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$38 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$39 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$40 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$41 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$38 from "./sections/Product/SearchNotFound.tsx";
+import * as $$$$$$39 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$40 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$41 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$42 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
@@ -89,10 +90,11 @@ const manifest = {
     "deco-sites/hospitalar/sections/Newsletter/NewsletterModal.tsx": $$$$$$35,
     "deco-sites/hospitalar/sections/Product/ProductDetails.tsx": $$$$$$36,
     "deco-sites/hospitalar/sections/Product/ProductShelf.tsx": $$$$$$37,
-    "deco-sites/hospitalar/sections/Product/SearchResult.tsx": $$$$$$38,
-    "deco-sites/hospitalar/sections/Product/Wishlist.tsx": $$$$$$39,
-    "deco-sites/hospitalar/sections/Social/InstagramPosts.tsx": $$$$$$40,
-    "deco-sites/hospitalar/sections/Social/WhatsApp.tsx": $$$$$$41,
+    "deco-sites/hospitalar/sections/Product/SearchNotFound.tsx": $$$$$$38,
+    "deco-sites/hospitalar/sections/Product/SearchResult.tsx": $$$$$$39,
+    "deco-sites/hospitalar/sections/Product/Wishlist.tsx": $$$$$$40,
+    "deco-sites/hospitalar/sections/Social/InstagramPosts.tsx": $$$$$$41,
+    "deco-sites/hospitalar/sections/Social/WhatsApp.tsx": $$$$$$42,
   },
   "apps": {
     "deco-sites/hospitalar/apps/decohub.ts": $$$$$$$$$$$0,
