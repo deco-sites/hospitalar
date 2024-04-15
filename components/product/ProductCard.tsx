@@ -124,7 +124,11 @@ function ProductCard(
     isRestricted = false
   }
 
-
+  function limitarCaracteres(str: string | undefined, limite: number): string {
+    if (!str) return ''; // Retorna uma string vazia se str for undefined
+    return str.length > limite ? str.substring(0, limite) + '...' : str;
+  }
+  
 
   const freeShippingCollection = product.additionalProperty?.filter(
     (property) =>
@@ -367,11 +371,14 @@ function ProductCard(
         {l?.hide.productName && l?.hide.productDescription
           ? ""
           : (
-            <div class="flex flex-col gap-0 mt-[15px] sm:h-auto h-[75px]">
+            <div class="flex flex-col gap-0 mt-[15px] sm:h-auto  h-14">
               {l?.hide.productName ? "" : (
-                <h2 class="text-xs text-gray-800">
-                  {isVariantOf?.name || name}
+                <><h2 class="block lg:hidden text-xs text-gray-800 text-center h-full">
+                  {limitarCaracteres(isVariantOf?.name, 40) || limitarCaracteres(name, 36)}
                 </h2>
+                <h2 class="hidden lg:block text-xs text-gray-800 text-center h-full">
+                    {isVariantOf?.name || name}
+                </h2></> 
               )}
               {l?.hide.productDescription
                 ? ""
@@ -388,7 +395,7 @@ function ProductCard(
               {l?.hide.allPrices
                 ? ""
                 : (
-                  <div class="flex flex-col mt-2 sm:h-auto h-[95px]">
+                  <div class="flex flex-col mt-2 sm:h-auto h-28 lg:h-[95px]">
                     <div class="text-xs font-normal text-gray-800 mt-[5px]">
                       <span class="text-[1.0rem] text-primary font-bold">
                         {formatPrice(price! * 0.97, offers!.priceCurrency!)}
