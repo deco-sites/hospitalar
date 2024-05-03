@@ -39,7 +39,7 @@ function FreeShippingProgressBar({ target, total, currency, locale, rule_text, r
           value={total}
           max={49900}
         />
-        <Icon id="Truck" size={34} strokeWidth={1} class="absolute -top-1 right-1" style={{ left: `${progress}%` }} />
+        <Icon id="Truck" size={34} strokeWidth={1} class="absolute top-[-2px] right-1" style={{ left: `${progress}%` }} />
       </div>
 
       <div class="flex flex-row items-start justify-start h-auto w-full mt-[6px] gap-2">
