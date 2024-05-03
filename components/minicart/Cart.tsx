@@ -37,8 +37,18 @@ export interface ICartProps {
    * @default Finalzar Compra
    */
   goToCartLabel?: string;
-
-  /** @title Valor maximo de Frete */
+  /**
+   * @title Aviso do fretometro
+   */
+  rule_text?: string;
+  /**
+   * @title Link para o regulamento
+   */
+  redirect_link?: string;
+  /**
+   * @title texto do regulamento
+   */
+  redirect_text?: string;
 }
 
 interface TotalizerProps {
@@ -145,7 +155,15 @@ function Cart(props: ICartProps) {
 
       <footer class="flex flex-col items-center justify-center max-lg:px-5 px-10">
 
-        <FreeShippingProgressBar locale ={locale}  currency={currencyCode}  total={total} target = {discounts} />
+        <FreeShippingProgressBar 
+          redirect_link={props.redirect_link} 
+          redirect_text={props.redirect_text} 
+          rule_text={props.rule_text} 
+          locale ={locale}  
+          currency={currencyCode}  
+          total={total} 
+          target = {discounts} 
+        />
 
         <Coupon />
         <Totalizer
