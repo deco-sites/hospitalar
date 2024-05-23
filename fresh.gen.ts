@@ -19,6 +19,7 @@ import * as $ProductAsideInfo from "./islands/ProductAsideInfo.tsx";
 import * as $ProductDetailsImages from "./islands/ProductDetailsImages.tsx";
 import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
 import * as $SearchControls from "./islands/SearchControls.tsx";
+import * as $SearchNotFound from "./islands/SearchNotFound.tsx";
 import * as $Searchbar from "./islands/Searchbar.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
@@ -47,6 +48,7 @@ const manifest = {
     "./islands/ProductDetailsImages.tsx": $ProductDetailsImages,
     "./islands/ProductImageZoom.tsx": $ProductImageZoom,
     "./islands/SearchControls.tsx": $SearchControls,
+    "./islands/SearchNotFound.tsx": $SearchNotFound,
     "./islands/Searchbar.tsx": $Searchbar,
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
     "./islands/SliderJS.tsx": $SliderJS,

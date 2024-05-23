@@ -21,8 +21,8 @@ const ResultSearch = (
 ) => {
   if (valueSearch !== "" && suggestions?.value != null) {
     return (
-      <div className="md:absolute md:w-full md:top-[100px] bg-white md:left-0 md:container md:m-auto md:px-5 md:py-2 z-40">
-        <div className="flex flex-col gap-6 divide-y divide-base-200 mt-6 empty:mt-0 md:flex-row md:divide-y-0">
+      <div className="md:absolute md:w-full md:top-[130px] bg-white md:left-0  md:m-auto md:px-5 md:py-2 z-40">
+        <div className="flex flex-col 2xl:justify-center gap-6 divide-y divide-base-200 mt-6 empty:mt-0 md:flex-row md:divide-y-0 md:max-w-[1495px] m-auto">
           {notFound
             ? (
               <div class="py-16 md:py-6! flex flex-col gap-4 w-full">
@@ -78,7 +78,7 @@ const ResultSearch = (
                     </div>
                   )
                   : null}
-                <div class="flex flex-col pt-6 md:pt-0 gap-6 overflow-x-hidden">
+                <div class="flex flex-col pt-6 md:pt-0 gap-6 overflow-x-hidden md:w-full ">
                   <div class="flex gap-2 items-center">
                     <span
                       class="font-medium text-xl"
