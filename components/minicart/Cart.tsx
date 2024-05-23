@@ -6,6 +6,7 @@ import { useCart } from "apps/vtex/hooks/useCart.ts";
 import CartItem from "./CartItem.tsx";
 import Coupon from "./Coupon.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
+import FreeShippingProgressBar from "deco-sites/hospitalar/components/minicart/FreeShippingProgressBar.tsx";
 
 export type ButtonVariant =
   | "primary"
@@ -36,6 +37,18 @@ export interface ICartProps {
    * @default Finalzar Compra
    */
   goToCartLabel?: string;
+  /**
+   * @title Aviso do fretometro
+   */
+  rule_text?: string;
+  /**
+   * @title Link para o regulamento
+   */
+  redirect_link?: string;
+  /**
+   * @title texto do regulamento
+   */
+  redirect_text?: string;
 }
 
 interface TotalizerProps {
@@ -125,6 +138,8 @@ function Cart(props: ICartProps) {
     });
   };
 
+  console.log(cart.value.items, 'carts')
+
   return (
     <>
       <ul
@@ -139,6 +154,17 @@ function Cart(props: ICartProps) {
       </ul>
 
       <footer class="flex flex-col items-center justify-center max-lg:px-5 px-10">
+
+        <FreeShippingProgressBar 
+          redirect_link={props.redirect_link} 
+          redirect_text={props.redirect_text} 
+          rule_text={props.rule_text} 
+          locale ={locale}  
+          currency={currencyCode}  
+          total={total} 
+          target = {discounts} 
+        />
+
         <Coupon />
         <Totalizer
           currencyCode={currencyCode as string}
