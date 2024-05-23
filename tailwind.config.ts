@@ -19,6 +19,8 @@ export default {
         "sub-gray": "#C5C6CB",
         "sub-gray-2": "#4A4B51",
         "sub-gray-3": "#C5C6CB",
+        "gray-4":"#999BA2",
+        "gray-3": "#707279",
         "blue-bf": "#85BAD5",
         "dark-blue-bf": "#2D386E",
         "title-product": "#4A4B51",
