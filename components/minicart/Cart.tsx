@@ -46,9 +46,17 @@ export interface ICartProps {
    */
   redirect_link?: string;
   /**
-   * @title texto do regulamento
+   * @title Texto do regulamento
    */
   redirect_text?: string;
+  /**
+   * @title Texto a esquerda do valor
+   */
+  left_text?: string;
+  /**
+   * @title Texto a direita do valor
+   */
+  right_text?: string;
 }
 
 interface TotalizerProps {
@@ -158,7 +166,9 @@ function Cart(props: ICartProps) {
         <FreeShippingProgressBar 
           redirect_link={props.redirect_link} 
           redirect_text={props.redirect_text} 
-          rule_text={props.rule_text} 
+          rule_text={props.rule_text}
+          left_text={props.left_text}
+          right_text={props.right_text}
           locale ={locale}  
           currency={currencyCode}  
           total={total} 

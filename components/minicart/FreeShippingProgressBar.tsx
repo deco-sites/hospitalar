@@ -11,9 +11,11 @@ interface Props {
   rule_text?: string;
   redirect_link?: string;
   redirect_text?: string;
+  left_text?: string;
+  right_text?: string;
 }
 
-function FreeShippingProgressBar({ target, total, currency, locale, rule_text, redirect_link, redirect_text }: Props) {
+function FreeShippingProgressBar({ target, total, currency, locale, rule_text, redirect_link, redirect_text, left_text, right_text }: Props) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -27,7 +29,7 @@ function FreeShippingProgressBar({ target, total, currency, locale, rule_text, r
         {total < 49900
           ? (
             <span class="text-sm font-normal">
-              Faltam ${formatPrice((49900 - total) / 100, currency, locale)}{"* "}
+              {left_text ? left_text : "Faltam"} {formatPrice((49900 - total) / 100, currency, locale)}{right_text ? right_text : " para ganhar frete grátis*"}
             </span>
           )
           : <span>Você ganhou frete grátis!</span>}
