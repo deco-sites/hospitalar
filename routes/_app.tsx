@@ -1,20 +1,32 @@
-import { AppProps } from "$fresh/server.ts";
+import { defineApp } from "$fresh/server.ts";
+import { Context } from "deco/deco.ts";
 import GlobalTags from "$store/components/GlobalTags.tsx";
 import DesignSystem from "$store/sections/DesignSystem/DesignSystem.tsx";
 
-function App(props: AppProps) {
-  return (
-    <>
-      {/* Include default fonts and css vars */}
-      <DesignSystem />
+const sw = () =>
+    addEventListener("load", () =>
+        navigator && navigator.serviceWorker &&
+        navigator.serviceWorker.register("/sw.js"));
 
-      {/* Include Icons and manifest */}
-      <GlobalTags />
+export default defineApp(async (_req, ctx) => {
+    const revision = await Context.active().release?.revision();
 
-      {/* Rest of Preact tree */}
-      <props.Component />
-    </>
-  );
-}
+    return (
+        <>
+            {/* Include default fonts and css vars */}
+            <DesignSystem />
 
-export default App;
+            {/* Include Icons and manifest */}
+            <GlobalTags revision={revision} />
+
+            {/* Rest of Preact tree */}
+            <ctx.Component />
+
+            {/* Include service worker */}
+            <script
+                type="module"
+                dangerouslySetInnerHTML={{ __html: `(${sw})();` }}
+            />
+        </>
+    );
+});

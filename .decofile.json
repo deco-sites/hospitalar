@@ -15981,31 +15981,6 @@
       },
       {
         "__resolveType": "vtex_proxy"
-      },
-      {
-        "routes": [
-          {
-            "handler": {
-              "value": {
-                "url": "https://secure.hospitalardistribuidora.com.br/login",
-                "basePath": "/login",
-                "__resolveType": "$live/handlers/proxy.ts"
-              }
-            },
-            "pathTemplate": "/login"
-          },
-          {
-            "isHref": true,
-            "handler": {
-              "value": {
-                "url": "https://secure.hospitalardistribuidora.com.br/_secure/account?lid=01b3eb45-ece7-4df8-9e9d-45b1d0e619d2#/",
-                "__resolveType": "$live/handlers/proxy.ts"
-              }
-            },
-            "pathTemplate": "/account"
-          }
-        ],
-        "__resolveType": "$live/flags/everyone.ts"
       }
     ],
     "__resolveType": "$live/handlers/routesSelection.ts"

@@ -1,24 +1,12 @@
-/// <reference no-default-lib="true"/>
-/// <reference lib="dom" />
-/// <reference lib="deno.ns" />
-/// <reference lib="esnext" />
-
-import plugins from "deco-sites/std/plugins/mod.ts";
-import partytownPlugin from "partytown/mod.ts";
-
-import decoManifest from "./manifest.gen.ts";
-
 import { defineConfig } from "$fresh/server.ts";
+import plugins from "https://denopkg.com/deco-sites/std@1.26.2/plugins/mod.ts";
+import manifest from "./manifest.gen.ts";
+import tailwind from "./tailwind.config.ts";
+
 export default defineConfig({
-  plugins: [
-    ...plugins(
-      {
-        manifest: decoManifest,
-      },
-    ),
-    partytownPlugin({
-      proxyUrl: "/proxy",
-      mainWindowAccessors: ["navigator"],
-    }),
-  ],
+  plugins: plugins({
+    manifest,
+    // deno-lint-ignore no-explicit-any
+    tailwind: tailwind as any,
+  }),
 });

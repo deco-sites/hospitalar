@@ -6,7 +6,7 @@
  */
 import { Head } from "$fresh/runtime.ts";
 import Icon from "$store/components/ui/Icon.tsx";
-import { Color } from "https://deno.land/x/color@v0.3.0/mod.ts";
+import Color from "npm:colorjs.io";
 import { useId } from "preact/hooks";
 
 export interface OptionalColors {

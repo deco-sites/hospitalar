@@ -1,6 +1,6 @@
 import { asset, Head } from "$fresh/runtime.ts";
 
-function GlobalTags() {
+function GlobalTags({ revision }: { revision: string | undefined }) {
   const htmlScript = `
     !function(f, b, e, v, n, t, s) {
         if (f.fbq) return;
@@ -28,7 +28,10 @@ function GlobalTags() {
       <meta name="view-transition" content="same-origin" />
 
       {/* Tailwind v3 CSS file */}
-      <link href={asset("/styles.css")} rel="stylesheet" />
+      <link
+        href={asset(`/styles.css?revision=${revision}`)}
+        rel="stylesheet"
+      />
 
       <link rel="preconnect" href={asset("https://fonts.googleapis.com")} />
       <link

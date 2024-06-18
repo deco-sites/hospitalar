@@ -2,6 +2,8 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/BlueTags/BlueTagVisit.tsx";
 import * as $$$$$$1 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$2 from "./sections/Category/CategoryBreadcrumb.tsx";
@@ -45,8 +47,6 @@ import * as $$$$$$39 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$40 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$41 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$42 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
 const manifest = {
   "sections": {
