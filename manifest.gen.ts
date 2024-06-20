@@ -38,11 +38,11 @@ import * as $$$$$$32 from "./sections/Miscellaneous/NotFound.tsx";
 import * as $$$$$$33 from "./sections/Miscellaneous/ProxyIframe.tsx";
 import * as $$$$$$34 from "./sections/Newsletter/Newsletter.tsx";
 import * as $$$$$$35 from "./sections/Newsletter/NewsletterModal.tsx";
-import * as $$$$$$36 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$37 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$38 from "./sections/Product/SearchNotFound.tsx";
-import * as $$$$$$39 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$40 from "./sections/Product/ShopTogether.tsx";
+import * as $$$$$$36 from "./sections/Product/ProductAdvancedDetails.tsx";
+import * as $$$$$$37 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$38 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$39 from "./sections/Product/SearchNotFound.tsx";
+import * as $$$$$$40 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$41 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$42 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$43 from "./sections/Social/WhatsApp.tsx";
@@ -89,11 +89,11 @@ const manifest = {
     "deco-sites/hospitalar/sections/Miscellaneous/ProxyIframe.tsx": $$$$$$33,
     "deco-sites/hospitalar/sections/Newsletter/Newsletter.tsx": $$$$$$34,
     "deco-sites/hospitalar/sections/Newsletter/NewsletterModal.tsx": $$$$$$35,
-    "deco-sites/hospitalar/sections/Product/ProductDetails.tsx": $$$$$$36,
-    "deco-sites/hospitalar/sections/Product/ProductShelf.tsx": $$$$$$37,
-    "deco-sites/hospitalar/sections/Product/SearchNotFound.tsx": $$$$$$38,
-    "deco-sites/hospitalar/sections/Product/SearchResult.tsx": $$$$$$39,
-    "deco-sites/hospitalar/sections/Product/ShopTogether.tsx": $$$$$$40,
+    "deco-sites/hospitalar/sections/Product/ProductAdvancedDetails.tsx":$$$$$$36,
+    "deco-sites/hospitalar/sections/Product/ProductDetails.tsx": $$$$$$37,
+    "deco-sites/hospitalar/sections/Product/ProductShelf.tsx": $$$$$$38,
+    "deco-sites/hospitalar/sections/Product/SearchNotFound.tsx": $$$$$$39,
+    "deco-sites/hospitalar/sections/Product/SearchResult.tsx": $$$$$$40,
     "deco-sites/hospitalar/sections/Product/Wishlist.tsx": $$$$$$41,
     "deco-sites/hospitalar/sections/Social/InstagramPosts.tsx": $$$$$$42,
     "deco-sites/hospitalar/sections/Social/WhatsApp.tsx": $$$$$$43,
