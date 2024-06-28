@@ -22,6 +22,7 @@ import * as $SearchControls from "./islands/SearchControls.tsx";
 import * as $SearchNotFound from "./islands/SearchNotFound.tsx";
 import * as $Searchbar from "./islands/Searchbar.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
+import * as $ShopTogetherContainer from "./islands/ShopTogetherContainer.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
 import * as $Sort from "./islands/Sort.tsx";
 import * as $WishlistButton from "./islands/WishlistButton.tsx";
@@ -51,6 +52,7 @@ const manifest = {
     "./islands/SearchNotFound.tsx": $SearchNotFound,
     "./islands/Searchbar.tsx": $Searchbar,
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
+    "./islands/ShopTogetherContainer.tsx": $ShopTogetherContainer,
     "./islands/SliderJS.tsx": $SliderJS,
     "./islands/Sort.tsx": $Sort,
     "./islands/WishlistButton.tsx": $WishlistButton,
