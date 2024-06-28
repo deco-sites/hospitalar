@@ -110,7 +110,7 @@ function CardResult({ quantity, totalListPrice, totalPrice, items }: {
 
     return (
         <div className="bg-[#F8F8F9] m-full rounded-2xl px-4 py-5 mt-10 relative lg:mt-0 lg:flex lg:justify-center lg:items-center">
-            <div className="absolute left-1/2 transform -translate-x-1/2 -top-[30px] lg:-left-[16px] lg:-translate-y-1/2 lg:top-1/2">
+            <div className="absolute left-1/2 transform -translate-x-1/2 -top-[30px] lg:-left-[19px] lg:-translate-y-1/2 lg:top-1/2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M4.16666 7.5H15.8333" stroke="#0D4F81" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M4.16666 12.5H15.8333" stroke="#0D4F81" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -149,7 +149,7 @@ function ProductTogether({ isLine, lastProduct, product, numberKey, checked, onT
     const [image] = useStableImages(product);
 
     return (
-        <div className={`rounded-2xl border relative border-[#D7D7DA] ${isLine ? "py-[30px] px-[15px] mb-" : "pb-5 px-3"} ${isLine && "flex flex-col"} lg:py-[20px] px-[14px]`}>
+        <div className={`rounded-2xl border relative border-[#D7D7DA] ${isLine ? "py-[30px] px-[15px] mb-" : "pb-5 px-3"} ${isLine && "flex flex-col justify-between"} lg:py-[20px] px-[14px]`}>
             <div className={`flex ${isLine ? "flex-row" : "flex-col"} items-center justify-center gap-5 lg:flex-col`}>
                 <a href={url} className={`${isLine ? "w-[120px] h-auto" : "w-full h-auto"} lg:w-full xl:max-w-52`}>
                     <img
@@ -174,7 +174,7 @@ function ProductTogether({ isLine, lastProduct, product, numberKey, checked, onT
                 </div>
             </div>
             {isLine && !lastProduct && (
-                <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-[30px] lg:left-[106%] lg:bottom-[45%] lg:-translate-y-1/2 2xl:left-[107%]">
+                <div className="absolute left-1/2 transform -translate-x-1/2 -bottom-[30px] lg:left-[108%] lg:bottom-[45%] lg:-translate-y-1/2 2xl:left-[106.5%]">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M10 4.16669V15.8334" stroke="#0D4F81" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M4.16666 10H15.8333" stroke="#0D4F81" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -204,15 +204,21 @@ function ProductTogether({ isLine, lastProduct, product, numberKey, checked, onT
 
 function ShopTogetherContainer({ buyTogether }: IShopTogetherContainerProps) {
     const [togetherProducts, setTogetherProducts] = useState<ITogetherProductsProps[]>([]);
+    const [buyTogetherLimited, setBuyTogetherLimited] = useState<Product[]>([]);
     const [totalListPrice, setTotalListPrice] = useState(0);
     const [totalPrice, setTotalPrice] = useState(0);
 
     useEffect(() => {
         const initialTogetherProducts: ITogetherProductsProps[] = [];
+        const buyTogetherReduce: Product[] = []; 
         let initialTotalListPrice = 0;
         let initialTotalPrice = 0;
 
         buyTogether.forEach((product, index) => {
+            if(index < 2) buyTogetherReduce.push(product);
+        });
+
+        buyTogetherReduce.forEach((product, index) => {
             const { name, productID, offers, isVariantOf } = product;
             const { price, listPrice, seller } = useOffer(offers);
 
@@ -233,10 +239,11 @@ function ShopTogetherContainer({ buyTogether }: IShopTogetherContainerProps) {
             if (price) initialTotalPrice += price;
         });
 
+        setBuyTogetherLimited(buyTogetherReduce);
         setTogetherProducts(initialTogetherProducts);
         setTotalListPrice(initialTotalListPrice);
         setTotalPrice(initialTotalPrice);
-    }, []);
+    }, [buyTogether]);
 
     const handleToggle = (product: Product) => {
         setTogetherProducts((prevTogetherProducts) => {
@@ -285,14 +292,16 @@ function ShopTogetherContainer({ buyTogether }: IShopTogetherContainerProps) {
         });
     }
 
+    if(buyTogetherLimited.length === 0) return null;
+
     return (
-        <div className={`w-full h-auto flex flex-col lg:grid ${buyTogether.length > 2 ? "lg:grid-cols-[1fr_230px]" : "lg:grid-cols-[1fr_300px]"} lg:gap-8`}>
-            <div className={`${buyTogether.length === 2 ? "grid grid-cols-2 gap-3" : `flex flex-col gap-10 lg:grid lg:grid-cols-${buyTogether.length} lg:gap-5 xl:gap-6 2xl:gap-10`} w-full h-auto relative`}>
-                {buyTogether.map((productTogether, index) => {
+        <div className={`w-full h-auto flex flex-col lg:grid ${buyTogetherLimited.length > 2 ? "lg:grid-cols-[1fr_300px]" : "lg:grid-cols-[1fr_300px]"} lg:gap-[42px]`}>
+            <div className={`${buyTogetherLimited.length === 2 ? "grid grid-cols-2 gap-3 w-full lg:!w-auto lg:gap-[42px] lg:grid-cols-[360px_360px]" : `flex flex-col gap-10 lg:grid lg:grid-cols-${buyTogetherLimited.length} lg:gap-5 xl:gap-[42px] w-full`} h-auto relative`}>
+                {buyTogetherLimited.map((productTogether, index) => {
                     return (
                         <ProductTogether
-                            isLine={!(buyTogether.length === 2)}
-                            lastProduct={buyTogether.length - 1 === index}
+                            isLine={!(buyTogetherLimited.length === 2)}
+                            lastProduct={buyTogetherLimited.length - 1 === index}
                             product={productTogether}
                             numberKey={index}
                             onChangeVariant={handleSwitch}
@@ -301,15 +310,20 @@ function ShopTogetherContainer({ buyTogether }: IShopTogetherContainerProps) {
                         />
                     );
                 })}
-                {(buyTogether.length === 2) && (
-                    <div className="absolute rounded-full flex items-center justify-center bg-[#0D4F81] p-1 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                            <g id="Icone">
-                                <path id="Vector" d="M10 4.66669V16.3334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path id="Vector_2" d="M4.16667 10.5H15.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </g>
-                        </svg>
-                    </div>
+                {(buyTogetherLimited.length === 2) && (
+                    <>
+                        <div className="absolute rounded-full flex items-center justify-center bg-[#0D4F81] p-1 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                <g id="Icone">
+                                    <path id="Vector" d="M10 4.66669V16.3334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path id="Vector_2" d="M4.16667 10.5H15.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div className="hidden absolute rounded-full items-center justify-center p-1 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:!flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 4.16669V15.8334" stroke="#0D4F81" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.16666 10H15.8333" stroke="#0D4F81" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </div>
+                    </>
                 )}
             </div>
             <CardResult
