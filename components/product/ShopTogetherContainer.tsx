@@ -215,7 +215,7 @@ function ShopTogetherContainer({ buyTogether }: IShopTogetherContainerProps) {
         let initialTotalPrice = 0;
 
         buyTogether.forEach((product, index) => {
-            if(index < 2) buyTogetherReduce.push(product);
+            if(index < 3) buyTogetherReduce.push(product);
         });
 
         buyTogetherReduce.forEach((product, index) => {
