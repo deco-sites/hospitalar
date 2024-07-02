@@ -1,6 +1,7 @@
-# Disallow all crawlers access to certain pages. 
- User-agent: * 
+User-agent: *
+Disallow: /
 
+User-agent: Googlebot
 Allow: /
 Disallow: /img/* 
 Disallow: /account/* 
