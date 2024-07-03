@@ -181,7 +181,7 @@ function ProductTogether({ isLine, lastProduct, product, numberKey, checked, onT
                     </svg>
                 </div>
             )}
-            {numberKey >= 1 && (isLine) && (
+            {(isLine) && (
                 <label class="flex items-center absolute top-3 right-3 z-40">
                     <input
                         type="checkbox"
@@ -189,10 +189,16 @@ function ProductTogether({ isLine, lastProduct, product, numberKey, checked, onT
                         checked={checked}
                         onChange={onToggle}
                     />
-                    <div class="w-4 h-4 flex items-center justify-center rounded-sm border border-[#2D386E]">
-                        {checked && (
-                            <div class="w-3 h-3 border bg-[#2D386E]">
-                            </div>
+                    <div class="w-[18px] h-[18px]">
+                        {checked ? (
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <rect x="1" y="0.5" width="15" height="15" rx="3.5" fill="white" stroke="#2D386E"/>
+                                <rect x="3.5" y="3" width="10" height="10" fill="#2D386E"/>
+                            </svg>
+                        ) : (
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <rect x="1" y="0.5" width="15" height="15" rx="3.5" fill="white" stroke="#2D386E"/>
+                            </svg>
                         )}
                     </div>
                 </label>
