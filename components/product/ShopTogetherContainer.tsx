@@ -189,16 +189,10 @@ function ProductTogether({ isLine, lastProduct, product, numberKey, checked, onT
                         checked={checked}
                         onChange={onToggle}
                     />
-                    <div class="w-[18px] h-[18px]">
-                        {checked ? (
-                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                                <rect x="1" y="0.5" width="15" height="15" rx="3.5" fill="white" stroke="#2D386E"/>
-                                <rect x="3.5" y="3" width="10" height="10" fill="#2D386E"/>
-                            </svg>
-                        ) : (
-                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                                <rect x="1" y="0.5" width="15" height="15" rx="3.5" fill="white" stroke="#2D386E"/>
-                            </svg>
+                    <div class="w-[18px] h-[18px] flex items-center justify-center rounded-full border border-[#2D386E]">
+                        {checked && (
+                            <div class="w-[14px] h-[14px] border bg-[#2D386E] rounded-full">
+                            </div>
                         )}
                     </div>
                 </label>
