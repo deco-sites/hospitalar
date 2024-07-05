@@ -143,7 +143,7 @@ function CardResult({ quantity, totalListPrice, totalPrice, items }: {
     );
 }
 
-function ProductTogether({ isLine, lastProduct, product, numberKey, checked, onToggle, onChangeVariant }: { isLine: boolean; lastProduct: boolean; product: Product; numberKey: number; onToggle: () => void; checked: boolean; onChangeVariant: (sku: string, newName: string) => void; }) {
+function ProductTogether({ isLine, lastProduct, product, checked, onToggle, onChangeVariant }: { isLine: boolean; lastProduct: boolean; product: Product; onToggle: () => void; checked: boolean; onChangeVariant: (sku: string, newName: string) => void; }) {
     const { offers, name, isVariantOf, url } = product;
     const { price, installment, installments } = useOffer(offers);
     const [image] = useStableImages(product);
@@ -247,7 +247,7 @@ function ShopTogetherContainer({ buyTogether }: IShopTogetherContainerProps) {
 
     const handleToggle = (product: Product) => {
         setTogetherProducts((prevTogetherProducts) => {
-            const productIndex = prevTogetherProducts.findIndex((p) => p.skuId === product.sku);
+            const productIndex = prevTogetherProducts.findIndex((p) => p.mainSkuId === product.sku);
 
             let updatedProducts = [...prevTogetherProducts];
             if (productIndex > -1) {
@@ -303,7 +303,6 @@ function ShopTogetherContainer({ buyTogether }: IShopTogetherContainerProps) {
                             isLine={!(buyTogetherLimited.length === 2)}
                             lastProduct={buyTogetherLimited.length - 1 === index}
                             product={productTogether}
-                            numberKey={index}
                             onChangeVariant={handleSwitch}
                             onToggle={() => handleToggle(productTogether)}
                             checked={togetherProducts.some((p) => p.mainSkuId === productTogether.sku)}
