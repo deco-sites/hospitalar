@@ -146,8 +146,6 @@ function Cart(props: ICartProps) {
     });
   };
 
-  console.log(cart.value.items, 'carts')
-
   return (
     <>
       <ul
