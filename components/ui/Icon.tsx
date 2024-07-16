@@ -45,6 +45,8 @@ export type AvailableIcons =
   | "LogoFooter"
   | "LogoMobile"
   | "Truck"
+  | "CaretDown"
+  | "CaretUp"
   | "Discount"
   | "Return"
   | "Deco"
