@@ -134,38 +134,36 @@ function UserButton() {
           }
         </div>
       </div>
-      <div
+      {true ? (<div
         class={`absolute ${displayLogin.value ? 'flex' : 'hidden'} hover:flex group-hover:flex bg-accent top-[38px] shadow whitespace-nowrap p-[24px] flex-col z-10 rounded-xl gap-[6px]`}
       >
-        {
-          user?.value
-            ? (<>
-              <a class="font-medium text-primary text-sm" href="/my-account">
-                Minha conta
-              </a>
-              <a
-                class="font-medium text-primary text-sm"
-                href="/my-account/orders"
-              >
-                Meus pedidos
-              </a>
-              <a
-                class="font-medium text-primary text-sm"
-                href="/i/contato"
-              >
-                Atendimento
-              </a>
-              <hr class="bg-primary h-[2px] my-2 min-w-[152px]" />
-              <a
-                class="font-medium text-primary text-sm"
-                href="/api/vtexid/pub/logout?scope=hospitalar&returnUrl=https%3A%2F%2Fwww.hospitalardistribuidora.com.br%2F"
-              >
-                Sair
-              </a>
-            </>)
-            : null
-        }
-      </div>
+        <>
+          <a class="font-medium text-primary text-sm" href="/my-account">
+            Minha conta
+          </a>
+          <a
+            class="font-medium text-primary text-sm"
+            href="/my-account/orders"
+          >
+            Meus pedidos
+          </a>
+          <a
+            class="font-medium text-primary text-sm"
+            href="/i/contato"
+          >
+            Atendimento
+          </a>
+          <hr class="bg-primary h-[2px] my-2 min-w-[152px]" />
+          <a
+            class="font-medium text-primary text-sm"
+            href="/api/vtexid/pub/logout?scope=hospitalar&returnUrl=https%3A%2F%2Fwww.hospitalardistribuidora.com.br%2F"
+          >
+            Sair
+          </a>
+        </>
+      </div>)
+        : null
+      }
     </div>
   )
 }
