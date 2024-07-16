@@ -3,6 +3,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
+import { useUser } from "apps/vtex/hooks/useUser.ts";
 
 function SearchButton() {
   const { displaySearchbar } = useUI();
@@ -93,7 +94,41 @@ function CartButton() {
   );
 }
 
-function Buttons({ variant }: { variant: "cart" | "search" | "menu" }) {
+function UserButton() {
+  const { user } = useUser();
+
+  console.log(user.value );
+  
+
+  return (
+    <div class="max-lg:hidden no-animation relative flex items-center justify-center min-w-[150px]">
+      <div class="flex gap-1">
+        <Icon
+          class="text-base-content"
+          id="User"
+          width={24}
+          height={25}
+          strokeWidth={1}
+        />
+        <div>
+          <h2 class="text-xs font-bold">Bem-vindo :)</h2>
+          {
+            user.value 
+            ? (<p class="text-xs font-normal">Equipe N1</p>) 
+            : (<p class="text-xs font-normal"><a href="/my-account">Entre</a> ou <a href="/my-account">Cadastre-se</a></p>) 
+          }
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function Buttons({ variant }: { variant: "cart" | "search" | "menu" | "user" }) {
+
+  if (variant === "user") {
+    return <UserButton />;
+  }
+
   if (variant === "cart") {
     return <CartButton />;
   }
