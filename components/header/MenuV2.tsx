@@ -116,6 +116,7 @@ const actionButtons = [
 function Menu({ items }: Props) {
   const { displayMenu } = useUI();
   const { user } = useUser();
+  const username = user?.value?.name ?? user?.value?.givenName ?? user?.value?.email ?? "";
 
   return (
     <div class="flex flex-col justify-center px-4">
@@ -133,7 +134,7 @@ function Menu({ items }: Props) {
             {
               user?.value
                 ? (<><p class="text-xs font-normal flex text-primary"
-                >{user?.value?.name}
+                >{username}
                 </p>
 
                 </>)

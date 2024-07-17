@@ -97,6 +97,7 @@ function CartButton() {
 function UserButton() {
   const { user } = useUser();
   const { displayLogin } = useUI();
+  const username = user?.value?.name ?? user?.value?.givenName ?? user?.value?.email ?? "";
   
   return (
     <div class="max-lg:hidden no-animation relative flex items-center justify-center min-w-[150px] group">
@@ -115,7 +116,7 @@ function UserButton() {
               ? (<><p class="text-xs font-normal flex"
                 onMouseEnter={() => { displayLogin.value = true }}
                 onMouseLeave={() => { setTimeout(() => { displayLogin.value = false }, 1000); }}
-              >{user?.value?.name} <Button
+              >{username} <Button
                 class="border-transparent no-animation relative flex justify-center items-center"
                 aria-label="open menu"
               >
