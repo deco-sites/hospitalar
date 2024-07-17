@@ -97,9 +97,7 @@ function CartButton() {
 function UserButton() {
   const { user } = useUser();
   const { displayLogin } = useUI();
-  const open = true;
-
-
+  
   return (
     <div class="max-lg:hidden no-animation relative flex items-center justify-center min-w-[150px] group">
       <div class="flex gap-1">
