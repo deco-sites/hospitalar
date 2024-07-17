@@ -18,35 +18,37 @@ import * as $$$$$$12 from "./sections/Content/Testimonials.tsx";
 import * as $$$$$$13 from "./sections/DesignSystem/DesignSystem.tsx";
 import * as $$$$$$14 from "./sections/Footer/Footer.tsx";
 import * as $$$$$$15 from "./sections/Header/HeaderLayout.tsx";
-import * as $$$$$$16 from "./sections/Header/HeaderNavMenu.tsx";
-import * as $$$$$$17 from "./sections/Header/TopNavBar.tsx";
-import * as $$$$$$18 from "./sections/Images/BannerGrid.tsx";
-import * as $$$$$$19 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$20 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$21 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$22 from "./sections/Institutional/AccordionsContent.tsx";
-import * as $$$$$$23 from "./sections/Institutional/AsideMenu.tsx";
-import * as $$$$$$24 from "./sections/Institutional/CardsContent.tsx";
-import * as $$$$$$25 from "./sections/Institutional/ContactForm.tsx";
-import * as $$$$$$26 from "./sections/Institutional/InstitutionalPage.tsx";
-import * as $$$$$$27 from "./sections/Institutional/TextContent.tsx";
-import * as $$$$$$28 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$29 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$30 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$31 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$32 from "./sections/Miscellaneous/NotFound.tsx";
-import * as $$$$$$33 from "./sections/Miscellaneous/ProxyIframe.tsx";
-import * as $$$$$$34 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$35 from "./sections/Newsletter/NewsletterModal.tsx";
-import * as $$$$$$36 from "./sections/Product/ProductAdvancedDetails.tsx";
-import * as $$$$$$37 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$38 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$39 from "./sections/Product/SearchNotFound.tsx";
-import * as $$$$$$40 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$41 from "./sections/Product/ShopTogether.tsx";
-import * as $$$$$$42 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$43 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$44 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$16 from "./sections/Header/HeaderLayoutV2.tsx";
+import * as $$$$$$17 from "./sections/Header/HeaderNavMenu.tsx";
+import * as $$$$$$18 from "./sections/Header/HeaderNavMenuV2.tsx";
+import * as $$$$$$19 from "./sections/Header/TopNavBar.tsx";
+import * as $$$$$$20 from "./sections/Images/BannerGrid.tsx";
+import * as $$$$$$21 from "./sections/Images/Carousel.tsx";
+import * as $$$$$$22 from "./sections/Images/ImageGallery.tsx";
+import * as $$$$$$23 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$24 from "./sections/Institutional/AccordionsContent.tsx";
+import * as $$$$$$25 from "./sections/Institutional/AsideMenu.tsx";
+import * as $$$$$$26 from "./sections/Institutional/CardsContent.tsx";
+import * as $$$$$$27 from "./sections/Institutional/ContactForm.tsx";
+import * as $$$$$$28 from "./sections/Institutional/InstitutionalPage.tsx";
+import * as $$$$$$29 from "./sections/Institutional/TextContent.tsx";
+import * as $$$$$$30 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$31 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$32 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$33 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$34 from "./sections/Miscellaneous/NotFound.tsx";
+import * as $$$$$$35 from "./sections/Miscellaneous/ProxyIframe.tsx";
+import * as $$$$$$36 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$37 from "./sections/Newsletter/NewsletterModal.tsx";
+import * as $$$$$$38 from "./sections/Product/ProductAdvancedDetails.tsx";
+import * as $$$$$$39 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$40 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$41 from "./sections/Product/SearchNotFound.tsx";
+import * as $$$$$$42 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$43 from "./sections/Product/ShopTogether.tsx";
+import * as $$$$$$44 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$45 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$46 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
@@ -68,38 +70,40 @@ const manifest = {
     "deco-sites/hospitalar/sections/DesignSystem/DesignSystem.tsx": $$$$$$13,
     "deco-sites/hospitalar/sections/Footer/Footer.tsx": $$$$$$14,
     "deco-sites/hospitalar/sections/Header/HeaderLayout.tsx": $$$$$$15,
-    "deco-sites/hospitalar/sections/Header/HeaderNavMenu.tsx": $$$$$$16,
-    "deco-sites/hospitalar/sections/Header/TopNavBar.tsx": $$$$$$17,
-    "deco-sites/hospitalar/sections/Images/BannerGrid.tsx": $$$$$$18,
-    "deco-sites/hospitalar/sections/Images/Carousel.tsx": $$$$$$19,
-    "deco-sites/hospitalar/sections/Images/ImageGallery.tsx": $$$$$$20,
-    "deco-sites/hospitalar/sections/Images/ShoppableBanner.tsx": $$$$$$21,
+    "deco-sites/hospitalar/sections/Header/HeaderLayoutV2.tsx": $$$$$$16,
+    "deco-sites/hospitalar/sections/Header/HeaderNavMenu.tsx": $$$$$$17,
+    "deco-sites/hospitalar/sections/Header/HeaderNavMenuV2.tsx": $$$$$$18,
+    "deco-sites/hospitalar/sections/Header/TopNavBar.tsx": $$$$$$19,
+    "deco-sites/hospitalar/sections/Images/BannerGrid.tsx": $$$$$$20,
+    "deco-sites/hospitalar/sections/Images/Carousel.tsx": $$$$$$21,
+    "deco-sites/hospitalar/sections/Images/ImageGallery.tsx": $$$$$$22,
+    "deco-sites/hospitalar/sections/Images/ShoppableBanner.tsx": $$$$$$23,
     "deco-sites/hospitalar/sections/Institutional/AccordionsContent.tsx":
-      $$$$$$22,
-    "deco-sites/hospitalar/sections/Institutional/AsideMenu.tsx": $$$$$$23,
-    "deco-sites/hospitalar/sections/Institutional/CardsContent.tsx": $$$$$$24,
-    "deco-sites/hospitalar/sections/Institutional/ContactForm.tsx": $$$$$$25,
+      $$$$$$24,
+    "deco-sites/hospitalar/sections/Institutional/AsideMenu.tsx": $$$$$$25,
+    "deco-sites/hospitalar/sections/Institutional/CardsContent.tsx": $$$$$$26,
+    "deco-sites/hospitalar/sections/Institutional/ContactForm.tsx": $$$$$$27,
     "deco-sites/hospitalar/sections/Institutional/InstitutionalPage.tsx":
-      $$$$$$26,
-    "deco-sites/hospitalar/sections/Institutional/TextContent.tsx": $$$$$$27,
-    "deco-sites/hospitalar/sections/Links/LinkTree.tsx": $$$$$$28,
-    "deco-sites/hospitalar/sections/Links/Shortcuts.tsx": $$$$$$29,
-    "deco-sites/hospitalar/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$30,
-    "deco-sites/hospitalar/sections/Miscellaneous/CookieConsent.tsx": $$$$$$31,
-    "deco-sites/hospitalar/sections/Miscellaneous/NotFound.tsx": $$$$$$32,
-    "deco-sites/hospitalar/sections/Miscellaneous/ProxyIframe.tsx": $$$$$$33,
-    "deco-sites/hospitalar/sections/Newsletter/Newsletter.tsx": $$$$$$34,
-    "deco-sites/hospitalar/sections/Newsletter/NewsletterModal.tsx": $$$$$$35,
+      $$$$$$28,
+    "deco-sites/hospitalar/sections/Institutional/TextContent.tsx": $$$$$$29,
+    "deco-sites/hospitalar/sections/Links/LinkTree.tsx": $$$$$$30,
+    "deco-sites/hospitalar/sections/Links/Shortcuts.tsx": $$$$$$31,
+    "deco-sites/hospitalar/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$32,
+    "deco-sites/hospitalar/sections/Miscellaneous/CookieConsent.tsx": $$$$$$33,
+    "deco-sites/hospitalar/sections/Miscellaneous/NotFound.tsx": $$$$$$34,
+    "deco-sites/hospitalar/sections/Miscellaneous/ProxyIframe.tsx": $$$$$$35,
+    "deco-sites/hospitalar/sections/Newsletter/Newsletter.tsx": $$$$$$36,
+    "deco-sites/hospitalar/sections/Newsletter/NewsletterModal.tsx": $$$$$$37,
     "deco-sites/hospitalar/sections/Product/ProductAdvancedDetails.tsx":
-      $$$$$$36,
-    "deco-sites/hospitalar/sections/Product/ProductDetails.tsx": $$$$$$37,
-    "deco-sites/hospitalar/sections/Product/ProductShelf.tsx": $$$$$$38,
-    "deco-sites/hospitalar/sections/Product/SearchNotFound.tsx": $$$$$$39,
-    "deco-sites/hospitalar/sections/Product/SearchResult.tsx": $$$$$$40,
-    "deco-sites/hospitalar/sections/Product/ShopTogether.tsx": $$$$$$41,
-    "deco-sites/hospitalar/sections/Product/Wishlist.tsx": $$$$$$42,
-    "deco-sites/hospitalar/sections/Social/InstagramPosts.tsx": $$$$$$43,
-    "deco-sites/hospitalar/sections/Social/WhatsApp.tsx": $$$$$$44,
+      $$$$$$38,
+    "deco-sites/hospitalar/sections/Product/ProductDetails.tsx": $$$$$$39,
+    "deco-sites/hospitalar/sections/Product/ProductShelf.tsx": $$$$$$40,
+    "deco-sites/hospitalar/sections/Product/SearchNotFound.tsx": $$$$$$41,
+    "deco-sites/hospitalar/sections/Product/SearchResult.tsx": $$$$$$42,
+    "deco-sites/hospitalar/sections/Product/ShopTogether.tsx": $$$$$$43,
+    "deco-sites/hospitalar/sections/Product/Wishlist.tsx": $$$$$$44,
+    "deco-sites/hospitalar/sections/Social/InstagramPosts.tsx": $$$$$$45,
+    "deco-sites/hospitalar/sections/Social/WhatsApp.tsx": $$$$$$46,
   },
   "apps": {
     "deco-sites/hospitalar/apps/decohub.ts": $$$$$$$$$$$0,
