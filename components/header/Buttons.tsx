@@ -3,6 +3,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
+import { useUser } from "apps/vtex/hooks/useUser.ts";
 
 function SearchButton() {
   const { displaySearchbar } = useUI();
@@ -93,7 +94,84 @@ function CartButton() {
   );
 }
 
-function Buttons({ variant }: { variant: "cart" | "search" | "menu" }) {
+function UserButton() {
+  const { user } = useUser();
+  const { displayLogin } = useUI();
+  
+  return (
+    <div class="max-lg:hidden no-animation relative flex items-center justify-center min-w-[150px] group">
+      <div class="flex gap-1">
+        <Icon
+          class="text-base-content"
+          id="User"
+          width={24}
+          height={25}
+          strokeWidth={1}
+        />
+        <div>
+          <h2 class="text-xs font-bold cursor-pointer">Bem-vindo :)</h2>
+          {
+            user?.value
+              ? (<><p class="text-xs font-normal flex"
+                onMouseEnter={() => { displayLogin.value = true }}
+                onMouseLeave={() => { setTimeout(() => { displayLogin.value = false }, 1000); }}
+              >{user?.value?.name} <Button
+                class="border-transparent no-animation relative flex justify-center items-center"
+                aria-label="open menu"
+              >
+                  {displayLogin.value
+                    ? (<Icon class="text-base-content" id="CaretUp" width={14} height={14} />)
+                    : (<Icon class="text-base-content" id="CaretDown" width={14} height={14} />)
+                  }
+                </Button>
+
+              </p>
+
+              </>)
+              : (<p class="text-xs font-normal"><a href="/my-account">Entre</a> ou <a href="/my-account">Cadastre-se</a></p>)
+          }
+        </div>
+      </div>
+      {user?.value ? (<div
+        class={`absolute ${displayLogin.value ? 'flex' : 'hidden'} hover:flex group-hover:flex bg-accent top-[38px] shadow whitespace-nowrap p-[24px] flex-col z-10 rounded-xl gap-[6px]`}
+      >
+        <>
+          <a class="font-medium text-primary text-sm" href="/my-account">
+            Minha conta
+          </a>
+          <a
+            class="font-medium text-primary text-sm"
+            href="/my-account/orders"
+          >
+            Meus pedidos
+          </a>
+          <a
+            class="font-medium text-primary text-sm"
+            href="/i/contato"
+          >
+            Atendimento
+          </a>
+          <hr class="bg-primary h-[2px] my-2 min-w-[152px]" />
+          <a
+            class="font-medium text-primary text-sm"
+            href="/api/vtexid/pub/logout?scope=hospitalar&returnUrl=https%3A%2F%2Fwww.hospitalardistribuidora.com.br%2F"
+          >
+            Sair
+          </a>
+        </>
+      </div>)
+        : null
+      }
+    </div>
+  )
+}
+
+function Buttons({ variant }: { variant: "cart" | "search" | "menu" | "user" }) {
+
+  if (variant === "user") {
+    return <UserButton />;
+  }
+
   if (variant === "cart") {
     return <CartButton />;
   }

@@ -6,11 +6,13 @@
 import { signal } from "@preact/signals";
 
 const displayCart = signal(false);
+const displayLogin = signal(false);
 const displayMenu = signal(false);
 const displaySearchbar = signal(false);
 
 const state = {
   displayCart,
+  displayLogin,
   displayMenu,
   displaySearchbar,
 };

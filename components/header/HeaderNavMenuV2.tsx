@@ -1,4 +1,4 @@
-import Modals from "$store/islands/HeaderModals.tsx";
+import Modals from "$store/islands/HeaderModalsV2.tsx";
 import NavItem, { INavItem } from "./NavItem.tsx";
 import { megaMenuDefaultItems } from "./constants.ts";
 

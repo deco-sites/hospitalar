@@ -11,6 +11,7 @@ import * as $BlueTagVisit from "./islands/BlueTagVisit.tsx";
 import * as $Debug from "./islands/Debug.tsx";
 import * as $HeaderButton from "./islands/HeaderButton.tsx";
 import * as $HeaderModals from "./islands/HeaderModals.tsx";
+import * as $HeaderModalsV2 from "./islands/HeaderModalsV2.tsx";
 import * as $HeaderSearchbar from "./islands/HeaderSearchbar.tsx";
 import * as $Newsletter from "./islands/Newsletter.tsx";
 import * as $NewsletterModal from "./islands/NewsletterModal.tsx";
@@ -41,6 +42,7 @@ const manifest = {
     "./islands/Debug.tsx": $Debug,
     "./islands/HeaderButton.tsx": $HeaderButton,
     "./islands/HeaderModals.tsx": $HeaderModals,
+    "./islands/HeaderModalsV2.tsx": $HeaderModalsV2,
     "./islands/HeaderSearchbar.tsx": $HeaderSearchbar,
     "./islands/Newsletter.tsx": $Newsletter,
     "./islands/NewsletterModal.tsx": $NewsletterModal,
