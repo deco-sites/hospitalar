@@ -1,6 +1,9 @@
 import Icon from "$store/components/ui/Icon.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import type { INavItem } from "./NavItem.tsx";
+import { useUser } from "apps/vtex/hooks/useUser.ts";
+
+
 export interface Props {
   items: INavItem[];
 }
@@ -37,9 +40,8 @@ function MenuItem({ item }: { item: INavItem }) {
                               <a
                                 href={nodeChild.href}
                                 title={nodeChild.label}
-                                class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm ${
-                                  nodeChild.highlighted ? "text-secondary" : ""
-                                }`}
+                                class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm ${nodeChild.highlighted ? "text-secondary" : ""
+                                  }`}
                               >
                                 {nodeChild.label}
                               </a>
@@ -70,9 +72,8 @@ function MenuItem({ item }: { item: INavItem }) {
                     <a
                       href={node.href}
                       title={node.label}
-                      class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm ${
-                        item.highlighted ? "text-secondary" : ""
-                      }`}
+                      class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm ${item.highlighted ? "text-secondary" : ""
+                        }`}
                     >
                       {node.label}
                     </a>
@@ -87,9 +88,8 @@ function MenuItem({ item }: { item: INavItem }) {
       <a
         href={item.href}
         title={item.label}
-        class={`w-full block py-2.5 font-dm-sans font-normal text-sm ${
-          item.highlighted ? "text-secondary" : ""
-        }`}
+        class={`w-full block py-2.5 font-dm-sans font-normal text-sm ${item.highlighted ? "text-secondary" : ""
+          }`}
       >
         {item.label}
       </a>
@@ -100,55 +100,66 @@ function MenuItem({ item }: { item: INavItem }) {
 
 const actionButtons = [
   {
-    href: "#",
-    label: "Meus dados",
+    href: "/my-account",
+    label: "Minha conta",
   },
   {
-    href: "#",
+    href: "/my-account/orders",
     label: "Meus pedidos",
+  },
+  {
+    href: "/i/contato",
+    label: "Atendimento",
   },
 ];
 
 function Menu({ items }: Props) {
   const { displayMenu } = useUI();
+  const { user } = useUser();
 
   return (
     <div class="flex flex-col justify-center px-4">
       <div class="w-full flex items-center justify-between py-4 border-b border-slate-100 border-solid pb-2">
-        <a
-          class="flex items-center justify-start gap-1 uppercase text-base-content font-medium text-xs"
-          href="/my-account"
-        >
-          <span class="p-1">
-            <Icon
-              id="User"
-              width={24}
-              height={24}
-              strokeWidth={1}
-              class="text-base-content"
-            />
-          </span>
-          Entrar
-        </a>
+        <div class="flex gap-1">
+          <Icon
+            class="text-base-content"
+            id="User"
+            width={24}
+            height={25}
+            strokeWidth={1}
+          />
+          <div>
+            <h2 class="text-xs font-bold cursor-pointer text-primary">Bem-vindo :)</h2>
+            {
+              user?.value
+                ? (<><p class="text-xs font-normal flex text-primary"
+                >{user?.value?.name}
+                </p>
+
+                </>)
+                : (<p class="text-xs font-normal text-primary"><a href="/my-account">Entre</a> ou <a href="/my-account">Cadastre-se</a></p>)
+            }
+          </div>
+        </div>
         <button
           class="btn-square btn-ghost relative flex justify-center items-center rounded-full"
           onClick={() => {
             displayMenu.value = false;
           }}
         >
-          <Icon id="XMark" width={24} height={24} strokeWidth={2} />
+          <Icon id="XMark" class="text-base-content" width={24} height={24} strokeWidth={2} />
         </button>
       </div>
-      <div class="flex items-center justify-center w-full gap-2 mt-4 pb-4">
+      {user?.value ? (<div class="flex items-center justify-center flex-col w-full gap-2 mt-4 pb-4">
         {actionButtons.map((action) => (
           <a
             href={action.href}
-            class="btn btn-secondary btn-rounded capitalize font-medium min-w-[140px]"
+            class="btn btn-secondary btn-rounded h-10 min-h-10 min-h-[40px] capitalize font-bold text-xs min-w-[140px]  w-full"
           >
             {action.label}
           </a>
         ))}
-      </div>
+      </div>) : null}
       <ul class="flex-grow flex flex-col">
         {items.map((item) => <MenuItem item={item} />)}
       </ul>
