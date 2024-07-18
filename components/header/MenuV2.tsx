@@ -164,6 +164,12 @@ function Menu({ items }: Props) {
       <ul class="flex-grow flex flex-col">
         {items.map((item) => <MenuItem item={item} />)}
       </ul>
+
+      {user?.value ? (<a
+        href="/api/vtexid/pub/logout?scope=hospitalar&returnUrl=https%3A%2F%2Fwww.hospitalardistribuidora.com.br%2F"
+        class="btn-square btn-ghost border-primary mt-6 text-xs font-bold text-primary relative flex justify-center items-center rounded-[90px] w-[83px] h-[40px]">
+        SAIR
+      </a>) : null}
     </div>
   );
 }
