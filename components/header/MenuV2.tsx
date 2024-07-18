@@ -1,11 +1,13 @@
 import Icon from "$store/components/ui/Icon.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
+import { LoginSetting } from "deco-sites/hospitalar/components/header/HeaderLayoutV2.tsx";
 import type { INavItem } from "./NavItem.tsx";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
 
 
 export interface Props {
   items: INavItem[];
+  login?: LoginSetting[]
 }
 
 function MenuItem({ item }: { item: INavItem }) {
@@ -98,22 +100,8 @@ function MenuItem({ item }: { item: INavItem }) {
   return component;
 }
 
-const actionButtons = [
-  {
-    href: "/my-account",
-    label: "Minha conta",
-  },
-  {
-    href: "/my-account/orders",
-    label: "Meus pedidos",
-  },
-  {
-    href: "/i/contato",
-    label: "Atendimento",
-  },
-];
 
-function Menu({ items }: Props) {
+function Menu({ items, login }: Props) {
   const { displayMenu } = useUI();
   const { user } = useUser();
   const username = user?.value?.name ?? user?.value?.givenName ?? user?.value?.email ?? "";
@@ -152,12 +140,13 @@ function Menu({ items }: Props) {
         </button>
       </div>
       {user?.value ? (<div class="flex items-center justify-center flex-col w-full gap-2 mt-4 pb-4">
-        {actionButtons.map((action) => (
+        {login?.map(({href, label, target}) => (
           <a
-            href={action.href}
+            href={href}
+            target={target}
             class="btn btn-secondary btn-rounded h-10 min-h-10 min-h-[40px] capitalize font-bold text-xs min-w-[140px]  w-full"
           >
-            {action.label}
+            {label}
           </a>
         ))}
       </div>) : null}

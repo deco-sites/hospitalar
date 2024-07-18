@@ -1,4 +1,5 @@
 import Modals from "$store/islands/HeaderModalsV2.tsx";
+import { LoginSetting, defaultLoginLinks } from "deco-sites/hospitalar/components/header/HeaderLayoutV2.tsx";
 import NavItem, { INavItem } from "./NavItem.tsx";
 import { megaMenuDefaultItems } from "./constants.ts";
 
@@ -8,11 +9,16 @@ export interface Props {
    * @description Items do menu desktop e mobile
    */
   navItems?: INavItem[];
+    /**
+   * @title Login settings
+  */
+  login?: LoginSetting[]
 }
 
 function HeaderNavMenu(
   {
     navItems = megaMenuDefaultItems as INavItem[],
+    login = defaultLoginLinks
   }: Props,
 ) {
   return (
@@ -27,6 +33,7 @@ function HeaderNavMenu(
 
       <Modals
         menu={{ items: navItems }}
+        login={login}
       />
     </div>
   );
