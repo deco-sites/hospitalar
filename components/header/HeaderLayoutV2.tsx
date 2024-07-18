@@ -4,7 +4,15 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Buttons from "$store/islands/HeaderButton.tsx";
 import Modals from "$store/islands/HeaderModals.tsx";
 import SearchBarComponent from "$store/islands/HeaderSearchbar.tsx";
-// import WhatsApp from "$store/components/ui/WhatsApp.tsx";
+import { UserButton } from "deco-sites/hospitalar/components/header/Buttons.tsx";
+
+
+export interface LoginSetting {
+  label: string;
+  href: string;
+  target?: "_blank" | "_self" | "_parent" | "_top" | "framename";
+}
+
 
 export interface Props {
   /**
@@ -15,12 +23,35 @@ export interface Props {
    * @title Search bar settings
    */
   searchbar: SearchbarProps;
+  /**
+   * @title Login settings
+  */
+  login?: LoginSetting[]
 }
+
+export const defaultLoginLinks:LoginSetting[] = [
+  {
+    href: "/my-account",
+    label: "Minha conta",
+    target: "_self"
+  },
+  {
+    href: "/my-account/orders",
+    label: "Meus pedidos",
+    target: "_self"
+  },
+  {
+    href: "https://web.whatsapp.com/send?phone=+5518997742232&text=Olá%2C+vim+pelo+site+e+gostaria+de+uma+ajuda",
+    label: "Atendimento",
+    target: "_blank"
+  },
+];
 
 function HeaderLayout(
   {
     minicart,
     searchbar,
+    login = defaultLoginLinks
   }: Props,
 ) {
   return (
@@ -47,8 +78,7 @@ function HeaderLayout(
         </div>
         <div class="flex items-center w-auto lg:justify-between xl:gap-8 lg:gap-2">
           <div class="flex items-center xl:gap-4 lg:gap-2">
-            <Buttons variant="user" />
-
+            <UserButton login={login} />
             <a
               class="rounded-full border-2 border-solid no-animation btn-square btn-ghost flex items-center justify-center"
               href="/wishlist"
@@ -61,18 +91,6 @@ function HeaderLayout(
                 strokeWidth={1}
               />
             </a>
-            {/* <a
-              class="max-lg:hidden rounded-full border-2 border-solid no-animation btn-square btn-ghost flex items-center justify-center"
-              href="/my-account"
-            >
-              <Icon
-                class="text-base-content"
-                id="User"
-                width={24}
-                height={25}
-                strokeWidth={1}
-              />
-            </a> */}
             <Buttons variant="cart" />
           </div>
         </div>

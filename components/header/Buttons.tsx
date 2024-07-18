@@ -4,6 +4,7 @@ import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
+import { LoginSetting } from "deco-sites/hospitalar/components/header/HeaderLayoutV2.tsx";
 
 function SearchButton() {
   const { displaySearchbar } = useUI();
@@ -94,7 +95,7 @@ function CartButton() {
   );
 }
 
-function UserButton() {
+export function UserButton({login}:{login:LoginSetting[]}) {
   const { user } = useUser();
   const { displayLogin } = useUI();
   const username = user?.value?.name ?? user?.value?.givenName ?? user?.value?.email ?? "";
@@ -137,21 +138,16 @@ function UserButton() {
         class={`absolute ${displayLogin.value ? 'flex' : 'hidden'} hover:flex group-hover:flex bg-accent top-[38px] shadow whitespace-nowrap p-[24px] flex-col z-10 rounded-xl gap-[6px]`}
       >
         <>
-          <a class="font-medium text-primary text-sm" href="/my-account">
-            Minha conta
-          </a>
-          <a
-            class="font-medium text-primary text-sm"
-            href="/my-account/orders"
-          >
-            Meus pedidos
-          </a>
-          <a
-            class="font-medium text-primary text-sm"
-            href="/i/contato"
-          >
-            Atendimento
-          </a>
+
+          {login.map(({href, label, target}) => (
+            <a 
+              class="font-medium text-primary text-sm" 
+              href={href}
+              target={target}
+            >
+              {label}
+            </a>
+          ))}
           <hr class="bg-primary h-[2px] my-2 min-w-[152px]" />
           <a
             class="font-medium text-primary text-sm"
@@ -167,11 +163,7 @@ function UserButton() {
   )
 }
 
-function Buttons({ variant }: { variant: "cart" | "search" | "menu" | "user" }) {
-
-  if (variant === "user") {
-    return <UserButton />;
-  }
+function Buttons({ variant }: { variant: "cart" | "search" | "menu" }) {
 
   if (variant === "cart") {
     return <CartButton />;
