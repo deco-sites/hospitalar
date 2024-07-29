@@ -14,6 +14,8 @@ import { useOffer } from "$store/sdk/useOffer.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { useId } from "preact/hooks";
+import { clx } from "deco-sites/hospitalar/sdk/clx.tsx";
+import { FnContext, SectionProps } from "deco/mod.ts";
 
 export interface Props {
   products: LoaderReturnType<Product[] | null>;
@@ -31,19 +33,24 @@ export interface Props {
   showPaginationArrows?: ResponsiveConditionals;
   cardLayout?: CardLayout;
   IdCollection?: string;
+  /**@title Slide de 2 linhas? */
+  slideTwoRow?:boolean;  
 }
 
 interface DotsProps {
   images?: Product[];
   interval?: number;
   className: string;
+  slideTwoRow?:boolean;  
 }
 
-function Dots({ images, interval = 0 }: DotsProps) {
+function Dots({ images, interval = 0, slideTwoRow }: DotsProps) {
   return (
     <>
       <ul
-        class={`carousel justify-center col-span-full gap-2 z-10 row-start-4`}
+        class={clx(`${slideTwoRow 
+          ? 'absolute -bottom-12 lg:bottom-[0] w-full flex gap-x-[0.5rem] justify-center' 
+          : 'carousel justify-center col-span-full gap-2 z-10 row-start-4 max-lg:mt-[0.625rem]'}`)}
       >
         {images?.map((_, index) => (
           <li class="carousel-item">
@@ -66,22 +73,44 @@ function Dots({ images, interval = 0 }: DotsProps) {
   );
 }
 
-function ProductShelf({
-  products,
-  title,
-  layout,
-  cardLayout,
-  showPaginationArrows,
-  IdCollection,
-}: Props) {
+
+function ProductShelf(props: SectionProps<ReturnType<typeof loader>>) {
   const id = useId();
+  const { 
+    products, 
+    title,
+    layout,
+    cardLayout,
+    showPaginationArrows,
+    IdCollection,
+    slideTwoRow = false,
+    device} = props;
 
   if (!products || products.length === 0) {
     return null;
   }
 
+  
+  function redesignArray( products: [] ): [Product[]]{
+    let arrayProducts = [];
+
+    products.forEach(( product, index )=>{
+      if( index === 0 || index % 2 === 0 ){
+        arrayProducts.push( [ product ] )
+      } 
+      else if( index % 2 !== 0 ){
+        arrayProducts[arrayProducts.length -1].push( product );
+      }
+    })
+
+    return arrayProducts;
+  }
+
   return (
-    <div class="w-full pb-8 flex flex-col lg:gap-7 lg:pb-10">
+    <div 
+      class={clx(`${slideTwoRow 
+        ? 'container w-full m-auto px-5 max-lg:mb-20 max-lg:mt-10'
+        : 'w-full pb-8 flex flex-col lg:gap-7 lg:pb-10' }`)}>
       <div class="flex items-center justify-between relative pb-3">
         <Header
           title={title || ""}
@@ -94,32 +123,82 @@ function ProductShelf({
 
       <div
         id={id}
-        class="grid grid-cols-[48px_1fr_48px] px-0 grid-rows-[1fr_48px_1fr_48px]"
+        class={clx(`${slideTwoRow 
+          ? 'container flex w-full relative'
+          : 'grid grid-cols-[48px_1fr_48px] px-0 grid-rows-[1fr_48px_1fr_48px]'}`)}
       >
-        <Slider class="carousel carousel-start gap-6 col-span-full row-span-full py-2 mb-12">
-          {products?.map((product, index) => (
-            <Slider.Item
-              index={index}
-              class="carousel-item w-[270px]"
-            >
-              <ProductCard
-                product={product}
-                itemListName={title}
-                layout={cardLayout}
-                IdCollection={IdCollection ?? "156"}
-                tagWarningWidth="80%"
-              />
-            </Slider.Item>
-          ))}
-        </Slider>
+
+        {slideTwoRow 
+          ? (
+            <Slider 
+              class={clx(`container carousel carousel-start flex max-lg:overflow-hidden`)}>
+              
+              {device === 'mobile' && products?.map((product, index) => {
+                  return(
+                    <Slider.Item
+                      index={index}
+                      class={clx(`carousel-item w-[335px]`)}              
+                    >
+                      <ProductCard
+                        product={product}
+                        itemListName={title}
+                        layout={cardLayout}
+                        IdCollection={IdCollection ?? "156"}
+                        tagWarningWidth="80%"
+                      />
+                    </Slider.Item>
+                  )
+              })}
+              { slideTwoRow && device === 'desktop' && redesignArray(products).map(( produtosInternos , index) => {                            
+                return(
+                  <Slider.Item
+                    index={index}
+                    class={clx(`carousel-item w-[calc(100%_/_4)] flex flex-col`)}              
+                  >
+                    { produtosInternos?.map(( product )=>(
+                      <ProductCard
+                        product={product}
+                        itemListName={title}
+                        layout={cardLayout}
+                        IdCollection={IdCollection ?? "156"}
+                        tagWarningWidth="80%"
+                      />                    
+                    )) }
+                  </Slider.Item>
+                )
+              })}          
+            </Slider>
+          )
+        : (
+          <Slider 
+          class={clx(`container carousel carousel-start gap-6 col-span-full row-span-full py-2 mb-8 lg:mb-0'}`)}>
+            {products?.map((product, index) => {
+                return(
+                  <Slider.Item
+                    index={index}
+                    class={clx(`carousel-item lg:w-[270px] ${slideTwoRow ? 'max-lg:w-[335px]' : ''}`)}              
+                  >
+                    <ProductCard
+                      product={product}
+                      itemListName={title}
+                      layout={cardLayout}
+                      IdCollection={IdCollection ?? "156"}
+                      tagWarningWidth="80%"
+                    />
+                  </Slider.Item>
+                )
+            })}         
+        </Slider>          
+          )
+        }      
 
         <>
           <div
-            class={`flex items-center justify-center z-10 col-start-1 row-start-2  ${
+            class={clx(`flex items-center justify-center z-10 col-start-1 row-start-2  ${
               CONDITIONAL_RESPONSIVE_PARAMS[
                 showPaginationArrows ? showPaginationArrows : "Always"
-              ]
-            }`}
+              ]}
+              ${slideTwoRow ? 'absolute top-2/4 -translate-y-1/2 max-lg:left-5' : ''}`)}
           >
             <Slider.PrevButton
               style={{
@@ -134,12 +213,11 @@ function ProductShelf({
             </Slider.PrevButton>
           </div>
           <div
-            class={`flex items-center justify-center z-10 col-start-3 row-start-2 ${
+            class={clx(`flex items-center justify-center z-10 col-start-3 row-start-2 ${
               CONDITIONAL_RESPONSIVE_PARAMS[
                 showPaginationArrows ? showPaginationArrows : "Always"
-              ]
-            }`}
-          >
+              ]}
+              ${slideTwoRow ? 'absolute top-2/4 -translate-y-1/2 lg:right-0 right-5' : ''}`)}>
             <Slider.NextButton
               style={{
                 minHeight: "28px",
@@ -155,6 +233,7 @@ function ProductShelf({
           <Dots
             images={products}
             className={CONDITIONAL_RESPONSIVE_PARAMS["Always"]}
+            slideTwoRow={slideTwoRow}
           />
         </>
 
@@ -187,5 +266,12 @@ function ProductShelf({
     </div>
   );
 }
+
+export const loader = (props: Props, _req: Request, ctx: FnContext) => {
+  return {
+      ...props,
+      device: ctx.device,
+  };
+};
 
 export default ProductShelf;
