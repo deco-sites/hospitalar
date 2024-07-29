@@ -15,6 +15,7 @@ import Image from "deco-sites/std/components/Image.tsx";
 import DiscountBadge from "./DiscountBadge.tsx";
 import TagWarning from "deco-sites/hospitalar/components/ui/TagWarning.tsx";
 import FreeShipping from "deco-sites/hospitalar/components/product/FreeShipping.tsx";
+import { clx } from "deco-sites/hospitalar/sdk/clx.tsx";
 
 export interface Layout {
   basics?: {
@@ -250,7 +251,7 @@ function ProductCard(
       >
         {/* Wishlist button */}
         <div
-          class={`absolute top-2 z-10
+          class={clx(`absolute top-2 z-10
           ${l?.elementsPositions?.favoriteIcon === "Top left"
               ? "left-2"
               : "right-2"
@@ -259,7 +260,7 @@ function ProductCard(
               ? ""
               : ""
             }
-        `}
+        `)}
         >
           <WishlistIcon productGroupID={productGroupID} productID={productID} />
         </div>
@@ -273,7 +274,7 @@ function ProductCard(
             alt={front.alternateName}
             width={WIDTH}
             height={HEIGHT}
-            class={`
+            class={clx(`
               absolute rounded-lg w-full
               ${(!l?.onMouseOver?.image ||
                 l?.onMouseOver?.image == "Change image")
@@ -284,7 +285,7 @@ function ProductCard(
                 ? "duration-100 transition-scale scale-100 lg:group-hover:scale-105"
                 : ""
               }
-            `}
+            `)}
             sizes="(max-width: 640px) 50vw, 20vw"
             preload={preload}
             loading={preload ? "eager" : "lazy"}
