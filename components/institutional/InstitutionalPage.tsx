@@ -1,7 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { Section } from "$live/blocks/section.ts";
 import type { BlockInstance } from "$live/engine/block.ts";
-import type { Manifest } from "deco-sites/hospitalar/manifest.gen.ts";
+import type { Manifest } from "site/manifest.gen.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 
 export interface Props {
@@ -9,19 +9,19 @@ export interface Props {
   asideMenu: Section;
   content:
     | BlockInstance<
-      "deco-sites/hospitalar/sections/Institutional/TextContent.tsx",
+      "site/sections/Institutional/TextContent.tsx",
       Manifest
     >
     | BlockInstance<
-      "deco-sites/hospitalar/sections/Institutional/AccordionsContent.tsx",
+      "site/sections/Institutional/AccordionsContent.tsx",
       Manifest
     >
     | BlockInstance<
-      "deco-sites/hospitalar/sections/Institutional/CardsContent.tsx",
+      "site/sections/Institutional/CardsContent.tsx",
       Manifest
     >
     | BlockInstance<
-      "deco-sites/hospitalar/sections/Institutional/ContactForm.tsx",
+      "site/sections/Institutional/ContactForm.tsx",
       Manifest
     >;
 }

@@ -2,7 +2,7 @@ import type { Product } from "apps/commerce/types.ts";
 import { AppContext } from "apps/vtex/mod.ts";
 import type { LoaderReturnType } from "$live/types.ts";
 import { SectionProps } from "deco/mod.ts";
-import ShopTogetherContainer from "deco-sites/hospitalar/islands/ShopTogetherContainer.tsx";
+import ShopTogetherContainer from "site/islands/ShopTogetherContainer.tsx";
 
 interface Props {
     buyTogetherLoader: LoaderReturnType<Product[] | null>;

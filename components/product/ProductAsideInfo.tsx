@@ -4,8 +4,8 @@ import { useOffer } from "$store/sdk/useOffer.ts";
 
 import ProductSelector from "./ProductVariantSelector.tsx";
 
-import TagWarning from "deco-sites/hospitalar/components/ui/TagWarning.tsx";
-import ProductInfo from "deco-sites/hospitalar/components/product/ProductInfo.tsx";
+import TagWarning from "site/components/ui/TagWarning.tsx";
+import ProductInfo from "site/components/product/ProductInfo.tsx";
 
 interface Props {
   product: Product;

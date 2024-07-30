@@ -1,6 +1,6 @@
 import Icon from "$store/components/ui/Icon.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
-import { LoginSetting } from "deco-sites/hospitalar/components/header/HeaderLayoutV2.tsx";
+import { LoginSetting } from "site/components/header/HeaderLayoutV2.tsx";
 import type { INavItem } from "./NavItem.tsx";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
 

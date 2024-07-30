@@ -1,7 +1,7 @@
 import type { LoaderReturnType } from "$live/types.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { useEffect, useState } from "preact/compat";
-import ProductCard from "deco-sites/hospitalar/components/product/ProductCard.tsx";
+import ProductCard from "site/components/product/ProductCard.tsx";
 
 export interface TextSugestion {
   firstText: string;

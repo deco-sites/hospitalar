@@ -1,5 +1,5 @@
 import Modals from "$store/islands/HeaderModalsV2.tsx";
-import { LoginSetting, defaultLoginLinks } from "deco-sites/hospitalar/components/header/HeaderLayoutV2.tsx";
+import { LoginSetting, defaultLoginLinks } from "site/components/header/HeaderLayoutV2.tsx";
 import NavItem, { INavItem } from "./NavItem.tsx";
 import { megaMenuDefaultItems } from "./constants.ts";
 

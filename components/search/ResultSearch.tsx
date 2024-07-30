@@ -2,7 +2,7 @@ import Spinner from "$store/components/ui/Spinner.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
 import ProductCard from "$store/components/product/ProductCard.tsx";
-import { EditableProps } from "deco-sites/hospitalar/components/search/Searchbar.tsx";
+import { EditableProps } from "site/components/search/Searchbar.tsx";
 import type { Suggestion } from "apps/commerce/types.ts";
 
 export type ResultSearch = EditableProps & {

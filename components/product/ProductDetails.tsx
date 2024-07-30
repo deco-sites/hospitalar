@@ -18,8 +18,8 @@ import Icon from "$store/components/ui/Icon.tsx";
 import { getShareLink } from "$store/sdk/shareLinks.tsx";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 
-import ProductAsideInfo from "deco-sites/hospitalar/components/product/ProductAsideInfo.tsx";
-import TagBlueProduct from "deco-sites/hospitalar/components/blueTags/BlueTagProduct.tsx";
+import ProductAsideInfo from "site/components/product/ProductAsideInfo.tsx";
+import TagBlueProduct from "site/components/blueTags/BlueTagProduct.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 
