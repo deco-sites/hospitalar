@@ -5,6 +5,7 @@
 
 import plugins from "deco-sites/std/plugins/mod.ts";
 import partytownPlugin from "partytown/mod.ts";
+import tailwind from "./tailwind.config.ts";
 
 import decoManifest from "./manifest.gen.ts";
 
@@ -14,6 +15,7 @@ export default defineConfig({
     ...plugins(
       {
         manifest: decoManifest,
+        tailwind,
       },
     ),
     partytownPlugin({

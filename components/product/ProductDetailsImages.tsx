@@ -4,7 +4,7 @@ import DiscountBadge from "./DiscountBadge.tsx";
 import type { ImageObject, Product } from "apps/commerce/types.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import Image from "deco-sites/std/components/Image.tsx";
-import FreeShipping from "deco-sites/hospitalar/components/product/FreeShipping.tsx";
+import FreeShipping from "site/components/product/FreeShipping.tsx";
 
 interface Props {
   images: ImageObject[];

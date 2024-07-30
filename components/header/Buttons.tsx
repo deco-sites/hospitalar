@@ -4,7 +4,7 @@ import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
-import { LoginSetting } from "deco-sites/hospitalar/components/header/HeaderLayoutV2.tsx";
+import { LoginSetting } from "site/components/header/HeaderLayoutV2.tsx";
 
 function SearchButton() {
   const { displaySearchbar } = useUI();

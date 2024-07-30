@@ -12,7 +12,7 @@
 import type { Layout as CardLayout } from "$store/components/product/ProductCard.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
-import ResultSearch from "deco-sites/hospitalar/components/search/ResultSearch.tsx";
+import ResultSearch from "site/components/search/ResultSearch.tsx";
 import { useAutocomplete } from "apps/vtex/hooks/useAutocomplete.ts";
 import { useEffect, useRef, useState } from "preact/compat";
 

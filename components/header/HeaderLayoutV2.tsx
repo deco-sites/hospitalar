@@ -4,7 +4,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Buttons from "$store/islands/HeaderButton.tsx";
 import Modals from "$store/islands/HeaderModals.tsx";
 import SearchBarComponent from "$store/islands/HeaderSearchbar.tsx";
-import { UserButton } from "deco-sites/hospitalar/components/header/Buttons.tsx";
+import { UserButton } from "site/components/header/Buttons.tsx";
 
 
 export interface LoginSetting {

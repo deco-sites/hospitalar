@@ -13,8 +13,8 @@ import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "deco-sites/std/components/Image.tsx";
 import DiscountBadge from "./DiscountBadge.tsx";
-import TagWarning from "deco-sites/hospitalar/components/ui/TagWarning.tsx";
-import FreeShipping from "deco-sites/hospitalar/components/product/FreeShipping.tsx";
+import TagWarning from "site/components/ui/TagWarning.tsx";
+import FreeShipping from "site/components/product/FreeShipping.tsx";
 
 export interface Layout {
   basics?: {

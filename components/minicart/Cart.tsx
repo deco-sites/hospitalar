@@ -6,7 +6,7 @@ import { useCart } from "apps/vtex/hooks/useCart.ts";
 import CartItem from "./CartItem.tsx";
 import Coupon from "./Coupon.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
-import FreeShippingProgressBar from "deco-sites/hospitalar/components/minicart/FreeShippingProgressBar.tsx";
+import FreeShippingProgressBar from "site/components/minicart/FreeShippingProgressBar.tsx";
 
 export type ButtonVariant =
   | "primary"
