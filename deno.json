@@ -31,8 +31,8 @@
   "imports": {
     "$store/": "./",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.7/",
-    "$live/": "https://denopkg.com/deco-cx/deco@1.80.2/",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.80.2/",
+    "$live/": "https://denopkg.com/deco-cx/deco@1.80.3/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.80.3/",
     "$fresh/": "https://deno.land/x/fresh@1.6.1/",
     "preact": "https://esm.sh/preact@10.19.2",
     "preact/": "https://esm.sh/preact@10.19.2/",
