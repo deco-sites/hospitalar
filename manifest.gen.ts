@@ -2,6 +2,8 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$1 from "./apps/site.ts";
 import * as $$$$$$0 from "./sections/BlueTags/BlueTagVisit.tsx";
 import * as $$$$$$1 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$2 from "./sections/Category/CategoryBreadcrumb.tsx";
@@ -49,8 +51,6 @@ import * as $$$$$$43 from "./sections/Product/ShopTogether.tsx";
 import * as $$$$$$44 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$45 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$46 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
 const manifest = {
   "sections": {
@@ -78,13 +78,11 @@ const manifest = {
     "site/sections/Images/Carousel.tsx": $$$$$$21,
     "site/sections/Images/ImageGallery.tsx": $$$$$$22,
     "site/sections/Images/ShoppableBanner.tsx": $$$$$$23,
-    "site/sections/Institutional/AccordionsContent.tsx":
-      $$$$$$24,
+    "site/sections/Institutional/AccordionsContent.tsx": $$$$$$24,
     "site/sections/Institutional/AsideMenu.tsx": $$$$$$25,
     "site/sections/Institutional/CardsContent.tsx": $$$$$$26,
     "site/sections/Institutional/ContactForm.tsx": $$$$$$27,
-    "site/sections/Institutional/InstitutionalPage.tsx":
-      $$$$$$28,
+    "site/sections/Institutional/InstitutionalPage.tsx": $$$$$$28,
     "site/sections/Institutional/TextContent.tsx": $$$$$$29,
     "site/sections/Links/LinkTree.tsx": $$$$$$30,
     "site/sections/Links/Shortcuts.tsx": $$$$$$31,
@@ -94,8 +92,7 @@ const manifest = {
     "site/sections/Miscellaneous/ProxyIframe.tsx": $$$$$$35,
     "site/sections/Newsletter/Newsletter.tsx": $$$$$$36,
     "site/sections/Newsletter/NewsletterModal.tsx": $$$$$$37,
-    "site/sections/Product/ProductAdvancedDetails.tsx":
-      $$$$$$38,
+    "site/sections/Product/ProductAdvancedDetails.tsx": $$$$$$38,
     "site/sections/Product/ProductDetails.tsx": $$$$$$39,
     "site/sections/Product/ProductShelf.tsx": $$$$$$40,
     "site/sections/Product/SearchNotFound.tsx": $$$$$$41,
