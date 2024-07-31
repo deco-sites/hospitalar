@@ -30,15 +30,19 @@ export interface Props {
   itemPerPageMobile?: 1 | 2;
   /** @description Enable hover effect on images */
   hoverEffect?: boolean;
+  /**
+   * @title Ocultar Bloco
+   */
+  disableBlock?:boolean;
 }
 
 export default function ImageGallery(props: Props) {
-  const { images, itemPerPageMobile = 1, itemPerPageDesktop = 3, hoverEffect } =
+  const { images, itemPerPageMobile = 1, itemPerPageDesktop = 3, hoverEffect, disableBlock = false } =
     props;
 
   return (
     <section
-      class={`w-full h-full grid justify-center lg:gap-8 gap-5 my-12 max-md:my-8 ${
+      class={`${disableBlock ? 'hidden' : ''} w-full h-full grid justify-center lg:gap-8 gap-5 my-12 max-md:my-8 ${
         MOBILE_COLUMNS[itemPerPageMobile ?? 1]
       }} ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
     >
