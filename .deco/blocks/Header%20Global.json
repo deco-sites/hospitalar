@@ -76,7 +76,23 @@
           },
           "placeholder": "O que esta procurando?"
         },
-        "login": []
+        "login": [
+          {
+            "target": "_self",
+            "href": "/my-account",
+            "label": "Minha conta"
+          },
+          {
+            "target": "_self",
+            "href": "/my-account/orders",
+            "label": "Meus pedidos"
+          },
+          {
+            "target": "_blank",
+            "label": "Atendimento",
+            "href": "https://web.whatsapp.com/send?phone=+5518997742232&text=Olá%2C+vim+pelo+site+e+gostaria+de+uma+ajuda"
+          }
+        ]
       },
       "verticalSpacing": "top",
       "withContainer": true
