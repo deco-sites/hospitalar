@@ -3,7 +3,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
-import { useUser } from "apps/vtex/hooks/useUser.ts";
+import { Person } from "apps/commerce/types.ts";
 import { LoginSetting } from "site/components/header/HeaderLayoutV2.tsx";
 
 function SearchButton() {
@@ -95,10 +95,10 @@ function CartButton() {
   );
 }
 
-export function UserButton({login}:{login:LoginSetting[]}) {
-  const { user } = useUser();
+export function UserButton({ user, login }: { user: Person | null; login: LoginSetting[] }) {
   const { displayLogin } = useUI();
-  const username = user?.value?.name ?? user?.value?.givenName ?? user?.value?.email ?? "";
+  const username = user?.name ?? user?.givenName ?? user?.email ?? "";
+  console.log(username);
   
   return (
     <div class="max-lg:hidden no-animation relative flex items-center justify-center min-w-[150px] group">
@@ -113,7 +113,7 @@ export function UserButton({login}:{login:LoginSetting[]}) {
         <div>
           <h2 class="text-xs font-bold cursor-pointer">Bem-vindo :)</h2>
           {
-            user?.value
+            user
               ? (<><p class="text-xs font-normal flex"
                 onMouseEnter={() => { displayLogin.value = true }}
                 onMouseLeave={() => { setTimeout(() => { displayLogin.value = false }, 1000); }}
@@ -134,14 +134,14 @@ export function UserButton({login}:{login:LoginSetting[]}) {
           }
         </div>
       </div>
-      {user?.value ? (<div
+      {user ? (<div
         class={`absolute ${displayLogin.value ? 'flex' : 'hidden'} hover:flex group-hover:flex bg-accent top-[38px] shadow whitespace-nowrap p-[24px] flex-col z-10 rounded-xl gap-[6px]`}
       >
         <>
 
-          {login.map(({href, label, target}) => (
-            <a 
-              class="font-medium text-primary text-sm" 
+          {login.map(({ href, label, target }) => (
+            <a
+              class="font-medium text-primary text-sm"
               href={href}
               target={target}
             >
