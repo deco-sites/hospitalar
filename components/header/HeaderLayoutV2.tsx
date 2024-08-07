@@ -5,6 +5,7 @@ import Buttons from "$store/islands/HeaderButton.tsx";
 import Modals from "$store/islands/HeaderModals.tsx";
 import SearchBarComponent from "$store/islands/HeaderSearchbar.tsx";
 import { UserButton } from "site/components/header/Buttons.tsx";
+import { useUser } from "apps/vtex/hooks/useUser.ts";
 
 
 export interface LoginSetting {
@@ -29,7 +30,7 @@ export interface Props {
   login?: LoginSetting[]
 }
 
-export const defaultLoginLinks:LoginSetting[] = [
+export const defaultLoginLinks: LoginSetting[] = [
   {
     href: "/my-account",
     label: "Minha conta",
@@ -54,6 +55,9 @@ function HeaderLayout(
     login = defaultLoginLinks
   }: Props,
 ) {
+  const { user } = useUser();
+
+
   return (
     <header class="z-50 py-2">
       <div class="flex justify-between items-center lg:p-0">
@@ -78,7 +82,7 @@ function HeaderLayout(
         </div>
         <div class="flex items-center w-auto lg:justify-between xl:gap-8 lg:gap-2">
           <div class="flex items-center xl:gap-4 lg:gap-2">
-            <UserButton login={login} />
+            <UserButton user={user.value} login={login} />
             <a
               class="rounded-full border-2 border-solid no-animation btn-square btn-ghost flex items-center justify-center"
               href="/wishlist"
