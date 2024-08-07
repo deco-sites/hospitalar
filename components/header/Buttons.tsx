@@ -5,6 +5,7 @@ import { useUI } from "$store/sdk/useUI.ts";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
 import { Person } from "apps/commerce/types.ts";
 import { LoginSetting } from "site/components/header/HeaderLayoutV2.tsx";
+import { useUser } from "apps/vtex/hooks/useUser.ts";
 
 function SearchButton() {
   const { displaySearchbar } = useUI();
@@ -95,10 +96,12 @@ function CartButton() {
   );
 }
 
-export function UserButton({ user, login }: { user: Person | null; login: LoginSetting[] }) {
+export function UserButton({ login }: {login: LoginSetting[] }) {
   const { displayLogin } = useUI();
-  const username = user?.name ?? user?.givenName ?? user?.email ?? "";
-  console.log(username);
+  const { user } = useUser();
+  const username = user?.value?.name ?? user?.value?.givenName ?? user?.value?.email ?? "";
+
+  console.log("User: ",user?.value);
   
   return (
     <div class="max-lg:hidden no-animation relative flex items-center justify-center min-w-[150px] group">
@@ -113,7 +116,7 @@ export function UserButton({ user, login }: { user: Person | null; login: LoginS
         <div>
           <h2 class="text-xs font-bold cursor-pointer">Bem-vindo :)</h2>
           {
-            user
+            user?.value
               ? (<><p class="text-xs font-normal flex"
                 onMouseEnter={() => { displayLogin.value = true }}
                 onMouseLeave={() => { setTimeout(() => { displayLogin.value = false }, 1000); }}
