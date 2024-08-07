@@ -2896,10 +2896,7 @@
             "__resolveType": "analytics"
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Header Global"
-            }
+            "__resolveType": "Header Global"
           },
           {
             "__resolveType": " Home - Carousel"
