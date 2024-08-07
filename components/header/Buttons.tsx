@@ -100,8 +100,6 @@ export function UserButton({ login }: {login: LoginSetting[] }) {
   const { displayLogin } = useUI();
   const { user } = useUser();
   const username = user?.value?.name ?? user?.value?.givenName ?? user?.value?.email ?? "";
-
-  console.log("User: ",user?.value);
   
   return (
     <div class="max-lg:hidden no-animation relative flex items-center justify-center min-w-[150px] group">
