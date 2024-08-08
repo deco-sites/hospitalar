@@ -29,20 +29,20 @@
         "images": [
           {
             "alt": "Imagem do instagram",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/575573f9-a299-4c05-a5e1-32f94a4e16ba",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/1514a2f0-0952-4a2b-ad51-b7440aacafa4",
             "preload": false
           },
           {
             "alt": "Imagem do instagram",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/032ad33e-1d82-4a2f-ae56-8d7d937ccc27"
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/899a8633-106a-47e5-8eb2-036e15376458"
           },
           {
             "alt": "Imagem do instagram",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/090cf851-aae8-4bbd-828e-f4a045d58a2c"
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/df2bcc51-025f-400c-8aae-463cba7eba35"
           },
           {
             "alt": "Imagem do instagram",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/c0f237a1-2c1f-480c-aca0-11f0625787d5"
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/4af0200c-ccb8-4687-bc5d-c633d14923a3"
           }
         ],
         "__resolveType": "site/sections/Images/ImageGallery.tsx",

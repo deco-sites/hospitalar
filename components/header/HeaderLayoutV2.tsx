@@ -4,7 +4,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import Buttons from "$store/islands/HeaderButton.tsx";
 import Modals from "$store/islands/HeaderModals.tsx";
 import SearchBarComponent from "$store/islands/HeaderSearchbar.tsx";
-import { UserButton } from "site/components/header/Buttons.tsx";
+import UserButton from "$store/islands/UserButtons.tsx";
 
 
 export interface LoginSetting {
@@ -29,7 +29,7 @@ export interface Props {
   login?: LoginSetting[]
 }
 
-export const defaultLoginLinks:LoginSetting[] = [
+export const defaultLoginLinks: LoginSetting[] = [
   {
     href: "/my-account",
     label: "Minha conta",
@@ -54,6 +54,7 @@ function HeaderLayout(
     login = defaultLoginLinks
   }: Props,
 ) {
+
   return (
     <header class="z-50 py-2">
       <div class="flex justify-between items-center lg:p-0">

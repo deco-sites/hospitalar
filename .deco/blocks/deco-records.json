@@ -1,0 +1,9 @@
+{
+  "__resolveType": "site/apps/deco/records.ts",
+  "url": "libsql://hospitalar-decocx.turso.io",
+  "authToken": {
+    "__resolveType": "website/loaders/secret.ts",
+    "name": "DATABASE_AUTH_TOKEN",
+    "encrypted": "b4465ee4c91041b695c9cccb455a8861296ed0da9b690749fc642706a8afdd2a8eb3efa1148f835fc83a3e158a4d2dde58139fec42af4221cd65f5ec954a6a215daeb0f414b6aba25ecea1df7384cf5f6d8f1718daba3f94f46b8d20dcb567ee7fa3d15272031cd6893abb17a227d79d5a764cefe6f2e012ad597ccf668bdc14f5312bc24c4cd5cab9619bcfba5098e5d566bdc5677603989b035b30a340cd52ac024cb17fdfb0b873ed097b8e7d7d82abc66969eee19ccf1d4a072e5ce79a73a163281b7585a844cd71dec4981b2f3dce895502f4f885d07daf9bad3ccc3fc2"
+  }
+}

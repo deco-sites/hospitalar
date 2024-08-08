@@ -3,8 +3,9 @@ import Icon from "$store/components/ui/Icon.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
-import { useUser } from "apps/vtex/hooks/useUser.ts";
+import { Person } from "apps/commerce/types.ts";
 import { LoginSetting } from "site/components/header/HeaderLayoutV2.tsx";
+import { useUser } from "apps/vtex/hooks/useUser.ts";
 
 function SearchButton() {
   const { displaySearchbar } = useUI();
@@ -95,9 +96,9 @@ function CartButton() {
   );
 }
 
-export function UserButton({login}:{login:LoginSetting[]}) {
-  const { user } = useUser();
+export function UserButton({ login }: {login: LoginSetting[] }) {
   const { displayLogin } = useUI();
+  const { user } = useUser();
   const username = user?.value?.name ?? user?.value?.givenName ?? user?.value?.email ?? "";
   
   return (
@@ -134,14 +135,14 @@ export function UserButton({login}:{login:LoginSetting[]}) {
           }
         </div>
       </div>
-      {user?.value ? (<div
+      {user ? (<div
         class={`absolute ${displayLogin.value ? 'flex' : 'hidden'} hover:flex group-hover:flex bg-accent top-[38px] shadow whitespace-nowrap p-[24px] flex-col z-10 rounded-xl gap-[6px]`}
       >
         <>
 
-          {login.map(({href, label, target}) => (
-            <a 
-              class="font-medium text-primary text-sm" 
+          {login.map(({ href, label, target }) => (
+            <a
+              class="font-medium text-primary text-sm"
               href={href}
               target={target}
             >
