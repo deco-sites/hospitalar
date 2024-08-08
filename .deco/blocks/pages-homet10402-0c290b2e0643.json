@@ -3055,18 +3055,20 @@
                 "section": {
                   "images": [
                     {
-                      "alt": "Tudo em 3x sem jutos",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/826d5e12-c719-4ae0-a9eb-7a5be4930b7e",
-                      "preload": false
+                      "alt": "Atendimento personalizado",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/27ee846e-381a-4c30-bdba-e76cdd463a95",
+                      "preload": false,
+                      "title": "Atendimento personalizado"
                     },
                     {
-                      "alt": "Nossa gratidão aos profissionais",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/c5403949-00f9-464d-9eed-773e89d176e5"
+                      "alt": "Tudo que você encontra na HD",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/aba0521b-e8cb-42b7-820b-770abb313939",
+                      "title": "Tudo que você encontra na HD"
                     },
                     {
-                      "alt": "Imagem do instagram",
-                      "href": "Por uma população mais feliz",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/fe36d302-5038-414e-9515-ff1e52e51960"
+                      "alt": "Conexão com empatia",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/737c36f5-b6f2-420b-ba4b-ebc708561735",
+                      "title": "Conexão com empatia"
                     }
                   ],
                   "__resolveType": "site/sections/Images/ImageGallery.tsx",
