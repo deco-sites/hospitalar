@@ -43,7 +43,8 @@
     "onMouseOver": {
       "showCardShadow": true,
       "showCta": true,
-      "image": "Zoom image"
+      "image": "Zoom image",
+      "showSkuSelector": false
     }
   },
   "products": {
@@ -51,7 +52,7 @@
     "props": {
       "sort": "price:desc",
       "collection": "159",
-      "count": 32
+      "count": 16
     }
   },
   "slideTwoRow": true
