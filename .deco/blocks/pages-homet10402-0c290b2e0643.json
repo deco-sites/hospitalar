@@ -2902,59 +2902,7 @@
             "__resolveType": " Home - Carousel"
           },
           {
-            "icon": [
-              {
-                "alt": "Parcelamento",
-                "text": {
-                  "title": "Parcele",
-                  "description": "Em até 6x sem juros"
-                },
-                "image": {
-                  "alt": "Parcele",
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/ba6e04a0-f06a-492d-b60e-fb94bc2f6f24",
-                  "width": 50,
-                  "height": 50
-                }
-              },
-              {
-                "alt": "Frete",
-                "text": {
-                  "title": "Frete grátis",
-                  "description": "Sul e Sudeste acima de R$ 499,00"
-                },
-                "image": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/04133dbe-c285-477a-8714-0db1ed7ec384",
-                  "width": 50,
-                  "height": 50
-                }
-              },
-              {
-                "alt": "Desconto",
-                "text": {
-                  "title": "Desconto no Boleto e PIX",
-                  "description": "De 3%"
-                },
-                "image": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/a0b535f2-fe5e-4702-bd76-1145018a87c2",
-                  "width": 50,
-                  "height": 50
-                }
-              },
-              {
-                "alt": "Frete 2",
-                "text": {
-                  "title": "Móveis hospitalares",
-                  "description": "Com frete grátis, confira"
-                },
-                "image": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/19a2b39c-e1cf-4cd7-b6d0-ea0f6b394077",
-                  "width": 50,
-                  "height": 50
-                },
-                "href": "/moveis-hospitalares"
-              }
-            ],
-            "__resolveType": "site/sections/Content/CustomBefefits.tsx"
+            "__resolveType": "Beneficios"
           },
           {
             "__resolveType": " Categorias - ImageGallery"
@@ -2965,122 +2913,14 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "site/sections/Product/ProductShelf.tsx",
-              "title": "Confira alguns produtos",
-              "layout": {
-                "headerAlignment": "center",
-                "headerfontSize": "Normal",
-                "itemsPerPage": [
-                  {
-                    "screenWidth": 425,
-                    "itemsQuantity": 1
-                  },
-                  {
-                    "screenWidth": 700,
-                    "itemsQuantity": 4
-                  }
-                ],
-                "slideTwoRow": false
-              },
-              "showPaginationArrows": "Always",
-              "cardLayout": {
-                "basics": {
-                  "contentAlignment": "Center",
-                  "ctaText": "Adicionar ao carrinho",
-                  "mobileCtaText": "Adicionar ao carrinho",
-                  "ctaMode": "Add to Cart"
-                },
-                "elementsPositions": {
-                  "skuSelector": "Top",
-                  "favoriteIcon": "Top right"
-                },
-                "hide": {
-                  "allPrices": false,
-                  "skuSelector": true,
-                  "productDescription": true
-                },
-                "discount": {
-                  "label": "off",
-                  "variant": "emphasis"
-                },
-                "onMouseOver": {
-                  "showCardShadow": true,
-                  "showCta": true,
-                  "image": "Zoom image"
-                }
-              },
-              "products": {
-                "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts",
-                "props": {
-                  "sort": "price:desc",
-                  "collection": "159",
-                  "count": 32
-                }
-              },
-              "slideTwoRow": true
+              "__resolveType": "slide com 2 linhas"
             }
           },
           {
             "__resolveType": "Shoes - BannerGrid"
           },
           {
-            "__resolveType": "site/sections/Container.tsx",
-            "isHeader": false,
-            "sections": [
-              {
-                "label": "InfoCard",
-                "shadow": "none",
-                "section": {
-                  "links": [
-                    {
-                      "href": "https://www.facebook.com/hospitalardistribuidorapp/?locale=pt_BR",
-                      "icon": "Facebook",
-                      "label": "Facebook"
-                    },
-                    {
-                      "href": "https://www.instagram.com/hospitalardistribuidora/",
-                      "icon": "Instagram",
-                      "label": "Instagram"
-                    }
-                  ],
-                  "title": "Nossas redes sociais",
-                  "__resolveType": "site/sections/Content/InfoCard.tsx"
-                },
-                "withContainer": true,
-                "verticalSpacing": "none"
-              },
-              {
-                "label": "ImageGallery",
-                "shadow": "none",
-                "section": {
-                  "images": [
-                    {
-                      "alt": "Atendimento personalizado",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/a85e33c6-4ec7-42d5-83ee-a027250aa151",
-                      "preload": false,
-                      "title": "Atendimento personalizado"
-                    },
-                    {
-                      "alt": "Tudo que você encontra na HD",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/3d1c298c-4121-4c63-8ded-5838d5f36dc0",
-                      "title": "Tudo que você encontra na HD"
-                    },
-                    {
-                      "alt": "Conexão com empatia",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/e52aa42c-db56-47ff-b071-1b3c7e5be42b",
-                      "title": "Conexão com empatia"
-                    }
-                  ],
-                  "__resolveType": "site/sections/Images/ImageGallery.tsx",
-                  "itemPerPageMobile": 1,
-                  "itemPerPageDesktop": 3
-                },
-                "withContainer": true,
-                "verticalSpacing": "none",
-                "itemPerPageMobile": 1,
-                "itemPerPageDesktop": 3
-              }
-            ]
+            "__resolveType": "nossas redes sociais"
           },
           {
             "__resolveType": " Sobre a loja - InfoCard"

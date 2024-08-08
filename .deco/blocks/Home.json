@@ -2902,16 +2902,25 @@
             "__resolveType": " Home - Carousel"
           },
           {
+            "__resolveType": "Beneficios"
+          },
+          {
             "__resolveType": " Categorias - ImageGallery"
           },
           {
             "__resolveType": " Os mais vendidos - ProductShelf"
           },
           {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "slide com 2 linhas"
+            }
+          },
+          {
             "__resolveType": "Shoes - BannerGrid"
           },
           {
-            "__resolveType": " Nossas redes sociais - InfoCard/ImageGallery"
+            "__resolveType": "nossas redes sociais"
           },
           {
             "__resolveType": " Sobre a loja - InfoCard"

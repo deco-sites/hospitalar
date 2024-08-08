@@ -1,0 +1,55 @@
+{
+  "icon": [
+    {
+      "alt": "Parcelamento",
+      "text": {
+        "title": "Parcele",
+        "description": "Em até 6x sem juros"
+      },
+      "image": {
+        "alt": "Parcele",
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/ba6e04a0-f06a-492d-b60e-fb94bc2f6f24",
+        "width": 50,
+        "height": 50
+      }
+    },
+    {
+      "alt": "Frete",
+      "text": {
+        "title": "Frete grátis",
+        "description": "Sul e Sudeste acima de R$ 499,00"
+      },
+      "image": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/04133dbe-c285-477a-8714-0db1ed7ec384",
+        "width": 50,
+        "height": 50
+      }
+    },
+    {
+      "alt": "Desconto",
+      "text": {
+        "title": "Desconto no Boleto e PIX",
+        "description": "De 3%"
+      },
+      "image": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/a0b535f2-fe5e-4702-bd76-1145018a87c2",
+        "width": 50,
+        "height": 50
+      }
+    },
+    {
+      "alt": "Frete 2",
+      "text": {
+        "title": "Móveis hospitalares",
+        "description": "Com frete grátis, confira"
+      },
+      "image": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/19a2b39c-e1cf-4cd7-b6d0-ea0f6b394077",
+        "width": 50,
+        "height": 50
+      },
+      "href": "/moveis-hospitalares"
+    }
+  ],
+  "__resolveType": "site/sections/Content/CustomBefefits.tsx"
+}

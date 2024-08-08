@@ -1,0 +1,58 @@
+{
+  "__resolveType": "site/sections/Product/ProductShelf.tsx",
+  "title": "Confira alguns produtos",
+  "layout": {
+    "headerAlignment": "center",
+    "headerfontSize": "Normal",
+    "itemsPerPage": [
+      {
+        "screenWidth": 425,
+        "itemsQuantity": 1
+      },
+      {
+        "screenWidth": 700,
+        "itemsQuantity": 4
+      }
+    ],
+    "slideTwoRow": false,
+    "color": "primary"
+  },
+  "showPaginationArrows": "Always",
+  "cardLayout": {
+    "basics": {
+      "contentAlignment": "Center",
+      "ctaText": "Adicionar ao carrinho",
+      "mobileCtaText": "Adicionar ao carrinho",
+      "ctaMode": "Add to Cart",
+      "oldPriceSize": "Small",
+      "ctaVariation": "primary"
+    },
+    "elementsPositions": {
+      "skuSelector": "Top",
+      "favoriteIcon": "Top right"
+    },
+    "hide": {
+      "allPrices": false,
+      "skuSelector": true,
+      "productDescription": true
+    },
+    "discount": {
+      "label": "off",
+      "variant": "emphasis"
+    },
+    "onMouseOver": {
+      "showCardShadow": true,
+      "showCta": true,
+      "image": "Zoom image"
+    }
+  },
+  "products": {
+    "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts",
+    "props": {
+      "sort": "price:desc",
+      "collection": "159",
+      "count": 32
+    }
+  },
+  "slideTwoRow": true
+}

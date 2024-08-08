@@ -1,0 +1,59 @@
+{
+  "__resolveType": "site/sections/Container.tsx",
+  "isHeader": false,
+  "sections": [
+    {
+      "label": "InfoCard",
+      "shadow": "none",
+      "section": {
+        "links": [
+          {
+            "href": "https://www.facebook.com/hospitalardistribuidorapp/?locale=pt_BR",
+            "icon": "Facebook",
+            "label": "Facebook"
+          },
+          {
+            "href": "https://www.instagram.com/hospitalardistribuidora/",
+            "icon": "Instagram",
+            "label": "Instagram"
+          }
+        ],
+        "title": "Nossas redes sociais",
+        "__resolveType": "site/sections/Content/InfoCard.tsx"
+      },
+      "withContainer": true,
+      "verticalSpacing": "none"
+    },
+    {
+      "label": "ImageGallery",
+      "shadow": "none",
+      "section": {
+        "images": [
+          {
+            "alt": "Atendimento personalizado",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/a85e33c6-4ec7-42d5-83ee-a027250aa151",
+            "preload": false,
+            "title": "Atendimento personalizado"
+          },
+          {
+            "alt": "Tudo que você encontra na HD",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/3d1c298c-4121-4c63-8ded-5838d5f36dc0",
+            "title": "Tudo que você encontra na HD"
+          },
+          {
+            "alt": "Conexão com empatia",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/e52aa42c-db56-47ff-b071-1b3c7e5be42b",
+            "title": "Conexão com empatia"
+          }
+        ],
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "itemPerPageMobile": 1,
+        "itemPerPageDesktop": 3
+      },
+      "withContainer": true,
+      "verticalSpacing": "none",
+      "itemPerPageMobile": 1,
+      "itemPerPageDesktop": 3
+    }
+  ]
+}
