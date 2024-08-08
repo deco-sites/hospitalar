@@ -1,5 +1,6 @@
 import { Section } from "$live/blocks/section.ts";
 import { headerHeight } from "$store/components/header/constants.ts";
+import { clx } from "$store/sdk/clx.ts";
 
 export type VerticalSpacing = "top" | "bottom" | "both" | "none";
 export type ShadowSize =
@@ -50,10 +51,10 @@ function Container({ sections, isHeader = false }: Props) {
         },
       ) => (
         <div
-          class={`w-full 
+          class={clx(`w-full 
           ${VERTICAL_SPACING[verticalSpacing]} 
           ${SPACING[spacing]}
-          ${SHADOW_SIZE[shadow]}`}
+          ${SHADOW_SIZE[shadow]}`)}
           style={backgroundColor && { background: `${backgroundColor}` }}
         >
           {withContainer
