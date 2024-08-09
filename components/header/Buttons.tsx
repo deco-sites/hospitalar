@@ -135,7 +135,7 @@ export function UserButton({ login }: {login: LoginSetting[] }) {
           }
         </div>
       </div>
-      {user ? (<div
+      {user?.value ? (<div
         class={`absolute ${displayLogin.value ? 'flex' : 'hidden'} hover:flex group-hover:flex bg-accent top-[38px] shadow whitespace-nowrap p-[24px] flex-col z-10 rounded-xl gap-[6px]`}
       >
         <>
