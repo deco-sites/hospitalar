@@ -1332,35 +1332,10 @@
             ]
           },
           {
-            "href": "/luvas",
-            "label": "Luvas",
+            "href": "/outlet",
+            "label": "Outlet",
             "variant": "Other",
-            "children": [
-              {
-                "href": "/luvas/profissional",
-                "label": "PROFISSIONAL",
-                "variant": "CommonChild",
-                "children": []
-              },
-              {
-                "href": "/luvas/descartavel",
-                "label": "DESCARTÁVEL",
-                "variant": "CommonChild",
-                "children": []
-              },
-              {
-                "href": "/luvas/procedimento",
-                "label": "PROCEDIMENTO",
-                "variant": "CommonChild",
-                "children": []
-              },
-              {
-                "href": "/luvas/cirurgica",
-                "label": "CIRÚRGICA",
-                "variant": "CommonChild",
-                "children": []
-              }
-            ]
+            "children": []
           }
         ]
       },
