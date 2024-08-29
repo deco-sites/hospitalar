@@ -1,0 +1,12 @@
+{
+  "__resolveType": "site/sections/Product/ShopTogether.tsx",
+  "buyTogetherLoader": {
+    "slug": {
+      "param": "slug",
+      "__resolveType": "website/functions/requestToParam.ts"
+    },
+    "count": 10,
+    "crossSelling": "showtogether",
+    "__resolveType": "deco-sites/std/loaders/vtex/legacy/relatedProductsLoader.ts"
+  }
+}
