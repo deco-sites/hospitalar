@@ -1,6 +1,10 @@
 {
   "name": "Categories Lid task 11062",
+<<<<<<< HEAD
   "path": "/task-11062",
+=======
+  "path": "/exec",
+>>>>>>> acbc65a65842ec2154904befdcaca46343f0ba52
   "sections": [
     {
       "__resolveType": "Default - Design System"
@@ -12,6 +16,26 @@
       "__resolveType": "bf-header"
     },
     {
+<<<<<<< HEAD
+=======
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Seo/SeoPLPCustom.tsx",
+        "jsonLD": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "count": 20,
+          "sort": "price:desc",
+          "selectedFacets": [
+            {
+              "key": "productClusterIds",
+              "value": "157"
+            }
+          ]
+        }
+      }
+    },
+    {
+>>>>>>> acbc65a65842ec2154904befdcaca46343f0ba52
       "__resolveType": "categoryBreadcrumb"
     },
     {
@@ -29,7 +53,11 @@
               "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
               "selectedFacets": [
                 {
+<<<<<<< HEAD
                   "key": "productClusterIds",
+=======
+                  "key": "productClusterIds157",
+>>>>>>> acbc65a65842ec2154904befdcaca46343f0ba52
                   "value": "157"
                 }
               ]
@@ -59,6 +87,7 @@
       ]
     },
     {
+<<<<<<< HEAD
       "__resolveType": "site/sections/Seo/SeoPLPCustom.tsx",
       "jsonLD": {
         "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
@@ -73,6 +102,8 @@
       }
     },
     {
+=======
+>>>>>>> acbc65a65842ec2154904befdcaca46343f0ba52
       "__resolveType": "bf-footer"
     }
   ],
