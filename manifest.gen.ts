@@ -52,8 +52,11 @@ import * as $$$$$$43 from "./sections/Product/SearchNotFound.tsx";
 import * as $$$$$$44 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$45 from "./sections/Product/ShopTogether.tsx";
 import * as $$$$$$46 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$47 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$48 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$47 from "./sections/Seo/SeoHomeCustom.tsx";
+import * as $$$$$$48 from "./sections/Seo/SeoPDPCustom.tsx";
+import * as $$$$$$49 from "./sections/Seo/SeoPLPCustom.tsx";
+import * as $$$$$$50 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$51 from "./sections/Social/WhatsApp.tsx";
 
 const manifest = {
   "sections": {
@@ -104,8 +107,11 @@ const manifest = {
     "site/sections/Product/SearchResult.tsx": $$$$$$44,
     "site/sections/Product/ShopTogether.tsx": $$$$$$45,
     "site/sections/Product/Wishlist.tsx": $$$$$$46,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$47,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$48,
+    "site/sections/Seo/SeoHomeCustom.tsx": $$$$$$47,
+    "site/sections/Seo/SeoPDPCustom.tsx": $$$$$$48,
+    "site/sections/Seo/SeoPLPCustom.tsx": $$$$$$49,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$50,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$51,
   },
   "apps": {
     "site/apps/deco/records.ts": $$$$$$$$$$$0,

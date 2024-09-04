@@ -1,25 +1,15 @@
 {
-  "name": "Product page",
-  "path": "/:slug/p",
+  "name": "Product page Lid",
+  "path": "/pdlid",
   "sections": [
     {
       "__resolveType": "Default - Design System"
     },
     {
-      "page": {
-        "__resolveType": "deco-sites/std/functions/vtexProductDetailsPage.ts"
-      },
-      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/b28cbb45-43d4-4dd7-9cde-908f4d6bc5b6",
-      "__resolveType": "deco-sites/std/sections/SEOPDP.tsx",
-      "titleTemplate": "%s | Hospitalar Distribuidora",
-      "structuredData": {
-        "useDataFromSEO": true
-      }
-    },
-    {
       "__resolveType": "analytics"
     },
     {
+      "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "rule": {
@@ -1244,8 +1234,17 @@
             "__resolveType": "Header Global"
           }
         }
-      ],
-      "__resolveType": "website/flags/multivariate/section.ts"
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Seo/SeoPDPCustom.tsx",
+      "jsonLD": {
+        "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts",
+        "slug": {
+          "__resolveType": "deco-sites/std/functions/requestToParam.ts",
+          "param": "slug"
+        }
+      }
     },
     {
       "__resolveType": "Default - Product Details"
@@ -1254,13 +1253,13 @@
       "__resolveType": "Produtos relacionados - ProductShelf"
     },
     {
-      "__resolveType": "bf-footer"
-    },
-    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": " Os mais vendidos - ProductShelf"
       }
+    },
+    {
+      "__resolveType": "bf-footer"
     }
   ],
   "__resolveType": "$live/pages/LivePage.tsx"
