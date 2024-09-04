@@ -96,6 +96,10 @@ export function loader(props: Props, _req: Request, ctx: AppContext) {
         }
     }
 
+    if(jsonLD?.seo) {
+        delete jsonLD.seo;
+    }
+
     return {
         ...seoSiteProps,
         title,
