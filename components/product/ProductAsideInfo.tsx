@@ -9,14 +9,12 @@ import ProductInfo from "site/components/product/ProductInfo.tsx";
 
 interface Props {
   product: Product;
-  subName: string[];
   isRestricted: boolean;
 }
 
 function ProductAsideInfo({
   product,
-  subName,
-  product: { offers, isVariantOf, gtin, url },
+  product: { offers, gtin },
   isRestricted,
 }: Props) {
   const { price, listPrice, availability, installment } = useOffer(
@@ -27,25 +25,19 @@ function ProductAsideInfo({
 
   return (
     <>
-      {/* Code and name */}
-      <div class="mt-4 sm:mt-0 sm:h-auto">
-        <h2>
-          <span class="font-medium text-base-content text-2xl">
-            {isVariantOf?.name}
-            {currentURL == url ? subName.map((name) => `- ${name}`) : "  "}
-          </span>
-        </h2>
+      {/* Code and name */}  
         {gtin && gtin?.length > 0 && (
-          <div>
-            <span class="text-sm text-base-300">
-              Referência: {gtin}
-            </span>
+          <div class="mt-4 sm:mt-0 sm:h-auto">
+            <div>
+              <span class="text-sm text-base-300">
+                Referência: {gtin}
+              </span>
+            </div>
           </div>
         )}
-      </div>
 
       {/* { tag warning} */}
-      {isRestricted && <TagWarning style={"my-[20px]"} />}
+      {isRestricted && <TagWarning style={""} />}
 
       {/* Prices */}
       {availability === "https://schema.org/InStock"

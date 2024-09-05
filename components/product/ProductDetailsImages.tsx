@@ -37,9 +37,9 @@ function ProductDetailsImages(
 
   return (
     <>
-      <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-4">
+      <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-5">
         {/* Image Slider */}
-        <div class="relative xl:pl-32">
+        <div class="relative xl:pl-32 rounded-2xl bg-white border border-[#E5E7EB] overflow-hidden">
           <Slider class="carousel carousel-center gap-6 box-border lg:box-content lg:w-[600px] 2xl:w-[727px] w-full px-4 lg:px-0">
             {images.map((img, index) => (
               <Slider.Item
@@ -101,14 +101,14 @@ function ProductDetailsImages(
         {/* Dots */}
         <div class="lg:max-w-[500px] lg:self-start xl:self-start xl:left-0 xl:absolute xl:max-h-full xl:overflow-y-scroll xl:scrollbar-none">
           <ul
-            class={`flex gap-4 overflow-auto lg:max-h-min lg:flex-1 lg:justify-start xl:flex-col`}
+            class={`flex gap-3 overflow-auto lg:max-h-min lg:flex-1 lg:justify-start xl:flex-col`}
           >
             {images.map((img, index) => (
-              <li class="min-w-[75px] lg:h-fit lg:min-w-[130px]">
+              <li class="min-w-[85px] lg:h-fit lg:min-w-[130px] bg-white">
                 <Slider.Dot index={index}>
                   <Image
                     style={{ aspectRatio: aspect }}
-                    class="border-neutral hover:border-secondary-focus group-disabled:border-secondary-focus border-2 rounded-[10px]"
+                    class="border-[#E5E7EB] hover:border-secondary-focus group-disabled:border-secondary-focus border-2 rounded-2xl"
                     width={width / 5}
                     height={height / 5}
                     src={img.url!}

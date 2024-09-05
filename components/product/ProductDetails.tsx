@@ -122,7 +122,6 @@ function ProductInfo(
       {/* Code and name */}
       <ProductAsideInfo
         product={product}
-        subName={subName}
         isRestricted =  {isRestricted}
       />
       {/* Add to Cart and Favorites button */}
@@ -304,6 +303,21 @@ function Details({
   const zoomImage = useSignal(images[0].url);
   const zoomX = useSignal(0);
   const zoomY = useSignal(0);
+  const possibilities = useVariantPossibilities(page?.product);
+  const { isVariantOf, url } = page?.product;
+  const subName: string[] = [];
+  const productUrl = product?.url || "";
+  const currentURL = window.location?.href;
+
+  Object.keys(possibilities).forEach((name) => {
+    Object.entries(possibilities[name]).forEach(
+      ([value, { urls, inStock }]) => {
+        if (urls[0] === productUrl) {
+          subName.push(value);
+        }
+      },
+    );
+  });
 
   /**
    * Product slider variant
@@ -314,10 +328,18 @@ function Details({
         {/* Breadcrumb */}
         <Breadcrumb
           itemListElement={filteredBreadcrumbList}
+          class="!py-0 mb-6"
+          activeTitle={false}
         />
+        <h2 class="mb-[30px]">
+          <span class="font-poppins not-italic font-semibold text-xl text-[#2C376D]">
+            {isVariantOf?.name}
+            {currentURL == url ? subName.map((name) => `- ${name}`) : "  "}
+          </span>
+        </h2>
         <div
           id={id}
-          class="flex flex-col lg:flex-row gap-4 lg:justify-center"
+          class="flex flex-col lg:flex-row gap-12 lg:justify-center"
         >
           {/* Product Images */}
           <ProductDetailsImages
