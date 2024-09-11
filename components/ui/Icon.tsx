@@ -33,6 +33,7 @@ export type AvailableIcons =
   | "QuestionMarkCircle"
   | "User"
   | "ShoppingCart"
+  | "ShoppingCartNew"
   | "Bars3"
   | "Heart"
   | "MagnifyingGlass"

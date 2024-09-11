@@ -42,34 +42,37 @@ function ProductAsideInfo({
       {/* Prices */}
       {availability === "https://schema.org/InStock"
         ? (
-          <div class="mt-5">
-            <span>
+          <div class="mt-7">
+            <span class="not-italic font-poppins font-bold text-[#2C376D] text-base">
               {" "}
-              <strong class="text-2xl">
+              <strong class="font-bold text-3xl text-[#2C376D] not-italic font-poppins">
                 {formatPrice(price! * 0.97, offers!.priceCurrency)}
               </strong>{" "}
-              à vista ou
+              à vista
             </span>
-            <div class="flex flex-row gap-2 items-center">
+            <div class="flex flex-row gap-2 items-center mt-2">
               {listPrice !== price && (
                 <span class="line-through text-base-300 text-xs">
                   {formatPrice(listPrice, offers!.priceCurrency!)}
                 </span>
               )}
-              <span class="font-medium text-xl text-primary">
-                {formatPrice(price, offers!.priceCurrency!)}
+              <span class="text-[#2C376D] text-base not-italic font-poppins font-normal">
+                ou  {" "}
+                <strong>
+                  {formatPrice(price, offers!.priceCurrency!)}
+                </strong>
               </span>
             </div>
             <div class="flex flex-col">
-              <span>
-                em até <strong>{installment?.billingDuration}x</strong> de{" "}
+              <span class="text-[#2C376D] text-base not-italic font-poppins font-normal">
+                em até {`${installment?.billingDuration}x`} de{" "}
                 <strong>
                   {formatPrice(
                     installment?.billingIncrement,
                     offers!.priceCurrency,
                   )}
                 </strong>{" "}
-                s/ juros.
+                sem juros
               </span>
             </div>
           </div>
@@ -78,7 +81,7 @@ function ProductAsideInfo({
       {/* Sku Selector */}
       {availability === "https://schema.org/InStock"
         ? (
-          <div class="mt-4 sm:mt-5">
+          <div class="mt-7 sm:mt-5">
             <ProductSelector product={product} currentURL={currentURL} />
           </div>
         )

@@ -1,6 +1,6 @@
 import QuantitySelector from "$store/components/ui/QuantitySelector.tsx";
 import { useState } from "preact/hooks";
-import AddToCartButton from "$store/components/product/AddToCartButton.tsx";
+import NewAddToCartButton from "$store/components/product/NewAddToCartButton.tsx";
 
 type Props = {
   productID: string;
@@ -17,14 +17,14 @@ export default function AddToCartActions(
   const [quantity, setQuantity] = useState(1);
 
   return (
-    <div class="flex w-full gap-[30px]">
+    <div class="flex w-full gap-[25px]">
       <QuantitySelector
         quantity={quantity}
         onChange={(_quantity) => {
           setQuantity(_quantity);
         }}
       />
-      <AddToCartButton
+      <NewAddToCartButton
         skuId={productID}
         sellerId={seller}
         price={price ?? 0}
@@ -32,7 +32,7 @@ export default function AddToCartActions(
         name={productName}
         productGroupId={productGroupID}
         quantity={quantity}
-        label="Comprar agora"
+        label="Comprar"
         classes="btn-primary btn-block transition-all font-medium"
       />
     </div>

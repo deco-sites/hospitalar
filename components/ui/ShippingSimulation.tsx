@@ -87,13 +87,13 @@ function ShippingSimulation({ items }: Props) {
   }, []);
 
   return (
-    <div class="flex flex-col mt-[30px] gap-5 p-[20px] sm:p-[30px] rounded-2xl border border-base-200 text-base-300">
-      <p class="text-justify text-primary font-bold">
-        Calcular o frete
+    <div class="flex flex-col mt-[30px] gap-[15px] p-[20px] sm:p-[30px] rounded-2xl border border-base-200 text-base-300">
+      <p class="font-poppins not-italic font-bold text-base text-[#2C376D]">
+        Consultar frete e prazo de entrega  
       </p>
       <div class="flex flex-col gap-[10px]">
         <form
-          class="flex gap-2 max-lg:flex-col"
+          class="flex gap-[10px] max-lg:flex-col"
           onSubmit={(e) => {
             e.preventDefault();
             handleSimulation();
@@ -104,25 +104,25 @@ function ShippingSimulation({ items }: Props) {
             type="text"
             inputMode="numeric"
             pattern="[0-9]*"
-            class="input input-bordered input-sm text-xs border focus:outline-none w-full max-w-[300px] !py-4 hover:border-base-300 focus:text-black focus:hover:border-base-200"
-            placeholder="00000000"
+            class="input input-bordered input-sm border h-10 focus:outline-none w-full max-w-[250px] !py-4 hover:border-base-300 focus:text-black focus:hover:border-base-200 font-poppins not-italic font-normal text-xs text-[#8E8E9F]"
+            placeholder="Inserir CEP"
             value={postalCode.value}
             maxLength={8}
             onChange={(e: { currentTarget: { value: string } }) => {
               postalCode.value = e.currentTarget.value;
             }}
           />
-          <div class="flex gap-[10px] items-center lg:justify-center">
+          <div class="flex gap-[15px] items-center lg:justify-center">
             <Button
               type="submit"
               loading={loading.value}
-              class="btn-outline transition-all !border h-[2.25rem] px-5"
+              class="h-10 btn-outline transition-all !border px-6 font-poppins not-italic font-semibold text-sm text-center text-[#2C376D]"
             >
               Calcular
             </Button>
             <a
               href="https://buscacepinter.correios.com.br/app/endereco/index.php"
-              class="uppercase text-primary text-xs font-bold hover:underline max-lg:underline transition-all duration-500"
+              class="uppercase hover:underline max-lg:underline transition-all duration-500 font-poppins not-italic font-semibold text-xs underline text-[#2C376D]"
               target="_blank"
             >
               Não sei meu CEP

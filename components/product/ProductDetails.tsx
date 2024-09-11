@@ -125,7 +125,7 @@ function ProductInfo(
         isRestricted =  {isRestricted}
       />
       {/* Add to Cart and Favorites button */}
-      <div class="mt-4 lg:mt-10 flex gap-[30px]">
+      <div class="mt-[30px] lg:mt-10 flex gap-[30px]">
         {availability === "https://schema.org/InStock"
           ? (
             <>
@@ -171,29 +171,6 @@ function ProductInfo(
         </div>
       </details>
       {/* Share Product on Social Networks */}
-      {shareableNetworks && (
-        <div class="flex items-center gap-5 my-5">
-          <span class="text-xs text-base-300">Compartilhar</span>
-          <ul class="gap-2 flex items-center justify-between">
-            {shareableNetworks.map((network) => (
-              <li class="bg-secondary w-8 h-8 rounded-full hover:bg-primary group transition-all">
-                <a
-                  href={getShareLink({
-                    network,
-                    productName: isVariantOf?.name ?? name ?? "",
-                    url: url ?? "",
-                  })}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="flex items-center justify-center w-full h-full group-hover:text-white text-primary"
-                >
-                  <Icon id={network} width={20} height={20} />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
 
       {/* Tag Blue Product */}
 
