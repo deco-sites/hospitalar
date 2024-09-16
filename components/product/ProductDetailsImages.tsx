@@ -39,8 +39,8 @@ function ProductDetailsImages(
     <>
       <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-5">
         {/* Image Slider */}
-        <div class="relative xl:pl-32 rounded-2xl bg-white border border-[#E5E7EB] overflow-hidden">
-          <Slider class="carousel carousel-center gap-6 box-border lg:box-content lg:w-[600px] 2xl:w-[727px] w-full px-4 lg:px-0">
+        <div class="relative xl:pl-32 rounded-2xl bg-white border border-[#E5E7EB] overflow-hidden lg:border-none lg:rounded-none">
+          <Slider class="lg:border lg:rounded-2xl lg:border-[#E5E7EB] carousel carousel-center gap-6 box-border lg:box-content lg:w-[600px] 2xl:w-[727px] w-full px-4 lg:px-0">
             {images.map((img, index) => (
               <Slider.Item
                 index={index}

@@ -1,7 +1,6 @@
 import { useSignal } from "@preact/signals";
 import { useId } from "preact/hooks";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
-import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
@@ -20,6 +19,8 @@ import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 
 import ProductAsideInfo from "site/components/product/ProductAsideInfo.tsx";
 import TagBlueProduct from "site/components/blueTags/BlueTagProduct.tsx";
+import BreadcrumbProduct from "site/components/ui/BreadcrumbProduct.tsx";
+import DescriptionCard from "site/islands/DescriptionCard.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 
@@ -157,20 +158,31 @@ function ProductInfo(
         )
         : null}
       {/* Description card */}
-      <details className="collapse collapse-plus mt-[30px]">
-        <summary className="collapse-title border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-bold">
-          Descrição
-        </summary>
-        <div className="readmore !flex-col text-xs px-0 pl-[30px] mt-3 leading-tight collapse-content text-base-300">
-          <input type="checkbox" id="readmore" className="readmore-toggle" />
-          <p
-            className="readmore-content"
-            dangerouslySetInnerHTML={{ __html: description ? description : "" }}
-          >
-          </p>
-        </div>
-      </details>
-      {/* Share Product on Social Networks */}
+      <DescriptionCard description={description ? description : ""} classContainer="lg:hidden" />
+      {/* Share Product on Social Networks */}	      {/* Share Product on Social Networks */}
+      {shareableNetworks && (	
+        <div class="hidden lg:flex items-center gap-5 my-[30px]">	
+          <span class="text-xs text-base-300">Compartilhar</span>	
+          <ul class="gap-2 flex items-center justify-between">	
+            {shareableNetworks.map((network) => (	
+              <li class="bg-secondary w-8 h-8 rounded-full hover:bg-primary group transition-all">	
+                <a	
+                  href={getShareLink({	
+                    network,	
+                    productName: isVariantOf?.name ?? name ?? "",	
+                    url: url ?? "",	
+                  })}	
+                  target="_blank"	
+                  rel="noopener noreferrer"	
+                  class="flex items-center justify-center w-full h-full group-hover:text-white text-primary"	
+                >	
+                  <Icon id={network} width={20} height={20} />	
+                </a>	
+              </li>	
+            ))}	
+          </ul>	
+        </div>	
+      )}
 
       {/* Tag Blue Product */}
 
@@ -303,32 +315,37 @@ function Details({
     return (
       <>
         {/* Breadcrumb */}
-        <Breadcrumb
+        <BreadcrumbProduct
           itemListElement={filteredBreadcrumbList}
-          class="!py-0 mb-6"
+          class="!py-0 mb-6 lg:mb-[40px] lg:mt-[30px]"
           activeTitle={false}
         />
-        <h2 class="mb-[30px]">
-          <span class="font-poppins not-italic font-semibold text-xl text-[#2C376D]">
-            {isVariantOf?.name}
-            {currentURL == url ? subName.map((name) => `- ${name}`) : "  "}
-          </span>
-        </h2>
         <div
           id={id}
           class="flex flex-col lg:flex-row gap-12 lg:justify-center"
         >
           {/* Product Images */}
-          <ProductDetailsImages
-            images={images}
-            width={WIDTH}
-            height={HEIGHT}
-            aspect={ASPECT_RATIO}
-            product={product}
-          />
+          <div>
+            <h2 class="mb-[30px] lg:mb-[50px] lg:max-[670px]">
+              <span class="font-poppins not-italic font-semibold text-xl text-[#2C376D] lg:text-2xl">
+                {isVariantOf?.name}
+                {currentURL == url ? subName.map((name) => `- ${name}`) : "  "}
+              </span>
+            </h2>
+
+            <ProductDetailsImages
+              images={images}
+              width={WIDTH}
+              height={HEIGHT}
+              aspect={ASPECT_RATIO}
+              product={product}
+            />
+
+            <DescriptionCard description={product.description ? product.description : ""} classContainer="hidden lg:block" />
+          </div>
 
           {/* Product Info */}
-          <div class="w-full lg:pr-0 lg:pl-6">
+          <div class="w-full lg:pr-0 lg:pl-6 lg:mt-[50px]">
             <ProductInfo
               page={page}
               shipmentPolitics={shipmentPolitics}

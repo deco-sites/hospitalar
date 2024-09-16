@@ -43,16 +43,16 @@ function ProductAsideInfo({
       {availability === "https://schema.org/InStock"
         ? (
           <div class="mt-7">
-            <span class="not-italic font-poppins font-bold text-[#2C376D] text-base">
+            <span class="not-italic font-poppins font-bold text-[#2C376D] text-base ">
               {" "}
-              <strong class="font-bold text-3xl text-[#2C376D] not-italic font-poppins">
+              <strong class="font-bold text-3xl text-[#2C376D] not-italic font-poppins lg:text-3xl">
                 {formatPrice(price! * 0.97, offers!.priceCurrency)}
               </strong>{" "}
               à vista
             </span>
             <div class="flex flex-row gap-2 items-center mt-2">
               {listPrice !== price && (
-                <span class="line-through text-base-300 text-xs">
+                <span class="line-through text-base-300 text-xs lg:text-base">
                   {formatPrice(listPrice, offers!.priceCurrency!)}
                 </span>
               )}

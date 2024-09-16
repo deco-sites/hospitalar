@@ -22,7 +22,7 @@ function ShopTogether(props: SectionProps<typeof loader>) {
     if (!buyTogether) return null;
 
     return (
-        <div className="container w-full m-auto items-center px-5 my-5 lg:my-10 lg:px-0 2xl:px-5">
+        <div className="container w-full m-auto items-center px-5 my-5 lg:my-10 lg:px-0 2xl:px-5 bg-[#FAFAFB]">
             <div className="flex w-full h-auto flex-col gap-3 items-center">
                 <h2 className="text-xl lg:text-2xl leading-8 lg:leading-10 font-medium text-primary">Aproveite e leve também</h2>
                 <ShopTogetherContainer buyTogether={buyTogether} />

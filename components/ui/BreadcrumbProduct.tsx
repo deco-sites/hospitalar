@@ -6,7 +6,7 @@ interface Props {
   activeTitle?: boolean;
 }
 
-function Breadcrumb({ class: _class, itemListElement = [], activeTitle = true }: Props) {
+function BreadcrumbProduct({ class: _class, itemListElement = [], activeTitle = true }: Props) {
   const items = [{ name: "Home", item: "/" }, ...itemListElement];
 
   const lastItem = items[items.length - 1];
@@ -20,19 +20,20 @@ function Breadcrumb({ class: _class, itemListElement = [], activeTitle = true }:
           .filter(({ name, item }) => name && item)
           .map(({ name, item }) => (
             <li
-              class={`text-base-300 last:text-primary last:overflow-hidden last: first:before:!content-none before:!ml-2 before:!mr-[10px] before:!h-2 before:!border-t-0 before:!rotate-0 before:!border-r-[#B8B8BC] before:!border-r before:!opacity-100`}
+              class={`font-poppins not-italic font-normal text-xs text-[#8E8E9F] relative inline-block last:text-[#2C376D] lg:text-base`}
             >
               <a class="!block !text-ellipsis !overflow-hidden" href={item}>
                 <h3>{name}</h3>
               </a>
+              <span class="w-0 h-0 border-t-[2px] border-b-[2px] border-transparent border-l-[2px] border-l-[#8E8E9F]"></span>
             </li>
           ))}
       </ul>
       { activeTitle && (
-        <h1 class="text-sm text-base-transparent opacity-0">{lastItemName}</h1>
+        <h1 class="font-poppins not-italic font-normal text-xs text-[#2C376D]">{lastItemName}</h1>
       ) }
     </div>
   );
 }
 
-export default Breadcrumb;
+export default BreadcrumbProduct;

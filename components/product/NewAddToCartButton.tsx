@@ -42,9 +42,6 @@ function NewAddToCartButton(
       <p class="flex gap-2 items-center justify-center">
         <Icon id="ShoppingCartNew" width={24} height={24} />
         <span class="font-poppins not-italic font-semibold text-base text-white">{label ?? "Comprar"}</span>
-        <span class="hidden lg:inline font-poppins not-italic font-semibold text-base text-white">
-          {label ?? "Adicionar ao carrinho"}
-        </span>
       </p>
     </Button>
   );

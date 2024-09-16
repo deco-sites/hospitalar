@@ -1,12 +1,10 @@
 import type { LoaderReturnType } from "$live/types.ts";
 import type { Layout as CardLayout } from "$store/components/product/ProductCard.tsx";
-import ProductCard from "$store/components/product/ProductCard.tsx";
 import {
   CONDITIONAL_RESPONSIVE_PARAMS,
   ResponsiveConditionals,
 } from "$store/components/ui/BannerCarousel.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-import Header from "$store/components/ui/SectionHeader.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import { SendEventOnLoad } from "$store/sdk/analytics.tsx";
@@ -16,6 +14,8 @@ import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalytic
 import { useId } from "preact/hooks";
 import { clx } from "$store/sdk/clx.ts";
 import { useDevice } from "deco/hooks/useDevice.ts";
+import CustomHeader from "site/components/product/CustomHeader.tsx";
+import NewProductCard from "site/components/product/NewProductCard.tsx";
 
 export interface Props {
   products: LoaderReturnType<Product[] | null>;
@@ -158,7 +158,7 @@ function ProductShelf({
         ? 'container w-full m-auto px-5 max-lg:mb-20 max-lg:mt-10 lg:mb-20'
         : 'w-full pb-8 flex flex-col lg:gap-7 lg:pb-10' }`)}>
       <div class="flex items-center justify-between relative pb-3">
-        <Header
+        <CustomHeader
           title={title || ""}
           description=""
           fontSize={layout?.headerfontSize || "Large"}
@@ -185,12 +185,12 @@ function ProductShelf({
                       index={index}
                       class={clx(`carousel-item w-[335px]`)}              
                     >
-                      <ProductCard
+                      <NewProductCard
                         product={product}
                         itemListName={title}
                         layout={cardLayout}
                         IdCollection={IdCollection ?? "156"}
-                        tagWarningWidth="80%"
+                        tagWarningWidth="40%"
                       />
                     </Slider.Item>
                   )
@@ -202,12 +202,12 @@ function ProductShelf({
                     class={clx(`carousel-item w-[calc(100%_/_4)] flex flex-col`)}              
                   >
                     { produtosInternos?.map(( product )=>(
-                      <ProductCard
+                      <NewProductCard
                         product={product}
                         itemListName={title}
                         layout={cardLayout}
                         IdCollection={IdCollection ?? "156"}
-                        tagWarningWidth="80%"
+                        tagWarningWidth="40%"
                       />                    
                     )) }
                   </Slider.Item>
@@ -224,12 +224,12 @@ function ProductShelf({
                     index={index}
                     class={clx(`carousel-item lg:w-[270px] ${slideTwoRow ? 'max-lg:w-[335px]' : ''}`)}              
                   >
-                    <ProductCard
+                    <NewProductCard
                       product={product}
                       itemListName={title}
                       layout={cardLayout}
                       IdCollection={IdCollection ?? "156"}
-                      tagWarningWidth="80%"
+                      tagWarningWidth="40%"
                     />
                   </Slider.Item>
                 )

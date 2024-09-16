@@ -87,31 +87,40 @@ function ShippingSimulation({ items }: Props) {
   }, []);
 
   return (
-    <div class="flex flex-col mt-[30px] gap-[15px] p-[20px] sm:p-[30px] rounded-2xl border border-base-200 text-base-300">
+    <div class="flex flex-col mt-[30px] gap-[15px] p-[20px] sm:p-[30px] rounded-2xl border border-base-200 text-base-300 bg-white">
       <p class="font-poppins not-italic font-bold text-base text-[#2C376D]">
         Consultar frete e prazo de entrega  
       </p>
       <div class="flex flex-col gap-[10px]">
         <form
-          class="flex gap-[10px] max-lg:flex-col"
+          class="flex gap-[10px] max-lg:flex-col lg:items-start"
           onSubmit={(e) => {
             e.preventDefault();
             handleSimulation();
           }}
         >
-          <input
-            as="input"
-            type="text"
-            inputMode="numeric"
-            pattern="[0-9]*"
-            class="input input-bordered input-sm border h-10 focus:outline-none w-full max-w-[250px] !py-4 hover:border-base-300 focus:text-black focus:hover:border-base-200 font-poppins not-italic font-normal text-xs text-[#8E8E9F]"
-            placeholder="Inserir CEP"
-            value={postalCode.value}
-            maxLength={8}
-            onChange={(e: { currentTarget: { value: string } }) => {
-              postalCode.value = e.currentTarget.value;
-            }}
-          />
+          <div class="flex flex-col justify-center items-start gap-3">
+            <input
+              as="input"
+              type="text"
+              inputMode="numeric"
+              pattern="[0-9]*"
+              class="input input-bordered input-sm border h-10 focus:outline-none w-full max-w-[250px] lg:max-w-[225px] lg:w-[225px] !py-4 hover:border-base-300 focus:text-black focus:hover:border-base-200 font-poppins not-italic font-normal text-xs text-[#8E8E9F]"
+              placeholder="Inserir CEP"
+              value={postalCode.value}
+              maxLength={8}
+              onChange={(e: { currentTarget: { value: string } }) => {
+                postalCode.value = e.currentTarget.value;
+              }}
+            />
+            <a
+              href="https://buscacepinter.correios.com.br/app/endereco/index.php"
+              class="hidden lg:block uppercase hover:underline max-lg:underline transition-all duration-500 font-poppins not-italic font-semibold text-xs underline text-[#2C376D]"
+              target="_blank"
+            >
+              Não sei meu CEP
+            </a>
+          </div>
           <div class="flex gap-[15px] items-center lg:justify-center">
             <Button
               type="submit"
@@ -122,7 +131,7 @@ function ShippingSimulation({ items }: Props) {
             </Button>
             <a
               href="https://buscacepinter.correios.com.br/app/endereco/index.php"
-              class="uppercase hover:underline max-lg:underline transition-all duration-500 font-poppins not-italic font-semibold text-xs underline text-[#2C376D]"
+              class="lg:hidden uppercase hover:underline max-lg:underline transition-all duration-500 font-poppins not-italic font-semibold text-xs underline text-[#2C376D]"
               target="_blank"
             >
               Não sei meu CEP

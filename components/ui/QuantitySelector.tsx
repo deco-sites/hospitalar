@@ -34,7 +34,7 @@ function QuantitySelector({ onChange, quantity, disabled, loading }: Props) {
     <div class="form-control">
       <div class="input-group items-center">
         <Button
-          class="bg-white !rounded-full border border-[#E5E7EB] w-7 h-7"
+          class="bg-white !rounded-full border border-[#E5E7EB] w-7 h-7 lg:flex lg:items-center lg:justify-center lg:border-none"
           onClick={decrement}
           disabled={disabled}
           loading={loading}
@@ -58,7 +58,7 @@ function QuantitySelector({ onChange, quantity, disabled, loading }: Props) {
           onBlur={(e) => onChange?.(e.currentTarget.valueAsNumber)}
         />
         <Button
-          class="bg-white !rounded-full border border-[#E5E7EB] w-7 h-7"
+          class="bg-white !rounded-full border border-[#E5E7EB] w-7 h-7 lg:flex lg:items-center lg:justify-center lg:border-none"
           onClick={increment}
           disabled={disabled}
           loading={loading}
