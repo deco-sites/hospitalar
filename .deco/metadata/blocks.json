@@ -1,1 +1,701 @@
-{"/.deco/blocks/minha%20colecao%20boladona.json":{"blockType":"loaders","__resolveType":"deco-sites/std/loaders/vtex/intelligentSearch/productList.ts"},"/.deco/blocks/pages-mynew%20page-5c9a2a96da64.json":{"name":"Saiba Mais/Coleta de sangue venoso passo a passo","path":"/i/coleta-de-sangue-venoso-passo-a-passo ","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-homet10402-0c290b2e0643.json":{"name":"Home t10402","path":"/home-t10402","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Footer%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Footer/Footer.tsx"},"/.deco/blocks/pages-mynew%20page-d320065c639b.json":{"name":"Institucional/Política de privacidade","path":"/i/politica-de-privacidade","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Home.json":{"name":"Home","path":"/","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/LinkTree%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Links/LinkTree.tsx"},"/.deco/blocks/Institutional%20Global.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/Friday-Campaign.json":{"blockType":"matchers","__resolveType":"$live/matchers/MatchCron.ts"},"/.deco/blocks/Product%20Page.json":{"name":"Product page","path":"/:slug/p","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Natal%202023.json":{"blockType":"matchers","__resolveType":"$live/matchers/MatchDate.ts"},"/.deco/blocks/Colecao%20137%20-%20Casacos.json":{"blockType":"loaders","__resolveType":"deco-sites/std/loaders/vtex/intelligentSearch/productList.ts"},"/.deco/blocks/pages-Outlet-761178.json":{"name":"Outlet","path":"/outlet","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/FAQ%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Content/Faq.tsx"},"/.deco/blocks/pages-buscavazia-f14a67773d9e.json":{"name":"Busca vazia ","path":"/buscavazia","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Cookie%20Consent%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Miscellaneous/CookieConsent.tsx"},"/.deco/blocks/pages-mynew%20page-2638bcbefc5d.json":{"name":"Institucional/Politica de troca e devolução","path":"/i/politica-de-troca-e-devolucao","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Newsletter%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"/.deco/blocks/SearchResults%20Global.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/Luxury.json":{"blockType":"sections","__resolveType":"site/sections/Theme/Theme.tsx"},"/.deco/blocks/Fashion%20theme.json":{"blockType":"sections","__resolveType":"site/sections/Theme/Theme.tsx"},"/.deco/blocks/pages-searchpage-f5ee23444cb9.json":{"name":"Search page","path":"/busca","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Header%20Global%20V2.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/Newsletter%20-%2005.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"/.deco/blocks/pages-mynew%20page-1a2f9678ad22.json":{"name":"SaibaMais/Tubos para coleta de sangue tem tampa colorida","path":"/i/tubos-para-coleta-de-sangue-tem-tampa-colorida","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Logos%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Content/Logos.tsx"},"/.deco/blocks/%20Home%20-%20Carousel.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/pages-equipamentosblack-4a0b61c6cd41.json":{"name":"Equipamentos  Black","path":"/equipamentos-black","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Footer%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Footer/Footer.tsx"},"/.deco/blocks/pages-mynew%20page-9659e332a515.json":{"name":"Saiba Mais/Complexo B injetável uso hospitalar","path":"/i/complexo-b-injetavel-uso-hospitalar","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Fun.json":{"blockType":"sections","__resolveType":"site/sections/Theme/Theme.tsx"},"/.deco/blocks/%20Categorias%20-%20ImageGallery.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/Footer%20-%2004.json":{"blockType":"sections","__resolveType":"site/sections/Footer/Footer.tsx"},"/.deco/blocks/%20Sobre%20a%20loja%20-%20InfoCard.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/test1.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/NewsletterModal.NuncaPerdi.tsx"},"/.deco/blocks/pages-util%C3%ADdadesm%C3%A9dicas-84d4f884e4c3.json":{"name":"Utilídades Médicas","path":"/utilidades-medicas-black","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Newsletter%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"/.deco/blocks/Header%20Global.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/Carousel%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Images/Carousel.tsx"},"/.deco/blocks/categoryBreadcrumb.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/pages-comocomprar-7a18cf448252.json":{"name":"Como comprar","path":"/i/como-comprar","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Halloween.json":{"blockType":"sections","__resolveType":"site/sections/Theme/Theme.tsx"},"/.deco/blocks/pages-mynew%20page-dc081e2879e8.json":{"name":"Saiba Mais/Coleta de sangue passo a passo","path":"/i/coleta-de-sangue-passo-a-passo","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-mynew%20page-ed36b3c3ceba.json":{"name":"Saiba Mais/Pomada Xilocaína para que serve","path":"/i/pomada-xilocaina-para-que-serve","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-mynew%20page-8396835b2b9c.json":{"name":"Saiba Mais/Xilocaína e lidocaína são o mesmo medicamento","path":"/i/xilocaina-e-lidocaina-sao-o-mesmo-medicamento","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Default%20-%20Product%20Details.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/decohub%40v0.json":{"blockType":"apps","__resolveType":"site/apps/decohub.ts"},"/.deco/blocks/Footer%20Global.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/Image%20Gallery%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Images/ImageGallery.tsx"},"/.deco/blocks/analytics%40v1.json":{"blockType":"apps","__resolveType":"decohub/apps/analytics.ts"},"/.deco/blocks/Product%20Detail%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductDetails.tsx"},"/.deco/blocks/pages-mynew%20page-e5d964c0e6c4.json":{"name":"Saiba Mais/Ceftriaxona injetável: como diluir e administrar","path":"/i/ceftriaxona-injetavel-como-diluir-e-administrar","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/FAQ%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Content/Faq.tsx"},"/.deco/blocks/pages-mynew%20page-57eecccb92cf.json":{"name":"Saiba Mais/Cateter intravenoso conheça os tipos","path":"/i/cateter-intravenoso-conheca-os-tipos","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Product%20Shelf%20-%2005.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/.%2Froutes%2F_middleware.ts.json":{"blockType":"loaders","__resolveType":"$live/loaders/state.ts"},"/.deco/blocks/pages-Outlet3-819393.json":{"name":"Outlet3","path":"/outlet3","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Categories.json":{"name":"Categories","path":"/*","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-mynew%20page-ff5520a60e96.json":{"name":"Saiba Mais/Sulfato de terbutalina como administrar","path":"/i/sulfato-de-terbutalina-como-administrar ","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Aside%20Menu%20Global.json":{"blockType":"sections","__resolveType":"site/sections/Institutional/AsideMenu.tsx"},"/.deco/blocks/pages-mynew%20page-c8d1384562cb.json":{"name":"Institucional/Empresa","path":"/i/empresa","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Image%20Gallery%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Images/ImageGallery.tsx"},"/.deco/blocks/Newsletter%20-%2004.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"/.deco/blocks/nossas%20redes%20sociais.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/Campaign%20Timer%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Miscellaneous/CampaignTimer.tsx"},"/.deco/blocks/Header%20Global%20-%20Variants.json":{"blockType":"flags","__resolveType":"website/flags/multivariate/section.ts"},"/.deco/blocks/Product%20Shelf%20-%2004.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/vtex_proxy.json":{"blockType":"flags","__resolveType":"$live/flags/audience.ts"},"/.deco/blocks/pages-mynew%20page-a13285a3108a.json":{"name":"saiba mais/USO DA SERINGA DESCARTÁVEL EM AMBIENTE HOSPITALAR","path":"/i/uso-da-seringa-descartavel-em-ambiente-hospitalar","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Testimonials%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Content/Testimonials.tsx"},"/.deco/blocks/Product%20Shelf%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/bf-footer.json":{"blockType":"flags","__resolveType":"website/flags/multivariate/section.ts"},"/.deco/blocks/Footer%20-%2005.json":{"blockType":"sections","__resolveType":"site/sections/Footer/Footer.tsx"},"/.deco/blocks/Campaign%20Timer%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Miscellaneous/CampaignTimer.tsx"},"/.deco/blocks/pages-mynew%20page-7a51703adb81.json":{"name":"Saiba Mais/Como medir febre com termometro digital","path":"/i/como-medir-febre-com-termometro-digital","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-mynew%20page-514a1b3b7670.json":{"name":"Institucional/Saiba Mais","path":"/i/saiba-mais","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Benefits%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Content/Benefits.tsx"},"/.deco/blocks/pages-mynew%20page-913cb89c4b2b.json":{"name":"Saiba Mais/Hidrocortisona diluição e posologia","path":"/i/hidrocortisona-diluicao-e-posologia","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/%20Nossas%20redes%20sociais%20-%20InfoCard%2FImageGallery.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/pages-mynew%20page-11909af5587c.json":{"name":"Saiba Mais/Sulfato de magnésio: para que serve e como administrar","path":"/i/sulfato-de-magnesio-para-que-serve","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Beneficios.json":{"blockType":"sections","__resolveType":"site/sections/Content/CustomBefefits.tsx"},"/.deco/blocks/pages-mynew%20page-c0a758266101.json":{"name":"Saiba Mais/Cetoprofeno injetável como aplicar","path":"/i/cetoprofeno-injetavel-como-aplicar","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-mynew%20page-b06b200ad673.json":{"name":"Saiba Mais/Sonda hospitalar quais os tipos","path":"/i/sonda-hospitalar-quais-os-tipos","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/%20Os%20mais%20vendidos%20-%20ProductShelf.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/Product%20Shelf%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/pages-institucional-7a0e4ac4991e.json":{"name":"Institucional","path":"/i","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-mynew%20page-9a0d976e5d8e.json":{"name":"Saiba Mais/Pomada Xilocaina principais usos","path":"/i/pomada-xilocaina-principais-usos","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-blackfriday-de8e4c1c1486.json":{"name":"Black Friday","path":"/black-friday","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/.%2Froutes%2F%5B...catchall%5D.tsx.json":{"blockType":"handlers","__resolveType":"$live/handlers/routesSelection.ts"},"/.deco/blocks/Newsletter%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"/.deco/blocks/deco-records.json":{"blockType":"apps","__resolveType":"site/apps/deco/records.ts"},"/.deco/blocks/everyone.json":{"blockType":"flags","__resolveType":"$live/flags/everyone.ts"},"/.deco/blocks/Not%20Found%20Global.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/Default%20-%20Design%20System.json":{"blockType":"sections","__resolveType":"site/sections/DesignSystem/DesignSystem.tsx"},"/.deco/blocks/pages-mynew%20page-01d3ed691b55.json":{"name":"Saiba Mais/Propofol anestésico intravenoso efeitos colaterais","path":"/i/propofol-anestesico-intravenoso-efeitos-colaterais","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/vtex_proxy_audience.json":{"blockType":"flags","__resolveType":"$live/flags/audience.ts"},"/.deco/blocks/Product%20Shelf%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/Category%20Banner%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Category/CategoryBanner.tsx"},"/.deco/blocks/pages-descartaveisbalck-bcbaabe00cb5.json":{"name":"Descartaveis Balck","path":"/descartaveis-black","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-pdp-teste-8db42dd6f688.json":{"name":"pdp - teste ","path":"/:slug/p/2","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-mynew%20page-a1289a96ca6b.json":{"name":"saiba mais/AS FACILIDADES DO APARELHO DE PRESSÃO DIGITAL G-TECH","path":"/i/facilidades-do-aparelho-de-pressao-digital-g-tech","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-mynew%20page-44f85fa0bb33.json":{"name":"Saiba Mais/Hidrocortisona injetável: o que é e para que serve","path":"/i/hidrocortisona-injetavel-o-que-e-para-que-serve","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-medicamentoblack-3bf0007c43aa.json":{"name":"Medicamento Black","path":"/medicamentos-black","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Flash-Promotion.json":{"blockType":"matchers","__resolveType":"$live/matchers/MatchCron.ts"},"/.deco/blocks/pages-documenta%C3%A7%C3%A3o-db93a7b899d3.json":{"name":"Documentação","path":"/i/documentacao","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/hospitalar-site.json":{"blockType":"apps","__resolveType":"site/apps/site.ts"},"/.deco/blocks/Header%20Variantes.json":{"blockType":"flags","__resolveType":"website/flags/multivariate/section.ts"},"/.deco/blocks/pages-homehomolog-f1d5903ba0ee.json":{"name":"Home Homolog","path":"/home-homolog","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/bytoggeter.json":{"blockType":"sections","__resolveType":"site/sections/Product/ShopTogether.tsx"},"/.deco/blocks/pages-account-4173e01d589b.json":{"name":"Account","path":"/my-account","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Testimonials%20-%2002.json":{"blockType":"sections","__resolveType":"site/sections/Content/Testimonials.tsx"},"/.deco/blocks/150%20-%20Instrumental.json":{"blockType":"loaders","__resolveType":"deco-sites/std/loaders/vtex/intelligentSearch/productList.ts"},"/.deco/blocks/site.json":null,"/.deco/blocks/Cookie%20Consent%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Miscellaneous/CookieConsent.tsx"},"/.deco/blocks/pages-orders-464c3674848d.json":{"name":"Orders","path":"/my-account/orders","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Shoppable%20Banner%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Images/ShoppableBanner.tsx"},"/.deco/blocks/pages-teste-4fc0b786914c.json":{"name":"teste","path":"/example-path","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/SEODefault.json":{"blockType":"sections","__resolveType":"deco-sites/std/sections/SEO.tsx"},"/.deco/blocks/Banner%20Grid%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Images/BannerGrid.tsx"},"/.deco/blocks/Shoes%20-%20BannerGrid.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/Category%20List%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Category/CategoryList.tsx"},"/.deco/blocks/Produtos%20relacionados%20-%20ProductShelf.json":{"blockType":"sections","__resolveType":"site/sections/Container.tsx"},"/.deco/blocks/Newsletter%20-%2006.json":{"blockType":"sections","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"/.deco/blocks/Cookie%20Consent%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Miscellaneous/CookieConsent.tsx"},"/.deco/blocks/pages-Outlet4-90235.json":{"name":"Outlet4","path":"/outlet4","blockType":"pages","__resolveType":"website/pages/Page.tsx"},"/.deco/blocks/Benefits%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Content/Benefits.tsx"},"/.deco/blocks/slide%20com%202%20linhas.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/Header%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Header/Header.tsx"},"/.deco/blocks/Lemonade.json":{"blockType":"sections","__resolveType":"site/sections/Theme/Theme.tsx"},"/.deco/blocks/pages-mynew%20page-1bcb20bad643.json":{"name":"Saiba Mais/Xilocaina para tatuagem pode usar","path":"/i/xilocaina-para-tatuagem-pode-usar","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Image%20Gallery%20-%2004.json":{"blockType":"sections","__resolveType":"site/sections/Images/ImageGallery.tsx"},"/.deco/blocks/pages-estetosc%C3%B3piosspirit-4d5f05bbc973.json":{"name":"Estetoscópios Spirit","path":"/estetoscopios-spirit","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/pages-mynew%20page-1ff08c8bd105.json":{"name":"Saiba Mais/Scalp e cateter entenda a diferença entre eles","path":"/i/scalp-e-cateter-entenda-a-diferenca-entre-eles","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Footer%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Footer/Footer.tsx"},"/.deco/blocks/pages-mynew%20page-5b9550cb8820.json":{"name":"Institucional/Contato","path":"/i/contato","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Benefits%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Content/Benefits.tsx"},"/.deco/blocks/pages-mynew%20page-040d170175e0.json":{"name":"Saiba Mais/Tipos de fios de sutura","path":"/i/tipos-de-fios-de-sutura","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Colecao%20139%20-%20Camisas.json":{"blockType":"loaders","__resolveType":"deco-sites/std/loaders/vtex/intelligentSearch/productList.ts"},"/.deco/blocks/Image%20Gallery%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Images/ImageGallery.tsx"},"/.deco/blocks/pages-mynew%20page-fea78534951d.json":{"name":"Institucional/Formas de pagamento e envio","path":"/i/formas-de-pagamento-e-envio","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Teste.json":{"blockType":"matchers","__resolveType":"website/matchers/random.ts"},"/.deco/blocks/pages-wishlist-54aa0c8ca25f.json":{"name":"wishlist","path":"/wishlist","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/Product%20Shelf%20-%2006.json":{"blockType":"sections","__resolveType":"site/sections/Product/ProductShelf.tsx"},"/.deco/blocks/Shortcuts%20-%2001.json":{"blockType":"sections","__resolveType":"site/sections/Links/Shortcuts.tsx"},"/.deco/blocks/analytics.json":{"blockType":"sections","__resolveType":"deco-sites/std/sections/Analytics.tsx"},"/.deco/blocks/teste%20A%2FB.json":{"blockType":"matchers","__resolveType":"$live/matchers/MatchAlways.ts"},"/.deco/blocks/FAQ%20-%2003.json":{"blockType":"sections","__resolveType":"site/sections/Content/Faq.tsx"},"/.deco/blocks/pages-mynew%20page-e2a54d97d911.json":{"name":"Saiba Mais/Dieta enteral por sonda hospitalar como funciona","path":"/i/dieta-enteral-por-sonda-hospitalar-como-funciona","blockType":"pages","__resolveType":"$live/pages/LivePage.tsx"},"/.deco/blocks/bf-header.json":{"blockType":"flags","__resolveType":"website/flags/multivariate/section.ts"}}
+{
+    "/.deco/blocks/minha%20colecao%20boladona.json": {
+        "blockType": "loaders",
+        "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts"
+    },
+    "/.deco/blocks/pages-mynew%20page-5c9a2a96da64.json": {
+        "name": "Saiba Mais/Coleta de sangue venoso passo a passo",
+        "path": "/i/coleta-de-sangue-venoso-passo-a-passo ",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-homet10402-0c290b2e0643.json": {
+        "name": "Home t10402",
+        "path": "/home-t10402",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Footer%20-%2002.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Footer/Footer.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-d320065c639b.json": {
+        "name": "Institucional/Política de privacidade",
+        "path": "/i/politica-de-privacidade",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Home.json": {
+        "name": "Home",
+        "path": "/",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/LinkTree%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Links/LinkTree.tsx"
+    },
+    "/.deco/blocks/Institutional%20Global.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/Friday-Campaign.json": {
+        "blockType": "matchers",
+        "__resolveType": "$live/matchers/MatchCron.ts"
+    },
+    "/.deco/blocks/Product%20Page.json": {
+        "name": "Product page",
+        "path": "/:slug/p",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Natal%202023.json": {
+        "blockType": "matchers",
+        "__resolveType": "$live/matchers/MatchDate.ts"
+    },
+    "/.deco/blocks/Colecao%20137%20-%20Casacos.json": {
+        "blockType": "loaders",
+        "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts"
+    },
+    "/.deco/blocks/pages-Outlet-761178.json": {
+        "name": "Outlet",
+        "path": "/outlet",
+        "blockType": "pages",
+        "__resolveType": "website/pages/Page.tsx"
+    },
+    "/.deco/blocks/FAQ%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Content/Faq.tsx"
+    },
+    "/.deco/blocks/pages-buscavazia-f14a67773d9e.json": {
+        "name": "Busca vazia ",
+        "path": "/buscavazia",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Cookie%20Consent%20-%2002.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-2638bcbefc5d.json": {
+        "name": "Institucional/Politica de troca e devolução",
+        "path": "/i/politica-de-troca-e-devolucao",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Newsletter%20-%2002.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+    },
+    "/.deco/blocks/SearchResults%20Global.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/Luxury.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Theme/Theme.tsx"
+    },
+    "/.deco/blocks/Fashion%20theme.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Theme/Theme.tsx"
+    },
+    "/.deco/blocks/pages-searchpage-f5ee23444cb9.json": {
+        "name": "Search page",
+        "path": "/busca",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Header%20Global%20V2.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/Newsletter%20-%2005.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-1a2f9678ad22.json": {
+        "name": "SaibaMais/Tubos para coleta de sangue tem tampa colorida",
+        "path": "/i/tubos-para-coleta-de-sangue-tem-tampa-colorida",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Logos%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Content/Logos.tsx"
+    },
+    "/.deco/blocks/%20Home%20-%20Carousel.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/pages-equipamentosblack-4a0b61c6cd41.json": {
+        "name": "Equipamentos  Black",
+        "path": "/equipamentos-black",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Footer%20-%2003.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Footer/Footer.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-9659e332a515.json": {
+        "name": "Saiba Mais/Complexo B injetável uso hospitalar",
+        "path": "/i/complexo-b-injetavel-uso-hospitalar",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Fun.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Theme/Theme.tsx"
+    },
+    "/.deco/blocks/%20Categorias%20-%20ImageGallery.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/Footer%20-%2004.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Footer/Footer.tsx"
+    },
+    "/.deco/blocks/%20Sobre%20a%20loja%20-%20InfoCard.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/test1.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Newsletter/NewsletterModal.NuncaPerdi.tsx"
+    },
+    "/.deco/blocks/pages-util%C3%ADdadesm%C3%A9dicas-84d4f884e4c3.json": {
+        "name": "Utilídades Médicas",
+        "path": "/utilidades-medicas-black",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Newsletter%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+    },
+    "/.deco/blocks/Header%20Global.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/Carousel%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Images/Carousel.tsx"
+    },
+    "/.deco/blocks/categoryBreadcrumb.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/pages-comocomprar-7a18cf448252.json": {
+        "name": "Como comprar",
+        "path": "/i/como-comprar",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Halloween.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Theme/Theme.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-dc081e2879e8.json": {
+        "name": "Saiba Mais/Coleta de sangue passo a passo",
+        "path": "/i/coleta-de-sangue-passo-a-passo",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-ed36b3c3ceba.json": {
+        "name": "Saiba Mais/Pomada Xilocaína para que serve",
+        "path": "/i/pomada-xilocaina-para-que-serve",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-8396835b2b9c.json": {
+        "name": "Saiba Mais/Xilocaína e lidocaína são o mesmo medicamento",
+        "path": "/i/xilocaina-e-lidocaina-sao-o-mesmo-medicamento",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Default%20-%20Product%20Details.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/decohub%40v0.json": {
+        "blockType": "apps",
+        "__resolveType": "site/apps/decohub.ts"
+    },
+    "/.deco/blocks/Footer%20Global.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/Image%20Gallery%20-%2002.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Images/ImageGallery.tsx"
+    },
+    "/.deco/blocks/analytics%40v1.json": {
+        "blockType": "apps",
+        "__resolveType": "decohub/apps/analytics.ts"
+    },
+    "/.deco/blocks/Product%20Detail%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Product/ProductDetails.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-e5d964c0e6c4.json": {
+        "name": "Saiba Mais/Ceftriaxona injetável: como diluir e administrar",
+        "path": "/i/ceftriaxona-injetavel-como-diluir-e-administrar",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/FAQ%20-%2002.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Content/Faq.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-57eecccb92cf.json": {
+        "name": "Saiba Mais/Cateter intravenoso conheça os tipos",
+        "path": "/i/cateter-intravenoso-conheca-os-tipos",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Product%20Shelf%20-%2005.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Product/ProductShelf.tsx"
+    },
+    "/.deco/blocks/.%2Froutes%2F_middleware.ts.json": {
+        "blockType": "loaders",
+        "__resolveType": "$live/loaders/state.ts"
+    },
+    "/.deco/blocks/pages-Outlet3-819393.json": {
+        "name": "Outlet3",
+        "path": "/outlet3",
+        "blockType": "pages",
+        "__resolveType": "website/pages/Page.tsx"
+    },
+    "/.deco/blocks/Categories.json": {
+        "name": "Categories",
+        "path": "/*",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-ff5520a60e96.json": {
+        "name": "Saiba Mais/Sulfato de terbutalina como administrar",
+        "path": "/i/sulfato-de-terbutalina-como-administrar ",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Aside%20Menu%20Global.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Institutional/AsideMenu.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-c8d1384562cb.json": {
+        "name": "Institucional/Empresa",
+        "path": "/i/empresa",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Image%20Gallery%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Images/ImageGallery.tsx"
+    },
+    "/.deco/blocks/Newsletter%20-%2004.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+    },
+    "/.deco/blocks/nossas%20redes%20sociais.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/Campaign%20Timer%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx"
+    },
+    "/.deco/blocks/Header%20Global%20-%20Variants.json": {
+        "blockType": "flags",
+        "__resolveType": "website/flags/multivariate/section.ts"
+    },
+    "/.deco/blocks/Product%20Shelf%20-%2004.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Product/ProductShelf.tsx"
+    },
+    "/.deco/blocks/vtex_proxy.json": {
+        "blockType": "flags",
+        "__resolveType": "$live/flags/audience.ts"
+    },
+    "/.deco/blocks/pages-mynew%20page-a13285a3108a.json": {
+        "name": "saiba mais/USO DA SERINGA DESCARTÁVEL EM AMBIENTE HOSPITALAR",
+        "path": "/i/uso-da-seringa-descartavel-em-ambiente-hospitalar",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Testimonials%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Content/Testimonials.tsx"
+    },
+    "/.deco/blocks/Product%20Shelf%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Product/ProductShelf.tsx"
+    },
+    "/.deco/blocks/bf-footer.json": {
+        "blockType": "flags",
+        "__resolveType": "website/flags/multivariate/section.ts"
+    },
+    "/.deco/blocks/Footer%20-%2005.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Footer/Footer.tsx"
+    },
+    "/.deco/blocks/Campaign%20Timer%20-%2002.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-7a51703adb81.json": {
+        "name": "Saiba Mais/Como medir febre com termometro digital",
+        "path": "/i/como-medir-febre-com-termometro-digital",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-514a1b3b7670.json": {
+        "name": "Institucional/Saiba Mais",
+        "path": "/i/saiba-mais",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Benefits%20-%2002.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Content/Benefits.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-913cb89c4b2b.json": {
+        "name": "Saiba Mais/Hidrocortisona diluição e posologia",
+        "path": "/i/hidrocortisona-diluicao-e-posologia",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/%20Nossas%20redes%20sociais%20-%20InfoCard%2FImageGallery.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-11909af5587c.json": {
+        "name": "Saiba Mais/Sulfato de magnésio: para que serve e como administrar",
+        "path": "/i/sulfato-de-magnesio-para-que-serve",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Beneficios.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Content/CustomBefefits.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-c0a758266101.json": {
+        "name": "Saiba Mais/Cetoprofeno injetável como aplicar",
+        "path": "/i/cetoprofeno-injetavel-como-aplicar",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-b06b200ad673.json": {
+        "name": "Saiba Mais/Sonda hospitalar quais os tipos",
+        "path": "/i/sonda-hospitalar-quais-os-tipos",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/%20Os%20mais%20vendidos%20-%20ProductShelf.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/Product%20Shelf%20-%2003.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Product/ProductShelf.tsx"
+    },
+    "/.deco/blocks/pages-institucional-7a0e4ac4991e.json": {
+        "name": "Institucional",
+        "path": "/i",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-9a0d976e5d8e.json": {
+        "name": "Saiba Mais/Pomada Xilocaina principais usos",
+        "path": "/i/pomada-xilocaina-principais-usos",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-blackfriday-de8e4c1c1486.json": {
+        "name": "Black Friday",
+        "path": "/black-friday",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/.%2Froutes%2F%5B...catchall%5D.tsx.json": {
+        "blockType": "handlers",
+        "__resolveType": "$live/handlers/routesSelection.ts"
+    },
+    "/.deco/blocks/Newsletter%20-%2003.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+    },
+    "/.deco/blocks/deco-records.json": {
+        "blockType": "apps",
+        "__resolveType": "site/apps/deco/records.ts"
+    },
+    "/.deco/blocks/everyone.json": {
+        "blockType": "flags",
+        "__resolveType": "$live/flags/everyone.ts"
+    },
+    "/.deco/blocks/Not%20Found%20Global.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/Default%20-%20Design%20System.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/DesignSystem/DesignSystem.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-01d3ed691b55.json": {
+        "name": "Saiba Mais/Propofol anestésico intravenoso efeitos colaterais",
+        "path": "/i/propofol-anestesico-intravenoso-efeitos-colaterais",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/vtex_proxy_audience.json": {
+        "blockType": "flags",
+        "__resolveType": "$live/flags/audience.ts"
+    },
+    "/.deco/blocks/Product%20Shelf%20-%2002.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Product/ProductShelf.tsx"
+    },
+    "/.deco/blocks/Category%20Banner%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+    },
+    "/.deco/blocks/pages-descartaveisbalck-bcbaabe00cb5.json": {
+        "name": "Descartaveis Balck",
+        "path": "/descartaveis-black",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-pdp-teste-8db42dd6f688.json": {
+        "name": "pdp - teste ",
+        "path": "/:slug/p/2",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-a1289a96ca6b.json": {
+        "name": "saiba mais/AS FACILIDADES DO APARELHO DE PRESSÃO DIGITAL G-TECH",
+        "path": "/i/facilidades-do-aparelho-de-pressao-digital-g-tech",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-44f85fa0bb33.json": {
+        "name": "Saiba Mais/Hidrocortisona injetável: o que é e para que serve",
+        "path": "/i/hidrocortisona-injetavel-o-que-e-para-que-serve",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-medicamentoblack-3bf0007c43aa.json": {
+        "name": "Medicamento Black",
+        "path": "/medicamentos-black",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Flash-Promotion.json": {
+        "blockType": "matchers",
+        "__resolveType": "$live/matchers/MatchCron.ts"
+    },
+    "/.deco/blocks/pages-documenta%C3%A7%C3%A3o-db93a7b899d3.json": {
+        "name": "Documentação",
+        "path": "/i/documentacao",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/hospitalar-site.json": {
+        "blockType": "apps",
+        "__resolveType": "site/apps/site.ts"
+    },
+    "/.deco/blocks/Header%20Variantes.json": {
+        "blockType": "flags",
+        "__resolveType": "website/flags/multivariate/section.ts"
+    },
+    "/.deco/blocks/pages-homehomolog-f1d5903ba0ee.json": {
+        "name": "Home Homolog",
+        "path": "/home-homolog",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/bytoggeter.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Product/ShopTogether.tsx"
+    },
+    "/.deco/blocks/pages-account-4173e01d589b.json": {
+        "name": "Account",
+        "path": "/my-account",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Testimonials%20-%2002.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Content/Testimonials.tsx"
+    },
+    "/.deco/blocks/150%20-%20Instrumental.json": {
+        "blockType": "loaders",
+        "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts"
+    },
+    "/.deco/blocks/site.json": null,
+    "/.deco/blocks/Cookie%20Consent%20-%2003.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
+    },
+    "/.deco/blocks/pages-orders-464c3674848d.json": {
+        "name": "Orders",
+        "path": "/my-account/orders",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Shoppable%20Banner%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Images/ShoppableBanner.tsx"
+    },
+    "/.deco/blocks/pages-teste-4fc0b786914c.json": {
+        "name": "teste",
+        "path": "/example-path",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/SEODefault.json": {
+        "blockType": "sections",
+        "__resolveType": "deco-sites/std/sections/SEO.tsx"
+    },
+    "/.deco/blocks/Banner%20Grid%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Images/BannerGrid.tsx"
+    },
+    "/.deco/blocks/Shoes%20-%20BannerGrid.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/Category%20List%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Category/CategoryList.tsx"
+    },
+    "/.deco/blocks/Produtos%20relacionados%20-%20ProductShelf.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Container.tsx"
+    },
+    "/.deco/blocks/Newsletter%20-%2006.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+    },
+    "/.deco/blocks/Cookie%20Consent%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Miscellaneous/CookieConsent.tsx"
+    },
+    "/.deco/blocks/pages-Outlet4-90235.json": {
+        "name": "Outlet4",
+        "path": "/outlet4",
+        "blockType": "pages",
+        "__resolveType": "website/pages/Page.tsx"
+    },
+    "/.deco/blocks/Benefits%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Content/Benefits.tsx"
+    },
+    "/.deco/blocks/slide%20com%202%20linhas.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Product/ProductShelf.tsx"
+    },
+    "/.deco/blocks/Header%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Header/Header.tsx"
+    },
+    "/.deco/blocks/Lemonade.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Theme/Theme.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-1bcb20bad643.json": {
+        "name": "Saiba Mais/Xilocaina para tatuagem pode usar",
+        "path": "/i/xilocaina-para-tatuagem-pode-usar",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Image%20Gallery%20-%2004.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Images/ImageGallery.tsx"
+    },
+    "/.deco/blocks/pages-estetosc%C3%B3piosspirit-4d5f05bbc973.json": {
+        "name": "Estetoscópios Spirit",
+        "path": "/estetoscopios-spirit",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-1ff08c8bd105.json": {
+        "name": "Saiba Mais/Scalp e cateter entenda a diferença entre eles",
+        "path": "/i/scalp-e-cateter-entenda-a-diferenca-entre-eles",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Footer%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Footer/Footer.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-5b9550cb8820.json": {
+        "name": "Institucional/Contato",
+        "path": "/i/contato",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Benefits%20-%2003.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Content/Benefits.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-040d170175e0.json": {
+        "name": "Saiba Mais/Tipos de fios de sutura",
+        "path": "/i/tipos-de-fios-de-sutura",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Colecao%20139%20-%20Camisas.json": {
+        "blockType": "loaders",
+        "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts"
+    },
+    "/.deco/blocks/Image%20Gallery%20-%2003.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Images/ImageGallery.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-fea78534951d.json": {
+        "name": "Institucional/Formas de pagamento e envio",
+        "path": "/i/formas-de-pagamento-e-envio",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Teste.json": {
+        "blockType": "matchers",
+        "__resolveType": "website/matchers/random.ts"
+    },
+    "/.deco/blocks/pages-wishlist-54aa0c8ca25f.json": {
+        "name": "wishlist",
+        "path": "/wishlist",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/Product%20Shelf%20-%2006.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Product/ProductShelf.tsx"
+    },
+    "/.deco/blocks/Shortcuts%20-%2001.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Links/Shortcuts.tsx"
+    },
+    "/.deco/blocks/analytics.json": {
+        "blockType": "sections",
+        "__resolveType": "deco-sites/std/sections/Analytics.tsx"
+    },
+    "/.deco/blocks/teste%20A%2FB.json": {
+        "blockType": "matchers",
+        "__resolveType": "$live/matchers/MatchAlways.ts"
+    },
+    "/.deco/blocks/FAQ%20-%2003.json": {
+        "blockType": "sections",
+        "__resolveType": "site/sections/Content/Faq.tsx"
+    },
+    "/.deco/blocks/pages-mynew%20page-e2a54d97d911.json": {
+        "name": "Saiba Mais/Dieta enteral por sonda hospitalar como funciona",
+        "path": "/i/dieta-enteral-por-sonda-hospitalar-como-funciona",
+        "blockType": "pages",
+        "__resolveType": "$live/pages/LivePage.tsx"
+    },
+    "/.deco/blocks/bf-header.json": {
+        "blockType": "flags",
+        "__resolveType": "website/flags/multivariate/section.ts"
+    }
+}
