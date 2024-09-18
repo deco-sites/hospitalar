@@ -29,8 +29,7 @@
       },
       "spacing": 10,
       "withContainer": true,
-      "verticalSpacing": "bottom",
-      "backgroundColor": "#FAFAFB"
+      "verticalSpacing": "bottom"
     }
   ],
   "__resolveType": "site/sections/Container.tsx",
