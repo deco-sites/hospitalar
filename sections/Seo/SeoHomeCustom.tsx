@@ -1,15 +1,13 @@
 import { AppContext } from "apps/commerce/mod.ts";
 import type { ImageWidget as Image } from "apps/admin/widgets.ts";
 import ScriptLDJson from "$store/components/seo/ScriptLDJson.tsx";
-import { SectionProps } from "deco/mod.ts";
-
+import { type SectionProps as SectionProps } from "@deco/deco";
 export interface ContactPointProps {
     telephone?: string;
     contactType?: string;
     areaServed?: string;
-    availableLanguage?: string; 
+    availableLanguage?: string;
 }
-
 export interface Props {
     /** @title Nome da Loja */
     name?: string;
@@ -22,22 +20,14 @@ export interface Props {
     /** @title Links das redes sociais */
     sameAs?: string[];
 }
-
 export function loader(props: Props, _req: Request, ctx: AppContext) {
-    const {
-        contactPoint,
-        logo,
-        name,
-        sameAs,
-        url
-    } = props;
-
+    const { contactPoint, logo, name, sameAs, url } = props;
     const ldJson = {
         "@type": "Organization",
         "name": name,
         "url": url,
         "logo": logo,
-        "contactPoint": contactPoint.map((contact)=> ({
+        "contactPoint": contactPoint.map((contact) => ({
             "@type": "ContactPoint",
             "telephone": contact.telephone,
             "contactType": contact.contactType,
@@ -45,15 +35,10 @@ export function loader(props: Props, _req: Request, ctx: AppContext) {
             "availableLanguage": contact.availableLanguage
         })),
         "sameAs": sameAs,
-    }
-
+    };
     return ldJson;
 }
-
 function SeoHomeCustom(props: SectionProps<typeof loader>) {
-    return (
-        <ScriptLDJson {...props} />
-    );
+    return (<ScriptLDJson {...props}/>);
 }
-
 export default SeoHomeCustom;

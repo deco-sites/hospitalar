@@ -3,7 +3,7 @@
 /// <reference lib="deno.ns" />
 /// <reference lib="esnext" />
 
-import plugins from "deco-sites/std/plugins/mod.ts";
+import plugins from "deco/plugins/fresh.ts";
 import partytownPlugin from "partytown/mod.ts";
 import tailwind from "./tailwind.config.ts";
 

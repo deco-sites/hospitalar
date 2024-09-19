@@ -1,1 +1,82 @@
-{"sections":[{"label":"ProductShelf","shadow":"none","section":{"title":"Produtos similares","layout":{"itemsPerPage":[{"screenWidth":425,"itemsQuantity":1},{"screenWidth":786,"itemsQuantity":2},{"screenWidth":1170,"itemsQuantity":4}],"headerAlignment":"center"},"seeMore":{"url":" ","label":" "},"products":{"slug":{"param":"slug","__resolveType":"deco-sites/std/functions/requestToParam.ts"},"count":10,"crossSelling":"whosawalsosaw","__resolveType":"deco-sites/std/loaders/vtex/legacy/relatedProductsLoader.ts"},"cardLayout":{"hide":{"skuSelector":true,"productDescription":true},"basics":{"ctaMode":"Add to Cart","ctaText":"Adicionar ao carrinho","mobileCtaText":"Adicionar ao carrinho","contentAlignment":"Center"},"imageBF":{"image":{"alt":"BF Icon","link":"#","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/4e8a62d3-c30e-402f-aca0-93eb85bdc5f1"},"label":"BF Icon"},"discount":{"label":"off","variant":"emphasis"},"onMouseOver":{"image":"Zoom image","showCta":true,"showCardShadow":true},"elementsPositions":{}},"__resolveType":"site/sections/Product/ProductShelf.tsx","showPaginationArrows":"Always"},"withContainer":true,"verticalSpacing":"none"}],"__resolveType":"site/sections/Container.tsx"}
+{
+  "sections": [
+    {
+      "label": "ProductShelf",
+      "shadow": "none",
+      "section": {
+        "title": "Produtos similares",
+        "layout": {
+          "itemsPerPage": [
+            {
+              "screenWidth": 425,
+              "itemsQuantity": 2
+            },
+            {
+              "screenWidth": 786,
+              "itemsQuantity": 2
+            },
+            {
+              "screenWidth": 1170,
+              "itemsQuantity": 4
+            },
+            {
+              "screenWidth": 1440,
+              "itemsQuantity": 4
+            }
+          ],
+          "headerAlignment": "center"
+        },
+        "seeMore": {
+          "url": " ",
+          "label": " "
+        },
+        "products": {
+          "slug": {
+            "param": "slug",
+            "__resolveType": "deco-sites/std/functions/requestToParam.ts"
+          },
+          "count": 10,
+          "crossSelling": "whosawalsosaw",
+          "__resolveType": "deco-sites/std/loaders/vtex/legacy/relatedProductsLoader.ts"
+        },
+        "cardLayout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "basics": {
+            "ctaMode": "Add to Cart",
+            "ctaText": "Adicionar ao carrinho",
+            "mobileCtaText": "Adicionar ao carrinho",
+            "contentAlignment": "Center"
+          },
+          "imageBF": {
+            "image": {
+              "alt": "BF Icon",
+              "link": "#",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/4e8a62d3-c30e-402f-aca0-93eb85bdc5f1"
+            },
+            "label": "BF Icon"
+          },
+          "discount": {
+            "label": "off",
+            "variant": "emphasis"
+          },
+          "onMouseOver": {
+            "image": "Zoom image",
+            "showCta": true,
+            "showCardShadow": true
+          },
+          "elementsPositions": {}
+        },
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "showPaginationArrows": "Never"
+      },
+      "withContainer": true,
+      "verticalSpacing": "none",
+      "backgroundColor": "#EEF1F5"
+    }
+  ],
+  "__resolveType": "site/sections/Container.tsx",
+  "isHeader": false
+}

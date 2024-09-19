@@ -317,12 +317,12 @@ function Details({
         {/* Breadcrumb */}
         <BreadcrumbProduct
           itemListElement={filteredBreadcrumbList}
-          class="!py-0 mb-6 lg:mb-[40px] lg:mt-[30px]"
+          class="mb-6 lg:mb-[40px] lg:!pt-[30px] lg:!pb-0"
           activeTitle={false}
         />
         <div
           id={id}
-          class="flex flex-col lg:flex-row gap-12 lg:justify-center"
+          class="flex flex-col pb-[46px] lg:flex-row gap-12 lg:justify-center lg:pb-[87px]"
         >
           {/* Product Images */}
           <div>

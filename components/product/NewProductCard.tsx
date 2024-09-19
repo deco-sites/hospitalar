@@ -339,7 +339,7 @@ function NewProductCard(
             </figure>
 
             {/* Prices & Name */}
-            <div class="flex-auto flex flex-col">
+            <div class="flex-auto justify-end flex flex-col">
                 {/* SKU Selector */}
                 {(!l?.elementsPositions?.skuSelector ||
                     l?.elementsPositions?.skuSelector === "Top") && (
