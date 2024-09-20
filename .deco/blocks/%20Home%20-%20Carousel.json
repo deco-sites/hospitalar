@@ -7,23 +7,6 @@
       "section": {
         "images": [
           {
-            "alt": "Dia do Cliente",
-            "action": {
-              "href": "https://materiais.hospitalardistribuidora.com.br/dia-do-cliente",
-              "variant": "primary"
-            },
-            "mobile": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/018c10c7-5dd7-4726-9352-bd0742196af6/Banner_-Hero2.png",
-              "width": 390,
-              "height": 490
-            },
-            "desktop": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/96fa36a6-afc8-42bf-a204-2182c0586e26/Banner_-Hero-(1).png",
-              "width": 1920,
-              "height": 600
-            }
-          },
-          {
             "alt": "Outlet",
             "action": {
               "href": "/outlet",
@@ -81,12 +64,12 @@
               "variant": "primary"
             },
             "mobile": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/59d263ff-ae84-457c-b968-5fbb5448eae1",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/579491e5-ddb1-4ad8-8708-cb54e300e67d/banner-hospitalar-mobile_390x490.webp",
               "width": 390,
               "height": 490
             },
             "desktop": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/5c0de4c8-31d7-4d4c-81df-aeb69e26903e",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/e3b64dfd-de87-4c60-abd6-1fd41bf23bcb/banner-hospitalar_3840x1200_WEBP.webp",
               "width": 1920,
               "height": 600
             }
