@@ -1,4 +1,4 @@
-import { useState } from "preact/hooks";
+import { useState } from "preact/compat";
 
 const DescriptionCard = ({ description, classContainer }: { description: string, classContainer?: string }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,10 @@ const DescriptionCard = ({ description, classContainer }: { description: string,
                     {(!isOpen) && <div style={{ background: "linear-gradient(to top, #FAFAFB, #FAFAFA 5%, transparent 75%)" }} class="w-full h-[150px] absolute bottom-0 left-0 z-20"></div> }
                 </div>
                 <button
-                    onClick={()=> setIsOpen(state => !state)}
+                    onClick={()=> {
+                        console.log("Entrou!")
+                        setIsOpen(state => !state)
+                    }}
                     class="font-poppins not-italic font-semibold text-xs underline uppercase text-[#2C376D] lg:text-sm"
                 >
                     { !isOpen ? "Ver descrição completa" : "Ver menos" }

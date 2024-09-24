@@ -1,4 +1,4 @@
-import { useMemo } from "preact/hooks";
+import { useMemo } from "preact/compat";
 import { ProductListingPage } from "apps/commerce/types.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 

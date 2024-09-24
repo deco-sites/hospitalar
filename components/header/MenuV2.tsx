@@ -144,7 +144,7 @@ function Menu({ items, login }: Props) {
           <a
             href={href}
             target={target}
-            class="btn btn-secondary btn-rounded h-10 min-h-10 min-h-[40px] capitalize font-bold text-xs min-w-[140px]  w-full"
+            class="btn btn-secondary btn-rounded h-10 min-h-[40px] capitalize font-bold text-xs min-w-[140px]  w-full"
           >
             {label}
           </a>

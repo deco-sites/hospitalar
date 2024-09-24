@@ -1,4 +1,4 @@
-import { useEffect } from "preact/hooks";
+import { useEffect } from "preact/compat";
 
 export default function Debug<T,>(props: T) {
   useEffect(() => {

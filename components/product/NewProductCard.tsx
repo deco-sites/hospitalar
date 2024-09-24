@@ -317,15 +317,6 @@ function NewProductCard(
                         </div>
                     )}
                 </a>
-                {listPrice2 !== price2 && (
-                    <DiscountBadge
-                        price={price2}
-                        listPrice={listPrice2}
-                        label={l?.discount?.label}
-                        variant={l?.discount?.variant}
-                    />
-                )}
-
 
                 {/* Free Shipping */}
 
@@ -339,7 +330,16 @@ function NewProductCard(
             </figure>
 
             {/* Prices & Name */}
-            <div class="flex-auto justify-end flex flex-col">
+            <div class="flex-auto justify-end flex flex-col relative">
+                {listPrice2 !== price2 && (
+                    <DiscountBadge
+                        price={price2}
+                        listPrice={listPrice2}
+                        label={l?.discount?.label}
+                        variant={l?.discount?.variant}
+                        className="lg:!-top-[20px] lg:!-left-[12px] !top-[20px]"
+                    />
+                )}
                 {/* SKU Selector */}
                 {(!l?.elementsPositions?.skuSelector ||
                     l?.elementsPositions?.skuSelector === "Top") && (

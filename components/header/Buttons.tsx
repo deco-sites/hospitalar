@@ -3,7 +3,6 @@ import Icon from "$store/components/ui/Icon.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
-import { Person } from "apps/commerce/types.ts";
 import { LoginSetting } from "site/components/header/HeaderLayoutV2.tsx";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
 

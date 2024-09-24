@@ -17,9 +17,17 @@ const ProductInfo = () => {
           </h2>
         </div>
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-3">
-          <div class="sm:w-[77%] w-full">
-            <p className="font-poppins not-italic font-normal text-xs text-[#C31212] text-left">
-              Este produto é restrito e exige o envio de documentação para a conclusão da compra. <br/> <a
+          <div class="w-full">
+            <p className="font-poppins not-italic font-normal text-xs text-[#C31212] text-left lg:hidden">
+              Este produto é restrito e exige o envio de <br /> documentação para a conclusão da compra. <br/> <a
+            href="/i/como-comprar"
+            alt="Institucional"
+            class="font-poppins not-italic font-bold underline"
+          >Clique aqui</a> para mais detalhes e instruções.
+            </p>
+
+            <p className="hidden font-poppins not-italic font-normal text-[11px] text-[#C31212] text-left lg:block">
+              Este produto é restrito e exige o envio de documentação para a <b /> conclusão da compra.  <a
             href="/i/como-comprar"
             alt="Institucional"
             class="font-poppins not-italic font-bold underline"

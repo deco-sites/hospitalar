@@ -6,7 +6,6 @@ import Image from "deco-sites/std/components/Image.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
-import { formatPrice } from "$store/sdk/format.ts";
 import { SendEventOnLoad } from "$store/sdk/analytics.tsx";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
@@ -68,7 +67,7 @@ function NotFound() {
 }
 
 function ProductInfo(
-  { page, shipmentPolitics, shareableNetworks, restrictedCategory}: {
+  { page, shareableNetworks }: {
     page: ProductDetailsPage;
     shipmentPolitics?: Props["shipmentPolitics"];
     shareableNetworks?: Props["shareableNetworks"];
@@ -101,7 +100,7 @@ function ProductInfo(
     isRestricted = false
   }
 
-  const { price, listPrice, seller, availability, installment } = useOffer(
+  const { price, listPrice, seller, availability } = useOffer(
     offers,
   );
   const possibilities = useVariantPossibilities(product);
