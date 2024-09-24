@@ -360,20 +360,15 @@ function NewProductCard(
                     : (
                         <div class="flex flex-col gap-0 mt-[10px] h-auto">
                             {l?.hide.productName ? "" : (
-                                // <h2 class="block lg:hidden text-xs text-gray-800 text-center h-full">
-                                //     {limitarCaracteres(isVariantOf?.name, 40) || limitarCaracteres(name, 36)}
-                                // </h2>
-                                    <h2 class="font-poppins not-italic font-normal text-[10px] text-[#1F2937] text-left lg:text-[12px]">
-                                        {isVariantOf?.name || name}
-                                    </h2>
+                                <h2 class="font-poppins not-italic font-normal text-[10px] text-[#1F2937] text-left lg:text-[12px] line-clamp-2">
+                                    {isVariantOf?.name || name}
+                                </h2>
                             )}
-                            {l?.hide.productDescription
-                                ? ""
-                                : (
-                                    <p class="font-poppins not-italic font-normal text-[10px] text-[#1F2937]">
-                                        {product.description}
-                                    </p>
-                                )}
+                            {l?.hide.productDescription ? "" : (
+                                <p class="font-poppins not-italic font-normal text-[10px] text-[#1F2937]">
+                                    {product.description}
+                                </p>
+                            )}
                         </div>
                     )}
                 {availability === "https://schema.org/InStock"
@@ -407,14 +402,14 @@ function NewProductCard(
                                                     ou {" "}{formatPrice(listPrice, offers!.priceCurrency!)}
                                                 </p>
                                             )}
-                                            <p class="font-poppins not-italic font-normal text-[10px] text-[#8E8E9F] lg:text-xs">
+                                            <p class="font-poppins not-italic font-normal text-[10px] text-[#8E8E9F] lg:text-xs text-left">
                                                 ou {" "}{formatPrice(price, offers!.priceCurrency!)}
                                             </p>
                                         </div>
                                         {l?.hide.installments
                                             ? ""
                                             : (
-                                                <div class="font-poppins not-italic font-normal text-[10px] text-[#8E8E9F] lg:text-xs">
+                                                <div class="font-poppins not-italic font-normal text-[10px] text-[#8E8E9F] lg:text-xs text-left">
                                                     em até{" "}
                                                     {installment?.billingDuration}x de ${formatPrice(
                                                         installment?.billingIncrement,

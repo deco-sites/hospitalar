@@ -39,6 +39,7 @@ export type AvailableIcons =
   | "MagnifyingGlass"
   | "XMark"
   | "Plus"
+  | "NewPlus"
   | "Minus"
   | "MapPin"
   | "Phone"

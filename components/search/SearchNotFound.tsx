@@ -1,7 +1,7 @@
 import type { LoaderReturnType } from "$live/types.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { useEffect, useState } from "preact/compat";
-import ProductCard from "site/components/product/ProductCard.tsx";
+import NewProductCard from "site/components/product/NewProductCard.tsx";
 
 export interface TextSugestion {
   firstText: string;
@@ -127,7 +127,7 @@ function SearchNotFound({ textSugestions, products }: Props) {
           >
             {products?.map((product, index) => (
               <div class="w-full list-none ">
-                <ProductCard
+                <NewProductCard
                   product={product}
                   preload={index === 0}
                   layout={{
@@ -144,6 +144,7 @@ function SearchNotFound({ textSugestions, products }: Props) {
                   tagWarningWidth="70%"
                   positionBottom="bottom-0"
                   classFrreShipping="hidden lg:block"
+                  class="min-h-[325px] lg:min-h-[405px]"
                 />
               </div>
             ))}

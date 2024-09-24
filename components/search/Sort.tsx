@@ -44,11 +44,14 @@ function Sort({ sortOptions }: Props) {
     >
       <label
         tabIndex={0}
-        class="btn justify-between w-full lg:w-48 btn-sm font-normal text-base-200 h-[34px] border-2 border-base-200 bg-white hover:bg-white"
+        class="btn justify-between w-full lg:w-48 btn-sm h-[34px] border-2 border-base-200 bg-white hover:bg-white font-poppins not-italic font-medium text-base leading-none text-[#D2D1D7]"
       >
         {sort
           ? <span class="text-base-content">{labels[sort as LabelKey]}</span>
-          : "Selecione"}
+          : <>
+            <span class="hidden lg:block">Selecione</span>
+            <span class="lg:hidden">Ordenar</span>
+          </>}
         <Icon
           id="ChevronDown"
           height={22}
