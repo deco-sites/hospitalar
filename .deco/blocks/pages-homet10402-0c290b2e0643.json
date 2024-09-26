@@ -9,9 +9,6 @@
         },
         "value": [
           {
-            "__resolveType": "site/sections/BlueTags/BlueTagVisit.tsx"
-          },
-          {
             "__resolveType": "Default - Design System"
           },
           {
@@ -21,6 +18,7 @@
             "__resolveType": "analytics"
           },
           {
+            "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
                 "rule": {
@@ -2449,8 +2447,7 @@
                   "__resolveType": "site/sections/Container.tsx"
                 }
               }
-            ],
-            "__resolveType": "website/flags/multivariate/section.ts"
+            ]
           },
           {
             "__resolveType": " Home - Carousel"
@@ -2471,6 +2468,7 @@
             "__resolveType": " Sobre a loja - InfoCard"
           },
           {
+            "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
                 "rule": {
@@ -2873,8 +2871,7 @@
                   "backgroundColor": "pink"
                 }
               }
-            ],
-            "__resolveType": "website/flags/multivariate/section.ts"
+            ]
           }
         ]
       },
@@ -2883,9 +2880,6 @@
           "__resolveType": "website/matchers/always.ts"
         },
         "value": [
-          {
-            "__resolveType": "site/sections/BlueTags/BlueTagVisit.tsx"
-          },
           {
             "__resolveType": "Default - Design System"
           },

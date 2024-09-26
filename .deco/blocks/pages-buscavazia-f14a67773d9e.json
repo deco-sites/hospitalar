@@ -3,12 +3,10 @@
   "path": "/buscavazia",
   "sections": [
     {
-      "__resolveType": "site/sections/BlueTags/BlueTagVisit.tsx"
-    },
-    {
       "__resolveType": "Default - Design System"
     },
     {
+      "__resolveType": "deco-sites/std/sections/SEOPLP.tsx",
       "page": {
         "sort": "price:desc",
         "count": 1,
@@ -17,13 +15,13 @@
         "selectedFacets": []
       },
       "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/b0a332f7-d73c-474d-88c0-924d9b167d22",
-      "__resolveType": "deco-sites/std/sections/SEOPLP.tsx",
       "titleTemplate": "%s | Hospitalar Distribuidora"
     },
     {
       "__resolveType": "analytics"
     },
     {
+      "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "rule": {
@@ -1248,17 +1246,16 @@
             "__resolveType": "Header Global"
           }
         }
-      ],
-      "__resolveType": "website/flags/multivariate/section.ts"
+      ]
     },
     {
+      "__resolveType": "site/sections/Product/SearchNotFound.tsx",
       "products": {
         "sort": "discount:desc",
         "count": 100,
         "query": "1",
         "__resolveType": "deco-sites/std/functions/vtexProductList.ts"
       },
-      "__resolveType": "site/sections/Product/SearchNotFound.tsx",
       "textSugestions": {
         "firstText": "Verifique os termos digitados.",
         "thirdText": "Utilize termos genéricos na busca.",
