@@ -3051,7 +3051,7 @@
                           "label": "Tubo para Coleta de Sangue"
                         }
                       ],
-                      "variant": "CommonChild",
+                      "variant": "AllCategories",
                       "label": "Instrumentos e Dispositivos"
                     },
                     {
@@ -3135,8 +3135,371 @@
                   "label": "Todas as categorias"
                 },
                 {
-                  "children": [],
-                  "variant": "CommonChild",
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Acidose Metabólica"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Analgésicos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antimiastênico"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Anti-Hemorrágicos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Anti-Histamínicos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Anti-Inflamatórios"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antiarrítmicos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antiarrítmicos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antibióticos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Anticoagulantes"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Anticonvulsionante"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antieméticos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antifúngico"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antigases"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antigotoso"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antimiastênico"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antimuscarnicos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antineoplásico"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antiopióide"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antipasmódico"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antitermico"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antivaricoso"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antiácido"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Antídoto"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Beta-Bloqueador"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Broncodilatadores"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Cicatrizantes"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Colírios"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Contraste Radiológico"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Diurético"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Expansor Plasmático"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Expectorante"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Hipertensivos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Hipocalcemia"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Hipocalemia"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Hipoglicemia"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Hipomagnesemia"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Hipotensivos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Insuficiência Cardíaca"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Laxantes"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Neuroléptico"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Pomadas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Protetores Gástricos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Relaxante Muscular"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Repositores Eletrolíticos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Vasoconstritores"
+                        }
+                      ],
+                      "variant": "CommonChild",
+                      "label": "Categorias"
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Astra"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "BioChimico"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Blausigel"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Cristália"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "EMS"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Eurofarma"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Geolab"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Geral"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Hipolabor"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Hypofarma"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Isofarma"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "JP"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Mariol"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Medley"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Neoquimica"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Novafarma"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Novo Nordisk"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Prati Donaduzzi"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Samtec"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Teuto"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "União Química"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Wasser Farma"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "ZLB Behring"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Zodiac"
+                        }
+                      ],
+                      "variant": "WithBrands",
+                      "label": "Marcas"
+                    }
+                  ],
+                  "variant": "Other",
                   "label": "Medicamentos"
                 },
                 {
