@@ -613,4 +613,12 @@
         <path d="M3 9L7 5L11 9" stroke="#0D4F81" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
+    <symbol id="ArrowRightInline" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.75 1.5L6.25 6L1.75 10.5" stroke="#2C376D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <svg id="ArrowRightInlineDark" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.75 1.5L6.25 6L1.75 10.5" stroke="#8E8E9F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
 </svg>

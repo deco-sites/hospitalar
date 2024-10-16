@@ -2893,7 +2893,292 @@
             "__resolveType": "analytics"
           },
           {
-            "__resolveType": "Header Global"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Header/HeaderFloating.tsx",
+              "searchbar": {
+                "action": " ",
+                "cardLayout": {
+                  "basics": {},
+                  "discount": {
+                    "label": " ",
+                    "variant": "primary"
+                  },
+                  "hide": {
+                    "productDescription": true
+                  }
+                }
+              },
+              "navItems": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Agulhas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Almotolia"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Cânulas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Cateter"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Coletores"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Dermatoscópio"
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Detector Fetal"
+                            }
+                          ],
+                          "variant": "CommonChild",
+                          "label": "Detector Fetal"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Diagnóstico"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Drenos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Eletrodos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Equipos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Estetoscópio"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Estetoscópio Digital"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Flebo Extrator"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Instrumental"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Inox"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Lâminas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Lanternas Clínicas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Otoscópios"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Produtos para oxigenação"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Scalps"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Seringas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Sondas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Suporte Perfurocortantes"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Termômetro"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Tubo para Coleta de Sangue"
+                        }
+                      ],
+                      "variant": "CommonChild",
+                      "label": "Instrumentos e Dispositivos"
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Aparelhos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Aparelhos de Pressão"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Aparelhos Diversos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Balanças"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Detector Fetal"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Estufas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Fotóforo"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Reanimadores Ambus"
+                        }
+                      ],
+                      "variant": "CommonChild",
+                      "label": "Equipamentos e Aparelhos"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Proteção e Higiene"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Especialidades Médicas"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Suprimentos Médicos"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Medicamentos"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Produtos Diversos e Outros"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Móveis Hospitalares"
+                    }
+                  ],
+                  "variant": "AllCategories",
+                  "label": "Todas as categorias"
+                },
+                {
+                  "children": [],
+                  "variant": "CommonChild",
+                  "label": "Medicamentos"
+                },
+                {
+                  "children": [],
+                  "variant": "CommonChild",
+                  "label": "Aparelhos"
+                },
+                {
+                  "children": [],
+                  "variant": "CommonChild",
+                  "label": "Sondas"
+                },
+                {
+                  "children": [],
+                  "variant": "CommonChild",
+                  "label": "Suprimentos"
+                },
+                {
+                  "children": [],
+                  "variant": "CommonChild",
+                  "label": "Cateter"
+                },
+                {
+                  "children": [],
+                  "variant": "CommonChild",
+                  "label": "Móveis hospitalares"
+                },
+                {
+                  "children": [],
+                  "variant": "CommonChild",
+                  "label": "Blog"
+                }
+              ],
+              "minicart": {
+                "desktop": {
+                  "buttonMode": "primary"
+                },
+                "mobile": {
+                  "buttonMode": "primary"
+                }
+              }
+            }
           },
           {
             "__resolveType": " Home - Carousel"
