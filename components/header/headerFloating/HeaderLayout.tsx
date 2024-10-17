@@ -2,7 +2,7 @@ import { ICartProps } from "$store/components/minicart/Cart.tsx";
 import { EditableProps as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Buttons from "$store/islands/HeaderButton.tsx";
-import Modals from "$store/islands/HeaderModals.tsx";
+import Modals from "../../../islands/HeaderModalsV3.tsx";
 import SearchBarComponent from "$store/islands/HeaderSearchbar.tsx";
 
 export interface Props {
@@ -46,8 +46,9 @@ function HeaderLayout(
         </div>
         <div class="flex items-center w-auto lg:justify-between xl:gap-8 lg:gap-2">
           <div class="flex items-center xl:gap-4 lg:gap-2">
-          <a
-              class="rounded-full border-2 border-solid no-animation btn-square btn-ghost flex items-center justify-center"
+            <Buttons variant="search" />
+            <a
+              class="hidden sm:flex rounded-full border-2 border-solid no-animation btn-square btn-ghost  items-center justify-center"
               href="/wishlist"
             >
               <Icon
@@ -59,7 +60,7 @@ function HeaderLayout(
               />
             </a>
             <a
-              class="max-lg:hidden rounded-full border-2 border-solid no-animation btn-square btn-ghost flex items-center justify-center"
+              class="rounded-full border-2 border-solid no-animation btn-square btn-ghost flex items-center justify-center"
               href="/my-account"
             >
               <Icon
@@ -74,9 +75,9 @@ function HeaderLayout(
           </div>
         </div>
       </div>
-      <div className="md:hidden">
+      {/* <div className="hidden">
         <SearchBarComponent searchbar={{ variant: "mobile", ...searchbar }} />
-      </div>
+      </div> */}
       <Modals
         minicart={minicart}
       />

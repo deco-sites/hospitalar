@@ -6,7 +6,7 @@ import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
 
 import { ICartProps } from "$store/components/minicart/Cart.tsx";
 
-const Menu = lazy(() => import("$store/components/header/Menu.tsx"));
+const Menu = lazy(() => import("$store/components/header/headerFloating/MenuModal.tsx"));
 const Cart = lazy(() => import("$store/components/minicart/Cart.tsx"));
 
 interface Props {

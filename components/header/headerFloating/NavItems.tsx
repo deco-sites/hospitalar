@@ -2,6 +2,7 @@ import { Image, INavItem } from "$store/components/header/NavItem.tsx";
 import { LoginSetting } from "$store/components/header/HeaderLayoutV2.tsx";
 import { useState } from "preact/hooks";
 import Icon from "$store/components/ui/Icon.tsx";
+import Modals from "$store/islands/HeaderModalsV2.tsx";
 
 interface Props {
     /**
@@ -129,6 +130,8 @@ function ItemsWithBrands({
                     )
                 })}
             </ul>
+
+
         </div>
     )
 }
@@ -199,7 +202,8 @@ function NavItem({
 
 
 function NavItems({
-    navItems
+    navItems,
+    login
 }: Props) {
     return (
         <div class="bg-[#2D386E] w-full my-0 shadow-md">
@@ -212,7 +216,10 @@ function NavItems({
                     </li>
                 </div>
             </div>
-
+            <Modals
+                menu={{ items: navItems! }}
+                login={login}
+            />
         </div>
     )
 }
