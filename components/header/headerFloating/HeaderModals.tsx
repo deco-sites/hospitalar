@@ -2,19 +2,21 @@ import Loading from "$store/components/ui/Loading.tsx";
 import Modal from "$store/components/ui/Modal.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { lazy, Suspense } from "preact/compat";
+
 import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
-
 import { ICartProps } from "$store/components/minicart/Cart.tsx";
+import { LoginSetting } from "site/components/header/HeaderLayoutV2.tsx";
 
-const Menu = lazy(() => import("$store/components/header/headerFloating/MenuModal.tsx"));
+const Menu = lazy(() => import("$store/components/header/MenuV2.tsx"));
 const Cart = lazy(() => import("$store/components/minicart/Cart.tsx"));
 
 interface Props {
+  login?: LoginSetting[]
   menu?: MenuProps;
   minicart?: ICartProps;
 }
 
-function Modals({ menu, minicart }: Props) {
+function Modals({ menu, minicart, login }: Props) {
   const { displayCart, displayMenu } = useUI();
 
   const fallback = (
@@ -38,7 +40,7 @@ function Modals({ menu, minicart }: Props) {
           class="backdrop:bg-base-content backdrop:opacity-70"
         >
           <Suspense fallback={fallback}>
-            <Menu {...menu} />
+            <Menu {...menu} login={login} />
           </Suspense>
         </Modal>
       )}

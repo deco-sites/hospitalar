@@ -2,7 +2,7 @@ import { Image, INavItem } from "$store/components/header/NavItem.tsx";
 import { LoginSetting } from "$store/components/header/HeaderLayoutV2.tsx";
 import { useState } from "preact/hooks";
 import Icon from "$store/components/ui/Icon.tsx";
-import Modals from "$store/islands/HeaderModalsV2.tsx";
+import Modals from "$store/islands/HeaderModalsV3.tsx";
 
 interface Props {
     /**
