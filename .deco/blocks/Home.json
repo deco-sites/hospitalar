@@ -2895,44 +2895,41 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "site/sections/Header/TopNavBar.tsx",
-              "alerts": [
-                {
-                  "idIcon": "",
-                  "textAlert": "Parcele em até 6x sem juros",
-                  "textColor": "#2d386e",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/fee2ea80-4999-42e2-a34a-73da57e85562"
-                },
-                {
-                  "idIcon": "",
-                  "textAlert": "Parcele em até 6x sem juros",
-                  "textColor": "#2d386e",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/fee2ea80-4999-42e2-a34a-73da57e85562"
-                },
-                {
-                  "idIcon": "",
-                  "textAlert": "Parcele em até 6x sem juros",
-                  "textColor": "#2d386e",
-                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/fee2ea80-4999-42e2-a34a-73da57e85562"
-                }
-              ],
-              "interval": 5000
-            }
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
               "__resolveType": "site/sections/Header/HeaderFloating.tsx",
+              "minicart": {
+                "showClearButton": false,
+                "desktop": {
+                  "buttonMode": "primary"
+                },
+                "mobile": {
+                  "buttonMode": "primary"
+                },
+                "goToCartLabel": "Finalzar Compra"
+              },
               "searchbar": {
+                "placeholder": "What are you looking for?",
                 "action": " ",
+                "name": "q",
                 "cardLayout": {
-                  "basics": {},
+                  "basics": {
+                    "contentAlignment": "Left",
+                    "oldPriceSize": "Small",
+                    "ctaVariation": "primary",
+                    "ctaMode": "Go to Product Page"
+                  },
                   "discount": {
-                    "label": " ",
-                    "variant": "primary"
+                    "variant": "primary",
+                    "label": " "
+                  },
+                  "elementsPositions": {
+                    "skuSelector": "Top",
+                    "favoriteIcon": "Top right"
                   },
                   "hide": {
                     "productDescription": true
+                  },
+                  "onMouseOver": {
+                    "image": "Change image"
                   }
                 }
               },
@@ -3416,7 +3413,8 @@
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Acidose Metabólica"
+                          "label": "Acidose Metabólica",
+                          "href": "/"
                         },
                         {
                           "children": [],
@@ -4078,13 +4076,9 @@
                   "label": "Blog"
                 }
               ],
-              "minicart": {
-                "desktop": {
-                  "buttonMode": "primary"
-                },
-                "mobile": {
-                  "buttonMode": "primary"
-                }
+              "login": [],
+              "topBar": {
+                "__resolveType": "TopNavBarFloating"
               }
             }
           },

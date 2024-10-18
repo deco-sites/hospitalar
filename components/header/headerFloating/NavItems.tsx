@@ -21,7 +21,7 @@ function ItemsAllCategories({
     elements
 }: { elements?: INavItem[]; }) {
 
-    const [item, setItem] = useState<INavItem[]>([])
+    const [items, setItems] = useState<INavItem[]>([])
     const [selected, setSelected] = useState<number>(-1)
 
     return (
@@ -36,7 +36,7 @@ function ItemsAllCategories({
 
                                         <li
                                             class={`flex group items-center justify-between hover:text-[#2C376D] ${selected == index ? "text-[#2C376D]" : "text-[#8E8E9F]"} text-sm mb-4 font-semibold`}
-                                            onMouseEnter={() => { setItem(element?.children ?? []), setSelected(index) }}
+                                            onMouseEnter={() => { setItems(element?.children ?? []), setSelected(index) }}
                                         >
                                             {element?.label}
                                             <Icon
@@ -50,6 +50,7 @@ function ItemsAllCategories({
                                     : (
                                         <li
                                             class={`flex group items-center justify-between hover:text-[#2C376D] ${selected == index ? "text-[#2C376D]" : "text-[#8E8E9F]"} text-sm mb-4 font-semibold`}
+                                            onMouseEnter={() => { setItems(element?.children ?? []), setSelected(index) }}
                                         >
                                             <a href={element?.href}>
 
@@ -66,17 +67,19 @@ function ItemsAllCategories({
                 <ul
                     class="grid-flow-col"
                     style={`
-                                display: grid;
-                                grid-template-columns: minmax(100px, 1fr);
-                                grid-template-rows: repeat(13, minmax(0, 1fr));
-                                column-gap: 50px;
-                                row-gap: 12px;
-                            `}
+                        display: grid;
+                        grid-template-columns: minmax(100px, 1fr);
+                        grid-template-rows: repeat(13, minmax(0, 1fr));
+                        column-gap: 50px;
+                        row-gap: 12px;
+                    `}
                 >
                     {
-                        item?.map(({ label }) => {
+                        items?.map(({ label, variant, children }, index) => {
                             return (
-                                <li class="font-normal text-xs text-[#2C376D]">{label}</li>
+                                <>
+                                    <li class="font-normal text-xs text-[#2C376D]">{label}</li>
+                                </>
                             )
                         })
                     }
