@@ -1,0 +1,24 @@
+{
+  "__resolveType": "site/sections/Header/TopNavBar.tsx",
+  "alerts": [
+    {
+      "idIcon": "",
+      "textAlert": "Parcele em até 6x sem juros",
+      "textColor": "#2d386e",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/fee2ea80-4999-42e2-a34a-73da57e85562"
+    },
+    {
+      "idIcon": "",
+      "textAlert": "Parcele em até 6x sem juros",
+      "textColor": "#2d386e",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/fee2ea80-4999-42e2-a34a-73da57e85562"
+    },
+    {
+      "idIcon": "",
+      "textAlert": "Parcele em até 6x sem juros",
+      "textColor": "#2d386e",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/fee2ea80-4999-42e2-a34a-73da57e85562"
+    }
+  ],
+  "interval": 5000
+}

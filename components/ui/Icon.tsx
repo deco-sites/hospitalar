@@ -47,6 +47,8 @@ export type AvailableIcons =
   | "Truck"
   | "CaretDown"
   | "CaretUp"
+  | "ArrowRightInline"
+  | "ArrowRightInlineDark"
   | "Discount"
   | "Return"
   | "Deco"

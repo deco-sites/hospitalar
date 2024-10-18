@@ -3,7 +3,6 @@ import Icon from "$store/components/ui/Icon.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
-import { Person } from "apps/commerce/types.ts";
 import { LoginSetting } from "site/components/header/HeaderLayoutV2.tsx";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
 
@@ -21,8 +20,8 @@ function SearchButton() {
       <Icon
         class="text-base-content"
         id="MagnifyingGlass"
-        width={24}
-        height={25}
+        width={16.95}
+        height={18}
         strokeWidth={1}
       />
     </Button>
@@ -40,7 +39,7 @@ function MenuButton() {
         displayMenu.value = true;
       }}
     >
-      <Icon class="text-base-content" id="Menu" width={25} height={25} />
+      <Icon class="text-base-content" id="Menu" width={19} height={12} />
     </Button>
   );
 }
@@ -87,9 +86,8 @@ function CartButton() {
         <Icon
           class="text-base-content"
           id="ShoppingCart"
-          width={24}
-          height={25}
-          strokeWidth={1}
+          width={20}
+          height={20}
         />
       </div>
     </Button>
