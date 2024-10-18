@@ -2895,6 +2895,33 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
+              "__resolveType": "site/sections/Header/TopNavBar.tsx",
+              "alerts": [
+                {
+                  "idIcon": "",
+                  "textAlert": "Parcele em até 6x sem juros",
+                  "textColor": "#2d386e",
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/fee2ea80-4999-42e2-a34a-73da57e85562"
+                },
+                {
+                  "idIcon": "",
+                  "textAlert": "Parcele em até 6x sem juros",
+                  "textColor": "#2d386e",
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/fee2ea80-4999-42e2-a34a-73da57e85562"
+                },
+                {
+                  "idIcon": "",
+                  "textAlert": "Parcele em até 6x sem juros",
+                  "textColor": "#2d386e",
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/fee2ea80-4999-42e2-a34a-73da57e85562"
+                }
+              ],
+              "interval": 5000
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
               "__resolveType": "site/sections/Header/HeaderFloating.tsx",
               "searchbar": {
                 "action": " ",
@@ -3101,34 +3128,282 @@
                       "label": "Equipamentos e Aparelhos"
                     },
                     {
-                      "children": [],
+                      "children": [
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Avental",
+                          "href": "Escovas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Escovas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Esterilização"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Fraldas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Luvas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Máscara"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Produtos para Assepsia"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Saneantes"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Sapatilha"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Toucas, Máscaras, Gorros"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Vestuários"
+                        }
+                      ],
                       "variant": "CommonChild",
                       "label": "Proteção e Higiene"
                     },
                     {
-                      "children": [],
+                      "children": [
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Biópsia",
+                          "href": "/"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Diabéticos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Fisioterapia"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Odontologia"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Ortopedia",
+                          "href": "/"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Radiologia",
+                          "href": "/"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Resgate",
+                          "href": "/"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Veterinária",
+                          "href": "/"
+                        }
+                      ],
                       "variant": "CommonChild",
                       "label": "Especialidades Médicas"
                     },
                     {
-                      "children": [],
+                      "children": [
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Algodão",
+                          "href": "/"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Ataduras"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Campo Operatório"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Compressa"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Curativos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Esparadrapos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Fios Cirúrgicos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Fitas"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Malha Tubular"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Papel"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Produtos Hospitalares"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Saco para Lixo Hospitalar"
+                        }
+                      ],
                       "variant": "CommonChild",
                       "label": "Suprimentos Médicos"
                     },
                     {
-                      "children": [],
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Acidose Metabólica"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Analgésicos"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Ansiolíticos"
+                            }
+                          ],
+                          "variant": "CommonChild",
+                          "label": "Catergorias"
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Astra"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "BioChimico"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Blausigel"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Cristália"
+                            }
+                          ],
+                          "variant": "WithBrands",
+                          "label": "Marcas"
+                        }
+                      ],
                       "variant": "CommonChild",
                       "label": "Medicamentos"
                     },
                     {
-                      "children": [],
+                      "children": [
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Diversos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Kits Acadêmicos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Outros"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "href": "/",
+                          "label": "Outlet"
+                        }
+                      ],
                       "variant": "CommonChild",
                       "label": "Produtos Diversos e Outros"
                     },
                     {
                       "children": [],
                       "variant": "CommonChild",
-                      "label": "Móveis Hospitalares"
+                      "label": "Móveis Hospitalares",
+                      "href": "/"
                     }
                   ],
                   "variant": "AllCategories",
@@ -3503,17 +3778,287 @@
                   "label": "Medicamentos"
                 },
                 {
-                  "children": [],
-                  "variant": "CommonChild",
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Aparelhos para Dermatologia"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Aparelhos para Oftalmologia"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Aparelhos para Otorrinolaringologia"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Barbear"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Desfibriladores"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Inaladores e Nebulizadores"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Pressão"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Umidificadores"
+                        }
+                      ],
+                      "variant": "CommonChild",
+                      "label": "Categorias"
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Alt Equipamentos"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Bionet"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Diasyst"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Força Médica"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "G-Tech"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Gowllands"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Heine"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Hipolabor"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Kolplast"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Labor Import"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Lord"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "MD"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Medicate"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Mikatos Missouri"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Olidef"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Outros"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Premium"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Professional"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Rossmax"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Shalon"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Spirit"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Unitec"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Welch Allyn"
+                        }
+                      ],
+                      "variant": "WithBrands",
+                      "label": "Marcas"
+                    }
+                  ],
+                  "variant": "Other",
                   "label": "Aparelhos"
                 },
                 {
-                  "children": [],
+                  "children": [
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Uretral"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Retal"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Nasogástrica Longa"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Gástrica Levine"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Endotraqueal"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Foley"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Gastrostomia"
+                    }
+                  ],
                   "variant": "CommonChild",
                   "label": "Sondas"
                 },
                 {
-                  "children": [],
+                  "children": [
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Algodão"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Ataduras"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Campo Operatório"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Compressa"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Curativos"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Esparadrapos"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Fios Cirúrgicos"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Fitas"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Malha Tubular"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Papel"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Produtos Hospitalares"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Saco para Lixo Hospitalar"
+                    },
+                    {
+                      "children": [],
+                      "variant": "CommonChild",
+                      "label": "Tela de Marlex"
+                    }
+                  ],
                   "variant": "CommonChild",
                   "label": "Suprimentos"
                 },

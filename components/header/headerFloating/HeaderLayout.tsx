@@ -46,7 +46,10 @@ function HeaderLayout(
         </div>
         <div class="flex items-center w-auto lg:justify-between xl:gap-8 lg:gap-2">
           <div class="flex items-center xl:gap-4 lg:gap-2">
-            <Buttons variant="search" />
+            <div className="sm:hidden">
+              <Buttons variant="search" />
+
+            </div>
             <a
               class="hidden sm:flex rounded-full border-2 border-solid no-animation btn-square btn-ghost  items-center justify-center"
               href="/wishlist"
