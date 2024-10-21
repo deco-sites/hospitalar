@@ -3773,7 +3773,8 @@
                     }
                   ],
                   "variant": "Other",
-                  "label": "Medicamentos"
+                  "label": "Medicamentos",
+                  "href": "/medicamentos"
                 },
                 {
                   "children": [
@@ -3946,7 +3947,8 @@
                     }
                   ],
                   "variant": "Other",
-                  "label": "Aparelhos"
+                  "label": "Aparelhos",
+                  "href": "/aparelhos"
                 },
                 {
                   "children": [
@@ -3987,7 +3989,8 @@
                     }
                   ],
                   "variant": "CommonChild",
-                  "label": "Sondas"
+                  "label": "Sondas",
+                  "href": "/sondas"
                 },
                 {
                   "children": [
@@ -4058,22 +4061,26 @@
                     }
                   ],
                   "variant": "CommonChild",
-                  "label": "Suprimentos"
+                  "label": "Suprimentos",
+                  "href": "/"
                 },
                 {
                   "children": [],
                   "variant": "CommonChild",
-                  "label": "Cateter"
+                  "label": "Cateter",
+                  "href": "/cateter"
                 },
                 {
                   "children": [],
                   "variant": "CommonChild",
-                  "label": "Móveis hospitalares"
+                  "label": "Móveis hospitalares",
+                  "href": "/equipamentos-para-laboratorio"
                 },
                 {
                   "children": [],
                   "variant": "CommonChild",
-                  "label": "Blog"
+                  "label": "Blog",
+                  "href": "/"
                 }
               ],
               "login": [],

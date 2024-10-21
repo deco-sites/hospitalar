@@ -7,7 +7,7 @@ import SearchBarComponent from "$store/islands/HeaderSearchbar.tsx";
 import { useSignal } from "@preact/signals";
 import { useEffect } from "preact/hooks";
 import { Device } from "deco/utils/userAgent.ts";
-import MenuFloating from "site/components/header/headerFloating/MenuFloating.tsx";
+import MenuFloating from "$store/components/header/headerFloating/MenuFloating.tsx";
 import { INavItem } from "$store/components/header/NavItem.tsx";
 
 export interface Props {
@@ -72,8 +72,7 @@ function HeaderLayout(
                         <Icon id="LogoMini" width={23} height={46} />
                       </a>
                     </div>
-                    <div className="flex gap-2">
-                      <Icon class="text-base-content" id="Menu" width={19} height={12} />
+                    <div className="flex">
                       <MenuFloating navItems={navItems} />
                     </div>
                     <div className="flex flex-1 w-full">
