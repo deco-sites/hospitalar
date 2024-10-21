@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 import { ICartProps } from "$store/components/minicart/Cart.tsx";
 import { EditableProps as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import { LoginSetting } from "$store/components/header/HeaderLayoutV2.tsx";
@@ -5,6 +6,8 @@ import { INavItem } from "$store/components/header/NavItem.tsx";
 import NavItems from "$store/islands/NavItems.tsx";
 import HeaderLayout from "site/components/header/headerFloating/HeaderLayout.tsx";
 import { Section } from "$live/blocks/section.ts";
+import { AppContext } from "apps/vtex/mod.ts";
+import { SectionProps } from "deco/mod.ts";
 
 export interface Props {
     /**
@@ -37,8 +40,9 @@ function HeaderFloating({
     minicart,
     searchbar,
     topBar,
-    topBar: { Component: TopBarComponent, props: topBarProps }
-}: Props,
+    topBar: { Component: TopBarComponent, props: topBarProps },
+    device
+}: SectionProps<typeof loader>,
 ) {
     return (
         <div>
@@ -51,11 +55,16 @@ function HeaderFloating({
                     )
                     : null
             }
-            <HeaderLayout minicart={minicart} searchbar={searchbar} />
+            <HeaderLayout minicart={minicart} searchbar={searchbar} device={device} navItems={navItems} />
             <NavItems login={login} navItems={navItems} />
         </div>
     )
 }
 
+
+export const loader = (props: Props, _req: Request, ctx: AppContext) => {
+    return { ...props, device: ctx.device };
+};
+  
 
 export default HeaderFloating;

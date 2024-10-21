@@ -64,6 +64,7 @@ export type AvailableIcons =
   | "ArrowRight"
   | "ArrowLeft"
   | "LogoSeo"
+  | "LogoMini"
   | "ReturnArrow"
   | "SadFace"
   | "LeftArrowFigma"

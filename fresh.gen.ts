@@ -9,6 +9,7 @@ import * as $BlueTagProduct from "./islands/BlueTagProduct.tsx";
 import * as $BlueTagVisit from "./islands/BlueTagVisit.tsx";
 import * as $Debug from "./islands/Debug.tsx";
 import * as $HeaderButton from "./islands/HeaderButton.tsx";
+import * as $HeaderLayout from "./islands/HeaderLayout.tsx";
 import * as $HeaderModals from "./islands/HeaderModals.tsx";
 import * as $HeaderModalsV2 from "./islands/HeaderModalsV2.tsx";
 import * as $HeaderModalsV3 from "./islands/HeaderModalsV3.tsx";
@@ -43,6 +44,7 @@ const manifest = {
     "./islands/BlueTagVisit.tsx": $BlueTagVisit,
     "./islands/Debug.tsx": $Debug,
     "./islands/HeaderButton.tsx": $HeaderButton,
+    "./islands/HeaderLayout.tsx": $HeaderLayout,
     "./islands/HeaderModals.tsx": $HeaderModals,
     "./islands/HeaderModalsV2.tsx": $HeaderModalsV2,
     "./islands/HeaderModalsV3.tsx": $HeaderModalsV3,
