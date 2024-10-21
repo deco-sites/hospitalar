@@ -30,7 +30,7 @@ export interface Props {
     /**
      * @description TopBar section, displayed Topbar
      */
-    topBar?: Section;
+    topBar: Section;
 }
 
 
@@ -49,7 +49,7 @@ function HeaderFloating({
             {
                 topBar
                     ? (
-                        <div class="bg-[#DEE0E8]">
+                        <div class="bg-[#EEF1F5]">
                             <TopBarComponent {...topBarProps} />
                         </div>
                     )

@@ -54,7 +54,7 @@ function HeaderLayout(
     return () => removeEventListener("scroll", handleScroll);
   }, []);
 
-  
+
   if (device == "desktop") {
     return (
       <>
@@ -72,7 +72,8 @@ function HeaderLayout(
                         <Icon id="LogoMini" width={23} height={46} />
                       </a>
                     </div>
-                    <div className="flex">
+                    <div className="flex gap-2">
+                      <Icon class="text-base-content" id="Menu" width={19} height={12} />
                       <MenuFloating navItems={navItems} />
                     </div>
                     <div className="flex flex-1 w-full">
@@ -177,6 +178,7 @@ function HeaderLayout(
 
 
   return (
+    <>
     <header class="z-50 py-2 container w-full m-auto px-5">
       <div class="flex justify-between items-center lg:p-0">
         <div class="flex items-center gap-5">
@@ -239,6 +241,7 @@ function HeaderLayout(
         minicart={minicart}
       />
     </header>
+    </>
   );
 }
 

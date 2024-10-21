@@ -75,10 +75,10 @@ function ItemsAllCategories({
                     `}
                 >
                     {
-                        items?.map(({ label, variant, children }, index) => {
+                        items?.map(({ label }, index) => {
                             return (
                                 <>
-                                    <li class="font-normal text-xs text-[#2C376D]">{label}</li>
+                                    <li key={index} class="font-normal text-xs text-[#2C376D]">{label}</li>
                                 </>
                             )
                         })
