@@ -21,8 +21,11 @@ function ItemsAllCategories({
     elements
 }: { elements?: INavItem[]; }) {
 
-    const [items, setItems] = useState<INavItem[]>([])
+    const [item, setItem] = useState<INavItem>()
     const [selected, setSelected] = useState<number>(-1)
+    const isList = item?.children?.every(({ variant }) => variant == "CommonChild")
+
+    console.log(item);
 
     return (
         <>
@@ -36,7 +39,10 @@ function ItemsAllCategories({
 
                                         <li
                                             class={`flex group items-center justify-between hover:text-[#2C376D] ${selected == index ? "text-[#2C376D]" : "text-[#8E8E9F]"} text-sm mb-4 font-semibold`}
-                                            onMouseEnter={() => { setItems(element?.children ?? []), setSelected(index) }}
+                                            onMouseEnter={() => {
+                                                setSelected(index);
+                                                setItem(element);
+                                            }}
                                         >
                                             {element?.label}
                                             <Icon
@@ -50,7 +56,10 @@ function ItemsAllCategories({
                                     : (
                                         <li
                                             class={`flex group items-center justify-between hover:text-[#2C376D] ${selected == index ? "text-[#2C376D]" : "text-[#8E8E9F]"} text-sm mb-4 font-semibold`}
-                                            onMouseEnter={() => { setItems(element?.children ?? []), setSelected(index) }}
+                                            onMouseEnter={() => {
+                                                setSelected(index);
+                                                setItem(element);
+                                            }}
                                         >
                                             <a href={element?.href}>
 
@@ -63,28 +72,50 @@ function ItemsAllCategories({
                     )
                 })}
             </ul>
-            <div class="w-auto">
-                <ul
-                    class="grid-flow-col"
-                    style={`
-                        display: grid;
-                        grid-template-columns: minmax(100px, 1fr);
-                        grid-template-rows: repeat(13, minmax(0, 1fr));
-                        column-gap: 50px;
-                        row-gap: 12px;
-                    `}
-                >
-                    {
-                        items?.map(({ label }, index) => {
-                            return (
-                                <>
-                                    <li key={index} class="font-normal text-xs text-[#2C376D]">{label}</li>
+
+            {
+                item?.children?.length ? (<div>
+                    <div class="w-auto">
+                        {
+                            isList ? (
+                                <ul
+                                    class="grid-flow-col"
+                                    style={`
+                                        display: grid;
+                                        grid-template-columns: minmax(100px, 1fr);
+                                        grid-template-rows: repeat(13, minmax(0, 1fr));
+                                        column-gap: 50px;
+                                        row-gap: 12px;
+                                    `}
+                                >
+                                    {
+                                        item?.children?.map(({ label }, index) => {
+                                            return (
+                                                <>
+                                                    <li key={index} class="font-normal text-xs text-[#2C376D]">{label}</li>
+                                                </>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                            ) : (
+                                <div class="flex flex-row gap-12">
+                                    <>
+                                    {item?.children?.map((element, index) => {
+                                        return (
+                                            <>
+                                                {element?.variant == "CommonChild" && (<ItemsCommonChild key={index} elements={element?.children} />)}
+                                                {element?.variant == "WithBrands" && (<ItemsWithBrands key={index} elements={element?.children} />)}
+                                            </>
+                                        )
+                                    })}
                                 </>
+                                </div>
                             )
-                        })
-                    }
-                </ul>
-            </div>
+                        }
+                    </div>
+                </div>) : null
+            }
         </>
     )
 }
