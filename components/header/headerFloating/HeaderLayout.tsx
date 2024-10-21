@@ -36,18 +36,17 @@ function HeaderLayout(
 ) {
 
   const isScrolling = useSignal(false);
-  let lastScrollTop = 0;
+  const lastScrollTop = 0;
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = globalThis.scrollY || document.documentElement.scrollTop;
+      const scrollTop = globalThis.scrollY || document.documentElement.scrollTop;      
+
       if (scrollTop > lastScrollTop) {
         isScrolling.value = true;
       } else {
         isScrolling.value = false;
       }
-
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     };
 
     addEventListener("scroll", handleScroll);
@@ -60,8 +59,7 @@ function HeaderLayout(
     return (
       <>
         <header
-          className={`left-0 bg-white right-0 z-50 transition-all duration-300 ease-in-out top-0 ${isScrolling.value ? "fixed" : "static"
-            }`}
+          className={`left-0 bg-white right-0 z-50 transition-all duration-300 ease-in-out top-0 ${isScrolling.value ? "fixed" : "static"}`}
         >
           {
             isScrolling.value
