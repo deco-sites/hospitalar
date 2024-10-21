@@ -91,7 +91,7 @@ function Menu({ items }: Props) {
                     <div class="flex w-full justify-between pb-5 border-b border-b-[#E5E7EB]">
                         <a
                             class="btn-square btn-ghost text-xs font-medium p-3 text-[#2D386E] bg-[#EEF1F5] border-[#E5E7EB] w-auto h-[40px] relative flex justify-center items-center gap-2 rounded-full"
-                            href=""
+                            href="/my-account"
                         >
                             <Icon
                                 class="text-base-content"
@@ -104,13 +104,13 @@ function Menu({ items }: Props) {
                         </a>
                         <a
                             class="btn-square btn-ghost text-xs font-medium p-3 text-[#2D386E] bg-[#EEF1F5] border-[#E5E7EB] w-auto h-[40px] relative flex justify-center items-center gap-2 rounded-full"
-                            href=""
+                            href="/wishlist"
                         >
                             <Icon
                                 class="text-base-content"
-                                id="User"
-                                width={24}
-                                height={25}
+                                id="Wishlist"
+                                width={20}
+                                height={20}
                                 strokeWidth={1}
                             />
                             Meus favoritos
