@@ -25,8 +25,6 @@ function ItemsAllCategories({
     const [selected, setSelected] = useState<number>(-1)
     const isList = item?.children?.every(({ variant }) => variant == "CommonChild")
 
-    console.log(item);
-
     return (
         <>
             <ul>
