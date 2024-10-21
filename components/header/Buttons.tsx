@@ -86,8 +86,8 @@ function CartButton() {
         <Icon
           class="text-base-content"
           id="ShoppingCart"
-          width={20}
-          height={20}
+          width={24}
+          height={24}
         />
       </div>
     </Button>
