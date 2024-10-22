@@ -123,7 +123,7 @@ function ItemsCommonChild({
 }: { elements?: INavItem[]; }) {
     return (
         <ul
-            class="grid-flow-col font-normal text-xs"
+            class="grid-flow-col font-normal text-xs w-fit"
             style={`
                 display: grid;
                 grid-template-columns: minmax(122px, auto);
@@ -131,13 +131,14 @@ function ItemsCommonChild({
                 grid-auto-columns: max-content;
                 column-gap: 50px;
                 row-gap: 12px;
+                width:-webkit-fill-available;
             `}
         >
             {elements?.map((element, index) => {
                 return (
                     <li
                         key={index}
-                        class="text-xs"
+                        class="text-xs block min-w-max"
                     >
                         <a href={element?.href}>
                             {element?.label}
