@@ -2941,32 +2941,38 @@
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Agulhas"
+                          "label": "Agulhas",
+                          "href": "/agulhas"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Almotolia"
+                          "label": "Almotolia",
+                          "href": "/almotolia"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Cânulas"
+                          "label": "Cânulas",
+                          "href": "/canulas"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Cateter"
+                          "label": "Cateter",
+                          "href": "/cateter"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Coletores"
+                          "label": "Coletores",
+                          "href": "/coletores"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Dermatoscópio"
+                          "label": "Dermatoscópio",
+                          "href": "/dermatoscopio"
                         },
                         {
                           "children": [
@@ -2977,37 +2983,44 @@
                             }
                           ],
                           "variant": "CommonChild",
-                          "label": "Detector Fetal"
+                          "label": "Detector Fetal",
+                          "href": "/detector-fetal"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Diagnóstico"
+                          "label": "Diagnóstico",
+                          "href": "/diagnostico"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Drenos"
+                          "label": "Drenos",
+                          "href": "/drenos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Eletrodos"
+                          "label": "Eletrodos",
+                          "href": "/eletrodos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Equipos"
+                          "label": "Equipos",
+                          "href": "/equipos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Estetoscópio"
+                          "label": "Estetoscópio",
+                          "href": "/estetoscopio"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Estetoscópio Digital"
+                          "label": "Estetoscópio Digital",
+                          "href": "/estetoscopio-digital"
                         },
                         {
                           "children": [],
@@ -3017,62 +3030,74 @@
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Instrumental"
+                          "label": "Instrumental",
+                          "href": "/instrumental"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Inox"
+                          "label": "Inox",
+                          "href": "/inox"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Lâminas"
+                          "label": "Lâminas",
+                          "href": "/laminas"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Lanternas Clínicas"
+                          "label": "Lanternas Clínicas",
+                          "href": "/lanternas-clinicas"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Otoscópios"
+                          "label": "Otoscópios",
+                          "href": "/otoscopios"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Produtos para oxigenação"
+                          "label": "Produtos para oxigenação",
+                          "href": "/produtos-p--oxigenacao"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Scalps"
+                          "label": "Scalps",
+                          "href": "/scalp"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Seringas"
+                          "label": "Seringas",
+                          "href": "/seringa"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Sondas"
+                          "label": "Sondas",
+                          "href": "/sondas"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Suporte Perfurocortantes"
+                          "label": "Suporte Perfurocortantes",
+                          "href": "/suporte-perfurocortantes"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Termômetro"
+                          "label": "Termômetro",
+                          "href": "/termometro"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Tubo para Coleta de Sangue"
+                          "label": "Tubo para Coleta de Sangue",
+                          "href": "/tubo-para-coleta-de-sangue"
                         }
                       ],
                       "variant": "AllCategories",
@@ -3083,42 +3108,50 @@
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Aparelhos"
+                          "label": "Aparelhos",
+                          "href": "/aparelhos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Aparelhos de Pressão"
+                          "label": "Aparelhos de Pressão",
+                          "href": "/aparelhos/pressao"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Aparelhos Diversos"
+                          "label": "Aparelhos Diversos",
+                          "href": "/aparelhos-diversos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Balanças"
+                          "label": "Balanças",
+                          "href": "/balancas"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Detector Fetal"
+                          "label": "Detector Fetal",
+                          "href": "/detector-fetal"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Estufas"
+                          "label": "Estufas",
+                          "href": "/estufas"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Fotóforo"
+                          "label": "Fotóforo",
+                          "href": "/fotoforo"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Reanimadores Ambus"
+                          "label": "Reanimadores Ambus",
+                          "href": "/reanimadores-ambus"
                         }
                       ],
                       "variant": "CommonChild",
@@ -3130,57 +3163,67 @@
                           "children": [],
                           "variant": "CommonChild",
                           "label": "Avental",
-                          "href": "Escovas"
+                          "href": "/avental"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Escovas"
+                          "label": "Escovas",
+                          "href": "/escovas"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Esterilização"
+                          "label": "Esterilização",
+                          "href": "/produtos-para-esterilizacao"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Fraldas"
+                          "label": "Fraldas",
+                          "href": "/fraldas"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Luvas"
+                          "label": "Luvas",
+                          "href": "/luvas"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Máscara"
+                          "label": "Máscara",
+                          "href": "/mascara"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Produtos para Assepsia"
+                          "label": "Produtos para Assepsia",
+                          "href": "/produtos-para-assepsia"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Saneantes"
+                          "label": "Saneantes",
+                          "href": "/saneantes"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Sapatilha"
+                          "label": "Sapatilha",
+                          "href": "/sapatilha"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Toucas, Máscaras, Gorros"
+                          "label": "Toucas, Máscaras, Gorros",
+                          "href": "/toucas-mascaras-gorros"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Vestuários"
+                          "label": "Vestuários",
+                          "href": "/vestuarios"
                         }
                       ],
                       "variant": "CommonChild",
@@ -3192,46 +3235,49 @@
                           "children": [],
                           "variant": "CommonChild",
                           "label": "Biópsia",
-                          "href": "/"
+                          "href": "/produtos-para-biopsia"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Diabéticos"
+                          "label": "Diabéticos",
+                          "href": "/produtos-para-diabeticos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Fisioterapia"
+                          "label": "Fisioterapia",
+                          "href": "/produtos-para-fisioterapia"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Odontologia"
+                          "label": "Odontologia",
+                          "href": "/odontologia"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
                           "label": "Ortopedia",
-                          "href": "/"
+                          "href": "/ortopedia"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
                           "label": "Radiologia",
-                          "href": "/"
+                          "href": "/radiologia"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
                           "label": "Resgate",
-                          "href": "/"
+                          "href": "/produtos-para-resgate"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
                           "label": "Veterinária",
-                          "href": "/"
+                          "href": "/veterinaria"
                         }
                       ],
                       "variant": "CommonChild",
@@ -3243,73 +3289,80 @@
                           "children": [],
                           "variant": "CommonChild",
                           "label": "Algodão",
-                          "href": "/"
+                          "href": "/algodao"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
-                          "label": "Ataduras"
+                          "href": "/ataduras",
+                          "label": "Ataduras",
+                          "highlighted": false
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
+                          "href": "/campo-operatorio",
                           "label": "Campo Operatório"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
+                          "href": "/compressa",
                           "label": "Compressa"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
+                          "href": "/curativos",
                           "label": "Curativos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
+                          "href": "/esparadrapos",
                           "label": "Esparadrapos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
+                          "href": "/fios-cirurgicos",
                           "label": "Fios Cirúrgicos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
+                          "href": "/fitas",
                           "label": "Fitas"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
+                          "href": "/malha-tubular",
                           "label": "Malha Tubular"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
+                          "href": "/papel",
                           "label": "Papel"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
+                          "href": "/produtos-hospitalares",
                           "label": "Produtos Hospitalares"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
+                          "href": "/saco-para-lixo-hospitalar",
                           "label": "Saco para Lixo Hospitalar"
+                        },
+                        {
+                          "children": [],
+                          "variant": "CommonChild",
+                          "label": "Tela de Marlex",
+                          "href": "/tela-de-marlex"
                         }
                       ],
                       "variant": "CommonChild",
@@ -3322,17 +3375,272 @@
                             {
                               "children": [],
                               "variant": "CommonChild",
-                              "label": "Acidose Metabólica"
+                              "label": "Acidose Metabólica",
+                              "href": "/medicamentos/acidose-metabolica"
                             },
                             {
                               "children": [],
                               "variant": "CommonChild",
-                              "label": "Analgésicos"
+                              "label": "Analgésicos",
+                              "href": "/medicamentos/analgesicos"
                             },
                             {
                               "children": [],
                               "variant": "CommonChild",
-                              "label": "Ansiolíticos"
+                              "label": "Ansiolíticos",
+                              "href": "/medicamentos/ansioliticos"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Anti-Hemorrágicos",
+                              "href": "/medicamentos/anti-hemorragicos"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Anti-Histamínicos",
+                              "href": "/medicamentos/anti-histaminicos"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Anti-Inflamatórios",
+                              "href": "/medicamentos/anti-inflamatorios"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antianêmico",
+                              "href": "/medicamentos/antianemico"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antiarrítmicos",
+                              "href": "/medicamentos/anti-arritmicos"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antibióticos",
+                              "href": "/medicamentos/antibioticos"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Anticoagulantes",
+                              "href": "/medicamentos/anticoagulantes"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Anticonvulsionante",
+                              "href": "/medicamentos/anticonvulsionante"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antieméticos",
+                              "href": "/medicamentos/antiemeticos"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antifúngico",
+                              "href": "/medicamentos/antifungico"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antigases",
+                              "href": "/medicamentos/antigases"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antigotoso",
+                              "href": "/medicamentos/antigotoso"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antimiastênico",
+                              "href": "/medicamentos/antimiastenico"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antimuscarnicos",
+                              "href": "/medicamentos/antimuscarnicos"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antineoplásico",
+                              "href": "/medicamentos/antineoplasico"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antiopióide",
+                              "href": "/medicamentos/antiopioide"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antipasmódico",
+                              "href": "/medicamentos/antiespasmodico"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antitermico",
+                              "href": "/medicamentos/antitermico"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antivaricoso",
+                              "href": "/medicamentos/antivaricoso"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antiácido",
+                              "href": "/medicamentos/antiacido"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Antídoto",
+                              "href": "/medicamentos/antidoto"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Beta-Bloqueador",
+                              "href": "/medicamentos/beta-bloqueador"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Broncodilatadores",
+                              "href": "/medicamentos/broncodilatadores"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Cicatrizantes",
+                              "href": "/medicamentos/cicatrizantes"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Colírios",
+                              "href": "/medicamentos/colirios"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Contraste Radiológico",
+                              "href": "/medicamentos/contraste-radiologico"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Diurético",
+                              "href": "/medicamentos/diuretico"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Expansor Plasmático",
+                              "href": "/medicamentos/expansor-plasmatico"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Expectorante",
+                              "href": "/medicamentos/expectorante"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Hipertensivos",
+                              "href": "/medicamentos/hipertensivos"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Hipocalcemia",
+                              "href": "/medicamentos/hipocalcemia"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Hipoglicemia",
+                              "href": "/medicamentos/hipoglicemia"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Hipomagnesemia",
+                              "href": "/medicamentos/hipomagnesemia"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Hipotensivos",
+                              "href": "/medicamentos/hipotensivos"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Insuficiência Cardíaca",
+                              "href": "/medicamentos/insuficiencia-cardiaca"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Laxantes",
+                              "href": "/medicamentos/laxantes"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Neuroléptico",
+                              "href": "/medicamentos/neuroleptico"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Pomadas",
+                              "href": "/medicamentos/pomadas"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Protetores Gástricos",
+                              "href": "/medicamentos/protetores-gastricos"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Relaxante Muscular",
+                              "href": "/medicamentos/relaxante-muscular"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Repositores Eletrolíticos",
+                              "href": "/medicamentos/repositores-eletroliticos"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Vasoconstritores",
+                              "href": "/medicamentos/vasoconstritores"
                             }
                           ],
                           "variant": "CommonChild",
@@ -3343,22 +3651,140 @@
                             {
                               "children": [],
                               "variant": "CommonChild",
-                              "label": "Astra"
+                              "label": "Astra",
+                              "href": "/medicamentos/astra"
                             },
                             {
                               "children": [],
                               "variant": "CommonChild",
-                              "label": "BioChimico"
+                              "label": "BioChimico",
+                              "href": "/medicamentos/biochimico"
                             },
                             {
                               "children": [],
                               "variant": "CommonChild",
-                              "label": "Blausigel"
+                              "label": "Blausigel",
+                              "href": "/medicamentos/blausigel"
                             },
                             {
                               "children": [],
                               "variant": "CommonChild",
-                              "label": "Cristália"
+                              "label": "Cristália",
+                              "href": "/medicamentos/cristalia"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "EMS",
+                              "href": "/medicamentos/ems"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Eurofarma",
+                              "href": "/medicamentos/eurofarma"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Geolab",
+                              "href": "/medicamentos/geolab"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Geral",
+                              "href": "/medicamentos/geral"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Hypofarma",
+                              "href": "/medicamentos/hypofarma"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Isofarma",
+                              "href": "/medicamentos/isofarma"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "href": "/medicamentos/jp",
+                              "label": "JP"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Mariol",
+                              "href": "/medicamentos/mariol"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Medley",
+                              "href": "/medicamentos/medley"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Neoquimica",
+                              "href": "/medicamentos/neoquimica"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Novafarma",
+                              "href": "/medicamentos/novafarma"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Novo Nordisk",
+                              "href": "/medicamentos/novo-nordisk"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Prati Donaduzzi",
+                              "href": "/medicamentos/prati-donaduzzi"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Samtec",
+                              "href": "/medicamentos/samtec"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Teuto",
+                              "href": "/medicamentos/teuto"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "União Química",
+                              "href": "/medicamentos/uniao-quimica"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Wasser Farma",
+                              "href": "/medicamentos/wasser-farma"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "ZLB Behring",
+                              "href": "/medicamentos/zlb-behring"
+                            },
+                            {
+                              "children": [],
+                              "variant": "CommonChild",
+                              "label": "Zodiac",
+                              "href": "/medicamentos/zodiac"
                             }
                           ],
                           "variant": "WithBrands",
@@ -3373,23 +3799,25 @@
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Diversos"
+                          "label": "Diversos",
+                          "href": "/aparelhos-diversos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Kits Acadêmicos"
+                          "label": "Kits Acadêmicos",
+                          "href": "/kits-academicos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
+                          "href": "/outros",
                           "label": "Outros"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "href": "/",
+                          "href": "/outlet",
                           "label": "Outlet"
                         }
                       ],
@@ -3414,32 +3842,37 @@
                           "children": [],
                           "variant": "CommonChild",
                           "label": "Acidose Metabólica",
-                          "href": "/"
+                          "href": "/medicamentos/acidose-metabolica"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Analgésicos"
+                          "label": "Analgésicos",
+                          "href": "/medicamentos/analgesicos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antimiastênico"
+                          "label": "Antimiastênico",
+                          "href": "/medicamentos/ansioliticos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Anti-Hemorrágicos"
+                          "label": "Anti-Hemorrágicos",
+                          "href": "/medicamentos/anti-hemorragicos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Anti-Histamínicos"
+                          "label": "Anti-Histamínicos",
+                          "href": "/medicamentos/anti-histaminicos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Anti-Inflamatórios"
+                          "label": "Anti-Inflamatórios",
+                          "href": "/medicamentos/anti-inflamatorios"
                         },
                         {
                           "children": [],
@@ -3454,192 +3887,230 @@
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antibióticos"
+                          "label": "Antibióticos",
+                          "href": "/medicamentos/antibioticos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Anticoagulantes"
+                          "label": "Anticoagulantes",
+                          "href": "/medicamentos/anticoagulantes"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Anticonvulsionante"
+                          "label": "Anticonvulsionante",
+                          "href": "/medicamentos/anticonvulsionante"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antieméticos"
+                          "label": "Antieméticos",
+                          "href": "/medicamentos/antiemeticos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antifúngico"
+                          "label": "Antifúngico",
+                          "href": "/medicamentos/antifungico"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antigases"
+                          "label": "Antigases",
+                          "href": "/medicamentos/antigases"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antigotoso"
+                          "label": "Antigotoso",
+                          "href": "/medicamentos/antigotoso"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antimiastênico"
+                          "label": "Antimiastênico",
+                          "href": "/medicamentos/antimiastenico"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antimuscarnicos"
+                          "label": "Antimuscarnicos",
+                          "href": "/medicamentos/antimuscarnicos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antineoplásico"
+                          "label": "Antineoplásico",
+                          "href": "/medicamentos/antineoplasico"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antiopióide"
+                          "label": "Antiopióide",
+                          "href": "/medicamentos/antiopioide"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antipasmódico"
+                          "label": "Antipasmódico",
+                          "href": "/medicamentos/antiespasmodico"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antitermico"
+                          "label": "Antitermico",
+                          "href": "/medicamentos/antiespasmodico"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antivaricoso"
+                          "label": "Antivaricoso",
+                          "href": "/medicamentos/antivaricoso"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antiácido"
+                          "label": "Antiácido",
+                          "href": "/medicamentos/antiacido"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Antídoto"
+                          "label": "Antídoto",
+                          "href": "/medicamentos/antidoto"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Beta-Bloqueador"
+                          "label": "Beta-Bloqueador",
+                          "href": "/medicamentos/beta-bloqueador"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Broncodilatadores"
+                          "label": "Broncodilatadores",
+                          "href": "/medicamentos/broncodilatadores"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Cicatrizantes"
+                          "label": "Cicatrizantes",
+                          "href": "/medicamentos/cicatrizantes"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Colírios"
+                          "label": "Colírios",
+                          "href": "/medicamentos/colirios"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Contraste Radiológico"
+                          "label": "Contraste Radiológico",
+                          "href": "/medicamentos/contraste-radiologico"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Diurético"
+                          "label": "Diurético",
+                          "href": "/medicamentos/diuretico"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Expansor Plasmático"
+                          "label": "Expansor Plasmático",
+                          "href": "/medicamentos/expansor-plasmatico"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Expectorante"
+                          "label": "Expectorante",
+                          "href": "/medicamentos/expectorante"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Hipertensivos"
+                          "label": "Hipertensivos",
+                          "href": "/medicamentos/hipertensivos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Hipocalcemia"
+                          "label": "Hipocalcemia",
+                          "href": "/medicamentos/hipocalcemia"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Hipocalemia"
+                          "label": "Hipocalemia",
+                          "href": "/medicamentos/hipocalcemia"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Hipoglicemia"
+                          "label": "Hipoglicemia",
+                          "href": "/medicamentos/hipoglicemia"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Hipomagnesemia"
+                          "label": "Hipomagnesemia",
+                          "href": "/medicamentos/hipomagnesemia"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Hipotensivos"
+                          "label": "Hipotensivos",
+                          "href": "/medicamentos/hipotensivos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Insuficiência Cardíaca"
+                          "label": "Insuficiência Cardíaca",
+                          "href": "/medicamentos/insuficiencia-cardiaca"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Laxantes"
+                          "label": "Laxantes",
+                          "href": "/medicamentos/laxantes"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Neuroléptico"
+                          "label": "Neuroléptico",
+                          "href": "/medicamentos/neuroleptico"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Pomadas"
+                          "label": "Pomadas",
+                          "href": "/medicamentos/pomadas"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Protetores Gástricos"
+                          "label": "Protetores Gástricos",
+                          "href": "/medicamentos/protetores-gastricos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Relaxante Muscular"
+                          "label": "Relaxante Muscular",
+                          "href": "/medicamentos/relaxante-muscular"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Repositores Eletrolíticos"
+                          "label": "Repositores Eletrolíticos",
+                          "href": "/medicamentos/repositores-eletroliticos"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Vasoconstritores"
+                          "label": "Vasoconstritores",
+                          "href": "/medicamentos/vasoconstritores"
                         }
                       ],
                       "variant": "CommonChild",
@@ -3650,122 +4121,146 @@
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Astra"
+                          "label": "Astra",
+                          "href": "/medicamentos/astra"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "BioChimico"
+                          "label": "BioChimico",
+                          "href": "/medicamentos/biochimico"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Blausigel"
+                          "label": "Blausigel",
+                          "href": "/medicamentos/blausigel"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Cristália"
+                          "label": "Cristália",
+                          "href": "/medicamentos/cristalia"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "EMS"
+                          "label": "EMS",
+                          "href": "/medicamentos/ems"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Eurofarma"
+                          "label": "Eurofarma",
+                          "href": "/medicamentos/eurofarma"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Geolab"
+                          "label": "Geolab",
+                          "href": "/medicamentos/geolab"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Geral"
+                          "label": "Geral",
+                          "href": "/medicamentos/geral"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Hipolabor"
+                          "label": "Hipolabor",
+                          "href": "/medicamentos/hipolabor"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Hypofarma"
+                          "label": "Hypofarma",
+                          "href": "/medicamentos/hypofarma"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Isofarma"
+                          "label": "Isofarma",
+                          "href": "/medicamentos/isofarma"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "JP"
+                          "label": "JP",
+                          "href": "/medicamentos/jp"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Mariol"
+                          "label": "Mariol",
+                          "href": "/medicamentos/mariol"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Medley"
+                          "label": "Medley",
+                          "href": "/medicamentos/medley"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Neoquimica"
+                          "label": "Neoquimica",
+                          "href": "/medicamentos/neoquimica"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Novafarma"
+                          "label": "Novafarma",
+                          "href": "/medicamentos/novafarma"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Novo Nordisk"
+                          "label": "Novo Nordisk",
+                          "href": "/medicamentos/novo-nordisk"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Prati Donaduzzi"
+                          "label": "Prati Donaduzzi",
+                          "href": "/medicamentos/prati-donaduzzi"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Samtec"
+                          "label": "Samtec",
+                          "href": "/medicamentos/samtec"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Teuto"
+                          "label": "Teuto",
+                          "href": "/medicamentos/teuto"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "União Química"
+                          "label": "União Química",
+                          "href": "/medicamentos/uniao-quimica"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Wasser Farma"
+                          "label": "Wasser Farma",
+                          "href": "/medicamentos/wasser-farma"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "ZLB Behring"
+                          "label": "ZLB Behring",
+                          "href": "/medicamentos/zlb-behring"
                         },
                         {
                           "children": [],
                           "variant": "CommonChild",
-                          "label": "Zodiac"
+                          "label": "Zodiac",
+                          "href": "/medicamentos/zodiac"
                         }
                       ],
                       "variant": "WithBrands",

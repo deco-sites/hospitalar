@@ -87,10 +87,10 @@ function ItemsAllCategories({
                                     `}
                                 >
                                     {
-                                        item?.children?.map(({ label }, index) => {
+                                        item?.children?.map(({ label, href }, index) => {
                                             return (
                                                 <>
-                                                    <li key={index} class="font-normal text-xs text-[#2C376D]">{label}</li>
+                                                    <li key={index} class="font-normal text-xs text-[#2C376D]"><a href={href}>{label}</a></li>
                                                 </>
                                             )
                                         })
@@ -174,7 +174,7 @@ function ItemsWithBrands({
                             key={index}
                             class="text-[10px]"
                         >
-                            {element?.label}
+                            <a href={element?.href}>{element?.label}</a>
                         </li>
                     )
                 })}
