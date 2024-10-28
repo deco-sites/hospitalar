@@ -6,7 +6,7 @@ export interface Props {
 export default function Empresa() {
 
     return (
-        <div class="">
+        <div >
             <div class="">
                 <h1>Empresa</h1>
                 <div class={`container  mb-[20px] px-5`}>
