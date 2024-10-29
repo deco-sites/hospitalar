@@ -1,40 +1,21 @@
 import { Head } from "$fresh/runtime.ts";
 import { Section } from "$live/blocks/section.ts";
-import type { BlockInstance } from "$live/engine/block.ts";
-import type { Manifest } from "site/manifest.gen.ts";
 import Icon from "$store/components/ui/Icon.tsx";
+import type { SectionProps } from "$live/mod.ts";
 
 export interface Props {
   title: string;
   asideMenu: Section;
-  content:
-    | BlockInstance<
-      "site/sections/Institutional/TextContent.tsx",
-      Manifest
-    >
-    | BlockInstance<
-      "site/sections/Institutional/AccordionsContent.tsx",
-      Manifest
-    >
-    | BlockInstance<
-      "site/sections/Institutional/CardsContent.tsx",
-      Manifest
-    >
-    | BlockInstance<
-      "site/sections/Institutional/ContactForm.tsx",
-      Manifest
-    >
-    | BlockInstance<
-      "site/sections/Institutional/Empresa.tsx",
-      Manifest
-    >;
+  description?: string;
+  content: Section[];
 }
+
 
 function InstitutionalPage({
   asideMenu: { Component: AsideComponent, props: asideProps },
   content: { Component: ContentComponent, props: contentProps },
   title,
-}: Props) {
+}: SectionProps<typeof loader>) {
   return (
     <>
       <Head>
