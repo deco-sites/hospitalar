@@ -1,13 +1,33 @@
 import { Head } from "$fresh/runtime.ts";
 import { Section } from "$live/blocks/section.ts";
 import Icon from "$store/components/ui/Icon.tsx";
-import type { SectionProps } from "$live/mod.ts";
+import { BlockInstance } from "https://denopkg.com/deco-cx/deco@1.83.4/engine/block.ts";
 
 export interface Props {
   title: string;
   asideMenu: Section;
   description?: string;
-  content: Section[];
+  content: 
+  | BlockInstance<
+      "site/sections/Institutional/TextContent.tsx",
+      Manifest
+    >
+    | BlockInstance<
+      "site/sections/Institutional/AccordionsContent.tsx",
+      Manifest
+    >
+    | BlockInstance<
+      "site/sections/Institutional/CardsContent.tsx",
+      Manifest
+    >
+    | BlockInstance<
+      "site/sections/Institutional/ContactForm.tsx",
+      Manifest
+    >
+    | BlockInstance<
+      "site/sections/Institutional/Questions.tsx",
+      Manifest
+    >;
 }
 
 
@@ -15,7 +35,7 @@ function InstitutionalPage({
   asideMenu: { Component: AsideComponent, props: asideProps },
   content: { Component: ContentComponent, props: contentProps },
   title,
-}: SectionProps<typeof loader>) {
+}: Props) {
   return (
     <>
       <Head>
