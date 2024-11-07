@@ -43,8 +43,8 @@ const DEFAULT_PROPS = {
 
 function Question({ question, answer }: Question) {
   return (
-    <details class="collapse collapse-plus join-item border-b border-[#eee] !rounded-none">
-      <summary class="collapse-title bg-[#EEF1F5] text-lg !min-h-0 font-scoutCond tracking-one font-medium text-[#2C376D] rounded-full py-4 px-7">
+    <details class="collapse collapse-plus join-item !rounded-none">
+      <summary class="collapse-title bg-[#EEF1F5] text-sm md:text-lg !min-h-0 font-scoutCond tracking-one font-medium text-[#2C376D] rounded-full py-4 px-7">
         {question}
       </summary>
       <div

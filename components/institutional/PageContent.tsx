@@ -118,13 +118,13 @@ function PageContent({
       <div class="flex flex-col md:flex-row justify-between mt-[15px] mb-14">
         <AsideComponent {...asideProps} />
         <article class="md:pl-[30px] w-full">
-          <h1 class="hidden max-md:flex max-md:justify-between text-primary text-[19px] lg:text-[24px] font-normal lg:font-medium leading-[130%] lg:leading-[36.4px] mb-5 border-b border-neutral-100 pb-[10px]">
+          <h1 class="hidden md:flex max-md:justify-between text-primary text-[19px] lg:text-[24px] font-normal lg:font-medium leading-[130%] lg:leading-[36.4px] mb-5 border-b border-neutral-100 pb-[10px]">
             {title}
           </h1>
-          <h1 class="max-md:flex max-md:justify-between text-primary text-[19px] lg:text-[24px] font-normal lg:font-medium leading-[130%] lg:leading-[36.4px] mb-5 border-b border-neutral-100 pb-[10px]">
+          <h1 class="flex md:hidden max-md:justify-between text-primary text-[19px] lg:text-[24px] font-normal lg:font-medium leading-[130%] lg:leading-[36.4px] mb-5 border-b border-neutral-100 pb-[10px]">
             <a
               href="/i"
-              class="md:hidden text-base font-bold flex items-center justify-end"
+              class="text-base font-bold flex items-center justify-end"
             >
               <Icon id="ChevronLeft" size={20} /> {title}
             </a>
