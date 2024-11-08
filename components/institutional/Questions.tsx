@@ -1,6 +1,10 @@
 import { Head } from "$fresh/runtime.ts";
-import { clx } from "../../sdk/clx.ts";
+// import { clx } from "../../sdk/clx.ts";
 
+
+/**
+ * @title {{{question}}}
+ */
 export interface Question {
   question: string;
   /** @format html */
@@ -103,7 +107,10 @@ export default function FAQ(props: Props) {
                .collapse-content table {
                   width: 100% !important;
                   border-collapse: collapse;
-              }
+                }
+                .btn-form {
+                  font-size: 9px;
+                }
             }
             `,
           }}
