@@ -111,6 +111,7 @@ export default function FAQ(props: Props) {
                 .btn-form {
                   font-size: 9px;
                 }
+                
             }
             `,
           }}
