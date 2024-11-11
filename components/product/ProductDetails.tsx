@@ -198,7 +198,7 @@ function ProductInfo(
 
       {/* Tag Blue Product */}
 
-      <TagBlueProduct blueProductId={productID} />
+      {/* <TagBlueProduct blueProductId={productID} /> */}
 
       {/* Analytics Event */}
       <SendEventOnLoad
