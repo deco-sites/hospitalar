@@ -1240,28 +1240,11 @@
       ]
     },
     {
-      "__resolveType": "site/sections/Images/Carousel.tsx",
-      "images": [
-        {
-          "alt": "banner-img",
-          "action": {
-            "variant": "primary"
-          },
-          "mobile": {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/5937621f-ce28-4700-938a-1fd39c827f93",
-            "width": 390,
-            "height": 130
-          },
-          "desktop": {
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/60ef5d85-aacd-49df-875e-e642e2c0674f",
-            "width": 1920,
-            "height": 200
-          }
-        }
-      ],
-      "preload": false,
-      "showPaginationDots": "Never",
-      "showPaginationArrows": "Never"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Institutional/TextContent.tsx",
+        "content": "<div class=\"container flex flex-col justify-center items-center gap-5 mt-16 mb-10\"><h1 class=\"text-2xl lg:text-[40px] font-bold text-[#2C376D]\">Minha conta</h1><h2 class=\"text-base lg:text-xl font-semibold text-[#2C376D]\">Cadastre-se ou entre em sua conta</h2></div>"
+      }
     },
     {
       "__resolveType": "site/sections/Miscellaneous/ProxyIframe.tsx",
