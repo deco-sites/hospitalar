@@ -34,6 +34,7 @@ export default function ProxyIframe({ src }: Props) {
               margin-bottom: 40px;
               gap: 20px;
             }
+              
 
             .my-account-title {
               font-size:40px;
