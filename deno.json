@@ -37,6 +37,7 @@
     "deco/": "https://denopkg.com/deco-cx/deco@1.101.3/",
     "$fresh/": "https://deno.land/x/fresh@1.6.1/",
     "preact": "npm:preact@10.23.1",
+    "preact/hooks": "https://esm.sh/preact@10.24.1/hooks",
     "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.1",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.0",

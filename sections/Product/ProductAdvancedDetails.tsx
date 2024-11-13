@@ -1,1 +1,4 @@
-export { default, loader } from "$store/components/product/ProductAdvancedDetails.tsx";
+export {
+  default,
+  loader,
+} from "$store/components/product/ProductAdvancedDetails.tsx";

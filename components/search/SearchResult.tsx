@@ -26,7 +26,7 @@ export interface Props {
    */
   notFoundSection: Section;
 
-  isWishlist?:boolean
+  isWishlist?: boolean;
 }
 
 function Result({
@@ -42,17 +42,23 @@ function Result({
   const productsFound = (
     <div class="flex flex-col items-start justify-start mb-[10px] mt-[15px] lg:mt-0 lg:mb-0">
       <h6 class="font-poppins not-italic font-bold text-2xl leading-10 text-[#2C376D] lg:hidden">
-        { itemListElement[itemListElement.length - 1].name } 
+        {itemListElement[itemListElement.length - 1].name}
       </h6>
-      <strong class="font-poppins not-italic font-bold text-base leading-6 text-[#2C376D] lg:hidden">{pageInfo.records} resultados</strong>
-      <span class="hidden font-poppins not-italic font-normal text-base leading-6 text-[#2C376D] lg:block">Produtos encontrados: <strong>{pageInfo.records} resultados</strong></span>
+      <strong class="font-poppins not-italic font-bold text-base leading-6 text-[#2C376D] lg:hidden">
+        {pageInfo.records} resultados
+      </strong>
+      <span class="hidden font-poppins not-italic font-normal text-base leading-6 text-[#2C376D] lg:block">
+        Produtos encontrados: <strong>{pageInfo.records} resultados</strong>
+      </span>
     </div>
   );
 
   return (
     <>
       <div class="hidden lg:flex w-full items-start justify-start lg:mb-[40px] lg:pt-[35px]">
-        <span class="font-poppins not-italic font-bold text-[40px] leading-[40px] text-[#2C376D]">{ itemListElement[itemListElement.length - 1].name } </span>
+        <span class="font-poppins not-italic font-bold text-[40px] leading-[40px] text-[#2C376D]">
+          {itemListElement[itemListElement.length - 1].name}
+        </span>
       </div>
       <div>
         <div class="flex flex-row gap-8">
@@ -74,7 +80,7 @@ function Result({
                 filters={filters}
                 breadcrumb={breadcrumb}
                 displayFilter={variant === "drawer"}
-                isWishlist = {isWishlist}
+                isWishlist={isWishlist}
               />
               {sortOptions.length > 0
                 ? (
@@ -131,15 +137,13 @@ function SearchResult(
 
 export default SearchResult;
 
-
 export const loader = (
   props: Props,
   req: Request,
   // deno-lint-ignore no-explicit-any
   _: AppContext<any>,
 ) => {
-
-  const {page} = props; 
+  const { page } = props;
 
   if (!page || !page.products || page.products.length === 0) {
     const url = new URL(req.url);

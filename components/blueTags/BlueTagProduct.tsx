@@ -28,6 +28,4 @@ const TagBlueProduct = ({ blueProductId }: Props) => {
   return null;
 };
 
-
-
 export default TagBlueProduct;

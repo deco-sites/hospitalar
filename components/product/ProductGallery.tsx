@@ -32,7 +32,7 @@ function ProductGallery({ products, IdCollection }: Props) {
           IdCollection={IdCollection ?? "156"}
           tagWarningWidth="70%"
           positionBottom="bottom-0"
-          classFrreShipping= "hidden lg:block"
+          classFrreShipping="hidden lg:block"
           class="min-h-[325px] lg:min-h-[405px]"
         />
       ))}

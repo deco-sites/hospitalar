@@ -25,16 +25,16 @@ function ProductAsideInfo({
 
   return (
     <>
-      {/* Code and name */}  
-        {gtin && gtin?.length > 0 && (
-          <div class="mt-4 sm:mt-0 sm:h-auto">
-            <div>
-              <span class="text-sm text-base-300">
-                Referência: {gtin}
-              </span>
-            </div>
+      {/* Code and name */}
+      {gtin && gtin?.length > 0 && (
+        <div class="mt-4 sm:mt-0 sm:h-auto">
+          <div>
+            <span class="text-sm text-base-300">
+              Referência: {gtin}
+            </span>
           </div>
-        )}
+        </div>
+      )}
 
       {/* { tag warning} */}
       {isRestricted && <TagWarning style={""} />}
@@ -57,7 +57,7 @@ function ProductAsideInfo({
                 </span>
               )}
               <span class="text-[#2C376D] text-base not-italic font-poppins font-normal">
-                ou  {" "}
+                ou{"  "}
                 <strong>
                   {formatPrice(price, offers!.priceCurrency!)}
                 </strong>

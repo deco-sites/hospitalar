@@ -1,4 +1,3 @@
-import { useSignal } from "@preact/signals";
 import Slider from "$store/components/ui/Slider.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import DiscountBadge from "./DiscountBadge.tsx";
@@ -15,8 +14,6 @@ interface Props {
   product: Product;
 }
 
-const id = "product-zoom";
-
 function ProductDetailsImages(
   { images, width, height, aspect, product }: Props,
 ) {
@@ -25,8 +22,6 @@ function ProductDetailsImages(
     price,
     listPrice,
   } = useOffer(offers);
-  const zoomX = useSignal(0);
-  const zoomY = useSignal(0);
 
   const freeShippingCollection = product.additionalProperty?.filter(
     (property) =>

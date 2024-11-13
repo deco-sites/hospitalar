@@ -48,10 +48,12 @@ function Sort({ sortOptions }: Props) {
       >
         {sort
           ? <span class="text-base-content">{labels[sort as LabelKey]}</span>
-          : <>
-            <span class="hidden lg:block">Selecione</span>
-            <span class="lg:hidden">Ordenar</span>
-          </>}
+          : (
+            <>
+              <span class="hidden lg:block">Selecione</span>
+              <span class="lg:hidden">Ordenar</span>
+            </>
+          )}
         <Icon
           id="ChevronDown"
           height={22}

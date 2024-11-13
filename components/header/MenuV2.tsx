@@ -4,10 +4,9 @@ import { LoginSetting } from "site/components/header/HeaderLayoutV2.tsx";
 import type { INavItem } from "./NavItem.tsx";
 import { useUser } from "apps/vtex/hooks/useUser.ts";
 
-
 export interface Props {
   items: INavItem[];
-  login?: LoginSetting[]
+  login?: LoginSetting[];
 }
 
 function MenuItem({ item }: { item: INavItem }) {
@@ -42,8 +41,9 @@ function MenuItem({ item }: { item: INavItem }) {
                               <a
                                 href={nodeChild.href}
                                 title={nodeChild.label}
-                                class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm ${nodeChild.highlighted ? "text-secondary" : ""
-                                  }`}
+                                class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm ${
+                                  nodeChild.highlighted ? "text-secondary" : ""
+                                }`}
                               >
                                 {nodeChild.label}
                               </a>
@@ -74,8 +74,9 @@ function MenuItem({ item }: { item: INavItem }) {
                     <a
                       href={node.href}
                       title={node.label}
-                      class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm ${item.highlighted ? "text-secondary" : ""
-                        }`}
+                      class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm ${
+                        item.highlighted ? "text-secondary" : ""
+                      }`}
                     >
                       {node.label}
                     </a>
@@ -90,8 +91,9 @@ function MenuItem({ item }: { item: INavItem }) {
       <a
         href={item.href}
         title={item.label}
-        class={`w-full block py-2.5 font-dm-sans font-normal text-sm ${item.highlighted ? "text-secondary" : ""
-          }`}
+        class={`w-full block py-2.5 font-dm-sans font-normal text-sm ${
+          item.highlighted ? "text-secondary" : ""
+        }`}
       >
         {item.label}
       </a>
@@ -100,11 +102,11 @@ function MenuItem({ item }: { item: INavItem }) {
   return component;
 }
 
-
 function Menu({ items, login }: Props) {
   const { displayMenu } = useUI();
   const { user } = useUser();
-  const username = user?.value?.name ?? user?.value?.givenName ?? user?.value?.email ?? "";
+  const username = user?.value?.name ?? user?.value?.givenName ??
+    user?.value?.email ?? "";
 
   return (
     <div class="flex flex-col justify-center px-4">
@@ -118,16 +120,23 @@ function Menu({ items, login }: Props) {
             strokeWidth={1}
           />
           <div>
-            <h2 class="text-xs font-bold cursor-pointer text-primary">Bem-vindo :)</h2>
-            {
-              user?.value
-                ? (<><p class="text-xs font-normal flex text-primary"
-                >{username}
+            <h2 class="text-xs font-bold cursor-pointer text-primary">
+              Bem-vindo :)
+            </h2>
+            {user?.value
+              ? (
+                <>
+                  <p class="text-xs font-normal flex text-primary">
+                    {username}
+                  </p>
+                </>
+              )
+              : (
+                <p class="text-xs font-normal text-primary">
+                  <a href="/my-account">Entre</a> ou{" "}
+                  <a href="/my-account">Cadastre-se</a>
                 </p>
-
-                </>)
-                : (<p class="text-xs font-normal text-primary"><a href="/my-account">Entre</a> ou <a href="/my-account">Cadastre-se</a></p>)
-            }
+              )}
           </div>
         </div>
         <button
@@ -136,29 +145,44 @@ function Menu({ items, login }: Props) {
             displayMenu.value = false;
           }}
         >
-          <Icon id="XMark" class="text-base-content" width={24} height={24} strokeWidth={2} />
+          <Icon
+            id="XMark"
+            class="text-base-content"
+            width={24}
+            height={24}
+            strokeWidth={2}
+          />
         </button>
       </div>
-      {user?.value ? (<div class="flex items-center justify-center flex-col w-full gap-2 mt-4 pb-4">
-        {login?.map(({href, label, target}) => (
-          <a
-            href={href}
-            target={target}
-            class="btn btn-secondary btn-rounded h-10 min-h-[40px] capitalize font-bold text-xs min-w-[140px]  w-full"
-          >
-            {label}
-          </a>
-        ))}
-      </div>) : null}
+      {user?.value
+        ? (
+          <div class="flex items-center justify-center flex-col w-full gap-2 mt-4 pb-4">
+            {login?.map(({ href, label, target }) => (
+              <a
+                href={href}
+                target={target}
+                class="btn btn-secondary btn-rounded h-10 min-h-[40px] capitalize font-bold text-xs min-w-[140px]  w-full"
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+        )
+        : null}
       <ul class="flex-grow flex flex-col">
         {items.map((item) => <MenuItem item={item} />)}
       </ul>
 
-      {user?.value ? (<a
-        href="/api/vtexid/pub/logout?scope=hospitalar&returnUrl=https%3A%2F%2Fwww.hospitalardistribuidora.com.br%2F"
-        class="btn-square btn-ghost border-primary mt-6 text-xs font-bold text-primary relative flex justify-center items-center rounded-[90px] w-[83px] h-[40px]">
-        SAIR
-      </a>) : null}
+      {user?.value
+        ? (
+          <a
+            href="/api/vtexid/pub/logout?scope=hospitalar&returnUrl=https%3A%2F%2Fwww.hospitalardistribuidora.com.br%2F"
+            class="btn-square btn-ghost border-primary mt-6 text-xs font-bold text-primary relative flex justify-center items-center rounded-[90px] w-[83px] h-[40px]"
+          >
+            SAIR
+          </a>
+        )
+        : null}
     </div>
   );
 }

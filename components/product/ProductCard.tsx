@@ -29,15 +29,15 @@ export interface Layout {
   discount: {
     label: string;
     variant:
-    | "primary"
-    | "secondary"
-    | "neutral"
-    | "accent"
-    | "emphasis"
-    | "success"
-    | "info"
-    | "error"
-    | "warning";
+      | "primary"
+      | "secondary"
+      | "neutral"
+      | "accent"
+      | "emphasis"
+      | "success"
+      | "info"
+      | "error"
+      | "warning";
   };
   elementsPositions?: {
     skuSelector?: "Top" | "Bottom";
@@ -91,7 +91,6 @@ function ProductCard(
     itemListName,
     layout,
     class: _class,
-    IdCollection,
     tagWarningWidth,
     tagWarningHeight,
     positionBottom,
@@ -105,7 +104,7 @@ function ProductCard(
     image: images,
     offers,
     isVariantOf,
-    category
+    category,
   } = product;
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
@@ -115,21 +114,20 @@ function ProductCard(
 
   //warning product
 
-  const strict = category?.split(">")?.[0]
+  const strict = category?.split(">")?.[0];
 
-  let isRestricted = false
+  let isRestricted = false;
 
   if (strict === "Medicamentos") {
-    isRestricted = true
+    isRestricted = true;
   } else {
-    isRestricted = false
+    isRestricted = false;
   }
 
   function limitarCaracteres(str: string | undefined, limite: number): string {
-    if (!str) return ''; // Retorna uma string vazia se str for undefined
-    return str.length > limite ? str.substring(0, limite) + '...' : str;
+    if (!str) return ""; // Retorna uma string vazia se str for undefined
+    return str.length > limite ? str.substring(0, limite) + "..." : str;
   }
-  
 
   const freeShippingCollection = product.additionalProperty?.filter(
     (property) =>
@@ -139,7 +137,6 @@ function ProductCard(
 
   const freeShipping = freeShippingCollection.length > 0;
 
-
   function extractURLPart(url: string) {
     const index = url.indexOf("/p?");
     if (index !== -1) {
@@ -147,9 +144,6 @@ function ProductCard(
     }
     return null; // Returns null if "/p?" is not found in the URL.
   }
-
-
-  const desiredPart = extractURLPart(url ?? "");
 
   const possibilities = useVariantPossibilities(product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
@@ -184,7 +178,8 @@ function ProductCard(
   ));
 
   const addToCartButtonClassNames = (variant: string | undefined) =>
-    `lg:text-sm font-medium text-sm whitespace-nowrap btn max-md:min-h-[2.25rem] max-md:h-[2.25rem] btn-${BUTTON_VARIANTS[variant ?? "primary"]
+    `lg:text-sm font-medium text-sm whitespace-nowrap btn max-md:min-h-[2.25rem] max-md:h-[2.25rem] btn-${
+      BUTTON_VARIANTS[variant ?? "primary"]
     }`;
 
   const cta = layout?.basics?.ctaMode === "Go to Product Page"
@@ -192,8 +187,9 @@ function ProductCard(
       <a
         href={url && relative(url)}
         aria-label="view product"
-        class={`min-w-[162px] ${addToCartButtonClassNames(layout?.basics?.ctaVariation)
-          }`}
+        class={`min-w-[162px] ${
+          addToCartButtonClassNames(layout?.basics?.ctaVariation)
+        }`}
       >
         <span class="max-lg:hidden flex font-medium">
           {l?.basics?.ctaText || "Ver produto"}
@@ -204,22 +200,8 @@ function ProductCard(
       </a>
     )
     : l?.basics?.mobileCtaText
-      ? (
-        <>
-          <AddToCartButton
-            quantity={1}
-            name={product.name as string}
-            discount={price && listPrice ? listPrice - price : 0}
-            productGroupId={product.isVariantOf?.productGroupID ?? ""}
-            price={price as number}
-            sellerId={seller as string}
-            skuId={product.sku}
-            label={l?.basics?.ctaText}
-            classes={addToCartButtonClassNames(layout?.basics?.ctaVariation)}
-          />
-        </>
-      )
-      : (
+    ? (
+      <>
         <AddToCartButton
           quantity={1}
           name={product.name as string}
@@ -229,18 +211,34 @@ function ProductCard(
           sellerId={seller as string}
           skuId={product.sku}
           label={l?.basics?.ctaText}
-          classes={`${addToCartButtonClassNames(layout?.basics?.ctaVariation)}`}
+          classes={addToCartButtonClassNames(layout?.basics?.ctaVariation)}
         />
-      );
+      </>
+    )
+    : (
+      <AddToCartButton
+        quantity={1}
+        name={product.name as string}
+        discount={price && listPrice ? listPrice - price : 0}
+        productGroupId={product.isVariantOf?.productGroupID ?? ""}
+        price={price as number}
+        sellerId={seller as string}
+        skuId={product.sku}
+        label={l?.basics?.ctaText}
+        classes={`${addToCartButtonClassNames(layout?.basics?.ctaVariation)}`}
+      />
+    );
 
   const price2: number = price as number;
   const listPrice2: number = listPrice as number;
 
   return (
     <div
-      class={`card card-compact opacity-100 bg-opacity-100 group w-full p-5 ${align === "center" ? "text-center" : "text-start"
-        } ${l?.onMouseOver?.showCardShadow ? "lg:hover:shadow-lg shadow-black" : ""
-        } ${_class ? `${_class}` : ""}`}
+      class={`card card-compact opacity-100 bg-opacity-100 group w-full p-5 ${
+        align === "center" ? "text-center" : "text-start"
+      } ${
+        l?.onMouseOver?.showCardShadow ? "lg:hover:shadow-lg shadow-black" : ""
+      } ${_class ? `${_class}` : ""}`}
       data-deco="view-product"
       id={`product-card-${productID}`}
       {...sendEventOnClick(clickEvent)}
@@ -252,14 +250,12 @@ function ProductCard(
         {/* Wishlist button */}
         <div
           class={clx(`absolute top-2 z-10
-          ${l?.elementsPositions?.favoriteIcon === "Top left"
+          ${
+            l?.elementsPositions?.favoriteIcon === "Top left"
               ? "left-2"
               : "right-2"
-            }
-          ${l?.onMouseOver?.showFavoriteIcon
-              ? ""
-              : ""
-            }
+          }
+          ${l?.onMouseOver?.showFavoriteIcon ? "" : ""}
         `)}
         >
           <WishlistIcon productGroupID={productGroupID} productID={productID} />
@@ -276,15 +272,17 @@ function ProductCard(
             height={HEIGHT}
             class={clx(`
               absolute rounded-lg w-full
-              ${(!l?.onMouseOver?.image ||
-                l?.onMouseOver?.image == "Change image")
+              ${
+              (!l?.onMouseOver?.image ||
+                  l?.onMouseOver?.image == "Change image")
                 ? "duration-100 transition-opacity opacity-100 lg:group-hover:opacity-0"
                 : ""
-              }
-              ${l?.onMouseOver?.image == "Zoom image"
+            }
+              ${
+              l?.onMouseOver?.image == "Zoom image"
                 ? "duration-100 transition-scale scale-100 lg:group-hover:scale-105"
                 : ""
-              }
+            }
             `)}
             sizes="(max-width: 640px) 50vw, 20vw"
             preload={preload}
@@ -293,22 +291,23 @@ function ProductCard(
           />
           {(!l?.onMouseOver?.image ||
             l?.onMouseOver?.image == "Change image") && (
-              <Image
-                src={back?.url ?? front.url!}
-                alt={back?.alternateName ?? front.alternateName}
-                width={WIDTH}
-                height={HEIGHT}
-                class="absolute transition-opacity rounded-lg w-full opacity-0 lg:group-hover:opacity-100"
-                sizes="(max-width: 640px) 50vw, 20vw"
-                loading="lazy"
-                decoding="async"
-              />
-            )}
+            <Image
+              src={back?.url ?? front.url!}
+              alt={back?.alternateName ?? front.alternateName}
+              width={WIDTH}
+              height={HEIGHT}
+              class="absolute transition-opacity rounded-lg w-full opacity-0 lg:group-hover:opacity-100"
+              sizes="(max-width: 640px) 50vw, 20vw"
+              loading="lazy"
+              decoding="async"
+            />
+          )}
           {/* Tag produto restrito*/}
-          {isRestricted&& (
+          {isRestricted && (
             <div
-              class={`flex justify-center absolute ${positionBottom ?? `bottom-[10%]`
-                }`}
+              class={`flex justify-center absolute ${
+                positionBottom ?? `bottom-[10%]`
+              }`}
             >
               <TagWarning
                 width={tagWarningWidth}
@@ -318,10 +317,11 @@ function ProductCard(
             </div>
           )}
           {/* Tag produto restrito*/}
-          {isRestricted&& (
+          {isRestricted && (
             <div
-              class={`flex justify-center absolute ${positionBottom ?? `bottom-[10%]`
-                }`}
+              class={`flex justify-center absolute ${
+                positionBottom ?? `bottom-[10%]`
+              }`}
             >
               <TagWarning
                 width={tagWarningWidth}
@@ -340,16 +340,16 @@ function ProductCard(
           />
         )}
 
-
         {/* Free Shipping */}
 
         {freeShipping && (
-          < FreeShipping
-            classNameContainer={`md:left-3 left-1 ${listPrice2 !== price2 ? `top-11` : `top-0`} ${classFrreShipping}`}
+          <FreeShipping
+            classNameContainer={`md:left-3 left-1 ${
+              listPrice2 !== price2 ? `top-11` : `top-0`
+            } ${classFrreShipping}`}
             classNameIcon="mr-2"
           />
         )}
-
       </figure>
 
       {/* Prices & Name */}
@@ -357,29 +357,33 @@ function ProductCard(
         {/* SKU Selector */}
         {(!l?.elementsPositions?.skuSelector ||
           l?.elementsPositions?.skuSelector === "Top") && (
-            <>
-              {l?.hide.skuSelector ? "" : (
-                <ul
-                  class={`flex items-center gap-2 w-full ${align === "center" ? "justify-center" : "justify-start"
-                    } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
-                >
-                  {skuSelector}
-                </ul>
-              )}
-            </>
-          )}
+          <>
+            {l?.hide.skuSelector ? "" : (
+              <ul
+                class={`flex items-center gap-2 w-full ${
+                  align === "center" ? "justify-center" : "justify-start"
+                } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
+              >
+                {skuSelector}
+              </ul>
+            )}
+          </>
+        )}
 
         {l?.hide.productName && l?.hide.productDescription
           ? ""
           : (
             <div class="flex flex-col gap-0 mt-[15px] sm:h-auto  h-14">
               {l?.hide.productName ? "" : (
-                <><h2 class="block lg:hidden text-xs text-gray-800 text-center h-full">
-                  {limitarCaracteres(isVariantOf?.name, 40) || limitarCaracteres(name, 36)}
-                </h2>
-                <h2 class="hidden lg:block text-xs text-gray-800 text-center h-full">
+                <>
+                  <h2 class="block lg:hidden text-xs text-gray-800 text-center h-full">
+                    {limitarCaracteres(isVariantOf?.name, 40) ||
+                      limitarCaracteres(name, 36)}
+                  </h2>
+                  <h2 class="hidden lg:block text-xs text-gray-800 text-center h-full">
                     {isVariantOf?.name || name}
-                </h2></> 
+                  </h2>
+                </>
               )}
               {l?.hide.productDescription
                 ? ""
@@ -405,18 +409,21 @@ function ProductCard(
                       à vista ou
                     </div>
                     <div
-                      class={`flex items-center gap-2.5 ${l?.basics?.oldPriceSize === "Normal"
-                        ? "lg:flex-row"
-                        : ""
-                        } ${align === "center" ? "justify-center" : "justify-start"
-                        }`}
+                      class={`flex items-center gap-2.5 ${
+                        l?.basics?.oldPriceSize === "Normal"
+                          ? "lg:flex-row"
+                          : ""
+                      } ${
+                        align === "center" ? "justify-center" : "justify-start"
+                      }`}
                     >
                       {(listPrice && price) && listPrice > price && (
                         <p
-                          class={`line-through text-base-300 text-xs  ${l?.basics?.oldPriceSize === "Normal"
-                            ? "lg:text-xl"
-                            : ""
-                            }`}
+                          class={`line-through text-base-300 text-xs  ${
+                            l?.basics?.oldPriceSize === "Normal"
+                              ? "lg:text-xl"
+                              : ""
+                          }`}
                         >
                           {formatPrice(listPrice, offers!.priceCurrency!)}
                         </p>
@@ -446,26 +453,28 @@ function ProductCard(
 
         {(l?.elementsPositions?.skuSelector === "Bottom" &&
           availability === "https://schema.org/InStock") && (
-            <>
-              {l?.hide.skuSelector ? "" : (
-                <ul
-                  class={`flex items-center gap-2 w-full ${align === "center" ? "justify-center" : "justify-start"
-                    } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
-                >
-                  {skuSelector}
-                </ul>
-              )}
-            </>
-          )}
+          <>
+            {l?.hide.skuSelector ? "" : (
+              <ul
+                class={`flex items-center gap-2 w-full ${
+                  align === "center" ? "justify-center" : "justify-start"
+                } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
+              >
+                {skuSelector}
+              </ul>
+            )}
+          </>
+        )}
 
         {availability === "https://schema.org/InStock"
           ? (
             <div
               class={`w-full flex flex-col mt-[10px]
-          ${l?.onMouseOver?.showSkuSelector || l?.onMouseOver?.showCta
+          ${
+                l?.onMouseOver?.showSkuSelector || l?.onMouseOver?.showCta
                   ? "transition-opacity lg:opacity-0 lg:group-hover:opacity-100"
                   : "lg:hidden"
-                }
+              }
         `}
             >
               {l?.onMouseOver?.showCta && cta}

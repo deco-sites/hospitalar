@@ -1,4 +1,3 @@
-import { useSignal } from "@preact/signals";
 import { useId } from "preact/hooks";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 import Button from "$store/components/ui/Button.tsx";
@@ -74,7 +73,6 @@ function ProductInfo(
     restrictedCategory?: Props["restrictedCategory"];
   },
 ) {
- 
   const {
     breadcrumbList,
     product,
@@ -84,20 +82,19 @@ function ProductInfo(
     productID,
     offers,
     name,
-    gtin,
     isVariantOf,
     url,
-    category
+    category,
   } = product;
 
-  const strict = category?.split(">")?.[0]
+  const strict = category?.split(">")?.[0];
 
-  let isRestricted = false
+  let isRestricted = false;
 
   if (strict === "Medicamentos") {
-    isRestricted = true
+    isRestricted = true;
   } else {
-    isRestricted = false
+    isRestricted = false;
   }
 
   const { price, listPrice, seller, availability } = useOffer(
@@ -109,7 +106,7 @@ function ProductInfo(
 
   Object.keys(possibilities).forEach((name) => {
     Object.entries(possibilities[name]).forEach(
-      ([value, { urls, inStock }]) => {
+      ([value, { urls }]) => {
         if (urls[0] === productUrl) {
           subName.push(value);
         }
@@ -122,7 +119,7 @@ function ProductInfo(
       {/* Code and name */}
       <ProductAsideInfo
         product={product}
-        isRestricted =  {isRestricted}
+        isRestricted={isRestricted}
       />
       {/* Add to Cart and Favorites button */}
       <div class="mt-[30px] lg:mt-10 flex gap-[30px]">
@@ -157,30 +154,34 @@ function ProductInfo(
         )
         : null}
       {/* Description card */}
-      <DescriptionCard description={description ? description : ""} classContainer="lg:hidden" />
-      {/* Share Product on Social Networks */}	      {/* Share Product on Social Networks */}
-      {shareableNetworks && (	
-        <div class="hidden lg:flex items-center gap-5 my-[30px]">	
-          <span class="text-xs text-base-300">Compartilhar</span>	
-          <ul class="gap-2 flex items-center justify-between">	
-            {shareableNetworks.map((network) => (	
-              <li class="bg-secondary w-8 h-8 rounded-full hover:bg-primary group transition-all">	
-                <a	
-                  href={getShareLink({	
-                    network,	
-                    productName: isVariantOf?.name ?? name ?? "",	
-                    url: url ?? "",	
-                  })}	
-                  target="_blank"	
-                  rel="noopener noreferrer"	
-                  class="flex items-center justify-center w-full h-full group-hover:text-white text-primary"	
-                >	
-                  <Icon id={network} width={20} height={20} />	
-                </a>	
-              </li>	
-            ))}	
-          </ul>	
-        </div>	
+      <DescriptionCard
+        description={description ? description : ""}
+        classContainer="lg:hidden"
+      />
+      {/* Share Product on Social Networks */}
+      {/* Share Product on Social Networks */}
+      {shareableNetworks && (
+        <div class="hidden lg:flex items-center gap-5 my-[30px]">
+          <span class="text-xs text-base-300">Compartilhar</span>
+          <ul class="gap-2 flex items-center justify-between">
+            {shareableNetworks.map((network) => (
+              <li class="bg-secondary w-8 h-8 rounded-full hover:bg-primary group transition-all">
+                <a
+                  href={getShareLink({
+                    network,
+                    productName: isVariantOf?.name ?? name ?? "",
+                    url: url ?? "",
+                  })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center w-full h-full group-hover:text-white text-primary"
+                >
+                  <Icon id={network} width={20} height={20} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
 
       {/* Tag Blue Product */}
@@ -287,10 +288,6 @@ function Details({
   const id = `product-image-gallery:${useId()}`;
   const images = useStableImages(product);
 
-  const open = useSignal(false);
-  const zoomImage = useSignal(images[0].url);
-  const zoomX = useSignal(0);
-  const zoomY = useSignal(0);
   const possibilities = useVariantPossibilities(page?.product);
   const { isVariantOf, url } = page?.product;
   const subName: string[] = [];
@@ -299,7 +296,7 @@ function Details({
 
   Object.keys(possibilities).forEach((name) => {
     Object.entries(possibilities[name]).forEach(
-      ([value, { urls, inStock }]) => {
+      ([value, { urls }]) => {
         if (urls[0] === productUrl) {
           subName.push(value);
         }
@@ -340,7 +337,10 @@ function Details({
               product={product}
             />
 
-            <DescriptionCard description={product.description ? product.description : ""} classContainer="hidden lg:block" />
+            <DescriptionCard
+              description={product.description ? product.description : ""}
+              classContainer="hidden lg:block"
+            />
           </div>
 
           {/* Product Info */}

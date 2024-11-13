@@ -95,12 +95,8 @@ function Cart(props: ICartProps) {
     desktop: {
       buttonMode,
     },
-    mobile: {
-      buttonMode: buttonModeMobile,
-    },
-    showClearButton = true,
   } = props;
-  const { loading, mapItemsToAnalyticsItems, removeAllItems, cart } = useCart();
+  const { loading, mapItemsToAnalyticsItems, cart } = useCart();
   const isCartEmpty = cart.value?.items.length === 0;
 
   const locale = cart.value?.clientPreferencesData.locale;
@@ -160,17 +156,16 @@ function Cart(props: ICartProps) {
       </ul>
 
       <footer class="flex flex-col items-center justify-center max-lg:px-5 px-10">
-
-        <FreeShippingProgressBar 
-          redirect_link={props.redirect_link} 
-          redirect_text={props.redirect_text} 
+        <FreeShippingProgressBar
+          redirect_link={props.redirect_link}
+          redirect_text={props.redirect_text}
           rule_text={props.rule_text}
           left_text={props.left_text}
           right_text={props.right_text}
-          locale ={locale}  
-          currency={currencyCode}  
-          total={total} 
-          target = {discounts} 
+          locale={locale}
+          currency={currencyCode}
+          total={total}
+          target={discounts}
         />
 
         <Coupon />

@@ -105,7 +105,6 @@ function CategoryText(
               display: none;
             }
           `,
-
           }}
         />
       </Head>
@@ -114,8 +113,10 @@ function CategoryText(
         <details class="w-full styleSeoBtn">
           <summary class="bg-[#EEF1F5] rounded-full h-10 pointer lg:h-[60px] w-full flex items-center justify-between px-[20px] py-[10px] lg:py-[20px]">
             <h3 class="font-poppins font-bold text-lg leading-5 text-[#2D386E]">
-              Saiba mais sobre 
-              <span class="font-poppins font-bold text-lg leading-5 text-[#2D386E]"> {categoryText}</span>
+              Saiba mais sobre
+              <span class="font-poppins font-bold text-lg leading-5 text-[#2D386E]">
+                {categoryText}
+              </span>
             </h3>
             <span class="minus font-poppins not-italic font-medium text-base leading-6 text-left text-[#2C376D]">
               -
@@ -125,17 +126,16 @@ function CategoryText(
             </span>
           </summary>
           {html
-          ? (
-            <div
-              dangerouslySetInnerHTML={{ __html: html }}
-              class="styleSeo text-neutral font-normal text-sm pb-12 mt-[20px] px-[15px]"
-            />
-          )
-          : null}
+            ? (
+              <div
+                dangerouslySetInnerHTML={{ __html: html }}
+                class="styleSeo text-neutral font-normal text-sm pb-12 mt-[20px] px-[15px]"
+              />
+            )
+            : null}
         </details>
       </div>
     </>
-
   );
 }
 

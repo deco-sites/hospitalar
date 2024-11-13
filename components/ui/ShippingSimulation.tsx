@@ -89,7 +89,7 @@ function ShippingSimulation({ items }: Props) {
   return (
     <div class="flex flex-col mt-[30px] gap-[15px] p-[20px] sm:p-[30px] rounded-2xl border border-base-200 text-base-300 bg-white">
       <p class="font-poppins not-italic font-bold text-base text-[#2C376D]">
-        Consultar frete e prazo de entrega  
+        Consultar frete e prazo de entrega
       </p>
       <div class="flex flex-col gap-[10px]">
         <form

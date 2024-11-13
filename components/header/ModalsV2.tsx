@@ -11,7 +11,7 @@ const Menu = lazy(() => import("$store/components/header/MenuV2.tsx"));
 const Cart = lazy(() => import("$store/components/minicart/Cart.tsx"));
 
 interface Props {
-  login?: LoginSetting[]
+  login?: LoginSetting[];
   menu?: MenuProps;
   minicart?: ICartProps;
 }

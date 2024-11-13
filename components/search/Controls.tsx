@@ -12,7 +12,7 @@ type Props =
   >
   & {
     displayFilter?: boolean;
-     isWishlist?: boolean; 
+    isWishlist?: boolean;
   };
 
 function SearchControls(

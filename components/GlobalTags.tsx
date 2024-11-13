@@ -72,12 +72,22 @@ function GlobalTags() {
       <link rel="manifest" href={asset("/site.webmanifest")} />
 
       {/** RD Station Marketing */}
-      <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/4c1c3b1d-a025-417d-a4c0-36f62d19422c-loader.js" ></script>
+      <script
+        type="text/javascript"
+        async
+        src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/4c1c3b1d-a025-417d-a4c0-36f62d19422c-loader.js"
+      >
+      </script>
 
       {/* Pixel Facebook */}
-      <script async dangerouslySetInnerHTML={{ __html: htmlScript }} ></script>
+      <script async dangerouslySetInnerHTML={{ __html: htmlScript }}></script>
       <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1852045185040482&ev=PageView&noscript=1" />
+        <img
+          height="1"
+          width="1"
+          style="display:none"
+          src="https://www.facebook.com/tr?id=1852045185040482&ev=PageView&noscript=1"
+        />
       </noscript>
     </Head>
   );

@@ -1,5 +1,4 @@
 import { Section } from "$live/blocks/section.ts";
-import { headerHeight } from "$store/components/header/constants.ts";
 import { clx } from "$store/sdk/clx.ts";
 
 export type VerticalSpacing = "top" | "bottom" | "both" | "none";
@@ -32,42 +31,42 @@ export interface Props {
     spacing?: number;
   }[];
 
-   /** @default false */
-   isHeader?: boolean;
+  /** @default false */
+  isHeader?: boolean;
 }
 
 function Container({ sections, isHeader = false }: Props) {
   return (
     <>
-     <div class={isHeader ? "fixed top-0 w-full bg-white z-[5000]" : ""}>
-      {sections?.map((
-        {
-          section: { Component, props },
-          withContainer = false,
-          backgroundColor = "",
-          verticalSpacing = "both",
-          shadow = "none",
-          spacing = 0,
-        },
-      ) => (
-        <div
-          class={clx(`w-full 
+      <div class={isHeader ? "fixed top-0 w-full bg-white z-[5000]" : ""}>
+        {sections?.map((
+          {
+            section: { Component, props },
+            withContainer = false,
+            backgroundColor = "",
+            verticalSpacing = "both",
+            shadow = "none",
+            spacing = 0,
+          },
+        ) => (
+          <div
+            class={clx(`w-full 
           ${VERTICAL_SPACING[verticalSpacing]} 
           ${SPACING[spacing]}
           ${SHADOW_SIZE[shadow]}`)}
-          style={backgroundColor && { background: `${backgroundColor}` }}
-        >
-          {withContainer
-            ? (
-              <div class="container w-full m-auto px-5">
-                <Component {...props} />
-              </div>
-            )
-            : <Component {...props} />}
-        </div>
-      ))}
+            style={backgroundColor && { background: `${backgroundColor}` }}
+          >
+            {withContainer
+              ? (
+                <div class="container w-full m-auto px-5">
+                  <Component {...props} />
+                </div>
+              )
+              : <Component {...props} />}
+          </div>
+        ))}
       </div>
-      {isHeader && <div class={`h-[164.7px] md:h-[194px]`} ></div>}
+      {isHeader && <div class={`h-[164.7px] md:h-[194px]`}></div>}
     </>
   );
 }

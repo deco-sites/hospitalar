@@ -9,7 +9,13 @@ export interface Props {
 function BreadcrumbCategory({ page }: Props) {
   if (!page?.breadcrumb) return <div />;
 
-  return <BreadcrumbProduct class="!pb-0 pt-[10px] lg:pt-[35px]" itemListElement={page.breadcrumb.itemListElement} activeTitle={false} />;
+  return (
+    <BreadcrumbProduct
+      class="!pb-0 pt-[10px] lg:pt-[35px]"
+      itemListElement={page.breadcrumb.itemListElement}
+      activeTitle={false}
+    />
+  );
 }
 
 export default BreadcrumbCategory;

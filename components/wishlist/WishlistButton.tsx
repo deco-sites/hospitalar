@@ -30,7 +30,11 @@ function WishlistButton({
 
   return (
     <Button
-      class={variant === "icon" ? `gap-2 !border-0 ${inWishlist || hovered ? "wishlist-item border-0" : "wishlist-notItem"}` : "btn-primary btn-outline gap-2"}
+      class={variant === "icon"
+        ? `gap-2 !border-0 ${
+          inWishlist || hovered ? "wishlist-item border-0" : "wishlist-notItem"
+        }`
+        : "btn-primary btn-outline gap-2"}
       loading={fetching.value}
       aria-label="Add to wishlist"
       onMouseEnter={() => setHovered(true)}
@@ -40,8 +44,10 @@ function WishlistButton({
         e.preventDefault();
 
         if (!isUserLoggedIn) {
-          globalThis.alert("Faça login antes de adicionar itens à sua lista de desejos.");
-          window.location.href = "/my-account"
+          globalThis.alert(
+            "Faça login antes de adicionar itens à sua lista de desejos.",
+          );
+          window.location.href = "/my-account";
           return;
         }
 

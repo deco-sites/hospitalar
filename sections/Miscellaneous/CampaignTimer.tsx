@@ -78,7 +78,7 @@ const snippet = (expiresAt: string, rootId: string) => {
     if (isExpired) {
       const expired = document.getElementById(`${rootId}::expired`);
       const counter = document.getElementById(`${rootId}::counter`);
-      const link = document.getElementById(`${rootId}::link`);
+      const _link = document.getElementById(`${rootId}::link`);
 
       expired?.classList.remove("hidden");
       counter?.classList.add("hidden");

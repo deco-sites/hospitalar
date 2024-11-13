@@ -1,1 +1,7 @@
-{"ids":[],"sort":"price:desc","collection":"150","__resolveType":"deco-sites/std/loaders/vtex/intelligentSearch/productList.ts","hideUnavailableItems":true}
+{
+  "ids": [],
+  "sort": "price:desc",
+  "collection": "150",
+  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts",
+  "hideUnavailableItems": true
+}

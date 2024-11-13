@@ -6,7 +6,9 @@ interface Props {
   activeTitle?: boolean;
 }
 
-function Breadcrumb({ class: _class, itemListElement = [], activeTitle = true }: Props) {
+function Breadcrumb(
+  { class: _class, itemListElement = [], activeTitle = true }: Props,
+) {
   const items = [{ name: "Home", item: "/" }, ...itemListElement];
 
   const lastItem = items[items.length - 1];
@@ -28,9 +30,9 @@ function Breadcrumb({ class: _class, itemListElement = [], activeTitle = true }:
             </li>
           ))}
       </ul>
-      { activeTitle && (
+      {activeTitle && (
         <h1 class="text-sm text-base-transparent opacity-0">{lastItemName}</h1>
-      ) }
+      )}
     </div>
   );
 }

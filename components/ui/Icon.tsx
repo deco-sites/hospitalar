@@ -72,7 +72,7 @@ export type AvailableIcons =
   | "warning"
   | "icon-warning"
   | "free-shipping"
-  |  "Wishlist"; 
+  | "Wishlist";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

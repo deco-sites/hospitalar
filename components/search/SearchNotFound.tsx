@@ -30,19 +30,21 @@ function SearchNotFound({ textSugestions, products }: Props) {
         </h1>
         <span class="lg:text-xl tracking-normal text-primary text-center font-normal text-base  lg:font-bold">
           Você buscou por{" "}
-          <strong class="text-secondary uppercase font-normal lg:font-bold text-base lg:text-xl tracking-wide">"{searchTerm}"</strong>
+          <strong class="text-secondary uppercase font-normal lg:font-bold text-base lg:text-xl tracking-wide">
+            "{searchTerm}"
+          </strong>
           e infelizmente não temos resultado para essa busca 😞
         </span>
 
-        <a href="/" alt="botão para home" >
+        <a href="/" alt="botão para home">
           <button class="flex py-3 px-8 justify-center items-center bg-secondary rounded-[90px] text-primary
-            text-xs font-bold  hover:brightness-90 ">Voltar para o início</button>
+            text-xs font-bold  hover:brightness-90 ">
+            Voltar para o início
+          </button>
         </a>
-
       </div>
       <div class="flex flex-col lg:flex-row gap-12 px-2 lg:px-0">
         <div class="flex flex-col justify-start gap-3 items-center w-full lg:w-[30%]">
-
           <div class="w-full lg:max-w-[268px] flex flex-col gap-4  justify-center ">
             <h2 class="text-[18px] lg:text-[22px] font-bold text-primary">
               Busque novamente
@@ -74,7 +76,7 @@ function SearchNotFound({ textSugestions, products }: Props) {
                 style={{ fontFamily: "Poppins" }}
                 class="w-9 py-[6px] px-[10px] flex items-center justify-center gap-3 rounded-[40px] bg-[#85BAD5]"
               >
-                <span class="flex font-bold text-base text-primary"> 01</span>
+                <span class="flex font-bold text-base text-primary">01</span>
               </strong>
               <p class="text-sm text-left font-light text-[#4A4B51] tracking-[0]">
                 {textSugestions?.firstText}

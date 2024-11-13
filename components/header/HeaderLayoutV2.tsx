@@ -6,13 +6,11 @@ import Modals from "$store/islands/HeaderModals.tsx";
 import SearchBarComponent from "$store/islands/HeaderSearchbar.tsx";
 import UserButton from "$store/islands/UserButtons.tsx";
 
-
 export interface LoginSetting {
   label: string;
   href: string;
   target?: "_blank" | "_self" | "_parent" | "_top" | "framename";
 }
-
 
 export interface Props {
   /**
@@ -25,25 +23,26 @@ export interface Props {
   searchbar: SearchbarProps;
   /**
    * @title Login settings
-  */
-  login?: LoginSetting[]
+   */
+  login?: LoginSetting[];
 }
 
 export const defaultLoginLinks: LoginSetting[] = [
   {
     href: "/my-account",
     label: "Minha conta",
-    target: "_self"
+    target: "_self",
   },
   {
     href: "/my-account/orders",
     label: "Meus pedidos",
-    target: "_self"
+    target: "_self",
   },
   {
-    href: "https://web.whatsapp.com/send?phone=+5518997742232&text=Olá%2C+vim+pelo+site+e+gostaria+de+uma+ajuda",
+    href:
+      "https://web.whatsapp.com/send?phone=+5518997742232&text=Olá%2C+vim+pelo+site+e+gostaria+de+uma+ajuda",
     label: "Atendimento",
-    target: "_blank"
+    target: "_blank",
   },
 ];
 
@@ -51,10 +50,9 @@ function HeaderLayout(
   {
     minicart,
     searchbar,
-    login = defaultLoginLinks
+    login = defaultLoginLinks,
   }: Props,
 ) {
-
   return (
     <header class="z-50 py-2">
       <div class="flex justify-between items-center lg:p-0">
