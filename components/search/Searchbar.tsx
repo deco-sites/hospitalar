@@ -64,7 +64,6 @@ function Searchbar({
   action = "/busca",
   name = "q",
   query,
-  variant = "mobile",
   cardLayout,
   hide = { cleanButton: false, results: false },
   noContainer = false,

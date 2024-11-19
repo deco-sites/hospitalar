@@ -1,1 +1,1 @@
-export { loader, default } from "$store/components/search/SearchResult.tsx";
+export { default, loader } from "$store/components/search/SearchResult.tsx";

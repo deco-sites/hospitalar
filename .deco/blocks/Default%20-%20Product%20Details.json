@@ -27,9 +27,10 @@
           "Email"
         ]
       },
-      "spacing": 10,
+      "spacing": 0,
       "withContainer": true,
-      "verticalSpacing": "bottom"
+      "verticalSpacing": "bottom",
+      "backgroundColor": "#FAFAFB"
     }
   ],
   "__resolveType": "site/sections/Container.tsx",

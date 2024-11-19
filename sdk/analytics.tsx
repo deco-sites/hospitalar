@@ -1,4 +1,3 @@
-import { IS_BROWSER } from "$fresh/runtime.ts";
 import type { AnalyticsEvent } from "apps/commerce/types.ts";
 
 declare global {

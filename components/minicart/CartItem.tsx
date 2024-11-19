@@ -6,7 +6,6 @@ import { formatPrice } from "$store/sdk/format.ts";
 import { useSignal } from "@preact/signals";
 import Image from "deco-sites/std/components/Image.tsx";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
-import { useOffer } from "$store/sdk/useOffer.ts";
 
 interface Props {
   index: number;

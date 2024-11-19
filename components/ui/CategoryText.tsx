@@ -53,61 +53,89 @@ function CategoryText(
               gap: 16px;          
             }
             .styleSeo h2 {
-              color: var(--Action-Primary, #2D386E);
-              font-family: Poppins;
-              font-size: 16px;
+              font-family: 'Poppins';
               font-style: normal;
               font-weight: 700;
-              line-height: 110%;
+              font-size: 14px;
+              line-height: 23px;
+              color: #2D386E;
             }
 
             .styleSeo h3 {
-              color: var(--Action-Primary, #2D386E);
-              font-family: Poppins;
-              font-size: 16px;
+              font-family: 'Poppins';
               font-style: normal;
               font-weight: 700;
-              line-height: 110%;
+              font-size: 14px;
+              line-height: 23px;
+              color: #2D386E;
             }
 
             .styleSeo p {
-              color: var(--Colors-Grey-2, #4A4B51);
-              font-family: Poppins;
-              font-size: 14px;
+              font-family: 'Poppins';
               font-style: normal;
               font-weight: 400;
-              line-height: normal;
+              font-size: 12px;
+              line-height: 18px;
+              color: #4A4B51;
+              border-bottom: 1px solid #D2D1D7;
+              padding-bottom: 25px;
             }
 
             .styleSeo a, strong {
-              color: var(--Action-Primary, #2D386E);
+              color: #2D386E;
             }
 
             @media screen and (max-width:760px){
-              color: var(--Action-Primary, #2D386E);
+              color: #2D386E;
+            }
+
+            details.styleSeoBtn .minus {
+              display: none;
+            }
+
+            details.styleSeoBtn .plus {
+              display: block;
+            }
+
+            details.styleSeoBtn[open] .minus {
+              display: block;
+            }
+
+            details.styleSeoBtn[open] .plus {
+              display: none;
             }
           `,
-
           }}
         />
       </Head>
 
-      <div class={`container ${textAlignment} px-5 md:px-0`}>
-        <h3 class="text-[#2D386E] max-w-5xl m-auto text-2xl md:text-[50px] my-[30px] font-bold
-        ">
-          {categoryText}
-        </h3>
-        {html
-          ? (
-            <div
-              dangerouslySetInnerHTML={{ __html: html }}
-              class="styleSeo text-neutral font-normal text-sm max-w-5xl m-auto pb-12"
-            />
-          )
-          : null}
+      <div class={`container ${textAlignment} mb-[20px] px-5`}>
+        <details class="w-full styleSeoBtn">
+          <summary class="bg-[#EEF1F5] rounded-full h-10 pointer lg:h-[60px] w-full flex items-center justify-between px-[20px] py-[10px] lg:py-[20px]">
+            <h3 class="font-poppins font-bold text-lg leading-5 text-[#2D386E]">
+              Saiba mais sobre
+              <span class="font-poppins font-bold text-lg leading-5 text-[#2D386E]">
+                {categoryText}
+              </span>
+            </h3>
+            <span class="minus font-poppins not-italic font-medium text-base leading-6 text-left text-[#2C376D]">
+              -
+            </span>
+            <span class="plus font-poppins not-italic font-medium text-base leading-6 text-left text-[#2C376D]">
+              +
+            </span>
+          </summary>
+          {html
+            ? (
+              <div
+                dangerouslySetInnerHTML={{ __html: html }}
+                class="styleSeo text-neutral font-normal text-sm pb-12 mt-[20px] px-[15px]"
+              />
+            )
+            : null}
+        </details>
       </div>
     </>
-
   );
 }
 

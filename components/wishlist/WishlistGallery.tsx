@@ -7,7 +7,6 @@ import { AppContext } from "$live/mod.ts";
 export type Props = SearchResultProps;
 
 function WishlistGallery(props: Props) {
-
   const isEmpty = !props.page || !props.page.products ||
     props.page.products.length === 0;
 
@@ -19,7 +18,8 @@ function WishlistGallery(props: Props) {
             Sua Lista de Desejos está vazia
           </span>
           <span class="text-center">
-             Faça login e adicione itens à sua lista de desejos para visualizá-los mais tarde. Eles serão exibidos aqui.
+            Faça login e adicione itens à sua lista de desejos para
+            visualizá-los mais tarde. Eles serão exibidos aqui.
           </span>
         </div>
       </div>
@@ -39,7 +39,6 @@ function WishlistGallery(props: Props) {
 export default WishlistGallery;
 
 async function loader(props: Props, req: Request, ctx: AppContext<any>) {
-
   if (!props.page || !props.page.products || props.page.products.length === 0) {
     return {
       ...props,

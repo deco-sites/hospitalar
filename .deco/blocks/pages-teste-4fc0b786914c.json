@@ -1,1 +1,45 @@
-{"name":"teste","path":"/example-path","sections":{"variants":[{"rule":{"traffic":0.5,"__resolveType":"$live/matchers/MatchRandom.ts"},"value":[{"__resolveType":"Default - Design System"},{"__resolveType":"SEODefault"},{"__resolveType":"analytics"},{"__resolveType":"Header Global"},{"__resolveType":" Home - Carousel"},{"__resolveType":" Categorias - ImageGallery"},{"__resolveType":" Os mais vendidos - ProductShelf"},{"__resolveType":"Shoes - BannerGrid"},{"__resolveType":" Nossas redes sociais - InfoCard/ImageGallery"},{"__resolveType":" Sobre a loja - InfoCard"},{"__resolveType":"Footer Global"}]},{"rule":{"__resolveType":"$live/matchers/MatchAlways.ts"},"value":[{"__resolveType":"Default - Design System"},{"__resolveType":"SEODefault"},{"__resolveType":"analytics"},{"__resolveType":"Header Global"},{"__resolveType":" Home - Carousel"},{"__resolveType":" Categorias - ImageGallery"},{"__resolveType":" Os mais vendidos - ProductShelf"},{"__resolveType":"Shoes - BannerGrid"},{"__resolveType":" Nossas redes sociais - InfoCard/ImageGallery"},{"__resolveType":" Sobre a loja - InfoCard"},{"__resolveType":"Footer Global"}]}],"__resolveType":"$live/flags/multivariate.ts"},"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "teste",
+  "path": "/example-path",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "traffic": 0.5,
+          "__resolveType": "$live/matchers/MatchRandom.ts"
+        },
+        "value": [
+          { "__resolveType": "Default - Design System" },
+          { "__resolveType": "SEODefault" },
+          { "__resolveType": "analytics" },
+          { "__resolveType": "Header Global" },
+          { "__resolveType": " Home - Carousel" },
+          { "__resolveType": " Categorias - ImageGallery" },
+          { "__resolveType": " Os mais vendidos - ProductShelf" },
+          { "__resolveType": "Shoes - BannerGrid" },
+          { "__resolveType": " Nossas redes sociais - InfoCard/ImageGallery" },
+          { "__resolveType": " Sobre a loja - InfoCard" },
+          { "__resolveType": "Footer Global" }
+        ]
+      },
+      {
+        "rule": { "__resolveType": "$live/matchers/MatchAlways.ts" },
+        "value": [
+          { "__resolveType": "Default - Design System" },
+          { "__resolveType": "SEODefault" },
+          { "__resolveType": "analytics" },
+          { "__resolveType": "Header Global" },
+          { "__resolveType": " Home - Carousel" },
+          { "__resolveType": " Categorias - ImageGallery" },
+          { "__resolveType": " Os mais vendidos - ProductShelf" },
+          { "__resolveType": "Shoes - BannerGrid" },
+          { "__resolveType": " Nossas redes sociais - InfoCard/ImageGallery" },
+          { "__resolveType": " Sobre a loja - InfoCard" },
+          { "__resolveType": "Footer Global" }
+        ]
+      }
+    ],
+    "__resolveType": "$live/flags/multivariate.ts"
+  },
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

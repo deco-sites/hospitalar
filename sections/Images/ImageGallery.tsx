@@ -3,7 +3,7 @@ import {
   MOBILE_COLUMNS,
 } from "$store/components/ui/BannerGrid.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import _Image from "deco-sites/std/components/Image.tsx";
 import { Head } from "$fresh/runtime.ts";
 
 export interface ImageGalleryItem {
@@ -33,16 +33,23 @@ export interface Props {
   /**
    * @title Ocultar Bloco
    */
-  disableBlock?:boolean;
+  disableBlock?: boolean;
 }
 
 export default function ImageGallery(props: Props) {
-  const { images, itemPerPageMobile = 1, itemPerPageDesktop = 3, hoverEffect, disableBlock = false } =
-    props;
+  const {
+    images,
+    itemPerPageMobile = 1,
+    itemPerPageDesktop = 3,
+    hoverEffect,
+    disableBlock = false,
+  } = props;
 
   return (
     <section
-      class={`${disableBlock ? 'hidden' : ''} w-full h-full grid justify-center lg:gap-8 gap-5 my-12 max-md:my-8 ${
+      class={`${
+        disableBlock ? "hidden" : ""
+      } w-full h-full grid justify-center lg:gap-8 gap-5 my-12 max-md:my-8 ${
         MOBILE_COLUMNS[itemPerPageMobile ?? 1]
       }} ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
     >

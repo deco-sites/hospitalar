@@ -73,7 +73,8 @@
         "showPaginationArrows": "Always"
       },
       "withContainer": true,
-      "verticalSpacing": "none"
+      "verticalSpacing": "none",
+      "backgroundColor": "#EEF1F5"
     }
   ],
   "__resolveType": "site/sections/Container.tsx"

@@ -5,7 +5,11 @@
       "shadow": "none",
       "section": {
         "page": {
+<<<<<<< HEAD
+          "sort": "orders:desc",
+=======
           "sort": "",
+>>>>>>> ca0fe87ca1c5b23298866f55e7d754fb292f6cb6
           "count": 20,
           "fuzzy": "disabled",
           "pageOffset": 1,
@@ -32,9 +36,18 @@
         }
       },
       "withContainer": true,
+<<<<<<< HEAD
+      "verticalSpacing": "both",
+      "backgroundColor": "#FAFAFB"
+=======
       "verticalSpacing": "both"
+>>>>>>> ca0fe87ca1c5b23298866f55e7d754fb292f6cb6
     }
   ],
   "__resolveType": "site/sections/Container.tsx",
   "isHeader": false
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ca0fe87ca1c5b23298866f55e7d754fb292f6cb6

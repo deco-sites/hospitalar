@@ -1,5 +1,5 @@
-import { useSignal } from "@preact/signals";
 import Slider from "$store/components/ui/Slider.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 import DiscountBadge from "./DiscountBadge.tsx";
 import type { ImageObject, Product } from "apps/commerce/types.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
@@ -14,8 +14,6 @@ interface Props {
   product: Product;
 }
 
-const id = "product-zoom";
-
 function ProductDetailsImages(
   { images, width, height, aspect, product }: Props,
 ) {
@@ -24,8 +22,6 @@ function ProductDetailsImages(
     price,
     listPrice,
   } = useOffer(offers);
-  const zoomX = useSignal(0);
-  const zoomY = useSignal(0);
 
   const freeShippingCollection = product.additionalProperty?.filter(
     (property) =>
@@ -37,10 +33,10 @@ function ProductDetailsImages(
 
   return (
     <>
-      <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-4">
+      <div class="flex flex-col xl:flex-row-reverse relative lg:justify-end gap-5">
         {/* Image Slider */}
-        <div class="relative xl:pl-32">
-          <Slider class="carousel carousel-center gap-6 box-border lg:box-content lg:w-[600px] 2xl:w-[727px] w-full px-4 lg:px-0">
+        <div class="relative xl:pl-32 rounded-2xl border border-[#E5E7EB] overflow-hidden lg:border-none lg:rounded-none">
+          <Slider class="bg-white lg:border lg:rounded-2xl lg:border-[#E5E7EB] carousel carousel-center gap-6 box-border lg:box-content lg:w-[600px] 2xl:w-[727px] w-full px-4 lg:px-0">
             {images.map((img, index) => (
               <Slider.Item
                 index={index}
@@ -75,7 +71,12 @@ function ProductDetailsImages(
               </Slider.Item>
             ))}
           </Slider>
-
+          <Slider.PrevButton class="border-none bg-transparent absolute lg:hidden left-[20px] top-1/2 transform translate-x-[10px] -translate-y-1/2">
+            <Icon size={20} id="ChevronLeft" strokeWidth={3} />
+          </Slider.PrevButton>
+          <Slider.NextButton class="border-none bg-transparent absolute lg:hidden right-[20px] top-1/2 transform translate-x-[10px] -translate-y-1/2">
+            <Icon size={20} id="ChevronRight" strokeWidth={3} />
+          </Slider.NextButton>
           {/* Discount tag */}
           {price && listPrice && price !== listPrice
             ? (
@@ -86,7 +87,6 @@ function ProductDetailsImages(
               />
             )
             : null}
-
           {/* Free Shipping */}
 
           {isfreeShipping && (
@@ -101,14 +101,14 @@ function ProductDetailsImages(
         {/* Dots */}
         <div class="lg:max-w-[500px] lg:self-start xl:self-start xl:left-0 xl:absolute xl:max-h-full xl:overflow-y-scroll xl:scrollbar-none">
           <ul
-            class={`flex gap-4 overflow-auto lg:max-h-min lg:flex-1 lg:justify-start xl:flex-col`}
+            class={`flex gap-3 overflow-auto lg:max-h-min lg:flex-1 lg:justify-start xl:flex-col`}
           >
             {images.map((img, index) => (
-              <li class="min-w-[75px] lg:h-fit lg:min-w-[130px]">
+              <li class="min-w-[85px] lg:h-fit lg:min-w-[130px]">
                 <Slider.Dot index={index}>
                   <Image
                     style={{ aspectRatio: aspect }}
-                    class="border-neutral hover:border-secondary-focus group-disabled:border-secondary-focus border-2 rounded-[10px]"
+                    class="border-[#E5E7EB] hover:border-secondary-focus group-disabled:border-secondary-focus border-2 rounded-2xl"
                     width={width / 5}
                     height={height / 5}
                     src={img.url!}
