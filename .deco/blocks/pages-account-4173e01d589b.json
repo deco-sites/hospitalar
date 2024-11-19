@@ -3,9 +3,6 @@
   "path": "/my-account",
   "sections": [
     {
-      "__resolveType": "site/sections/BlueTags/BlueTagVisit.tsx"
-    },
-    {
       "__resolveType": "Default - Design System"
     },
     {
@@ -15,6 +12,7 @@
       "__resolveType": "analytics"
     },
     {
+      "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "rule": {
@@ -1239,10 +1237,10 @@
             "__resolveType": "Header Global"
           }
         }
-      ],
-      "__resolveType": "website/flags/multivariate/section.ts"
+      ]
     },
     {
+      "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
           "alt": "banner-img",
@@ -1262,15 +1260,15 @@
         }
       ],
       "preload": false,
-      "__resolveType": "site/sections/Images/Carousel.tsx",
       "showPaginationDots": "Never",
       "showPaginationArrows": "Never"
     },
     {
-      "src": "/login?returnUrl=%2Faccount",
-      "__resolveType": "site/sections/Miscellaneous/ProxyIframe.tsx"
+      "__resolveType": "site/sections/Miscellaneous/ProxyIframe.tsx",
+      "src": "/login?returnUrl=%2Faccount"
     },
     {
+      "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "rule": {
@@ -1673,8 +1671,7 @@
             "backgroundColor": "pink"
           }
         }
-      ],
-      "__resolveType": "website/flags/multivariate/section.ts"
+      ]
     }
   ],
   "__resolveType": "$live/pages/LivePage.tsx"

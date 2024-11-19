@@ -3,9 +3,6 @@
   "path": "/wishlist",
   "sections": [
     {
-      "__resolveType": "site/sections/BlueTags/BlueTagVisit.tsx"
-    },
-    {
       "__resolveType": "Default - Design System"
     },
     {
@@ -15,6 +12,7 @@
       "__resolveType": "analytics"
     },
     {
+      "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "rule": {
@@ -1239,10 +1237,10 @@
             "__resolveType": "Header Global"
           }
         }
-      ],
-      "__resolveType": "website/flags/multivariate/section.ts"
+      ]
     },
     {
+      "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
           "alt": "banner-img",
@@ -1262,11 +1260,11 @@
         }
       ],
       "preload": false,
-      "__resolveType": "site/sections/Images/Carousel.tsx",
       "showPaginationDots": "Never",
       "showPaginationArrows": "Never"
     },
     {
+      "__resolveType": "site/sections/Product/Wishlist.tsx",
       "page": {
         "count": 12,
         "__resolveType": "vtex/loaders/product/wishlist.ts"
@@ -1275,12 +1273,12 @@
         "mobile": 2,
         "desktop": 3
       },
-      "__resolveType": "site/sections/Product/Wishlist.tsx",
       "notFoundSection": {
         "__resolveType": "Not Found Global"
       }
     },
     {
+      "__resolveType": "website/flags/multivariate/section.ts",
       "variants": [
         {
           "rule": {
@@ -1683,8 +1681,7 @@
             "backgroundColor": "pink"
           }
         }
-      ],
-      "__resolveType": "website/flags/multivariate/section.ts"
+      ]
     }
   ],
   "__resolveType": "$live/pages/LivePage.tsx"
