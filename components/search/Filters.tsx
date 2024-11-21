@@ -26,8 +26,14 @@ function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
           <div class="bg-primary w-full h-full border-white border-2" />
         )}
       </div>
-      <span class="text-sm text-[#4A4B51]">{label}</span>
-      {quantity > 0 && <span class="text-sm text-base-300">({quantity})</span>}
+      <span class="font-poppins not-italic font-normal text-sm leading-5 text-[#4A4B51]">
+        {label}
+      </span>
+      {quantity > 0 && (
+        <span class="font-poppins not-italic font-normal text-sm leading-5 text-[#8E8E9F]">
+          ({quantity})
+        </span>
+      )}
     </a>
   );
 }
@@ -40,7 +46,7 @@ function FilterValues({ key, values }: FilterToggle) {
   return (
     <ul class={`flex flex-wrap gap-2 ${flexDirection}`}>
       {values.map((item) => {
-        const { url, selected, value, quantity } = item;
+        const { url, selected, value } = item;
 
         if (key === "cor" || key === "tamanho") {
           return (
@@ -85,8 +91,10 @@ function Filters({ filters }: Props) {
 
   return (
     <ul class="flex flex-col gap-2 text-primary">
-      <li>
-        <p class="font-medium mb-4">Filtrar por:</p>
+      <li class="mb-[24px]">
+        <p class="font-poppins not-italic font-semibold text-base leading-6 text-[#2C376D]">
+          Filtrar por:
+        </p>
         {selectedFilters.length > 0 && (
           selectedFilters.map((filter) => (
             <div class="mb-2">
@@ -98,10 +106,15 @@ function Filters({ filters }: Props) {
       {_filters.map((filter) => (
         <li class="flex flex-col gap-4">
           <details class="collapse collapse-plus" open>
-            <summary class="collapse-title min-h-0 px-0 py-2.5 border-b mb-4 border-primary-content">
-              {filter.label}
+            <summary
+              style={{ minHeight: "auto !important" }}
+              class="bg-[#EEF1F5] rounded-[60px] !h-[45px] min-h-auto collapse-title mb-[16px]"
+            >
+              <div class="h-full flex items-center justify-start font-poppins not-italic font-semibold text-base leading-none text-[#2C376D] text-left w-full">
+                {filter.label}
+              </div>
             </summary>
-            <div class="collapse-content px-0">
+            <div class="collapse-content px-[20px]">
               <FilterValues {...filter} />
             </div>
           </details>

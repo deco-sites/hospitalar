@@ -7,7 +7,6 @@ import ProductGallery, { Columns } from "../product/ProductGallery.tsx";
 import type { LoaderReturnType } from "$live/types.ts";
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import Sort from "$store/islands/Sort.tsx";
-import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import SearchPagination from "$store/components/search/SearchPagination.tsx";
 import { Section } from "$live/blocks/section.ts";
 import { AppContext, redirect } from "$live/mod.ts";
@@ -27,7 +26,7 @@ export interface Props {
    */
   notFoundSection: Section;
 
-  isWishlist?:boolean
+  isWishlist?: boolean;
 }
 
 function Result({
@@ -38,15 +37,29 @@ function Result({
   page: ProductListingPage;
 }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
+  const { itemListElement } = page.breadcrumb;
 
   const productsFound = (
-    <h6 class="text-primary font-medium">
-      Produtos encontrados: <strong>{pageInfo.records} resultados</strong>
-    </h6>
+    <div class="flex flex-col items-start justify-start mb-[10px] mt-[15px] lg:mt-0 lg:mb-0">
+      <h6 class="font-poppins not-italic font-bold text-2xl leading-10 text-[#2C376D] lg:hidden">
+        {itemListElement[itemListElement.length - 1].name}
+      </h6>
+      <strong class="font-poppins not-italic font-bold text-base leading-6 text-[#2C376D] lg:hidden">
+        {pageInfo.records} resultados
+      </strong>
+      <span class="hidden font-poppins not-italic font-normal text-base leading-6 text-[#2C376D] lg:block">
+        Produtos encontrados: <strong>{pageInfo.records} resultados</strong>
+      </span>
+    </div>
   );
 
   return (
     <>
+      <div class="hidden lg:flex w-full items-start justify-start lg:mb-[40px] lg:pt-[35px]">
+        <span class="font-poppins not-italic font-bold text-[40px] leading-[40px] text-[#2C376D]">
+          {itemListElement[itemListElement.length - 1].name}
+        </span>
+      </div>
       <div>
         <div class="flex flex-row gap-8">
           {variant === "aside" && filters.length > 0 && (
@@ -55,6 +68,9 @@ function Result({
             </aside>
           )}
           <div class="flex flex-col gap-5 w-full">
+            <div class="lg:hidden">
+              {productsFound}
+            </div>
             <div class="flex justify-between items-center gap-2.5">
               <div class="hidden lg:block">
                 {productsFound}
@@ -64,7 +80,7 @@ function Result({
                 filters={filters}
                 breadcrumb={breadcrumb}
                 displayFilter={variant === "drawer"}
-                isWishlist = {isWishlist}
+                isWishlist={isWishlist}
               />
               {sortOptions.length > 0
                 ? (
@@ -76,9 +92,6 @@ function Result({
                   </label>
                 )
                 : null}
-            </div>
-            <div class="lg:hidden">
-              {productsFound}
             </div>
             <div class="flex-grow">
               <ProductGallery products={products} />
@@ -124,15 +137,13 @@ function SearchResult(
 
 export default SearchResult;
 
-
 export const loader = (
   props: Props,
   req: Request,
   // deno-lint-ignore no-explicit-any
-  ctx: AppContext<any>,
+  _: AppContext<any>,
 ) => {
-
-  const {page} = props; 
+  const { page } = props;
 
   if (!page || !page.products || page.products.length === 0) {
     const url = new URL(req.url);

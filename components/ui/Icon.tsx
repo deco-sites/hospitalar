@@ -33,11 +33,13 @@ export type AvailableIcons =
   | "QuestionMarkCircle"
   | "User"
   | "ShoppingCart"
+  | "ShoppingCartNew"
   | "Bars3"
   | "Heart"
   | "MagnifyingGlass"
   | "XMark"
   | "Plus"
+  | "NewPlus"
   | "Minus"
   | "MapPin"
   | "Phone"
@@ -70,7 +72,7 @@ export type AvailableIcons =
   | "warning"
   | "icon-warning"
   | "free-shipping"
-  |  "Wishlist"; 
+  | "Wishlist";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
