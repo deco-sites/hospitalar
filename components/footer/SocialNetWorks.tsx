@@ -15,7 +15,7 @@ export default function SocialNetWorks(
 ) {
   return (
     <div class="mt-5 border-b border-base-content pb-5">
-      <ul class="gap-[10px] flex items-center justify-start">
+      <ul class="gap-[10px] flex items-center justify-start ">
         {socialItems.map((social) => (
           <li
             key={social.icon}
