@@ -294,6 +294,16 @@ function Details({
   const productUrl = product?.url || "";
   const currentURL = window.location?.href;
 
+  const strict = product.category?.split(">")?.[0];
+
+  let isRestricted = false;
+
+  if (strict === "Medicamentos") {
+    isRestricted = true;
+  } else {
+    isRestricted = false;
+  }
+
   Object.keys(possibilities).forEach((name) => {
     Object.entries(possibilities[name]).forEach(
       ([value, { urls }]) => {
@@ -344,7 +354,7 @@ function Details({
           </div>
 
           {/* Product Info */}
-          <div class="w-full lg:pr-0 lg:pl-6 lg:mt-[50px]">
+          <div class={`w-full lg:pr-0 lg:pl-6 ${isRestricted ? "lg:mt-[15px]" : "lg:mt-[50px]"}`}>
             <ProductInfo
               page={page}
               shipmentPolitics={shipmentPolitics}

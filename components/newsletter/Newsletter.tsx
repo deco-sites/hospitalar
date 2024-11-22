@@ -4,6 +4,7 @@ import {
 } from "$store/components/minicart/Cart.tsx";
 import { Runtime } from "$store/runtime.ts";
 import { useSignal } from "@preact/signals";
+import { RichText } from "apps/admin/widgets.ts";
 import type { JSX } from "preact";
 
 const subscribe = Runtime.create(
@@ -45,9 +46,8 @@ export interface Props {
   form: INewsletterFormProps;
   /**
    * @title newsletter message text?
-   * @format html
    */
-  text: string;
+  text: RichText;
 }
 
 interface InputNewletterProps {

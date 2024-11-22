@@ -26,7 +26,7 @@ function ProductAsideInfo({
   return (
     <>
       {/* Code and name */}
-      {gtin && gtin?.length > 0 && (
+      {/* {gtin && gtin?.length > 0 && (
         <div class="mt-4 sm:mt-0 sm:h-auto">
           <div>
             <span class="text-sm text-base-300">
@@ -34,7 +34,7 @@ function ProductAsideInfo({
             </span>
           </div>
         </div>
-      )}
+      )} */}
 
       {/* { tag warning} */}
       {isRestricted && <TagWarning style={""} />}

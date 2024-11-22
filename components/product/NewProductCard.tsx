@@ -293,12 +293,12 @@ function NewProductCard(
                     {/* Tag produto restrito*/}
                     {isRestricted && (
                         <div
-                            class={`absolute ${positionBottom ?? `top-0 -left-[75px]`}`}
+                            class={`absolute top-0 left-0`}
                         >
                             <TagWarning
                                 width={tagWarningWidth}
                                 height={tagWarningHeight}
-                                style={`flex justify-center`}
+                                style={`flex justify-start`}
                             />
                         </div>
                     )}
@@ -323,7 +323,7 @@ function NewProductCard(
                         listPrice={listPrice2}
                         label={l?.discount?.label}
                         variant={l?.discount?.variant}
-                        className="lg:!-top-[20px] lg:!-left-[12px] !top-[20px]"
+                        className="lg:!-top-[40px] lg:!-left-[12px] !top-[35px]"
                     />
                 )}
                 {/* SKU Selector */}
