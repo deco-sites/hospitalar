@@ -22,6 +22,8 @@ export type SocialIcons =
   | "YouTubeOutline"
   | "WhatsAppOutline"
   | "InstagramOutline"
+  | "NewFacebook"
+  | "NewInstagram"
   | "FacebookOutline";
 export type AvailableIcons =
   | "Refresh"
