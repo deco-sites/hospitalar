@@ -130,7 +130,7 @@ function Form(props: Props) {
   `;
 
   return (
-    <div class="flex flex-col lg:flex-row items-baseline lg:items-center gap-[20px] lg:gap-16 py-10 w-full justify-between">
+    <div class="flex flex-col lg:flex-row items-baseline lg:items-center gap-[20px] lg:gap-16 py-10 w-full justify-between lg:pl-[80px]">
       <div
         style={{ 
           backgroundImage: `url(${urlIcon})`,  

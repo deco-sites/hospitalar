@@ -217,7 +217,7 @@ function ProductShelf({
           )
         : (
           <Slider 
-          class={clx(`container carousel carousel-start gap-6 col-span-full row-span-full py-2 mb-8 lg:mb-0'}`)}>
+          class={clx(`container carousel carousel-start gap-6 col-span-full row-span-full py-2 mb-8 lg:pb-[20px] lg:mb-0'`)}>
             {products?.map((product, index) => {
                 return(
                   <Slider.Item
@@ -278,7 +278,7 @@ function ProductShelf({
           </div>
           <Dots
             images={products}
-            className={CONDITIONAL_RESPONSIVE_PARAMS["Always"]}
+            className={CONDITIONAL_RESPONSIVE_PARAMS["Always"]} 
             slideTwoRow={slideTwoRow}
           />
         </>

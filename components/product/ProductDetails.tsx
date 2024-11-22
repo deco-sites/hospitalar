@@ -354,7 +354,7 @@ function Details({
           </div>
 
           {/* Product Info */}
-          <div class={`w-full lg:pr-0 lg:pl-6 ${isRestricted ? "lg:mt-[15px]" : "lg:mt-[50px]"}`}>
+          <div class={`w-full lg:pr-0 lg:pl-6 ${isRestricted ? "lg:mt-[50px]" : "lg:mt-[50px]"}`}>
             <ProductInfo
               page={page}
               shipmentPolitics={shipmentPolitics}
