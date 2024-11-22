@@ -64,7 +64,7 @@ function InputNewsletter(
     <input
       name={name}
       type={type}
-      class="input lg:h-12 h-9 px-5 join-item w-full rounded-full placeholder:text-placeholder outline-none lg:text-base text-xs"
+      class="input lg:h-[48px] join-item w-full rounded-full placeholder:text-placeholder outline-none bg-white h-[40px] font-poppins font-normal text-[12px] leading-[12px] text-[#9CA3AF]"
       placeholder={placeholder}
       required={required}
     />
@@ -125,11 +125,26 @@ function Form(props: Props) {
     )
     : null;
 
+  const urlIcon = `
+    data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzEiIGhlaWdodD0iNTEiIHZpZXdCb3g9IjAgMCA3MSA1MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyMl82OTIpIj4KPHBhdGggZD0iTTcxLjAwMDEgMEgwLjg0Mzk5NFY1MC45OTA4SDcxLjAwMDFWMFoiIGZpbGw9IiMyRTM4NzUiLz4KPHBhdGggZD0iTTQ1LjAzNjEgMEM1OS4zNzMgMCA3MS4wMDAxIDExLjQxNjUgNzEuMDAwMSAyNS40OTU0QzcxLjAwMDEgMzkuNTc0MiA1OS4zNzMgNTAuOTkwOCA0NS4wMzYxIDUwLjk5MDgiIGZpbGw9IiMzNTQ2OEIiLz4KPHBhdGggZD0iTTMyLjU3NDUgMy4zNDYzOFYxLjQ2OTgyQzMyLjU3NDUgMC42NTYzMzUgMzMuMjQwMiAwIDM0LjA2NTQgMEg0Mi4yMTM3QzQzLjAzODggMCA0My43MDQ1IDAuNjU2MzM1IDQzLjcwNDUgMS40Njk4MlYxMS4zNzAzQzQzLjcwNDUgMTIuMTgzOCA0My4wMzg4IDEyLjg0MDEgNDIuMjEzNyAxMi44NDAxQzM2Ljg4NzcgMTIuODQwMSAzMi41NzQ1IDguNTg3ODIgMzIuNTc0NSAzLjMzNzE0VjMuMzQ2MzhaIiBmaWxsPSIjMUUyNTM4Ii8+CjxwYXRoIGQ9Ik00My43MDQ2IDM4LjM3MjVWNTFIMzEuNTQzMVY0MC4xNDc0QzMxLjU0MzEgMzMuNzUwNCAyNy4zOTg2IDMwLjIwMDcgMjIuMzUzOSAzMC4yMDA3QzE2Ljg1OTIgMzAuMjAwNyAxMi4xNzA5IDM0LjM3OSAxMi4xNzA5IDQxLjAzNDhWNTFIMFYwSDEyLjE2MTVWMjUuMDUxN0gxMi41MTc4QzE1LjQ5MDIgMjAuOTY1NyAyMC4yNjI5IDE4LjQ3OTEgMjUuODUxNCAxOC40NzkxQzM2Ljc1NjUgMTguNDc5MSA0My42OTUyIDI1LjY3MSA0My42OTUyIDM4LjM4MTdMNDMuNzA0NiAzOC4zNzI1WiIgZmlsbD0iIzc5QUVDOSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzEyMl82OTIiPgo8cmVjdCB3aWR0aD0iNzEiIGhlaWdodD0iNTEiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==
+  `;
+
   return (
-    <div class="flex flex-col lg:flex-row items-baseline lg:items-center gap-5 lg:gap-16 py-10 w-full justify-between">
+    <div class="flex flex-col lg:flex-row items-baseline lg:items-center gap-[20px] lg:gap-16 py-10 w-full justify-between">
+      <div
+        style={{ 
+          backgroundImage: `url(${urlIcon})`,  
+          backgroundRepeat: 'repeat-y',
+          position: "absolute",
+          height: "162px",
+          width: "80px",
+          left: "0px",
+        }} 
+        class="hidden lg:flex"
+      ></div>
       <div
         dangerouslySetInnerHTML={{ __html: text }}
-        class="text-base lg:text-xl text-left text-base-100 lg:max-w-sm max-w-xs lg:pr-0 pr-14"
+        class="font-poppins text-white font-normal font-bold text-[28px] leading-[24px] lg:pr-0 pr-14"
       />
       {success.value
         ? (
@@ -142,7 +157,7 @@ function Form(props: Props) {
             class="w-full form-control"
             onSubmit={handleSubmit}
           >
-            <div class="flex gap-4 w-full lg:flex-row flex-col items-center lg:justify-between justify-center">
+            <div class="flex gap-[10px] lg:gap-[16px] w-full lg:flex-row flex-col items-center lg:justify-between justify-center">
               {nameInput}
               {emailInput}
               <button
@@ -150,10 +165,7 @@ function Form(props: Props) {
                   minWidth: "150px",
                 }}
                 type="submit"
-                class={`capitalize md:ml-5 font-medium btn disabled:loading rounded-full join-item btn-${
-                  BUTTON_VARIANTS[form?.button?.variant as string] ||
-                  BUTTON_VARIANTS["primary"]
-                }`}
+                class="lg:h-[48px] lg:w-[170px] mt-[5px] lg:mt-0 w-full h-[40px] bg-[#85BAD5] rounded-full font-poppins font-semibold text-[14px] leading-[16px] text-[#2C376D]"
                 disabled={loading}
               >
                 {form?.button?.label || "Cadastrar"}
