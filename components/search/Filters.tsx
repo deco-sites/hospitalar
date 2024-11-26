@@ -103,6 +103,7 @@ function Filters({ filters }: Props) {
           ))
         )}
       </li>
+      
       {_filters.map((filter) => (
         <li class="flex flex-col gap-4">
           <details class="collapse collapse-plus" open>
