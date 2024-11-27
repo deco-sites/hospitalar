@@ -136,7 +136,7 @@ function Form(props: Props) {
           backgroundImage: `url(${urlIcon})`,  
           backgroundRepeat: 'repeat-y',
           position: "absolute",
-          height: "162px",
+          height: "100%",
           width: "80px",
           left: "0px",
         }} 

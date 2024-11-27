@@ -74,8 +74,8 @@ function CategoryText(
               font-family: 'Poppins';
               font-style: normal;
               font-weight: 400;
-              font-size: 12px;
-              line-height: 18px;
+              font-size: 14px;
+              line-height: 20px;
               color: #4A4B51;
               border-bottom: 1px solid #D2D1D7;
               padding-bottom: 25px;
@@ -111,12 +111,9 @@ function CategoryText(
 
       <div class={`container ${textAlignment} mb-[20px] px-5`}>
         <details class="w-full styleSeoBtn">
-          <summary class="bg-[#EEF1F5] rounded-full h-10 pointer lg:h-[60px] w-full flex items-center justify-between px-[20px] py-[10px] lg:py-[20px]">
-            <h3 class="font-poppins font-bold text-lg leading-5 text-[#2D386E]">
-              Saiba mais sobre
-              <span class="font-poppins font-bold text-lg leading-5 text-[#2D386E]">
-                {categoryText}
-              </span>
+          <summary class="bg-[#EEF1F5] rounded-full h-10 pointer lg:h-[60px] w-full flex items-center justify-between px-[20px] py-[10px] lg:py-[20px] lg:px-[30px]">
+            <h3 class="font-poppins font-semibold lg:font-bold lg:text-[18px] lg:leading-[20px] text-[14px] leading-[19px] text-[#2C376D]">
+              {` Saiba mais sobre ${categoryText}` }
             </h3>
             <span class="minus font-poppins not-italic font-medium text-base leading-6 text-left text-[#2C376D]">
               -
@@ -129,7 +126,7 @@ function CategoryText(
             ? (
               <div
                 dangerouslySetInnerHTML={{ __html: html }}
-                class="styleSeo text-neutral font-normal text-sm pb-12 mt-[20px] px-[15px]"
+                class="styleSeo text-neutral font-normal text-sm pb-12 mt-[20px] px-[20px] lg:px-[50px] lg:mt-[40px]"
               />
             )
             : null}
