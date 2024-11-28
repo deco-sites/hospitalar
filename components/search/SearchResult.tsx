@@ -56,9 +56,9 @@ function Result({
   return (
     <>
       <div class="hidden lg:flex w-full items-start justify-start lg:mb-[40px] lg:pt-[35px]">
-        <span class="font-poppins not-italic font-bold text-[40px] leading-[40px] text-[#2C376D]">
+        <h1 class="font-poppins not-italic font-bold text-[40px] leading-[40px] text-[#2C376D]">
           {itemListElement[itemListElement.length - 1].name}
-        </span>
+        </h1>
       </div>
       <div>
         <div class="flex flex-row gap-8">

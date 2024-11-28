@@ -110,7 +110,7 @@ function CategoryText(
       </Head>
 
       <div class={`container ${textAlignment} mb-[20px] px-5`}>
-        <details class="w-full styleSeoBtn">
+        <details open class="w-full styleSeoBtn">
           <summary class="bg-[#EEF1F5] rounded-full h-10 pointer lg:h-[60px] w-full flex items-center justify-between px-[20px] py-[10px] lg:py-[20px] lg:px-[30px]">
             <h3 class="font-poppins font-semibold lg:font-bold lg:text-[18px] lg:leading-[20px] text-[14px] leading-[19px] text-[#2C376D]">
               {` Saiba mais sobre ${categoryText}` }
