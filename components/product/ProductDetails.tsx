@@ -1,13 +1,10 @@
-import { useSignal } from "@preact/signals";
 import { useId } from "preact/hooks";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
-import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
-import { formatPrice } from "$store/sdk/format.ts";
 import { SendEventOnLoad } from "$store/sdk/analytics.tsx";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
@@ -20,6 +17,8 @@ import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 
 import ProductAsideInfo from "site/components/product/ProductAsideInfo.tsx";
 import TagBlueProduct from "site/components/blueTags/BlueTagProduct.tsx";
+import BreadcrumbProduct from "site/components/ui/BreadcrumbProduct.tsx";
+import DescriptionCard from "site/islands/DescriptionCard.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 
@@ -67,14 +66,13 @@ function NotFound() {
 }
 
 function ProductInfo(
-  { page, shipmentPolitics, shareableNetworks, restrictedCategory}: {
+  { page, shareableNetworks }: {
     page: ProductDetailsPage;
     shipmentPolitics?: Props["shipmentPolitics"];
     shareableNetworks?: Props["shareableNetworks"];
     restrictedCategory?: Props["restrictedCategory"];
   },
 ) {
- 
   const {
     breadcrumbList,
     product,
@@ -84,23 +82,22 @@ function ProductInfo(
     productID,
     offers,
     name,
-    gtin,
     isVariantOf,
     url,
-    category
+    category,
   } = product;
 
-  const strict = category?.split(">")?.[0]
+  const strict = category?.split(">")?.[0];
 
-  let isRestricted = false
+  let isRestricted = false;
 
   if (strict === "Medicamentos") {
-    isRestricted = true
+    isRestricted = true;
   } else {
-    isRestricted = false
+    isRestricted = false;
   }
 
-  const { price, listPrice, seller, availability, installment } = useOffer(
+  const { price, listPrice, seller, availability } = useOffer(
     offers,
   );
   const possibilities = useVariantPossibilities(product);
@@ -109,7 +106,7 @@ function ProductInfo(
 
   Object.keys(possibilities).forEach((name) => {
     Object.entries(possibilities[name]).forEach(
-      ([value, { urls, inStock }]) => {
+      ([value, { urls }]) => {
         if (urls[0] === productUrl) {
           subName.push(value);
         }
@@ -122,11 +119,10 @@ function ProductInfo(
       {/* Code and name */}
       <ProductAsideInfo
         product={product}
-        subName={subName}
-        isRestricted =  {isRestricted}
+        isRestricted={isRestricted}
       />
       {/* Add to Cart and Favorites button */}
-      <div class="mt-4 lg:mt-10 flex gap-[30px]">
+      <div class="mt-[30px] lg:mt-10 flex gap-[30px]">
         {availability === "https://schema.org/InStock"
           ? (
             <>
@@ -158,22 +154,14 @@ function ProductInfo(
         )
         : null}
       {/* Description card */}
-      <details className="collapse collapse-plus mt-[30px]">
-        <summary className="collapse-title border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-bold">
-          Descrição
-        </summary>
-        <div className="readmore !flex-col text-xs px-0 pl-[30px] mt-3 leading-tight collapse-content text-base-300">
-          <input type="checkbox" id="readmore" className="readmore-toggle" />
-          <p
-            className="readmore-content"
-            dangerouslySetInnerHTML={{ __html: description ? description : "" }}
-          >
-          </p>
-        </div>
-      </details>
+      <DescriptionCard
+        description={description ? description : ""}
+        classContainer="lg:hidden"
+      />
+      {/* Share Product on Social Networks */}
       {/* Share Product on Social Networks */}
       {shareableNetworks && (
-        <div class="flex items-center gap-5 my-5">
+        <div class="hidden lg:flex items-center gap-5 my-[30px]">
           <span class="text-xs text-base-300">Compartilhar</span>
           <ul class="gap-2 flex items-center justify-between">
             {shareableNetworks.map((network) => (
@@ -300,10 +288,31 @@ function Details({
   const id = `product-image-gallery:${useId()}`;
   const images = useStableImages(product);
 
-  const open = useSignal(false);
-  const zoomImage = useSignal(images[0].url);
-  const zoomX = useSignal(0);
-  const zoomY = useSignal(0);
+  const possibilities = useVariantPossibilities(page?.product);
+  const { isVariantOf, url } = page?.product;
+  const subName: string[] = [];
+  const productUrl = product?.url || "";
+  const currentURL = window.location?.href;
+
+  const strict = product.category?.split(">")?.[0];
+
+  let isRestricted = false;
+
+  if (strict === "Medicamentos") {
+    isRestricted = true;
+  } else {
+    isRestricted = false;
+  }
+
+  Object.keys(possibilities).forEach((name) => {
+    Object.entries(possibilities[name]).forEach(
+      ([value, { urls }]) => {
+        if (urls[0] === productUrl) {
+          subName.push(value);
+        }
+      },
+    );
+  });
 
   /**
    * Product slider variant
@@ -312,24 +321,40 @@ function Details({
     return (
       <>
         {/* Breadcrumb */}
-        <Breadcrumb
+        <BreadcrumbProduct
           itemListElement={filteredBreadcrumbList}
+          class="mb-6 lg:mb-[40px] lg:!pt-[30px] lg:!pb-0"
+          activeTitle={false}
         />
         <div
           id={id}
-          class="flex flex-col lg:flex-row gap-4 lg:justify-center"
+          class="flex flex-col pb-[46px] lg:flex-row gap-12 lg:justify-center lg:pb-[87px]"
         >
           {/* Product Images */}
-          <ProductDetailsImages
-            images={images}
-            width={WIDTH}
-            height={HEIGHT}
-            aspect={ASPECT_RATIO}
-            product={product}
-          />
+          <div>
+            <h2 class="mb-[30px] lg:mb-[50px] lg:max-[670px]">
+              <span class="font-poppins not-italic font-semibold text-xl text-[#2C376D] lg:text-2xl">
+                {isVariantOf?.name}
+                {currentURL == url ? subName.map((name) => `- ${name}`) : "  "}
+              </span>
+            </h2>
+
+            <ProductDetailsImages
+              images={images}
+              width={WIDTH}
+              height={HEIGHT}
+              aspect={ASPECT_RATIO}
+              product={product}
+            />
+
+            <DescriptionCard
+              description={product.description ? product.description : ""}
+              classContainer="hidden lg:block"
+            />
+          </div>
 
           {/* Product Info */}
-          <div class="w-full lg:pr-0 lg:pl-6">
+          <div class={`w-full lg:pr-0 lg:pl-6 ${isRestricted ? "lg:mt-[50px]" : "lg:mt-[50px]"}`}>
             <ProductInfo
               page={page}
               shipmentPolitics={shipmentPolitics}

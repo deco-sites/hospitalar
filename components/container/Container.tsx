@@ -30,6 +30,10 @@ export interface Props {
      * @default 0
      */
     spacing?: number;
+    /**
+     * @description Estilização adicional
+     */
+    classes?: string;
   }[];
 
    /** @default false */
@@ -48,13 +52,14 @@ function Container({ sections, isHeader = false }: Props) {
           verticalSpacing = "both",
           shadow = "none",
           spacing = 0,
+          classes,
         },
       ) => (
         <div
           class={clx(`w-full 
           ${VERTICAL_SPACING[verticalSpacing]} 
           ${SPACING[spacing]}
-          ${SHADOW_SIZE[shadow]}`)}
+          ${SHADOW_SIZE[shadow]} ${classes}`)}
           style={backgroundColor && { background: `${backgroundColor}` }}
         >
           {withContainer
