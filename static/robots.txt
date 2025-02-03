@@ -10,6 +10,24 @@ Disallow: /checkout/*
 Disallow: /busca/* 
 Disallow: /quick-view/* 
 Disallow: /espiar/* 
-Noindex: /buscapagina/* 
+Noindex: /buscapagina/*
+
+User-agent: Bingbot
+Allow: /
+Disallow: /img/* 
+Disallow: /account/* 
+Disallow: /login/* 
+Disallow: /checkout/* 
+Disallow: /busca/* 
+Disallow: /quick-view/* 
+Disallow: /espiar/* 
+Noindex: /buscapagina/*
+
+User-agent: SiteAuditBot
+Crawl-delay: 1
+Allow: /
+
+User-agent: Semrushbot-SI
+Allow: /
 
 Sitemap: https://www.hospitalardistribuidora.com.br/sitemap.xml
