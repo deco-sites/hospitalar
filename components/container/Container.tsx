@@ -57,7 +57,7 @@ function Container({ sections, isHeader = false }: Props) {
           ${VERTICAL_SPACING[verticalSpacing]} 
           ${SPACING[spacing]}
           ${SHADOW_SIZE[shadow]}`)}
-          style={backgroundColor && { background: `${backgroundColor}`} ||  { background: `url(${backgroundImage}) no-repeat`} }
+          style={backgroundColor && { background: `${backgroundColor}`} ||  { background: `url(${backgroundImage}) no-repeat`} || "background-size: 100%"}
         >
           {withContainer
             ? (
