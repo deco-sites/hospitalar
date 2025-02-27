@@ -134,7 +134,7 @@ function Searchbar({
   if (noContainer) return Searchbar;
 
   return (
-    <div class="flex flex-col py-4 md:py-6 md:px-20 container md:w-full md:flex-1">
+    <div class="flex flex-col py-4 md:py-6 md:px-10 container md:w-full md:flex-1">
       {Searchbar}
       {hide.results ? null : (
         <ResultSearch
