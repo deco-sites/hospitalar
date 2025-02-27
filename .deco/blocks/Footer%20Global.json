@@ -76,6 +76,10 @@
               {
                 "href": "/i/contato",
                 "label": "Fale conosco"
+              },
+              {
+                "label": "blog hospitalar",
+                "href": "https://blog.hospitalardistribuidora.com.br/"
               }
             ]
           },
