@@ -23,6 +23,7 @@ export interface Props {
      * @description Section background
      */
     backgroundColor?: string;
+    backgroundImage?: string;
     /** @default both */
     verticalSpacing?: VerticalSpacing;
     /**
@@ -45,6 +46,7 @@ function Container({ sections, isHeader = false }: Props) {
           section: { Component, props },
           withContainer = false,
           backgroundColor = "",
+          backgroundImage = "",
           verticalSpacing = "both",
           shadow = "none",
           spacing = 0,
@@ -55,7 +57,7 @@ function Container({ sections, isHeader = false }: Props) {
           ${VERTICAL_SPACING[verticalSpacing]} 
           ${SPACING[spacing]}
           ${SHADOW_SIZE[shadow]}`)}
-          style={backgroundColor && { background: `${backgroundColor}` }}
+          style={backgroundColor && { background: `${backgroundColor}`} ||  { background: `url(${backgroundImage})`} }
         >
           {withContainer
             ? (
