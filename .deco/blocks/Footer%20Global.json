@@ -169,6 +169,7 @@
         "socialNetWorks": [
           {
             "href": "https://www.facebook.com/hospitalardistribuidorapp/?locale=pt_BR",
+
             "icon": "Facebook",
             "label": "Facebook",
             "openNewView": true
