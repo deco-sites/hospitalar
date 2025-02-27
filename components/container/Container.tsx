@@ -53,7 +53,7 @@ function Container({ sections, isHeader = false }: Props) {
         },
       ) => (
         <div
-          class={clx(`w-full 
+          class={clx(`w-full bg-[100%]
           ${VERTICAL_SPACING[verticalSpacing]} 
           ${SPACING[spacing]}
           ${SHADOW_SIZE[shadow]}`)}
