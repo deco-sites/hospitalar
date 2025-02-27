@@ -1,9 +1,13 @@
 import { Head } from "$fresh/runtime.ts";
-import { clx } from "../../sdk/clx.ts";
+// import { clx } from "../../sdk/clx.ts";
 
+
+/**
+ * @title {{{question}}}
+ */
 export interface Question {
   question: string;
-  /** @format rich-text */
+  /** @format html */
   answer: string;
 }
 
@@ -43,12 +47,12 @@ const DEFAULT_PROPS = {
 
 function Question({ question, answer }: Question) {
   return (
-    <details class="collapse collapse-plus join-item border-b border-[#eee]">
-      <summary class="collapse-title !min-h-0 text-2xl font-scoutCond tracking-one font-medium text-[#1e1d2e]  !pl-0 !pt-2 !pb-0 !mb-0 ">
+    <details open class="collapse collapse-plus join-item !rounded-none">
+      <summary class="collapse-title bg-[#EEF1F5] text-sm md:text-lg !min-h-0 font-scoutCond tracking-one font-medium text-[#2C376D] rounded-full py-4 px-7">
         {question}
       </summary>
       <div
-        class="collapse-content section_content"
+        class="collapse-content section_content py-5 px-7"
         dangerouslySetInnerHTML={{ __html: answer }}
       />
     </details>
@@ -58,8 +62,6 @@ function Question({ question, answer }: Question) {
 export default function FAQ(props: Props) {
   const {
     questions = [],
-    title,
-    layout,
   } = { ...DEFAULT_PROPS, ...props };
 
   return (
@@ -70,7 +72,8 @@ export default function FAQ(props: Props) {
           dangerouslySetInnerHTML={{
             __html: `
              .collapse-content p {
-              font-size: 12px;
+              font-size: 16px;
+              color: #8E8E9F;
              }
 
              .collapse-content table td {
@@ -85,47 +88,39 @@ export default function FAQ(props: Props) {
               border: 1px solid #eee;
              }
 
+             .btn-form {
+              background-color: white;
+              color: #2C376D; 
+              border: 1px solid #2C376D;
+              font-size: 12px;
+              font-weight: 700;
+                border-radius: 9999px;
+             }
+
+             .btn-form .icon {
+              height: 19px;
+              width: auto;
+              object-fit: none;
+             }
+
              @media only screen and (max-width: 768px) {
                .collapse-content table {
                   width: 100% !important;
                   border-collapse: collapse;
-              }
+                }
+                .btn-form {
+                  font-size: 9px;
+                }
+                
             }
             `,
           }}
         />
       </Head>
-
-      <div class="w-full  max-w-7xl m-auto px-4 pt-8 pb-[100px] flex flex-col lg:flex-row gap-4 lg:my-28 lg:gap-8 lg:py-10  lg:px-10">
+      <div class="w-full  max-w-7xl m-auto flex flex-col lg:flex-row gap-4 lg:gap-8">
         <div class="flex flex-col gap-8 lg:gap-10 w-full">
-          <div
-            class={`flex flex-col gap-2 ${
-              layout?.headerAlignment === "left"
-                ? "text-left lg:pl-20 uppercase"
-                : "text-center"
-            }`}
-          >
-            {title &&
-              (
-                <h1
-                  class={clx(
-                    ` text-4xl font-scoutCond  font-bold   tracking-[2px] lg:text-[40px] lg:font-bold uppercase leading-8 lg:leading-10 text-[#1e1d2e] pb-5 lg:pb-6`,
-                  )}
-                >
-                  {title}
-                </h1>
-              )}
-          </div>
-
           <div class="flex w-full gap-16">
-            <aside class="hidden lg:block">
-              <div class="font-arial text-white p-8 bg-primary-content">
-                <div class="flex gap-3 items-center justify-center mt-6">
-                  
-                </div>
-              </div>
-            </aside>
-            <div class="join join-vertical w-full">
+            <div class="join join-vertical w-full gap-3">
               {questions.map((question) => <Question {...question} />)}
             </div>
           </div>

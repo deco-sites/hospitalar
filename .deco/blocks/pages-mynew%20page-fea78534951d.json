@@ -1,1 +1,58 @@
-{"name":"Institucional/Formas de pagamento e envio","path":"/i/formas-de-pagamento-e-envio","sections":[{"__resolveType":"SEODefault"},{"__resolveType":"Default - Design System"},{"__resolveType":"Header Global"},{"sections":[{"label":"Banner","shadow":"none","section":{"banners":[{"text":{"mobileTextPosition":"left","desktopTextPosition":"left"},"image":{"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/a613921b-a7c7-4f90-b151-553d8c62149a","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/f09cb225-d5c4-4f38-b641-10d553574d2a"},"matcher":"/i/*"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},"verticalSpacing":"top"}],"__resolveType":"site/sections/Container.tsx"},{"sections":[{"label":"Institutional Page","section":{"title":"FORMAS DE PAGAMENTO E ENVIO","content":{"content":"<div style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><div style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><section id=\"institucional\" style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><div style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><p style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><strong style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\">Formas de pagamento:</strong> Boleto Bancário, Cartão de Crédito em até 6x sem juros, Pix e Pix Parcelado em até 4x sem juros.<br style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><br style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><strong style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"></strong></p><p style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><strong style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\">Envio pelos Correios:</strong></p><p style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\">Sedex e PAC</p><p style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><strong style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><br data-mce-bogus=\"1\"></strong></p><p style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><strong style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\">Envio por Transportadoras:</strong></p><p style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\">Quality, Rodonaves e Braspress</p><p style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><strong><br data-mce-bogus=\"1\"></strong></p><p style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><strong>Comprar direto com o vendedor:</strong></p><p style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\">Envie seu orçamento para: vendas@hospitalardistribuidora.com.br</p></div></section></div></div>","__resolveType":"site/sections/Institutional/TextContent.tsx"},"asideMenu":{"__resolveType":"Aside Menu Global"},"__resolveType":"site/sections/Institutional/InstitutionalPage.tsx"},"withContainer":true,"verticalSpacing":"both"}],"__resolveType":"site/sections/Container.tsx"},{"__resolveType":"Footer Global"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Institucional/Formas de pagamento e envio",
+  "path": "/i/formas-de-pagamento-e-envio",
+  "sections": [
+    {
+      "__resolveType": "SEODefault"
+    },
+    {
+      "__resolveType": "Default - Design System"
+    },
+    {
+      "__resolveType": "Header Global"
+    },
+    {
+      "sections": [
+        {
+          "label": "FORMAS DE PAGAMENTO E ENVIO",
+          "section": {
+            "__resolveType": "site/sections/Institutional/PageContent.tsx",
+            "title": "FORMAS DE PAGAMENTO E ENVIO",
+            "content": {
+              "__resolveType": "site/sections/Institutional/Questions.tsx",
+              "questions": [
+                {
+                  "answer": "<div class=\"flex flex-col md:flex-row gap-10\"><div class=\"flex items-center gap-5\"><img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/b080dc8b-6c02-4da3-9b73-9ddbb01d5815/Vector.png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/b080dc8b-6c02-4da3-9b73-9ddbb01d5815/Vector.png\"><p><span class=\"font-bold\">Boleto Bancário</span></p></div><div class=\"flex items-center gap-5\"><img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/e47ad4de-2044-4365-9d5f-6a5be9daf124/Frame-(3).png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/e47ad4de-2044-4365-9d5f-6a5be9daf124/Frame-(3).png\"><p><span class=\"font-bold\">Cartão de crédito</span><br>em até 6x sem juros</p></div><div class=\"flex items-center gap-5\"><img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/83dba0f1-be1a-4407-8cd5-0b2b6535da39/icone-pix-1.png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/83dba0f1-be1a-4407-8cd5-0b2b6535da39/icone-pix-1.png\"><p><span class=\"font-bold\">Pix à vista ou parcelado</span><br>em até 4x sem juros</p></div></div>",
+                  "question": "Pagamento"
+                },
+                {
+                  "question": "Envio",
+                  "answer": "<div class=\"flex flex-col md:flex-row gap-10\"><div class=\"flex items-center gap-5\"><img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/3075efee-5729-46e6-b0c3-bc39262db19c/Frame-(4).png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/3075efee-5729-46e6-b0c3-bc39262db19c/Frame-(4).png\"><p><span class=\"font-bold\">Correios</span><br>Sedex e PAC</p></div><div class=\"flex items-center gap-5\"><img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/c3d24b62-565d-48e6-ad59-2fcd5fa2e886/Frame-(5).png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/c3d24b62-565d-48e6-ad59-2fcd5fa2e886/Frame-(5).png\"><p><span class=\"font-bold\">Transportadoras</span><br>Transportadoras Quality, Rodonaves e Braspress</p></div></div>"
+                },
+                {
+                  "question": "Comprar direto com o vendedor",
+                  "answer": "<p class=\"font-bold\">Envie seu orçamento para:</p><p><a class=\"btn btn-form my-5\"> <img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/955c97a9-cd84-4e45-8f65-9fb477298bcc/letter_icon.png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/955c97a9-cd84-4e45-8f65-9fb477298bcc/letter_icon.png\"> vendas@hospitalardistribuidora.com.br </a></p>"
+                }
+              ],
+              "layout": {
+                "headerAlignment": "center"
+              },
+              "title": "ss"
+            },
+            "asideMenu": {
+              "__resolveType": "Aside Menu Global"
+            }
+          },
+          "verticalSpacing": "top",
+          "withContainer": true,
+          "shadow": "none"
+        }
+      ],
+      "__resolveType": "site/sections/Container.tsx"
+    },
+    {
+      "__resolveType": "Footer Global"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}
