@@ -126,7 +126,7 @@ function Form(props: Props) {
     : null;
 
   return (
-    <div class="flex flex-col lg:flex-row items-baseline lg:items-center gap-5 lg:gap-16 py-10 w-full justify-between" style="background-image: url(/arquivos/hospitalarNewsBackground.png)">
+    <div class="flex flex-col lg:flex-row items-baseline lg:items-center gap-5 lg:gap-16 py-10 w-full justify-between">
       <div
         dangerouslySetInnerHTML={{ __html: text }}
         class="text-base lg:text-xl text-left text-base-100 lg:max-w-sm max-w-xs lg:pr-0 pr-14"
