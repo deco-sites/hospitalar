@@ -16,8 +16,8 @@
         "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
       },
       "withContainer": true,
-      "backgroundColor": "#85BAD5",
-      "verticalSpacing": "none"
+      "verticalSpacing": "none",
+      "backgroundImage": "/arquivos/hospitalarNewsBackground.png"
     },
     {
       "label": "Footer",
