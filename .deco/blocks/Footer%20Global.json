@@ -17,7 +17,8 @@
       },
       "withContainer": true,
       "verticalSpacing": "none",
-      "backgroundImage": "/arquivos/hospitalarNewsBackground.png"
+      "backgroundImage": "/arquivos/hospitalarNewsBackground.png",
+      "backgroundSize": "100%"
     },
     {
       "label": "Footer",
