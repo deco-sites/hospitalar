@@ -22,12 +22,12 @@ import * as $$$$$$13 from "./sections/Content/Logos.tsx";
 import * as $$$$$$14 from "./sections/Content/Testimonials.tsx";
 import * as $$$$$$15 from "./sections/DesignSystem/DesignSystem.tsx";
 import * as $$$$$$16 from "./sections/Footer/Footer.tsx";
-import * as $$$$$$18 from "./sections/Header/HeaderLayout.tsx";
-import * as $$$$$$19 from "./sections/Header/HeaderLayoutV2.tsx";
-import * as $$$$$$20 from "./sections/Header/HeaderNavMenu.tsx";
-import * as $$$$$$21 from "./sections/Header/HeaderNavMenuV2.tsx";
-import * as $$$$$$22 from "./sections/Header/TopNavBar.tsx";
-import * as $$$$$$17 from "./sections/HeaderFloating.tsx";
+import * as $$$$$$17 from "./sections/Header/HeaderLayout.tsx";
+import * as $$$$$$18 from "./sections/Header/HeaderLayoutV2.tsx";
+import * as $$$$$$19 from "./sections/Header/HeaderNavMenu.tsx";
+import * as $$$$$$20 from "./sections/Header/HeaderNavMenuV2.tsx";
+import * as $$$$$$21 from "./sections/Header/TopNavBar.tsx";
+import * as $$$$$$22 from "./sections/HeaderFloating.tsx";
 import * as $$$$$$23 from "./sections/Images/BannerGrid.tsx";
 import * as $$$$$$24 from "./sections/Images/Carousel.tsx";
 import * as $$$$$$25 from "./sections/Images/ImageGallery.tsx";
@@ -78,12 +78,12 @@ const manifest = {
     "site/sections/Content/Testimonials.tsx": $$$$$$14,
     "site/sections/DesignSystem/DesignSystem.tsx": $$$$$$15,
     "site/sections/Footer/Footer.tsx": $$$$$$16,
-    "site/sections/Header/HeaderLayout.tsx": $$$$$$18,
-    "site/sections/Header/HeaderLayoutV2.tsx": $$$$$$19,
-    "site/sections/Header/HeaderNavMenu.tsx": $$$$$$20,
-    "site/sections/Header/HeaderNavMenuV2.tsx": $$$$$$21,
-    "site/sections/Header/TopNavBar.tsx": $$$$$$22,
-    "site/sections/HeaderFloating.tsx": $$$$$$17,
+    "site/sections/Header/HeaderLayout.tsx": $$$$$$17,
+    "site/sections/Header/HeaderLayoutV2.tsx": $$$$$$18,
+    "site/sections/Header/HeaderNavMenu.tsx": $$$$$$19,
+    "site/sections/Header/HeaderNavMenuV2.tsx": $$$$$$20,
+    "site/sections/Header/TopNavBar.tsx": $$$$$$21,
+    "site/sections/HeaderFloating.tsx": $$$$$$22,
     "site/sections/Images/BannerGrid.tsx": $$$$$$23,
     "site/sections/Images/Carousel.tsx": $$$$$$24,
     "site/sections/Images/ImageGallery.tsx": $$$$$$25,
