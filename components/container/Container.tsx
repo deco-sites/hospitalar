@@ -63,13 +63,8 @@ function Container({ sections, isHeader = false }: Props) {
           class={clx(`w-full
           ${VERTICAL_SPACING[verticalSpacing]} 
           ${SPACING[spacing]}
-<<<<<<< HEAD
           ${SHADOW_SIZE[shadow]}`)}
           style={backgroundColor && { background: `${backgroundColor}`} ||  { background: `url(${backgroundImage}) no-repeat`} ||  { background: `${backgroundSize}`}}
-=======
-          ${SHADOW_SIZE[shadow]} ${classes}`)}
-          style={backgroundColor && { background: `${backgroundColor}` }}
->>>>>>> 1b48aa9b6ea757eb8a65175c0641310959b93024
         >
           {withContainer
             ? (

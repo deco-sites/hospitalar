@@ -133,7 +133,7 @@ function Form(props: Props) {
     <div class="flex flex-col lg:flex-row items-baseline lg:items-center gap-[20px] lg:gap-16 py-10 w-full justify-between lg:pl-[80px]">
       <div
         style={{ 
-          backgroundImage: `url(${urlIcon})`,  
+          // backgroundImage: `url(${urlIcon})`,  
           backgroundRepeat: 'repeat-y',
           position: "absolute",
           height: "100%",
@@ -165,11 +165,7 @@ function Form(props: Props) {
                   minWidth: "150px",
                 }}
                 type="submit"
-<<<<<<< HEAD
                 class={`capitalize md:ml-5 font-medium btn disabled:loading rounded-full join-item bg-[#85BAD5] text-[#2C376D] hover:text-[#2C376D] hover:bg-[#85BAD5] hover:border-[#85BAD5] border-[#85BAD5]`}
-=======
-                class="lg:h-[48px] lg:w-[170px] mt-[5px] lg:mt-0 w-full h-[40px] bg-[#85BAD5] rounded-full font-poppins font-semibold text-[14px] leading-[16px] text-[#2C376D]"
->>>>>>> 1b48aa9b6ea757eb8a65175c0641310959b93024
                 disabled={loading}
               >
                 {form?.button?.label || "Cadastrar"}
