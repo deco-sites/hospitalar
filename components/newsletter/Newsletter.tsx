@@ -150,10 +150,7 @@ function Form(props: Props) {
                   minWidth: "150px",
                 }}
                 type="submit"
-                class={`capitalize md:ml-5 font-medium btn disabled:loading rounded-full join-item btn-${
-                  BUTTON_VARIANTS[form?.button?.variant as string] ||
-                  BUTTON_VARIANTS["primary"]
-                }`}
+                class={`capitalize md:ml-5 font-medium btn disabled:loading rounded-full join-item bg-[#85BAD5] text-[#2C376D] hover:text-[#2C376D] hover:bg-[#85BAD5] hover:border-[#85BAD5] border-[#85BAD5]`}
                 disabled={loading}
               >
                 {form?.button?.label || "Cadastrar"}
