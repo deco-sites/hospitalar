@@ -96,6 +96,30 @@ function GlobalTags() {
       {/** RD Station Marketing */}
       <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/4c1c3b1d-a025-417d-a4c0-36f62d19422c-loader.js" ></script>
 
+      <script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer></script>
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.renderOptIn = function() {
+              window.gapi.load('surveyoptin', function() {
+                window.gapi.surveyoptin.render(
+                  {
+                    "merchant_id": 341040895,
+                    "order_id": "ORDER_ID",
+                    "email": "CUSTOMER_EMAIL",
+                    "delivery_country": "COUNTRY_CODE",
+                    "estimated_delivery_date": "YYYY-MM-DD",
+
+                    // OPTIONAL FIELDS
+                    "products": [{"gtin":"GTIN1"}, {"gtin":"GTIN2"}]
+                  });
+              });
+            }
+          `,
+        }}
+      />
+
       {/* Pixel Facebook */}
       <script async dangerouslySetInnerHTML={{ __html: htmlScript }} ></script>
       <noscript>
