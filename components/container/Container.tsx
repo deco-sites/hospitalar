@@ -23,6 +23,8 @@ export interface Props {
      * @description Section background
      */
     backgroundColor?: string;
+    backgroundImage?: string;
+    backgroundSize?: string;
     /** @default both */
     verticalSpacing?: VerticalSpacing;
     /**
@@ -30,6 +32,10 @@ export interface Props {
      * @default 0
      */
     spacing?: number;
+    /**
+     * @description Estilização adicional
+     */
+    classes?: string;
   }[];
 
    /** @default false */
@@ -45,17 +51,20 @@ function Container({ sections, isHeader = false }: Props) {
           section: { Component, props },
           withContainer = false,
           backgroundColor = "",
+          backgroundImage = "",
+          backgroundSize = "100%",
           verticalSpacing = "both",
           shadow = "none",
           spacing = 0,
+          classes,
         },
       ) => (
         <div
-          class={clx(`w-full 
+          class={clx(`w-full
           ${VERTICAL_SPACING[verticalSpacing]} 
           ${SPACING[spacing]}
           ${SHADOW_SIZE[shadow]}`)}
-          style={backgroundColor && { background: `${backgroundColor}` }}
+          style={backgroundColor && { background: `${backgroundColor}`} ||  { background: `url(${backgroundImage}) no-repeat`} ||  { background: `${backgroundSize}`}}
         >
           {withContainer
             ? (

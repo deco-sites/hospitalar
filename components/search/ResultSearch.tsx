@@ -1,9 +1,9 @@
 import Spinner from "$store/components/ui/Spinner.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Slider from "$store/components/ui/Slider.tsx";
-import ProductCard from "$store/components/product/ProductCard.tsx";
 import { EditableProps } from "site/components/search/Searchbar.tsx";
 import type { Suggestion } from "apps/commerce/types.ts";
+import NewProductCard from "site/components/product/NewProductCard.tsx";
 
 export type ResultSearch = EditableProps & {
   valueSearch: string;
@@ -95,10 +95,10 @@ const ResultSearch = (
                         index={index}
                         class="carousel-item first:ml-4 last:mr-4 min-w-[200px] w-full max-w-[80%] lg:max-w-[20%]"
                       >
-                        <ProductCard
+                        <NewProductCard
                           product={product}
                           layout={cardLayout}
-                          class={"lg:!p-0"}
+                          class={"lg:!p-0 min-h-[325px] lg:min-h-[405px]"}
                           IdCollection={IdCollection}
                           tagWarningWidth="70%"
                         />

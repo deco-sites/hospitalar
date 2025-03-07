@@ -1,6 +1,4 @@
 import Filters from "$store/components/search/Filters.tsx";
-import Sort from "$store/components/search/Sort.tsx";
-import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Modal from "$store/components/ui/Modal.tsx";
@@ -14,7 +12,7 @@ type Props =
   >
   & {
     displayFilter?: boolean;
-     isWishlist?: boolean; 
+    isWishlist?: boolean;
   };
 
 function SearchControls(
@@ -25,7 +23,7 @@ function SearchControls(
   return (
     <>
       <Button
-        class={`btn justify-between w-1/2 lg:w-48 btn-sm font-normal text-base-200 h-[34px] border-2 border-base-200 bg-white hover:bg-white ${
+        class={`btn justify-between w-1/2 lg:w-48 btn-sm font-normal text-sm leading-none text-center text-[#D2D1D7] h-[34px] border-2 border-base-200 bg-white hover:bg-white ${
           displayFilter ? "" : "lg:hidden"
         } ${isWishlist ? `hidden` : ``} `}
         onClick={() => {
@@ -34,7 +32,7 @@ function SearchControls(
       >
         Filtrar
         <Icon
-          id="Plus"
+          id="NewPlus"
           size={20}
           strokeWidth={2}
           class="text-secondary-focus"
