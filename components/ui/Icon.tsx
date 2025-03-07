@@ -76,7 +76,10 @@ export type AvailableIcons =
   | "warning"
   | "icon-warning"
   | "free-shipping"
-  | "Wishlist";
+  | "Wishlist"
+  | "SetaPaginationForward"
+  | "SetaPaginationBackward";
+  
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

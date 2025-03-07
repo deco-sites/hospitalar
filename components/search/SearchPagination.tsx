@@ -1,3 +1,4 @@
+import Icon from "$store/components/ui/Icon.tsx";
 export type Props = {
   pageInfo: {
     currentPage: number;
@@ -33,6 +34,21 @@ export default function SearchPagination({ pageInfo }: Props) {
 
   return (
     <div class="flex justify-center mt-[40px] mb-[60px] gap-[10px]">
+       {showEllipsis && previousPage &&(
+          <a
+            aria-label="previous page link"
+            rel="prev"
+            href={previousPage ?? "#"}
+            class="w-10 h-10 flex items-center justify-center"
+          >
+            <Icon 
+                class="cursor-pointer"
+                width={24}
+                height={24}
+                strokeWidth={1}
+                id="SetaPaginationBackward"/>
+          </a>
+        )}
       {showFirstPage && (
         <>
           <a
@@ -89,6 +105,21 @@ export default function SearchPagination({ pageInfo }: Props) {
           class="w-10 h-10 border-2 border-[#9CA3AF] text-[#9CA3AF] rounded-full flex items-center justify-center text-sm font-bold"
         >
           {totalPages}
+        </a>
+      )}
+      {showLastPage && nextPage && (
+        <a
+          aria-label="next page link"
+          rel="next"
+          href={nextPage ?? "#"}
+          class="w-10 h-10 flex items-center justify-center"
+        >
+          <Icon 
+              class="cursor-pointer"
+              width={24}
+              height={24}
+              strokeWidth={1}
+              id="SetaPaginationForward"/>
         </a>
       )}
     </div>
