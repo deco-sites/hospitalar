@@ -69,10 +69,15 @@ export interface Props {
    */
   socialNetWorks?: SocialItem[];
   /**
+   * @title Whatsapp number
+   */
+  whatsapp:string;
+  /**
    * @title Phone number
    */
   phone: string;
   /**
+   * 
    * @title E-mail
    */
   email: string;
@@ -103,6 +108,7 @@ function Footer(
     openingHours,
     email,
     phone,
+    whatsapp,
     payments,
     securities,
     poweredby,
@@ -125,7 +131,7 @@ function Footer(
               </span>
               <Icon id="WhatsAppAtualizado" width={20} height={20} class="text-primary" />
               <span class="text-primary text-xs font-bold text-left">
-                {phone}
+                {whatsapp}
               </span>
             </div>
             <div class="flex items-center gap-2 mt-3">
