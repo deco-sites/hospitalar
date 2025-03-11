@@ -1621,13 +1621,13 @@
                   "socialNetWorks": [
                     {
                       "href": "https://www.facebook.com/hospitalardistribuidorapp/?locale=pt_BR",
-                      "icon": "Facebook",
+                      "icon": "FacebookAtualizado",
                       "label": "Facebook",
                       "openNewView": true
                     },
                     {
                       "href": "https://www.instagram.com/hospitalardistribuidora/",
-                      "icon": "Instagram",
+                      "icon": "InstagramAtualizado",
                       "label": "Instagram",
                       "openNewView": true
                     }
@@ -1635,7 +1635,8 @@
                 },
                 "spacing": 0,
                 "withContainer": true,
-                "verticalSpacing": "none"
+                "verticalSpacing": "none",
+                "backgroundColor": "#EEF1F5"
               },
               {
                 "label": "Copyright",
@@ -1644,7 +1645,7 @@
                   "copyRight": "COPYRIGHT © - Hospitalar Distribuidora - CNPJ: 03.375.328/0001-80",
                   "__resolveType": "site/sections/Content/CopyRight.tsx"
                 },
-                "backgroundColor": "#F7F7F7",
+                "backgroundColor": "#EEF1F5",
                 "verticalSpacing": "none"
               }
             ],
