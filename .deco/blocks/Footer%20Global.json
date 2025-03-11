@@ -25,7 +25,7 @@
       "shadow": "none",
       "section": {
         "email": "vendas@hospitalardistribuidora.com.br",
-        "phone": "18 3221 2232 | 18 99774 2232",
+        "phone": "(18) 3221 2232 ",
         "payments": [
           {
             "alt": "Mastercard",
@@ -71,12 +71,16 @@
                 "label": "Quem somos"
               },
               {
+                "href": "https://blog.hospitalardistribuidora.com.br/",
+                "label": "Blog"
+              },
+              {
                 "href": "/i/como-comprar",
                 "label": "Como comprar"
               },
               {
-                "href": "/i/contato",
-                "label": "Fale conosco"
+                "label": "Fale conosco",
+                "href": "/i/contato"
               }
             ]
           },
@@ -172,7 +176,8 @@
             "label": "Instagram",
             "openNewView": true
           }
-        ]
+        ],
+        "whatsapp": "(18) 99774 2232"
       },
       "spacing": 0,
       "withContainer": true,
