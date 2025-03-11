@@ -162,13 +162,13 @@
         "socialNetWorks": [
           {
             "href": "https://www.facebook.com/hospitalardistribuidorapp/",
-            "icon": "Facebook",
+            "icon": "FacebookAtualizado",
             "label": "Facebook",
             "openNewView": true
           },
           {
             "href": "https://www.instagram.com/hospitalardistribuidora/",
-            "icon": "Instagram",
+            "icon": "InstagramAtualizado",
             "label": "Instagram",
             "openNewView": true
           }
