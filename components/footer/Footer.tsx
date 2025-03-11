@@ -69,10 +69,15 @@ export interface Props {
    */
   socialNetWorks?: SocialItem[];
   /**
+   * @title Whatsapp number
+   */
+  whatsapp:string;
+  /**
    * @title Phone number
    */
   phone: string;
   /**
+   * 
    * @title E-mail
    */
   email: string;
@@ -103,6 +108,7 @@ function Footer(
     openingHours,
     email,
     phone,
+    whatsapp,
     payments,
     securities,
     poweredby,
@@ -111,17 +117,21 @@ function Footer(
   return (
     <footer class="">
       <UpButton />
-      <div class="bg-white flex flex-col">
+      <div class="bg-[#EEF1F5] flex flex-col">
         <div class="flex items-start justify-start gap-5 lg:gap-16 mt-12 max-lg:flex-col">
-          <div class="pt-11 px-8 pb-10 max-lg:w-full bg-[#F7F7F7] rounded-[10px]">
+          <div class="pt-11 px-8 pb-10 max-lg:w-full bg-[#fff] rounded-[10px]">
             <Icon id="Logo" height={61} width={LogoWidth} />
             {socialNetWorks?.length && (
               <SocialNetWorks socialItems={socialNetWorks} />
             )}
             <div class="flex items-center gap-2 mt-5">
-              <Icon id="Phone" width={20} height={20} class="text-primary" />
+              <Icon id="PhoneAtualizado" width={20} height={20} class="text-primary" />
               <span class="text-primary text-xs font-bold text-left">
                 {phone}
+              </span>
+              <Icon id="WhatsAppAtualizado" width={20} height={20} class="text-primary" />
+              <span class="text-primary text-xs font-bold text-left">
+                {whatsapp}
               </span>
             </div>
             <div class="flex items-center gap-2 mt-3">
