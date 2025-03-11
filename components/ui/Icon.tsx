@@ -17,6 +17,7 @@ export type SocialIcons =
   | "YouTube"
   | "Tiktok"
   | "WhatsApp"
+  | "WhatsAppAtualizado"
   | "Instagram"
   | "InstagramAtualizado"
   | "Facebook"

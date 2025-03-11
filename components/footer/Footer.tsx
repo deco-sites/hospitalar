@@ -123,6 +123,10 @@ function Footer(
               <span class="text-primary text-xs font-bold text-left">
                 {phone}
               </span>
+              <Icon id="WhatsAppAtualizado" width={20} height={20} class="text-primary" />
+              <span class="text-primary text-xs font-bold text-left">
+                {phone}
+              </span>
             </div>
             <div class="flex items-center gap-2 mt-3">
               <Icon id="Email" width={20} height={20} class="text-primary" />
