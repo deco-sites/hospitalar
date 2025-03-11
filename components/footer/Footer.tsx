@@ -125,7 +125,7 @@ function Footer(
               <SocialNetWorks socialItems={socialNetWorks} />
             )}
             <div class="flex items-center gap-2 mt-5">
-              <Icon id="Phone" width={20} height={20} class="text-primary" />
+              <Icon id="PhoneAtualizado" width={20} height={20} class="text-primary" />
               <span class="text-primary text-xs font-bold text-left">
                 {phone}
               </span>

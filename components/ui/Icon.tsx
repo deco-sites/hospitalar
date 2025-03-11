@@ -44,6 +44,7 @@ export type AvailableIcons =
   | "Minus"
   | "MapPin"
   | "Phone"
+  | "PhoneAtualizado"
   | "Logo"
   | "LogoFooter"
   | "LogoMobile"
