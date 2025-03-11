@@ -176,7 +176,8 @@
       },
       "spacing": 0,
       "withContainer": true,
-      "verticalSpacing": "none"
+      "verticalSpacing": "none",
+      "backgroundColor": "#EEF1F5"
     },
     {
       "label": "Copyright",
@@ -185,8 +186,8 @@
         "copyRight": "COPYRIGHT © - Hospitalar Distribuidora - CNPJ: 03.375.328/0001-80",
         "__resolveType": "site/sections/Content/CopyRight.tsx"
       },
-      "backgroundColor": "#F7F7F7",
-      "verticalSpacing": "none"
+      "verticalSpacing": "none",
+      "backgroundColor": "#EEF1F5"
     }
   ],
   "__resolveType": "site/sections/Container.tsx",
