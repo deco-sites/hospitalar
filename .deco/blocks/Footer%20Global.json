@@ -75,12 +75,8 @@
                 "label": "Blog"
               },
               {
-                "href": "/i/como-comprar",
-                "label": "Como comprar"
-              },
-              {
-                "label": "Fale conosco",
-                "href": "/i/contato"
+                "href": "/i/contato",
+                "label": "Fale conosco"
               }
             ]
           },
