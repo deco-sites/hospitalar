@@ -18,32 +18,6 @@
       "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
-          "label": "Banner",
-          "shadow": "none",
-          "section": {
-            "banners": [
-              {
-                "text": {
-                  "mobileTextPosition": "left",
-                  "desktopTextPosition": "left"
-                },
-                "image": {
-                  "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/34d03ba2-0675-4360-a362-2f8f550bd71b",
-                  "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/b61f904c-7f1c-431a-ab2c-b024f8804750"
-                },
-                "matcher": "/i/como-comprar"
-              }
-            ],
-            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
-          },
-          "withContainer": false,
-          "verticalSpacing": "top"
-        }
-      ]
-    },
-    {
-      "sections": [
-        {
           "label": "Institutional Page",
           "section": {
             "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx",
@@ -59,8 +33,7 @@
           "withContainer": true,
           "verticalSpacing": "both"
         }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
+      ]
     },
     {
       "__resolveType": "Footer Global"
