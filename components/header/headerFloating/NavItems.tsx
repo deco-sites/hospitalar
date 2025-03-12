@@ -123,15 +123,10 @@ function ItemsCommonChild({
 }: { elements?: INavItem[]; }) {
     return (
         <ul
-            class="grid-flow-col font-normal text-xs w-fit"
+            class="flex flex-col flex-wrap font-normal text-xs w-fit max-h-[400px]"
             style={`
-                display: grid;
-                grid-template-columns: minmax(122px, auto);
-                grid-template-rows: repeat(13, minmax(0, auto));
-                grid-auto-columns: max-content;
                 column-gap: 50px;
                 row-gap: 12px;
-                width:-webkit-fill-available;
             `}
         >
             {elements?.map((element, index) => {
@@ -155,16 +150,13 @@ function ItemsWithBrands({
 }: { elements?: INavItem[]; }) {
 
     return (
-        <div class="flex flex-col w-full gap-3">
+        <div class="flex flex-col flex-wrap w-auto gap-3">
             <h2 class="text-sm font-semibold w-full">
                 Marcas
             </h2>
             <ul
-                class="grid-flow-col font-normal text-xs"
+                class="flex flex-col flex-wrap font-normal text-xs max-h-[400px]"
                 style={`
-                display: grid;
-                grid-template-columns: minmax(100px, auto);
-                grid-template-rows: repeat(12, minmax(0, 1fr));
                 column-gap: 34px;
                 row-gap: 12px;
             `}
