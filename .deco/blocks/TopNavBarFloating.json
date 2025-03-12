@@ -1,0 +1,24 @@
+{
+  "__resolveType": "site/sections/Header/TopNavBar.tsx",
+  "alerts": [
+    {
+      "idIcon": "",
+      "textAlert": "Parcele em até 6x sem juros",
+      "textColor": "#2d386e",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/0ea19d12-e035-4c97-8f17-17c218266bbf/Frame.png"
+    },
+    {
+      "idIcon": "",
+      "textAlert": "Envio para todo Brasil",
+      "textColor": "#2d386e",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/74218730-f03b-491d-bdf7-b80cff235fda/Frame-(1).png"
+    },
+    {
+      "idIcon": "",
+      "textAlert": "Parcele em até 6x sem juros",
+      "textColor": "#2d386e",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/9c7a3e0e-f1e0-4ede-8b88-803232a69af6/Frame-(2).png"
+    }
+  ],
+  "interval": 5000
+}

@@ -74,8 +74,16 @@
                 "label": "Como comprar"
               },
               {
+                "href": "#",
+                "label": "Nossas Lojas"
+              },
+              {
                 "href": "/i/contato",
                 "label": "Fale conosco"
+              },
+              {
+                "label": "Blog hospitalar",
+                "href": "https://blog.hospitalardistribuidora.com.br/"
               }
             ]
           },
@@ -160,7 +168,8 @@
         "__resolveType": "site/sections/Footer/Footer.tsx",
         "socialNetWorks": [
           {
-            "href": "https://www.facebook.com/hospitalardistribuidorapp/",
+            "href": "https://www.facebook.com/hospitalardistribuidorapp/?locale=pt_BR",
+
             "icon": "Facebook",
             "label": "Facebook",
             "openNewView": true
