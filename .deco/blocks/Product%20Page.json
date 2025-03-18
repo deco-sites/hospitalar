@@ -1254,13 +1254,13 @@
       "__resolveType": "Produtos relacionados - ProductShelf"
     },
     {
-      "__resolveType": "bf-footer"
-    },
-    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": " Os mais vendidos - ProductShelf"
       }
+    },
+    {
+      "__resolveType": "bf-footer"
     }
   ],
   "__resolveType": "$live/pages/LivePage.tsx"
