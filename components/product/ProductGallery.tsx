@@ -1,6 +1,6 @@
 import { Product } from "apps/commerce/types.ts";
 
-import ProductCard from "./ProductCard.tsx";
+import NewProductCard from "site/components/product/NewProductCard.tsx";
 
 export interface Columns {
   mobile?: number;
@@ -14,9 +14,9 @@ export interface Props {
 
 function ProductGallery({ products, IdCollection }: Props) {
   return (
-    <div class="grid grid-cols-2 gap-2 items-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-[30px]">
+    <div class="grid grid-cols-2 gap-2 items- sm:grid-cols-2 lg:grid-cols-4 lg:gap-[30px]">
       {products?.map((product, index) => (
-        <ProductCard
+        <NewProductCard
           product={product}
           preload={index === 0}
           layout={{
@@ -32,7 +32,8 @@ function ProductGallery({ products, IdCollection }: Props) {
           IdCollection={IdCollection ?? "156"}
           tagWarningWidth="70%"
           positionBottom="bottom-0"
-          classFrreShipping= "hidden lg:block"
+          classFrreShipping="hidden lg:block"
+          class="min-h-[325px] lg:min-h-[405px]"
         />
       ))}
     </div>

@@ -4,7 +4,7 @@ const ProductInfo = () => {
   return (
     <section class="bg-box-warning rounded-lg border border-solid border-warning text-center mt-5">
       <div class="flex flex-col sm:p-7 p-5">
-        <div class="flex">
+        <div class="flex items-center">
           <Icon
             class=""
             id="icon-warning"
@@ -12,26 +12,39 @@ const ProductInfo = () => {
             height={25}
             strokeWidth={1}
           />
-          <h2 class="text-lg text-warning font-poppins font-bold leading-130 tracking-wider text-start">
+          <h2 class="font-poppins not-italic font-bold text-sm text-[#C31212]">
             Este produto é restrito
           </h2>
         </div>
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pt-3">
-          <div class="sm:w-[77%] w-full">
-            <p className="text-sm font-poppins text-warning text-start">
+          <div class="w-full">
+            <p className="font-poppins not-italic font-normal text-xs text-[#C31212] text-left lg:hidden">
+              Este produto é restrito e exige o envio de <br />{" "}
+              documentação para a conclusão da compra. <br />{" "}
+              <a
+                href="/i/como-comprar"
+                alt="Institucional"
+                class="font-poppins not-italic font-bold underline"
+              >
+                Clique aqui
+              </a>{" "}
+              para mais detalhes e instruções.
+            </p>
+
+            <p className="hidden font-poppins not-italic font-normal text-[11px] text-[#C31212] text-left lg:block">
               Este produto é restrito e exige o envio de documentação para a
-              conclusão da compra. Para mais detalhes e instruções, saiba mais.
+              {" "}
+              <b /> conclusão da compra.{" "}
+              <a
+                href="/i/como-comprar"
+                alt="Institucional"
+                class="font-poppins not-italic font-bold underline"
+              >
+                Clique aqui
+              </a>{" "}
+              para mais detalhes e instruções.
             </p>
           </div>
-          <a
-            href="/i/como-comprar"
-            alt="Institucional"
-            class="sm:w-[20%] w-[131px] pt-3 sm:pt-0"
-          >
-            <button className="rounded-[90px] border border-solid border-warning text-center w-full text-sm font-bold font-poppins h-[40px] text-warning hover:brightness-[0.9] hover:bg-warning hover:text-white">
-              Saiba Mais
-            </button>
-          </a>
         </div>
       </div>
     </section>
