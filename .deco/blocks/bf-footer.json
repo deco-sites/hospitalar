@@ -217,19 +217,19 @@
                   "variant": "primary"
                 }
               },
-              "text": "<p><span style=\"color: rgb(45, 56, 110); font-size: 24pt;\" data-mce-style=\"color: rgb(45, 56, 110); font-size: 24pt;\">Newsletter</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"color: rgb(45, 56, 110); font-size: 12pt;\" data-mce-style=\"color: rgb(45, 56, 110); font-size: 12pt;\"><span class=\"mce-spellchecker-annotation mce-spellchecker-word mce-cram_3854635041689712315071\" aria-invalid=\"spelling\" data-mce-highlight-id=\"mce-cram_3854635041689712315071\" data-mce-bogus=\"1\" data-mce-annotation=\"Cadastre-se\" data-mce-lingo=\"en_us\">Cadastre-se</span> e <span class=\"mce-spellchecker-annotation mce-spellchecker-word mce-cram_83509224251689712315071\" aria-invalid=\"spelling\" data-mce-highlight-id=\"mce-cram_83509224251689712315071\" data-mce-bogus=\"1\" data-mce-annotation=\"seja\" data-mce-lingo=\"en_us\">seja</span> um dos <span class=\"mce-spellchecker-annotation mce-spellchecker-word mce-cram_15929316961689712315071\" aria-invalid=\"spelling\" data-mce-highlight-id=\"mce-cram_15929316961689712315071\" data-mce-bogus=\"1\" data-mce-annotation=\"primeiros\" data-mce-lingo=\"en_us\">primeiros</span> a </span><span style=\"color: rgb(45, 56, 110); font-size: 12pt;\" data-mce-style=\"color: rgb(45, 56, 110); font-size: 12pt;\">saber&nbsp;<span class=\"mce-spellchecker-annotation mce-spellchecker-word mce-cram_84266509671689712315071\" aria-invalid=\"spelling\" data-mce-highlight-id=\"mce-cram_84266509671689712315071\" data-mce-bogus=\"1\" data-mce-annotation=\"de\" data-mce-lingo=\"en_us\">de</span> <span class=\"mce-spellchecker-annotation mce-spellchecker-word mce-cram_6977068581689712315071\" aria-invalid=\"spelling\" data-mce-highlight-id=\"mce-cram_6977068581689712315071\" data-mce-bogus=\"1\" data-mce-annotation=\"todas\" data-mce-lingo=\"en_us\">todas</span> as <span class=\"mce-spellchecker-annotation mce-spellchecker-word mce-cram_60165016191689712315071\" aria-invalid=\"spelling\" data-mce-highlight-id=\"mce-cram_60165016191689712315071\" data-mce-bogus=\"1\" data-mce-annotation=\"novidades\" data-mce-lingo=\"en_us\">novidades</span> e <span class=\"mce-spellchecker-annotation mce-spellchecker-word mce-cram_226529561101689712315071\" aria-invalid=\"spelling\" data-mce-highlight-id=\"mce-cram_226529561101689712315071\" data-mce-bogus=\"1\" data-mce-annotation=\"ofertas\" data-mce-lingo=\"en_us\">ofertas</span>.</span></p>",
+              "text": "<p><span style=\"color: #f7f2f2; font-size: 24pt\">Newsletter</span></p><p><span style=\"color: #f7f2f2; font-size: 12pt\">Cadastre-se e seja um dos primeiros a saber&nbsp;de todas as novidades e ofertas.</span></p>",
               "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
             },
             "withContainer": true,
-            "backgroundColor": "#85BAD5",
-            "verticalSpacing": "none"
+            "verticalSpacing": "none",
+            "backgroundImage": "/arquivos/hospitalarNewsBackground.png"
           },
           {
             "label": "Footer",
             "shadow": "none",
             "section": {
               "email": "vendas@hospitalardistribuidora.com.br",
-              "phone": "18 3221 2232 | 18 99774 2232",
+              "phone": "18 3221 2232",
               "payments": [
                 {
                   "alt": "Mastercard",
@@ -277,10 +277,6 @@
                     {
                       "href": "/i/como-comprar",
                       "label": "Como comprar"
-                    },
-                    {
-                      "href": "#",
-                      "label": "Nossas Lojas"
                     },
                     {
                       "href": "/i/contato",
@@ -370,17 +366,18 @@
               "socialNetWorks": [
                 {
                   "href": "https://www.facebook.com/hospitalardistribuidorapp/?locale=pt_BR",
-                  "icon": "Facebook",
+                  "icon": "NewFacebook",
                   "label": "Facebook",
                   "openNewView": true
                 },
                 {
                   "href": "https://www.instagram.com/hospitalardistribuidora/",
-                  "icon": "Instagram",
+                  "icon": "NewInstagram",
                   "label": "Instagram",
                   "openNewView": true
                 }
-              ]
+              ],
+              "wpp": "18 99774 2232"
             },
             "spacing": 0,
             "withContainer": true,
