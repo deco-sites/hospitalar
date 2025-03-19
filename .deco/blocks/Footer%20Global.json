@@ -176,7 +176,8 @@
       },
       "spacing": 0,
       "withContainer": true,
-      "verticalSpacing": "none"
+      "verticalSpacing": "none",
+      "backgroundColor": "#EEF1F5"
     },
     {
       "label": "Copyright",
