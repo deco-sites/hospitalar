@@ -37,19 +37,19 @@
                         "alerts": [
                           {
                             "alt": "Parcele em até 6x sem juros",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/4db033bd-e37e-4566-834c-4f1421625bdd",
+                            "image": "https://assets.decocache.com/hospitalar/82ea94f2-7b00-4faf-ad6d-746b1a488d85/1742494387315-4db033bd-e37e-4566-834c-4f1421625bdd",
                             "textAlert": "Parcele em até 6x sem juros",
                             "textColor": "#ffffff"
                           },
                           {
                             "alt": "Envio para todo brasil",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/0d293e38-7733-487d-9edd-2e40b21ab8a7",
+                            "image": "https://assets.decocache.com/hospitalar/fbadbedc-a7b0-4f5b-85fb-07c805c27282/1742494388815-0d293e38-7733-487d-9edd-2e40b21ab8a7",
                             "textAlert": "Envio para todo Brasil",
                             "textColor": "#ffffff"
                           },
                           {
                             "alt": "3% de desconto à vista",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/988390d7-a1bf-414c-9036-01fb1c967dc5",
+                            "image": "https://assets.decocache.com/hospitalar/4e0c2641-3ca2-4fbc-baf1-002069b9db82/1742494390305-988390d7-a1bf-414c-9036-01fb1c967dc5",
                             "textAlert": "6% de desconto à vista",
                             "textColor": "#ffffff"
                           }
@@ -592,7 +592,7 @@
                               "112": "2",
                               "113": "b",
                               "alt": "Banner produtos hospitalares",
-                              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/a6e38ab7-8897-4334-beed-985ecd75cd70"
+                              "src": "https://assets.decocache.com/hospitalar/e6f3f423-b5b0-4084-a447-68cc4146eff7/1742494391744-a6e38ab7-8897-4334-beed-985ecd75cd70"
                             },
                             "label": "Medicamentos",
                             "variant": "WithBrands",
@@ -1250,19 +1250,19 @@
                         "alerts": [
                           {
                             "alt": "Parcele em até 6x sem juros",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/fee2ea80-4999-42e2-a34a-73da57e85562",
+                            "image": "https://assets.decocache.com/hospitalar/9e9aae6f-fa31-4aa1-a878-448468dca8d1/1742494381633-fee2ea80-4999-42e2-a34a-73da57e85562",
                             "textAlert": "Parcele em até 6x sem juros",
                             "textColor": "#2d386e"
                           },
                           {
                             "alt": "Envio para todo brasil",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/1e763ecf-06e5-4c40-86ae-ec3cf5efece1",
+                            "image": "https://assets.decocache.com/hospitalar/fe704d94-22b5-4915-a550-f065060c8e3e/1742494383523-1e763ecf-06e5-4c40-86ae-ec3cf5efece1",
                             "textAlert": "Envio para todo Brasil",
                             "textColor": "#2d386e"
                           },
                           {
                             "alt": "3% de desconto à vista",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/e2b071dc-9098-4f51-9ac1-7f6f2ffcdbce",
+                            "image": "https://assets.decocache.com/hospitalar/780abc67-4ad9-497f-a4fb-2f14d56b617d/1742494384863-e2b071dc-9098-4f51-9ac1-7f6f2ffcdbce",
                             "textAlert": "3% de desconto à vista",
                             "textColor": "#2d386e"
                           }
@@ -1804,7 +1804,7 @@
                               "112": "2",
                               "113": "b",
                               "alt": "Banner produtos hospitalares",
-                              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/a6e38ab7-8897-4334-beed-985ecd75cd70"
+                              "src": "https://assets.decocache.com/hospitalar/e6f3f423-b5b0-4084-a447-68cc4146eff7/1742494391744-a6e38ab7-8897-4334-beed-985ecd75cd70"
                             },
                             "label": "Medicamentos",
                             "variant": "WithBrands",
@@ -2507,33 +2507,33 @@
                         "payments": [
                           {
                             "alt": "Mastercard",
-                            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4d6d7752-f54d-4134-9f3f-bd87debefad9",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/9954cf76-2e68-4e01-bccb-08a71a3b3dd1"
+                            "icon": "https://assets.decocache.com/hospitalar/6fe0b193-3173-4d5d-b12d-40988d5ece92/1742494422068-4d6d7752-f54d-4134-9f3f-bd87debefad9",
+                            "image": "https://assets.decocache.com/hospitalar/0fe79898-bf25-4a1a-86b0-b00c93669904/1742494423265-9954cf76-2e68-4e01-bccb-08a71a3b3dd1"
                           },
                           {
                             "alt": "Visa",
                             "icon": "Elo",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/56774fb5-1b46-49e9-a98d-b0374629ff34"
+                            "image": "https://assets.decocache.com/hospitalar/9930edf7-fec2-460f-86e8-dae4fe937489/1742494424645-56774fb5-1b46-49e9-a98d-b0374629ff34"
                           },
                           {
                             "alt": "Elo",
                             "icon": "Visa",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/dc227df4-428a-491a-a45b-4d6ea957e8db"
+                            "image": "https://assets.decocache.com/hospitalar/81eb3e0a-415e-4dbb-9a26-58423c2db911/1742494425649-dc227df4-428a-491a-a45b-4d6ea957e8db"
                           },
                           {
                             "alt": "American Express",
                             "icon": "AmericanExpress",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/90ebb7c1-9761-4e02-b362-230b8b6cf68b"
+                            "image": "https://assets.decocache.com/hospitalar/eda9f1b5-0f94-4788-b89b-a261076dae3d/1742494426647-90ebb7c1-9761-4e02-b362-230b8b6cf68b"
                           },
                           {
                             "alt": "Pix",
                             "icon": "Pix",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/4d3ea048-365f-4730-bb2f-aa2413e092a3"
+                            "image": "https://assets.decocache.com/hospitalar/790f5775-5e03-4e30-9b17-99af3879a017/1742494427612-4d3ea048-365f-4730-bb2f-aa2413e092a3"
                           },
                           {
                             "alt": "Boleto",
                             "icon": "Boleto",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/b0f6cb07-3146-4a34-9866-4a2c84647088"
+                            "image": "https://assets.decocache.com/hospitalar/65210758-cd1a-4372-bd78-9cd158763ac2/1742494428662-b0f6cb07-3146-4a34-9866-4a2c84647088"
                           }
                         ],
                         "sections": [
@@ -2601,30 +2601,30 @@
                         "poweredby": [
                           {
                             "alt": "agencia n1 e deco",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/9db056dc-4990-4d02-b894-216a8c2829be",
+                            "image": "https://assets.decocache.com/hospitalar/ce302ce5-7dff-4c7b-b6e3-947b4345f21f/1742494430163-9db056dc-4990-4d02-b894-216a8c2829be",
                             "label": "Created By",
                             "images": [
                               {
                                 "alt": "Agencia N1",
                                 "link": "https://agencian1.com.br/",
-                                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/0ed9eb13-e372-4515-981e-2f2cb9a488cd"
+                                "image": "https://assets.decocache.com/hospitalar/18147398-d4e3-4e19-949f-2a920694b5dc/1742494431643-0ed9eb13-e372-4515-981e-2f2cb9a488cd"
                               },
                               {
                                 "alt": "Deco",
                                 "link": "https://deco.cx/",
-                                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/d1bb4c51-0774-4a59-a7f8-ba5716992b5d"
+                                "image": "https://assets.decocache.com/hospitalar/680814d2-14ed-4c56-a5ec-7db5a8c4b829/1742494433268-d1bb4c51-0774-4a59-a7f8-ba5716992b5d"
                               }
                             ]
                           },
                           {
                             "alt": "vtex",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4749b4f9-1943-4066-b918-2dae9e469611",
+                            "image": "https://assets.decocache.com/hospitalar/fb06daf9-485d-4909-866c-819110971e74/1742494434370-4749b4f9-1943-4066-b918-2dae9e469611",
                             "label": "Powered by",
                             "images": [
                               {
                                 "alt": "Vtex",
                                 "link": "https://vtex.com/br-pt",
-                                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/b4dc5afd-c1b6-4dd5-83d3-c49249d49fc7"
+                                "image": "https://assets.decocache.com/hospitalar/6d6aa543-cc4f-4f07-82e0-24479fb6d8a6/1742494435831-b4dc5afd-c1b6-4dd5-83d3-c49249d49fc7"
                               }
                             ]
                           }
@@ -2632,7 +2632,7 @@
                         "securities": [
                           {
                             "alt": "Let's Encrypt",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/19e78872-c671-4a37-bc0e-9e66a7e324f9"
+                            "image": "https://assets.decocache.com/hospitalar/bb364e6d-48da-4120-8c67-8b185637eee9/1742494437281-19e78872-c671-4a37-bc0e-9e66a7e324f9"
                           }
                         ],
                         "openingHours": "<p>Seg. à Sex. das 08:00h às 18:00h</p><p>Sábado das 08:00h às 12:00h</p>",
@@ -2705,37 +2705,37 @@
                         "payments": [
                           {
                             "alt": "Mastercard",
-                            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4d6d7752-f54d-4134-9f3f-bd87debefad9",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/9954cf76-2e68-4e01-bccb-08a71a3b3dd1"
+                            "icon": "https://assets.decocache.com/hospitalar/6fe0b193-3173-4d5d-b12d-40988d5ece92/1742494422068-4d6d7752-f54d-4134-9f3f-bd87debefad9",
+                            "image": "https://assets.decocache.com/hospitalar/0fe79898-bf25-4a1a-86b0-b00c93669904/1742494423265-9954cf76-2e68-4e01-bccb-08a71a3b3dd1"
                           },
                           {
                             "alt": "Visa",
                             "icon": "Elo",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/56774fb5-1b46-49e9-a98d-b0374629ff34"
+                            "image": "https://assets.decocache.com/hospitalar/9930edf7-fec2-460f-86e8-dae4fe937489/1742494424645-56774fb5-1b46-49e9-a98d-b0374629ff34"
                           },
                           {
                             "alt": "Elo",
                             "icon": "Visa",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/dc227df4-428a-491a-a45b-4d6ea957e8db"
+                            "image": "https://assets.decocache.com/hospitalar/81eb3e0a-415e-4dbb-9a26-58423c2db911/1742494425649-dc227df4-428a-491a-a45b-4d6ea957e8db"
                           },
                           {
                             "alt": "American Express",
                             "icon": "AmericanExpress",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/90ebb7c1-9761-4e02-b362-230b8b6cf68b"
+                            "image": "https://assets.decocache.com/hospitalar/eda9f1b5-0f94-4788-b89b-a261076dae3d/1742494426647-90ebb7c1-9761-4e02-b362-230b8b6cf68b"
                           },
                           {
                             "alt": "Pix",
                             "icon": "Pix",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/4d3ea048-365f-4730-bb2f-aa2413e092a3"
+                            "image": "https://assets.decocache.com/hospitalar/790f5775-5e03-4e30-9b17-99af3879a017/1742494427612-4d3ea048-365f-4730-bb2f-aa2413e092a3"
                           },
                           {
                             "alt": "Boleto",
                             "icon": "Boleto",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/b0f6cb07-3146-4a34-9866-4a2c84647088"
+                            "image": "https://assets.decocache.com/hospitalar/65210758-cd1a-4372-bd78-9cd158763ac2/1742494428662-b0f6cb07-3146-4a34-9866-4a2c84647088"
                           },
                           {
                             "alt": "Paga leve",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/e5b8a7cf-b6cc-4b61-acba-a56c670bbb5d"
+                            "image": "https://assets.decocache.com/hospitalar/a9240fb4-21a0-4be1-b30c-a1bba2cb9c2c/1742494438407-e5b8a7cf-b6cc-4b61-acba-a56c670bbb5d"
                           }
                         ],
                         "sections": [
@@ -2803,30 +2803,30 @@
                         "poweredby": [
                           {
                             "alt": "agencia n1 e deco",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/9db056dc-4990-4d02-b894-216a8c2829be",
+                            "image": "https://assets.decocache.com/hospitalar/ce302ce5-7dff-4c7b-b6e3-947b4345f21f/1742494430163-9db056dc-4990-4d02-b894-216a8c2829be",
                             "label": "Created By",
                             "images": [
                               {
                                 "alt": "Agencia N1",
                                 "link": "https://agencian1.com.br/",
-                                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2415/75af2d95-8c46-49ee-989b-a71b24c1a756"
+                                "image": "https://assets.decocache.com/hospitalar/37e3ed43-ddd8-498e-860f-d9e435ffa16a/1742494439724-75af2d95-8c46-49ee-989b-a71b24c1a756"
                               },
                               {
                                 "alt": "Deco",
                                 "link": "https://deco.cx/",
-                                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2415/b0a9b073-cadb-4846-ba49-ec47cbfd896d"
+                                "image": "https://assets.decocache.com/hospitalar/5d04eff5-9304-4d61-a75f-11525a60ab22/1742494440669-b0a9b073-cadb-4846-ba49-ec47cbfd896d"
                               }
                             ]
                           },
                           {
                             "alt": "vtex",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4749b4f9-1943-4066-b918-2dae9e469611",
+                            "image": "https://assets.decocache.com/hospitalar/fb06daf9-485d-4909-866c-819110971e74/1742494434370-4749b4f9-1943-4066-b918-2dae9e469611",
                             "label": "Powered by",
                             "images": [
                               {
                                 "alt": "Vtex",
                                 "link": "https://vtex.com/br-pt",
-                                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2415/7a3b9c32-2ae7-4bf6-9ea1-1878d0f4349b"
+                                "image": "https://assets.decocache.com/hospitalar/2fd2b790-1518-4928-b8db-95d720e24a61/1742494441585-7a3b9c32-2ae7-4bf6-9ea1-1878d0f4349b"
                               }
                             ]
                           }
@@ -2834,7 +2834,7 @@
                         "securities": [
                           {
                             "alt": "Let's Encrypt",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/3be20735-a11c-4274-a43b-9fe3ac96121a"
+                            "image": "https://assets.decocache.com/hospitalar/243d66cb-85d5-4976-9d89-497df127f24c/1742494442445-3be20735-a11c-4274-a43b-9fe3ac96121a"
                           }
                         ],
                         "openingHours": "<p>Seg. à Sex. das 08:00h às 18:00h</p><p>Sábado das 08:00h às 12:00h</p>",

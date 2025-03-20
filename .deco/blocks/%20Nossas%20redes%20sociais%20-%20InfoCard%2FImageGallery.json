@@ -29,20 +29,20 @@
         "images": [
           {
             "alt": "Imagem do instagram",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/1514a2f0-0952-4a2b-ad51-b7440aacafa4",
+            "image": "https://assets.decocache.com/hospitalar/de819e90-2069-4576-a610-5f607d59e857/1742494526917-1514a2f0-0952-4a2b-ad51-b7440aacafa4",
             "preload": false
           },
           {
             "alt": "Imagem do instagram",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/899a8633-106a-47e5-8eb2-036e15376458"
+            "image": "https://assets.decocache.com/hospitalar/b72a286c-9842-40df-b8a0-7d6915c02584/1742494531678-899a8633-106a-47e5-8eb2-036e15376458"
           },
           {
             "alt": "Imagem do instagram",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/df2bcc51-025f-400c-8aae-463cba7eba35"
+            "image": "https://assets.decocache.com/hospitalar/ed0cb2d6-a8e2-420f-bae3-89624d46bfb8/1742494533183-df2bcc51-025f-400c-8aae-463cba7eba35"
           },
           {
             "alt": "Imagem do instagram",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/4af0200c-ccb8-4687-bc5d-c633d14923a3"
+            "image": "https://assets.decocache.com/hospitalar/35c318ef-71fb-466c-8d4c-ce98fe6e77e9/1742494534920-4af0200c-ccb8-4687-bc5d-c633d14923a3"
           }
         ],
         "__resolveType": "site/sections/Images/ImageGallery.tsx",
