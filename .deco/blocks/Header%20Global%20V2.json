@@ -8,19 +8,19 @@
         "alerts": [
           {
             "alt": "Parcele em até 6x sem juros",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/fee2ea80-4999-42e2-a34a-73da57e85562",
+            "image": "https://assets.decocache.com/hospitalar/9e9aae6f-fa31-4aa1-a878-448468dca8d1/1742494381633-fee2ea80-4999-42e2-a34a-73da57e85562",
             "textAlert": "Parcele em até 6x sem juros",
             "textColor": "#2d386e"
           },
           {
             "alt": "Envio para todo brasil",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/1e763ecf-06e5-4c40-86ae-ec3cf5efece1",
+            "image": "https://assets.decocache.com/hospitalar/fe704d94-22b5-4915-a550-f065060c8e3e/1742494383523-1e763ecf-06e5-4c40-86ae-ec3cf5efece1",
             "textAlert": "Envio para todo Brasil",
             "textColor": "#2d386e"
           },
           {
             "alt": "3% de desconto à vista",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/e2b071dc-9098-4f51-9ac1-7f6f2ffcdbce",
+            "image": "https://assets.decocache.com/hospitalar/780abc67-4ad9-497f-a4fb-2f14d56b617d/1742494384863-e2b071dc-9098-4f51-9ac1-7f6f2ffcdbce",
             "textAlert": "3% de desconto à vista",
             "textColor": "#2d386e"
           }

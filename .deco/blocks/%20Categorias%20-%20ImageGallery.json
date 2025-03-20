@@ -1,1 +1,50 @@
-{"isHeader":false,"sections":[{"label":"ImageGallery","shadow":"none","section":{"images":[{"alt":"Imagem de um medicamento","href":"/medicamentos","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/be91db3e-3154-454c-b58d-580ba249dea2","title":"Medicamentos","preload":true},{"alt":"Imagem de uma seringa","href":"/seringa","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/a5b66015-3d0e-4e21-ad68-6aac1a18c283","title":"Seringas","preload":true},{"alt":"Imagem de um estetoscópio","href":"/aparelhos","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/2fcc9b53-c382-4b36-be37-6cb30ec90d87","title":"Aparelhos","preload":true},{"alt":"Imagem de uma bolsa com símbolo médico","href":"/instrumental","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/9af1b755-8173-497a-b31f-ccc44bfabae1","title":"Instrumental"}],"hoverEffect":true,"disableBlock":true,"__resolveType":"site/sections/Images/ImageGallery.tsx","maxItemsPerRow":"5","itemPerPageMobile":1,"itemPerPageDesktop":4,"isDisabledComponent":true},"withContainer":true,"verticalSpacing":"none"}],"__resolveType":"site/sections/Container.tsx"}
+{
+  "isHeader": false,
+  "sections": [
+    {
+      "label": "ImageGallery",
+      "shadow": "none",
+      "section": {
+        "images": [
+          {
+            "alt": "Imagem de um medicamento",
+            "href": "/medicamentos",
+            "image": "https://assets.decocache.com/hospitalar/08eeedc5-4ae8-47eb-9ade-f807312225c4/1742494461861-be91db3e-3154-454c-b58d-580ba249dea2",
+            "title": "Medicamentos",
+            "preload": true
+          },
+          {
+            "alt": "Imagem de uma seringa",
+            "href": "/seringa",
+            "image": "https://assets.decocache.com/hospitalar/765b0d85-d170-4496-bbdf-b37cbdba9d16/1742494463017-a5b66015-3d0e-4e21-ad68-6aac1a18c283",
+            "title": "Seringas",
+            "preload": true
+          },
+          {
+            "alt": "Imagem de um estetoscópio",
+            "href": "/aparelhos",
+            "image": "https://assets.decocache.com/hospitalar/9e9b42d8-ecae-4792-9628-1c3c96f75f48/1742494464125-2fcc9b53-c382-4b36-be37-6cb30ec90d87",
+            "title": "Aparelhos",
+            "preload": true
+          },
+          {
+            "alt": "Imagem de uma bolsa com símbolo médico",
+            "href": "/instrumental",
+            "image": "https://assets.decocache.com/hospitalar/c116e5b2-899b-4e81-9aeb-f3a783b887dc/1742494465296-9af1b755-8173-497a-b31f-ccc44bfabae1",
+            "title": "Instrumental"
+          }
+        ],
+        "hoverEffect": true,
+        "disableBlock": true,
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "maxItemsPerRow": "5",
+        "itemPerPageMobile": 1,
+        "itemPerPageDesktop": 4,
+        "isDisabledComponent": true
+      },
+      "withContainer": true,
+      "verticalSpacing": "none"
+    }
+  ],
+  "__resolveType": "site/sections/Container.tsx"
+}

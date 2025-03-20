@@ -1,1 +1,44 @@
-{"title":"Testimonials","layout":{"variation":"Grid","headerAlignment":"center"},"description":"Take a look at what our customers are saying","testimonials":[{"text":"Love shopping at Fashion! Quality products, exceptional service. Hassle-free returns and free shipping. My go-to for stylish fashion!","user":{"name":"Rafael Crespo","avatar":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/6a595043-fb5b-43b4-b6dd-bd3154e4e595"},"image":{"alt":"deco","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/d0a79cf6-6825-4624-884c-f30bda6c3daf"}},{"text":"Thrilled with my first Fashion purchase. Seamless process, prompt delivery with free shipping. Exceeded expectations in style and quality!","user":{"name":"Tiago Gimenes","avatar":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/850df7f9-120e-4155-ae79-c76e737535ee"},"image":{"alt":"deco","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/9dc5dddc-f8b5-4f70-847b-1f91b84ad7dc"}},{"text":"Fashion is my favorite online retailer. On-trend selection, exceptional quality. Easy returns and 24/7 online support. A delightful shopping experience!","user":{"name":"Maria Luiza Aires","avatar":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/8327a46f-bb4e-4ae8-8cf2-963d530d3066"},"image":{"alt":"deco","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ca4c79ea-5bd9-42d3-a60a-07c99c5f45c4"}}],"__resolveType":"site/sections/Content/Testimonials.tsx"}
+{
+  "title": "Testimonials",
+  "layout": {
+    "variation": "Grid",
+    "headerAlignment": "center"
+  },
+  "description": "Take a look at what our customers are saying",
+  "testimonials": [
+    {
+      "text": "Love shopping at Fashion! Quality products, exceptional service. Hassle-free returns and free shipping. My go-to for stylish fashion!",
+      "user": {
+        "name": "Rafael Crespo",
+        "avatar": "https://assets.decocache.com/hospitalar/1591de32-97f9-416b-b2ba-7bcd4995ea81/1742494476276-6a595043-fb5b-43b4-b6dd-bd3154e4e595"
+      },
+      "image": {
+        "alt": "deco",
+        "src": "https://assets.decocache.com/hospitalar/a605845b-dacf-4de9-872b-54926625128f/1742494477357-d0a79cf6-6825-4624-884c-f30bda6c3daf"
+      }
+    },
+    {
+      "text": "Thrilled with my first Fashion purchase. Seamless process, prompt delivery with free shipping. Exceeded expectations in style and quality!",
+      "user": {
+        "name": "Tiago Gimenes",
+        "avatar": "https://assets.decocache.com/hospitalar/c1654f0c-89b7-4b56-80a8-9848d8230a1f/1742494478554-850df7f9-120e-4155-ae79-c76e737535ee"
+      },
+      "image": {
+        "alt": "deco",
+        "src": "https://assets.decocache.com/hospitalar/868ba1d1-6a6c-40ae-afe7-c2f6e6e71940/1742494479689-9dc5dddc-f8b5-4f70-847b-1f91b84ad7dc"
+      }
+    },
+    {
+      "text": "Fashion is my favorite online retailer. On-trend selection, exceptional quality. Easy returns and 24/7 online support. A delightful shopping experience!",
+      "user": {
+        "name": "Maria Luiza Aires",
+        "avatar": "https://assets.decocache.com/hospitalar/d272bee8-2127-4592-9bfc-599003899e12/1742494480759-8327a46f-bb4e-4ae8-8cf2-963d530d3066"
+      },
+      "image": {
+        "alt": "deco",
+        "src": "https://assets.decocache.com/hospitalar/ee1b5671-e097-4e39-afa3-4d096d017fac/1742494481807-ca4c79ea-5bd9-42d3-a60a-07c99c5f45c4"
+      }
+    }
+  ],
+  "__resolveType": "site/sections/Content/Testimonials.tsx"
+}
