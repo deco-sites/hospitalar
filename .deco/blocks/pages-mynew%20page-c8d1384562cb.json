@@ -67,6 +67,12 @@
     },
     {
       "__resolveType": "Footer Global"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header Global"
+      }
     }
   ],
   "__resolveType": "$live/pages/LivePage.tsx"

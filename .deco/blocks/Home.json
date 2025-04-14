@@ -2895,7 +2895,7 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "HeaderFloating"
+              "__resolveType": "Header Global"
             }
           },
           {
