@@ -20,8 +20,8 @@ function SearchButton() {
       <Icon
         class="text-base-content"
         id="MagnifyingGlass"
-        width={24}
-        height={25}
+        width={16.95}
+        height={18}
         strokeWidth={1}
       />
     </Button>
@@ -39,7 +39,7 @@ function MenuButton() {
         displayMenu.value = true;
       }}
     >
-      <Icon class="text-base-content" id="Menu" width={25} height={25} />
+      <Icon class="text-base-content" id="Menu" width={19} height={12} />
     </Button>
   );
 }
@@ -87,8 +87,7 @@ function CartButton() {
           class="text-base-content"
           id="ShoppingCart"
           width={24}
-          height={25}
-          strokeWidth={1}
+          height={24}
         />
       </div>
     </Button>
