@@ -1,78 +1,64 @@
 import CustomBefefitsDesktop from '$store/components/ui/CustomBefefitsDesktop.tsx';
 import CustomBefefitsMobile from '$store/components/ui/CustomBefefitsMobile.tsx';
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import { useDevice } from "deco/hooks/useDevice.ts";
-
-interface TextGeneric{
+import { useDevice } from "@deco/deco/hooks";
+interface TextGeneric {
     /**@title Título */
     title?: string;
-    /**@title Descrição */    
+    /**@title Descrição */
     description?: string;
 }
-
-interface ImageGeneric{
+interface ImageGeneric {
     /**@title Imagem */
-    src?:ImageWidget;
+    src?: ImageWidget;
     /**
      * @title Largura
-     * @description (ex: 250) 
+     * @description (ex: 250)
      * */
     width?: number;
     /**
      * @title altura
-     * @description (ex: 250) 
-     * */    
-    height?:number;
+     * @description (ex: 250)
+     * */
+    height?: number;
 }
-
 /**@titleBy alt */
-interface Icon{
+interface Icon {
     /**@title Nome do Bloco */
-    alt?: string;    
+    alt?: string;
     /**@title Imagem */
     image?: ImageGeneric;
-    /**@title Texto */    
+    /**@title Texto */
     text?: TextGeneric;
     /**
      * @title Link da imagem
-     * @description (ex: /medicamentos) 
-     * */       
-    href?: string; 
+     * @description (ex: /medicamentos)
+     * */
+    href?: string;
     /**@title Link externo? */
-    hrefExternal?: boolean;       
+    hrefExternal?: boolean;
 }
-
-interface Props{
+interface Props {
     /**
      * @title Imagem
-     * @maxItems 4 
+     * @maxItems 4
     */
     icon?: Icon[];
 }
-
-
-function CustomBefefits( { icon }:Props ){
+function CustomBefefits({ icon }: Props) {
     const device = useDevice();
-
-    if( device === 'desktop' ){
-        return(
-            <>
+    if (device === 'desktop') {
+        return (<>
                 {icon && Object.entries(icon).length > 0 &&
-                    (<CustomBefefitsDesktop  icon={icon} />)
-                }
-            </>
-        )
+                (<CustomBefefitsDesktop icon={icon}/>)}
+            </>);
     }
-
-    if( device === 'mobile' ){
-        return(
-            <>            
+    if (device === 'mobile') {
+        return (<>            
                 {icon && Object.entries(icon).length > 0 &&
-                    (<CustomBefefitsMobile  icon={icon} />)
-                }            
-            </>
-        )
+                (<CustomBefefitsMobile icon={icon}/>)}            
+            </>);
     }
+    return (<></>);
 }
-
 export default CustomBefefits;
