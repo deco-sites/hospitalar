@@ -1,5 +1,5 @@
 import { Section } from "$live/blocks/section.ts";
-import { headerHeight } from "$store/components/header/constants.ts";
+// import { headerHeight } from "$store/components/header/constants.ts";
 import { clx } from "$store/sdk/clx.ts";
 
 export type VerticalSpacing = "top" | "bottom" | "both" | "none";
