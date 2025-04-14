@@ -77,10 +77,6 @@ export interface Props {
    */
   phone: string;
   /**
-   * @title Whatsapp number
-   */
-  wpp?: string;
-  /**
    * 
    * @title E-mail
    */
