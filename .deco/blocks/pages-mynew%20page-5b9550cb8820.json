@@ -14,10 +14,10 @@
     {
       "sections": [
         {
-          "label": "FALE CONOSCO",
+          "label": "Fale Conosco",
           "section": {
             "__resolveType": "site/sections/Institutional/PageContent.tsx",
-            "title": "FALE CONOSCO",
+            "title": "Fale conosco",
             "content": {
               "alt": "Hospitalar Banner",
               "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/393639af-f10a-4e78-ab51-609fffdaa0b8",

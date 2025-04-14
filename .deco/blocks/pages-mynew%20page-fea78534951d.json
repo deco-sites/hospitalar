@@ -14,10 +14,10 @@
     {
       "sections": [
         {
-          "label": "FORMAS DE PAGAMENTO E ENVIO",
+          "label": "Formas de pagamento e envio",
           "section": {
             "__resolveType": "site/sections/Institutional/PageContent.tsx",
-            "title": "FORMAS DE PAGAMENTO E ENVIO",
+            "title": "Formas de pagamento e envio",
             "content": {
               "__resolveType": "site/sections/Institutional/Questions.tsx",
               "questions": [

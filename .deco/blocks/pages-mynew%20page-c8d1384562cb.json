@@ -14,35 +14,10 @@
     {
       "sections": [
         {
-          "label": "Banner",
-          "shadow": "none",
-          "section": {
-            "banners": [
-              {
-                "text": {
-                  "mobileTextPosition": "left",
-                  "desktopTextPosition": "left"
-                },
-                "image": {
-                  "mobile": "https://assets.decocache.com/hospitalar/5549e6e2-26ee-4cca-b995-307feb29ee64/1742494410535-a613921b-a7c7-4f90-b151-553d8c62149a",
-                  "desktop": "https://assets.decocache.com/hospitalar/6dd18f17-8e27-4f0a-8427-6c6723677c79/1742494413246-f09cb225-d5c4-4f38-b641-10d553574d2a"
-                },
-                "matcher": "/i/*"
-              }
-            ],
-            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
-          },
-          "verticalSpacing": "top"
-        }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
-    },
-    {
-      "sections": [
-        {
           "label": "Institutional Page",
           "section": {
-            "title": "EMPRESA",
+            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx",
+            "title": "Empresa",
             "content": {
               "content": "<div style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><div style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><section id=\"institucional\" style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><div style=\"list-style-type: none;\" data-mce-style=\"list-style-type: none;\"><p dir=\"ltr\"><strong>Bem-vindo à nossa Loja Virtual, temos a grata satisfação em bem serví-lo.</strong><br>Fundada em <strong>Setembro de 1998</strong>, a <strong>Hospitalar Distribuidora</strong> tem uma equipe <strong>treinada</strong> e <strong>qualificada</strong> para servir seus <strong>clientes</strong>. O nosso <strong>e-commerce</strong>, foi <strong>pioneiro</strong> no ramo, desde em 2008, surgindo como uma <strong>nova fase</strong> da empresa.</p><p dir=\"ltr\">Estamos estabelecidos em Presidente Prudente - SP, na Rua Adílio Artoni nº 46, Jardim Petrópolis, CEP 19060-340.<br><br><strong>CNPJ:</strong> 03.375.328/0001-80<br><strong>Inscrição Estadual:</strong> 562.172.900.119<br><br><strong>Atendimento em todo o território nacional para:</strong> hospitais, prefeituras, clínicas médicas, veterinárias, odontológicas e estéticas.<br>Nossa linha de comercialização é de materiais médicos hospitalares, equipamentos médicos, medicamentos e controlados.<br>Venha nos visitar e teremos a grata satisfação em recebê-los!<br><br><strong>Central Telefônica:</strong> (18) 3221 2232 e (18) 99774 2232 (WhatsApp)<br><br><br><strong>E-mail para envio de orçamentos e documentos:</strong> vendas@hospitalardistribuidora.com.br</p><p dir=\"ltr\"><strong>E-mail para atendimento e dúvidas:</strong> atendimento@hospitalardistribuidora.com.br</p><p dir=\"ltr\"><strong>E-mail para dúvidas sobre compra de medicamentos</strong>: rafael@hospitalardistribuidora.com.br</p><p dir=\"ltr\"><br></p><p><strong>Sócios Proprietários:</strong> Wilson José e Pedro Henrique</p><p><strong>Diretor de E-Commerce e Mídias:</strong> Pedro Henrique</p><p><strong>Gerente de Vendas e Farmácia:</strong> Rafael Araújo</p><p><strong>Financeiro e Compras:</strong> Renerson Zavatieri</p><p><strong>Vendas:</strong> Fabiana e Rosani Zagallo</p><p><strong>Atendimento ao cliente:</strong> Carolina Barbosa e Isabela Sales</p><p><strong>Expedição</strong>: Murilo Campos e Guilherme Bueno<br></p><p dir=\"ltr\"><br><strong>Horário de Funcionamento:</strong> Segunda à Sexta - 08:00 às 18:00 -&nbsp;Sábado - 08:00 ao 12:00</p></div></section></div></div>",
               "__resolveType": "site/sections/Institutional/TextContent.tsx"
@@ -79,11 +54,10 @@
                   "label": "Fale Conosco"
                 }
               ]
-            },
-            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+            }
           },
-          "withContainer": true,
-          "verticalSpacing": "both"
+          "verticalSpacing": "both",
+          "withContainer": true
         }
       ],
       "__resolveType": "site/sections/Container.tsx"

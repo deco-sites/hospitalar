@@ -14,10 +14,10 @@
     {
       "sections": [
         {
-          "label": "POLÍTICA DE TROCA E DEVOLUÇÃO",
+          "label": "Política de troca e devolução",
           "section": {
             "__resolveType": "site/sections/Institutional/PageContent.tsx",
-            "title": "POLÍTICA DE TROCA E DEVOLUÇÃO",
+            "title": "Política de troca e devolução",
             "content": {
               "__resolveType": "site/sections/Institutional/Questions.tsx",
               "questions": [
