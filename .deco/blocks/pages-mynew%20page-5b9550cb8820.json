@@ -9,9 +9,13 @@
       "__resolveType": "Default - Design System"
     },
     {
-      "__resolveType": "bf-header"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "HeaderFloating"
+      }
     },
     {
+      "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
           "label": "Fale Conosco",
@@ -56,8 +60,7 @@
           "withContainer": true,
           "shadow": "none"
         }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
+      ]
     },
     {
       "__resolveType": "bf-footer"

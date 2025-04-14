@@ -9,15 +9,17 @@
       "__resolveType": "Default - Design System"
     },
     {
-      "__resolveType": "Header Global"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "HeaderFloating"
+      }
     },
     {
+      "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
           "label": "Institutional Page",
           "section": {
-            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx",
-            "title": "Empresa",
             "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx",
             "title": "Empresa",
             "content": {
@@ -61,8 +63,7 @@
           "verticalSpacing": "both",
           "withContainer": true
         }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
+      ]
     },
     {
       "__resolveType": "Footer Global"

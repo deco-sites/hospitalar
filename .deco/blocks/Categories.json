@@ -27,6 +27,12 @@
             "__resolveType": "analytics"
           },
           {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "HeaderFloating"
+            }
+          },
+          {
             "__resolveType": "website/flags/multivariate/section.ts",
             "variants": [
               {
