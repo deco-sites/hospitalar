@@ -75,16 +75,8 @@
                 "label": "Blog"
               },
               {
-                "href": "#",
-                "label": "Nossas Lojas"
-              },
-              {
                 "href": "/i/contato",
                 "label": "Fale conosco"
-              },
-              {
-                "label": "Blog hospitalar",
-                "href": "https://blog.hospitalardistribuidora.com.br/"
               }
             ]
           },
