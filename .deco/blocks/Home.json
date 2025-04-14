@@ -2893,7 +2893,7 @@
             "__resolveType": "analytics"
           },
           {
-            "__resolveType": "Header Global"
+            "__resolveType": "HeaderFloating"
           },
           {
             "__resolveType": " Home - Carousel"

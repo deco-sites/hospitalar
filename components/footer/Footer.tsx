@@ -69,10 +69,15 @@ export interface Props {
    */
   socialNetWorks?: SocialItem[];
   /**
+   * @title Whatsapp number
+   */
+  whatsapp:string;
+  /**
    * @title Phone number
    */
   phone: string;
   /**
+   * 
    * @title E-mail
    */
   email: string;
@@ -103,25 +108,31 @@ function Footer(
     openingHours,
     email,
     phone,
+    whatsapp,
     payments,
     securities,
     poweredby,
+    wpp,
   }: Props,
 ) {
   return (
     <footer class="">
       <UpButton />
-      <div class="bg-white flex flex-col">
+      <div class="bg-[#EEF1F5] flex flex-col">
         <div class="flex items-start justify-start gap-5 lg:gap-16 mt-12 max-lg:flex-col">
-          <div class="pt-11 px-8 pb-10 max-lg:w-full bg-[#F7F7F7] rounded-[10px]">
+          <div class="pt-11 px-8 pb-10 max-lg:w-full bg-[#fff] rounded-[10px]">
             <Icon id="Logo" height={61} width={LogoWidth} />
             {socialNetWorks?.length && (
               <SocialNetWorks socialItems={socialNetWorks} />
             )}
             <div class="flex items-center gap-2 mt-5">
-              <Icon id="Phone" width={20} height={20} class="text-primary" />
+              <Icon id="PhoneAtualizado" width={20} height={20} class="text-primary" />
               <span class="text-primary text-xs font-bold text-left">
                 {phone}
+              </span>
+              <Icon id="WhatsAppAtualizado" width={20} height={20} class="text-primary" />
+              <span class="text-primary text-xs font-bold text-left">
+                {whatsapp}
               </span>
             </div>
             <div class="flex items-center gap-2 mt-3">
@@ -131,7 +142,7 @@ function Footer(
               </span>
             </div>
             <span
-              class="text-base-800 text-left text-xs font-normal mt-3 block leading-6"
+              class="font-poppins font-normal text-[12px] leading-[20px] text-[#2C376D] text-left mt-3 block"
               dangerouslySetInnerHTML={{
                 __html: openingHours,
               }}
@@ -180,7 +191,7 @@ function Footer(
                     id={`my-accordion-mobile--footer-${section.label}`}
                     class="absolute left-0 w-full top-0"
                   />
-                  <div class="collapse-title border-b border-base-content py-2.5 text-base-content font-medium pl-0 flex items-center justify-between pr-0">
+                  <div class="collapse-title border-b border-base-content py-2.5 text-[#2C376D] font-medium pl-0 flex items-center justify-between pr-0">
                     {section.label}
                   </div>
                   <div class="collapse-content pl-0">
@@ -203,7 +214,7 @@ function Footer(
                 <ul class="flex self-center md:self-end items-center max-lg:justify-center gap-8">
                   {poweredby?.map((item) => (
                     <li class="flex items-center gap-2">
-                      <span class="text-neutral text-[10px]">
+                      <span class="font-poppins font-normal text-[10px] leading-[15px] text-[#8E8E9F]">
                         {item.label}
                       </span>
                       {item.images.map((image) => (

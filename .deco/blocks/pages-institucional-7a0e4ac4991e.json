@@ -9,48 +9,35 @@
       "__resolveType": "Default - Design System"
     },
     {
-      "__resolveType": "Header Global"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "HeaderFloating"
+      }
     },
     {
-      "sections": [
-        {
-          "label": "Banner",
-          "shadow": "none",
-          "section": {
-            "banners": [
-              {
-                "text": {
-                  "mobileTextPosition": "left",
-                  "desktopTextPosition": "left"
-                },
-                "image": {
-                  "mobile": "https://assets.decocache.com/hospitalar/5549e6e2-26ee-4cca-b995-307feb29ee64/1742494410535-a613921b-a7c7-4f90-b151-553d8c62149a",
-                  "desktop": "https://assets.decocache.com/hospitalar/6dd18f17-8e27-4f0a-8427-6c6723677c79/1742494413246-f09cb225-d5c4-4f38-b641-10d553574d2a"
-                },
-                "matcher": "/i"
-              }
-            ],
-            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
-          },
-          "verticalSpacing": "top"
-        }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
-    },
-    {
+      "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
           "label": "Institucional Menu",
           "shadow": "none",
           "section": {
-            "__resolveType": "Aside Menu Global"
+            "__resolveType": "site/sections/Institutional/PageContent.tsx",
+            "asideMenu": {
+              "__resolveType": "Aside Menu Global"
+            },
+            "content": {
+              "__resolveType": "site/sections/Institutional/Questions.tsx",
+              "questions": [],
+              "layout": {
+                "headerAlignment": "center"
+              }
+            },
+            "title": " "
           },
-          "spacing": 20,
-          "withContainer": true,
-          "verticalSpacing": "both"
+          "verticalSpacing": "top",
+          "withContainer": true
         }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
+      ]
     },
     {
       "__resolveType": "Footer Global"

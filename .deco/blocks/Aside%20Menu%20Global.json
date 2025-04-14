@@ -1,1 +1,33 @@
-{"menuItems":[{"href":"/i/empresa","label":"Empresa"},{"href":"/i/como-comprar","label":"Como comprar"},{"href":"/i/formas-de-pagamento-e-envio","label":"Formas de pagamento e envio"},{"href":"/i/politica-de-troca-e-devolucao","label":"Política de Troca e Devolução"},{"href":"/i/politica-de-privacidade","label":"Política de Privacidade"},{"href":"/i/saiba-mais","label":"Saiba Mais"},{"href":"/i/contato","label":"Fale Conosco"}],"__resolveType":"site/sections/Institutional/AsideMenu.tsx"}
+{
+  "menuItems": [
+    {
+      "href": "/i/empresa",
+      "label": "Empresa"
+    },
+    {
+      "href": "/i/como-comprar",
+      "label": "Documentação para medicamentos"
+    },
+    {
+      "href": "/i/formas-de-pagamento-e-envio",
+      "label": "Formas de pagamento e envio"
+    },
+    {
+      "href": "/i/politica-de-troca-e-devolucao",
+      "label": "Política de Troca e Devolução"
+    },
+    {
+      "href": "/i/politica-de-privacidade",
+      "label": "Política de Privacidade"
+    },
+    {
+      "href": "/i/saiba-mais",
+      "label": "Saiba Mais"
+    },
+    {
+      "href": "/i/contato",
+      "label": "Fale Conosco"
+    }
+  ],
+  "__resolveType": "site/sections/Institutional/AsideMenu.tsx"
+}

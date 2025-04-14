@@ -12,7 +12,7 @@ const QUANTITY_MAX_VALUE = 100;
 
 // Remove default browser behavior: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp
 // TODO: Figure out how to add it via tailwind config.
-const innerStyle = `
+const _innerStyle = `
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -34,7 +34,7 @@ function QuantitySelector({ onChange, quantity, disabled, loading }: Props) {
     <div class="form-control">
       <div class="input-group items-center">
         <Button
-          class="max-lg:bg-gray-300 !rounded-full bg-transparent border-0 w-6 h-6 p-0 border-none"
+          class="bg-white !rounded-full border border-[#E5E7EB] w-7 h-7 lg:flex lg:items-center lg:justify-center lg:border-none"
           onClick={decrement}
           disabled={disabled}
           loading={loading}
@@ -47,7 +47,7 @@ function QuantitySelector({ onChange, quantity, disabled, loading }: Props) {
           />
         </Button>
         <input
-          class="text-center rounded-lg border-base-200 w-10 h-10 border-2 mx-2.5 text-sm font-bold text-base-content"
+          class="mx-1 border border-[#E5E7EB] bg-white w-[46px] h-10 rounded-lg font-poppins not-italic font-bold text-sm text-center text-[#2C376D]"
           type="number"
           inputMode="numeric"
           pattern="[0-9]*"
@@ -58,7 +58,7 @@ function QuantitySelector({ onChange, quantity, disabled, loading }: Props) {
           onBlur={(e) => onChange?.(e.currentTarget.valueAsNumber)}
         />
         <Button
-          class="max-lg:bg-gray-300 !rounded-full bg-transparent border-0 w-6 h-6 p-0 border-none"
+          class="bg-white !rounded-full border border-[#E5E7EB] w-7 h-7 lg:flex lg:items-center lg:justify-center lg:border-none"
           onClick={increment}
           disabled={disabled}
           loading={loading}
