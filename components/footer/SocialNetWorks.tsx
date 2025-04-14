@@ -15,11 +15,11 @@ export default function SocialNetWorks(
 ) {
   return (
     <div class="mt-5 border-b border-base-content pb-5">
-      <ul class="gap-5 flex items-center justify-start">
+      <ul class="gap-[10px] flex items-center justify-start ">
         {socialItems.map((social) => (
           <li
             key={social.icon}
-            class="bg-base-300 w-8 h-8 rounded-full hover:bg-primary transition-all duration-500"
+            class="w-8 h-8"
           >
             <a
               href={social.href ? social.href : "#"}
@@ -27,7 +27,7 @@ export default function SocialNetWorks(
               target="_blank"
               aria-label={social.label}
             >
-              <Icon id={social.icon} size={20} strokeWidth={1} />
+              <Icon id={social.icon} size={34} strokeWidth={1} />
             </a>
           </li>
         ))}

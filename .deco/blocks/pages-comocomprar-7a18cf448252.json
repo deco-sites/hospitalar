@@ -18,49 +18,44 @@
       "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
-          "label": "Banner",
+          "label": "Documentação para medicamentos",
           "shadow": "none",
           "section": {
-            "banners": [
-              {
-                "text": {
-                  "mobileTextPosition": "left",
-                  "desktopTextPosition": "left"
+            "__resolveType": "site/sections/Institutional/PageContent.tsx",
+            "asideMenu": {
+              "__resolveType": "Aside Menu Global"
+            },
+            "content": {
+              "__resolveType": "site/sections/Institutional/Questions.tsx",
+              "questions": [
+                {
+                  "question": "Por que pedimos documentação?",
+                  "answer": "<p>De acordo com a RDC 430, Distribuidoras de Material Hospitalar, só podem comercializar MEDICAMENTOS para profissionais da área da saúde, como Médicos, Médico Veterinário, Dentista e Biomédico Esteta. Para MEDICAMENTOS CONTROLADOS (tarja preta) a venda é permitida apenas para CNPJ da área da saúde, como Clínicas, Hospitais, Ambulatórios, etc.</p>"
                 },
-                "image": {
-                  "mobile": "https://assets.decocache.com/hospitalar/425085b5-d8dd-4adc-aa36-e97c63c0c792/1742494448361-34d03ba2-0675-4360-a362-2f8f550bd71b",
-                  "desktop": "https://assets.decocache.com/hospitalar/c755bf05-9ecb-4243-aaa4-4fba4bb83f15/1742494449591-b61f904c-7f1c-431a-ab2c-b024f8804750"
+                {
+                  "question": "Quais documentos são necessários?",
+                  "answer": "<p>Existem 2 tipos de cenários:<br><br>1. Compra de medicamento de uso comum via CPF: Cópia frente e verso da carteira profissional (CRM, CRMV, CRO)<br><br>2. Compra de medicamento de uso comum ou controlado via CNPJ: Alvará Sanitário (ou protocolo de RENOVAÇÃO, não pode ser de abertura), Certificado de Regularidade Técnica (CRM Jurídico) e o Contrato Social.</p>"
                 },
-                "matcher": "/i/como-comprar"
-              }
-            ],
-            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+                {
+                  "question": "Qual prazo para validação dos documentos?",
+                  "answer": "<p>Para clientes novos, o prazo de verificação dos documentos é de até 1 dia útil, caso tenha algum desacordo, não se preocupe, nossa equipe entrará em contato imediatamente solicitando a possível correção. Se você já é um cliente cadastrado e sua documentação está em dia, a aprovação é instantânea. Caso esteja desatualizado, nossa equipe também entrará em contato solicitando os documentos atualizados.</p>"
+                },
+                {
+                  "question": "Onde posso enviar meus documentos?",
+                  "answer": "<p>Os documentos solicitados devem ser enviados para qualquer um de nossos canais de atendimento:</p><div class=\"flex flex-col-reverse md:flex-row\"><a class=\"btn btn-form mr-3 mt-1 mb-2 md:my-4 w-fit\"> <img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/d1160fb1-33fc-4861-8a54-74f3b18eb00f/fi_1384023.png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/d1160fb1-33fc-4861-8a54-74f3b18eb00f/fi_1384023.png\"> (18) 99774 2232 </a> <a class=\"btn btn-form my-5\"> <img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/955c97a9-cd84-4e45-8f65-9fb477298bcc/letter_icon.png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/955c97a9-cd84-4e45-8f65-9fb477298bcc/letter_icon.png\"> vendas@hospitalardistribuidora.com.br </a></div><p>Para eventuais dúvidas sobre a compra de medicamentos, entre em contato com:</p><p><a class=\"btn btn-form mt-4 md:mb-0 w-fit\"> <img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/955c97a9-cd84-4e45-8f65-9fb477298bcc/letter_icon.png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/955c97a9-cd84-4e45-8f65-9fb477298bcc/letter_icon.png\"> vendas@hospitalardistribuidora.com.br </a></p>"
+                }
+              ],
+              "layout": {
+                "headerAlignment": "center"
+              },
+              "title": " "
+            },
+            "title": "Documentação para medicamentos"
           },
-          "withContainer": false,
+          "withContainer": true,
           "verticalSpacing": "top"
         }
       ]
-    },
-    {
-      "sections": [
-        {
-          "label": "Institutional Page",
-          "section": {
-            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx",
-            "title": "Documentação ",
-            "content": {
-              "content": "<h4><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Por que pedimos documentação?</span></h4><p><br data-mce-bogus=\"1\"></p><p><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">De acordo com a RDC 430, Distribuidoras de Material Hospitalar, só podem comercializar MEDICAMENTOS para profissionais da área da saúde, como Médicos, Médico Veterinário, Dentista e Biomédico Esteta. Para MEDICAMENTOS CONTROLADOS (tarja preta) a venda é permitida apenas para CNPJ da área da saúde, como Clínicas, Hospitais, Ambulatórios, etc.</span></p><p><br data-mce-bogus=\"1\"></p><h4><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Quais documentos são necessários?</span></h4><p><br data-mce-bogus=\"1\"></p><p><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">Existem 2 tipos de cenários:</span></p><p><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\"><br>1. Compra de medicamento de uso comum via CPF: Cópia frente e verso da carteira profissional (CRM, CRMV, CRO)</span></p><p><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\"><br>2. Compra de medicamento de uso comum ou controlado via CNPJ: Alvará Sanitário (ou protocolo de RENOVAÇÃO, não pode ser de abertura), Certificado de Regularidade Técnica (CRM Jurídico) e o Contrato Social.,</span></p><p><br data-mce-bogus=\"1\"></p><p><br data-mce-bogus=\"1\"></p><h4><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Qual prazo para validação dos documentos?</span></h4><p><br data-mce-bogus=\"1\"></p><p><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">Para clientes novos, o prazo de verificação dos documentos é de até 1 dia útil, caso tenha algum desacordo, não se preocupe, nossa equipe entrará em contato imediatamente solicitando a possível correção. Se você já é um cliente cadastrado e sua documentação está em dia, a aprovação é instantânea. Caso esteja desatualizado, nossa equipe também entrará em contato solicitando os documentos atualizados.</span></p><p><br data-mce-bogus=\"1\"></p><h4><span style=\"font-size: 14pt;\" data-mce-style=\"font-size: 14pt;\">Onde posso enviar meus documentos?</span></h4><p><br data-mce-bogus=\"1\"></p><p><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">Os documentos solicitados podem ser enviados por qualquer um de nossos canais de atendimento:</span></p><p><br data-mce-bogus=\"1\"></p><p class=\"contato\" style=\"display: flex; align-items: center;\" data-mce-style=\"display: flex; align-items: center;\"><span class=\"contato-whats\" style=\"font-size: 10pt; padding: 7px 20px; align-items: center; gap: 10px; border-radius: 153.08px; border: 0.765px solid var(--action-primary, #2D386E); margin-right: 13px;\" data-mce-style=\"font-size: 10pt; padding: 7px 20px; align-items: center; gap: 10px; border-radius: 153.08px; border: 0.765px solid var(--action-primary, #2D386E); margin-right: 13px;\"><span style=\"font-size: 12.246px; color: var(--action-primary, #2d386e); font-family: Poppins; font-style: normal; font-weight: 600; line-height: normal;\" data-mce-style=\"font-size: 12.246px; color: var(--action-primary, #2d386e); font-family: Poppins; font-style: normal; font-weight: 600; line-height: normal;\"><img src=\"https://hospitalar.vteximg.com.br/arquivos/Group-whats-deco.png\" alt=\"whatsaap\" data-mce-src=\"https://hospitalar.vteximg.com.br/arquivos/Group-whats-deco.png\"> (18) 99774 2232 </span></span><span style=\"font-size: 10pt; padding: 7px 20px; align-items: center; gap: 10px; border-radius: 153.08px; border: 0.765px solid var(--action-primary, #2D386E);\" data-mce-style=\"font-size: 10pt; padding: 7px 20px; align-items: center; gap: 10px; border-radius: 153.08px; border: 0.765px solid var(--action-primary, #2D386E);\"><span style=\"font-size: 12.246px; color: var(--action-primary, #2d386e); font-family: Poppins; font-style: normal; font-weight: 600; line-height: normal;\" data-mce-style=\"font-size: 12.246px; color: var(--action-primary, #2d386e); font-family: Poppins; font-style: normal; font-weight: 600; line-height: normal;\"><img src=\"https://hospitalar.vteximg.com.br/arquivos/mail-deco.png\" alt=\"e-mail\" width=\"19\" height=\"19\" data-mce-src=\"https://hospitalar.vteximg.com.br/arquivos/mail-deco.png\">vendas@hospitalardistribuidora.com.br</span></span></p><p>&nbsp; &nbsp;</p>",
-              "__resolveType": "site/sections/Institutional/TextContent.tsx"
-            },
-            "asideMenu": {
-              "__resolveType": "Aside Menu Global"
-            }
-          },
-          "withContainer": true,
-          "verticalSpacing": "both"
-        }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
     },
     {
       "__resolveType": "Footer Global"

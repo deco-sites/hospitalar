@@ -14,38 +14,13 @@
     {
       "sections": [
         {
-          "label": "Banner",
-          "shadow": "none",
+          "label": "FALE CONOSCO",
           "section": {
-            "banners": [
-              {
-                "text": {
-                  "mobileTextPosition": "left",
-                  "desktopTextPosition": "left"
-                },
-                "image": {
-                  "mobile": "https://assets.decocache.com/hospitalar/5549e6e2-26ee-4cca-b995-307feb29ee64/1742494410535-a613921b-a7c7-4f90-b151-553d8c62149a",
-                  "desktop": "https://assets.decocache.com/hospitalar/6dd18f17-8e27-4f0a-8427-6c6723677c79/1742494413246-f09cb225-d5c4-4f38-b641-10d553574d2a"
-                },
-                "matcher": "/i/*"
-              }
-            ],
-            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
-          },
-          "verticalSpacing": "top"
-        }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
-    },
-    {
-      "sections": [
-        {
-          "label": "Institutional Page",
-          "section": {
+            "__resolveType": "site/sections/Institutional/PageContent.tsx",
             "title": "FALE CONOSCO",
             "content": {
               "alt": "Hospitalar Banner",
-              "image": "https://assets.decocache.com/hospitalar/eae917d1-0b4a-49bb-869d-cd3fb74c68fd/1742494578660-393639af-f10a-4e78-ab51-609fffdaa0b8",
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/393639af-f10a-4e78-ab51-609fffdaa0b8",
               "serviceInfo": {
                 "email": "vendas@hospitalardistribuidora.com.br",
                 "phone": "18 3221 2232 | 18 99774 2232",
@@ -75,11 +50,11 @@
             },
             "asideMenu": {
               "__resolveType": "Aside Menu Global"
-            },
-            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+            }
           },
+          "verticalSpacing": "top",
           "withContainer": true,
-          "verticalSpacing": "both"
+          "shadow": "none"
         }
       ],
       "__resolveType": "site/sections/Container.tsx"
