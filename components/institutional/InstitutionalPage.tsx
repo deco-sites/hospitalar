@@ -1,14 +1,15 @@
 import { Head } from "$fresh/runtime.ts";
 import { Section } from "$live/blocks/section.ts";
-import type { BlockInstance } from "$live/engine/block.ts";
-import type { Manifest } from "site/manifest.gen.ts";
 import Icon from "$store/components/ui/Icon.tsx";
+import type { BlockInstance } from "$live/engine/block.ts";
+import type { Manifest } from "$store/manifest.gen.ts";
 
 export interface Props {
   title: string;
   asideMenu: Section;
-  content:
-    | BlockInstance<
+  description?: string;
+  content: 
+  | BlockInstance<
       "site/sections/Institutional/TextContent.tsx",
       Manifest
     >
@@ -23,8 +24,13 @@ export interface Props {
     | BlockInstance<
       "site/sections/Institutional/ContactForm.tsx",
       Manifest
+    >
+    | BlockInstance<
+      "site/sections/Institutional/Questions.tsx",
+      Manifest
     >;
 }
+
 
 function InstitutionalPage({
   asideMenu: { Component: AsideComponent, props: asideProps },

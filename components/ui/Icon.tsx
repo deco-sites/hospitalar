@@ -17,11 +17,16 @@ export type SocialIcons =
   | "YouTube"
   | "Tiktok"
   | "WhatsApp"
+  | "WhatsAppAtualizado"
   | "Instagram"
+  | "InstagramAtualizado"
   | "Facebook"
+  | "FacebookAtualizado"
   | "YouTubeOutline"
   | "WhatsAppOutline"
   | "InstagramOutline"
+  | "NewFacebook"
+  | "NewInstagram"
   | "FacebookOutline";
 export type AvailableIcons =
   | "Refresh"
@@ -33,20 +38,26 @@ export type AvailableIcons =
   | "QuestionMarkCircle"
   | "User"
   | "ShoppingCart"
+  | "ShoppingCartNew"
   | "Bars3"
   | "Heart"
   | "MagnifyingGlass"
   | "XMark"
   | "Plus"
+  | "NewPlus"
   | "Minus"
   | "MapPin"
   | "Phone"
+  | "PhoneAtualizado"
   | "Logo"
   | "LogoFooter"
   | "LogoMobile"
+  | "NewLogoFooter"
   | "Truck"
   | "CaretDown"
   | "CaretUp"
+  | "ArrowRightInline"
+  | "ArrowRightInlineDark"
   | "Discount"
   | "Return"
   | "Deco"
@@ -62,6 +73,7 @@ export type AvailableIcons =
   | "ArrowRight"
   | "ArrowLeft"
   | "LogoSeo"
+  | "LogoMini"
   | "ReturnArrow"
   | "SadFace"
   | "LeftArrowFigma"
@@ -70,7 +82,10 @@ export type AvailableIcons =
   | "warning"
   | "icon-warning"
   | "free-shipping"
-  |  "Wishlist"; 
+  | "Wishlist"
+  | "SetaPaginationForward"
+  | "SetaPaginationBackward";
+  
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

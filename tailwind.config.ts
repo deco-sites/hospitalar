@@ -56,9 +56,7 @@ export default {
             "--dot-progress": "100%",
           },
         },
-      },
+      }
     },
-
-    
   },
 };
