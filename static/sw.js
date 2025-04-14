@@ -4,4 +4,3 @@ importScripts(
 
 workbox.setConfig({ debug: false });
 workbox.routing.setDefaultHandler(new workbox.strategies.NetworkOnly());
-workbox.recipes.offlineFallback({ pageFallback: "/offline" });

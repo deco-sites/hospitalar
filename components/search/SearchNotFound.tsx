@@ -2,6 +2,8 @@ import type { LoaderReturnType } from "$live/types.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { useEffect, useState } from "preact/compat";
 import ProductCard from "site/components/product/ProductCard.tsx";
+import { AppContext } from "site/apps/site.ts";
+import { notFound } from "deco/mod.ts";
 
 export interface TextSugestion {
   firstText: string;
@@ -13,6 +15,14 @@ export interface TextSugestion {
 export interface Props {
   textSugestions: TextSugestion;
   products: LoaderReturnType<Product[] | null>;
+}
+
+export const loader = (props: Props, _req: Request, ctx: AppContext) => {
+  ctx.response.status = 404;
+  if (ctx.isBot) {
+    notFound();
+  }
+  return props;
 }
 
 function SearchNotFound({ textSugestions, products }: Props) {
