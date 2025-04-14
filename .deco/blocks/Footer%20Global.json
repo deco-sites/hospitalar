@@ -17,14 +17,15 @@
       },
       "withContainer": true,
       "verticalSpacing": "none",
-      "backgroundImage": "/arquivos/hospitalarNewsBackground.png"
+      "backgroundImage": "/arquivos/hospitalarNewsBackground.png",
+      "backgroundSize": "100%"
     },
     {
       "label": "Footer",
       "shadow": "none",
       "section": {
         "email": "vendas@hospitalardistribuidora.com.br",
-        "phone": "18 3221 2232 ",
+        "phone": "(18) 3221 2232 ",
         "payments": [
           {
             "alt": "Mastercard",
@@ -70,8 +71,8 @@
                 "label": "Quem somos"
               },
               {
-                "href": "/i/como-comprar",
-                "label": "Como comprar"
+                "href": "https://blog.hospitalardistribuidora.com.br/",
+                "label": "Blog"
               },
               {
                 "href": "/i/contato",
@@ -161,18 +162,18 @@
         "socialNetWorks": [
           {
             "href": "https://www.facebook.com/hospitalardistribuidorapp/",
-            "icon": "NewFacebook",
+            "icon": "FacebookAtualizado",
             "label": "Facebook",
             "openNewView": true
           },
           {
             "href": "https://www.instagram.com/hospitalardistribuidora/",
-            "icon": "NewInstagram",
+            "icon": "InstagramAtualizado",
             "label": "Instagram",
             "openNewView": true
           }
         ],
-        "wpp": "18 99774 2232"
+        "whatsapp": "(18) 99774 2232"
       },
       "spacing": 0,
       "withContainer": true,
@@ -186,8 +187,8 @@
         "copyRight": "COPYRIGHT © - Hospitalar Distribuidora - CNPJ: 03.375.328/0001-80",
         "__resolveType": "site/sections/Content/CopyRight.tsx"
       },
-      "backgroundColor": "#F7F7F7",
-      "verticalSpacing": "none"
+      "verticalSpacing": "none",
+      "backgroundColor": "#EEF1F5"
     }
   ],
   "__resolveType": "site/sections/Container.tsx",
