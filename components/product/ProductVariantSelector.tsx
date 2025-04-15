@@ -9,14 +9,12 @@ import Avatar from "$store/components/ui/Avatar.tsx";
  
  function VariantSelector({ product, product: { url }, currentURL }: Props) {
    const possibilities = useVariantPossibilities(product);
- 
-   console.log(Object.entries(possibilities))
- 
+  
    return (
      <ul class="flex flex-col gap-5">
        {Object.entries(possibilities).map(([name, values]) => {
          // Se houver apenas uma chave dentro de `values`, não renderizar
-         if (Object.keys(values).length <= 1) return null;
+        //  if (Object.keys(values).length <= 1) return null;
          if (Object.keys(values).length <= 1 && name !== "Opção") return null;
  
          return (
