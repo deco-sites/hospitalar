@@ -20,7 +20,7 @@
             },
             "rowSpan": 2,
             "rowStart": 1,
-            "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/c1071737-5847-469e-ab4a-f8c008f8b742",
+            "srcMobile": "https://assets.decocache.com/hospitalar/8d8e32fd-8c21-488a-9cb5-db53c18341b6/1742494414475-c1071737-5847-469e-ab4a-f8c008f8b742",
             "buttonColor": "primary",
             "columnStart": 1,
             "backgroundColor": "secondary",
@@ -36,7 +36,7 @@
               "buttonColor": "secondary",
               "verticalAlignment": "Bottom"
             },
-            "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/30a95613-c1ca-49bf-8842-b62097ac1a09",
+            "srcMobile": "https://assets.decocache.com/hospitalar/d3d85089-dd41-4cce-bdd9-66f8b2054d63/1742494415955-30a95613-c1ca-49bf-8842-b62097ac1a09",
             "textColor": "secondary",
             "backgroundColor": "primary"
           },
@@ -50,7 +50,7 @@
               "buttonColor": "secondary",
               "verticalAlignment": "Bottom"
             },
-            "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/3bfe6e95-91dd-453a-857f-ec53eebede9d",
+            "srcMobile": "https://assets.decocache.com/hospitalar/a909555b-2cd8-4e68-ba3b-34b86c8b1d97/1742494417394-3bfe6e95-91dd-453a-857f-ec53eebede9d",
             "textColor": "secondary"
           }
         ],

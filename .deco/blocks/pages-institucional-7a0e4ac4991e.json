@@ -9,9 +9,13 @@
       "__resolveType": "Default - Design System"
     },
     {
-      "__resolveType": "Header Global"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header Global"
+      }
     },
     {
+      "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
           "label": "Institucional Menu",
@@ -33,8 +37,7 @@
           "verticalSpacing": "top",
           "withContainer": true
         }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
+      ]
     },
     {
       "__resolveType": "Footer Global"

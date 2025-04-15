@@ -9,15 +9,19 @@
       "__resolveType": "Default - Design System"
     },
     {
-      "__resolveType": "Header Global"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header Global"
+      }
     },
     {
+      "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
-          "label": "FORMAS DE PAGAMENTO E ENVIO",
+          "label": "Formas de pagamento e envio",
           "section": {
             "__resolveType": "site/sections/Institutional/PageContent.tsx",
-            "title": "FORMAS DE PAGAMENTO E ENVIO",
+            "title": "Formas de pagamento e envio",
             "content": {
               "__resolveType": "site/sections/Institutional/Questions.tsx",
               "questions": [
@@ -47,8 +51,7 @@
           "withContainer": true,
           "shadow": "none"
         }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
+      ]
     },
     {
       "__resolveType": "Footer Global"

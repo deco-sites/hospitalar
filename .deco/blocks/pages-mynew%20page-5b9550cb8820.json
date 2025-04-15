@@ -9,15 +9,19 @@
       "__resolveType": "Default - Design System"
     },
     {
-      "__resolveType": "bf-header"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "HeaderFloating"
+      }
     },
     {
+      "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
-          "label": "FALE CONOSCO",
+          "label": "Fale Conosco",
           "section": {
             "__resolveType": "site/sections/Institutional/PageContent.tsx",
-            "title": "FALE CONOSCO",
+            "title": "Fale conosco",
             "content": {
               "alt": "Hospitalar Banner",
               "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/393639af-f10a-4e78-ab51-609fffdaa0b8",
@@ -56,11 +60,16 @@
           "withContainer": true,
           "shadow": "none"
         }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
+      ]
     },
     {
       "__resolveType": "bf-footer"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header Global"
+      }
     }
   ],
   "__resolveType": "$live/pages/LivePage.tsx"

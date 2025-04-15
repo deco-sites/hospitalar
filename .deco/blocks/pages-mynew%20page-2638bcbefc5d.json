@@ -9,15 +9,19 @@
       "__resolveType": "Default - Design System"
     },
     {
-      "__resolveType": "Header Global"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header Global"
+      }
     },
     {
+      "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
-          "label": "POLÍTICA DE TROCA E DEVOLUÇÃO",
+          "label": "Política de troca e devolução",
           "section": {
             "__resolveType": "site/sections/Institutional/PageContent.tsx",
-            "title": "POLÍTICA DE TROCA E DEVOLUÇÃO",
+            "title": "Política de troca e devolução",
             "content": {
               "__resolveType": "site/sections/Institutional/Questions.tsx",
               "questions": [
@@ -74,8 +78,7 @@
           "withContainer": true,
           "shadow": "none"
         }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
+      ]
     },
     {
       "__resolveType": "Footer Global"

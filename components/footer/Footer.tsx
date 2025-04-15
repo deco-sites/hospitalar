@@ -69,14 +69,15 @@ export interface Props {
    */
   socialNetWorks?: SocialItem[];
   /**
+   * @title Whatsapp number
+   */
+  whatsapp:string;
+  /**
    * @title Phone number
    */
   phone: string;
   /**
-   * @title Whatsapp number
-   */
-  wpp?: string;
-  /**
+   * 
    * @title E-mail
    */
   email: string;
@@ -107,6 +108,7 @@ function Footer(
     openingHours,
     email,
     phone,
+    whatsapp,
     payments,
     securities,
     poweredby,
@@ -118,26 +120,22 @@ function Footer(
       <UpButton />
       <div class="bg-[#EEF1F5] flex flex-col">
         <div class="flex items-start justify-start gap-5 lg:gap-16 mt-12 max-lg:flex-col">
-          <div class="pt-[30px] px-8 pb-[30px] max-lg:w-full bg-[#FFFFFF] rounded-[20px]">
-            <Icon id="NewLogoFooter" height={61} width={LogoWidth} />
+          <div class="pt-11 px-8 pb-10 max-lg:w-full bg-[#fff] rounded-[10px]">
+            <Icon id="Logo" height={61} width={LogoWidth} />
             {socialNetWorks?.length && (
               <SocialNetWorks socialItems={socialNetWorks} />
             )}
-            <div class="flex flex-row gap-[20px]">
-              <div class="flex items-center gap-2 mt-5">
-                <Icon id="Phone" width={20} height={20} class="text-primary" />
-                <span class="text-primary text-xs font-bold text-left">
-                  {phone}
-                </span>
-              </div>
-              <div class="flex items-center gap-2 mt-5">
-                <Icon id="Wpp" width={20} height={20} class="text-primary" />
-                <span class="text-primary text-xs font-bold text-left">
-                  {wpp ?? "18 99774 2232"}
-                </span>
-              </div>
+            <div class="flex items-center gap-2 mt-5">
+              <Icon id="PhoneAtualizado" width={20} height={20} class="text-primary" />
+              <span class="text-primary text-xs font-bold text-left">
+                {phone}
+              </span>
+              <Icon id="WhatsAppAtualizado" width={20} height={20} class="text-primary" />
+              <span class="text-primary text-xs font-bold text-left">
+                {whatsapp}
+              </span>
             </div>
-            <div class="flex items-center gap-2 mt-[15px]">
+            <div class="flex items-center gap-2 mt-3">
               <Icon id="Email" width={20} height={20} class="text-primary" />
               <span class="text-primary text-xs font-bold text-left">
                 {email}
