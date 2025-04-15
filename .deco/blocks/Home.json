@@ -2887,7 +2887,10 @@
             "__resolveType": "Default - Design System"
           },
           {
-            "__resolveType": "SEODefault"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "SEODefault"
+            }
           },
           {
             "__resolveType": "analytics"
