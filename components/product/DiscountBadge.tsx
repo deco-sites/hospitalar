@@ -46,5 +46,4 @@ function DiscountBadge(
   );
 }
 
-
 export default DiscountBadge;
