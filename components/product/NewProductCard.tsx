@@ -323,7 +323,7 @@ function NewProductCard(
                         listPrice={listPrice2}
                         label={l?.discount?.label}
                         variant={l?.discount?.variant}
-                        className="lg:!-top-[40px] lg:!-left-[12px] !top-[35px]"
+                        className="lg:!-top-[40px] lg:!-left-[12px] !top-[-25px]"
                     />
                 )}
                 {/* SKU Selector */}

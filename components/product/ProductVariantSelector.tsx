@@ -14,8 +14,8 @@ import Avatar from "$store/components/ui/Avatar.tsx";
      <ul class="flex flex-col gap-5">
        {Object.entries(possibilities).map(([name, values]) => {
          // Se houver apenas uma chave dentro de `values`, não renderizar
-        //  if (Object.keys(values).length <= 1) return null;
-         if (Object.keys(values).length <= 1 && name !== "Opção") return null;
+         if (Object.keys(values).length <= 1) return null;
+        //  if (Object.keys(values).length <= 1 && name !== "Opção") return null;
  
          return (
            <li class="flex flex-col gap-[10px]" key={name}>
