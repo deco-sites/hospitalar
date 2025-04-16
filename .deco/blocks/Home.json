@@ -2906,8 +2906,6 @@
             },
             "searchbar": {
               "placeholder": "O que esta procurando?",
-              "action": " ",
-              "name": "q",
               "cardLayout": {
                 "basics": {
                   "contentAlignment": "Left",
@@ -2929,7 +2927,8 @@
                 "onMouseOver": {
                   "image": "Change image"
                 }
-              }
+              },
+              "action": "/busca"
             },
             "navItems": [
               {

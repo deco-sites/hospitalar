@@ -24,7 +24,7 @@ function Modals({ menu, minicart, login }: Props) {
       <span class="loading loading-ring" />
     </div>
   );
-
+  
   return (
     <>
       {menu && (
