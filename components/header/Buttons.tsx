@@ -94,11 +94,12 @@ function CartButton() {
   );
 }
 
-export function UserButton({ login }: {login: LoginSetting[] }) {
+export function UserButton({ login }: { login: LoginSetting[] }) {
   const { displayLogin } = useUI();
   const { user } = useUser();
-  const username = user?.value?.name ?? user?.value?.givenName ?? user?.value?.email ?? "";
-  
+  const username = user?.value?.name ?? user?.value?.givenName ??
+    user?.value?.email ?? "";
+
   return (
     <div class="max-lg:hidden no-animation relative flex items-center justify-center min-w-[150px] group">
       <div class="flex gap-1">
@@ -111,59 +112,87 @@ export function UserButton({ login }: {login: LoginSetting[] }) {
         />
         <div>
           <h2 class="text-xs font-bold cursor-pointer">Bem-vindo :)</h2>
-          {
-            user?.value
-              ? (<><p class="text-xs font-normal flex"
-                onMouseEnter={() => { displayLogin.value = true }}
-                onMouseLeave={() => { setTimeout(() => { displayLogin.value = false }, 1000); }}
-              >{username} <Button
-                class="border-transparent no-animation relative flex justify-center items-center"
-                aria-label="open menu"
-              >
-                  {displayLogin.value
-                    ? (<Icon class="text-base-content" id="CaretUp" width={14} height={14} />)
-                    : (<Icon class="text-base-content" id="CaretDown" width={14} height={14} />)
-                  }
-                </Button>
-
+          {user?.value
+            ? (
+              <>
+                <p
+                  class="text-xs font-normal flex"
+                  onMouseEnter={() => {
+                    displayLogin.value = true;
+                  }}
+                  onMouseLeave={() => {
+                    setTimeout(() => {
+                      displayLogin.value = false;
+                    }, 1000);
+                  }}
+                >
+                  {username}{" "}
+                  <Button
+                    class="border-transparent no-animation relative flex justify-center items-center"
+                    aria-label="open menu"
+                  >
+                    {displayLogin.value
+                      ? (
+                        <Icon
+                          class="text-base-content"
+                          id="CaretUp"
+                          width={14}
+                          height={14}
+                        />
+                      )
+                      : (
+                        <Icon
+                          class="text-base-content"
+                          id="CaretDown"
+                          width={14}
+                          height={14}
+                        />
+                      )}
+                  </Button>
+                </p>
+              </>
+            )
+            : (
+              <p class="text-xs font-normal">
+                <a href="/my-account">Entre</a> ou{" "}
+                <a href="/my-account">Cadastre-se</a>
               </p>
-
-              </>)
-              : (<p class="text-xs font-normal"><a href="/my-account">Entre</a> ou <a href="/my-account">Cadastre-se</a></p>)
-          }
+            )}
         </div>
       </div>
-      {user?.value ? (<div
-        class={`absolute ${displayLogin.value ? 'flex' : 'hidden'} hover:flex group-hover:flex bg-accent top-[38px] shadow whitespace-nowrap p-[24px] flex-col z-10 rounded-xl gap-[6px]`}
-      >
-        <>
-
-          {login.map(({ href, label, target }) => (
-            <a
-              class="font-medium text-primary text-sm"
-              href={href}
-              target={target}
-            >
-              {label}
-            </a>
-          ))}
-          <hr class="bg-primary h-[2px] my-2 min-w-[152px]" />
-          <a
-            class="font-medium text-primary text-sm"
-            href="/api/vtexid/pub/logout?scope=hospitalar&returnUrl=https%3A%2F%2Fwww.hospitalardistribuidora.com.br%2F"
+      {user?.value
+        ? (
+          <div
+            class={`absolute ${
+              displayLogin.value ? "flex" : "hidden"
+            } hover:flex group-hover:flex bg-accent top-[38px] shadow whitespace-nowrap p-[24px] flex-col z-10 rounded-xl gap-[6px]`}
           >
-            Sair
-          </a>
-        </>
-      </div>)
-        : null
-      }
+            <>
+              {login.map(({ href, label, target }) => (
+                <a
+                  class="font-medium text-primary text-sm"
+                  href={href}
+                  target={target}
+                >
+                  {label}
+                </a>
+              ))}
+              <hr class="bg-primary h-[2px] my-2 min-w-[152px]" />
+              <a
+                class="font-medium text-primary text-sm"
+                href="/api/vtexid/pub/logout?scope=hospitalar&returnUrl=https%3A%2F%2Fwww.hospitalardistribuidora.com.br%2F"
+              >
+                Sair
+              </a>
+            </>
+          </div>
+        )
+        : null}
     </div>
-  )
+  );
 }
 
 function Buttons({ variant }: { variant: "cart" | "search" | "menu" }) {
-
   if (variant === "cart") {
     return <CartButton />;
   }

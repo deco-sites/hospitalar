@@ -8,6 +8,7 @@ import * as $AddToCartButton from "./islands/AddToCartButton.tsx";
 import * as $BlueTagProduct from "./islands/BlueTagProduct.tsx";
 import * as $BlueTagVisit from "./islands/BlueTagVisit.tsx";
 import * as $Debug from "./islands/Debug.tsx";
+import * as $DescriptionCard from "./islands/DescriptionCard.tsx";
 import * as $HeaderButton from "./islands/HeaderButton.tsx";
 import * as $HeaderLayout from "./islands/HeaderLayout.tsx";
 import * as $HeaderModals from "./islands/HeaderModals.tsx";
@@ -16,6 +17,7 @@ import * as $HeaderModalsV3 from "./islands/HeaderModalsV3.tsx";
 import * as $HeaderSearchbar from "./islands/HeaderSearchbar.tsx";
 import * as $MenuModal from "./islands/MenuModal.tsx";
 import * as $NavItems from "./islands/NavItems.tsx";
+import * as $NewAddToCartButton from "./islands/NewAddToCartButton.tsx";
 import * as $Newsletter from "./islands/Newsletter.tsx";
 import * as $NewsletterModal from "./islands/NewsletterModal.tsx";
 import * as $OutOfStock from "./islands/OutOfStock.tsx";
@@ -43,6 +45,7 @@ const manifest = {
     "./islands/BlueTagProduct.tsx": $BlueTagProduct,
     "./islands/BlueTagVisit.tsx": $BlueTagVisit,
     "./islands/Debug.tsx": $Debug,
+    "./islands/DescriptionCard.tsx": $DescriptionCard,
     "./islands/HeaderButton.tsx": $HeaderButton,
     "./islands/HeaderLayout.tsx": $HeaderLayout,
     "./islands/HeaderModals.tsx": $HeaderModals,
@@ -51,6 +54,7 @@ const manifest = {
     "./islands/HeaderSearchbar.tsx": $HeaderSearchbar,
     "./islands/MenuModal.tsx": $MenuModal,
     "./islands/NavItems.tsx": $NavItems,
+    "./islands/NewAddToCartButton.tsx": $NewAddToCartButton,
     "./islands/Newsletter.tsx": $Newsletter,
     "./islands/NewsletterModal.tsx": $NewsletterModal,
     "./islands/OutOfStock.tsx": $OutOfStock,

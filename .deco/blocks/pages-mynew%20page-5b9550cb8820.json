@@ -9,39 +9,18 @@
       "__resolveType": "Default - Design System"
     },
     {
-      "__resolveType": "bf-header"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "HeaderFloating"
+      }
     },
     {
+      "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
-          "label": "Banner",
-          "shadow": "none",
+          "label": "Fale Conosco",
           "section": {
-            "banners": [
-              {
-                "text": {
-                  "mobileTextPosition": "left",
-                  "desktopTextPosition": "left"
-                },
-                "image": {
-                  "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/a613921b-a7c7-4f90-b151-553d8c62149a",
-                  "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/f09cb225-d5c4-4f38-b641-10d553574d2a"
-                },
-                "matcher": "/i/*"
-              }
-            ],
-            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
-          },
-          "verticalSpacing": "top"
-        }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
-    },
-    {
-      "sections": [
-        {
-          "label": "Institutional Page",
-          "section": {
+            "__resolveType": "site/sections/Institutional/PageContent.tsx",
             "title": "Fale conosco",
             "content": {
               "alt": "Hospitalar Banner",
@@ -75,17 +54,22 @@
             },
             "asideMenu": {
               "__resolveType": "Aside Menu Global"
-            },
-            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+            }
           },
+          "verticalSpacing": "top",
           "withContainer": true,
-          "verticalSpacing": "both"
+          "shadow": "none"
         }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
+      ]
     },
     {
       "__resolveType": "bf-footer"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header Global"
+      }
     }
   ],
   "__resolveType": "$live/pages/LivePage.tsx"

@@ -14,7 +14,7 @@
         "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
         "selectedFacets": []
       },
-      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/b0a332f7-d73c-474d-88c0-924d9b167d22",
+      "favicon": "https://assets.decocache.com/hospitalar/a6b8a3f0-a94b-42da-95ab-138749202cf4/1742494385936-b0a332f7-d73c-474d-88c0-924d9b167d22",
       "titleTemplate": "%s | Hospitalar Distribuidora"
     },
     {
@@ -38,19 +38,19 @@
                   "alerts": [
                     {
                       "alt": "Parcele em até 6x sem juros",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/4db033bd-e37e-4566-834c-4f1421625bdd",
+                      "image": "https://assets.decocache.com/hospitalar/82ea94f2-7b00-4faf-ad6d-746b1a488d85/1742494387315-4db033bd-e37e-4566-834c-4f1421625bdd",
                       "textAlert": "Parcele em até 6x sem juros",
                       "textColor": "#ffffff"
                     },
                     {
                       "alt": "Envio para todo brasil",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/0d293e38-7733-487d-9edd-2e40b21ab8a7",
+                      "image": "https://assets.decocache.com/hospitalar/fbadbedc-a7b0-4f5b-85fb-07c805c27282/1742494388815-0d293e38-7733-487d-9edd-2e40b21ab8a7",
                       "textAlert": "Envio para todo Brasil",
                       "textColor": "#ffffff"
                     },
                     {
                       "alt": "3% de desconto à vista",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/988390d7-a1bf-414c-9036-01fb1c967dc5",
+                      "image": "https://assets.decocache.com/hospitalar/4e0c2641-3ca2-4fbc-baf1-002069b9db82/1742494390305-988390d7-a1bf-414c-9036-01fb1c967dc5",
                       "textAlert": "6% de desconto à vista",
                       "textColor": "#ffffff"
                     }
@@ -593,7 +593,7 @@
                         "112": "2",
                         "113": "b",
                         "alt": "Banner produtos hospitalares",
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/a6e38ab7-8897-4334-beed-985ecd75cd70"
+                        "src": "https://assets.decocache.com/hospitalar/e6f3f423-b5b0-4084-a447-68cc4146eff7/1742494391744-a6e38ab7-8897-4334-beed-985ecd75cd70"
                       },
                       "label": "Medicamentos",
                       "variant": "WithBrands",

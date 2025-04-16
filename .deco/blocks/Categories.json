@@ -20,11 +20,17 @@
               "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
               "selectedFacets": []
             },
-            "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/b0a332f7-d73c-474d-88c0-924d9b167d22",
+            "favicon": "https://assets.decocache.com/hospitalar/a6b8a3f0-a94b-42da-95ab-138749202cf4/1742494385936-b0a332f7-d73c-474d-88c0-924d9b167d22",
             "titleTemplate": "%s | Hospitalar Distribuidora"
           },
           {
             "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Header Global"
+            }
           },
           {
             "__resolveType": "website/flags/multivariate/section.ts",
@@ -44,19 +50,19 @@
                         "alerts": [
                           {
                             "alt": "Parcele em até 6x sem juros",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/4db033bd-e37e-4566-834c-4f1421625bdd",
+                            "image": "https://assets.decocache.com/hospitalar/82ea94f2-7b00-4faf-ad6d-746b1a488d85/1742494387315-4db033bd-e37e-4566-834c-4f1421625bdd",
                             "textAlert": "Parcele em até 6x sem juros",
                             "textColor": "#ffffff"
                           },
                           {
                             "alt": "Envio para todo brasil",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/0d293e38-7733-487d-9edd-2e40b21ab8a7",
+                            "image": "https://assets.decocache.com/hospitalar/fbadbedc-a7b0-4f5b-85fb-07c805c27282/1742494388815-0d293e38-7733-487d-9edd-2e40b21ab8a7",
                             "textAlert": "Envio para todo Brasil",
                             "textColor": "#ffffff"
                           },
                           {
                             "alt": "3% de desconto à vista",
-                            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/988390d7-a1bf-414c-9036-01fb1c967dc5",
+                            "image": "https://assets.decocache.com/hospitalar/4e0c2641-3ca2-4fbc-baf1-002069b9db82/1742494390305-988390d7-a1bf-414c-9036-01fb1c967dc5",
                             "textAlert": "6% de desconto à vista",
                             "textColor": "#ffffff"
                           }
@@ -599,7 +605,7 @@
                               "112": "2",
                               "113": "b",
                               "alt": "Banner produtos hospitalares",
-                              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/a6e38ab7-8897-4334-beed-985ecd75cd70"
+                              "src": "https://assets.decocache.com/hospitalar/e6f3f423-b5b0-4084-a447-68cc4146eff7/1742494391744-a6e38ab7-8897-4334-beed-985ecd75cd70"
                             },
                             "label": "Medicamentos",
                             "variant": "WithBrands",
@@ -1264,8 +1270,8 @@
                 },
                 "image": {
                   "alt": "Banner medicamentos",
-                  "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/9f36a47d-84b1-4c64-8d9d-26601ef06dad",
-                  "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/ce9f824a-ca2e-48ee-8fcc-848c03a269d3"
+                  "mobile": "https://assets.decocache.com/hospitalar/ec674e7e-45f2-43f9-a478-351f7f8d8d0c/1742494393954-9f36a47d-84b1-4c64-8d9d-26601ef06dad",
+                  "desktop": "https://assets.decocache.com/hospitalar/e4a7338a-6199-4e98-abeb-f486bb718347/1742494395409-ce9f824a-ca2e-48ee-8fcc-848c03a269d3"
                 },
                 "matcher": "/medicamentos*"
               },
@@ -1276,8 +1282,8 @@
                 },
                 "image": {
                   "alt": "banner-category",
-                  "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/8801b9a2-3da1-4532-8432-d27692c56721",
-                  "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/5efb1281-c082-4347-ae3a-66d151fce6b8"
+                  "mobile": "https://assets.decocache.com/hospitalar/550a35ee-ef69-42e4-b0de-77ea5951d622/1742494397194-8801b9a2-3da1-4532-8432-d27692c56721",
+                  "desktop": "https://assets.decocache.com/hospitalar/0fea9c66-f176-4d30-a41d-bbbbdd7afa1a/1742494398599-5efb1281-c082-4347-ae3a-66d151fce6b8"
                 },
                 "matcher": "/seringa"
               },
@@ -1288,8 +1294,8 @@
                 },
                 "image": {
                   "alt": "banner-aparelhos",
-                  "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/049ac983-d3a1-4134-ab09-7633c8b0324c",
-                  "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/52b4f8d1-e2e9-4f1b-a1eb-ab919513c323"
+                  "mobile": "https://assets.decocache.com/hospitalar/740bd2a3-6685-4475-be0f-5a2724607585/1742494399969-049ac983-d3a1-4134-ab09-7633c8b0324c",
+                  "desktop": "https://assets.decocache.com/hospitalar/7caa2184-2c8a-4d3c-9e34-1dd462e1227b/1742494401593-52b4f8d1-e2e9-4f1b-a1eb-ab919513c323"
                 },
                 "matcher": "/aparelhos"
               },
@@ -1300,8 +1306,8 @@
                 },
                 "image": {
                   "alt": "instrumental",
-                  "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/4200e00f-c3ed-4059-b6e8-1381d634a03a",
-                  "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/d67eda39-312c-46d5-8674-2ead6c81f0d7"
+                  "mobile": "https://assets.decocache.com/hospitalar/5424459c-b01c-4dd4-8bc5-b2e724822260/1742494403248-4200e00f-c3ed-4059-b6e8-1381d634a03a",
+                  "desktop": "https://assets.decocache.com/hospitalar/9c2c015f-187d-4207-8905-0fa545579112/1742494405220-d67eda39-312c-46d5-8674-2ead6c81f0d7"
                 },
                 "matcher": "/instrumental"
               }
@@ -1342,7 +1348,7 @@
                 "textAlign": "Center"
               },
               {
-                "html": "<h2 dir=\"ltr\">Os Principais Medicamentos do Mercado: Uma Visão Detalhada</h2><p dir=\"ltr\">Na Hospitalar Distribuidora, compreendemos a importância de estar bem informado sobre os medicamentos mais utilizados no mercado. Por isso, preparamos um guia detalhado sobre os principais produtos que oferecemos, garantindo que você tenha acesso às informações mais relevantes e precisas.</p><h2 dir=\"ltr\">Ibuprofeno: O Aliado Contra a Dor e a Inflamação</h2><p dir=\"ltr\">Ibuprofeno é um medicamento amplamente conhecido por suas propriedades anti-inflamatórias e analgésicas. É ideal para aliviar dores leves a moderadas, como dores de cabeça, dores musculares e desconfortos dentários. Além de ser um antipirético eficaz, o Ibuprofeno é uma escolha comum para combater febres e proporcionar alívio rápido e eficiente.</p><h2 dir=\"ltr\">Hidrocortisona Injetável: A Solução para Casos Agudos</h2><p dir=\"ltr\">A Hidrocortisona injetável é um corticosteróide que atua rapidamente para reduzir inflamações severas. É frequentemente administrada em situações de emergência, como choques anafiláticos e crises asmáticas. Sua ação rápida e potente a torna um componente essencial em tratamentos de condições agudas.</p><h2 dir=\"ltr\">Lidocaína: Versatilidade em Anestesia Local</h2><p dir=\"ltr\">A Lidocaína, disponível em diversas formas, como pomada, solução injetável, spray e gel, é amplamente utilizada em procedimentos médicos devido à sua eficácia como anestésico local. É ideal para procedimentos superficiais e também é usada para aliviar dores de queimaduras, feridas e outros desconfortos de pele. Sua versatilidade a torna indispensável em várias configurações médicas.</p><h2 dir=\"ltr\">Neocaína e Ropivacaína: Alternativas Eficientes em Anestesia</h2><p dir=\"ltr\">A Neocaína e a Ropivacaína são anestésicos locais de última geração. Oferecem uma excelente alternativa para pacientes que buscam uma solução eficaz para alívio da dor durante procedimentos cirúrgicos. Ambos os medicamentos são conhecidos por seu perfil de segurança e eficácia, proporcionando conforto e tranquilidade durante tratamentos médicos.</p><p dir=\"ltr\">Em nossa jornada para fornecer produtos de qualidade superior, estamos constantemente atualizando nosso catálogo para incluir medicamentos essenciais como Ibuprofeno, Hidrocortisona injetável, Lidocaína em suas diversas formas, Neocaína e Ropivacaína. Nos esforçamos para garantir que você tenha acesso aos melhores produtos do mercado, sempre mantendo o foco na sua saúde e bem-estar.</p><h3 dir=\"ltr\">Explore mais na Hospitalar Distribuidora</h3><p dir=\"ltr\">Como líderes na distribuição de produtos farmacêuticos, estamos aqui para apoiá-lo em cada passo do caminho. Encorajamos você a explorar nossa gama de produtos, como <strong><a href=\"https://www.hospitalardistribuidora.com.br/seringa\" data-mce-href=\"https://www.hospitalardistribuidora.com.br/seringa\">seringas de insulina</a></strong> e <a href=\"https://www.hospitalardistribuidora.com.br/scalp\" data-mce-href=\"https://www.hospitalardistribuidora.com.br/scalp\"><strong>scalp</strong>﻿</a>, para encontrar tudo o que precisa em um só lugar. Confie na Hospitalar Distribuidora para ser sua parceira confiável em saúde e bem-estar.</p>",
+                "html": "<h2 dir=\"ltr\">Os Principais Medicamentos do Mercado: Uma Visão Detalhada</h2><p dir=\"ltr\">Na Hospitalar Distribuidora, compreendemos a importância de estar bem informado sobre os medicamentos mais utilizados no mercado. Por isso, preparamos um guia detalhado sobre os principais produtos que oferecemos, garantindo que você tenha acesso às informações mais relevantes e precisas.</p><h2 dir=\"ltr\">Ibuprofeno: O Aliado Contra a Dor e a Inflamação</h2><p dir=\"ltr\">Ibuprofeno é um medicamento amplamente conhecido por suas propriedades anti-inflamatórias e analgésicas. É ideal para aliviar dores leves a moderadas, como dores de cabeça, dores musculares e desconfortos dentários. Além de ser um antipirético eficaz, o Ibuprofeno é uma escolha comum para combater febres e proporcionar alívio rápido e eficiente.</p><h2 dir=\"ltr\">Hidrocortisona Injetável: A Solução para Casos Agudos</h2><p dir=\"ltr\">A Hidrocortisona injetável é um corticosteróide que atua rapidamente para reduzir inflamações severas. É frequentemente administrada em situações de emergência, como choques anafiláticos e crises asmáticas. Sua ação rápida e potente a torna um componente essencial em tratamentos de condições agudas.</p><h2 dir=\"ltr\">Lidocaína: Versatilidade em Anestesia Local</h2><p dir=\"ltr\">A Lidocaína, disponível em diversas formas, como pomada, solução injetável, spray e gel, é amplamente utilizada em procedimentos médicos devido à sua eficácia como anestésico local. É ideal para procedimentos superficiais e também é usada para aliviar dores de queimaduras, feridas e outros desconfortos de pele. Sua versatilidade a torna indispensável em várias configurações médicas.</p><h2 dir=\"ltr\">Neocaína e Ropivacaína: Alternativas Eficientes em Anestesia</h2><p dir=\"ltr\">A Neocaína e a Ropivacaína são anestésicos locais de última geração. Oferecem uma excelente alternativa para pacientes que buscam uma solução eficaz para alívio da dor durante procedimentos cirúrgicos. Ambos os medicamentos são conhecidos por seu perfil de segurança e eficácia, proporcionando conforto e tranquilidade durante tratamentos médicos.</p><p dir=\"ltr\">Em nossa jornada para fornecer produtos de qualidade superior, estamos constantemente atualizando nosso catálogo para incluir medicamentos essenciais como Ibuprofeno, Hidrocortisona injetável, Lidocaína em suas diversas formas, Neocaína e Ropivacaína. Nos esforçamos para garantir que você tenha acesso aos melhores produtos do mercado, sempre mantendo o foco na sua saúde e bem-estar.</p><h3 dir=\"ltr\">Explore mais na Hospitalar Distribuidora</h3><p dir=\"ltr\">Como líderes na distribuição de produtos farmacêuticos, estamos aqui para apoiá-lo em cada passo do caminho. Encorajamos você a explorar nossa gama de produtos, como <strong><a href=\"https://www.hospitalardistribuidora.com.br/seringa\" data-mce-href=\"https://www.hospitalardistribuidora.com.br/seringa\">seringas de insulina</a></strong> e <a href=\"https://www.hospitalardistribuidora.com.br/scalp\" data-mce-href=\"https://www.hospitalardistribuidora.com.br/scalp\"><strong>scalp</strong></a>, para encontrar tudo o que precisa em um só lugar. Confie na Hospitalar Distribuidora para ser sua parceira confiável em saúde e bem-estar.</p>",
                 "page": {
                   "sort": "price:desc",
                   "count": 1,

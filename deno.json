@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "local": "DECO_SITE_NAME=hospitalar DECO_ENV_NAME=localhost deno task start",
+     "local": "DECO_SITE_NAME=hospitalar DECO_ENV_NAME=localhost deno task start",
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
     "gen": "deno run -A dev.ts --gen-only",
     "play": "USE_LOCAL_STORAGE_ONLY=true deno task start",
