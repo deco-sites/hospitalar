@@ -18,7 +18,7 @@
       "withContainer": true,
       "verticalSpacing": "none",
       "backgroundImage": "/arquivos/hospitalarNewsBackground.png",
-      "backgroundSize": "100%"
+      "backgroundSize": "cover"
     },
     {
       "label": "Footer",
