@@ -27,7 +27,10 @@
             "__resolveType": "analytics"
           },
           {
-            "__resolveType": "HeaderFloating"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "HeaderFloating"
+            }
           },
           {
             "__resolveType": "site/sections/Category/CategoryBanner.tsx",
