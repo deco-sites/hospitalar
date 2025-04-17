@@ -34,7 +34,7 @@ function HeaderLayout(
     navItems
   }: IProps,
 ) {
-
+  
   const isScrolling = useSignal(false);
   const lastScrollTop = 0;
 
@@ -169,11 +169,13 @@ function HeaderLayout(
                 </div>
               )
           }
+          <Modals
+            minicart={minicart}
+          />
         </header>
       </>
     );
   }
-
 
   return (
     <>

@@ -27,7 +27,7 @@ export interface EditableProps {
   /**
    * @title Page path
    * @description When user clicks on the search button, navigate it to
-   * @default /s
+   * @default /busca
    */
   action?: string;
   /**

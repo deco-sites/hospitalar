@@ -7,8 +7,8 @@ import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
 import { ICartProps } from "$store/components/minicart/Cart.tsx";
 import { LoginSetting } from "site/components/header/HeaderLayoutV2.tsx";
 
-const Menu = lazy(() => import("$store/islands/MenuModal.tsx"));
-const Cart = lazy(() => import("$store/components/minicart/Cart.tsx"));
+import Menu from "$store/islands/MenuModal.tsx";
+import Cart from "$store/components/minicart/Cart.tsx";
 
 interface Props {
   login?: LoginSetting[]
@@ -24,7 +24,7 @@ function Modals({ menu, minicart, login }: Props) {
       <span class="loading loading-ring" />
     </div>
   );
-
+  
   return (
     <>
       {menu && (
