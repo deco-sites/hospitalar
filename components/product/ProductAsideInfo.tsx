@@ -52,7 +52,7 @@ function ProductAsideInfo({
                 </strong>{" "}
                 à vista ou
               </span>
-              <div class="px-2 max-w-[168px] flex items-center justify-center gap-2 bg-[#85bad533] border-[1.4px] border-[#2D386E] rounded-[10px] md:h-[30px]">
+              <div class="px-2 max-w-[180px] flex items-center justify-center gap-2 bg-[#85bad533] border-[1.4px] border-[#2D386E] rounded-[10px] md:h-[30px]">
                 <Icon id="CurrencyIcon" height={24} width={24} />
                 <span class="font-poppins not-italic font-normal text-[8px] md:text-[12px] leading-[18px] text-[#2D386E]">
                   <strong class="font-bold">Economize</strong> {` ${formatPrice(listPrice! - price! * 0.97, offers!.priceCurrency)} `}
