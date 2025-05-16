@@ -17,15 +17,8 @@
     "dev": "deno run -A --env --unstable --unstable-hmr dev.ts",
     "reload": "deno cache -r https://deco.cx/run"
   },
-  "githooks": {
-    "pre-commit": "check"
-  },
-  "exclude": [
-    "node_modules",
-    "static/",
-    "README.md",
-    "**/_fresh/*"
-  ],
+  "githooks": { "pre-commit": "check" },
+  "exclude": ["node_modules", "static/", "README.md", "**/_fresh/*"],
   "nodeModulesDir": false,
   "compilerOptions": {
     "jsx": "react-jsx",
@@ -37,24 +30,17 @@
     "deco-sites/std/": "https://cdn.jsdelivr.net/gh/deco-sites/std@1.26.7/",
     "$live/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.83.4/",
     "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.83.4/",
-    "$fresh/": "https://deno.land/x/fresh@1.6.1/",
-    "preact": "https://esm.sh/preact@10.19.2",
-    "preact/": "https://esm.sh/preact@10.19.2/",
+    "$fresh/": "https://deno.land/x/fresh@1.7.3/",
+    "preact": "https://esm.sh/preact@10.22.0",
+    "preact/": "https://esm.sh/preact@10.22.0/",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.2",
-    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.1",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.0",
+    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "std/": "https://deno.land/std@0.190.0/",
     "partytown/": "https://cdn.jsdelivr.net/gh/deco-cx/partytown@0.4.8/",
     "daisyui": "npm:daisyui@3.0.3",
     "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.53.10/",
     "site/": "./"
   },
-  "lint": {
-    "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
-    }
-  }
+  "lint": { "rules": { "tags": ["fresh", "recommended"] } }
 }
