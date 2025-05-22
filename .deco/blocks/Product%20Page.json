@@ -6,17 +6,6 @@
       "__resolveType": "Default - Design System"
     },
     {
-      "page": {
-        "__resolveType": "deco-sites/std/functions/vtexProductDetailsPage.ts"
-      },
-      "favicon": "https://assets.decocache.com/hospitalar/7665ac87-6228-47e6-a99f-7300c4ff696d/1742494544910-b28cbb45-43d4-4dd7-9cde-908f4d6bc5b6",
-      "__resolveType": "deco-sites/std/sections/SEOPDP.tsx",
-      "titleTemplate": "%s | Hospitalar Distribuidora",
-      "structuredData": {
-        "useDataFromSEO": true
-      }
-    },
-    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "HeaderFloating"
@@ -35,5 +24,15 @@
       "__resolveType": "bf-footer"
     }
   ],
-  "__resolveType": "$live/pages/LivePage.tsx"
+  "__resolveType": "$live/pages/LivePage.tsx",
+  "seo": {
+    "__resolveType": "site/sections/Seo/SeoPdpCustomV2.tsx",
+    "jsonLD": {
+      "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts",
+      "slug": {
+        "__resolveType": "website/functions/requestToParam.ts",
+        "param": "slug"
+      }
+    }
+  }
 }

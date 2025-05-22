@@ -30,6 +30,7 @@
     "deco-sites/std/": "https://cdn.jsdelivr.net/gh/deco-sites/std@1.26.7/",
     "$live/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.83.4/",
     "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.83.4/",
+    "@deco/deco": "jsr:@deco/deco@1.115.7",
     "$fresh/": "https://deno.land/x/fresh@1.7.3/",
     "preact": "https://esm.sh/preact@10.22.0",
     "preact/": "https://esm.sh/preact@10.22.0/",

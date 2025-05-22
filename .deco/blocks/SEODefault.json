@@ -6,5 +6,5 @@
   "description": "Precisando de produtos médicos e hospitalares? Visite o site da Hospitalar Distribuidora. Variedade, qualidade e com parcelamento até 6x sem juros. Confira!",
   "__resolveType": "deco-sites/std/sections/SEO.tsx",
   "titleTemplate": "%s | Hospitalar Distribuidora",
-  "descriptionTemplate": "%s | Deco.cx"
+  "descriptionTemplate": "%s | Hospitalar Distribuidora"
 }

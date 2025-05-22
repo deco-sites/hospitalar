@@ -23,7 +23,7 @@ export interface Props {
     sameAs?: string[];
 }
 
-export function loader(props: Props, _req: Request, ctx: AppContext) {
+export function loader(props: Props, _req: Request, _ctx: AppContext) {
     const {
         contactPoint,
         logo,
