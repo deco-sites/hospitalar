@@ -1,5 +1,70 @@
 {
+  "seo": {
+    "type": "website",
+    "image": "https://assets.decocache.com/hospitalar/73802a9f-72da-48ee-9574-2beb5d9c8dd0/1742494408458-d74c7a7c-3410-49fd-b63f-d57e23ba787c",
+    "title": "Hospitalar Distribuidora - Loja de Produtos Médicos Hospitalares",
+    "locale": "",
+    "favicon": "https://assets.decocache.com/hospitalar/e40bd188-e0a7-47b5-bfd5-ecf7fafaa399/1742494409513-9bd46827-628e-43d6-a30e-61387d40009d",
+    "siteUrl": "",
+    "siteName": "",
+    "canonical": "https://www.hospitalardistribuidora.com.br",
+    "themeColor": "#2D386E",
+    "description": "Precisando de produtos médicos e hospitalares? Visite o site da Hospitalar Distribuidora. Variedade, qualidade e com parcelamento até 6x sem juros. Confira!",
+    "titleTemplate": "%s | Hospitalar Distribuidora",
+    "descriptionTemplate": "%s | Hospitalar Distribuidora"
+  },
   "theme": {
-    "__resolveType": "Fun"
+    "__resolveType": "Fashion theme"
+  },
+  "global": [
+    {
+      "trackingIds": [
+        "GTM-MKLM4Q4"
+      ],
+      "__resolveType": "website/sections/Analytics/Analytics.tsx",
+      "dangerouslyRunOnMainThread": true
+    },
+    {
+      "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
+    }
+  ],
+  "routes": [
+    {
+      "__resolveType": "website/loaders/pages.ts"
+    },
+    {
+      "__resolveType": "website/loaders/redirects.ts"
+    },
+    {
+      "__resolveType": "vtex/loaders/proxy.ts",
+      "includeSiteMap": [],
+      "extraPathsToProxy": [],
+      "includeScriptsToHead": {
+        "includes": []
+      },
+      "excludePathsFromDecoSiteMap": []
+    }
+  ],
+  "caching": {
+    "directives": [],
+    "enabled": false
+  },
+  "commerce": {
+    "platform": "other"
+  },
+  "platform": "vtex",
+  "__resolveType": "site/apps/site.ts",
+  "firstByteThresholdMS": false,
+  "abTesting": {
+    "replaces": [],
+    "includeScriptsToHead": {
+      "includes": []
+    },
+    "includeScriptsToBody": {
+      "includes": []
+    }
+  },
+  "flavor": {
+    "framework": "fresh"
   }
 }
