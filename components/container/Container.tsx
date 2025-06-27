@@ -36,7 +36,6 @@ export interface Props {
      */
     classes?: string;
   }[];
-
    /** @default false */
    isHeader?: boolean;
 }
