@@ -135,7 +135,6 @@ function ProductShelf({
     return null;
   }
 
-  
   function redesignArray( products: [] ): [Product[]]{
     let arrayProducts = [];
 
