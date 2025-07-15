@@ -119,7 +119,6 @@ function Dots({ images, interval = 0, slideTwoRow }: DotsProps) {
   );
 }
 
-
 function ProductShelf({
   products, 
   title,
