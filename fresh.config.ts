@@ -11,6 +11,10 @@ import decoManifest from "./manifest.gen.ts";
 
 import { defineConfig } from "$fresh/server.ts";
 export default defineConfig({
+  render: (ctx, render) => {
+    ctx.lang = 'pt-BR'
+    render()
+  },
   plugins: [
     ...plugins(
       {
