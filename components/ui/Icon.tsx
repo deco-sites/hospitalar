@@ -84,6 +84,7 @@ export type AvailableIcons =
   | "free-shipping"
   | "Wishlist"
   | "SetaPaginationForward"
+  | "CurrencyIcon"
   | "SetaPaginationBackward";
   
 
