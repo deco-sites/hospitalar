@@ -25,8 +25,12 @@
       "label": "Saiba Mais"
     },
     {
-      "href": "/i/contato",
-      "label": "Fale Conosco"
+      "href": "/i/frete-gratis",
+      "label": "Frete Gratis"
+    },
+    {
+      "label": "Fale Conosco",
+      "href": "/i/contato"
     }
   ],
   "__resolveType": "site/sections/Institutional/AsideMenu.tsx"

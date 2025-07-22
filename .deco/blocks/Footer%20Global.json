@@ -71,8 +71,12 @@
                 "label": "Blog"
               },
               {
-                "href": "/i/contato",
-                "label": "Fale conosco"
+                "href": "/i/frete-gratis",
+                "label": "Frete Gratis"
+              },
+              {
+                "label": "Fale conosco",
+                "href": "/i/contato"
               }
             ]
           },
