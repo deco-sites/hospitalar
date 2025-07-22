@@ -19,7 +19,7 @@ function FreeShippingProgressBar({ target, total, currency, locale, rule_text, r
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const newProgress = (total / 49900) * 100;
+    const newProgress = (total / 59900) * 100;
     setProgress(newProgress);
   }, [total]);
 
