@@ -46,7 +46,7 @@ function FreeShippingProgressBar({ target, total, currency, locale, rule_text, r
 
       <div class="flex flex-row items-start justify-start h-auto w-full mt-[6px] gap-2">
         <span class="text-sm font-normal text-primary">{rule_text ? rule_text : "*Sul e Sudeste"}</span>
-        <a class="text-sm font-normal text-primary underline decoration-1" href={redirect_link ? redirect_link : "#"}>{redirect_text ? redirect_text : "regulamento"}</a>
+        <a class="text-sm font-normal text-primary underline decoration-1" href="/i/frete-gratis">{redirect_text ? redirect_text : "regulamento"}</a>
       </div>
 
     </div>
