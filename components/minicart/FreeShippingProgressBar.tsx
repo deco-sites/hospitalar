@@ -26,10 +26,10 @@ function FreeShippingProgressBar({ target, total, currency, locale, rule_text, r
   return (
     <div class="flex flex-col w-full gap-3 mb-4">
       <div class="flex text-primary">
-        {total < 49900
+        {total < 59900
           ? (
             <span class="text-sm font-normal">
-              {left_text ? left_text : "Faltam"} {formatPrice((49900 - total) / 100, currency, locale)}{right_text ? right_text : " para ganhar frete grátis*"}
+              {left_text ? left_text : "Faltam"} {formatPrice((59900 - total) / 100, currency, locale)}{right_text ? right_text : " para ganhar frete grátis*"}
             </span>
           )
           : <span>Você ganhou frete grátis!</span>}
@@ -39,7 +39,7 @@ function FreeShippingProgressBar({ target, total, currency, locale, rule_text, r
         <progress
           class="progress progress-primary w-full"
           value={total}
-          max={49900}
+          max={59900}
         />
         <Icon id="Truck" size={34} strokeWidth={1} class="absolute top-0 right-1" style={{ left: `${progress}%` }} />
       </div>
