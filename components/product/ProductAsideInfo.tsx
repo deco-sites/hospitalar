@@ -1,4 +1,5 @@
 import type { Product } from "apps/commerce/types.ts";
+import Icon from "$store/components/ui/Icon.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 
@@ -43,13 +44,21 @@ function ProductAsideInfo({
       {availability === "https://schema.org/InStock"
         ? (
           <div class="mt-7">
-            <span class="not-italic font-poppins font-bold text-[#2C376D] text-base ">
-              {" "}
-              <strong class="font-bold text-3xl text-[#2C376D] not-italic font-poppins lg:text-3xl">
-                {formatPrice(price! * 0.97, offers!.priceCurrency)}
-              </strong>{" "}
-              à vista
-            </span>
+            <div class="flex flex-row gap-[14px] items-center">
+              <span class="not-italic font-poppins text-[#2C376D] text-base ">
+                {" "}
+                <strong class="font-bold text-2xl text-[#2C376D] not-italic font-poppins md:text-3xl">
+                  {formatPrice(price! * 0.97, offers!.priceCurrency)}
+                </strong>{" "}
+                à vista ou
+              </span>
+              <div class="px-2 max-w-[180px] flex items-center justify-center gap-2 bg-[#85bad533] border-[1.4px] border-[#2D386E] rounded-[10px] md:h-[30px]">
+                <Icon id="CurrencyIcon" height={24} width={24} />
+                <span class="font-poppins not-italic font-normal text-[8px] md:text-[12px] leading-[18px] text-[#2D386E]">
+                  <strong class="font-bold">Economize</strong> {` ${formatPrice(listPrice! - price! * 0.97, offers!.priceCurrency)} `}
+                </span>
+              </div>
+            </div>
             <div class="flex flex-row gap-2 items-center mt-2">
               {listPrice !== price && (
                 <span class="line-through text-base-300 text-xs lg:text-base">
@@ -57,7 +66,7 @@ function ProductAsideInfo({
                 </span>
               )}
               <span class="text-[#2C376D] text-base not-italic font-poppins font-normal">
-                ou{"  "}
+                {"  "}
                 <strong>
                   {formatPrice(price, offers!.priceCurrency!)}
                 </strong>
