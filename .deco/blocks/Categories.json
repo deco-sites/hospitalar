@@ -456,18 +456,7 @@
   "__resolveType": "$live/pages/LivePage.tsx",
   "seo": {
     "__resolveType": "site/sections/Seo/SeoPlpCustomV2.tsx",
-    "seo_by_url_list": [
-      {
-        "title": "Medicamentos - título",
-        "description": "Medicamentos - descrição",
-        "url": "/medicamentos"
-      },
-      {
-        "url": "/medicamentos/acidose-metabolica",
-        "title": "Medicamentos acidose - título",
-        "description": "Medicamentos acidose - descrição"
-      }
-    ],
+    "seo_by_url_list": [],
     "jsonLD": {
       "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
       "sort": "price:desc",
