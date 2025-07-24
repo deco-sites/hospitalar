@@ -81,10 +81,7 @@
             "__resolveType": "Default - Design System"
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "HeaderFloating"
-            }
+            "__resolveType": "HeaderFloating"
           },
           {
             "__resolveType": "site/sections/Container.tsx",
