@@ -9,10 +9,7 @@
       "__resolveType": "Default - Design System"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "HeaderFloating"
-      }
+      "__resolveType": "HeaderFloating"
     },
     {
       "__resolveType": "site/sections/Container.tsx",
@@ -31,7 +28,7 @@
                 },
                 {
                   "question": "Envio",
-                  "answer": "<div class=\"flex flex-col md:flex-row gap-10\"><div class=\"flex items-center gap-5\"><img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/3075efee-5729-46e6-b0c3-bc39262db19c/Frame-(4).png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/3075efee-5729-46e6-b0c3-bc39262db19c/Frame-(4).png\"><p><span class=\"font-bold\">Correios</span><br>Sedex e PAC</p></div><div class=\"flex items-center gap-5\"><img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/c3d24b62-565d-48e6-ad59-2fcd5fa2e886/Frame-(5).png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/c3d24b62-565d-48e6-ad59-2fcd5fa2e886/Frame-(5).png\"><p><span class=\"font-bold\">Transportadoras</span><br>Transportadoras Quality, Rodonaves e Braspress</p></div></div>"
+                  "answer": "<div class=\"flex flex-col md:flex-row gap-10\"><div class=\"flex items-center gap-5\"><img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/3075efee-5729-46e6-b0c3-bc39262db19c/Frame-(4).png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/3075efee-5729-46e6-b0c3-bc39262db19c/Frame-(4).png\"><p><span class=\"font-bold\">Correios</span><br>Sedex e PAC</p></div><div class=\"flex items-center gap-5\"><img class=\"icon\" src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/c3d24b62-565d-48e6-ad59-2fcd5fa2e886/Frame-(5).png\" data-mce-src=\"https://deco-sites-assets.s3.sa-east-1.amazonaws.com/hospitalar/c3d24b62-565d-48e6-ad59-2fcd5fa2e886/Frame-(5).png\"><p><span class=\"font-bold\">Transportadoras</span><br>TransportadorasQuality, Rodonaves e Braspress</p></div></div>"
                 },
                 {
                   "question": "Comprar direto com o vendedor",

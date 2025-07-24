@@ -56,11 +56,16 @@ import * as $$$$$$47 from "./sections/Product/SearchNotFound.tsx";
 import * as $$$$$$48 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$49 from "./sections/Product/ShopTogether.tsx";
 import * as $$$$$$50 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$51 from "./sections/Seo/SeoHomeCustom.tsx";
-import * as $$$$$$52 from "./sections/Seo/SeoPDPCustom.tsx";
-import * as $$$$$$53 from "./sections/Seo/SeoPLPCustom.tsx";
-import * as $$$$$$54 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$55 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$51 from "./sections/Seo/SeoBaseCustomV2.tsx";
+import * as $$$$$$52 from "./sections/Seo/SeoCategoryText.tsx";
+import * as $$$$$$53 from "./sections/Seo/SeoHomeCustom.tsx";
+import * as $$$$$$54 from "./sections/Seo/SeoPDPCustom.tsx";
+import * as $$$$$$56 from "./sections/Seo/SeoPdpCustomV2.tsx";
+import * as $$$$$$57 from "./sections/Seo/SeoPlpCustomV2.tsx";
+import * as $$$$$$55 from "./sections/Seo/SeoPLPV6.tsx";
+import * as $$$$$$58 from "./sections/Seo/SeoTagH1PLPs.tsx";
+import * as $$$$$$59 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$60 from "./sections/Social/WhatsApp.tsx";
 
 const manifest = {
   "sections": {
@@ -115,11 +120,16 @@ const manifest = {
     "site/sections/Product/SearchResult.tsx": $$$$$$48,
     "site/sections/Product/ShopTogether.tsx": $$$$$$49,
     "site/sections/Product/Wishlist.tsx": $$$$$$50,
-    "site/sections/Seo/SeoHomeCustom.tsx": $$$$$$51,
-    "site/sections/Seo/SeoPDPCustom.tsx": $$$$$$52,
-    "site/sections/Seo/SeoPLPCustom.tsx": $$$$$$53,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$54,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$55,
+    "site/sections/Seo/SeoBaseCustomV2.tsx": $$$$$$51,
+    "site/sections/Seo/SeoCategoryText.tsx": $$$$$$52,
+    "site/sections/Seo/SeoHomeCustom.tsx": $$$$$$53,
+    "site/sections/Seo/SeoPDPCustom.tsx": $$$$$$54,
+    "site/sections/Seo/SeoPdpCustomV2.tsx": $$$$$$56,
+    "site/sections/Seo/SeoPlpCustomV2.tsx": $$$$$$57,
+    "site/sections/Seo/SeoPLPV6.tsx": $$$$$$55,
+    "site/sections/Seo/SeoTagH1PLPs.tsx": $$$$$$58,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$59,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$60,
   },
   "apps": {
     "site/apps/deco/records.ts": $$$$$$$$$$$0,
