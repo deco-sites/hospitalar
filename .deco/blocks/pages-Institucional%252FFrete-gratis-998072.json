@@ -1,0 +1,71 @@
+{
+  "name": "Institucional/Frete-gratis",
+  "path": "/i/frete-gratis",
+  "sections": [
+    {
+      "__resolveType": "SEODefault"
+    },
+    {
+      "__resolveType": "Default - Design System"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "HeaderFloating"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Container.tsx",
+      "sections": [
+        {
+          "label": "Frete Gratis",
+          "section": {
+            "__resolveType": "site/sections/Institutional/PageContent.tsx",
+            "title": "Regulamento de Frete Grátis – Envio Expresso",
+            "content": {
+              "__resolveType": "site/sections/Institutional/Questions.tsx",
+              "questions": [
+                {
+                  "question": "Condições Gerais",
+                  "answer": "<p>Oferecemos frete grátis na modalidade <strong>Envio Expresso</strong> para clientes das <strong>regiões Sul e Sudeste</strong> que realizarem pedidos a partir de <strong>R$ 599,00</strong> (valor total dos produtos, excluindo o frete).</p><p></p><p></p><p>Esta condição está sujeita aos critérios de dimensão e peso especificados abaixo e pode ser alterada ou encerrada a qualquer momento sem aviso prévio.</p>"
+                },
+                {
+                  "question": "Regiões Atendidas",
+                  "answer": "<h4><strong><span style=\"color: black; font-size: 11pt\">📍 Sul</span></strong></h4><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span>Estados: <strong>Paraná (PR), Santa Catarina (SC), Rio Grande do Sul (RS)<br><br></strong></p><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span>Valor mínimo para frete grátis: <strong>R$ 599,00<br><br></strong></p><h4><strong><span style=\"color: black; font-size: 11pt\">📍 Sudeste</span></strong></h4><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span>Estados: <strong>São Paulo (SP), Rio de Janeiro (RJ), Minas Gerais (MG), Espírito Santo (ES)<br><br></strong></p><p><span style=\"font-size: 11pt\">Valor mínimo para frete grátis: </span><strong><span style=\"font-size: 11pt\">R$ 599,00</span></strong></p>"
+                },
+                {
+                  "question": "Especificações de Encomenda",
+                  "answer": "<p>Para que o pedido seja elegível ao frete grátis via Envio Expresso, as encomendas devem respeitar os seguintes limites físicos:</p><h4><strong><span style=\"color: black; font-size: 11pt\">📦 Dimensões e Peso</span></strong></h4><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span><strong>Dimensões máximas</strong>: até <strong>100 cm</strong> em cada lado (altura, largura e comprimento)<br><br></p><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span><strong>Soma máxima das dimensões</strong>: <strong>200 cm</strong> (altura + largura + comprimento)<br><br></p><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span><strong>Peso máximo</strong>: <strong>30 kg<br><br></strong></p><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span><strong>Dimensões mínimas</strong>: <strong>13 cm x 8 cm x 0,4 cm<br><br></strong></p><h4><strong><span style=\"color: black; font-size: 11pt\">🔁 Formatos Não Convencionais (Rolos/Cilindros)</span></strong></h4><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span><strong>Comprimento máximo</strong>: <strong>100 cm<br><br></strong></p><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span><strong>Diâmetro máximo</strong>: <strong>91 cm<br><br></strong></p><p><strong><span style=\"font-size: 11pt\">Soma das dimensões</span></strong><span style=\"font-size: 11pt\">: até </span><strong><span style=\"font-size: 11pt\">200 cm</span></strong><span style=\"font-size: 11pt\"> (2 x diâmetro + comprimento)</span></p>"
+                },
+                {
+                  "question": "Observações Importantes",
+                  "answer": "<p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span>O valor considerado é o <strong>total da compra em produtos</strong>, <strong>excluindo cupons ou descontos aplicados sobre o frete</strong>.<br><br></p><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span>Apenas produtos <strong>vendidos e entregues por nossa loja</strong> estão incluídos na promoção.<br><br></p><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span>Itens que ultrapassem os limites de peso ou dimensão poderão ter o frete cobrado normalmente, mesmo que o valor da compra ultrapasse R$ 599,00.<br><br></p><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span>Os prazos de entrega variam conforme o CEP e são informados no checkout.<br><br></p>"
+                },
+                {
+                  "question": "Reentregas e Trocas",
+                  "answer": "<p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span>Caso o pedido retorne por <strong>endereço incorreto</strong>, <strong>ausência de recebedor</strong> ou <strong>recusa</strong>, um novo frete será cobrado para o reenvio.<br><br></p><p><span>●</span><span style=\"font-size: 7pt\">&nbsp;&nbsp;&nbsp;&nbsp; </span>Em caso de <strong>devolução parcial</strong>, se o valor restante da compra ficar <strong>abaixo de R$ 599,00</strong>, o frete originalmente concedido poderá ser cobrado.</p>"
+                }
+              ],
+              "layout": {
+                "headerAlignment": "center"
+              }
+            },
+            "asideMenu": {
+              "__resolveType": "Aside Menu Global"
+            }
+          },
+          "verticalSpacing": "top",
+          "withContainer": true,
+          "shadow": "none"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer Global"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
