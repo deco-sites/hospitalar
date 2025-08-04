@@ -16,6 +16,10 @@ import TagWarning from "$store/components/ui/TagWarning.tsx";
 import FreeShipping from "$store/components/product/FreeShipping.tsx";
 import { clx } from "$store/sdk/clx.ts";
 import NewAddToCartButton from "site/islands/NewAddToCartButton.tsx";
+import { useSignal } from '@preact/signals'
+import { scriptAsDataURI } from "apps/utils/dataURI.ts";
+import { useId } from "preact/hooks";
+
 
 export interface Layout {
     basics?: {
@@ -111,11 +115,9 @@ function NewProductCard(
     const { listPrice, price, installment, seller, availability } = useOffer(
         offers,
     );
-
+    
     //warning product
-
     const strict = category?.split(">")?.[0];
-
     let isRestricted = false;
 
     if (strict === "Medicamentos") {
@@ -155,6 +157,7 @@ function NewProductCard(
             ],
         },
     };
+
     const l = layout;
     const align =
         !l?.basics?.contentAlignment || l?.basics?.contentAlignment == "Left"
@@ -172,17 +175,44 @@ function NewProductCard(
         </li>
     ));
 
-    const addToCartButtonClassNames = (variant: string | undefined) =>
-        `!bg-[#2C376D] h-10 w-full font-poppins not-italic font-semibold text-white btn btn-${BUTTON_VARIANTS[variant ?? "primary"]
-        }`;
+    const selectedVariant = useSignal(product.sku || "");
 
-    const cta = layout?.basics?.ctaMode === "Go to Product Page"
+    const addToCartButtonClassNames = (variant: string | undefined) =>
+        `!bg-[#2C376D] h-10 w-full font-poppins not-italic font-semibold text-white btn btn-${BUTTON_VARIANTS[variant ?? "primary"]}`;
+
+    const id = useId();
+
+    const selectToggle = (selectButton, selectModal) => {
+    const button = globalThis.document.querySelector(selectButton);
+    const modal = globalThis.document.querySelector(selectModal);
+    
+    if(modal && button) {
+        const closeButton = modal.querySelector(".close-button");
+        
+        const toggleModal = () => {
+            if(modal.classList.contains("flex")) {
+                modal.classList.add("hidden");
+                modal.classList.remove("flex");
+            } else {
+                modal.classList.add("flex");
+                modal.classList.remove("hidden");
+            }
+        };
+        
+        button.addEventListener("click", toggleModal);
+        
+        if (closeButton) {
+            closeButton.addEventListener("click", toggleModal);
+        }
+    }
+}
+
+    const cta = layout?.basics?.ctaMode === "Go to ProductPage"
         ? (
             <a
                 href={url && relative(url)}
                 aria-label="view product"
-                class={`min-w-[162px] ${addToCartButtonClassNames(layout?.basics?.ctaVariation)
-                    }`}
+                class={`min-w-[162px] ${addToCartButtonClassNames(layout?.basics?.ctaVariation)}`}
             >
                 <span class="max-lg:hidden flex font-medium">
                     {l?.basics?.ctaText || "Ver produto"}
@@ -195,31 +225,89 @@ function NewProductCard(
         : l?.basics?.mobileCtaText
             ? (
                 <>
-                    <NewAddToCartButton
-                        quantity={1}
-                        name={product.name as string}
-                        discount={price && listPrice ? listPrice - price : 0}
-                        productGroupId={product.isVariantOf?.productGroupID ?? ""}
-                        price={price as number}
-                        sellerId={seller as string}
-                        skuId={product.sku}
-                        label="Comprar"
-                        classes={addToCartButtonClassNames(layout?.basics?.ctaVariation)}
-                    />
+                    <button id={`selectButton-1-${product.sku}-${id}`} class="rounded-full border-2 border-solid no-animation !bg-[#2C376D] h-10 w-full font-poppins not-italic font-semibold text-white btn btn-primary hover:text-base-100">
+                        Selecionar
+                    </button>
+                    <script defer src={scriptAsDataURI(selectToggle, `#selectButton-1-${product.sku}-${id}`, `#selectModal-1-${product.sku}-${id}`)} />
+                    
+                    <div id={`selectModal-1-${product.sku}-${id}`} class="absolute bottom-[0] h-[160px] flex-col hidden bg-white shadow-md p-[10px] w-full font-medium">
+                        <div class="w-full flex justify-between">
+                            <span class="text-xs text-start pb-[10px]">Opções de tamanho</span>
+                            <span class="text-[#999BA2] text-base close-button cursor-pointer">X</span>
+                        </div>
+                        <select 
+                        class="select select-bordered w-full text-xs mb-[15px] text-[#999BA2]"
+                            onChange={(e) => {
+                                selectedVariant.value = e.currentTarget.value;
+                            }}
+                        >
+                            <option disabled selected>Selecione</option>
+                            {variants.map(([value, { urls, sku }]) =>{
+                                if (urls.length > 0) {
+                                    const { searchParams } = new URL(urls[0]);
+                                    const variantSkuIdByUrl = searchParams.get("skuId")
+                                    return (
+                                        <option value={variantSkuIdByUrl || productID}>{value}</option>
+                                    )
+                                }
+                            } )}
+                        </select>
+                        <NewAddToCartButton
+                            quantity={1}
+                            name={product.name as string}
+                            discount={price && listPrice ? listPrice - price : 0}
+                            productGroupId={product.isVariantOf?.productGroupID ?? ""}
+                            price={price as number}
+                            sellerId={seller as string}
+                            skuId={selectedVariant.value}
+                            label="Comprar"
+                            classes={addToCartButtonClassNames(layout?.basics?.ctaVariation)}
+                        />
+                    </div>
+                    
                 </>
             )
             : (
-                <NewAddToCartButton
-                    quantity={1}
-                    name={product.name as string}
-                    discount={price && listPrice ? listPrice - price : 0}
-                    productGroupId={product.isVariantOf?.productGroupID ?? ""}
-                    price={price as number}
-                    sellerId={seller as string}
-                    skuId={product.sku}
-                    label={l?.basics?.ctaText}
-                    classes={`${addToCartButtonClassNames(layout?.basics?.ctaVariation)}`}
-                />
+                <>
+                    <button id={`selectButton-2-${product.sku}-${id}`} class="rounded-full border-2 border-solid no-animation !bg-[#2C376D] h-10 w-full font-poppins not-italic font-semibold text-white btn btn-primary hover:text-base-100">
+                        Selecionar
+                    </button>
+                    <script defer src={scriptAsDataURI(selectToggle, `#selectButton-2-${product.sku}-${id}`, `#selectModal-2-${product.sku}-${id}`)} />
+                    <div id={`selectModal-2-${product.sku}-${id}`} class="absolute bottom-[0] h-[160px] flex-col hidden bg-white shadow-md p-[10px] w-full font-medium">
+                        <div class="w-full flex justify-between">
+                        <span class="text-xs text-start pb-[10px]">Opções de tamanho</span>
+                        <span class="text-[#999BA2] text-base close-button cursor-pointer">X</span>
+                        </div>
+                        <select 
+                        class="select select-bordered w-full text-xs mb-[15px] text-[#999BA2]"
+                            onChange={(e) => {
+                                selectedVariant.value = e.currentTarget.value;
+                            }}
+                        >
+                            <option disabled selected>Selecione</option>
+                            {variants.map(([value, { urls, sku }]) =>{
+                                if (urls.length > 0) {
+                                    const { searchParams } = new URL(urls[0]);
+                                    const variantSkuIdByUrl = searchParams.get("skuId")
+                                    return (
+                                        <option value={variantSkuIdByUrl || productID}>{value}</option>
+                                    )
+                                }
+                            } )}
+                        </select>
+                        <NewAddToCartButton
+                            quantity={1}
+                            name={product.name as string}
+                            discount={price && listPrice ? listPrice - price : 0}
+                            productGroupId={product.isVariantOf?.productGroupID ?? ""}
+                            price={price as number}
+                            sellerId={seller as string}
+                            skuId={selectedVariant.value}
+                            label="Comprar"
+                            classes={addToCartButtonClassNames(layout?.basics?.ctaVariation)}
+                        />
+                    </div>
+                 </>
             );
 
     const price2: number = price as number;
