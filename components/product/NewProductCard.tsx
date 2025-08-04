@@ -183,29 +183,29 @@ function NewProductCard(
     const id = useId();
 
     const selectToggle = (selectButton, selectModal) => {
-    const button = globalThis.document.querySelector(selectButton);
-    const modal = globalThis.document.querySelector(selectModal);
-    
-    if(modal && button) {
-        const closeButton = modal.querySelector(".close-button");
+        const button = globalThis.document.querySelector(selectButton);
+        const modal = globalThis.document.querySelector(selectModal);
         
-        const toggleModal = () => {
-            if(modal.classList.contains("flex")) {
-                modal.classList.add("hidden");
-                modal.classList.remove("flex");
-            } else {
-                modal.classList.add("flex");
-                modal.classList.remove("hidden");
+        if(modal && button) {
+            const closeButton = modal.querySelector(".close-button");
+            
+            const toggleModal = () => {
+                if(modal.classList.contains("flex")) {
+                    modal.classList.add("hidden");
+                    modal.classList.remove("flex");
+                } else {
+                    modal.classList.add("flex");
+                    modal.classList.remove("hidden");
+                }
+            };
+            
+            button.addEventListener("click", toggleModal);
+            
+            if (closeButton) {
+                closeButton.addEventListener("click", toggleModal);
             }
-        };
-        
-        button.addEventListener("click", toggleModal);
-        
-        if (closeButton) {
-            closeButton.addEventListener("click", toggleModal);
         }
     }
-}
 
     const cta = layout?.basics?.ctaMode === "Go to ProductPage"
         ? (
