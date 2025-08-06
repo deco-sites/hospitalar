@@ -155,7 +155,9 @@ function NewProductCard(
             ],
         },
     };
+    
     const l = layout;
+
     const align =
         !l?.basics?.contentAlignment || l?.basics?.contentAlignment == "Left"
             ? "left"
