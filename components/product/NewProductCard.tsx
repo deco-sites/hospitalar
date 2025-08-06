@@ -155,7 +155,7 @@ function NewProductCard(
             ],
         },
     };
-    
+
     const l = layout;
 
     const align =
@@ -178,8 +178,15 @@ function NewProductCard(
         `!bg-[#2C376D] h-10 w-full font-poppins not-italic font-semibold text-white btn btn-${BUTTON_VARIANTS[variant ?? "primary"]
         }`;
 
-    const cta = layout?.basics?.ctaMode === "Go to Product Page"
-        ? (
+    const cta = variants.length > 1 ? (
+        <a 
+            href={url && relative(url)}
+            class="rounded-full border-2 border-solid no-animation !bg-[#2C376D] h-10 w-full font-poppins not-italic font-semibold text-white btn btn-primary hover:text-base-100"
+        >
+            Ver produto
+        </a>
+    ) : (
+        l?.basics?.ctaMode === "Go to Product Page" ? (
             <a
                 href={url && relative(url)}
                 aria-label="view product"
@@ -190,39 +197,35 @@ function NewProductCard(
                     {l?.basics?.ctaText || "Ver produto"}
                 </span>
                 <span class="lg:hidden flex font-medium">
-                    {l?.basics?.mobileCtaText || "Add ao carrinho"}
+                    {l?.basics?.mobileCtaText || "Comprar"}
                 </span>
             </a>
+        ) : l?.basics?.mobileCtaText ? (
+            <NewAddToCartButton
+                quantity={1}
+                name={product.name as string}
+                discount={price && listPrice ? listPrice - price : 0}
+                productGroupId={product.isVariantOf?.productGroupID ?? ""}
+                price={price as number}
+                sellerId={seller as string}
+                skuId={product.sku}
+                label={"Comprar"}
+                classes={addToCartButtonClassNames(layout?.basics?.ctaVariation)}
+            />
+        ) : (
+            <NewAddToCartButton
+                quantity={1}
+                name={product.name as string}
+                discount={price && listPrice ? listPrice - price : 0}
+                productGroupId={product.isVariantOf?.productGroupID ?? ""}
+                price={price as number}
+                sellerId={seller as string}
+                skuId={product.sku}
+                label={l?.basics?.ctaText || "Comprar"}
+                classes={`${addToCartButtonClassNames(layout?.basics?.ctaVariation)}`}
+            />
         )
-        : l?.basics?.mobileCtaText
-            ? (
-                <>
-                    <NewAddToCartButton
-                        quantity={1}
-                        name={product.name as string}
-                        discount={price && listPrice ? listPrice - price : 0}
-                        productGroupId={product.isVariantOf?.productGroupID ?? ""}
-                        price={price as number}
-                        sellerId={seller as string}
-                        skuId={product.sku}
-                        label="Comprar"
-                        classes={addToCartButtonClassNames(layout?.basics?.ctaVariation)}
-                    />
-                </>
-            )
-            : (
-                <NewAddToCartButton
-                    quantity={1}
-                    name={product.name as string}
-                    discount={price && listPrice ? listPrice - price : 0}
-                    productGroupId={product.isVariantOf?.productGroupID ?? ""}
-                    price={price as number}
-                    sellerId={seller as string}
-                    skuId={product.sku}
-                    label={l?.basics?.ctaText}
-                    classes={`${addToCartButtonClassNames(layout?.basics?.ctaVariation)}`}
-                />
-            );
+    );
 
     const price2: number = price as number;
     const listPrice2: number = listPrice as number;
@@ -329,19 +332,19 @@ function NewProductCard(
                     />
                 )}
                 {/* SKU Selector */}
-                {(!l?.elementsPositions?.skuSelector ||
+                {/* {(!l?.elementsPositions?.skuSelector ||
                     l?.elementsPositions?.skuSelector === "Top") && (
                         <>
                             {l?.hide.skuSelector ? "" : (
                                 <ul
-                                    class={`flex items-center gap-2 w-full ${align === "center" ? "justify-center" : "justify-start"
+                                    class={` flex items-center gap-2 w-full ${align === "center" ? "justify-center" : "justify-start"
                                         } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
                                 >
                                     {skuSelector}
                                 </ul>
                             )}
                         </>
-                    )}
+                    )} */}
 
                 {l?.hide.productName && l?.hide.productDescription
                     ? ""
