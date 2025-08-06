@@ -119,7 +119,6 @@ function Dots({ images, interval = 0, slideTwoRow }: DotsProps) {
   );
 }
 
-
 function ProductShelf({
   products, 
   title,
@@ -136,7 +135,6 @@ function ProductShelf({
     return null;
   }
 
-  
   function redesignArray( products: [] ): [Product[]]{
     let arrayProducts = [];
 

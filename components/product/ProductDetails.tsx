@@ -332,12 +332,12 @@ function Details({
         >
           {/* Product Images */}
           <div>
-            <h2 class="mb-[30px] lg:mb-[50px] lg:max-[670px]">
+            <h1 class="mb-[30px] lg:mb-[50px] lg:max-[670px]">
               <span class="font-poppins not-italic font-semibold text-xl text-[#2C376D] lg:text-2xl">
                 {isVariantOf?.name}
                 {currentURL == url ? subName.map((name) => `- ${name}`) : "  "}
               </span>
-            </h2>
+            </h1>
 
             <ProductDetailsImages
               images={images}

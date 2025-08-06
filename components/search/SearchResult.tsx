@@ -40,14 +40,15 @@ function Result({
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
 
   const productsFound = (
-    <h6 class="text-primary font-medium">
+    <h1 class="text-primary font-medium">
       Produtos encontrados: <strong>{pageInfo.records} resultados</strong>
-    </h6>
+    </h1>
   );
 
   return (
     <>
       <div>
+        {/* <h1 class="hidden">{breadcrumb}</h1> */}
         <div class="flex flex-row gap-8">
           {variant === "aside" && filters.length > 0 && (
             <aside class="hidden lg:block w-min mt-1 min-w-[270px]">
