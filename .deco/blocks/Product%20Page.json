@@ -32,5 +32,15 @@
       "__resolveType": "bf-footer"
     }
   ],
-  "__resolveType": "$live/pages/LivePage.tsx"
+  "__resolveType": "$live/pages/LivePage.tsx",
+  "seo": {
+    "__resolveType": "site/sections/Seo/SeoPdpCustomV2.tsx",
+    "jsonLD": {
+      "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts",
+      "slug": {
+        "__resolveType": "website/functions/requestToParam.ts",
+        "param": "slug"
+      }
+    }
+  }
 }

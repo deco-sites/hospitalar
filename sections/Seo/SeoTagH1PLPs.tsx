@@ -1,0 +1,1 @@
+export { default, loader } from "../../components/seo/SeoTagH1PLPs.tsx";

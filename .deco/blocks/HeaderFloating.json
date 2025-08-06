@@ -932,7 +932,8 @@
           "children": [],
           "variant": "CommonChild",
           "label": "Móveis Hospitalares",
-          "href": "/"
+          "href": "/moveis-hospitalares",
+          "highlighted": false
         }
       ],
       "variant": "AllCategories",
@@ -957,7 +958,7 @@
             {
               "children": [],
               "variant": "CommonChild",
-              "label": "Antimiastênico",
+              "label": "Ansiolítico",
               "href": "/medicamentos/ansioliticos"
             },
             {
@@ -1064,7 +1065,7 @@
               "children": [],
               "variant": "CommonChild",
               "label": "Antitermico",
-              "href": "/medicamentos/antiespasmodico"
+              "href": "/medicamentos/antitermico"
             },
             {
               "children": [],
@@ -1148,7 +1149,7 @@
               "children": [],
               "variant": "CommonChild",
               "label": "Hipocalemia",
-              "href": "/medicamentos/hipocalcemia"
+              "href": "/medicamentos/hipocalemia"
             },
             {
               "children": [],
@@ -1712,7 +1713,7 @@
       ],
       "variant": "CommonChild",
       "label": "Suprimentos",
-      "href": "/"
+      "href": "https://www.hospitalardistribuidora.com.br/"
     },
     {
       "children": [],
@@ -1724,13 +1725,13 @@
       "children": [],
       "variant": "CommonChild",
       "label": "Móveis hospitalares",
-      "href": "/equipamentos-para-laboratorio"
+      "href": "/moveis-hospitalares"
     },
     {
       "children": [],
       "variant": "CommonChild",
       "label": "Blog",
-      "href": "/"
+      "href": "https://blog.hospitalardistribuidora.com.br/"
     }
   ],
   "login": [],

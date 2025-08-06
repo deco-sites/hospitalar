@@ -135,5 +135,4 @@ function Menu({ items }: Props) {
         </div>
     )
 }
-
 export default Menu;
