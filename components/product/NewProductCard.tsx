@@ -179,12 +179,15 @@ function NewProductCard(
         }`;
 
     const cta = variants.length > 1 ? (
-        <a 
-            href={url && relative(url)}
-            class="rounded-full border-2 border-solid no-animation !bg-[#2C376D] h-10 w-full font-poppins not-italic font-semibold text-white btn btn-primary hover:text-base-100"
-        >
-            Ver produto
-        </a>
+        <>
+            <a 
+                href={url && relative(url)}
+                class="rounded-full border-2 border-solid no-animation !bg-[#2C376D] h-10 w-full font-poppins not-italic font-semibold text-white btn btn-primary hover:text-base-100"
+            >
+                Ver produto
+            </a>
+            <span class="text-[#2D386E] text-xs font-normal text-start pt-[5px] pb-[5px]" >* Variações disponíveis</span>
+        </>
     ) : (
         l?.basics?.ctaMode === "Go to Product Page" ? (
             <a

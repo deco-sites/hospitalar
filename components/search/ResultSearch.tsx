@@ -21,7 +21,7 @@ const ResultSearch = (
 ) => {
   if (valueSearch !== "" && suggestions?.value != null) {
     return (
-      <div className="md:absolute md:w-full md:top-[130px] bg-white md:left-0  md:m-auto md:px-5 md:py-2 z-40">
+      <div className="md:absolute md:w-full md:top-[105px] bg-white md:left-0  md:m-auto md:px-5 md:py-2 z-40">
         <div className="flex flex-col 2xl:justify-center gap-6 divide-y divide-base-200 mt-6 empty:mt-0 md:flex-row md:divide-y-0 md:max-w-[1495px] m-auto">
           {notFound
             ? (

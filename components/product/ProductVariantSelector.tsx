@@ -14,19 +14,28 @@ function VariantSelector({ product, product: { url }, currentURL }: Props) {
     Object.keys(values).some((value) => value === "Único")
   );
 
-  if (hasUnicoValue) return null;
+  // // Return null if any value is "Único"
+  // if (hasUnicoValue) {
+  //   return null;
+  // }
 
   return (
-    <ul class="flex flex-col gap-5">
-      {Object.entries(possibilities).map(([name, values]) => {
+  <ul className="flex flex-col gap-5">
+    {Object.entries(possibilities).map(([name, values]) => {
 
-        if (Object.keys(values).length <= 1 && name !== "Opção") return null;
+       if (Object.keys(values).length < 1 && name !== "Opção") return null;
 
-        return (
-          <li class="flex flex-col gap-[10px]" key={name}>
-            <span class="text-xs text-base-300">{name}</span>
-            <ul class="flex flex-row flex-wrap gap-[5px]">
-              {Object.entries(values).map(([value, { urls, inStock }]) => (
+      const allValuesAreUnico = Object.keys(values).every(
+        (value) => value === "Único"
+      );
+      if (allValuesAreUnico) return null;
+
+      return (
+        <li className="flex flex-col gap-[10px]" key={name}>
+          <span className="text-xs text-base-300">{name}</span>
+          <ul className="flex flex-row flex-wrap gap-[5px]">
+            {Object.entries(values).map(([value, { urls, inStock }]) =>
+              value === "Único" ? null : (
                 <li key={value}>
                   <a href={urls[0]}>
                     <Avatar
@@ -36,13 +45,14 @@ function VariantSelector({ product, product: { url }, currentURL }: Props) {
                     />
                   </a>
                 </li>
-              ))}
-            </ul>
-          </li>
-        );
-      })}
-    </ul>
-  );
+              )
+            )}
+          </ul>
+        </li>
+      );
+    })}
+  </ul>
+);
 }
 
 export default VariantSelector;
