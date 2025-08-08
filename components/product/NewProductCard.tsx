@@ -309,6 +309,7 @@ function NewProductCard(
                     )}
                 </a>
 
+
                 {/* Free Shipping */}
 
                 {freeShipping && (
