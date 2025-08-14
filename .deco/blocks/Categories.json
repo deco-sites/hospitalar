@@ -456,7 +456,13 @@
   "__resolveType": "$live/pages/LivePage.tsx",
   "seo": {
     "__resolveType": "site/sections/Seo/SeoPlpCustomV2.tsx",
-    "seo_by_url_list": [],
+    "seo_by_url_list": [
+      {
+        "url": "/moveis-hospitalares/camas",
+        "title": "Cama Hospitalar - Cama Fawler, Manual - Infantil e Adulto",
+        "description": " Cama Hospitalar de modelos manual e fawler com movimentos e elevação de leito. Ideal para clínicas e hospitais. Envio para todo o Brasil. Compre já!"
+      }
+    ],
     "jsonLD": {
       "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
       "sort": "price:desc",
