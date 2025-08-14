@@ -197,7 +197,7 @@ function NewProductCard(
                     }`}
             >
                 <span class="max-lg:hidden flex font-medium">
-                    {l?.basics?.ctaText || "Ver produto"}
+                    {l?.basics?.ctaText || "Comprar"}
                 </span>
                 <span class="lg:hidden flex font-medium">
                     {l?.basics?.mobileCtaText || "Comprar"}

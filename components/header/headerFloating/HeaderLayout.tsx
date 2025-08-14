@@ -118,7 +118,7 @@ function HeaderLayout(
                 </div>
               )
               : (
-                <div class="z-50 py-2 container w-full m-auto px-5 relative">
+                <div class="z-50 py-2 container w-full m-auto px-5">
                   <div class="flex justify-between items-center lg:p-0">
                     <div class="flex items-center gap-5">
                       <a href="/" class="" aria-label="Store logo">
@@ -179,7 +179,7 @@ function HeaderLayout(
 
   return (
     <>
-      <header class="z-50 py-2 container w-full m-auto px-5 relative">
+      <header class="z-50 py-2 container w-full m-auto px-5">
         <div class="flex justify-between items-center lg:p-0">
           <div class="flex items-center gap-5">
             <Buttons variant="menu" />
