@@ -43,7 +43,7 @@ function AddToCartButton(
         <Icon id="ShoppingCart" width={24} height={24} class="mb-1" />
         <span class="lg:hidden">{label ?? "Comprar"}</span>
         <span class="hidden lg:inline ">
-          {label ?? "Adicionar ao carrinho"}
+          {label ?? "Comprar"}
         </span>
       </p>
     </Button>
