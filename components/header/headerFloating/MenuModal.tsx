@@ -54,8 +54,15 @@ function MenuItem({ item }: { item: INavItem }) {
                                             />
                                         </div>
                                         <ul class={`p-0 collapse-content`}>
-                                            {node?.children?.map(({ label }, idx) => (
-                                                <li class={`text-[#2C376D] font-normal text-xs mb-2 ${idx == 0 ? "mt-3" : ""}`}>{label}</li>
+                                            {node?.children?.map((nodeChild ) => (
+                                                <li class="">
+                                                    <a  class={`text-[#2C376D] font-normal text-xs mb-2 `}
+                                                        href={nodeChild.href}
+                                                        title={nodeChild.label}
+                                                    >
+                                                        {nodeChild.label}           
+                                                    </a>
+                                                </li>
                                             ))}
                                         </ul>
                                     </div>
