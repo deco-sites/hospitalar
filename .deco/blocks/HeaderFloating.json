@@ -964,12 +964,6 @@
             {
               "children": [],
               "variant": "CommonChild",
-              "label": "Anti-Hemorrágicos",
-              "href": "/medicamentos/anti-hemorragicos"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
               "label": "Anti-Histamínicos",
               "href": "/medicamentos/anti-histaminicos"
             },
@@ -1100,12 +1094,6 @@
             {
               "children": [],
               "variant": "CommonChild",
-              "label": "Cicatrizantes",
-              "href": "/medicamentos/cicatrizantes"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
               "label": "Colírios",
               "href": "/medicamentos/colirios"
             },
@@ -1132,12 +1120,6 @@
               "variant": "CommonChild",
               "label": "Expectorante",
               "href": "/medicamentos/expectorante"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Hipertensivos",
-              "href": "/medicamentos/hipertensivos"
             },
             {
               "children": [],
@@ -1379,211 +1361,6 @@
     {
       "children": [
         {
-          "children": [
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Aparelhos para Dermatologia",
-              "href": "/aparelhos/aparelhos-para-dermatologia"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Aparelhos para Oftalmologia",
-              "href": "/aparelhos/aparelhos-para-oftalmologia"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Aparelhos para Otorrinolaringologia",
-              "href": "/aparelhos/aparelhos-para-otorrinolaringologia"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Barbear",
-              "href": "/aparelhos/barbear"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Desfibriladores",
-              "href": "/aparelhos/desfibriladores"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Inaladores e Nebulizadores",
-              "href": "/aparelhos/inaladores-e-nebulizadores"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Pressão",
-              "href": "/aparelhos/pressao"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Umidificadores",
-              "href": "/aparelhos/umidificadores"
-            }
-          ],
-          "variant": "CommonChild",
-          "label": "Aparelhos"
-        },
-        {
-          "children": [
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Alt Equipamentos",
-              "href": "/aparelhos/alt-equipamentos"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Bionet",
-              "href": "/aparelhos/bionet"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Diasyst",
-              "href": "/aparelhos/diasyst"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Força Médica",
-              "href": "/aparelhos/forcamedica"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "G-Tech",
-              "href": "/aparelhos/g-tech"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Gowllands",
-              "href": "/aparelhos/gowllands"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Heine",
-              "href": "/aparelhos/heine"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Hipolabor",
-              "href": "/aparelhos/hipolabor"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Kolplast",
-              "href": "/aparelhos/kolplast"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Labor Import",
-              "href": "/aparelhos/labor-import"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Lord",
-              "href": "/aparelhos/lord"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "MD",
-              "href": "/aparelhos/md"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Medicate",
-              "href": "/aparelhos/medicate"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Mikatos Missouri",
-              "href": "/aparelhos/mikatos-missouri"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Olidef",
-              "href": "/aparelhos/olidef"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Outros",
-              "href": "/aparelhos/outros"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Premium",
-              "href": "/aparelhos/premium"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Professional",
-              "href": "/aparelhos/professional"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Rossmax",
-              "href": "/aparelhos/rossmax"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Shalon",
-              "href": "/aparelhos/shalon"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Spirit",
-              "href": "/aparelhos/spirit"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Unitec",
-              "href": "/aparelhos/unitec"
-            },
-            {
-              "children": [],
-              "variant": "CommonChild",
-              "label": "Welch Allyn",
-              "href": "/aparelhos/welch-allyn"
-            }
-          ],
-          "variant": "WithBrands",
-          "label": "Marcas"
-        }
-      ],
-      "variant": "Other",
-      "label": "Aparelhos",
-      "href": "/aparelhos"
-    },
-    {
-      "children": [
-        {
           "children": [],
           "variant": "CommonChild",
           "label": "Uretral",
@@ -1611,7 +1388,7 @@
           "children": [],
           "variant": "CommonChild",
           "label": "Endotraqueal",
-          "href": "/sondas/endotraqueal\""
+          "href": "/sondas/endotraqueal"
         },
         {
           "children": [],
