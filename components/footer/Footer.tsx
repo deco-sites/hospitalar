@@ -6,10 +6,7 @@ import { LogoWidth } from "./constants.ts";
 import UpButton from "./UpButton.tsx";
 
 export type IconItem = { icon: AvailableIcons };
-export type StringItem = {
-  label: string;
-  href: string;
-};
+export type StringItem = { label: string; href: string; };
 
 export type Item = StringItem | IconItem;
 
