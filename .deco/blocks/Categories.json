@@ -472,6 +472,6 @@
     },
     "type": "website",
     "jsonLDs": [],
-    "noIndexing": true
+    "noIndexing": false
   }
 }
