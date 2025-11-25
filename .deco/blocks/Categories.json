@@ -1142,6 +1142,750 @@
                 },
                 "matcher": "/medicamentos/zodiac",
                 "html": "<h1><span style=\"font-size: 26pt\">Medicamentos Zodiac</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/sondas/gastrica-levine",
+                "html": "<h1><span style=\"font-size: 26pt\">Sondas Gástricas Levine</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/sondas/gastrostomia",
+                "html": "<h1><span style=\"font-size: 26pt\">Sondas Para Gastrostomia</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/algodao",
+                "html": "<h1><span style=\"font-size: 26pt\">Algodões</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/ataduras",
+                "html": "<h1><span style=\"font-size: 26pt\">Ataduras</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/campo-operatorio",
+                "html": "<h1><span style=\"font-size: 26pt\">Campos Operatórios</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/compressa",
+                "html": "<h1><span style=\"font-size: 26pt\">Compressas</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/curativos",
+                "html": "<h1><span style=\"font-size: 26pt\">Curativos</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/esparadrapos",
+                "html": "<h1><span style=\"font-size: 26pt\">Esparadrapos</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/fios-cirurgicos",
+                "html": "<h1><span style=\"font-size: 26pt\">Fios Cirúrgicos</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/fitas",
+                "html": "<h1><span style=\"font-size: 26pt\">Fitas</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/malha-tubular",
+                "html": "<h1><span style=\"font-size: 26pt\">Malhas Tubulares</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/papel",
+                "html": "<h1><span style=\"font-size: 26pt\">Papéis</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/produtos-hospitalares",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos Hospitalares</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/saco-para-lixo-hospitalar",
+                "html": "<h1><span style=\"font-size: 26pt\">Sacos para Lixo Hospitalar</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/tela-de-marlex",
+                "html": "<h1><span style=\"font-size: 26pt\">Telas de Marlex</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/instrumental",
+                "html": "<h1><span style=\"font-size: 26pt\">Instrumentos Cirúrgicos</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/inox",
+                "html": "<h1><span style=\"font-size: 26pt\">Instrumentos Médicos em Inox</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/lamina",
+                "html": "<h1><span style=\"font-size: 26pt\">Lâminas</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/lanternas-clinicas",
+                "html": "<h1><span style=\"font-size: 26pt\">Lanternas Clínicas</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/otoscopios",
+                "html": "<h1><span style=\"font-size: 26pt\">Otoscópios</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/produtos-p--oxigenacao",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos para Oxigenação</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/suporte-perfurocortantes",
+                "html": "<h1><span style=\"font-size: 26pt\">Suportes Perfurocortantes</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/termometro",
+                "html": "<h1><span style=\"font-size: 26pt\">Termômetros</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/tubo-para-coleta-de-sangue",
+                "html": "<h1><span style=\"font-size: 26pt\">Tubos para Coleta de Sangue</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/algodao",
+                "html": "<h1><span style=\"font-size: 26pt\">Algodões</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/ataduras",
+                "html": "<h1><span style=\"font-size: 26pt\">Ataduras</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/campo-operatorio",
+                "html": "<h1><span style=\"font-size: 26pt\">Campos Operatórios</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/compressa",
+                "html": "<h1><span style=\"font-size: 26pt\">Compressas</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/curativos",
+                "html": "<h1><span style=\"font-size: 26pt\">Curativos</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/esparadrapos",
+                "html": "<h1><span style=\"font-size: 26pt\">Esparadrapos</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/fios-cirurgicos",
+                "html": "<h1><span style=\"font-size: 26pt\">Fios Cirúrgicos</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/fitas",
+                "html": "<h1><span style=\"font-size: 26pt\">Fitas para Uso Médico e Hospitalar</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/malha-tubular",
+                "html": "<h1><span style=\"font-size: 26pt\">Malhas Tubulares</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/papel",
+                "html": "<h1><span style=\"font-size: 26pt\">Papéis para Uso Médico e Hospitalar</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/produtos-hospitalares",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos Hospitalares</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/saco-para-lixo-hospitalar",
+                "html": "<h1><span style=\"font-size: 26pt\">Sacos para Lixo Hospitalar</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/tela-de-marlex",
+                "html": "<h1><span style=\"font-size: 26pt\">Telas de Marlex</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/aparelhos-diversos",
+                "html": "<h1><span style=\"font-size: 26pt\">Aparelhos Diversos</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/balancas",
+                "html": "<h1><span style=\"font-size: 26pt\">Balanças</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/detector-fetal",
+                "html": "<h1><span style=\"font-size: 26pt\">Detectores Fetais</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/estufas",
+                "html": "<h1><span style=\"font-size: 26pt\">Estufas</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "count": 1,
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": []
+                },
+                "matcher": "/fotoforo",
+                "html": "<h1><span style=\"font-size: 26pt\">Fotóforos</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/reanimadores-ambus",
+                "html": "<h1><span style=\"font-size: 26pt\">Reanimadores Ambus</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/avental",
+                "html": "<h1><span style=\"font-size: 26pt\">Aventais Descartáveis</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/escovas",
+                "html": "<h1><span style=\"font-size: 26pt\">Escovas Médicas</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/produtos-para-esterilizacao",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos para Esterilização</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/fraldas",
+                "html": "<h1><span style=\"font-size: 26pt\">Fraldas</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/mascara",
+                "html": "<h1><span style=\"font-size: 26pt\">Máscara Médicas</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/produtos-para-assepsia",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos para Assepsia</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/saneantes",
+                "html": "<h1><span style=\"font-size: 26pt\">Saneantes</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/sapatilha",
+                "html": "<h1><span style=\"font-size: 26pt\">Sapatilhas Descartáveis</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/toucas-mascaras-gorros",
+                "html": "<h1><span style=\"font-size: 26pt\">Toucas, Máscaras, Gorros Descartáveis</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/vestuarios",
+                "html": "<h1><span style=\"font-size: 26pt\">Vestuários Médicos</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/produtos-para-biopsia",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos para Biópsia</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/produtos-para-diabeticos",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos para Diabéticos</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/produtos-para-fisioterapia",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos para Fisioterapia</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/odontologia",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos para Odontologia</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/ortopedia",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos para Ortopedia</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/radiologia",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos para Radiologia</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/produtos-para-resgate",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos para Resgate</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/veterinaria",
+                "html": "<h1><span style=\"font-size: 26pt\">Produtos para Veterinária</span></h1>"
+              },
+              {
+                "textAlign": "Left",
+                "page": {
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                  "sort": "price:desc",
+                  "fuzzy": "automatic",
+                  "selectedFacets": [],
+                  "count": 1
+                },
+                "matcher": "/moveis-hospitalares",
+                "html": "<h1><span style=\"font-size: 26pt\">Móveis Hospitalares</span></h1>"
               }
             ],
             "textCategories": [
