@@ -1,7 +1,7 @@
 import { useId } from "preact/hooks";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 import Button from "$store/components/ui/Button.tsx";
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";

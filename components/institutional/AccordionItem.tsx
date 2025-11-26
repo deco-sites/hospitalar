@@ -1,5 +1,5 @@
 import Markdown from "deco-sites/std/components/Markdown.tsx";
-import type { HTML } from "deco-sites/std/components/types.ts";
+import type { HTMLWidget as HTML } from "apps/admin/widgets.ts";
 
 export interface Props {
   /**

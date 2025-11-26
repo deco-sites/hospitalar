@@ -2,7 +2,7 @@ import type { LoaderReturnType } from "$live/types.ts";
 import type { EditableProps as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Modals from "$store/islands/HeaderModals.tsx";
 import type { Product, Suggestion } from "apps/commerce/types.ts";
-import type { Image } from "deco-sites/std/components/types.ts";
+import type { ImageWidget as Image } from "apps/admin/widgets.ts";
 
 import { headerHeight } from "./constants.ts";
 

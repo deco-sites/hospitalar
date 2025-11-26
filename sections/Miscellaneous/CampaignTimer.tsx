@@ -1,5 +1,5 @@
 import { useId } from "preact/hooks";
-import { HTML } from "deco-sites/std/components/types.ts";
+import type { HTMLWidget as HTML } from "apps/admin/widgets.ts";
 
 export interface Props {
   /**

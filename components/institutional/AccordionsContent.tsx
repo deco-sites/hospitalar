@@ -1,4 +1,4 @@
-import type { HTML } from "deco-sites/std/components/types.ts";
+import type { HTMLWidget as HTML } from "apps/admin/widgets.ts";
 import { AccordionItem } from "./AccordionItem.tsx";
 
 export interface Props {

@@ -1,29 +1,18 @@
 import { Head } from "$fresh/runtime.ts";
 import { Section } from "$live/blocks/section.ts";
 import Icon from "$store/components/ui/Icon.tsx";
-import { useDevice } from "deco/hooks/useDevice.ts";
-
+import { useDevice } from "@deco/deco/hooks";
 export interface Props {
-  title: string;
-  description?: string;
-  asideMenu: Section;
-  content: Section;
+    title: string;
+    description?: string;
+    asideMenu: Section;
+    content: Section;
 }
-
-
-function PageContent({
-  asideMenu: { Component: AsideComponent, props: asideProps },
-  content: { Component: ContentComponent, props: contentProps },
-  title,
-}: Props) {
-
-  const device = useDevice();
-
-  return (
-    <>
+function PageContent({ asideMenu: { Component: AsideComponent, props: asideProps }, content: { Component: ContentComponent, props: contentProps }, title, }: Props) {
+    const device = useDevice();
+    return (<>
       <Head>
-        <style
-          dangerouslySetInnerHTML={{
+        <style dangerouslySetInnerHTML={{
             __html: `
             .markdown-body h2 {
               font-size: 20px;
@@ -112,41 +101,29 @@ function PageContent({
               }
             }
           `,
-          }}
-        />
+        }}/>
       </Head>
       <div>
         {/* Banner Institucional | Suporte */}
       </div>
       <h2 class="my-10 text-[40px] font-bold">Institucional</h2>
       <div class="flex flex-col md:flex-row justify-between mt-[15px] mb-14">
-        <AsideComponent {...asideProps} />
+        <AsideComponent {...asideProps}/>
         <article class="md:pl-[30px] w-full">
 
-          {
-            device == "desktop"
-              ? (
-                <h1 class="flex max-md:justify-between text-primary text-[19px] lg:text-[24px] font-normal lg:font-medium leading-[130%] lg:leading-[36.4px] mb-5 border-b border-neutral-100 pb-[10px]">
+          {device == "desktop"
+            ? (<h1 class="flex max-md:justify-between text-primary text-[19px] lg:text-[24px] font-normal lg:font-medium leading-[130%] lg:leading-[36.4px] mb-5 border-b border-neutral-100 pb-[10px]">
                   {title}
-                </h1>
-              )
-              : (
-                <h1 class="flex max-md:justify-between text-primary text-[19px] lg:text-[24px] font-normal lg:font-medium leading-[130%] lg:leading-[36.4px] mb-5 border-b border-neutral-100 pb-[10px]">
-                  <a
-                    href="/i"
-                    class="text-base font-bold flex items-center justify-end"
-                  >
-                    <Icon id="ChevronLeft" size={20} /> {title}
+                </h1>)
+            : (<h1 class="flex max-md:justify-between text-primary text-[19px] lg:text-[24px] font-normal lg:font-medium leading-[130%] lg:leading-[36.4px] mb-5 border-b border-neutral-100 pb-[10px]">
+                  <a href="/i" class="text-base font-bold flex items-center justify-end">
+                    <Icon id="ChevronLeft" size={20}/> {title}
                   </a>
-                </h1>
-              )
-          }
+                </h1>)}
           {/* @ts-ignore opting for a ignore here so we can use a union type for the content section prop, and display it nicely in the admin panel */}
-          <ContentComponent {...contentProps} />
+          <ContentComponent {...contentProps}/>
         </article>
       </div>
-    </>
-  );
+    </>);
 }
-
 export default PageContent;

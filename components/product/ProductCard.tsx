@@ -11,7 +11,7 @@ import { useOffer } from "$store/sdk/useOffer.ts";
 import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 import DiscountBadge from "./DiscountBadge.tsx";
 import TagWarning from "$store/components/ui/TagWarning.tsx";
 import FreeShipping from "$store/components/product/FreeShipping.tsx";
