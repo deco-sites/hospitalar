@@ -6,12 +6,12 @@
       "__resolveType": "Default - Design System"
     },
     {
-      "__resolveType": "deco-sites/std/sections/SEOPLP.tsx",
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
       "page": {
         "sort": "price:desc",
         "count": 1,
         "fuzzy": "automatic",
-        "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+        "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
         "selectedFacets": []
       },
       "favicon": "https://assets.decocache.com/hospitalar/a6b8a3f0-a94b-42da-95ab-138749202cf4/1742494385936-b0a332f7-d73c-474d-88c0-924d9b167d22",

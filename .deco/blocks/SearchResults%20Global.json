@@ -9,7 +9,7 @@
           "count": 20,
           "fuzzy": "disabled",
           "pageOffset": 1,
-          "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
           "selectedFacets": []
         },
         "columns": {

@@ -29,11 +29,11 @@
         "products": {
           "slug": {
             "param": "slug",
-            "__resolveType": "deco-sites/std/functions/requestToParam.ts"
+            "__resolveType": "website/functions/requestToParam.ts"
           },
           "count": 10,
           "crossSelling": "whosawalsosaw",
-          "__resolveType": "deco-sites/std/loaders/vtex/legacy/relatedProductsLoader.ts"
+          "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
         },
         "cardLayout": {
           "hide": {

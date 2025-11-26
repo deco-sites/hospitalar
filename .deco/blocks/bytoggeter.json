@@ -7,6 +7,6 @@
     },
     "count": 10,
     "crossSelling": "showtogether",
-    "__resolveType": "deco-sites/std/loaders/vtex/legacy/relatedProductsLoader.ts"
+    "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts"
   }
 }

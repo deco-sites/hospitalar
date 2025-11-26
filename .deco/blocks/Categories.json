@@ -85,7 +85,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
                   "selectedFacets": []
                 },
                 "matcher": "/departamento-1/categoria-2",
@@ -98,7 +98,7 @@
                   "count": 1,
                   "fuzzy": "automatic",
                   "query": "1",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
                   "selectedFacets": []
                 },
                 "matcher": "/departamento-1",
@@ -110,7 +110,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
                   "selectedFacets": []
                 },
                 "matcher": "/medicamentos",
@@ -122,7 +122,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/seringa",
                 "textAlign": "Justify"
@@ -133,7 +133,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/scalp",
                 "textAlign": "Justify"
@@ -144,7 +144,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/estetoscopio",
                 "textAlign": "Justify"
@@ -155,7 +155,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/equipos",
                 "textAlign": "Justify"
@@ -166,7 +166,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/sondas",
                 "textAlign": "Justify"
@@ -177,7 +177,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/cateter",
                 "textAlign": "Justify"
@@ -188,7 +188,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/aparelhos",
                 "textAlign": "Justify"
@@ -199,7 +199,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/luvas",
                 "textAlign": "Justify"
@@ -210,7 +210,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/aparelhos/pressao",
                 "textAlign": "Justify"
@@ -221,7 +221,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/aparelhos/inaladores-e-nebulizadores",
                 "textAlign": "Justify"
@@ -232,7 +232,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/aparelhos/umidificadores",
                 "textAlign": "Justify"
@@ -243,7 +243,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/aparelhos/aparelhos-para-otorrinolaringologia",
                 "textAlign": "Justify"
@@ -254,7 +254,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/aparelhos/aparelhos-para-oftalmologia",
                 "textAlign": "Justify"
@@ -265,7 +265,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/aparelhos/desfibriladores",
                 "textAlign": "Justify"
@@ -276,7 +276,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/aparelhos/aparelhos-para-dermatologia",
                 "textAlign": "Justify"
@@ -287,7 +287,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/aparelhos/barbear",
                 "textAlign": "Justify"
@@ -298,7 +298,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/luvas/procedimento",
                 "textAlign": "Justify"
@@ -309,7 +309,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/luvas/cirurgica",
                 "textAlign": "Justify"
@@ -320,7 +320,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/sondas/uretral",
                 "textAlign": "Justify"
@@ -331,7 +331,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
                   "similars": true
                 },
                 "matcher": "/sondas/retal",
@@ -343,7 +343,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/sondas/nasogastrica-longa",
                 "textAlign": "Justify"
@@ -354,7 +354,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/sondas/endotraqueal",
                 "textAlign": "Justify"
@@ -365,7 +365,7 @@
                   "sort": "price:desc",
                   "count": 1,
                   "fuzzy": "automatic",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts"
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts"
                 },
                 "matcher": "/sondas/foley",
                 "textAlign": "Justify"
@@ -1895,7 +1895,7 @@
                   "count": 1,
                   "fuzzy": "automatic",
                   "query": "1",
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
                   "selectedFacets": []
                 },
                 "text": {
@@ -1937,7 +1937,7 @@
                   "count": 1,
                   "fuzzy": "automatic",
                   "pageOffset": 1,
-                  "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+                  "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
                   "selectedFacets": []
                 },
                 "matcher": "/departamento-1/categoria-2",

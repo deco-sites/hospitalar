@@ -10,7 +10,7 @@ import type { JSX } from "preact";
 import { useEffect, useRef } from "preact/compat";
 import { getCookies } from "std/http/mod.ts";
 const subscribe = Runtime.create(
-  "deco-sites/std/actions/vtex/newsletter/subscribe.ts",
+  "vtex/actions/newsletter/subscribe.ts",
 );
 
 export interface INewsletterInputProps {

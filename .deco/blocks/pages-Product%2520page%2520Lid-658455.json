@@ -1241,7 +1241,7 @@
       "jsonLD": {
         "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts",
         "slug": {
-          "__resolveType": "deco-sites/std/functions/requestToParam.ts",
+          "__resolveType": "website/functions/requestToParam.ts",
           "param": "slug"
         }
       }

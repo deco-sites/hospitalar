@@ -10,11 +10,11 @@
         "sort": "",
         "count": 1,
         "fuzzy": "automatic",
-        "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+        "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
         "selectedFacets": []
       },
       "favicon": "https://assets.decocache.com/hospitalar/9b75dff8-0015-4e10-9f8a-30269e9bebff/1742494444044-330195b7-60ea-4f6f-a052-95bf3a6b6236",
-      "__resolveType": "deco-sites/std/sections/SEOPLP.tsx",
+      "__resolveType": "commerce/sections/Seo/SeoPLP.tsx",
       "titleTemplate": "%s | Hospitalar Distribuidora"
     },
     {
@@ -37,7 +37,7 @@
               "count": 20,
               "fuzzy": "disabled",
               "pageOffset": 1,
-              "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productListingPage.ts",
+              "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
               "selectedFacets": [
                 {
                   "key": "productClusterIds",

@@ -11,9 +11,9 @@
             "2": "u",
             "3": "g",
             "param": "slug",
-            "__resolveType": "deco-sites/std/functions/requestToParam.ts"
+            "__resolveType": "website/functions/requestToParam.ts"
           },
-          "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productDetailsPage.ts"
+          "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts"
         },
         "variant": "slider",
         "IdCollection": "156",
