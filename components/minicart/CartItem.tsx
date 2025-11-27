@@ -4,7 +4,7 @@ import QuantitySelector from "$store/components/ui/QuantitySelector.tsx";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useSignal } from "@preact/signals";
-import Image from "deco-sites/std/components/Image.tsx";
+import Image from "apps/website/components/Image.tsx";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 

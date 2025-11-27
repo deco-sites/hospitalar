@@ -1,6 +1,6 @@
 import { headerHeight } from "./constants.ts";
 import Icon from "$store/components/ui/Icon.tsx";
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import { type ImageWidget as LiveImage } from "apps/admin/widgets.ts";
 
 export interface INavItem {
   label: string;

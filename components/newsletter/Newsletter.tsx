@@ -8,7 +8,7 @@ import { RichText } from "apps/admin/widgets.ts";
 import type { JSX } from "preact";
 
 const subscribe = Runtime.create(
-  "deco-sites/std/actions/vtex/newsletter/subscribe.ts",
+  "vtex/actions/newsletter/subscribe.ts",
 );
 
 export interface INewsletterInputProps {

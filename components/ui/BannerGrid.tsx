@@ -1,4 +1,4 @@
-import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+import { type ImageWidget as LiveImage } from "apps/admin/widgets.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 
 export type SemanticColors =

@@ -48,7 +48,7 @@
     }
   },
   "products": {
-    "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productList.ts",
+    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
     "props": {
       "sort": "price:desc",
       "collection": "159",
