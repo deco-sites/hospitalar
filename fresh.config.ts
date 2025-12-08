@@ -4,7 +4,6 @@
 /// <reference lib="esnext" />
 
 import { plugins } from "deco/plugins/deco.ts";
-import partytownPlugin from "partytown/mod.ts";
 
 import decoManifest from "./manifest.gen.ts";
 
@@ -20,9 +19,5 @@ export default defineConfig({
         manifest: decoManifest,
               },
     ),
-    partytownPlugin({
-      proxyUrl: "/proxy",
-      mainWindowAccessors: ["navigator"],
-    }),
   ],
 });
