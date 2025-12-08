@@ -34,7 +34,7 @@
   "commerce": {
     "account": "hospitalar",
     "platform": "vtex",
-    "publicUrl": "secure.hospitalardistribuidora.com.br",
+    "publicUrl": "https://secure.hospitalardistribuidora.com.br",
     "salesChannel": "1",
     "defaultSegment": {
       "channelPrivacy": "public"

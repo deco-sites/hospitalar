@@ -1,13 +1,17 @@
 import { useMemo } from "preact/compat";
 import { ProductListingPage } from "apps/commerce/types.ts";
 import Icon from "$store/components/ui/Icon.tsx";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 
 const SORT_QUERY_PARAM = "sort";
 
 const useSort = () =>
   useMemo(() => {
-    const urlSearchParams = new URLSearchParams(window.location?.search);
-    return urlSearchParams.get(SORT_QUERY_PARAM) ?? "";
+    if(IS_BROWSER) {
+      const urlSearchParams = new URLSearchParams(window.location?.search);
+      return urlSearchParams.get(SORT_QUERY_PARAM) ?? "";
+    }
+    return "";
   }, []);
 
 // TODO: Replace with "search utils"
