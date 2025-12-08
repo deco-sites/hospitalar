@@ -8,7 +8,7 @@
         "count": 8,
         "query": "camiseta",
         "collection": [],
-        "__resolveType": "deco-sites/std/functions/vtexProductList.ts"
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
     },
     "cardLayout": {
         "hide": {},

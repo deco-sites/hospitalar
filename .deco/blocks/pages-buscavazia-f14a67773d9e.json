@@ -32,7 +32,7 @@
         "sort": "discount:desc",
         "count": 100,
         "query": "1",
-        "__resolveType": "deco-sites/std/functions/vtexProductList.ts"
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
       },
       "textSugestions": {
         "firstText": "Verifique os termos digitados.",
