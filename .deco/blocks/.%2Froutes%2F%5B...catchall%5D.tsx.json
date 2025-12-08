@@ -1,1 +1,0 @@
-{"audiences":[{"__resolveType":"everyone"},{"__resolveType":"everyone"},{"__resolveType":"vtex_proxy"},{"routes":[{"handler":{"value":{"url":"https://secure.hospitalardistribuidora.com.br/login","basePath":"/login","__resolveType":"$live/handlers/proxy.ts"}},"pathTemplate":"/login"}],"__resolveType":"$live/flags/everyone.ts"}],"__resolveType":"$live/handlers/routesSelection.ts"}

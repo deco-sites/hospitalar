@@ -1,6 +1,7 @@
 import { App, AppContext as AC } from "$live/mod.ts";
 import std, { Props as CommerceProps } from "apps/compat/std/mod.ts";
 import { type Section } from "@deco/deco/blocks";
+import commerce from "apps/commerce/mod.ts";
 
 import manifest, { Manifest } from "../manifest.gen.ts";
 
@@ -14,11 +15,12 @@ export type Props = {
 } & CommerceProps;
 
 type StdApp = ReturnType<typeof std>;
-export default function Site({ theme, ...state }: Props): App<Manifest, Props, [StdApp]> {
+export default function Site({ theme, ...state }: Props): App<Manifest, Props, [ReturnType<typeof commerce>, StdApp]> {
   return {
     state,
     manifest,
     dependencies: [
+      commerce(state),
       std({
         ...state,
         global: theme ? [...(state.global ?? []), theme] : state.global,
