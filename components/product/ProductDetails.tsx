@@ -292,7 +292,7 @@ function Details({
   const { isVariantOf, url } = page?.product;
   const subName: string[] = [];
   const productUrl = product?.url || "";
-  const currentURL = window.location?.href;
+  const currentURL = globalThis.location?.href;
 
   const strict = product.category?.split(">")?.[0];
 

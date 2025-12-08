@@ -22,7 +22,7 @@ function ProductAsideInfo({
     offers,
   );
 
-  const currentURL = window.location?.href;
+  const currentURL = globalThis.location?.href;
 
   return (
     <>
