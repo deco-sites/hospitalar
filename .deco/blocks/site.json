@@ -47,9 +47,6 @@
     "directives": [],
     "enabled": false
   },
-  "commerce": {
-    "platform": "other"
-  },
   "platform": "vtex",
   "__resolveType": "site/apps/site.ts",
   "firstByteThresholdMS": false,
@@ -64,5 +61,14 @@
   },
   "flavor": {
     "framework": "fresh"
+  },
+  "commerce": {
+    "account": "hospitalar",
+    "platform": "vtex",
+    "publicUrl": "https://secure.hospitalardistribuidora.com.br",
+    "salesChannel": "1",
+    "defaultSegment": {
+      "channelPrivacy": "public"
+    }
   }
 }
