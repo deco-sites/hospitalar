@@ -1,33 +1,49 @@
-User-agent: *
-Disallow: /
-
-User-agent: Googlebot
+User - agent: *
 Allow: /
-Disallow: /img/* 
-Disallow: /account/* 
-Disallow: /login/* 
-Disallow: /checkout/* 
-Disallow: /busca/* 
-Disallow: /quick-view/* 
-Disallow: /espiar/* 
-Noindex: /buscapagina/*
+Disallow: /img/ *
+Disallow: /account/ *
+Disallow: /login/ *
+Disallow: /checkout/ *
+Disallow: /busca/ *
+Disallow: /quick-view/ *
+Disallow: /espiar/ *
+Disallow: /buscavazia
+Disallow: /deco-sites/
+Disallow: /~partytown/
 
-User-agent: Bingbot
+User - agent: Googlebot
 Allow: /
-Disallow: /img/* 
-Disallow: /account/* 
-Disallow: /login/* 
-Disallow: /checkout/* 
-Disallow: /busca/* 
-Disallow: /quick-view/* 
-Disallow: /espiar/* 
-Noindex: /buscapagina/*
+Disallow: /img/ *
+Disallow: /account/ *
+Disallow: /login/ *
+Disallow: /checkout/ *
+Disallow: /busca/ *
+Disallow: /quick-view/ *
+Disallow: /espiar/ *
+Disallow: /buscavazia
+Disallow: /deco-sites/
+Disallow: /~partytown/
 
-User-agent: SiteAuditBot
-Crawl-delay: 1
+
+User - agent: Bingbot
+Allow: /
+Disallow: /img/ *
+Disallow: /account/ *
+Disallow: /login/ *
+Disallow: /checkout/ *
+Disallow: /busca/ *
+Disallow: /quick-view/ *
+Disallow: /espiar/ *
+Disallow: /buscavazia
+Disallow: /deco-sites/
+Disallow: /~partytown/
+Disallow: /buscapagina/ *
+
+User - agent: SiteAuditBot
+Crawl - delay: 1
 Allow: /
 
-User-agent: Semrushbot-SI
+User - agent: Semrushbot - SI
 Allow: /
 
 Sitemap: https://www.hospitalardistribuidora.com.br/sitemap.xml
