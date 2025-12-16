@@ -11,6 +11,7 @@ import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import SearchPagination from "$store/components/search/SearchPagination.tsx";
 import { Section } from "$live/blocks/section.ts";
 import { AppContext, redirect } from "$live/mod.ts";
+import SearchNotFound from "site/islands/SearchNotFound.tsx";
 
 export interface Props {
   page: LoaderReturnType<ProductListingPage | null>;
@@ -117,7 +118,8 @@ function SearchResult(
   }: Props,
 ) {
   if (!page || !page.products || page.products.length === 0) {
-    return <NotFoundSection {...notFoundProps} />;
+    // return <NotFoundSection {...notFoundProps} />;
+    return <SearchNotFound {...notFoundProps} />;
   }
 
   return <Result {...props} page={page} />;
@@ -128,18 +130,18 @@ export default SearchResult;
 
 export const loader = (
   props: Props,
-  req: Request,
+  _req: Request,
   // deno-lint-ignore no-explicit-any
-  ctx: AppContext<any>,
+  _ctx: AppContext<any>,
 ) => {
 
-  const {page} = props; 
+  // const {page} = props; 
 
-  if (!page || !page.products || page.products.length === 0) {
-    const url = new URL(req.url);
-    url.pathname = "/buscavazia";
-    redirect(url.toString(), 301);
-  }
+  // if (!page || !page.products || page.products.length === 0) {
+  //   const url = new URL(req.url);
+  //   url.pathname = "/buscavazia";
+  //   redirect(url.toString(), 301);
+  // }
   return {
     ...props,
   };
