@@ -16,6 +16,7 @@ export type Props = {
 
 type StdApp = ReturnType<typeof std>;
 export default function Site({ theme, ...state }: Props): App<Manifest, Props, [ReturnType<typeof commerce>, StdApp]> {
+
   return {
     state,
     manifest,
